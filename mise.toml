@@ -1,0 +1,6 @@
+[env]
+_.file = ["./.env"]
+_.path = { path = "./node_modules/.bin" }
+
+[tools]
+node = { version = "22.17.0", postinstall = "corepack enable" }
