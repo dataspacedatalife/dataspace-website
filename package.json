@@ -15,19 +15,19 @@
     "dayjs": "^1.11.12",
     "feed": "^4.2.2",
     "framer-motion": "^11.2.10",
-    "next": "14.2.11",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "15.4.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "react-use-measure": "^2.1.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.1.2",
     "@tailwindcss/postcss": "^4.1.7",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
     "eslint": "^8",
-    "eslint-config-next": "14.2.11",
+    "eslint-config-next": "15.4.1",
     "postcss": "^8.4.40",
     "prettier": "^3.3.2",
     "prettier-plugin-organize-imports": "^4.0.0",
@@ -35,5 +35,11 @@
     "tailwindcss": "^4.1.7",
     "typescript": "^5"
   },
-  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad"
+  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad",
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.1.8",
+      "@types/react-dom": "19.1.6"
+    }
+  }
 }
