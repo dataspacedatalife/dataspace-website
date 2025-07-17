@@ -12,9 +12,11 @@ import { Logo } from './logo';
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid';
 
 const links = [
-  { href: '/pricing', label: 'Pricing' },
-  { href: '/company', label: 'Company' },
-  { href: '/login', label: 'Login' },
+  { href: '/pricing', label: '¿Qué?' },
+  { href: '/company', label: '¿Por qué?' },
+  { href: '/login', label: '¿Cómo?' },
+  { href: '/login', label: 'El equipo' },
+  { href: '/login', label: 'Contacto' },
 ];
 
 function DesktopNav() {
@@ -76,13 +78,16 @@ function MobileNav() {
 
 export function Navbar({ banner }: { banner?: React.ReactNode }) {
   return (
-    <Disclosure as="header" className="pt-12 sm:pt-16">
+    <Disclosure as="header" className="pt-8 sm:pt-12">
       <PlusGrid>
         <PlusGridRow className="relative flex justify-between">
           <div className="relative flex gap-6">
             <PlusGridItem className="py-3">
               <Link href="/" title="Home">
-                <Logo className="h-9" />
+                <div className="flex flex-row items-center gap-2 text-gray-950">
+                  <Logo className="h-9" />
+                  <div className="text-3xl">Dem Ms DATAlife | CESGA</div>
+                </div>
               </Link>
             </PlusGridItem>
             {banner && (
