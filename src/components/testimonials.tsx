@@ -79,6 +79,7 @@ function TestimonialCard({
 } & HTMLMotionProps<'div'>) {
   let ref = useRef<HTMLDivElement | null>(null);
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: might break if removed
   let computeOpacity = useCallback(() => {
     let element = ref.current;
     if (!element || bounds.width === 0) return 1;
