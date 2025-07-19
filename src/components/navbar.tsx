@@ -6,7 +6,7 @@ import {
   DisclosurePanel,
 } from '@headlessui/react';
 import { Bars2Icon } from '@heroicons/react/24/solid';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { Link } from './link';
 import { Logo } from './logo';
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid';

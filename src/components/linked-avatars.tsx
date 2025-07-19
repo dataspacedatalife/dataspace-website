@@ -2,7 +2,7 @@
 
 import { CheckIcon } from '@heroicons/react/16/solid';
 import { clsx } from 'clsx';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 const transition = {
   duration: 0.75,

@@ -10,7 +10,7 @@ import {
   useMotionValueEvent,
   useScroll,
   useSpring,
-} from 'framer-motion';
+} from 'motion/react';
 import { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import useMeasure, { type RectReadOnly } from 'react-use-measure';
 import { Container } from './container';
