@@ -77,14 +77,12 @@ function TestimonialCard({
   bounds: RectReadOnly;
   scrollX: MotionValue<number>;
 } & HTMLMotionProps<'div'>) {
-  let ref = useRef<HTMLDivElement | null>(null);
+  const [ref, setRef] = useState<HTMLDivElement | null>(null);
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: might break if removed
   let computeOpacity = useCallback(() => {
-    let element = ref.current;
-    if (!element || bounds.width === 0) return 1;
+    if (!ref || bounds.width === 0) return 1;
 
-    let rect = element.getBoundingClientRect();
+    let rect = ref.getBoundingClientRect();
 
     if (rect.left < bounds.left) {
       let diff = bounds.left - rect.left;
@@ -114,7 +112,7 @@ function TestimonialCard({
 
   return (
     <motion.div
-      ref={ref}
+      ref={setRef}
       style={{ opacity }}
       {...props}
       className="relative flex aspect-9/16 w-72 shrink-0 snap-start scroll-ml-(--scroll-padding) flex-col justify-end overflow-hidden rounded-3xl sm:aspect-3/4 sm:w-96"
