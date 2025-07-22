@@ -4,6 +4,10 @@
   --font-sans: Switzer, system-ui, sans-serif;
 
   --radius-4xl: 2rem;
+
+  --shadow-neumorphic: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+  --shadow-neumorphic-inset:
+    inset 8px 8px 16px #d1d9e6, inset -8px -8px 16px #ffffff;
 }
 
 @keyframes move-x {

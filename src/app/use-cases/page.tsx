@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Container } from '@/components/container';
@@ -24,19 +25,16 @@ const useCases = [
     nombre: 'AiDataMed',
     entidad: 'Chup/IISGS',
     objetivo: 'Análisis de datos sanitarios',
-    imagen: LogoIISGS,
   },
   {
     nombre: 'Brilliant',
     entidad: 'IISGS',
     objetivo: 'Observatorio de sarcopenia',
-    imagen: LogoIISGS,
   },
   {
     nombre: 'GIFT',
     entidad: 'Chup/IISGS',
     objetivo: 'Salud gastrointestinal',
-    imagen: LogoIISGS,
   },
   {
     nombre: 'SALUSBENCH',
@@ -61,20 +59,34 @@ const useCases = [
     nombre: 'BiomeXplore',
     entidad: 'IISGS',
     objetivo: 'Observatorio del índice poblacional de microbiota intestinal',
-    imagen: LogoIISGS,
   },
-];
+] satisfies {
+  nombre: string;
+  entidad: string;
+  objetivo: string;
+  imagen?: React.ComponentProps<typeof Image>['src'];
+}[];
 
 // Colores para los círculos
 const colors = [
-  'bg-blue-200',
-  'bg-emerald-200',
-  'bg-purple-200',
-  'bg-pink-200',
-  'bg-yellow-200',
-  'bg-red-200',
-  'bg-indigo-200',
+  'bg-gradient-to-br from-blue-300 via-sky-200 to-cyan-300',
+  'bg-gradient-to-br from-emerald-300 via-emerald-200 to-teal-300',
+  'bg-gradient-to-br from-purple-300 via-violet-200 to-indigo-300',
+  'bg-gradient-to-br from-pink-300 via-rose-200 to-fuchsia-300',
+  'bg-gradient-to-br from-yellow-300 via-amber-200 to-orange-300',
+  'bg-gradient-to-br from-red-300 via-rose-200 to-pink-300',
+  'bg-gradient-to-br from-indigo-300 via-indigo-200 to-violet-300',
 ];
+
+// const colors = [
+//   'bg-blue-200',
+//   'bg-emerald-200',
+//   'bg-purple-200',
+//   'bg-pink-200',
+//   'bg-yellow-200',
+//   'bg-red-200',
+//   'bg-indigo-200',
+// ];
 
 function Header() {
   return (
@@ -82,7 +94,7 @@ function Header() {
       <div className="flex items-center mb-6">
         <Heading
           as="h1"
-          className="text-4xl font-extrabold text-gray-900 text-center"
+          className="text-4xl font-extrabold text-gray-900 mx-auto"
         >
           Casos de uso
         </Heading>
@@ -98,32 +110,37 @@ function Header() {
 function UseCaseGrid() {
   return (
     <Container className="py-24">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">
-        {useCases.map((caso, idx) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 text-center">
+        {useCases.map((caso, i) => (
           <div
-            key={idx}
-            className={`flex flex-col items-center text-center p-6 rounded-full ${colors[idx % colors.length]} shadow-lg w-48 h-48 relative`}
+            key={i}
+            className={clsx(
+              'flex flex-col gap-4 rounded-2xl border border-gray-200 p-6 shadow-sm transition hover:shadow-md size-full justify-evenly',
+              colors[i % colors.length],
+            )}
           >
-            <div className="absolute -top-10 bg-white rounded-full p-2 shadow-md">
-              <Image
-                src={caso.imagen}
-                alt={`Logo de ${caso.nombre}`}
-                width={60}
-                height={60}
-                className="object-contain rounded-full"
-              />
+            <div className="bg-white/30 w-fit h-fit mx-auto sm:w-2/3 border rounded-4xl">
+              <Image src={caso.imagen ?? LogoIISGS} alt={caso.nombre} />
             </div>
-            <h3 className="mt-16 text-black text-xl font-bold">
-              {caso.nombre}
-            </h3>
-            <p className="text-black mt-2 text-sm font-semibold">
-              <span className="opacity-80">Entidad:</span> {caso.entidad}
-            </p>
-            <p className="text-black mt-1 text-xs opacity-90">
-              {caso.objetivo}
-            </p>
+            <div>
+              <h3 className="text-2xl font-semibold">{caso.nombre}</h3>
+              <div className="">{caso.objetivo}</div>
+            </div>
           </div>
         ))}
+        {/* {useCases.map((caso, i) => ( */}
+        {/*   <div key={i} className="border"> */}
+        {/*     <div className="border"> */}
+        {/*       <Image */}
+        {/*         src={caso.imagen ?? LogoIISGS} */}
+        {/*         alt={caso.nombre} */}
+        {/*         className="object-contain aspect-square" */}
+        {/*       /> */}
+        {/*     </div> */}
+        {/*     <div>{caso.nombre}</div> */}
+        {/*     <div>{caso.objetivo}</div> */}
+        {/*   </div> */}
+        {/* ))} */}
       </div>
     </Container>
   );
