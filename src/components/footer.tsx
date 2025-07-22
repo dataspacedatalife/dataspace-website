@@ -1,5 +1,9 @@
+import Image from 'next/image';
 import { PlusGrid, PlusGridItem, PlusGridRow } from '@/components/plus-grid';
-import { Button } from './button';
+import LogoEU from '../../public/logos/ES-Financiado-por-la-Union-Europea_POS-1536x451.jpg';
+import LogoPRTR from '../../public/logos/Logo-PRTR-tres-lineas_COLOR-1536x864.png';
+import LogoMinisterio from '../../public/logos/Logotipo_del_Ministerio_para_la_Transformación_Digital_y_de_la_Función_Pública-cropped.svg';
+import LogoCESGA from '../../public/logos/nuevoLogoCesga_mayo2023.png';
 import { Container } from './container';
 import { Gradient } from './gradient';
 import { Link } from './link';
@@ -10,22 +14,20 @@ function CallToAction() {
   return (
     <div className="relative pt-20 pb-16 text-center sm:py-24">
       <hgroup>
-        <Subheading>Get started</Subheading>
+        <Subheading>¡Contáctanos!</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Ready to dive in?
-          <br />
-          Start your free trial today.
+          Interesado en el proyecto?
         </p>
       </hgroup>
-      <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Get the cheat codes for selling and unlock your team&apos;s revenue
-        potential.
+      <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-700">
+        Si estás interesado en saber más o participar en este proyecto, puedes
+        mandarnos un email a dmd@cesga.es
       </p>
-      <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="#">
-          Get started
-        </Button>
-      </div>
+      {/* <div className="mt-6"> */}
+      {/*   <Button className="w-full sm:w-auto" href="#"> */}
+      {/*     Get started */}
+      {/*   </Button> */}
+      {/* </div> */}
     </div>
   );
 }
@@ -40,47 +42,42 @@ function SitemapLinks({ children }: { children: React.ReactNode }) {
 
 function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
   return (
-    <li>
-      <Link
-        {...props}
-        className="font-medium text-gray-950 data-hover:text-gray-950/75"
-      />
-    </li>
+    <Link
+      {...props}
+      className="font-medium text-gray-950 data-hover:text-gray-950/75"
+    />
   );
 }
 
+// function Sitemap() {
+//   return (
+//     <>
+//       <div>
+//         <SitemapHeading>Centro demostrador</SitemapHeading>
+//         <SitemapLinks>
+//           <SitemapLink href="/what">¿Qué?</SitemapLink>
+//           <SitemapLink href="/why">¿Por qué?</SitemapLink>
+//           <SitemapLink href="/how">¿Cómo?</SitemapLink>
+//         </SitemapLinks>
+//       </div>
+//       <div>
+//         <SitemapHeading>Compañía</SitemapHeading>
+//         <SitemapLinks>
+//           <SitemapLink href="/team">El equipo</SitemapLink>
+//           <SitemapLink href="#">Contacto</SitemapLink>
+//         </SitemapLinks>
+//       </div>
+//     </>
+//   )
+// }
 function Sitemap() {
   return (
     <>
-      <div>
-        <SitemapHeading>Product</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="/pricing">Pricing</SitemapLink>
-          <SitemapLink href="#">Analysis</SitemapLink>
-          <SitemapLink href="#">API</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
-        <SitemapHeading>Company</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Careers</SitemapLink>
-          <SitemapLink href="/company">Company</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
-        <SitemapHeading>Support</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Help center</SitemapLink>
-          <SitemapLink href="#">Community</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
-        <SitemapHeading>Company</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Terms of service</SitemapLink>
-          <SitemapLink href="#">Privacy policy</SitemapLink>
-        </SitemapLinks>
-      </div>
+      <SitemapLink href="/what">¿Qué?</SitemapLink>
+      <SitemapLink href="/why">¿Por qué?</SitemapLink>
+      <SitemapLink href="/how">¿Cómo?</SitemapLink>
+      <SitemapLink href="/team">El equipo</SitemapLink>
+      <SitemapLink href="#">Contacto</SitemapLink>
     </>
   );
 }
@@ -147,7 +144,43 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Radiant Inc.
+      &copy; {new Date().getFullYear()} Dem Ms DATAlife - CESGA
+    </div>
+  );
+}
+
+function Logos() {
+  return (
+    <div className="mt-10 mb-10 text-center">
+      <div
+        className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center justify-center max-w-5xl mx-aut
+"
+      >
+        <Image
+          src={LogoEU}
+          alt="Financiado por la Unión Europea"
+          className="object-contain"
+          height={80}
+        />
+        <Image
+          src={LogoMinisterio}
+          alt="Ministerio para la Transformación Digital y de la Función Pública"
+          className="object-contain"
+          height={80}
+        />
+        <Image
+          src={LogoPRTR}
+          alt="Plan de Recuperación, Transformación y Resiliencia"
+          className="object-contain"
+          height={80}
+        />
+        <Image
+          src={LogoCESGA}
+          alt="CESGA"
+          className="object-contain"
+          height={80}
+        />
+      </div>
     </div>
   );
 }
@@ -161,18 +194,26 @@ export function Footer() {
           <CallToAction />
           <PlusGrid className="pb-16">
             <PlusGridRow>
-              <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
-                <div className="col-span-2 flex">
+              <div className="grid grid-cols-3 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
+                {/* Group Logo and Copyright in one grid cell */}
+                <div className="col-span-2 lg:col-span-2 flex items-center space-x-2">
                   <PlusGridItem className="pt-6 lg:pb-6">
                     <Logo className="h-9" />
                   </PlusGridItem>
+                  <PlusGridItem className="pt-6 lg:pb-6">
+                    <Copyright />
+                  </PlusGridItem>
                 </div>
-                <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
-                  <Sitemap />
+
+                {/* Rest of the content */}
+                <div className="col-span-1 lg:col-span-4 flex justify-end lg:pt-6">
+                  <div className="flex flex-wrap justify-end gap-x-6 text-sm">
+                    <Sitemap />
+                  </div>
                 </div>
               </div>
             </PlusGridRow>
-            <PlusGridRow className="flex justify-between">
+            {/* <PlusGridRow className="flex justify-between">
               <div>
                 <PlusGridItem className="py-3">
                   <Copyright />
@@ -183,10 +224,11 @@ export function Footer() {
                   <SocialLinks />
                 </PlusGridItem>
               </div>
-            </PlusGridRow>
+            </PlusGridRow> */}
           </PlusGrid>
         </Container>
       </Gradient>
+      <Logos />
     </footer>
   );
 }

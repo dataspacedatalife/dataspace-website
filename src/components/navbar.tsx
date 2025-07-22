@@ -12,11 +12,12 @@ import { Logo } from './logo';
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid';
 
 const links = [
-  { href: '/pricing', label: '¿Qué?' },
-  { href: '/company', label: '¿Por qué?' },
-  { href: '/login', label: '¿Cómo?' },
-  { href: '/login', label: 'El equipo' },
-  { href: '/login', label: 'Contacto' },
+  { href: '/what', label: '¿Qué?' },
+  { href: '/why', label: '¿Por qué?' },
+  { href: '/how', label: '¿Cómo?' },
+  { href: '/use-cases', label: 'Casos de uso' },
+  { href: '/team', label: 'El equipo' },
+  // { href: '/contact', label: 'Contacto' },
 ];
 
 function DesktopNav() {

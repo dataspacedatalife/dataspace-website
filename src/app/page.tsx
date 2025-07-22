@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { BentoCard } from '@/components/bento-card';
 import { Button } from '@/components/button';
 import { Container } from '@/components/container';
@@ -14,6 +15,7 @@ import { Navbar } from '@/components/navbar';
 import { Screenshot } from '@/components/screenshot';
 import { Testimonials } from '@/components/testimonials';
 import { Heading, Subheading } from '@/components/text';
+import LogoImage from '../../public/logo1_svg_normal.svg';
 
 export const metadata: Metadata = {
   description:
@@ -38,18 +40,26 @@ function Hero() {
         /> */}
         <Navbar />
 
-        <div className="pt-8 pb-24 sm:pt-16 sm:pb-32 md:pt-24 md:pb-48">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-gray-950 sm:text-7xl md:text-8xl">
-            Espacio de datos multisectorial One Health
-          </h1>
-          <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Porque solo compartiendo datos se puede extraer su verdadero valor
-          </p>
-          <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Get started</Button>
-            <Button variant="secondary" href="/pricing">
-              See pricing
-            </Button>
+        {/* <div className="pt-8 pb-24 sm:pt-16 sm:pb-32 md:pt-24 md:pb-48">
+
+        </div> */}
+        <div className="flex flex-row pt-2 pb-24 sm:pt-4 sm:pb-32 md:pt-6 md:pb-48">
+          <div className="pt-10 sm:pt-16 md:pt-30">
+            <h1 className="font-display text-3xl font-medium tracking-tight text-balance text-gray-950 sm:text-5xl md:text-6xl">
+              Espacio de datos multisectorial One Health
+            </h1>
+            <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
+              Porque solo compartiendo datos se puede extraer su verdadero valor
+            </p>
+            <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
+              <Button href="/what">Saber más</Button>
+              {/* <Button variant="secondary" href="/pricing">
+                See pricing
+              </Button> */}
+            </div>
+          </div>
+          <div>
+            <Image alt="Logo image" src={LogoImage} className={''} />
           </div>
         </div>
       </Container>
@@ -194,16 +204,16 @@ export default function Home() {
     <div className="overflow-hidden">
       <Hero />
       <main>
-        <Container className="mt-10">
-          <LogoCloud />
-        </Container>
-        <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
-          <FeatureSection />
-          <BentoSection />
-        </div>
-        <DarkBentoSection />
+        {/* <Container className="mt-10"> */}
+        {/*   <LogoCloud /> */}
+        {/* </Container> */}
+        {/* <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32"> */}
+        {/*   <FeatureSection /> */}
+        {/*   <BentoSection /> */}
+        {/* </div> */}
+        {/* <DarkBentoSection /> */}
       </main>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </div>
   );
