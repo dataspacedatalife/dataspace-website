@@ -21,7 +21,8 @@ function CallToAction() {
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-700">
         Si estás interesado en saber más o participar en este proyecto, puedes
-        mandarnos un email a dmd@cesga.es
+        mandarnos un email a{' '}
+        <Link href="mailto:dmd@cesga.es">dmd@cesga.es</Link>
       </p>
       {/* <div className="mt-6"> */}
       {/*   <Button className="w-full sm:w-auto" href="#"> */}
@@ -151,11 +152,8 @@ function Copyright() {
 
 function Logos() {
   return (
-    <div className="mt-10 mb-10 text-center">
-      <div
-        className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center justify-center max-w-5xl mx-aut
-"
-      >
+    <div className="my-10 text-center">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center justify-center max-w-5xl mx-auto">
         <Image
           src={LogoEU}
           alt="Financiado por la Unión Europea"
@@ -188,8 +186,8 @@ function Logos() {
 export function Footer() {
   return (
     <footer>
-      <Gradient className="relative">
-        <div className="absolute inset-2 rounded-4xl bg-white/80" />
+      <Gradient className="relative rounded-4xl overflow-hidden m-4">
+        <div className="absolute bg-white/50 inset-0" />
         <Container>
           <CallToAction />
           <PlusGrid className="pb-16">
@@ -225,10 +223,12 @@ export function Footer() {
                 </PlusGridItem>
               </div>
             </PlusGridRow> */}
+            <div className="isolate">
+              <Logos />
+            </div>
           </PlusGrid>
         </Container>
       </Gradient>
-      <Logos />
     </footer>
   );
 }
