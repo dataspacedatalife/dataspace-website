@@ -5,6 +5,10 @@ import {
   Network,
   ShieldCheck,
   Users,
+  Brain,
+  Database,
+  Share2,
+  Users2,
 } from 'lucide-react';
 import type { Metadata } from 'next';
 import { Container } from '@/components/container';
@@ -46,11 +50,19 @@ function Header() {
         </div>
 
         <div className="mt-10 lg:mt-0">
-          <img
+          <h2 className="text-2xl font-medium tracking-tight">Motivación</h2>
+          <p className="mt-6 text-sm/6 text-gray-600">
+            Los retos en salud humana, animal y ambiental están interconectados
+            y requieren una visión conjunta basada en datos. Este demostrador
+            ofrece una plataforma para integrar y analizar información
+            multisectorial, facilitando decisiones informadas y políticas
+            públicas basadas en evidencia.
+          </p>
+          {/* <img
             src="/images/espacio-datos.jpg"
             alt="Representación de un espacio de datos"
             className="w-full rounded-2xl shadow-md"
-          />
+          /> */}
         </div>
       </section>
 
@@ -108,6 +120,24 @@ function Header() {
         </div>
       </section>
     </Container>
+  );
+}
+
+function FeatureCard({
+  icon,
+  title,
+  description,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="flex flex-col gap-4 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+      <div>{icon}</div>
+      <h3 className="text-lg font-semibold">{title}</h3>
+      <p className="text-sm text-gray-600">{description}</p>
+    </div>
   );
 }
 

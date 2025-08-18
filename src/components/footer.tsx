@@ -16,7 +16,7 @@ function CallToAction() {
       <hgroup>
         <Subheading>¡Contáctanos!</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Interesado en el proyecto?
+          ¿Interesado en el proyecto?
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-700">

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 function Hero() {
   return (
-    <div className="relative">
+    <div className="relative min-h-screen">
       <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
       <Container className="relative">
         {/* <Navbar
@@ -46,7 +46,7 @@ function Hero() {
         <div className="flex flex-row pt-2 pb-24 sm:pt-4 sm:pb-32 md:pt-6 md:pb-48">
           <div className="pt-10 sm:pt-16 md:pt-30">
             <h1 className="font-display text-3xl font-medium tracking-tight text-balance text-gray-950 sm:text-5xl md:text-6xl">
-              Espacio de datos multisectorial One Health
+              Centro demostrador de espacio de datos multisectorial One Health
             </h1>
             <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
               Porque solo compartiendo datos se puede extraer su verdadero valor
