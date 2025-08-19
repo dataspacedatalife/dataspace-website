@@ -63,7 +63,7 @@ const useCases = [
     link: 'https://www.uvigo.gal/',
   },
   {
-    nombre: 'DATIACARE',
+    nombre: 'Datiacare',
     entidad: 'i4life',
     objetivo: 'Cuidado de personas mayores',
     imagen: Logoi4life,

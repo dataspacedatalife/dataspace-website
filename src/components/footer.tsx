@@ -74,11 +74,11 @@ function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
 function Sitemap() {
   return (
     <>
-      <SitemapLink href="/what">¿Qué?</SitemapLink>
+      {/* <SitemapLink href="/what">¿Qué?</SitemapLink>
       <SitemapLink href="/why">¿Por qué?</SitemapLink>
       <SitemapLink href="/how">¿Cómo?</SitemapLink>
       <SitemapLink href="/team">El equipo</SitemapLink>
-      <SitemapLink href="#">Contacto</SitemapLink>
+      <SitemapLink href="#">Contacto</SitemapLink> */}
     </>
   );
 }
@@ -144,8 +144,8 @@ function SocialLinks() {
 
 function Copyright() {
   return (
-    <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Dem Ms DATAlife - CESGA
+    <div className="text-lg/6 text-gray-950">
+      &copy; {new Date().getFullYear()} DATAlife | CESGA
     </div>
   );
 }
@@ -194,21 +194,18 @@ export function Footer() {
             <PlusGridRow>
               <div className="grid grid-cols-3 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
                 {/* Group Logo and Copyright in one grid cell */}
-                <div className="col-span-2 lg:col-span-2 flex items-center space-x-2">
-                  <PlusGridItem className="pt-6 lg:pb-6">
-                    <Logo className="h-9" />
-                  </PlusGridItem>
-                  <PlusGridItem className="pt-6 lg:pb-6">
-                    <Copyright />
-                  </PlusGridItem>
+                <div className="col-span-3 lg:col-span-6 flex justify-center items-center gap-2">
+                  {' '}
+                  <Logo className="h-9" />
+                  <Copyright />
                 </div>
 
-                {/* Rest of the content */}
+                {/* Rest of the content
                 <div className="col-span-1 lg:col-span-4 flex justify-end lg:pt-6">
                   <div className="flex flex-wrap justify-end gap-x-6 text-sm">
                     <Sitemap />
                   </div>
-                </div>
+                </div> */}
               </div>
             </PlusGridRow>
             {/* <PlusGridRow className="flex justify-between">

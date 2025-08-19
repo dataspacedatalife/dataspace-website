@@ -110,13 +110,14 @@ export const metadata: Metadata = {
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Impulsando la innovación desde el CESGA.</Heading>
-      <Lead className="mt-6 max-w-3xl">
+      <Heading as="h1">Impulsando la innovación desde el CESGA</Heading>
+      {/* <Lead className="mt-6 max-w-3xl">
         El Centro de Supercomputación de Galicia (CESGA) aborda el desarrollo de
         tecnologías avanzadas para sectores estratégicos a través del
-        Demostrador Multisectorial DATALIFE.
-      </Lead>
-      <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
+        demostrador multisectorial DATALife.
+      </Lead> */}
+      <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12 items-start">
+        {/* Nuestra misión */}
         <div className="max-w-lg">
           <h2 className="text-2xl font-medium tracking-tight">
             Nuestra misión
@@ -129,76 +130,22 @@ function Header() {
             artificial, big data y computación de alto rendimiento.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            Este proyecto forma parte del Hub de Innovación Digital DATALIFE y
-            busca mostrar, mediante casos reales, cómo las tecnologías
-            emergentes pueden mejorar la competitividad de las empresas
-            gallegas. Apostamos por una Galicia conectada, sostenible y líder en
+            Este proyecto busca explotar, mediante casos reales, tecnologías
+            emergentes que puedan mejorar la competitividad de las empresas
+            gallegas, apostando por una Galicia conectada, sostenible y líder en
             innovación.
           </p>
         </div>
-        <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
-          <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
-            <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
-              <img
-                alt="Laboratorio de datos"
-                src="/cesga/2.jpg"
-                className="block size-full object-cover"
-              />
-            </div>
-            <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-              <img
-                alt="Análisis multisectorial"
-                src="/cesga/3.jpg"
-                className="block size-full object-cover"
-              />
-            </div>
-            <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
-              <img
-                alt="Tecnología e innovación"
-                src="/cesga/4.jpg"
-                className="block size-full object-cover"
-              />
-            </div>
-            <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-              <img
-                alt="Supercomputador Finisterrae"
-                src="/cesga/FTIII.png"
-                className="block size-full object-cover"
-              />
-            </div>
+
+        {/* Imagen */}
+        <div className="flex justify-center">
+          <div className="overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 max-w-lg">
+            <img
+              alt="Supercomputador Finisterrae"
+              src="/cesga/FTIII.png"
+              className="block w-full h-auto object-cover"
+            />
           </div>
-        </div>
-        <div className="max-lg:mt-16 lg:col-span-1">
-          <Subheading>Impacto del Proyecto</Subheading>
-          <hr className="mt-6 border-t border-gray-200" />
-          <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
-            <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Casos de uso</dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={0} end={7} />
-              </dd>
-            </div>
-            <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Sectores implicados</dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={0} end={4} />
-              </dd>
-            </div>
-            <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
-              <dt className="text-sm/6 text-gray-600">Tecnologías aplicadas</dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={1} end={6} />
-              </dd>
-            </div>
-            <div className="flex flex-col gap-y-2">
-              <dt className="text-sm/6 text-gray-600">
-                Organizaciones participantes
-              </dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={5} end={5} />
-              </dd>
-            </div>
-          </dl>
         </div>
       </section>
     </Container>

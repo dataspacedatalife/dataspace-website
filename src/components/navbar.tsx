@@ -138,7 +138,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
               <Link href="/" title="Home">
                 <div className="flex flex-row items-center gap-2 text-gray-950">
                   <Logo className="h-9" />
-                  <div className="text-3xl">DATALife | CESGA</div>
+                  <div className="text-3xl">DATAlife | CESGA</div>
                 </div>
               </Link>
             </PlusGridItem>

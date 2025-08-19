@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Dem MS DATALife',
-    default: 'Dem MS DATALife',
+    template: '%s - DATAlife | CESGA',
+    default: 'DATAlife | CESGA',
   },
 };
 

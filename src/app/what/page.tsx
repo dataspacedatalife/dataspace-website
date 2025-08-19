@@ -36,11 +36,11 @@ function Header() {
       </Lead>
 
       {/* Imagen + texto lado a lado */}
-      <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12 items-center">
-        <div className="max-w-lg">
-          <h2 className="text-2xl font-medium tracking-tight">Objetivo</h2>
-          <p className="mt-6 text-sm/6 text-gray-600">
-            Su objetivo es facilitar la colaboración basada en datos, respetando
+      <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12 items-start">
+        <div className="mt-10 lg:mt-0">
+          <h2 className="text-3xl font-medium tracking-tight">Objetivo</h2>
+          <p className="mt-6 text-lg/7 text-gray-600">
+            El objetivo es facilitar la colaboración basada en datos, respetando
             principios como la soberanía del dato, la privacidad y la ética. Los
             espacios de datos combinan tecnologías como infraestructuras de
             intercambio, estándares comunes y control de acceso, junto con
@@ -50,13 +50,15 @@ function Header() {
         </div>
 
         <div className="mt-10 lg:mt-0">
-          <h2 className="text-2xl font-medium tracking-tight">Motivación</h2>
-          <p className="mt-6 text-sm/6 text-gray-600">
-            Los retos en salud humana, animal y ambiental están interconectados
-            y requieren una visión conjunta basada en datos. Este demostrador
-            ofrece una plataforma para integrar y analizar información
-            multisectorial, facilitando decisiones informadas y políticas
-            públicas basadas en evidencia.
+          <h2 className="text-3xl font-medium tracking-tight">Motivación</h2>
+          <p className="mt-6 text-lg/7 text-gray-600">
+            Los grandes retos sociales, económicos y ambientales suelen estar
+            interconectados y requieren una visión conjunta basada en datos que
+            permitan afrontarlos. Los espacios de datos proporcionan un marco
+            para integrar y analizar información de distintos sectores, lo que
+            facilita la colaboración entre actores, la toma de decisiones
+            informadas y el desarrollo de políticas y servicios basados en
+            evidencia.
           </p>
           {/* <img
             src="/images/espacio-datos.jpg"
@@ -72,8 +74,7 @@ function Header() {
           <ShieldCheck className="text-blue-600 w-16 h-16 mb-6" />
           <h3 className="text-xl font-semibold mb-3">Seguridad</h3>
           <p className="text-gray-700 text-sm leading-relaxed">
-            Protección integral de los datos mediante cifrado, autenticación y
-            auditoría.
+            Protección integral de los datos mediante cifrado y autenticación.
           </p>
         </div>
 
@@ -106,8 +107,7 @@ function Header() {
           <Users className="text-pink-600 w-16 h-16 mb-6" />
           <h3 className="text-xl font-semibold mb-3">Colaboración</h3>
           <p className="text-gray-700 text-sm leading-relaxed">
-            Facilita la cooperación entre sectores públicos, privados y
-            ciudadanos.
+            Cooperación entre sectores públicos, privados y ciudadanos.
           </p>
         </div>
 

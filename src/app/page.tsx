@@ -52,7 +52,7 @@ function Hero() {
               Porque solo compartiendo datos se puede extraer su verdadero valor
             </p>
             <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-              <Button href="/what">Saber más</Button>
+              <Button href="/about">Saber más</Button>
               {/* <Button variant="secondary" href="/pricing">
                 See pricing
               </Button> */}
