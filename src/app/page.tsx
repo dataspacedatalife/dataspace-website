@@ -24,9 +24,9 @@ export const metadata: Metadata = {
 
 function Hero() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen flex flex-col">
       <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
-      <Container className="relative">
+      <div className="relative flex flex-col flex-1">
         {/* <Navbar
           banner={
             <Link
@@ -38,31 +38,36 @@ function Hero() {
             </Link>
           }
         /> */}
-        <Navbar />
+        <Container>
+          <Navbar />
+        </Container>
 
         {/* <div className="pt-8 pb-24 sm:pt-16 sm:pb-32 md:pt-24 md:pb-48">
 
         </div> */}
-        <div className="flex flex-row pt-2 pb-24 sm:pt-4 sm:pb-32 md:pt-6 md:pb-48">
-          <div className="pt-10 sm:pt-16 md:pt-30">
-            <h1 className="font-display text-3xl font-medium tracking-tight text-balance text-gray-950 sm:text-5xl md:text-6xl">
-              Centro demostrador de espacio de datos multisectorial One Health
-            </h1>
-            <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-              Porque solo compartiendo datos se puede extraer su verdadero valor
-            </p>
-            <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-              <Button href="/about">Saber más</Button>
-              {/* <Button variant="secondary" href="/pricing">
-                See pricing
-              </Button> */}
+        <div className="px-6 lg:px-8 flex-1 flex flex-col">
+          <div className="mx-auto max-w-2xl lg:max-w-7xl flex flex-1 place-items-center">
+            <div className="flex flex-row pt-2 pb-24 sm:pt-4 sm:pb-32 md:pt-6 md:pb-48">
+              <div className="pt-10 sm:pt-16 md:pt-30">
+                <h1 className="font-display text-3xl font-medium tracking-tight text-balance text-gray-950 sm:text-5xl md:text-6xl">
+                  Centro demostrador de espacio de datos multisectorial One
+                  Health
+                </h1>
+                <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
+                  Porque solo compartiendo datos se puede extraer su verdadero
+                  valor
+                </p>
+                <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
+                  <Button href="/about">Saber más</Button>
+                </div>
+              </div>
+              <div>
+                <Image alt="Logo image" src={LogoImage} className={''} />
+              </div>
             </div>
           </div>
-          <div>
-            <Image alt="Logo image" src={LogoImage} className={''} />
-          </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }
