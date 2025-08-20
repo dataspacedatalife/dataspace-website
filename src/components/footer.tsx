@@ -24,62 +24,7 @@ function CallToAction() {
         mandarnos un email a{' '}
         <Link href="mailto:dmd@cesga.es">dmd@cesga.es</Link>
       </p>
-      {/* <div className="mt-6"> */}
-      {/*   <Button className="w-full sm:w-auto" href="#"> */}
-      {/*     Get started */}
-      {/*   </Button> */}
-      {/* </div> */}
     </div>
-  );
-}
-
-function SitemapHeading({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-sm/6 font-medium text-gray-950/50">{children}</h3>;
-}
-
-function SitemapLinks({ children }: { children: React.ReactNode }) {
-  return <ul className="mt-6 space-y-4 text-sm/6">{children}</ul>;
-}
-
-function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
-  return (
-    <Link
-      {...props}
-      className="font-medium text-gray-950 data-hover:text-gray-950/75"
-    />
-  );
-}
-
-// function Sitemap() {
-//   return (
-//     <>
-//       <div>
-//         <SitemapHeading>Centro demostrador</SitemapHeading>
-//         <SitemapLinks>
-//           <SitemapLink href="/what">¿Qué?</SitemapLink>
-//           <SitemapLink href="/why">¿Por qué?</SitemapLink>
-//           <SitemapLink href="/how">¿Cómo?</SitemapLink>
-//         </SitemapLinks>
-//       </div>
-//       <div>
-//         <SitemapHeading>Compañía</SitemapHeading>
-//         <SitemapLinks>
-//           <SitemapLink href="/team">El equipo</SitemapLink>
-//           <SitemapLink href="#">Contacto</SitemapLink>
-//         </SitemapLinks>
-//       </div>
-//     </>
-//   )
-// }
-function Sitemap() {
-  return (
-    <>
-      {/* <SitemapLink href="/what">¿Qué?</SitemapLink>
-      <SitemapLink href="/why">¿Por qué?</SitemapLink>
-      <SitemapLink href="/how">¿Cómo?</SitemapLink>
-      <SitemapLink href="/team">El equipo</SitemapLink>
-      <SitemapLink href="#">Contacto</SitemapLink> */}
-    </>
   );
 }
 
@@ -199,27 +144,9 @@ export function Footer() {
                   <Logo className="h-9" />
                   <Copyright />
                 </div>
-
-                {/* Rest of the content
-                <div className="col-span-1 lg:col-span-4 flex justify-end lg:pt-6">
-                  <div className="flex flex-wrap justify-end gap-x-6 text-sm">
-                    <Sitemap />
-                  </div>
-                </div> */}
               </div>
             </PlusGridRow>
-            {/* <PlusGridRow className="flex justify-between">
-              <div>
-                <PlusGridItem className="py-3">
-                  <Copyright />
-                </PlusGridItem>
-              </div>
-              <div className="flex">
-                <PlusGridItem className="flex items-center gap-8 py-3">
-                  <SocialLinks />
-                </PlusGridItem>
-              </div>
-            </PlusGridRow> */}
+
             <div className="isolate">
               <Logos />
             </div>

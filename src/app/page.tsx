@@ -7,13 +7,11 @@ import { Footer } from '@/components/footer';
 import { Gradient } from '@/components/gradient';
 import { Keyboard } from '@/components/keyboard';
 import { LinkedAvatars } from '@/components/linked-avatars';
-import { LogoCloud } from '@/components/logo-cloud';
 import { LogoCluster } from '@/components/logo-cluster';
 import { LogoTimeline } from '@/components/logo-timeline';
 import { Map } from '@/components/map';
 import { Navbar } from '@/components/navbar';
 import { Screenshot } from '@/components/screenshot';
-import { Testimonials } from '@/components/testimonials';
 import { Heading, Subheading } from '@/components/text';
 import LogoImage from '../../public/logo1_svg_normal.svg';
 
@@ -208,17 +206,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Hero />
-      <main>
-        {/* <Container className="mt-10"> */}
-        {/*   <LogoCloud /> */}
-        {/* </Container> */}
-        {/* <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32"> */}
-        {/*   <FeatureSection /> */}
-        {/*   <BentoSection /> */}
-        {/* </div> */}
-        {/* <DarkBentoSection /> */}
-      </main>
-      {/* <Testimonials /> */}
+      <main></main>
       <Footer />
     </div>
   );

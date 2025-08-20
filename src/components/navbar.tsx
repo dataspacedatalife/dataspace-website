@@ -41,12 +41,6 @@ function DesktopNav() {
           >
             ¿Qué es un espacio de datos?
           </Link>
-          {/* <Link
-            href="/why"
-            className="px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
-          >
-            ¿Por qué?
-          </Link> */}
         </div>
       </PlusGridItem>
 
@@ -96,9 +90,6 @@ function MobileNav() {
             <Link href="/what" className="text-sm text-gray-800">
               ¿Qué es un espacio de datos?
             </Link>
-            {/* <Link href="/why" className="text-sm text-gray-800">
-              ¿Por qué un espacio de datos?
-            </Link> */}
           </div>
         </motion.div>
 

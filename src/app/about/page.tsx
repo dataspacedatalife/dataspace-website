@@ -1,11 +1,3 @@
-import {
-  FileLock,
-  Globe,
-  Landmark,
-  Network,
-  ShieldCheck,
-  Users,
-} from 'lucide-react';
 import type { Metadata } from 'next';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
@@ -95,12 +87,6 @@ function Header() {
               <AnimatedNumber start={1} end={4} />
             </dd>
           </div>
-          {/* <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
-            <dt className="text-sm/6 text-gray-600">Tecnologías aplicadas</dt>
-            <dd className="order-first text-6xl font-medium tracking-tight">
-              <AnimatedNumber start={1} end={6} />
-            </dd>
-          </div> */}
           <div className="flex flex-col items-center text-center gap-y-2">
             <dt className="text-sm/6 text-gray-600">
               Organizaciones participantes

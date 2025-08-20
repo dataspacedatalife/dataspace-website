@@ -44,7 +44,7 @@ export function Section({ title, items, icon: Icon }: SectionProps) {
     <div className="mt-20 text-center">
       <Subheading className="text-3xl md:text-4xl">{title}</Subheading>
       <hr className="mx-auto mt-6 w-24 border-t border-gray-200" />
-      <ul className="mx-auto mt-10 max-w-2xl space-y-4 text-center">
+      <ul className="mx-auto mt-10 max-w-2xl space-y-4 text-left">
         {items.map((item) => (
           <li key={item} className="flex items-start gap-3">
             <Icon className="h-5 w-5 text-gray-900 mt-0.5 shrink-0" />
