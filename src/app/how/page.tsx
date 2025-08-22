@@ -39,7 +39,7 @@ interface SectionProps {
   icon: any;
 }
 
-export function Section({ title, items, icon: Icon }: SectionProps) {
+function Section({ title, items, icon: Icon }: SectionProps) {
   return (
     <div className="mt-20 text-center">
       <Subheading className="text-3xl md:text-4xl">{title}</Subheading>
