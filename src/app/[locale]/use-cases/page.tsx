@@ -1,10 +1,11 @@
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
+import { getTranslations } from 'next-intl/server';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
+import { Link } from '@/components/link';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
 import LogoEmpresa from '../../../../public/logos/nuevoLogoCesga_mayo2023.png';
@@ -13,8 +14,8 @@ import LogoInverbis from '../../../../public/use-cases/Inverbis.png';
 import Logoi4life from '../../../../public/use-cases/i4life.png';
 import LogoUvigo from '../../../../public/use-cases/uvigo.png';
 
-export async function generateMetadata({ params: { locale } }) {
-  const t = await getTranslations({ locale, namespace: 'use-cases.metadata' });
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('use-cases.metadata');
   return {
     title: t('title'),
     description: t('description'),
@@ -57,7 +58,7 @@ const useCasesData = [
     imagen: Logoi4life,
     link: 'https://i4life.es/',
   },
-];
+] as const;
 
 const colors = ['bg-gradient-to-br from-blue-100 via-sky-100 to-cyan-100'];
 

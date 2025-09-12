@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Subheading } from '@/components/text';
 
-export async function generateMetadata({ params: { locale } }) {
-  const t = await getTranslations({ locale, namespace: 'team.metadata' });
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('team.metadata');
   return {
     title: t('title'),
     description: t('description'),
@@ -24,12 +25,8 @@ async function Header() {
           <h2 className="text-2xl font-medium tracking-tight">
             {t('mission')}
           </h2>
-          <p className="mt-6 text-sm/6 text-gray-600">
-            {t('missionText1')}
-          </p>
-          <p className="mt-8 text-sm/6 text-gray-600">
-            {t('missionText2')}
-          </p>
+          <p className="mt-6 text-sm/6 text-gray-600">{t('missionText1')}</p>
+          <p className="mt-8 text-sm/6 text-gray-600">{t('missionText2')}</p>
         </div>
 
         {/* Imagen */}

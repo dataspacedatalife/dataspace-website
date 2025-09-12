@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
 import { AnimatedNumber } from '@/components/animated-number';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
@@ -8,8 +9,8 @@ import { Navbar } from '@/components/navbar';
 import { Heading, Lead, Subheading } from '@/components/text';
 import EntornoDemostrador from '../../../../public/demostrador/demostrador_entorno.png';
 
-export async function generateMetadata({ params: { locale } }) {
-  const t = await getTranslations({ locale, namespace: 'about' });
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('about');
 
   return {
     title: t('header.title'),

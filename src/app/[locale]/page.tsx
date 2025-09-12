@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { BentoCard } from '@/components/bento-card';
 import { Button } from '@/components/button';
 import { Container } from '@/components/container';
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 };
 
 function Hero() {
+  const t = useTranslations('home.hero');
   return (
     <div className="relative min-h-screen flex flex-col">
       <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
@@ -48,15 +50,13 @@ function Hero() {
             <div className="flex flex-row pt-2 pb-24 sm:pt-4 sm:pb-32 md:pt-6 md:pb-48">
               <div className="pt-10 sm:pt-16 md:pt-30">
                 <h1 className="font-display text-3xl font-medium tracking-tight text-balance text-gray-950 sm:text-5xl md:text-6xl">
-                  Centro demostrador de espacio de datos multisectorial One
-                  Health
+                  {t('title')}
                 </h1>
                 <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-                  Porque solo compartiendo datos se puede extraer su verdadero
-                  valor
+                  {t('subtitle')}
                 </p>
                 <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-                  <Button href="/about">Saber más</Button>
+                  <Button href="/about">{t('button')}</Button>
                 </div>
               </div>
               <div>
