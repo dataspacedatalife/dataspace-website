@@ -1,0 +1,39 @@
+{
+  "home": {
+    "hero": {
+      "title": "Centro demostrador de espacio de datos multisectorial One Health",
+      "subtitle": "Porque solo compartiendo datos se puede extraer su verdadero valor",
+      "button": "Saber más"
+    }
+  },
+  "navbar": {
+    "participa": "Participa",
+    "casosDeUso": "Casos de uso",
+    "equipo": "El equipo",
+    "centroDemostrador": "Centro demostrador",
+    "saberMas": "Saber más",
+    "queEs": "¿Qué es un espacio de datos?"
+  },
+  "about": {
+    "header": {
+      "title": "¿Qué es el demostrador DATAlife?",
+      "lead": "Se trata de una plataforma que permite compartir y acceder a datos del sector salud de forma segura, ética, gobernada e interoperable, respetando la soberanía del dato.",
+      "imageAlt": "Entorno del demostrador DATAlife"
+    },
+    "objective": {
+      "title": "Objetivo del demostrador",
+      "text1": "El demostrador desarrollado en el marco del proyecto europeo Data Spaces Support Centre y liderado en Galicia por el CESGA, tiene como objetivo ilustrar cómo múltiples organizaciones del sector biotecnológico y de la salud pueden intercambiar datos de forma segura y controlada.",
+      "text2": "El sistema garantiza el cumplimiento normativo, la soberanía del dato y la interoperabilidad entre diferentes actores, desde hospitales y centros de investigación hasta empresas privadas."
+    },
+    "motivation": {
+      "title": "Motivación",
+      "text": "Los retos en salud humana, animal y ambiental están interconectados y requieren una visión conjunta basada en datos que permitan afrontarlos. Este demostrador ofrece una plataforma para integrar y analizar información multisectorial, facilitando decisiones informadas y políticas públicas basadas en evidencia."
+    },
+    "impact": {
+      "title": "Impacto del Proyecto",
+      "useCases": "Casos de uso",
+      "sectors": "Sectores implicados",
+      "organizations": "Organizaciones participantes"
+    }
+  }
+}

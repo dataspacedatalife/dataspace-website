@@ -1,0 +1,39 @@
+{
+  "home": {
+    "hero": {
+      "title": "One Health Multisectoral Data Space Demonstrator Center",
+      "subtitle": "Only by sharing data can its true value be extracted",
+      "button": "Learn more"
+    }
+  },
+  "navbar": {
+    "participa": "Participate",
+    "casosDeUso": "Use Cases",
+    "equipo": "Team",
+    "centroDemostrador": "Data Space Center",
+    "saberMas": "Learn more",
+    "queEs": "What is a Data Space?"
+  },
+  "about": {
+    "header": {
+      "title": "What is the DATAlife Demonstrator?",
+      "lead": "It is a platform that allows sharing and accessing health sector data securely, ethically, governed, and interoperably, respecting data sovereignty.",
+      "imageAlt": "DATAlife Demonstrator Environment"
+    },
+    "objective": {
+      "title": "Demonstrator Objective",
+      "text1": "The demonstrator, developed under the European project Data Spaces Support Centre and led in Galicia by CESGA, aims to illustrate how multiple organizations in the biotechnology and health sectors can exchange data safely and controlled.",
+      "text2": "The system ensures regulatory compliance, data sovereignty, and interoperability between different actors, from hospitals and research centers to private companies."
+    },
+    "motivation": {
+      "title": "Motivation",
+      "text": "Challenges in human, animal, and environmental health are interconnected and require a joint data-driven vision to address them. This demonstrator provides a platform to integrate and analyze multisectoral information, facilitating informed decisions and evidence-based public policies."
+    },
+    "impact": {
+      "title": "Project Impact",
+      "useCases": "Use Cases",
+      "sectors": "Involved Sectors",
+      "organizations": "Participating Organizations"
+    }
+  }
+}
