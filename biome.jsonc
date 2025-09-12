@@ -17,7 +17,35 @@
   },
   "linter": {
     "enabled": true,
-    "rules": { "recommended": false, "performance": { "noImgElement": "off" } },
+    "rules": {
+      "recommended": false,
+      "performance": { "noImgElement": "off" },
+      "style": {
+        "noRestrictedImports": {
+          "level": "error",
+          "options": {
+            "paths": {
+              "next/link": {
+                "importNames": ["default"],
+                "message": "Use `Link` from `@/components/link.tsx` instead"
+              },
+              "next/router": {
+                "importNames": ["useRouter"],
+                "message": "Use `useRouter` from `@/i18n/navigation` instead"
+              },
+              "next/navigation": {
+                "importNames": ["usePathname", "redirect"],
+                "message": "Use `@/i18n/navigation.ts` instead"
+              },
+              "@/i18n/navigation": {
+                "importNames": ["Link"],
+                "message": "Use `Link` from `@/components/link.tsx` instead"
+              }
+            }
+          }
+        }
+      }
+    },
     "domains": {
       "next": "recommended"
     }

@@ -1,14 +1,12 @@
 import * as Headless from '@headlessui/react';
-import NextLink, { type LinkProps } from 'next/link';
 import { forwardRef } from 'react';
+// biome-ignore lint/style/noRestrictedImports: this is the wrapper for the original Link
+import { Link as IntlLink } from '@/i18n/navigation';
 
 export const Link = forwardRef(function Link(
-  props: LinkProps & React.ComponentPropsWithoutRef<'a'>,
+  props: React.ComponentProps<typeof IntlLink> &
+    React.ComponentPropsWithoutRef<'a'>,
   ref: React.ForwardedRef<HTMLAnchorElement>,
 ) {
-  return (
-    <Headless.DataInteractive>
-      <NextLink ref={ref} {...props} />
-    </Headless.DataInteractive>
-  );
+  return <IntlLink ref={ref} {...props} />;
 });
