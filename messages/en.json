@@ -35,5 +35,189 @@
       "sectors": "Involved Sectors",
       "organizations": "Participating Organizations"
     }
+  },
+  "how": {
+    "metadata": {
+      "title": "Participate",
+      "description": "How to join the data space: who can participate, steps to join, commitments and benefits."
+    },
+    "header": {
+      "title": "Participate in the DATAlife data space",
+      "lead": "Share, consume or develop data-based services in a trusted environment that guarantees sovereignty, privacy and interoperability."
+    },
+    "who": {
+      "title": "Who can participate?",
+      "items": {
+        "0": "Hospitals, research centers and universities",
+        "1": "Public administrations and entities",
+        "2": "Companies, startups and technology centers",
+        "3": "National and European collaborations"
+      }
+    },
+    "benefits": {
+      "title": "Benefits",
+      "items": {
+        "0": "Integration with European actors and data spaces",
+        "1": "Provision of common services: catalogs, anonymization, analysis",
+        "2": "Opportunity to establish new collaborations and alliances"
+      }
+    },
+    "commitments": {
+      "title": "Commitments",
+      "items": {
+        "0": "Comply with the governance framework and the rules of access and use",
+        "1": "Guarantee data quality and traceability",
+        "2": "Respect privacy, security and ethics regulations",
+        "3": "Report incidents or disputes through the enabled channels"
+      }
+    },
+    "howToJoin": {
+      "title": "How to join",
+      "items": {
+        "0": "Request for participation through a Framework Agreement",
+        "1": "Validation by the governing authority (CESGA)",
+        "2": "Assignment of a role in the ecosystem",
+        "3": "Activation of credentials and access to services"
+      }
+    }
+  },
+  "team": {
+    "metadata": {
+      "title": "Team",
+      "description": "Driving innovation from CESGA. Our mission is to accelerate the digital transformation of the biotechnology, agrifood, forestry-sea-industrial and health sectors."
+    },
+    "header": {
+      "title": "Driving innovation from CESGA",
+      "mission": "Our mission",
+      "missionText1": "At CESGA, our mission is to accelerate the digital transformation of the biotechnology, agrifood, forestry-sea-industrial and health sectors. Through the multisectoral demonstrator, we provide solutions based on artificial intelligence, big data and high-performance computing.",
+      "missionText2": "This project seeks to exploit, through real cases, emerging technologies that can improve the competitiveness of Galician companies, betting on a connected, sustainable and leading Galicia in innovation.",
+      "imageAlt": "Finisterrae Supercomputer"
+    },
+    "team": {
+      "title": "The team",
+      "members": {
+        "jcacheiro": {
+          "name": "Javier Cacheiro",
+          "description": "Project coordinator",
+          "img": "jcacheiro.png"
+        },
+        "aambroa": {
+          "name": "Antón Ambroa",
+          "description": "Technical project coordinator",
+          "img": "aambroa.jpg"
+        },
+        "pferreiro": {
+          "name": "Pedro Ferreiro",
+          "description": "Project technician",
+          "img": "pferreiro.jpg"
+        },
+        "mcastineira": {
+          "name": "Marta Castiñeira",
+          "description": "Research technician in computational simulation",
+          "img": "mcastineira.jpg"
+        },
+        "ldiaz": {
+          "name": "Ledicia Díaz",
+          "description": "Research technician in Machine Learning and Data Science",
+          "img": "ldiaz.jpg"
+        },
+        "lvazquez": {
+          "name": "Lara Vázquez",
+          "description": "Research technician in Artificial Intelligence",
+          "img": "lvazquez.jpg"
+        }
+      }
+    }
+  },
+  "use-cases": {
+    "metadata": {
+      "title": "Use Cases",
+      "description": "Real-world examples of data space applications in different sectors: health, management, benchmarking and more."
+    },
+    "header": {
+      "title": "Use Cases",
+      "lead": "These are some of the use cases that are already taking advantage of data spaces to generate scientific, social and operational value."
+    },
+    "cases": {
+      "aidamed": {
+        "name": "AiDataMed",
+        "entity": "Chup/IISGS",
+        "objective": "Health data analysis"
+      },
+      "brilliant": {
+        "name": "Brilliant",
+        "entity": "IISGS",
+        "objective": "Sarcopenia observatory"
+      },
+      "gift": {
+        "name": "GIFT",
+        "entity": "Chup/IISGS",
+        "objective": "Gastrointestinal health"
+      },
+      "biomexplore": {
+        "name": "BiomeXplore",
+        "entity": "IISGS",
+        "objective": "Observatory of the population index of intestinal microbiota"
+      },
+      "salusbench": {
+        "name": "SALUSBENCH",
+        "entity": "Inverbis",
+        "objective": "Benchmarking of hospital management processes"
+      },
+      "celiaspace": {
+        "name": "CeliaSpace",
+        "entity": "Uvigo",
+        "objective": "Data from conversational assistants with seniors"
+      },
+      "datiacare": {
+        "name": "Datiacare",
+        "entity": "i4life",
+        "objective": "Care for the elderly"
+      }
+    }
+  },
+  "what": {
+    "metadata": {
+      "title": "What is a Data Space?",
+      "description": "We are building an ecosystem where data can be shared securely, governed and ethically among multiple organizations."
+    },
+    "header": {
+      "title": "What is a data space?",
+      "lead": "A data space is a structured framework that allows the exchange, access, management and use of data between multiple entities in a secure, interoperable and compliant manner."
+    },
+    "objective": {
+      "title": "Objective",
+      "text": "The objective is to facilitate data-based collaboration, respecting principles such as data sovereignty, privacy and ethics. Data spaces combine technologies such as exchange infrastructures, common standards and access control, together with legal and organizational agreements, to allow for shared and responsible use."
+    },
+    "motivation": {
+      "title": "Motivation",
+      "text": "The great social, economic and environmental challenges are often interconnected and require a joint vision based on data to face them. Data spaces provide a framework to integrate and analyze information from different sectors, which facilitates collaboration between actors, informed decision-making and the development of evidence-based policies and services."
+    },
+    "features": {
+      "security": {
+        "title": "Security",
+        "description": "Comprehensive data protection through encryption and authentication."
+      },
+      "interoperability": {
+        "title": "Interoperability",
+        "description": "Integration between platforms and systems through open standards."
+      },
+      "privacy": {
+        "title": "Privacy",
+        "description": "Data access based on consent and transparent policies."
+      },
+      "governance": {
+        "title": "Governance",
+        "description": "Clear rules on how information is accessed, used and shared."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Cooperation between public, private and citizen sectors."
+      },
+      "sovereignty": {
+        "title": "Data sovereignty",
+        "description": "Each organization maintains control over its own data."
+      }
+    }
   }
 }

@@ -6,22 +6,22 @@ import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead, Subheading } from '@/components/text';
 
-export const metadata: Metadata = {
-  title: 'Participa',
-  description:
-    'Cómo unirse al espacio de datos: quién puede participar, pasos de adhesión, compromisos y beneficios.',
-};
+export async function generateMetadata({ params: { locale } }) {
+  const t = await getTranslations({ locale, namespace: 'how' });
+  return {
+    title: t('metadata.title'),
+    description: t('metadata.description'),
+  };
+}
 
-function Header() {
+async function Header() {
+  const t = await getTranslations('how.header');
   return (
     <Container className="mt-24">
       <Heading as="h1" className="text-center">
-        Participa en el espacio de datos DATAlife
+        {t('title')}
       </Heading>
-      <Lead className="mt-6 text-center">
-        Comparte, consume o desarrolla servicios basados en datos en un entorno
-        confiable que garantiza soberanía, privacidad e interoperabilidad.
-      </Lead>
+      <Lead className="mt-6 text-center">{t('lead')}</Lead>
     </Container>
   );
 }
@@ -49,33 +49,13 @@ function Section({ title, items, icon: Icon }: SectionProps) {
   );
 }
 
-export default function Participa() {
-  const who = [
-    'Hospitales, centros de investigación y universidades',
-    'Administraciones y entidades públicas',
-    'Empresas, startups y centros tecnológicos',
-    'Colaboraciones nacionales y europeas',
-  ];
+export default async function How() {
+  const t = await getTranslations('how');
 
-  const benefits = [
-    'Integración con actores y espacios de datos europeos',
-    'Diposición de servicios comunes: catálogos, anonimización, análisis',
-    'Oportunidad de establecer nuevas colaboraciones y alianzas',
-  ];
-
-  const commitments = [
-    'Cumplir el marco de gobernanza y las reglas de acceso y uso',
-    'Garantizar calidad y trazabilidad de los datos',
-    'Respetar la normativa de privacidad, seguridad y ética',
-    'Reportar incidencias o disputas por los canales habilitados',
-  ];
-
-  const how = [
-    'Solicitud de participación mediante Acuerdo Marco',
-    'Validación por la autoridad de gobierno (CESGA)',
-    'Asignación de rol en el ecosistema',
-    'Activación de credenciales y acceso a servicios',
-  ];
+  const who = Object.values(t.raw('who.items'));
+  const benefits = Object.values(t.raw('benefits.items'));
+  const commitments = Object.values(t.raw('commitments.items'));
+  const howToJoin = Object.values(t.raw('howToJoin.items'));
 
   return (
     <main className="overflow-hidden">
@@ -87,20 +67,23 @@ export default function Participa() {
 
       <Container className="mt-20 mb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          <Section title="¿Quién puede participar?" items={who} icon={Users} />
-          <Section title="Beneficios" items={benefits} icon={CheckCircle2} />
-          <Section title="Compromisos" items={commitments} icon={ShieldCheck} />
-          <Section title="Cómo adherirse" items={how} icon={CheckCircle2} />
+          <Section title={t('who.title')} items={who} icon={Users} />
+          <Section
+            title={t('benefits.title')}
+            items={benefits}
+            icon={CheckCircle2}
+          />
+          <Section
+            title={t('commitments.title')}
+            items={commitments}
+            icon={ShieldCheck}
+          />
+          <Section
+            title={t('howToJoin.title')}
+            items={howToJoin}
+            icon={CheckCircle2}
+          />
         </div>
-
-        {/* <div className="mt-16 text-center">
-          <a
-            href="/formulario-adhesion"
-            className="inline-flex items-center rounded-full bg-gray-900 px-6 py-3 text-sm font-medium text-white hover:bg-gray-800"
-          >
-            Solicita tu adhesión
-          </a>
-        </div> */}
       </Container>
 
       <Footer />

@@ -8,23 +8,22 @@ import { Navbar } from '@/components/navbar';
 import { Heading, Lead, Subheading } from '@/components/text';
 import EntornoDemostrador from '../../../../public/demostrador/demostrador_entorno.png';
 
-export const metadata: Metadata = {
-  title: '¿Qué es el demostrador?',
-  description:
-    'El demostrador DATAlife permite experimentar con la compartición ética y segura de datos en el ámbito de la salud y biotecnología en Galicia.',
-};
+export async function generateMetadata({ params: { locale } }) {
+  const t = await getTranslations({ locale, namespace: 'about' });
 
-function Header() {
+  return {
+    title: t('header.title'),
+  };
+}
+
+async function Header() {
+  const t = await getTranslations('about');
   return (
     <Container className="mt-16">
       <Heading as="h1" className="text-center">
-        ¿Qué es el demostrador DATAlife?
+        {t('header.title')}
       </Heading>
-      <Lead className="mt-10 text-center">
-        Se trata de una plataforma que permite compartir y acceder a datos del
-        sector salud de forma segura, ética, gobernada e interoperable,
-        respetando la soberanía del dato.
-      </Lead>
+      <Lead className="mt-10 text-center">{t('header.lead')}</Lead>
 
       {/* Imagen + texto lado a lado */}
       <section className="mt-16 mb-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-16 items-center">
@@ -32,7 +31,7 @@ function Header() {
         <div className="mb-10 lg:mb-0 lg:order-2 flex justify-center">
           <Image
             src={EntornoDemostrador}
-            alt="Entorno del demostrador DATAlife"
+            alt={t('header.imageAlt')}
             className="w-full"
           />
         </div>
@@ -40,56 +39,39 @@ function Header() {
         {/* Texto */}
         <div className="max-w-2xl lg:order-1">
           <h2 className="text-3xl tracking-tight text-gray-900">
-            Objetivo del demostrador
+            {t('objective.title')}
           </h2>
-          <p className="mt-6 text-lg/7 text-gray-700">
-            El demostrador desarrollado en el marco del proyecto europeo
-            <span className="font-semibold"> Data Spaces Support Centre</span> y
-            liderado en Galicia por el{' '}
-            <span className="font-semibold">CESGA</span>, tiene como objetivo
-            ilustrar cómo múltiples organizaciones del sector biotecnológico y
-            de la salud pueden intercambiar datos de forma segura y controlada.
-          </p>
-          <p className="mt-4 text-lg/7 text-gray-700">
-            El sistema garantiza el cumplimiento normativo, la soberanía del
-            dato y la interoperabilidad entre diferentes actores, desde
-            hospitales y centros de investigación hasta empresas privadas.
-          </p>
+          <p className="mt-6 text-lg/7 text-gray-700">{t('objective.text1')}</p>
+          <p className="mt-4 text-lg/7 text-gray-700">{t('objective.text2')}</p>
 
           {/* Motivación */}
           <h2 className="mt-10 text-3xl tracking-tight text-gray-900">
-            Motivación
+            {t('motivation.title')}
           </h2>
-          <p className="mt-6 text-lg/7 text-gray-600">
-            Los retos en salud humana, animal y ambiental están interconectados
-            y requieren una visión conjunta basada en datos que permitan
-            afrontarlos. Este demostrador ofrece una plataforma para integrar y
-            analizar información multisectorial, facilitando decisiones
-            informadas y políticas públicas basadas en evidencia.
-          </p>
+          <p className="mt-6 text-lg/7 text-gray-600">{t('motivation.text')}</p>
         </div>
       </section>
 
       {/* Impacto del proyecto */}
       <div className="mb-16 max-lg:mt-16 lg:col-span-2">
-        <Subheading>Impacto del Proyecto</Subheading>
+        <Subheading>{t('impact.title')}</Subheading>
         <hr className="mt-6 border-t border-gray-200" />
         <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col items-center text-center gap-y-2 border-b border-dotted border-gray-200 pb-4">
-            <dt className="text-sm/6 text-gray-600">Casos de uso</dt>
+            <dt className="text-sm/6 text-gray-600">{t('impact.useCases')}</dt>
             <dd className="order-first text-6xl font-medium tracking-tight">
               <AnimatedNumber start={1} end={7} />
             </dd>
           </div>
           <div className="flex flex-col items-center text-center gap-y-2 border-b border-dotted border-gray-200 pb-4">
-            <dt className="text-sm/6 text-gray-600">Sectores implicados</dt>
+            <dt className="text-sm/6 text-gray-600">{t('impact.sectors')}</dt>
             <dd className="order-first text-6xl font-medium tracking-tight">
               <AnimatedNumber start={1} end={4} />
             </dd>
           </div>
           <div className="flex flex-col items-center text-center gap-y-2">
             <dt className="text-sm/6 text-gray-600">
-              Organizaciones participantes
+              {t('impact.organizations')}
             </dt>
             <dd className="order-first text-6xl font-medium tracking-tight">
               <AnimatedNumber start={1} end={6} />

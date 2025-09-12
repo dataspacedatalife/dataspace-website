@@ -35,5 +35,189 @@
       "sectors": "Sectores implicados",
       "organizations": "Organizaciones participantes"
     }
+  },
+  "how": {
+    "metadata": {
+      "title": "Participa",
+      "description": "Cómo unirse al espacio de datos: quién puede participar, pasos de adhesión, compromisos y beneficios."
+    },
+    "header": {
+      "title": "Participa en el espacio de datos DATAlife",
+      "lead": "Comparte, consume o desarrolla servicios basados en datos en un entorno confiable que garantiza soberanía, privacidad e interoperabilidad."
+    },
+    "who": {
+      "title": "¿Quién puede participar?",
+      "items": {
+        "0": "Hospitales, centros de investigación y universidades",
+        "1": "Administraciones y entidades públicas",
+        "2": "Empresas, startups y centros tecnológicos",
+        "3": "Colaboraciones nacionales y europeas"
+      }
+    },
+    "benefits": {
+      "title": "Beneficios",
+      "items": {
+        "0": "Integración con actores y espacios de datos europeos",
+        "1": "Disposición de servicios comunes: catálogos, anonimización, análisis",
+        "2": "Oportunidad de establecer nuevas colaboraciones y alianzas"
+      }
+    },
+    "commitments": {
+      "title": "Compromisos",
+      "items": {
+        "0": "Cumplir el marco de gobernanza y las reglas de acceso y uso",
+        "1": "Garantizar calidad y trazabilidad de los datos",
+        "2": "Respetar la normativa de privacidad, seguridad y ética",
+        "3": "Reportar incidencias o disputas por los canales habilitados"
+      }
+    },
+    "howToJoin": {
+      "title": "Cómo adherirse",
+      "items": {
+        "0": "Solicitud de participación mediante Acuerdo Marco",
+        "1": "Validación por la autoridad de gobierno (CESGA)",
+        "2": "Asignación de rol en el ecosistema",
+        "3": "Activación de credenciales y acceso a servicios"
+      }
+    }
+  },
+  "team": {
+    "metadata": {
+      "title": "Equipo",
+      "description": "Impulsando la innovación desde el CESGA. Nuestra misión es acelerar la transformación digital de los sectores de la biotecnología, agroalimentación, forestal-mar-industrial y salud."
+    },
+    "header": {
+      "title": "Impulsando la innovación desde el CESGA",
+      "mission": "Nuestra misión",
+      "missionText1": "En CESGA, nuestra misión es acelerar la transformación digital de los sectores de la biotecnología, agroalimentación, forestal-mar-industrial y salud. A través del demostrador multisectorial, proporcionamos soluciones basadas en inteligencia artificial, big data y computación de alto rendimiento.",
+      "missionText2": "Este proyecto busca explotar, mediante casos reales, tecnologías emergentes que puedan mejorar la competitividad de las empresas gallegas, apostando por una Galicia conectada, sostenible y líder en innovación.",
+      "imageAlt": "Supercomputador Finisterrae"
+    },
+    "team": {
+      "title": "El equipo",
+      "members": {
+        "jcacheiro": {
+          "name": "Javier Cacheiro",
+          "description": "Coordinador de proyecto",
+          "img": "jcacheiro.png"
+        },
+        "aambroa": {
+          "name": "Antón Ambroa",
+          "description": "Coordinador técnico de proyecto",
+          "img": "aambroa.jpg"
+        },
+        "pferreiro": {
+          "name": "Pedro Ferreiro",
+          "description": "Técnico de proyector",
+          "img": "pferreiro.jpg"
+        },
+        "mcastineira": {
+          "name": "Marta Castiñeira",
+          "description": "Técnica investigadora en simulación computacional",
+          "img": "mcastineira.jpg"
+        },
+        "ldiaz": {
+          "name": "Ledicia Díaz",
+          "description": "Técnica investigadora en Machine Learning y Data Science",
+          "img": "ldiaz.jpg"
+        },
+        "lvazquez": {
+          "name": "Lara Vázquez",
+          "description": "Técnica investigadora en Artificial Intelligence",
+          "img": "lvazquez.jpg"
+        }
+      }
+    }
+  },
+  "use-cases": {
+    "metadata": {
+      "title": "Casos de uso",
+      "description": "Ejemplos reales de aplicación de espacios de datos en distintos sectores: salud, gestión, benchmarking y más."
+    },
+    "header": {
+      "title": "Casos de uso",
+      "lead": "Estos son algunos de los casos de uso que ya están aprovechando los espacios de datos para generar valor científico, social y operativo."
+    },
+    "cases": {
+      "aidamed": {
+        "name": "AiDataMed",
+        "entity": "Chup/IISGS",
+        "objective": "Análisis de datos sanitarios"
+      },
+      "brilliant": {
+        "name": "Brilliant",
+        "entity": "IISGS",
+        "objective": "Observatorio de sarcopenia"
+      },
+      "gift": {
+        "name": "GIFT",
+        "entity": "Chup/IISGS",
+        "objective": "Salud gastrointestinal"
+      },
+      "biomexplore": {
+        "name": "BiomeXplore",
+        "entity": "IISGS",
+        "objective": "Observatorio del índice poblacional de microbiota intestinal"
+      },
+      "salusbench": {
+        "name": "SALUSBENCH",
+        "entity": "Inverbis",
+        "objective": "Benchmarking de procesos de gestión hospitalaria"
+      },
+      "celiaspace": {
+        "name": "CeliaSpace",
+        "entity": "Uvigo",
+        "objective": "Datos de asistentes conversacionales con seniors"
+      },
+      "datiacare": {
+        "name": "Datiacare",
+        "entity": "i4life",
+        "objective": "Cuidado de personas mayores"
+      }
+    }
+  },
+  "what": {
+    "metadata": {
+      "title": "¿Qué es un espacio de datos?",
+      "description": "Estamos construyendo un ecosistema donde los datos puedan ser compartidos de forma segura, gobernada y ética entre múltiples organizaciones."
+    },
+    "header": {
+      "title": "¿Qué es un espacio de datos?",
+      "lead": "Un espacio de datos es un marco estructurado que permite el intercambio, acceso, gestión y uso de datos entre múltiples entidades de manera segura, interoperable y conforme a normativas."
+    },
+    "objective": {
+      "title": "Objetivo",
+      "text": "El objetivo es facilitar la colaboración basada en datos, respetando principios como la soberanía del dato, la privacidad y la ética. Los espacios de datos combinan tecnologías como infraestructuras de intercambio, estándares comunes y control de acceso, junto con acuerdos legales y organizativos, para permitir un uso compartido y responsable."
+    },
+    "motivation": {
+      "title": "Motivación",
+      "text": "Los grandes retos sociales, económicos y ambientales suelen estar interconectados y requieren una visión conjunta basada en datos que permitan afrontarlos. Los espacios de datos proporcionan un marco para integrar y analizar información de distintos sectores, lo que facilita la colaboración entre actores, la toma de decisiones informadas y el desarrollo de políticas y servicios basados en evidencia."
+    },
+    "features": {
+      "security": {
+        "title": "Seguridad",
+        "description": "Protección integral de los datos mediante cifrado y autenticación."
+      },
+      "interoperability": {
+        "title": "Interoperabilidad",
+        "description": "Integración entre plataformas y sistemas mediante estándares abiertos."
+      },
+      "privacy": {
+        "title": "Privacidad",
+        "description": "Acceso a datos basado en consentimiento y políticas transparentes."
+      },
+      "governance": {
+        "title": "Gobernanza",
+        "description": "Normas claras sobre cómo se accede, usa y comparte la información."
+      },
+      "collaboration": {
+        "title": "Colaboración",
+        "description": "Cooperación entre sectores públicos, privados y ciudadanos."
+      },
+      "sovereignty": {
+        "title": "Soberanía del dato",
+        "description": "Cada organización mantiene control sobre sus propios datos."
+      }
+    }
   }
 }

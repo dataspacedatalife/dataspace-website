@@ -13,73 +13,56 @@ import LogoInverbis from '../../../../public/use-cases/Inverbis.png';
 import Logoi4life from '../../../../public/use-cases/i4life.png';
 import LogoUvigo from '../../../../public/use-cases/uvigo.png';
 
-export const metadata: Metadata = {
-  title: 'Casos de uso',
-  description:
-    'Ejemplos reales de aplicación de espacios de datos en distintos sectores: salud, gestión, benchmarking y más.',
-};
+export async function generateMetadata({ params: { locale } }) {
+  const t = await getTranslations({ locale, namespace: 'use-cases.metadata' });
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
-const useCases = [
+const useCasesData = [
   {
-    nombre: 'AiDataMed',
-    entidad: 'Chup/IISGS',
-    objetivo: 'Análisis de datos sanitarios',
+    id: 'aidamed',
     imagen: LogoIISGS,
     link: 'https://www.iisgaliciasur.es/',
   },
   {
-    nombre: 'Brilliant',
-    entidad: 'IISGS',
-    objetivo: 'Observatorio de sarcopenia',
+    id: 'brilliant',
     imagen: LogoIISGS,
     link: 'https://www.iisgaliciasur.es/',
   },
   {
-    nombre: 'GIFT',
-    entidad: 'Chup/IISGS',
-    objetivo: 'Salud gastrointestinal',
+    id: 'gift',
     imagen: LogoIISGS,
     link: 'https://www.iisgaliciasur.es/',
   },
   {
-    nombre: 'BiomeXplore',
-    entidad: 'IISGS',
-    objetivo: 'Observatorio del índice poblacional de microbiota intestinal',
+    id: 'biomexplore',
     imagen: LogoIISGS,
     link: 'https://www.iisgaliciasur.es/',
   },
   {
-    nombre: 'SALUSBENCH',
-    entidad: 'Inverbis',
-    objetivo: 'Benchmarking de procesos de gestión hospitalaria',
+    id: 'salusbench',
     imagen: LogoInverbis,
     link: 'https://web.inverbisanalytics.com/',
   },
   {
-    nombre: 'CeliaSpace',
-    entidad: 'Uvigo',
-    objetivo: 'Datos de asistentes conversacionales con seniors',
+    id: 'celiaspace',
     imagen: LogoUvigo,
     link: 'https://www.uvigo.gal/',
   },
   {
-    nombre: 'Datiacare',
-    entidad: 'i4life',
-    objetivo: 'Cuidado de personas mayores',
+    id: 'datiacare',
     imagen: Logoi4life,
     link: 'https://i4life.es/',
   },
-] satisfies {
-  nombre: string;
-  entidad: string;
-  objetivo: string;
-  imagen?: React.ComponentProps<typeof Image>['src'];
-  link: string;
-}[];
+];
 
 const colors = ['bg-gradient-to-br from-blue-100 via-sky-100 to-cyan-100'];
 
-function Header() {
+async function Header() {
+  const t = await getTranslations('use-cases.header');
   return (
     <Container className="mt-16 flex flex-col items-center">
       <div className="flex items-center mb-6">
@@ -87,18 +70,23 @@ function Header() {
           as="h1"
           className="text-4xl font-extrabold text-gray-900 mx-auto"
         >
-          Casos de uso
+          {t('title')}
         </Heading>
       </div>
-      <Lead className="mt-6 text-center">
-        Estos son algunos de los casos de uso que ya están aprovechando los
-        espacios de datos para generar valor científico, social y operativo.
-      </Lead>
+      <Lead className="mt-6 text-center">{t('lead')}</Lead>
     </Container>
   );
 }
 
-function UseCaseGrid() {
+async function UseCaseGrid() {
+  const t = await getTranslations('use-cases.cases');
+  const useCases = useCasesData.map((uc) => ({
+    ...uc,
+    nombre: t(`${uc.id}.name`),
+    entidad: t(`${uc.id}.entity`),
+    objetivo: t(`${uc.id}.objective`),
+  }));
+
   return (
     <Container className="py-24">
       <div className="flex flex-wrap justify-center gap-8">
@@ -126,7 +114,7 @@ function UseCaseGrid() {
                 <div className="flex-shrink-0 w-20 h-20 bg-white/70 p-2 rounded-lg flex items-center justify-center">
                   <Image
                     src={imagenSrc}
-                    alt={`Logo de ${caso.entidad}`}
+                    alt={`Logo of ${caso.entidad}`}
                     className="object-contain w-full h-full opacity-80"
                   />
                 </div>
