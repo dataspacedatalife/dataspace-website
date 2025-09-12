@@ -1,11 +1,4 @@
-import {
-  CheckCircle2,
-  Users,
-  Landmark,
-  Network,
-  Globe,
-  ShieldCheck,
-} from 'lucide-react';
+import { CheckCircle2, Globe, ShieldCheck, Users } from 'lucide-react';
 import type { Metadata } from 'next';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';

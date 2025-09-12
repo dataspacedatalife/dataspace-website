@@ -5,10 +5,6 @@ import {
   Network,
   ShieldCheck,
   Users,
-  Brain,
-  Database,
-  Share2,
-  Users2,
 } from 'lucide-react';
 import type { Metadata } from 'next';
 import { Container } from '@/components/container';

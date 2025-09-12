@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
+import { AnimatedNumber } from '@/components/animated-number';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead, Subheading } from '@/components/text';
-import Image from 'next/image';
-import { AnimatedNumber } from '@/components/animated-number';
-import EntornoDemostrador from '../../../public/demostrador/demostrador_entorno.png';
+import EntornoDemostrador from '../../../../public/demostrador/demostrador_entorno.png';
 
 export const metadata: Metadata = {
   title: '¿Qué es el demostrador?',

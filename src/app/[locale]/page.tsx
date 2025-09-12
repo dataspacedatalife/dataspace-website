@@ -13,7 +13,7 @@ import { Map } from '@/components/map';
 import { Navbar } from '@/components/navbar';
 import { Screenshot } from '@/components/screenshot';
 import { Heading, Subheading } from '@/components/text';
-import LogoImage from '../../public/logo1_svg_normal.svg';
+import LogoImage from '../../../public/logo1_svg_normal.svg';
 
 export const metadata: Metadata = {
   description:

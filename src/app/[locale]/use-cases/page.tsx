@@ -1,17 +1,17 @@
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
-import LogoEmpresa from '../../../public/logos/nuevoLogoCesga_mayo2023.png';
-import LogoIISGS from '../../../public/use-cases/IISGS.png';
-import LogoInverbis from '../../../public/use-cases/Inverbis.png';
-import Logoi4life from '../../../public/use-cases/i4life.png';
-import LogoUvigo from '../../../public/use-cases/uvigo.png';
-import Link from 'next/link';
+import LogoEmpresa from '../../../../public/logos/nuevoLogoCesga_mayo2023.png';
+import LogoIISGS from '../../../../public/use-cases/IISGS.png';
+import LogoInverbis from '../../../../public/use-cases/Inverbis.png';
+import Logoi4life from '../../../../public/use-cases/i4life.png';
+import LogoUvigo from '../../../../public/use-cases/uvigo.png';
 
 export const metadata: Metadata = {
   title: 'Casos de uso',
