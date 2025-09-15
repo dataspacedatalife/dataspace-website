@@ -6,13 +6,18 @@
       "button": "Learn more"
     }
   },
-  "navbar": {
+  "Navbar": {
+    "home": "Home",
+    "centro_demostrador": "Demonstrator Center",
+    "saber_mas": "Learn more",
+    "que_es_un_espacio": "What is a data space?",
     "participa": "Participate",
-    "casosDeUso": "Use Cases",
-    "equipo": "Team",
-    "centroDemostrador": "Data Space Center",
-    "saberMas": "Learn more",
-    "queEs": "What is a Data Space?"
+    "casos_de_uso": "Use cases",
+    "el_equipo": "The team",
+    "idioma": "Language",
+    "espanol": "Español",
+    "english": "English",
+    "galego": "Galego"
   },
   "about": {
     "header": {
@@ -219,5 +224,15 @@
         "description": "Each organization maintains control over its own data."
       }
     }
+  },
+  "Footer": {
+    "contact_title": "Contact us!",
+    "contact_subtitle": "Interested in the project?",
+    "contact_text": "If you are interested in learning more or participating in this project, you can send us an email at",
+    "email": "dmd@cesga.es",
+    "social_facebook": "Visit us on Facebook",
+    "social_x": "Visit us on X",
+    "social_linkedin": "Visit us on LinkedIn",
+    "copyright": "DATAlife | CESGA"
   }
 }
