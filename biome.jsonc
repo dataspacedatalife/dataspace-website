@@ -34,7 +34,7 @@
                 "message": "Use `useRouter` from `@/i18n/navigation` instead"
               },
               "next/navigation": {
-                "importNames": ["usePathname", "redirect"],
+                "importNames": ["usePathname", "redirect", "useRouter"],
                 "message": "Use `@/i18n/navigation.ts` instead"
               },
               "@/i18n/navigation": {

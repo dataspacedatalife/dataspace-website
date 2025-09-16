@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import { AnimatedNumber } from '@/components/animated-number';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
@@ -8,6 +8,7 @@ import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead, Subheading } from '@/components/text';
 import EntornoDemostrador from '../../../../public/demostrador/demostrador_entorno.png';
+import EntornoDemostradorIngles from '../../../../public/demostrador/demostrador_entorno_ingles.png';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('about');
@@ -19,6 +20,10 @@ export async function generateMetadata(): Promise<Metadata> {
 
 async function Header() {
   const t = await getTranslations('about');
+  const locale = await getLocale();
+
+  const imageSrc =
+    locale === 'en' ? EntornoDemostradorIngles : EntornoDemostrador;
   return (
     <Container className="mt-16">
       <Heading as="h1" className="text-center">
@@ -30,11 +35,7 @@ async function Header() {
       <section className="mt-16 mb-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-16 items-center">
         {/* Imagen primero en móvil */}
         <div className="mb-10 lg:mb-0 lg:order-2 flex justify-center">
-          <Image
-            src={EntornoDemostrador}
-            alt={t('header.imageAlt')}
-            className="w-full"
-          />
+          <Image src={imageSrc} alt={t('header.imageAlt')} className="w-full" />
         </div>
 
         {/* Texto */}

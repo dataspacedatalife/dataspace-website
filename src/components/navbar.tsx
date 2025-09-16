@@ -7,37 +7,34 @@ import {
 } from '@headlessui/react';
 import { Bars2Icon } from '@heroicons/react/24/solid';
 import { motion } from 'motion/react';
-import { useRouter } from 'next/navigation';
-import { useLocale, useTranslations } from 'next-intl';
+import { type Locale, useLocale, useTranslations } from 'next-intl';
+import { usePathname, useRouter } from '@/i18n/navigation';
 import { Link } from './link';
 import { Logo } from './logo';
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid';
 
 const languageOptions = [
-  { code: 'es', key: 'espanol' as const },
-  { code: 'en', key: 'english' as const },
-];
+  { code: 'es', key: 'espanol' },
+  { code: 'en', key: 'english' },
+] as const satisfies { code: Locale; key: string }[];
 
 function LanguageSelector() {
   const t = useTranslations('Navbar');
   const currentLocale = useLocale();
   const router = useRouter();
+  const pathname = usePathname();
 
-  function switchLanguage(lang: string) {
-    const pathname = window.location.pathname;
-    const segments = pathname.split('/').filter(Boolean);
-    if (languageOptions.some((l) => l.code === segments[0])) {
-      segments[0] = lang;
-    } else {
-      segments.unshift(lang);
-    }
-    router.push('/' + segments.join('/'));
+  const currentKey =
+    languageOptions.find(({ code }) => code === currentLocale)?.key ?? 'idioma';
+
+  function switchLanguage(lang: Locale) {
+    router.replace(pathname, { locale: lang });
   }
 
   return (
     <div className="relative group flex">
       <span className="flex items-center px-4 py-3 text-base font-medium text-gray-950 cursor-pointer">
-        🌐 {t('idioma')}
+        🌐 {t(currentKey)}
       </span>
       <div className="absolute left-0 top-full hidden w-40 flex-col rounded-lg border border-gray-200 bg-white shadow-md group-hover:flex">
         {languageOptions.map(({ code, key }) => (
@@ -64,16 +61,10 @@ function MobileLanguageSelector() {
   const t = useTranslations('Navbar');
   const currentLocale = useLocale();
   const router = useRouter();
+  const pathname = usePathname();
 
-  function switchLanguage(lang: string) {
-    const pathname = window.location.pathname;
-    const segments = pathname.split('/').filter(Boolean);
-    if (languageOptions.some((l) => l.code === segments[0])) {
-      segments[0] = lang;
-    } else {
-      segments.unshift(lang);
-    }
-    router.push('/' + segments.join('/'));
+  function switchLanguage(lang: Locale) {
+    router.replace(pathname, { locale: lang });
   }
 
   return (
