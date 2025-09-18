@@ -2,7 +2,7 @@
   "home": {
     "hero": {
       "title": "One Health Multisectoral Data Space Demonstrator Center",
-      "subtitle": "Only by sharing data can its true value be extracted",
+      "subtitle": "Only by sharing data can we unlock its true power",
       "button": "Learn more"
     }
   },
@@ -12,8 +12,8 @@
     "saber_mas": "Learn more",
     "que_es_un_espacio": "What is a data space?",
     "participa": "Participate",
-    "casos_de_uso": "Use cases",
-    "el_equipo": "The team",
+    "casos_de_uso": "Current Users",
+    "el_equipo": "The Team",
     "idioma": "Language",
     "espanol": "Español",
     "english": "English",
@@ -22,12 +22,12 @@
   "about": {
     "header": {
       "title": "What is the DATAlife Demonstrator?",
-      "lead": "It is a platform that allows sharing and accessing health sector data securely, ethically, governed, and interoperably, respecting data sovereignty.",
+      "lead": "It is a platform that allows sharing and accessing health data in a secure, ethical, governed and interoperable manner, respecting data sovereignty.",
       "imageAlt": "DATAlife Demonstrator Environment"
     },
     "objective": {
       "title": "Demonstrator Objective",
-      "text1": "The demonstrator, developed under the European project Data Spaces Support Centre and led in Galicia by CESGA, aims to illustrate how multiple organizations in the biotechnology and health sectors can exchange data safely and controlled.",
+      "text1": "The demonstrator, developed under the European project Data Spaces Support Centre and led in Galicia by CESGA, aims to illustrate how multiple organizations in the biotechnology and health sectors can exchange data safely and following controlled protocols.",
       "text2": "The system ensures regulatory compliance, data sovereignty, and interoperability between different actors, from hospitals and research centers to private companies."
     },
     "motivation": {
@@ -52,38 +52,38 @@
     },
     "who": {
       "title": "Who can participate?",
-      "items": {
-        "0": "Hospitals, research centers and universities",
-        "1": "Public administrations and entities",
-        "2": "Companies, startups and technology centers",
-        "3": "National and European collaborations"
-      }
+      "items": [
+        "Hospitals, research centers and universities",
+        "Public administrations and entities",
+        "Companies, startups and technology centers",
+        "National and European collaborations"
+      ]
     },
     "benefits": {
       "title": "Benefits",
-      "items": {
-        "0": "Integration with European actors and data spaces",
-        "1": "Provision of common services: catalogs, anonymization, analysis",
-        "2": "Opportunity to establish new collaborations and alliances"
-      }
+      "items": [
+        "Integration with European actors and data spaces",
+        "Provision of common services: catalogs, anonymization, analysis",
+        "Opportunity to establish new collaborations and alliances"
+      ]
     },
     "commitments": {
       "title": "Commitments",
-      "items": {
-        "0": "Comply with the governance framework and the rules of access and use",
-        "1": "Guarantee data quality and traceability",
-        "2": "Respect privacy, security and ethics regulations",
-        "3": "Report incidents or disputes through the enabled channels"
-      }
+      "items": [
+        "Comply with the governance framework and the rules of access and use",
+        "Guarantee data quality and traceability",
+        "Respect privacy, security and ethics regulations",
+        "Report incidents or disputes through the enabled channels"
+      ]
     },
     "howToJoin": {
       "title": "How to join",
-      "items": {
-        "0": "Request for participation through a Framework Agreement",
-        "1": "Validation by the governing authority (CESGA)",
-        "2": "Assignment of a role in the ecosystem",
-        "3": "Activation of credentials and access to services"
-      }
+      "items": [
+        "Request for participation through a Framework Agreement",
+        "Validation by the governing authority (CESGA)",
+        "Assignment of a role in the ecosystem",
+        "Activation of credentials and access to services"
+      ]
     }
   },
   "team": {
@@ -162,7 +162,7 @@
       "biomexplore": {
         "name": "BiomeXplore",
         "entity": "IISGS",
-        "objective": "Observatory of the population index of intestinal microbiota"
+        "objective": "Intestinal microbiota population indices observatory"
       },
       "salusbench": {
         "name": "SALUSBENCH",
@@ -177,7 +177,7 @@
       "datiacare": {
         "name": "Datiacare",
         "entity": "i4life",
-        "objective": "Care for the elderly"
+        "objective": "Elderly care"
       }
     }
   },
@@ -196,7 +196,7 @@
     },
     "motivation": {
       "title": "Motivation",
-      "text": "The great social, economic and environmental challenges are often interconnected and require a joint vision based on data to face them. Data spaces provide a framework to integrate and analyze information from different sectors, which facilitates collaboration between actors, informed decision-making and the development of evidence-based policies and services."
+      "text": "The great social, economic and environmental challenges are often interconnected and require a joint vision, based on data, to tackle them. Data spaces provide a framework to integrate and analyze information from different sectors, which facilitates collaboration between actors, informed decision-making and the development of evidence-based policies and services."
     },
     "features": {
       "security": {

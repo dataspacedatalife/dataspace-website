@@ -52,11 +52,10 @@ function Section({ title, items, icon: Icon }: SectionProps) {
 
 export default async function How() {
   const t = await getTranslations('how');
-
-  const who = Object.values(t.raw('who.items'));
-  const benefits = Object.values(t.raw('benefits.items'));
-  const commitments = Object.values(t.raw('commitments.items'));
-  const howToJoin = Object.values(t.raw('howToJoin.items'));
+  const who = t.raw('who.items') as string[];
+  const benefits = t.raw('benefits.items') as string[];
+  const commitments = t.raw('commitments.items') as string[];
+  const howToJoin = t.raw('howToJoin.items') as string[];
 
   return (
     <main className="overflow-hidden">

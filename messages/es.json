@@ -6,14 +6,14 @@
       "button": "Saber más"
     }
   },
- "Navbar": {
+  "Navbar": {
     "home": "Inicio",
-    "centro_demostrador": "Centro demostrador",
+    "centro_demostrador": "Centro Demostrador",
     "saber_mas": "Saber más",
     "que_es_un_espacio": "¿Qué es un espacio de datos?",
     "participa": "Participa",
-    "casos_de_uso": "Casos de uso",
-    "el_equipo": "El equipo",
+    "casos_de_uso": "Casos de Uso",
+    "el_equipo": "El Equipo",
     "idioma": "Idioma",
     "espanol": "Español",
     "english": "English",
@@ -52,38 +52,38 @@
     },
     "who": {
       "title": "¿Quién puede participar?",
-      "items": {
-        "0": "Hospitales, centros de investigación y universidades",
-        "1": "Administraciones y entidades públicas",
-        "2": "Empresas, startups y centros tecnológicos",
-        "3": "Colaboraciones nacionales y europeas"
-      }
+      "items": [
+        "Hospitales, centros de investigación y universidades",
+        "Administraciones y entidades públicas",
+        "Empresas, startups y centros tecnológicos",
+        "Colaboraciones nacionales y europeas"
+      ]
     },
     "benefits": {
       "title": "Beneficios",
-      "items": {
-        "0": "Integración con actores y espacios de datos europeos",
-        "1": "Disposición de servicios comunes: catálogos, anonimización, análisis",
-        "2": "Oportunidad de establecer nuevas colaboraciones y alianzas"
-      }
+      "items": [
+        "Integración con actores y espacios de datos europeos",
+        "Disposición de servicios comunes: catálogos, anonimización, análisis",
+        "Oportunidad de establecer nuevas colaboraciones y alianzas"
+      ]
     },
     "commitments": {
       "title": "Compromisos",
-      "items": {
-        "0": "Cumplir el marco de gobernanza y las reglas de acceso y uso",
-        "1": "Garantizar calidad y trazabilidad de los datos",
-        "2": "Respetar la normativa de privacidad, seguridad y ética",
-        "3": "Reportar incidencias o disputas por los canales habilitados"
-      }
+      "items": [
+        "Cumplir el marco de gobernanza y las reglas de acceso y uso",
+        "Garantizar calidad y trazabilidad de los datos",
+        "Respetar la normativa de privacidad, seguridad y ética",
+        "Reportar incidencias o disputas por los canales habilitados"
+      ]
     },
     "howToJoin": {
       "title": "Cómo adherirse",
-      "items": {
-        "0": "Solicitud de participación mediante Acuerdo Marco",
-        "1": "Validación por la autoridad de gobierno (CESGA)",
-        "2": "Asignación de rol en el ecosistema",
-        "3": "Activación de credenciales y acceso a servicios"
-      }
+      "items": [
+        "Solicitud de participación mediante Acuerdo Marco",
+        "Validación por la autoridad de gobierno (CESGA)",
+        "Asignación de rol en el ecosistema",
+        "Activación de credenciales y acceso a servicios"
+      ]
     }
   },
   "team": {

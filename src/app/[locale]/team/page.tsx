@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import type { MessageKeys, Messages, NamespaceKeys } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
@@ -66,7 +67,10 @@ function Person({
 
 async function Team() {
   const t = await getTranslations('team.team');
-  const members = t.raw('members');
+  const members = t.raw('members' as Parameters<typeof t.raw>[0]) as Record<
+    string,
+    { name: string; description: string; img: string }
+  >;
 
   return (
     <Container className="my-32">
@@ -78,12 +82,12 @@ async function Team() {
         role="list"
         className="mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
       >
-        {Object.keys(members).map((key) => (
+        {Object.entries(members).map(([key, member]) => (
           <Person
             key={key}
-            name={members[key].name}
-            description={members[key].description}
-            img={`/team/${members[key].img}`}
+            name={member.name}
+            description={member.description}
+            img={`/team/${member.img}`}
           />
         ))}
       </ul>
