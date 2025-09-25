@@ -80,7 +80,7 @@ async function Team() {
       <hr className="mt-6 border-t border-gray-200" />
       <ul
         role="list"
-        className="mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+        className="mx-auto mt-16 flex flex-row flex-wrap *:w-full md:*:w-1/2 lg:*:w-1/4 gap-y-8 justify-center"
       >
         {Object.entries(members).map(([key, member]) => (
           <Person

@@ -130,6 +130,11 @@
           "name": "Lara Vázquez",
           "description": "Research technician in Artificial Intelligence",
           "img": "lvazquez.jpg"
+        },
+        "mcarmena": {
+          "name": "Miguel Carmena",
+          "description": "Research technician in computational chemistry",
+          "img": "mcarmena.jpg"
         }
       }
     }

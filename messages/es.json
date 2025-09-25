@@ -113,7 +113,7 @@
         },
         "pferreiro": {
           "name": "Pedro Ferreiro",
-          "description": "Técnico de proyector",
+          "description": "Técnico de proyecto",
           "img": "pferreiro.jpg"
         },
         "mcastineira": {
@@ -130,6 +130,11 @@
           "name": "Lara Vázquez",
           "description": "Técnica investigadora en Artificial Intelligence",
           "img": "lvazquez.jpg"
+        },
+        "mcarmena": {
+          "name": "Miguel Carmena",
+          "description": "Técnico investigador en química computacional",
+          "img": "mcarmena.jpg"
         }
       }
     }
