@@ -4,7 +4,7 @@ import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 import { clsx } from 'clsx';
 import Image, { type StaticImageData } from 'next/image';
-import { type AppConfig, useTranslations } from 'next-intl';
+import { type AppConfig, useFormatter, useTranslations } from 'next-intl';
 import { use, useState } from 'react';
 import { Button } from '@/components/button';
 import { Container } from '@/components/container';
@@ -52,15 +52,6 @@ const events = [
   },
 ] as const satisfies Event[];
 
-// Formatear fecha: día mes año
-function formatDate(dateString: string) {
-  return new Date(dateString).toLocaleDateString('es-ES', {
-    day: '2-digit',
-    month: 'long',
-    year: 'numeric',
-  });
-}
-
 // Obtener eventos pasados paginados
 function getPastEvents(page: number) {
   const pastEvents = events
@@ -76,10 +67,21 @@ function getPastEventsCount() {
   return events.filter((e) => !e.featured).length;
 }
 
-// Componentes
+const useDateFormatter = () => {
+  const format = useFormatter();
+  return (dateStr: string) =>
+    format.dateTime(new Date(dateStr), {
+      day: '2-digit',
+      month: 'long',
+      year: 'numeric',
+    });
+};
 
+// Componentes
 function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {
   const t = useTranslations('events');
+  const formatDate = useDateFormatter();
+
   const featured = events.filter((e) => e.featured);
 
   if (featured.length === 0) return null;
@@ -142,6 +144,7 @@ function PastEvents({
   onOpen: (event: Event) => void;
 }) {
   const t = useTranslations('events');
+  const formatDate = useDateFormatter();
   const pastEvents = getPastEvents(page);
 
   if (pastEvents.length === 0)
@@ -251,6 +254,7 @@ function Pagination({ page }: { page: number }) {
 
 function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
   const t = useTranslations('events');
+  const formatDate = useDateFormatter();
 
   return (
     <Dialog open={!!event} onClose={onClose} className="relative z-50">
