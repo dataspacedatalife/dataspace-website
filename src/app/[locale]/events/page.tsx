@@ -118,6 +118,7 @@ function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {
                 </div>
                 <div className="mt-4">
                   <button
+                    type="button"
                     onClick={() => onOpen(event)}
                     className="flex items-center gap-1 text-sm/5 font-medium text-blue-600"
                   >
@@ -190,6 +191,7 @@ function PastEvents({
                 </p>
                 <div className="mt-4">
                   <button
+                    type="button"
                     onClick={() => onOpen(event)}
                     className="flex items-center gap-1 text-sm/5 font-medium text-blue-600"
                   >
