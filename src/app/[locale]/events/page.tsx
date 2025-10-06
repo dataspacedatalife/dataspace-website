@@ -1,6 +1,6 @@
 'use client';
 
-import { Dialog } from '@headlessui/react';
+import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 import { clsx } from 'clsx';
 import Image, { type StaticImageData } from 'next/image';
@@ -267,10 +267,10 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
     <Dialog open={!!event} onClose={onClose} className="relative z-50">
       <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
       <div className="fixed inset-0 flex items-center justify-center p-4">
-        <Dialog.Panel className="max-w-2xl w-full rounded-lg bg-white p-6 shadow-lg">
-          <Dialog.Title className="text-xl font-bold mb-4">
+        <DialogPanel className="max-w-2xl w-full rounded-lg bg-white p-6 shadow-lg">
+          <DialogTitle className="text-xl font-bold mb-4">
             {t(`events.${event.key}.header`)}
-          </Dialog.Title>
+          </DialogTitle>
           <Image
             src={event.image}
             alt={t(`events.${event.key}.header`)}
@@ -290,7 +290,7 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
           <div className="mt-6 flex justify-end">
             <Button onClick={onClose}>Cerrar</Button>
           </div>
-        </Dialog.Panel>
+        </DialogPanel>
       </div>
     </Dialog>
   );
