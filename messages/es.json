@@ -14,6 +14,7 @@
     "participa": "Participa",
     "casos_de_uso": "Casos de Uso",
     "el_equipo": "El Equipo",
+    "eventos": "Eventos",
     "idioma": "Idioma",
     "espanol": "Español",
     "english": "English",
@@ -227,6 +228,38 @@
       "sovereignty": {
         "title": "Soberanía del dato",
         "description": "Cada organización mantiene control sobre sus propios datos."
+      }
+    }
+  },
+  "events": {
+    "metadata": {
+      "title": "Eventos",
+      "description": "Mantente informado sobre los próximos eventos y presentaciones."
+    },
+    "header": {
+      "title": "Eventos",
+      "description": "Mantente informado sobre los próximos eventos y presentaciones.",
+      "featuredTitle": "Eventos destacados",
+      "pastTitle": "Eventos pasados"
+    },
+    "learnMore": "Más información",
+    "organizer": "Organizador",
+    "noEvents": "No se han encontrado eventos.",
+    "events": {
+      "cesga": {
+        "header": "Jornada de presentación demostrador multisectorial DATALIFE",
+        "excerpt": "Presentación de la plataforma en CESGA",
+        "description": "Aquí un texto más largo y detallado sobre el evento de CESGA, explicando qué se presentó, la importancia del proyecto, los sectores implicados y los beneficios esperados."
+      },
+      "tallercred": {
+        "header": "Primer encuentro presencial sobre espacios de datos sectoriales",
+        "excerpt": "Evento para compartir experiencias y aprendizajes de los centros demostradores y casos de uso.",
+        "description": "Descripción extendida del evento ficticio. Aquí podrías dar todos los detalles sobre la organización, agenda y conclusiones."
+      },
+      "kitdatoscred": {
+        "header": "Lanzamiento del Kit de Datos CRED",
+        "excerpt": "Evento para presentar el Kit de Datos por el CRED",
+        "description": "Descripción extendida del evento ficticio. Aquí podrías dar todos los detalles sobre la organización, agenda y conclusiones."
       }
     }
   },

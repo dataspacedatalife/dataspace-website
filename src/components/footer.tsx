@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { PlusGrid, PlusGridRow } from '@/components/plus-grid';
-import LogoEU from '../../public/logos/ES-Financiado-por-la-Union-Europea_POS-1536x451.jpg';
+import LogoEU from '../../public/logos/ES_Financiado_por_la_Unión_Europea_RGB_POS.png';
 import LogoPRTR from '../../public/logos/Logo-PRTR-tres-lineas_COLOR-1536x864.png';
 import LogoMinisterio from '../../public/logos/Logotipo_del_Ministerio_para_la_Transformación_Digital_y_de_la_Función_Pública-cropped.svg';
 import LogoCESGA from '../../public/logos/nuevoLogoCesga_mayo2023.png';

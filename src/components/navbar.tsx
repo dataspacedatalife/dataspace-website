@@ -98,6 +98,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     { href: '/how', label: t('participa') },
     { href: '/use-cases', label: t('casos_de_uso') },
     { href: '/team', label: t('el_equipo') },
+    { href: '/events', label: t('eventos') },
   ];
 
   function DesktopNav() {

@@ -55,7 +55,7 @@ function Person({
   img: string;
 }) {
   return (
-    <li className="flex items-center gap-4">
+    <li className="flex items-center gap-3">
       <img alt="" src={img} className="size-35 rounded-full" />
       <div className="text-sm/6">
         <h3 className="font-medium">{name}</h3>

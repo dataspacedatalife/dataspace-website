@@ -14,6 +14,7 @@
     "participa": "Participate",
     "casos_de_uso": "Current Users",
     "el_equipo": "The Team",
+    "eventos": "Events",
     "idioma": "Language",
     "espanol": "Español",
     "english": "English",
@@ -227,6 +228,38 @@
       "sovereignty": {
         "title": "Data sovereignty",
         "description": "Each organization maintains control over its own data."
+      }
+    }
+  },
+  "events": {
+    "metadata": {
+      "title": "Events",
+      "description": "Stay updated with upcoming events and presentations."
+    },
+    "header": {
+      "title": "Events",
+      "description": "Stay updated with upcoming events and presentations.",
+      "featuredTitle": "Featured Events",
+      "pastTitle": "Past Events"
+    },
+    "learnMore": "Learn more",
+    "organizer": "Organizer",
+    "noEvents": "No events found.",
+    "events": {
+      "cesga": {
+        "header": "DATALIFE multisectoral demonstrator presentation at CESGA",
+        "excerpt": "Participate in the DataLife multisector demonstrator presentation at CESGA.",
+        "description": "Aquí un texto más largo y detallado sobre el evento de CESGA, explicando qué se presentó, la importancia del proyecto, los sectores implicados y los beneficios esperados."
+      },
+      "tallercred": {
+        "header": "First in-person meeting on sectoral data spaces",
+        "excerpt": "Event to share experiences and learnings from demonstrator centers and use cases.",
+        "description": "Descripción extendida del evento ficticio. Aquí podrías dar todos los detalles sobre la organización, agenda y conclusiones."
+      },
+      "kitdatoscred": {
+        "header": "CRED Data Kit Launch",
+        "excerpt": "Event to present the Data Kit by CRED",
+        "description": "Descripción extendida del evento ficticio. Aquí podrías dar todos los detalles sobre la organización, agenda y conclusiones."
       }
     }
   },
