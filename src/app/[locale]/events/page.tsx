@@ -78,7 +78,7 @@ function getPastEventsCount() {
 
 // Componentes
 
-function FeaturedEvents({ onOpen }: { onOpen: (event: any) => void }) {
+function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {
   const t = useTranslations('events');
   const featured = events.filter((e) => e.featured);
 
@@ -138,7 +138,7 @@ function PastEvents({
   onOpen,
 }: {
   page: number;
-  onOpen: (event: any) => void;
+  onOpen: (event: Event) => void;
 }) {
   const t = useTranslations('events');
   const pastEvents = getPastEvents(page);
@@ -250,7 +250,6 @@ function Pagination({ page }: { page: number }) {
 
 function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
   const t = useTranslations('events');
-  if (!event) return null;
 
   return (
     <Dialog open={!!event} onClose={onClose} className="relative z-50">
@@ -296,7 +295,7 @@ export default function EventsPage({
       ? parseInt(params.page)
       : 1;
 
-  const [selectedEvent, setSelectedEvent] = useState<any>(null);
+  const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
   const t = useTranslations();
 
   return (
@@ -315,10 +314,12 @@ export default function EventsPage({
         <Pagination page={page} />
       </Container>
       <Footer />
-      <EventModal
-        event={selectedEvent}
-        onClose={() => setSelectedEvent(null)}
-      />
+      {selectedEvent && (
+        <EventModal
+          event={selectedEvent}
+          onClose={() => setSelectedEvent(null)}
+        />
+      )}
     </main>
   );
 }
