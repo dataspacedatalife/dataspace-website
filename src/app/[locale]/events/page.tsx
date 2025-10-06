@@ -94,7 +94,7 @@ function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {
           {featured.map((event) => (
             <div
               key={event.key}
-              className="relative flex flex-col rounded-3xl bg-white p-2 shadow-md ring-1 shadow-black/5 ring-black/5"
+              className="relative bg-clip-padding overflow-clip flex flex-col rounded-3xl bg-white border-8 border-white shadow-md ring-1 shadow-black/5 ring-black/5"
             >
               {event.image && (
                 <Image
@@ -156,24 +156,23 @@ function PastEvents({
         {pastEvents.map((event) => (
           <div
             key={event.key}
-            className="relative grid grid-cols-1 sm:grid-cols-4 border-b border-b-gray-100 py-10 first:border-t first:border-t-gray-200 gap-6"
+            className="relative flex flex-col sm:flex-row border-b border-b-gray-100 py-10 first:border-t first:border-t-gray-200 gap-6 items-center sm:items-start"
           >
             {/* Imagen */}
-            <div className="sm:col-span-1 w-[300px] h-[200px] overflow-hidden rounded-lg">
-              {' '}
+            <div className="w-[300px] h-[200px] shrink-0">
               {event.image && (
                 <Image
                   src={event.image}
                   alt={t(`events.${event.key}.header`)}
                   width={300}
                   height={200}
-                  className="rounded-lg object-cover w-full h-auto"
+                  className="rounded-lg object-cover size-full"
                 />
               )}
             </div>
 
             {/* Detalles */}
-            <div className="sm:col-span-3 flex flex-col justify-between">
+            <div className="flex flex-col justify-between max-sm:w-full max-sm:max-w-[300px]">
               <div>
                 <div className="text-sm/5 text-gray-700 sm:font-medium">
                   {formatDate(event.date)}
