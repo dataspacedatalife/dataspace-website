@@ -219,14 +219,7 @@ function Pagination({ page }: { page: number }) {
 
   return (
     <div className="mt-6 flex items-center justify-between gap-2">
-      <Button
-        disabled={!hasPrevious}
-        variant="outline"
-        href={hasPrevious ? url(page - 1) : '#'}
-        // variant="outline"
-        // href={hasPrevious ? url(page - 1) : '#'}
-        // disabled={!hasPrevious}
-      >
+      <Button variant="outline" href={hasPrevious ? url(page - 1) : '#'}>
         <ChevronLeftIcon className="size-4" />
         Previous
       </Button>
@@ -247,11 +240,7 @@ function Pagination({ page }: { page: number }) {
           </Link>
         ))}
       </div>
-      <Button
-        variant="outline"
-        href={hasNext ? url(page + 1) : '#'}
-        disabled={!hasNext}
-      >
+      <Button variant="outline" href={hasNext ? url(page + 1) : '#'}>
         Next
         <ChevronRightIcon className="size-4" />
       </Button>
