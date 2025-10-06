@@ -5,7 +5,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 import { clsx } from 'clsx';
 import Image, { type StaticImageData } from 'next/image';
 import { type AppConfig, useTranslations } from 'next-intl';
-import { useState } from 'react';
+import { use, useState } from 'react';
 import { Button } from '@/components/button';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
@@ -288,11 +288,12 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
 export default function EventsPage({
   searchParams,
 }: {
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
+  const params = use(searchParams);
   const page =
-    typeof searchParams?.page === 'string' && parseInt(searchParams.page) > 0
-      ? parseInt(searchParams.page)
+    typeof params?.page === 'string' && parseInt(params.page) > 0
+      ? parseInt(params.page)
       : 1;
 
   const [selectedEvent, setSelectedEvent] = useState<any>(null);
