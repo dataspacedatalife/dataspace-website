@@ -166,13 +166,12 @@ function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {
                   {t('organizer')}: {event.organizer}
                 </div>
                 <div className="mt-4">
-                  <button
-                    type="button"
+                  <Button
                     onClick={() => onOpen(event)}
                     className="flex items-center gap-1 text-sm/5 font-medium text-blue-600"
                   >
                     {t('learnMore')}
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -241,13 +240,12 @@ function PastEvents({
                   {t(`events.${event.key}.excerpt`)}
                 </p>
                 <div className="mt-4">
-                  <button
-                    type="button"
+                  <Button
                     onClick={() => onOpen(event)}
                     className="flex items-center gap-1 text-sm/5 font-medium text-blue-600"
                   >
                     {t('learnMore')}
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -398,14 +396,13 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
           className="fixed flex items-center justify-center bg-black/90 isolate inset-0"
         >
           <DialogPanel>
-            <button
-              type="button"
+            <Button
               onClick={() => setIsImageOpen(false)}
               className="absolute top-4 right-4 text-white hover:text-gray-300 transition"
               aria-label="Close image"
             >
               <X className="w-8 h-8" />
-            </button>
+            </Button>
 
             <Image
               src={event.image}

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { AnimatedNumber } from '@/components/animated-number';
+import { Button } from '@/components/button';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
@@ -95,14 +96,9 @@ async function Header() {
           {t('funding.details')}
         </p>
         <p className="text-gray-700">
-          <a
-            href={t('funding.linkUrl')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 underline hover:text-blue-800 transition-colors"
-          >
+          <Button href={t('funding.linkUrl')} target="_blank">
             {t('funding.linkText')}
-          </a>
+          </Button>
         </p>
       </div>
     </Container>

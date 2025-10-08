@@ -36,7 +36,11 @@ export function Button({
   className,
   ...props
 }: ButtonProps) {
-  className = clsx(className, variants[variant]);
+  className = clsx(
+    'cursor-pointer disabled:cursor-not-allowed',
+    variants[variant],
+    className,
+  );
 
   if (typeof props.href === 'undefined') {
     return <Headless.Button {...props} className={className} />;
