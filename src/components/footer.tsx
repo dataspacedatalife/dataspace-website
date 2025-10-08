@@ -111,6 +111,9 @@ export function Footer() {
             height={80}
           />
         </div>
+        <p className="mx-auto mt-6 max-w-5xl text-xs text-gray-700 ">
+          {t('funding_note')}
+        </p>
       </div>
     );
   }
