@@ -2,8 +2,7 @@
 
 import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
-import { clsx } from 'clsx';
-import { Calendar, Icon, Pointer, X, ZoomIn } from 'lucide-react';
+import { Calendar, Pointer, X, ZoomIn } from 'lucide-react';
 import Image, { type StaticImageData } from 'next/image';
 import { useSearchParams } from 'next/navigation';
 import { type AppConfig, useFormatter, useTranslations } from 'next-intl';
@@ -324,7 +323,7 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
     : null;
 
   return (
-    <Dialog open={!!event} onClose={onClose} className="relative z-50">
+    <Dialog open={!!event} onClose={onClose} className="relative isolate">
       {/* Backdrop */}
       <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
 
@@ -396,24 +395,26 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
         <Dialog
           open={isImageOpen}
           onClose={() => setIsImageOpen(false)}
-          className="fixed inset-0 z-[60] flex items-center justify-center bg-black/90"
+          className="fixed flex items-center justify-center bg-black/90 isolate inset-0"
         >
-          <button
-            type="button"
-            onClick={() => setIsImageOpen(false)}
-            className="absolute top-4 right-4 text-white hover:text-gray-300 transition"
-            aria-label="Close image"
-          >
-            <X className="w-8 h-8" />
-          </button>
+          <DialogPanel>
+            <button
+              type="button"
+              onClick={() => setIsImageOpen(false)}
+              className="absolute top-4 right-4 text-white hover:text-gray-300 transition"
+              aria-label="Close image"
+            >
+              <X className="w-8 h-8" />
+            </button>
 
-          <Image
-            src={event.image}
-            alt={t(`events.${event.key}.header`)}
-            width={1200}
-            height={800}
-            className="max-w-full max-h-[90vh] object-contain rounded-lg"
-          />
+            <Image
+              src={event.image}
+              alt={t(`events.${event.key}.header`)}
+              width={1200}
+              height={800}
+              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+            />
+          </DialogPanel>
         </Dialog>
       )}
     </Dialog>
