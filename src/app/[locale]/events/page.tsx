@@ -3,9 +3,11 @@
 import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 import { clsx } from 'clsx';
+import { Calendar, Icon, Pointer, X, ZoomIn } from 'lucide-react';
 import Image, { type StaticImageData } from 'next/image';
+import { useSearchParams } from 'next/navigation';
 import { type AppConfig, useFormatter, useTranslations } from 'next-intl';
-import { use, useState } from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/button';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
@@ -13,8 +15,14 @@ import { GradientBackground } from '@/components/gradient';
 import { Link } from '@/components/link';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
-import JornadaPresentacionImg from '../../../../public/events/Jornada-de-Presentacion.png';
+import { usePathname, useRouter } from '@/i18n/navigation';
+import EGI2025Img from '../../../../public/events/EGI2025Img.jpg';
+import ForoBAIDATAImg from '../../../../public/events/ForoBAIDATAImg.jpg';
+import GaiaXSaludImg from '../../../../public/events/GaiaXSaludImg.jpg';
+import JornadaPresentacionImg from '../../../../public/events/JornadaPresentacionImg.png';
 import KitDatosCREDImg from '../../../../public/events/lanzamientokitCRED.jpg';
+import NormaUNE42001Img from '../../../../public/events/NormaUNE42001Img.jpg';
+import TallerSQSImg from '../../../../public/events/TallerSQSImg.png';
 import TallerCREDImg from '../../../../public/events/tallerCRED.jpg';
 
 const eventsPerPage = 5;
@@ -24,25 +32,65 @@ interface Event {
   date: string;
   image: StaticImageData;
   organizer: string;
+  cesgalink?: string;
   featured: boolean;
 }
 
 // Hardcoded events
 const events = [
   {
-    key: 'cesga',
+    key: 'tallersqs',
+    date: '2025-10-09',
+    image: TallerSQSImg,
+    organizer: 'Centro de Supercomputación de Galicia (CESGA)',
+    cesgalink: 'https://lnkd.in/dde_bHJA',
+    featured: true,
+  },
+  {
+    key: 'datalife',
     date: '2025-06-18',
     image: JornadaPresentacionImg,
-    organizer: 'CESGA',
-    featured: true,
+    organizer: 'Centro de Supercomputación de Galicia (CESGA)',
+    featured: false,
+  },
+  {
+    key: 'egi2025',
+    date: '2025-06-03',
+    image: EGI2025Img,
+    organizer: 'European Grid Infrastructure (EGI)',
+    featured: false,
+  },
+
+  {
+    key: 'baidata',
+    date: '2025-06-25',
+    image: ForoBAIDATAImg,
+    organizer: 'BAIDATA',
+    featured: false,
+  },
+  {
+    key: 'gaiaxsalud',
+    date: '2025-06-26',
+    image: GaiaXSaludImg,
+    organizer: 'Gaia-X España',
+    featured: false,
+  },
+  {
+    key: 'normaune',
+    date: '2025-07-10',
+    image: NormaUNE42001Img,
+    organizer:
+      'Secretaría de Estado de Digitalización e Inteligencia Artificial (SEDIA)',
+    featured: false,
   },
   {
     key: 'tallercred',
     date: '2025-09-16',
     image: TallerCREDImg,
-    organizer: 'CRED',
+    organizer: 'Centro de Referencia de Espacios de Datos (CRED) ',
     featured: false,
   },
+
   {
     key: 'kitdatoscred',
     date: '2025-07-17',
@@ -112,9 +160,9 @@ function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {
                 <div className="mt-2 text-base/7 font-medium">
                   {t(`events.${event.key}.header`)}
                 </div>
-                <div className="mt-2 flex-1 text-sm/6 text-gray-500">
+                {/* <div className="mt-2 flex-1 text-sm/6 text-gray-500">
                   {t(`events.${event.key}.excerpt`)}
-                </div>
+                </div> */}
                 <div className="mt-6 flex items-center gap-3 text-sm/5 text-gray-700">
                   {t('organizer')}: {event.organizer}
                 </div>
@@ -139,9 +187,11 @@ function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {
 function PastEvents({
   page,
   onOpen,
+  ref,
 }: {
   page: number;
   onOpen: (event: Event) => void;
+  ref?: React.Ref<HTMLDivElement>;
 }) {
   const t = useTranslations('events');
   const formatDate = useDateFormatter();
@@ -151,7 +201,7 @@ function PastEvents({
     return <p className="mt-6 text-gray-500">{t('noEvents')}</p>;
 
   return (
-    <Container>
+    <Container ref={ref}>
       <h2 className="text-2xl font-medium tracking-tight">
         {t('header.pastTitle')}
       </h2>
@@ -178,11 +228,11 @@ function PastEvents({
             <div className="flex flex-col justify-between max-sm:w-full max-sm:max-w-[300px]">
               <div>
                 <div className="text-sm/5 text-gray-700 sm:font-medium">
-                  {formatDate(event.date)}
+                  {formatDate(event.date)} - {event.organizer}
                 </div>
-                <div className="mt-2 text-sm/5 text-gray-700">
+                {/* <div className="mt-2 text-sm/5 text-gray-700">
                   {t('organizer')}: {event.organizer}
-                </div>
+                </div> */}
               </div>
               <div className="mt-4">
                 <h2 className="text-base font-medium">
@@ -209,42 +259,53 @@ function PastEvents({
   );
 }
 
-function Pagination({ page }: { page: number }) {
+function Pagination({
+  pastEventsRef,
+}: {
+  pastEventsRef?: HTMLDivElement | null;
+}) {
   const totalEvents = getPastEventsCount();
   const pageCount = Math.ceil(totalEvents / eventsPerPage);
+
+  const [page, setPage] = usePage();
+
   const hasPrevious = page > 1;
   const hasNext = page < pageCount;
 
   function url(p: number) {
     return `/events?page=${p}`;
   }
-
   if (pageCount < 2) return null;
 
   return (
-    <div className="mt-6 flex items-center justify-between gap-2">
-      <Button variant="outline" href={hasPrevious ? url(page - 1) : '#'}>
+    <div className="mt-6 flex justify-center mx-auto gap-2">
+      <Button
+        disabled={!hasPrevious}
+        onClick={() => {
+          setPage(page - 1);
+          setTimeout(() => {
+            pastEventsRef?.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          });
+        }}
+      >
         <ChevronLeftIcon className="size-4" />
         Previous
       </Button>
-      <div className="flex gap-2 max-sm:hidden">
-        {Array.from({ length: pageCount }, (_, i) => (
-          <Link
-            key={i + 1}
-            href={url(i + 1)}
-            data-active={i + 1 === page ? true : undefined}
-            className={clsx(
-              'size-7 rounded-lg text-center text-sm/7 font-medium',
-              'data-hover:bg-gray-100',
-              'data-active:shadow-sm data-active:ring-1 data-active:ring-black/10',
-              'data-active:data-hover:bg-gray-50',
-            )}
-          >
-            {i + 1}
-          </Link>
-        ))}
-      </div>
-      <Button variant="outline" href={hasNext ? url(page + 1) : '#'}>
+      <Button
+        disabled={!hasNext}
+        onClick={() => {
+          setPage(page + 1);
+          setTimeout(() => {
+            pastEventsRef?.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          });
+        }}
+      >
         Next
         <ChevronRightIcon className="size-4" />
       </Button>
@@ -255,53 +316,141 @@ function Pagination({ page }: { page: number }) {
 function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
   const t = useTranslations('events');
   const formatDate = useDateFormatter();
+  const [isImageOpen, setIsImageOpen] = useState(false);
+
+  // Optional extra safely typed
+  const extra = t.has(`events.${event.key}.extra`)
+    ? t(`events.${event.key}.extra`)
+    : null;
 
   return (
     <Dialog open={!!event} onClose={onClose} className="relative z-50">
+      {/* Backdrop */}
       <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
-      <div className="fixed inset-0 flex items-center justify-center p-4">
-        <DialogPanel className="max-w-2xl w-full rounded-lg bg-white p-6 shadow-lg">
-          <DialogTitle className="text-xl font-bold mb-4">
+
+      {/* Modal container */}
+      <div className="fixed inset-0 flex items-center justify-center p-4 overflow-y-auto">
+        <DialogPanel className="relative max-w-2xl w-full rounded-xl bg-white p-6 shadow-xl max-h-[90vh] overflow-y-auto">
+          {/* Title */}
+          <DialogTitle className="text-2xl font-extrabold mb-2 text-gray-900">
             {t(`events.${event.key}.header`)}
           </DialogTitle>
-          <Image
-            src={event.image}
-            alt={t(`events.${event.key}.header`)}
-            width={600}
-            height={400}
-            className="rounded-lg mb-4"
-          />
-          <p className="text-sm text-gray-500 mb-2">
-            {formatDate(event.date)} — {t('organizer')}: {event.organizer}
+
+          {/* Metadata with calendar icon */}
+          <p className="text-sm text-gray-500 mb-4 flex items-center gap-2">
+            <Calendar className="w-4 h-4 text-gray-500 shrink-0" />
+            {formatDate(event.date)} —{' '}
+            <span className="font-medium">
+              {t('organizer')}: {event.organizer}
+            </span>
           </p>
-          <p className="text-gray-700 mb-4">
-            {t(`events.${event.key}.excerpt`)}
-          </p>
-          <p className="text-gray-600">
-            {t(`events.${event.key}.description`)}
-          </p>
+
+          {/* Image */}
+          <div
+            className="relative w-full h-64 mb-6 cursor-pointer overflow-hidden rounded-lg group"
+            onClick={() => setIsImageOpen(true)}
+          >
+            <Image
+              src={event.image}
+              alt={t(`events.${event.key}.header`)}
+              fill
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity">
+              <ZoomIn className="text-white w-10 h-10 drop-shadow-md" />
+            </div>
+          </div>
+
+          {/* Optional extra */}
+          {extra && event.cesgalink && (
+            <p className="text-gray-700 mb-4 flex items-center gap-2">
+              <Pointer className="h-5 w-5 text-gray-900 rotate-90 shrink-0" />
+              <span>
+                {extra}:{' '}
+                <a
+                  href={event.cesgalink}
+                  className="text-blue-600 underline hover:text-blue-800 transition-colors"
+                >
+                  {event.cesgalink}
+                </a>
+              </span>
+            </p>
+          )}
+          {t
+            .raw(`events.${event.key}.description`)
+            .map((paragraph: string, idx: number) => (
+              <p key={idx} className="text-gray-600 leading-relaxed mb-4">
+                {paragraph}
+              </p>
+            ))}
+
+          {/* Close button */}
           <div className="mt-6 flex justify-end">
             <Button onClick={onClose}>Cerrar</Button>
           </div>
         </DialogPanel>
       </div>
+
+      {/* Fullscreen image viewer */}
+      {isImageOpen && (
+        <Dialog
+          open={isImageOpen}
+          onClose={() => setIsImageOpen(false)}
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-black/90"
+        >
+          <button
+            type="button"
+            onClick={() => setIsImageOpen(false)}
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition"
+            aria-label="Close image"
+          >
+            <X className="w-8 h-8" />
+          </button>
+
+          <Image
+            src={event.image}
+            alt={t(`events.${event.key}.header`)}
+            width={1200}
+            height={800}
+            className="max-w-full max-h-[90vh] object-contain rounded-lg"
+          />
+        </Dialog>
+      )}
     </Dialog>
   );
 }
 
-export default function EventsPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-}) {
-  const params = use(searchParams);
-  const page =
-    typeof params?.page === 'string' && parseInt(params.page) > 0
-      ? parseInt(params.page)
-      : 1;
+const usePage = () => {
+  const search = useSearchParams();
+
+  const unsafePage = Number.parseInt(search.get('page') ?? '1');
+  const [page, setPage] = useState(
+    unsafePage && !Number.isNaN(unsafePage) && unsafePage >= 1 ? unsafePage : 1,
+  );
+
+  return [
+    page,
+    (page: number) => {
+      if (page <= 0 || Number.isNaN(page)) {
+        return;
+      }
+      const url = new URL(window.location.href);
+      url.searchParams.set('page', page.toString());
+      window.history.replaceState({}, '', url.toString());
+      setPage(page);
+    },
+  ] as const;
+};
+
+export default function EventsPage() {
+  const search = useSearchParams();
+  const page = search.has('page') ? parseInt(search.get('page')!) : 1;
 
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
   const t = useTranslations();
+  const [pastEventsRef, setPastEventsRef] = useState<HTMLDivElement | null>(
+    null,
+  );
 
   return (
     <main className="overflow-hidden">
@@ -313,10 +462,14 @@ export default function EventsPage({
         </Heading>
         <Lead className="mt-6 max-w-3xl">{t('events.header.description')}</Lead>
       </Container>
-      {page === 1 && <FeaturedEvents onOpen={setSelectedEvent} />}
+      <FeaturedEvents onOpen={setSelectedEvent} />
       <Container className="mt-16 pb-24">
-        <PastEvents page={page} onOpen={setSelectedEvent} />
-        <Pagination page={page} />
+        <PastEvents
+          page={page}
+          onOpen={setSelectedEvent}
+          ref={setPastEventsRef}
+        />
+        <Pagination pastEventsRef={pastEventsRef} />
       </Container>
       <Footer />
       {selectedEvent && (

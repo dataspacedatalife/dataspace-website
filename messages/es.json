@@ -246,20 +246,84 @@
     "organizer": "Organizador",
     "noEvents": "No se han encontrado eventos.",
     "events": {
-      "cesga": {
-        "header": "Jornada de presentación demostrador multisectorial DATALIFE",
-        "excerpt": "Presentación de la plataforma en CESGA",
-        "description": "Aquí un texto más largo y detallado sobre el evento de CESGA, explicando qué se presentó, la importancia del proyecto, los sectores implicados y los beneficios esperados."
+      "egi2025": {
+        "header": "Presentación en EGI/Ibergrid",
+        "excerpt": "Participación en la conferencia europea de computación distribuida EGI 2025.",
+        "description": [
+          "Participación en la conferencia europea de computación distribuida EGI 2025, celebrada en Santander.",
+          "En este marco se presentó el Centro Demostrador Multisectorial One Health que impulsa el CESGA, destacando su papel como espacio de datos orientado a la investigación y la innovación.",
+          "El evento reunió a comunidades científicas, proveedores de servicios e iniciativas europeas para debatir sobre infraestructuras digitales, análisis de datos y nuevos retos en investigación."
+        ],
+        "extra": null
+      },
+      "datalife": {
+        "header": "Jornada de presentación demostrador multisectorial DATAlife",
+        "excerpt": "Acto de lanzamiento del Centro Demostrador Multisectorial One Health (DATAlife).",
+        "description": [
+          "Acto de lanzamiento del Centro Demostrador Multisectorial One Health (DATAlife) en Santiago de Compostela.",
+          "La jornada estuvo centrada en dar a conocer cómo este espacio de datos impulsa la investigación y la innovación en el marco One Health, con ponencias, presentación de casos de uso y oportunidades de colaboración.",
+          "Incluyó un taller práctico para el despliegue de espacios de datos, con participación de la comunidad investigadora, empresas y administraciones públicas."
+        ],
+        "extra": null
+      },
+      "baidata": {
+        "header": "Asistencia al IV Foro BAIDATA",
+        "excerpt": "Participación en el foro nacional sobre economía del dato y espacios de datos europeos.",
+        "description": [
+          "Participación en el IV Foro BAIDATA, celebrado en Bilbao y centrado en la economía del dato y los espacios europeos de datos.",
+          "El encuentro reunió a profesionales, empresas y administraciones para debatir sobre interoperabilidad, gobernanza y casos de uso en sectores como salud, movilidad o industria.",
+          "El evento ofreció amplias oportunidades de contacto con otros proyectos a nivel nacional, tanto en reuniones bilaterales como en un segundo taller de coordinación con el Ministerio."
+        ],
+        "extra": null
+      },
+      "gaiaxsalud": {
+        "header": "Workshop grupo de trabajo de salud Gaia-X España",
+        "excerpt": "Sesión sobre retos y oportunidades del reglamento europeo de espacios de datos de salud.",
+        "description": [
+          "Participación en el workshop del grupo de trabajo de salud organizado por Gaia-X España en colaboración con la Universidad Politécnica de Madrid.",
+          "La sesión, de carácter legal, técnico y sanitario, se centró en los retos y oportunidades que plantea el nuevo reglamento europeo de espacios de datos de salud.",
+          "El objetivo fue identificar soluciones para su puesta en marcha."
+        ],
+        "extra": null
+      },
+      "normaune": {
+        "header": "Presentación norma UNE-ISO/IEC 42001 sobre gestión de la IA",
+        "excerpt": "Jornada sobre el primer estándar internacional de gestión de la inteligencia artificial.",
+        "description": [
+          "Asistencia a la jornada organizada por la Asociación Española de Normalización (UNE) y patrocinada por la Secretaría de Estado de Digitalización e Inteligencia Artificial (SEDIA).",
+          "El encuentro sirvió para presentar la norma UNE-ISO/IEC 42001, primer estándar internacional que establece los requisitos para implantar un sistema de gestión de la inteligencia artificial en organizaciones.",
+          "La jornada abordó el contexto regulatorio y los beneficios de aplicar este marco para garantizar un uso ético, seguro y transparente de la IA."
+        ],
+        "extra": null
       },
       "tallercred": {
-        "header": "Primer encuentro presencial sobre espacios de datos sectoriales",
-        "excerpt": "Evento para compartir experiencias y aprendizajes de los centros demostradores y casos de uso.",
-        "description": "Descripción extendida del evento ficticio. Aquí podrías dar todos los detalles sobre la organización, agenda y conclusiones."
+        "header": "1er Taller CRED: construyendo espacios de datos",
+        "excerpt": "Encuentro para beneficiarios de la convocatoria de Centros Demostradores y Casos de Uso.",
+        "description": [
+          "Asistencia a un taller presencial exclusivo para beneficiarios de la convocatoria de Centros Demostradores y Casos de Uso, convocado en la sede del CRED en Madrid.",
+          "Durante la sesión se aclararon dudas administrativas acerca de los proyectos.",
+          "Se presentó oficialmente el kit de espacios de datos."
+        ],
+        "extra": null
+      },
+      "tallersqs": {
+        "header": "Taller de Espacio de Datos FarmaciaVAX con la plataforma D-Spacer de SQS",
+        "excerpt": "Taller práctico sobre el funcionamiento de un espacio de datos en el caso de uso FarmaciaVAX.",
+        "description": [
+          "Taller orientado a mostrar el funcionamiento de un espacio de datos. Se centra en el caso de uso FarmaciaVAX, que está enmarcado en el Centro Demostrador Multisectorial DATAlife, y usa la tecnología D-Spacer de la empresa SQS.",
+          "La sesión incluye una introducción a la plataforma y a su integración en el contexto de espacios de datos, la adhesión y activación de participantes, la revisión de políticas y contratos para comprender distintas restricciones, y ejemplos prácticos de compartición de datos entre farmacias y servicios de salud.",
+          "También se aborda el papel de la Autoridad de Gobierno en la validación de solicitudes y se reserva un espacio final para preguntas y respuestas."
+        ],
+        "extra": "Apúntate aquí"
       },
       "kitdatoscred": {
         "header": "Lanzamiento del Kit de Datos CRED",
         "excerpt": "Evento para presentar el Kit de Datos por el CRED",
-        "description": "Descripción extendida del evento ficticio. Aquí podrías dar todos los detalles sobre la organización, agenda y conclusiones."
+        "description": [
+          "Descripción extendida del evento ficticio.",
+          "Aquí podrías dar todos los detalles sobre la organización, agenda y conclusiones."
+        ],
+        "extra": null
       }
     }
   },

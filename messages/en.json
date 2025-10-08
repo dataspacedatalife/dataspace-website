@@ -246,20 +246,84 @@
     "organizer": "Organizer",
     "noEvents": "No events found.",
     "events": {
-      "cesga": {
-        "header": "DATALIFE multisectoral demonstrator presentation at CESGA",
-        "excerpt": "Participate in the DataLife multisector demonstrator presentation at CESGA.",
-        "description": "Aquí un texto más largo y detallado sobre el evento de CESGA, explicando qué se presentó, la importancia del proyecto, los sectores implicados y los beneficios esperados."
+      "egi2025": {
+        "header": "Presentation at EGI/Ibergrid",
+        "excerpt": "Participation in the European distributed computing conference EGI 2025.",
+        "description": [
+          "Participation in the European distributed computing conference EGI 2025, held in Santander.",
+          "Within this framework, the Multisectoral One Health Demonstrator Center promoted by CESGA was presented, highlighting its role as a data space focused on research and innovation.",
+          "The event brought together scientific communities, service providers, and European initiatives to discuss digital infrastructures, data analysis, and new challenges in research."
+        ],
+        "extra": null
+      },
+      "datalife": {
+        "header": "Presentation Day of the Multisectoral Demonstrator DATAlife",
+        "excerpt": "Launch event for the Multisectoral One Health Demonstrator Center (DATAlife).",
+        "description": [
+          "Launch event of the Multisectoral One Health Demonstrator Center (DATAlife) in Santiago de Compostela.",
+          "The day focused on showcasing how this data space promotes research and innovation within the One Health framework, with presentations, use case showcases, and collaboration opportunities.",
+          "It also included a hands-on workshop on data space deployment, with participation from the research community, companies, and public administrations."
+        ],
+        "extra": null
+      },
+      "baidata": {
+        "header": "Attendance at the 4th BAIDATA Forum",
+        "excerpt": "Participation in the national forum on data economy and European data spaces.",
+        "description": [
+          "Participation in the 4th BAIDATA Forum, held in Bilbao and focused on the data economy and European data spaces.",
+          "The event gathered professionals, companies, and public administrations to discuss interoperability, governance, and use cases in sectors such as health, mobility, and industry.",
+          "It offered broad networking opportunities with other national projects, including bilateral meetings and a second coordination workshop with the Ministry."
+        ],
+        "extra": null
+      },
+      "gaiaxsalud": {
+        "header": "Workshop of the Gaia-X Spain Health Working Group",
+        "excerpt": "Session on the challenges and opportunities of the European Health Data Space regulation.",
+        "description": [
+          "Participation in the workshop of the health working group organized by Gaia-X Spain in collaboration with the Polytechnic University of Madrid.",
+          "The session, covering legal, technical, and healthcare perspectives, focused on the challenges and opportunities arising from the new European Health Data Space regulation.",
+          "The goal was to identify solutions for its implementation."
+        ],
+        "extra": null
+      },
+      "normaune": {
+        "header": "Presentation of the UNE-ISO/IEC 42001 Standard on AI Management",
+        "excerpt": "Conference on the first international standard for artificial intelligence management systems.",
+        "description": [
+          "Attendance at the event organized by the Spanish Association for Standardization (UNE) and sponsored by the State Secretariat for Digitalization and Artificial Intelligence (SEDIA).",
+          "The meeting served to present the UNE-ISO/IEC 42001 standard, the first international framework establishing requirements for implementing an AI management system within organizations.",
+          "The session addressed the regulatory context and the benefits of applying this framework to ensure the ethical, safe, and transparent use of AI."
+        ],
+        "extra": null
       },
       "tallercred": {
-        "header": "First in-person meeting on sectoral data spaces",
-        "excerpt": "Event to share experiences and learnings from demonstrator centers and use cases.",
-        "description": "Descripción extendida del evento ficticio. Aquí podrías dar todos los detalles sobre la organización, agenda y conclusiones."
+        "header": "1st CRED Workshop: Building Data Spaces",
+        "excerpt": "Meeting for beneficiaries of the Demonstrator Centers and Use Cases call.",
+        "description": [
+          "Attendance at an in-person workshop exclusively for beneficiaries of the Demonstrator Centers and Use Cases call, held at the CRED headquarters in Madrid.",
+          "The session clarified administrative questions regarding the projects.",
+          "It officially presented the Data Spaces Kit."
+        ],
+        "extra": null
+      },
+      "tallersqs": {
+        "header": "FarmaciaVAX Data Space Workshop with SQS’s D-Spacer Platform",
+        "excerpt": "Hands-on workshop on the operation of a data space using the FarmaciaVAX use case.",
+        "description": [
+          "Workshop focused on demonstrating how a data space operates. It centers on the FarmaciaVAX use case, part of the Multisectoral Demonstrator Center DATAlife, and uses the D-Spacer technology developed by SQS.",
+          "The session includes an introduction to the platform and its integration into the data space context, participant onboarding and activation, policy and contract reviews to understand various constraints, and practical examples of data sharing between pharmacies and health services.",
+          "It also covers the role of the Governance Authority in validating requests and ends with a Q&A session."
+        ],
+        "extra": "Sign up here"
       },
       "kitdatoscred": {
         "header": "CRED Data Kit Launch",
-        "excerpt": "Event to present the Data Kit by CRED",
-        "description": "Descripción extendida del evento ficticio. Aquí podrías dar todos los detalles sobre la organización, agenda y conclusiones."
+        "excerpt": "Event to present the Data Kit by CRED.",
+        "description": [
+          "Extended description of the fictional event.",
+          "Here you could include full details about the organization, agenda, and conclusions."
+        ],
+        "extra": null
       }
     }
   },
