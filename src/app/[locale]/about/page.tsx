@@ -83,13 +83,13 @@ async function Header() {
         </dl>
       </div>
 
-      <div className="mt-12  pt-6">
+      <div className="mb-16 mt-12 pt-6">
         <Subheading>{t('funding.title')}</Subheading>
         <hr className="mt-6 mb-6 border-t border-gray-200" />
 
-        <p className="mt-6 text-lg/7 text-gray-700">{t('funding.call')}</p>
-        <p className="mt-4 text-lg/7 text-gray-700">{t('funding.grant')}</p>
-        <p className="mt-4 mb-4 text-lg/7 text-gray-700">
+        <p className="mt-6 text-md/7 text-gray-700">{t('funding.call')}</p>
+        <p className="mt-4 text-/7 text-gray-700">{t('funding.grant')}</p>
+        <p className="mt-4 mb-4 text-md/7 text-gray-700">
           {t('funding.program')}
         </p>
         <p className="text-gray-700 mb-4 whitespace-pre-line">
