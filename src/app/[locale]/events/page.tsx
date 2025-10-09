@@ -42,7 +42,7 @@ const events = [
     date: '2025-10-09',
     image: TallerSQSImg,
     organizer: 'Centro de Supercomputación de Galicia (CESGA)',
-    cesgalink: 'https://lnkd.in/dde_bHJA',
+    cesgalink: 'https://dspacer-cesga.es/portal',
     featured: true,
   },
   {
@@ -367,6 +367,7 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
                 <a
                   href={event.cesgalink}
                   className="text-blue-600 underline hover:text-blue-800 transition-colors"
+                  target="_blank"
                 >
                   {event.cesgalink}
                 </a>
