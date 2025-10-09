@@ -6,15 +6,14 @@ import { Calendar, Pointer, X, ZoomIn } from 'lucide-react';
 import Image, { type StaticImageData } from 'next/image';
 import { useSearchParams } from 'next/navigation';
 import { type AppConfig, useFormatter, useTranslations } from 'next-intl';
-import React, { useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import { Button } from '@/components/button';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
-import { Link } from '@/components/link';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
-import { usePathname, useRouter } from '@/i18n/navigation';
+import { useSearchState } from '@/hooks/useSearchState';
 import EGI2025Img from '../../../../public/events/EGI2025Img.jpg';
 import ForoBAIDATAImg from '../../../../public/events/ForoBAIDATAImg.jpg';
 import GaiaXSaludImg from '../../../../public/events/GaiaXSaludImg.jpg';
@@ -269,9 +268,6 @@ function Pagination({
   const hasPrevious = page > 1;
   const hasNext = page < pageCount;
 
-  function url(p: number) {
-    return `/events?page=${p}`;
-  }
   if (pageCount < 2) return null;
 
   return (
@@ -420,12 +416,11 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
 }
 
 const usePage = () => {
-  const search = useSearchParams();
+  const [pageStr, setPageStr] = useSearchState('page', '1');
 
-  const unsafePage = Number.parseInt(search.get('page') ?? '1');
-  const [page, setPage] = useState(
-    unsafePage && !Number.isNaN(unsafePage) && unsafePage >= 1 ? unsafePage : 1,
-  );
+  const unsafePage = Number.parseInt(pageStr ?? '1');
+
+  const page = Number.isNaN(unsafePage) || unsafePage < 1 ? 1 : unsafePage;
 
   return [
     page,
@@ -433,15 +428,12 @@ const usePage = () => {
       if (page <= 0 || Number.isNaN(page)) {
         return;
       }
-      const url = new URL(window.location.href);
-      url.searchParams.set('page', page.toString());
-      window.history.replaceState({}, '', url.toString());
-      setPage(page);
+      setPageStr(page.toString());
     },
   ] as const;
 };
 
-export default function EventsPage() {
+const Events = () => {
   const search = useSearchParams();
   const page = search.has('page') ? parseInt(search.get('page')!) : 1;
 
@@ -478,5 +470,13 @@ export default function EventsPage() {
         />
       )}
     </main>
+  );
+};
+
+export default function EventsPage() {
+  return (
+    <Suspense>
+      <Events />
+    </Suspense>
   );
 }
