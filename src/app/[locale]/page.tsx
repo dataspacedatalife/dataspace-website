@@ -32,7 +32,13 @@ function Hero() {
                   {t('subtitle')}
                 </p>
                 <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-                  <Button href="/about">{t('button')}</Button>
+                  <Button href="/about">{t('learnMore')}</Button>
+                  <Button
+                    href="https://dspacer-cesga.es/portal"
+                    target="_blank"
+                  >
+                    {t('testDemo')}
+                  </Button>
                 </div>
               </div>
               <div>

@@ -3,7 +3,8 @@
     "hero": {
       "title": "Centro demostrador de espacio de datos multisectorial One Health",
       "subtitle": "Porque solo compartiendo datos se puede extraer su verdadero valor",
-      "button": "Saber más"
+      "learnMore": "Saber más",
+      "testDemo": "Prueba la demo"
     }
   },
   "Navbar": {
@@ -13,6 +14,7 @@
     "que_es_un_espacio": "¿Qué es un espacio de datos?",
     "participa": "Participa",
     "casos_de_uso": "Casos de Uso",
+    "catalogo": "Catálogo",
     "el_equipo": "El Equipo",
     "eventos": "Eventos",
     "idioma": "Idioma",
@@ -159,6 +161,11 @@
       "lead": "Estos son algunos de los casos de uso que ya están aprovechando los espacios de datos para generar valor científico, social y operativo."
     },
     "cases": {
+      "farmaciavax": {
+        "name": "[DEMO] FarmaciaVAX",
+        "entity": "CESGA",
+        "objective": "Gestión de vacunas en farmacias"
+      },
       "aidamed": {
         "name": "AiDataMed",
         "entity": "Chup/IISGS",

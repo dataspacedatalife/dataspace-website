@@ -448,10 +448,12 @@ const Events = () => {
       <GradientBackground />
       <Container>
         <Navbar />
-        <Heading as="h1" className="mt-2">
+        <Heading as="h1" className="mt-16 text-center">
           {t('events.header.title')}
         </Heading>
-        <Lead className="mt-6 max-w-3xl">{t('events.header.description')}</Lead>
+        <Lead className="mt-10 text-center">
+          {t('events.header.description')}
+        </Lead>
       </Container>
       <FeaturedEvents onOpen={setSelectedEvent} />
       <Container className="mt-16 pb-24">

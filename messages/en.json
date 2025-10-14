@@ -3,7 +3,8 @@
     "hero": {
       "title": "One Health Multisectoral Data Space Demonstrator Center",
       "subtitle": "Only by sharing data can we unlock its true power",
-      "button": "Learn more"
+      "learnMore": "Learn more",
+      "testDemo": "Try the demo"
     }
   },
   "Navbar": {
@@ -13,6 +14,7 @@
     "que_es_un_espacio": "What is a data space?",
     "participa": "Participate",
     "casos_de_uso": "Current Users",
+    "catalogo": "Catalog",
     "el_equipo": "The Team",
     "eventos": "Events",
     "idioma": "Language",
@@ -159,6 +161,11 @@
       "lead": "These are some of the use cases that are already taking advantage of data spaces to generate scientific, social and operational value."
     },
     "cases": {
+      "farmaciavax": {
+        "name": "[DEMO] FarmaciaVAX",
+        "entity": "CESGA",
+        "objective": "Vaccine management in pharmacies"
+      },
       "aidamed": {
         "name": "AiDataMed",
         "entity": "Chup/IISGS",
