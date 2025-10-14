@@ -97,6 +97,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
   const links = [
     { href: '/how', label: t('participa') },
     { href: '/use-cases', label: t('casos_de_uso') },
+    { href: '/catalog', label: t('catalogo') },
     { href: '/team', label: t('el_equipo') },
     { href: '/events', label: t('eventos') },
   ];
