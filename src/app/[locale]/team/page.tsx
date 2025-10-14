@@ -19,7 +19,9 @@ async function Header() {
   const t = await getTranslations('team.header');
   return (
     <Container className="mt-16">
-      <Heading as="h1">{t('title')}</Heading>
+      <Heading as="h1" className="text-center">
+        {t('title')}
+      </Heading>
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12 items-start">
         {/* Nuestra misión */}
         <div className="max-w-lg">
