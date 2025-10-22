@@ -3,9 +3,10 @@
 import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 import clsx from 'clsx';
-import { Database, Pointer, X, ZoomIn } from 'lucide-react';
+import { Database } from 'lucide-react';
+import { data } from 'motion/react-client';
 import Image, { type StaticImageData } from 'next/image';
-import { useFormatter } from 'next-intl';
+import { type AppConfig, useMessages, useTranslations } from 'next-intl';
 import React, { Suspense, useState } from 'react';
 import { Button } from '@/components/button';
 import { Container } from '@/components/container';
@@ -14,94 +15,59 @@ import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
 import { useSearchState } from '@/hooks/useSearchState';
-
-// Logos from your use-cases file
+import LogoEmpresa from '../../../../public/logos/nuevoLogoCesga_mayo2023.png';
 import LogoCesga from '../../../../public/logos/nuevoLogoCesga_mayo2023.png';
 import LogoIISGS from '../../../../public/use-cases/IISGS.png';
 import LogoInverbis from '../../../../public/use-cases/Inverbis.png';
 import Logoi4life from '../../../../public/use-cases/i4life.png';
 import LogoUvigo from '../../../../public/use-cases/uvigo.png';
 
-// --- Use case data (from your existing use-cases.tsx) ---
-const colors_blue = ['bg-gradient-to-br from-blue-100 via-sky-100 to-cyan-100'];
-const colors_green = [
-  'bg-gradient-to-br from-green-100 via-lime-100 to-emerald-100',
-];
+type DatasetKey = keyof AppConfig['Messages']['catalog']['datasets'];
+
+type X =
+  AppConfig['Messages']['catalog']['datasets']['aidatamed_synthetic_patients']['subsets'];
 
 const useCasesData = [
   {
-    id: 'farmaciavax',
-    nombre: 'Farmaciavax',
-    entidad: 'CESGA',
-    objetivo: 'Plataforma para descubrimiento y diseño de vacunas.',
-    imagen: LogoCesga,
-    link: 'https://dspacer-cesga.es/portal',
-    color: colors_green,
-  },
-  {
-    id: 'aidamed',
-    nombre: 'AIDAMED',
-    entidad: 'IIS Galicia Sur',
-    objetivo: 'Inteligencia artificial aplicada al diagnóstico médico.',
+    id: 'aidatamed_synthetic_patients',
     imagen: LogoIISGS,
     link: 'https://www.iisgaliciasur.es/',
-    color: colors_blue,
-  },
-  {
-    id: 'brilliant',
-    nombre: 'Brilliant',
-    entidad: 'IIS Galicia Sur',
-    objetivo: 'Modelado de biomarcadores en entornos clínicos.',
-    imagen: LogoIISGS,
-    link: 'https://www.iisgaliciasur.es/',
-    color: colors_blue,
-  },
-  {
-    id: 'gift',
-    nombre: 'GIFT',
-    entidad: 'IIS Galicia Sur',
-    objetivo: 'Genómica y farmacogenética en terapias personalizadas.',
-    imagen: LogoIISGS,
-    link: 'https://www.iisgaliciasur.es/',
-    color: colors_blue,
   },
   {
     id: 'biomexplore',
-    nombre: 'BiomExplore',
-    entidad: 'IIS Galicia Sur',
-    objetivo: 'Exploración de biomarcadores y datos moleculares.',
     imagen: LogoIISGS,
     link: 'https://www.iisgaliciasur.es/',
-    color: colors_blue,
   },
   {
-    id: 'salusbench',
-    nombre: 'SalusBench',
-    entidad: 'Inveris Analytics',
-    objetivo: 'Benchmark de procesos clínicos mediante minería de procesos.',
-    imagen: LogoInverbis,
-    link: 'https://web.inverbisanalytics.com/',
-    color: colors_blue,
+    id: 'brilliant',
+    imagen: LogoIISGS,
+    link: 'https://www.iisgaliciasur.es/',
   },
   {
     id: 'celiaspace',
-    nombre: 'CeliaSpace',
-    entidad: 'Universidade de Vigo',
-    objetivo: 'Espacio de investigación en datos de salud celiaca.',
     imagen: LogoUvigo,
     link: 'https://www.uvigo.gal/',
-    color: colors_blue,
   },
   {
     id: 'datiacare',
-    nombre: 'Datiacare',
-    entidad: 'i4Life',
-    objetivo: 'Datos clínicos para monitorización de pacientes crónicos.',
     imagen: Logoi4life,
     link: 'https://i4life.es/',
-    color: colors_blue,
   },
-];
+  {
+    id: 'gift_conversations',
+    imagen: LogoIISGS,
+    link: 'https://www.iisgaliciasur.es/',
+  },
+  {
+    id: 'salusbench',
+    imagen: LogoInverbis,
+    link: 'https://web.inverbisanalytics.com/',
+  },
+] as const satisfies {
+  id: DatasetKey;
+  imagen: StaticImageData;
+  link: string;
+}[];
 
 // Pagination
 const datasetsPerPage = 4;
@@ -110,93 +76,213 @@ function getDatasets(page: number) {
   const end = page * datasetsPerPage;
   return useCasesData.slice(start, end);
 }
+
 function getDatasetsCount() {
   return useCasesData.length;
 }
 
-// Dataset modal
-function DatasetModal({
-  dataset,
+function DatasetModal<Key extends DatasetKey>({
+  datasetKey,
   onClose,
 }: {
-  dataset: (typeof useCasesData)[number];
+  datasetKey: DatasetKey;
   onClose: () => void;
 }) {
-  const [isImageOpen, setIsImageOpen] = useState(false);
+  const t = useTranslations();
+  const baseKey = `catalog.datasets.${datasetKey}` as const;
+
+  const name = t(`${baseKey}.name`);
+  const dataset_name = t(`${baseKey}.dataset_name`);
+  const use_case = t(`${baseKey}.use_case`);
+  const provider = t(`${baseKey}.provider`);
+  const description = t(`${baseKey}.description`);
+  const volumen = t(`${baseKey}.volumen`);
+  const n_ficheros = t(`${baseKey}.n_ficheros`);
+  const dataset_name_txt = t('catalog.dataset_name');
+  const provider_txt = t('catalog.provider');
+  const volume_txt = t('catalog.volume');
+  const number_of_files_txt = t('catalog.number_of_files');
+  const data_type_txt = t('catalog.data_type');
+  const file_format_txt = t('catalog.file_format');
+  const data_standard_txt = t('catalog.data_standard');
+
+  const messages = useMessages();
+
+  const { subsets } = messages.catalog.datasets[datasetKey];
+
+  const subsetEntries = Object.entries(
+    messages.catalog.datasets[datasetKey].subsets,
+  );
+
+  // Estado de plegado para cada subset
+  const [openSubsets, setOpenSubsets] = useState<Record<string, boolean>>(() =>
+    subsetEntries.reduce(
+      (acc, [key]) => {
+        // Si hay solo un subset, se abre por defecto
+        acc[key] = subsetEntries.length === 1;
+        return acc;
+      },
+      {} as Record<string, boolean>,
+    ),
+  );
+
+  const toggleSubset = (key: string) => {
+    setOpenSubsets((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
+
   return (
-    <Dialog open={!!dataset} onClose={onClose} className="relative z-50">
+    <Dialog open={!!datasetKey} onClose={onClose} className="relative z-50">
       <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
       <div className="fixed inset-0 flex items-center justify-center p-4 overflow-y-auto">
-        <DialogPanel className="relative max-w-2xl w-full rounded-xl bg-white p-6 shadow-xl max-h-[90vh] overflow-y-auto">
-          <DialogTitle className="text-2xl font-bold mb-2 text-gray-900">
-            {dataset.nombre}
+        <DialogPanel className="relative max-w-5xl w-full rounded-xl bg-white p-6 shadow-xl max-h-[90vh] overflow-y-auto">
+          <DialogTitle className="text-2xl font-bold mb-1 text-gray-900">
+            {name}
           </DialogTitle>
 
-          <p className="text-sm text-gray-500 mb-4">
-            <span className="font-medium">{dataset.entidad}</span>
-          </p>
+          <div className="flex items-center gap-3 mb-2 mt-2">
+            <p className="text-md text-gray-500 font-medium">
+              {dataset_name_txt}:
+            </p>
+            <p className="text-md font-medium">{dataset_name}</p>
+          </div>
+          <div className="flex items-center gap-3 mb-6">
+            <p className="text-md text-gray-500 font-medium">{provider_txt}:</p>
+            <p className="text-md font-medium">{use_case} - </p>
+            <p className="text-md font-medium">{provider}</p>
+          </div>
+          <p className="text-gray-600 leading-relaxed mb-6">{description}</p>
 
-          <div
-            className="relative w-full h-64 mb-6 cursor-pointer overflow-hidden rounded-lg group"
-            onClick={() => setIsImageOpen(true)}
-          >
-            <Image
-              src={dataset.imagen}
-              alt={dataset.nombre}
-              fill
-              className="object-contain transition-transform duration-300 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity">
-              <ZoomIn className="text-white w-10 h-10" />
+          <div className="flex flex-wrap gap-4 mb-6">
+            <div className="bg-white border border-gray-200 rounded-md px-4 py-2 shadow-sm">
+              <span className="font-medium text-gray-700">{volume_txt}:</span>{' '}
+              <span className="text-gray-900">{volumen || '-'}</span>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-md px-4 py-2 shadow-sm">
+              <span className="font-medium text-gray-700">
+                {number_of_files_txt}:
+              </span>{' '}
+              <span className="text-gray-900">{n_ficheros || '-'}</span>
             </div>
           </div>
 
-          <p className="text-gray-600 leading-relaxed mb-4">
-            {dataset.objetivo}
-          </p>
+          {subsetEntries.map(([subsetKey, subsetValue]) => {
+            const {
+              name: subsetName,
+              description: subsetDescription,
+              metadata,
+              variables,
+            } = subsetValue;
 
-          <p className="text-sm text-gray-700 flex items-center gap-2 mb-4">
-            <Database className="h-4 w-4 text-gray-700" />
-            <strong>Fuente:</strong>{' '}
-            <a
-              href={dataset.link}
-              className="text-blue-600 underline hover:text-blue-800"
-              target="_blank"
-            >
-              {dataset.link}
-            </a>
-          </p>
+            const isOpen = openSubsets[subsetKey] ?? true;
 
+            return (
+              <div
+                key={subsetKey}
+                className={`rounded-2xl border border-gray-200 shadow-sm bg-gray-50 mb-6`}
+              >
+                {/* Header plegable */}
+                <div
+                  className="flex justify-between items-center p-5 cursor-pointer"
+                  onClick={() => toggleSubset(subsetKey)}
+                >
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {subsetName}
+                  </h3>
+                  <span
+                    className="text-gray-500 transform transition-transform duration-200"
+                    style={{
+                      transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)',
+                    }}
+                  >
+                    ▶
+                  </span>
+                </div>
+
+                {/* Contenido plegable */}
+                {isOpen && (
+                  <div className="px-5 pb-5 space-y-4">
+                    <p className="text-gray-600">{subsetDescription}</p>
+                    {/* Metadata cards */}
+                    <div className="flex flex-wrap gap-4">
+                      <div className="bg-white border border-gray-200 rounded-md px-4 py-2 shadow-sm">
+                        <span className="font-medium text-gray-700">
+                          {data_type_txt}:
+                        </span>{' '}
+                        <span className="text-gray-900">
+                          {metadata.data_type || '-'}
+                        </span>
+                      </div>
+                      <div className="bg-white border border-gray-200 rounded-md px-4 py-2 shadow-sm">
+                        <span className="font-medium text-gray-700">
+                          {file_format_txt}:
+                        </span>{' '}
+                        <span className="text-gray-900">
+                          {metadata.file_format || '-'}
+                        </span>
+                      </div>
+                      <div className="bg-white border border-gray-200 rounded-md px-4 py-2 shadow-sm">
+                        <span className="font-medium text-gray-700">
+                          {data_standard_txt}:
+                        </span>{' '}
+                        <span className="text-gray-900">
+                          {metadata.data_standard || '-'}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Variables table */}
+
+                    {variables.length > 0 && (
+                      <div className="overflow-x-auto mt-4">
+                        <table className="w-full text-sm border border-gray-200 bg-white rounded-lg overflow-hidden">
+                          <thead className="bg-gray-100 text-gray-700">
+                            <tr>
+                              <th className="p-2 text-left">
+                                {t('catalog.variables.name')}
+                              </th>
+                              <th className="p-2 text-left w-1/2">
+                                {t('catalog.variables.description')}
+                              </th>
+                              <th className="p-2 text-left">
+                                {t('catalog.variables.type')}
+                              </th>
+                              {/* <th className="p-2 text-left">
+                                {t('catalog.variables.detailed_description')}
+                              </th> */}
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {variables.map((v: any) => (
+                              <tr
+                                key={v.name}
+                                className="even:bg-gray-50 border-b border-gray-200"
+                              >
+                                <td className="p-2 font-medium text-gray-700">
+                                  {v.name}
+                                </td>
+                                <td className="p-2">{v.data_description}</td>
+                                <td className="p-2">{v.data_type}</td>
+                                {/* <td className="p-2">
+                                  {v.detailed_description || '-'}
+                                </td> */}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            );
+          })}
           <div className="mt-6 flex justify-end">
-            <Button onClick={onClose}>Cerrar</Button>
+            <Button onClick={onClose} className="px-4 py-2">
+              {t('catalog.close')}
+            </Button>
           </div>
         </DialogPanel>
       </div>
-
-      {isImageOpen && (
-        <Dialog
-          open={isImageOpen}
-          onClose={() => setIsImageOpen(false)}
-          className="fixed flex items-center justify-center bg-black/90 inset-0"
-        >
-          <DialogPanel>
-            <Button
-              onClick={() => setIsImageOpen(false)}
-              className="absolute top-4 right-4 text-white hover:text-gray-300"
-            >
-              <X className="w-8 h-8" />
-            </Button>
-
-            <Image
-              src={dataset.imagen}
-              alt={dataset.nombre}
-              width={1200}
-              height={800}
-              className="max-w-full max-h-[90vh] object-contain rounded-lg"
-            />
-          </DialogPanel>
-        </Dialog>
-      )}
     </Dialog>
   );
 }
@@ -207,43 +293,55 @@ function DatasetList({
   onOpen,
 }: {
   page: number;
-  onOpen: (dataset: (typeof useCasesData)[number]) => void;
+  onOpen: (datasetKey: DatasetKey) => void;
 }) {
   const list = getDatasets(page);
+  const t = useTranslations();
 
   return (
     <Container>
-      <div className="space-y-10">
-        {list.map((dataset) => (
-          <div
-            key={dataset.id}
-            className={clsx(
-              'flex flex-col sm:flex-row border-b border-gray-100 pb-8 gap-6 items-center sm:items-start p-4 rounded-xl shadow-sm hover:shadow-md transition',
-              dataset.color[0],
-            )}
-          >
-            <div className="w-[200px] h-[200px] shrink-0 bg-white/70 p-4 rounded-lg flex items-center justify-center">
-              <Image
-                src={dataset.imagen}
-                alt={dataset.nombre}
-                width={200}
-                height={200}
-                className="object-contain rounded-lg"
-              />
-            </div>
+      <div className="space-y-8">
+        {list.map((dataset) => {
+          const baseKey = `catalog.datasets.${dataset.id}` as const;
+          return (
+            <div
+              key={dataset.id}
+              className={clsx(
+                'flex flex-col sm:flex-row items-start sm:items-center border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition bg-white',
+              )}
+            >
+              {/* Image on the left */}
 
-            <div className="flex flex-col flex-1">
-              <h3 className="text-lg font-medium text-gray-900">
-                {dataset.nombre}
-              </h3>
-              <p className="text-sm text-gray-600 mt-1">{dataset.entidad}</p>
-              <p className="mt-3 text-sm text-gray-500">{dataset.objetivo}</p>
-              <div className="mt-4">
-                <Button onClick={() => onOpen(dataset)}>Ver detalles</Button>
+              {dataset.imagen && (
+                <div className="flex-shrink-0 w-24 h-24 sm:w-32 sm:h-32 mr-6 mb-4 sm:mb-0">
+                  <Image
+                    src={dataset.imagen}
+                    alt={t(`${baseKey}.name`)}
+                    className="object-contain w-full h-full rounded-lg"
+                  />
+                </div>
+              )}
+              {/* Text content */}
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {t(`${baseKey}.name`)}
+                </h3>
+                <p className="text-md text-gray-600 mt-1">
+                  {t(`${baseKey}.use_case`)}
+                </p>
+                <p className="mt-3 text-sm text-gray-500 max-w-3xl">
+                  {t(`${baseKey}.description`)}
+                </p>
+              </div>
+              {/* Button on the right */}
+              <div className="flex items-center justify-end mt-4 sm:mt-0">
+                <Button onClick={() => onOpen(dataset.id)}>
+                  {t('catalog.viewDetails')}
+                </Button>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </Container>
   );
@@ -267,31 +365,32 @@ function Pagination({
         disabled={currentPage === 1}
         onClick={() => setPage(currentPage - 1)}
       >
-        <ChevronLeftIcon className="size-4" /> Anterior
+        <ChevronLeftIcon className="size-4" /> Previous
       </Button>
       <Button
         disabled={currentPage === pageCount}
         onClick={() => setPage(currentPage + 1)}
       >
-        Siguiente <ChevronRightIcon className="size-4" />
+        Next <ChevronRightIcon className="size-4" />
       </Button>
     </div>
   );
 }
 
-// Page state
+// Page hook
 const usePage = () => {
   const [pageStr, setPageStr] = useSearchState('page', '1');
-  const page = Number.parseInt(pageStr) || 1;
+  const page = Number.parseInt(pageStr ?? '1') ?? 1;
   return [page, (p: number) => setPageStr(p.toString())] as const;
 };
 
-// Page component
+// Main page
 const CatalogoDeDatos = () => {
-  const [selectedDataset, setSelectedDataset] = useState<
-    (typeof useCasesData)[number] | null
-  >(null);
+  const [selectedDataset, setSelectedDataset] = useState<DatasetKey | null>(
+    null,
+  );
   const [page, setPage] = usePage();
+  const t = useTranslations();
 
   return (
     <main className="overflow-hidden">
@@ -299,12 +398,9 @@ const CatalogoDeDatos = () => {
       <Container>
         <Navbar />
         <Heading as="h1" className="mt-16 text-center">
-          Catálogo de Datos
+          {t('catalog.title')}
         </Heading>
-        <Lead className="mt-10 text-center">
-          Consulta el listado de los conjuntos de datos disponibles, así como su
-          información relacionada y forma de uso.
-        </Lead>
+        <Lead className="mt-10 text-center">{t('catalog.subtitle')}</Lead>
       </Container>
 
       <Container className="mt-16 pb-24">
@@ -316,7 +412,7 @@ const CatalogoDeDatos = () => {
 
       {selectedDataset && (
         <DatasetModal
-          dataset={selectedDataset}
+          datasetKey={selectedDataset}
           onClose={() => setSelectedDataset(null)}
         />
       )}

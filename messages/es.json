@@ -343,6 +343,789 @@
       }
     }
   },
+  "catalog": {
+    "title": "Catálogo de Datos",
+    "subtitle": "Explora el listado de conjuntos de datos y su información preliminar.",
+    "viewDetails": "Ver detalles",
+    "close": "Cerrar",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "source": "Fuente",
+    "dataset_name": "Nombre del conjunto de datos",
+    "provider": "Proveedor",
+    "volume": "Volumen",
+    "number_of_files": "Número de ficheros",
+    "data_type": "Tipo de dato",
+    "file_format": "Formato del archivo",
+    "data_standard": "Estándar de datos",
+    "metadata": {
+      "title": "Metadatos",
+      "data_type": "Tipo de dato",
+      "date_added": "Fecha de inclusión",
+      "file_format": "Formato del archivo",
+      "temporal_resolution": "Resolución temporal",
+      "temporal_coverage": "Cobertura temporal"
+    },
+    "variables": {
+      "title": "Variables",
+      "name": "Variable",
+      "description": "Descripción",
+      "type": "Tipo de dato",
+      "detailed_description": "Descripción detallada"
+    },
+    "datasets": {
+      "aidatamed_synthetic_patients": {
+        "name": "Datos sintéticamente generados de pacientes",
+        "dataset_name": "data_synthetic_patients_[specialty]_[size]_v[MAJOR].[MINOR]",
+        "use_case": "AIDataMed",
+        "provider": "IIS Galicia Sur",
+        "description": "Conjunto de datos sintéticos que reproducen información clínica de pacientes generada por los modelos de IA del proyecto AIDataMed. Incluye datos demográficos, diagnósticos y eventos clínicos siguiendo el modelo OMOP CDM.",
+        "volumen": "50 GB",
+        "n_ficheros": "105 - 300",
+        "subsets": {
+          "person": {
+            "name": "Datos demográficos de pacientes",
+            "description": "Datos demográficos de pacientes sintéticos, incluyendo identificadores únicos, género, fecha de nacimiento, raza y etnicidad.",
+            "metadata": {
+              "data_type": "Sintético",
+              "data_standard": "OMOP CDM",
+              "date_added": "",
+              "file_format": "CSV / Parquet",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "person_id",
+                "units": "-",
+                "data_description": "Identificador único del paciente sintético.",
+                "data_type": "string"
+              },
+              {
+                "name": "gender_concept_id",
+                "units": "-",
+                "data_description": "Concepto de género del paciente según vocabulario OMOP. Ejemplo: 8532 (Femenino), 8507 (Masculino).",
+                "data_type": "number"
+              },
+              {
+                "name": "year_of_birth",
+                "units": "Año",
+                "data_description": "Año de nacimiento del paciente sintético.",
+                "data_type": "number"
+              },
+              {
+                "name": "month_of_birth",
+                "units": "Mes",
+                "data_description": "Mes de nacimiento del paciente sintético.",
+                "data_type": "number"
+              },
+              {
+                "name": "day_of_birth",
+                "units": "Día",
+                "data_description": "Día de nacimiento del paciente sintético.",
+                "data_type": "number"
+              },
+              {
+                "name": "birth_datetime",
+                "units": "Fecha",
+                "data_description": "Fecha de nacimiento completa en formato ISO 8601 (YYYY-MM-DD).",
+                "data_type": "datetime"
+              },
+              {
+                "name": "race_concept_id",
+                "units": "-",
+                "data_description": "Concepto de raza del paciente según OMOP (ejemplo: 8527 para 'White').",
+                "data_type": "number"
+              },
+              {
+                "name": "ethnicity_concept_id",
+                "units": "-",
+                "data_description": "Concepto de etnicidad del paciente según OMOP (ejemplo: 0 para 'Non-Hispanic').",
+                "data_type": "number"
+              },
+              {
+                "name": "location_id",
+                "units": "-",
+                "data_description": "Identificador del registro de localización asociado al paciente (referencia a la tabla LOCATION).",
+                "data_type": "string"
+              },
+              {
+                "name": "provider_id",
+                "units": "-",
+                "data_description": "Identificador del proveedor de atención sanitaria principal del paciente (referencia a la tabla PROVIDER).",
+                "data_type": "string"
+              },
+              {
+                "name": "care_site_id",
+                "units": "-",
+                "data_description": "Identificador del centro de atención o instalación sanitaria asociada al paciente (referencia a la tabla CARE_SITE).",
+                "data_type": "string"
+              },
+              {
+                "name": "person_source_value",
+                "units": "-",
+                "data_description": "Identificador de origen o pseudónimo del paciente sintético.",
+                "data_type": "string"
+              },
+              {
+                "name": "gender_source_value",
+                "units": "-",
+                "data_description": "Valor original del género en la fuente (ejemplo: 'M', 'F').",
+                "data_type": "string"
+              },
+              {
+                "name": "gender_source_concept_id",
+                "units": "-",
+                "data_description": "Concepto asociado al valor fuente del género.",
+                "data_type": "number"
+              },
+              {
+                "name": "race_source_value",
+                "units": "-",
+                "data_description": "Valor original de raza en la fuente (ejemplo: 'white').",
+                "data_type": "string"
+              },
+              {
+                "name": "race_source_concept_id",
+                "units": "-",
+                "data_description": "Concepto asociado al valor fuente de la raza.",
+                "data_type": "number"
+              },
+              {
+                "name": "ethnicity_source_value",
+                "units": "-",
+                "data_description": "Valor original de etnicidad en la fuente (ejemplo: 'nonhispanic').",
+                "data_type": "string"
+              },
+              {
+                "name": "ethnicity_source_concept_id",
+                "units": "-",
+                "data_description": "Concepto asociado al valor fuente de la etnicidad.",
+                "data_type": "number"
+              }
+            ]
+          },
+          "condition_occurrence": {
+            "name": "Condiciones clínicas",
+            "description": "Diagnósticos y condiciones clínicas asociadas a los pacientes sintéticos, incluyendo códigos SNOMED-CT y fechas de inicio y fin de las condiciones.",
+            "metadata": {
+              "data_type": "Sintético",
+              "data_standard": "OMOP CDM",
+              "date_added": "",
+              "file_format": "CSV / Parquet",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "condition_occurrence_id",
+                "units": "-",
+                "data_description": "Identificador único de la ocurrencia de una condición clínica.",
+                "data_type": "string"
+              },
+              {
+                "name": "person_id",
+                "units": "-",
+                "data_description": "Identificador del paciente asociado a la condición.",
+                "data_type": "string"
+              },
+              {
+                "name": "condition_concept_id",
+                "units": "-",
+                "data_description": "Código de la condición clínica.",
+                "data_type": "number"
+              },
+              {
+                "name": "condition_start_date",
+                "units": "Fecha",
+                "data_description": "Fecha de inicio de la condición clínica (formato ISO 8601).",
+                "data_type": "date"
+              },
+              {
+                "name": "condition_start_datetime",
+                "units": "Fecha y hora",
+                "data_description": "Fecha y hora de inicio de la condición clínica (formato ISO 8601).",
+                "data_type": "datetime"
+              },
+              {
+                "name": "condition_end_date",
+                "units": "Fecha",
+                "data_description": "Fecha de finalización de la condición clínica (formato ISO 8601).",
+                "data_type": "date"
+              },
+              {
+                "name": "condition_end_datetime",
+                "units": "Fecha y hora",
+                "data_description": "Fecha y hora de finalización de la condición clínica (formato ISO 8601).",
+                "data_type": "datetime"
+              },
+              {
+                "name": "condition_type_concept_id",
+                "units": "-",
+                "data_description": "Concepto que indica el tipo de fuente o contexto del diagnóstico.",
+                "data_type": "number"
+              },
+              {
+                "name": "condition_status_concept_id",
+                "units": "-",
+                "data_description": "Concepto que describe el estado de la condición.",
+                "data_type": "number"
+              },
+              {
+                "name": "stop_reason",
+                "units": "-",
+                "data_description": "Motivo por el cual la condición o diagnóstico fue detenido o cerrado.",
+                "data_type": "string"
+              },
+              {
+                "name": "provider_id",
+                "units": "-",
+                "data_description": "Identificador del proveedor de atención sanitaria asociado a la condición.",
+                "data_type": "string"
+              },
+              {
+                "name": "visit_occurrence_id",
+                "units": "-",
+                "data_description": "Identificador de la visita en la que se registró la condición.",
+                "data_type": "string"
+              },
+              {
+                "name": "visit_detail_id",
+                "units": "-",
+                "data_description": "Identificador de detalle de visita en la que se documentó la condición.",
+                "data_type": "string"
+              },
+              {
+                "name": "condition_source_value",
+                "units": "-",
+                "data_description": "Código o valor original de la condición clínica en la fuente de datos.",
+                "data_type": "string"
+              },
+              {
+                "name": "condition_source_concept_id",
+                "units": "-",
+                "data_description": "Concepto asociado al código de la fuente para la condición.",
+                "data_type": "number"
+              },
+              {
+                "name": "condition_status_source_value",
+                "units": "-",
+                "data_description": "Valor textual del estado de la condición en la fuente original.",
+                "data_type": "string"
+              }
+            ]
+          }
+        }
+      },
+      "brilliant": {
+        "name": "Datos MRI lumbares",
+        "dataset_name": "MRI_BRILLIANT",
+        "use_case": "Brilliant",
+        "provider": "IIS Galicia Sur",
+        "description": "Datos sintéticos de resonancia magnética lumbar. A estos datos se les ha añadido datos demográficos artificiales como edad, género y un código postal generado aleatoriamente dentro del territorio gallego.",
+        "volumen": "1 TB",
+        "n_ficheros": "10.000 ficheros",
+        "subsets": {
+          "mri_DICOM": {
+            "name": "MRI_BRILLIANT_DICOM",
+            "description": "Datos de imágenes de resonancia magnética lumbar (región L3).",
+            "metadata": {
+              "data_type": "Sintético",
+              "data_standard": "DICOM",
+              "date_added": "",
+              "file_format": "DICOM",
+              "temporal_resolution": "-",
+              "temporal_coverage": "-"
+            },
+            "variables": []
+          },
+          "mri_csv": {
+            "name": "MRI_BRILLIANT_CSV",
+            "description": "Datos personales sintéticos asociados a las resonancias magnéticas lumbares (región L3).",
+            "metadata": {
+              "data_type": "Sintético",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": []
+          }
+        }
+      },
+      "gift_conversations": {
+        "name": "Datos de conversaciones médicas",
+        "dataset_name": "data_gift_conversations_[start_date]_[end_date]",
+        "use_case": "GIFT",
+        "provider": "IIS Galicia Sur",
+        "description": "Conjunto de datos de conversaciones médicas generadas con un asistente conversacional basado en IA. Incluye preguntas, respuestas, metadatos de LLM, contexto y estadísticas de uso.",
+        "volumen": "5 GB",
+        "n_ficheros": "500",
+        "subsets": {
+          "conversation": {
+            "name": "Medical conversations",
+            "description": "Conversaciones médicas anonimizadas, con preguntas, respuestas, contexto y metadatos del modelo de lenguaje que las generó.",
+            "metadata": {
+              "data_type": "Empírico",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV / Parquet",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "conversation_id",
+                "units": "-",
+                "data_description": "Identificador único de la conversación.",
+                "data_type": "string"
+              },
+              {
+                "name": "timestamp",
+                "units": "Fecha y hora",
+                "data_description": "Marca temporal de la conversación.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "question",
+                "units": "-",
+                "data_description": "Pregunta realizada por el usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "answer",
+                "units": "-",
+                "data_description": "Respuesta generada por el modelo de IA.",
+                "data_type": "string"
+              },
+              {
+                "name": "llm_name",
+                "units": "-",
+                "data_description": "Nombre del modelo de lenguaje que generó la respuesta.",
+                "data_type": "string"
+              },
+              {
+                "name": "llm_provider",
+                "units": "-",
+                "data_description": "Proveedor del modelo de lenguaje.",
+                "data_type": "string"
+              },
+              {
+                "name": "llm_temperature",
+                "units": "-",
+                "data_description": "Valor de temperatura usado en la generación de la respuesta.",
+                "data_type": "number"
+              },
+              {
+                "name": "llm_top_k",
+                "units": "-",
+                "data_description": "-",
+                "data_type": "number"
+              },
+              {
+                "name": "llm_top_p",
+                "units": "-",
+                "data_description": "-",
+                "data_type": "number"
+              },
+              {
+                "name": "prompt_id",
+                "units": "-",
+                "data_description": "Identificador del prompt utilizado para generar la respuesta.",
+                "data_type": "number"
+              },
+              {
+                "name": "prompt_content",
+                "units": "-",
+                "data_description": "Contenido del prompt usado para la generación de la respuesta.",
+                "data_type": "string"
+              },
+              {
+                "name": "context_chunks",
+                "units": "-",
+                "data_description": "-",
+                "data_type": "string"
+              },
+              {
+                "name": "context_images",
+                "units": "-",
+                "data_description": "Referencias a imágenes usadas como contexto para la respuesta.",
+                "data_type": "string"
+              },
+              {
+                "name": "input_tokens",
+                "units": "Tokens",
+                "data_description": "Cantidad de tokens de entrada al modelo.",
+                "data_type": "number"
+              },
+              {
+                "name": "output_tokens",
+                "units": "Tokens",
+                "data_description": "Cantidad de tokens generados por el modelo.",
+                "data_type": "number"
+              },
+              {
+                "name": "cost",
+                "units": "-",
+                "data_description": "-",
+                "data_type": "number"
+              },
+              {
+                "name": "config_id",
+                "units": "-",
+                "data_description": "Identificador de la configuración del modelo usada.",
+                "data_type": "number"
+              },
+              {
+                "name": "user_category",
+                "units": "-",
+                "data_description": "Categoría del usuario que realizó la pregunta.",
+                "data_type": "string"
+              }
+            ]
+          }
+        }
+      },
+      "biomexplore": {
+        "name": "Datos de metagenomas sintéticamente generados",
+        "dataset_name": "dataset_biomexplore",
+        "use_case": "BiomeXplore",
+        "provider": "IIS Galicia Sur",
+        "description": "Datos de metagenomas fecales artificiales generados sintéticamente, incluyendo lecturas de secuenciación masiva (FASTQ) y metadatos sintéticos que representan variables epidemiológicas, clínicas y demográficas.",
+        "volumen": "250 - 1000 TB",
+        "n_ficheros": "100000",
+        "subsets": {
+          "metagenomic_reads": {
+            "name": "Metagenomic sequencing reads",
+            "description": "Lecturas de secuenciación masiva (shotgun) de microbiota bacteriana fecal generadas sintéticamente. Archivos en formato FASTQ comprimidos (.fastq.gz).",
+            "metadata": {
+              "data_type": "Sintético",
+              "data_standard": "FASTQ",
+              "date_added": "3",
+              "file_format": "FASTQ.gz",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": []
+          }
+        }
+      },
+      "salusbench": {
+        "name": "Datos de minería de procesos hospitalarios",
+        "dataset_name": "data_proceso_id_hospital_id",
+        "use_case": "SALUSBENCH",
+        "provider": "Inverbis",
+        "description": "Datos hospitalarios generados a partir de técnicas de minería de procesos.",
+        "volumen": "50 - 300 GB por fichero",
+        "n_ficheros": "-",
+        "subsets": {
+          "data_hospital": {
+            "name": "data_proceso_id_hospital_id",
+            "description": "Conjunto de datos hospitalarios generado a partir de técnicas de minería de procesos. Contiene un log de eventos enriquecido que incluye información sobre trazas (casos), actividades realizadas, atributos temporales y contextuales, variantes del proceso, y relaciones entre eventos (arcos).",
+            "metadata": {
+              "data_type": "Mixto (empírico + sintético)",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "case_id",
+                "units": "-",
+                "data_description": "Identificador de proceso o paciente",
+                "data_type": "string"
+              },
+              {
+                "name": "event_id",
+                "units": "-",
+                "data_description": "Identificador del evento dentro del caso",
+                "data_type": "string"
+              },
+              {
+                "name": "activity",
+                "units": "-",
+                "data_description": "Nombre de la actividad o paso clínico",
+                "data_type": "string"
+              },
+              {
+                "name": "Start",
+                "units": "Fecha y hora del evento de inicio (ISO 8601)",
+                "data_description": "Fecha y hora exacta del inicio del evento",
+                "data_type": "datetime"
+              },
+              {
+                "name": "End",
+                "units": "Fecha y hora del evento de fin (ISO 8601)",
+                "data_description": "Fecha y hora exacta del fin del evento.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "Attribute",
+                "units": "",
+                "data_description": "Campos adicionales (recurso, departamento, edad, sexo, tipo de ingreso, etc)",
+                "data_type": "string, number, datetime"
+              },
+              {
+                "name": "TraceDuration",
+                "units": "",
+                "data_description": "Duración total del caso en horas o días",
+                "data_type": "number"
+              },
+              {
+                "name": "Duration",
+                "units": "",
+                "data_description": "Duración del evento",
+                "data_type": "number"
+              },
+              {
+                "name": "VariantName",
+                "units": "",
+                "data_description": "Nombre de camino de proceso",
+                "data_type": "string"
+              },
+
+              {
+                "name": "Transition",
+                "units": "-",
+                "data_description": "Transición entre actividades",
+                "data_type": "string"
+              },
+              {
+                "name": "TransitionDuration",
+                "units": "",
+                "data_description": "Duración de la transición entre actividades",
+                "data_type": "number"
+              }
+            ]
+          }
+        }
+      },
+      "celiaspace": {
+        "name": "Datos de conversaciones con el asistente de personas mayores Serenia",
+        "dataset_name": "serenia_senior_conversations",
+        "use_case": "CeliaSpace",
+        "provider": "Universidad de Vigo",
+        "description": "Conversaciones que contienen interacciones entre usuarios mayores y la asistente Serenia orientada al acompañamiento, entretenimiento y cuidado de este colectivo.",
+        "volumen": "10 usuarios, 1.000 interacciones cada usuario",
+        "n_ficheros": "2",
+        "subsets": {
+          "serenia": {
+            "name": "Conversaciones",
+            "description": "Conversaciones entre usuarios mayores y la asistente Serenia.",
+            "metadata": {
+              "data_type": "Empírico",
+              "data_standard": "HL7 FHIR",
+              "date_added": "",
+              "file_format": "CSV",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": []
+          }
+        }
+      },
+      "datiacare": {
+        "name": "Datos de monitorización domiciliaria para personas mayores",
+        "dataset_name": "datiacare_home_monitoring",
+        "use_case": "Datiacare",
+        "provider": "i4life",
+        "description": "Conjunto de datos recopilados por sensores instalados en hogares de personas mayores (mayores de 65 años), que incluyen eventos de presencia en el hall, vibración en asiento habitual y apertura de nevera, así como datos de actividad diaria recogidos por un reloj inteligente.",
+        "volumen": "200.000 registros por año y por usuario",
+        "n_ficheros": "50 - 300",
+        "subsets": {
+          "iot": {
+            "name": "IoT related measurements",
+            "description": "Datos de los dispositivos domóticos que integran la plataforma de monitorización",
+            "metadata": {
+              "data_type": "Mixto (empírico + sintético)",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "Parquet",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "value",
+                "units": "Boolean",
+                "data_description": "Valor de detección del sensor IoT (true o false). Por ejemplo: detección de movimiento, vibración o apertura de puerta.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "unit",
+                "units": "-",
+                "data_description": "Unidad de medida del valor",
+                "data_type": "string"
+              },
+              {
+                "name": "date",
+                "units": "Fecha y hora (ISO 8601)",
+                "data_description": "Fecha y hora exacta de la medición del sensor.",
+                "data_type": "date-time"
+              },
+              {
+                "name": "type",
+                "units": "texto",
+                "data_description": "Tipo de sensor: pir (infrarrojo pasivo), vibration (vibración) o door (puerta).",
+                "data_type": "string"
+              },
+              {
+                "name": "users.gender",
+                "units": "texto",
+                "data_description": "Género del usuario asociado al dispositivo (M o F).",
+                "data_type": "string"
+              },
+              {
+                "name": "users.birth_date",
+                "units": "Fecha (ISO 8601)",
+                "data_description": "Fecha de nacimiento del usuario vinculado al sensor.",
+                "data_type": "date-time"
+              }
+            ]
+          },
+          "health": {
+            "name": "Health related measurements",
+            "description": "Datos de los dispositivos de salud que integran la plataforma de monitorización",
+            "metadata": {
+              "data_type": "Mixto (empírico + sintético)",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "Parquet",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "date",
+                "units": "Fecha y hora (ISO 8601)",
+                "data_description": "Fecha y hora exacta en la que se tomó la medición.",
+                "data_type": "date-time"
+              },
+              {
+                "name": "type",
+                "units": "texto",
+                "data_description": "Tipo de sensor: HEART (frecuencia cardiaca) o BP (presión arterial).",
+                "data_type": "string"
+              },
+              {
+                "name": "users.gender",
+                "units": "texto",
+                "data_description": "Género del usuario al que se tomó la medición (M o F).",
+                "data_type": "string"
+              },
+              {
+                "name": "users.birth_date",
+                "units": "Fecha (ISO 8601)",
+                "data_description": "Fecha de nacimiento del usuario vinculado.",
+                "data_type": "date-time"
+              },
+              {
+                "name": "value1",
+                "units": "numérico",
+                "data_description": "Valor principal de la medición: frecuencia cardiaca (bpm) o presión sistólica (mmHg).",
+                "data_type": "number"
+              },
+              {
+                "name": "value2",
+                "units": "numérico",
+                "data_description": "Valor secundario de la medición: presión diastólica en mediciones del tipo BP.",
+                "data_type": "number"
+              },
+              {
+                "name": "value3",
+                "units": "numérico",
+                "data_description": "Valor terciario de la medición: media de medidas o valor auxiliar si aplica.",
+                "data_type": "number"
+              },
+              {
+                "name": "metricHours.hourOfDay",
+                "units": "Numérico (0-23)",
+                "data_description": "Hora del día para las métricas horarias, si la medición está agregada.",
+                "data_type": "number"
+              },
+              {
+                "name": "metricHours.value",
+                "units": "Numérico",
+                "data_description": "Valor promedio o total de la métrica en esa hora.",
+                "data_type": "number"
+              }
+            ]
+          },
+          "movement": {
+            "name": "Movement related measurements",
+            "description": "Datos de los dispositivos de actividad física",
+            "metadata": {
+              "data_type": "Mixto (empírico + sintético)",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "Parquet",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "date",
+                "units": "Fecha y hora (ISO 8601)",
+                "data_description": "Fecha y hora exacta en la que se registró la actividad.",
+                "data_type": "date-time"
+              },
+              {
+                "name": "type",
+                "units": "texto",
+                "data_description": "Tipo de sensor: STEPS (número de pasos) o LOCATION (ubicación).",
+                "data_type": "string"
+              },
+              {
+                "name": "users.gender",
+                "units": "texto",
+                "data_description": "Género del usuario al que se tomó la medición (M o F).",
+                "data_type": "string"
+              },
+              {
+                "name": "users.birth_date",
+                "units": "Fecha (ISO 8601)",
+                "data_description": "Fecha de nacimiento del usuario vinculado.",
+                "data_type": "date-time"
+              },
+              {
+                "name": "value1",
+                "units": "numérico",
+                "data_description": "Valor principal de la medición: número de pasos o latitud de la posición.",
+                "data_type": "number"
+              },
+              {
+                "name": "value2",
+                "units": "numérico",
+                "data_description": "Valor secundario de la medición: longitud de la posición.",
+                "data_type": "number"
+              },
+              {
+                "name": "value3",
+                "units": "numérico",
+                "data_description": "Valor terciario de la medición: media de medidas o valor auxiliar si aplica.",
+                "data_type": "number"
+              },
+              {
+                "name": "metricHours.hourOfDay",
+                "units": "Numérico (0-23)",
+                "data_description": "Hora del día para las métricas horarias, si la medición está agregada.",
+                "data_type": "number"
+              },
+              {
+                "name": "metricHours.value",
+                "units": "Numérico",
+                "data_description": "Valor promedio o total de la métrica en esa hora.",
+                "data_type": "number"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
   "Footer": {
     "contact_title": "¡Contáctanos!",
     "contact_subtitle": "¿Interesado en el proyecto?",
