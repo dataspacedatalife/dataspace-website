@@ -25,7 +25,7 @@
   "about": {
     "header": {
       "title": "What is the DATAlife Demonstrator?",
-      "lead": "It is a platform that allows sharing and accessing health data in a secure, ethical, governed and interoperable manner, respecting data sovereignty.",
+      "lead": "It is a platform that allows sharing and accessing health data in a secure, ethical, governed and interoperable manner, respecting data sovereignty",
       "imageAlt": "DATAlife Demonstrator Environment"
     },
     "objective": {
@@ -56,11 +56,11 @@
   "how": {
     "metadata": {
       "title": "Participate",
-      "description": "How to join the data space: who can participate, steps to join, commitments and benefits."
+      "description": "How to join the data space: who can participate, steps to join, commitments and benefits"
     },
     "header": {
       "title": "Participate in the DATAlife data space",
-      "lead": "Share, consume or develop data-based services in a trusted environment that guarantees sovereignty, privacy and interoperability."
+      "lead": "Share, consume or develop data-based services in a trusted environment that guarantees sovereignty, privacy and interoperability"
     },
     "who": {
       "title": "Who can participate?",
@@ -154,11 +154,11 @@
   "use-cases": {
     "metadata": {
       "title": "Use Cases",
-      "description": "Real-world examples of data space applications in different sectors: health, management, benchmarking and more."
+      "description": "Real-world examples of data space applications in different sectors: health, management, benchmarking and more"
     },
     "header": {
       "title": "Use Cases",
-      "lead": "These are some of the use cases that are already taking advantage of data spaces to generate scientific, social and operational value."
+      "lead": "These are some of the use cases that are already taking advantage of data spaces to generate scientific, social and operational value"
     },
     "cases": {
       "farmaciavax": {
@@ -206,11 +206,11 @@
   "what": {
     "metadata": {
       "title": "What is a Data Space?",
-      "description": "We are building an ecosystem where data can be shared securely, governed and ethically among multiple organizations."
+      "description": "We are building an ecosystem where data can be shared securely, governed and ethically among multiple organizations"
     },
     "header": {
       "title": "What is a data space?",
-      "lead": "A data space is a structured framework that allows the exchange, access, management and use of data between multiple entities in a secure, interoperable and compliant manner."
+      "lead": "A data space is a structured framework that allows the exchange, access, management and use of data between multiple entities in a secure, interoperable and compliant manner"
     },
     "objective": {
       "title": "Objective",
@@ -250,11 +250,11 @@
   "events": {
     "metadata": {
       "title": "Events",
-      "description": "Stay updated with upcoming events and presentations."
+      "description": "Stay updated with upcoming events and presentations"
     },
     "header": {
       "title": "Events",
-      "description": "Stay updated with upcoming events and presentations.",
+      "description": "Stay updated with upcoming events and presentations",
       "featuredTitle": "Featured Events",
       "pastTitle": "Past Events"
     },
@@ -264,7 +264,7 @@
     "events": {
       "egi2025": {
         "header": "Presentation at EGI/Ibergrid",
-        "excerpt": "Participation in the European distributed computing conference EGI 2025.",
+        "excerpt": "Participation in the European distributed computing conference EGI 2025",
         "description": [
           "Participation in the European distributed computing conference EGI 2025, held in Santander.",
           "Within this framework, the Multisectoral One Health Demonstrator Center promoted by CESGA was presented, highlighting its role as a data space focused on research and innovation.",
@@ -274,7 +274,7 @@
       },
       "datalife": {
         "header": "Presentation Day of the Multisectoral Demonstrator DATAlife",
-        "excerpt": "Launch event for the Multisectoral One Health Demonstrator Center (DATAlife).",
+        "excerpt": "Launch event for the Multisectoral One Health Demonstrator Center (DATAlife)",
         "description": [
           "Launch event of the Multisectoral One Health Demonstrator Center (DATAlife) in Santiago de Compostela.",
           "The day focused on showcasing how this data space promotes research and innovation within the One Health framework, with presentations, use case showcases, and collaboration opportunities.",
@@ -284,7 +284,7 @@
       },
       "baidata": {
         "header": "Attendance at the 4th BAIDATA Forum",
-        "excerpt": "Participation in the national forum on data economy and European data spaces.",
+        "excerpt": "Participation in the national forum on data economy and European data spaces",
         "description": [
           "Participation in the 4th BAIDATA Forum, held in Bilbao and focused on the data economy and European data spaces.",
           "The event gathered professionals, companies, and public administrations to discuss interoperability, governance, and use cases in sectors such as health, mobility, and industry.",
@@ -294,7 +294,7 @@
       },
       "gaiaxsalud": {
         "header": "Workshop of the Gaia-X Spain Health Working Group",
-        "excerpt": "Session on the challenges and opportunities of the European Health Data Space regulation.",
+        "excerpt": "Session on the challenges and opportunities of the European Health Data Space regulation",
         "description": [
           "Participation in the workshop of the health working group organized by Gaia-X Spain in collaboration with the Polytechnic University of Madrid.",
           "The session, covering legal, technical, and healthcare perspectives, focused on the challenges and opportunities arising from the new European Health Data Space regulation.",
@@ -304,7 +304,7 @@
       },
       "normaune": {
         "header": "Presentation of the UNE-ISO/IEC 42001 Standard on AI Management",
-        "excerpt": "Conference on the first international standard for artificial intelligence management systems.",
+        "excerpt": "Conference on the first international standard for artificial intelligence management systems",
         "description": [
           "Attendance at the event organized by the Spanish Association for Standardization (UNE) and sponsored by the State Secretariat for Digitalization and Artificial Intelligence (SEDIA).",
           "The meeting served to present the UNE-ISO/IEC 42001 standard, the first international framework establishing requirements for implementing an AI management system within organizations.",
@@ -314,7 +314,7 @@
       },
       "tallercred": {
         "header": "1st CRED Workshop: Building Data Spaces",
-        "excerpt": "Meeting for beneficiaries of the Demonstrator Centers and Use Cases call.",
+        "excerpt": "Meeting for beneficiaries of the Demonstrator Centers and Use Cases call",
         "description": [
           "Attendance at an in-person workshop exclusively for beneficiaries of the Demonstrator Centers and Use Cases call, held at the CRED headquarters in Madrid.",
           "The session clarified administrative questions regarding the projects.",
@@ -324,7 +324,7 @@
       },
       "tallersqs": {
         "header": "FarmaciaVAX Data Space Workshop with SQS’s D-Spacer Platform",
-        "excerpt": "Hands-on workshop on the operation of a data space using the FarmaciaVAX use case.",
+        "excerpt": "Hands-on workshop on the operation of a data space using the FarmaciaVAX use case",
         "description": [
           "Workshop focused on demonstrating how a data space operates. It centers on the FarmaciaVAX use case, part of the Multisectoral Demonstrator Center DATAlife, and uses the D-Spacer technology developed by SQS.",
           "The session includes an introduction to the platform and its integration into the data space context, participant onboarding and activation, policy and contract reviews to understand various constraints, and practical examples of data sharing between pharmacies and health services.",
@@ -333,19 +333,31 @@
         "extra": "Discover it here"
       },
       "kitdatoscred": {
-        "header": "CRED Data Kit Launch",
-        "excerpt": "Event to present the Data Kit by CRED.",
+        "header": "Launch of the CRED Data Kit",
+        "excerpt": "Event to present the Data Kit by CRED",
         "description": [
-          "Extended description of the fictional event.",
-          "Here you could include full details about the organization, agenda, and conclusions."
+          "Attendance at the session on the Data Spaces Kit to facilitate the onboarding of public and private organizations into data spaces with financial support. The session outlined the covered activities (opportunity identification, data preparation, technical connection, and legal/governance management) and the eligible expenses (personnel, contracted services, and products).",
+          "The application process—awarded on a first-come, first-served basis—was explained."
         ],
-        "extra": null
+        "extra": "If you want to refresh the event information or didn’t have the chance to watch it, don’t miss it!"
+      },
+      "kitdatoscred2": {
+        "header": "Practical Workshop: Data Spaces Kit",
+        "excerpt": "Hands-on workshop to prepare and submit an application for the Data Spaces Kit",
+        "description": [
+          "If your company is a potential beneficiary of the Data Spaces Kit, you’ll be interested to know that the upcoming call for grants of up to €30,000 will soon be launched for participants and promoters of data spaces.",
+          "This online session will have a very practical approach, where they will explain everything you need to know about the Data Spaces Kit and provide key insights to properly prepare and submit your grant application.",
+          "📅 Date: October 30, 2025",
+          "🕔 Time: 10:00 a.m.",
+          "📍 Format: Online"
+        ],
+        "extra": "Register here:"
       }
     }
   },
   "catalog": {
     "title": "Data Catalog",
-    "subtitle": "Explore the list of datasets and their preliminary information.",
+    "subtitle": "Explore the list of datasets and their preliminary information",
     "viewDetails": "View details",
     "close": "Close",
     "previous": "Previous",

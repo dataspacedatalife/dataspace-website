@@ -25,7 +25,7 @@
   "about": {
     "header": {
       "title": "¿Qué es el demostrador DATAlife?",
-      "lead": "Se trata de una plataforma que permite compartir y acceder a datos del sector salud de forma segura, ética, gobernada e interoperable, respetando la soberanía del dato.",
+      "lead": "Se trata de una plataforma que permite compartir y acceder a datos del sector salud de forma segura, ética, gobernada e interoperable, respetando la soberanía del dato",
       "imageAlt": "Entorno del demostrador DATAlife"
     },
     "objective": {
@@ -56,11 +56,11 @@
   "how": {
     "metadata": {
       "title": "Participa",
-      "description": "Cómo unirse al espacio de datos: quién puede participar, pasos de adhesión, compromisos y beneficios."
+      "description": "Cómo unirse al espacio de datos: quién puede participar, pasos de adhesión, compromisos y beneficios"
     },
     "header": {
       "title": "Participa en el espacio de datos DATAlife",
-      "lead": "Comparte, consume o desarrolla servicios basados en datos en un entorno confiable que garantiza soberanía, privacidad e interoperabilidad."
+      "lead": "Comparte, consume o desarrolla servicios basados en datos en un entorno confiable que garantiza soberanía, privacidad e interoperabilidad"
     },
     "who": {
       "title": "¿Quién puede participar?",
@@ -101,7 +101,7 @@
   "team": {
     "metadata": {
       "title": "Equipo",
-      "description": "Impulsando la innovación desde el CESGA. Nuestra misión es acelerar la transformación digital de los sectores de la biotecnología, agroalimentación, forestal-mar-industrial y salud."
+      "description": "Impulsando la innovación desde el CESGA. Nuestra misión es acelerar la transformación digital de los sectores de la biotecnología, agroalimentación, forestal-mar-industrial y salud"
     },
     "header": {
       "title": "Impulsando la innovación desde el CESGA",
@@ -154,11 +154,11 @@
   "use-cases": {
     "metadata": {
       "title": "Casos de uso",
-      "description": "Ejemplos reales de aplicación de espacios de datos en distintos sectores: salud, gestión, benchmarking y más."
+      "description": "Ejemplos reales de aplicación de espacios de datos en distintos sectores: salud, gestión, benchmarking y más"
     },
     "header": {
       "title": "Casos de uso",
-      "lead": "Estos son algunos de los casos de uso que ya están aprovechando los espacios de datos para generar valor científico, social y operativo."
+      "lead": "Estos son algunos de los casos de uso que ya están aprovechando los espacios de datos para generar valor científico, social y operativo"
     },
     "cases": {
       "farmaciavax": {
@@ -206,11 +206,11 @@
   "what": {
     "metadata": {
       "title": "¿Qué es un espacio de datos?",
-      "description": "Estamos construyendo un ecosistema donde los datos puedan ser compartidos de forma segura, gobernada y ética entre múltiples organizaciones."
+      "description": "Estamos construyendo un ecosistema donde los datos puedan ser compartidos de forma segura, gobernada y ética entre múltiples organizaciones"
     },
     "header": {
       "title": "¿Qué es un espacio de datos?",
-      "lead": "Un espacio de datos es un marco estructurado que permite el intercambio, acceso, gestión y uso de datos entre múltiples entidades de manera segura, interoperable y conforme a normativas."
+      "lead": "Un espacio de datos es un marco estructurado que permite el intercambio, acceso, gestión y uso de datos entre múltiples entidades de manera segura, interoperable y conforme a normativas"
     },
     "objective": {
       "title": "Objetivo",
@@ -250,11 +250,11 @@
   "events": {
     "metadata": {
       "title": "Eventos",
-      "description": "Mantente informado sobre los próximos eventos y presentaciones."
+      "description": "Mantente informado sobre los próximos eventos y presentaciones"
     },
     "header": {
       "title": "Eventos",
-      "description": "Mantente informado sobre los próximos eventos y presentaciones.",
+      "description": "Mantente informado sobre los próximos eventos y presentaciones",
       "featuredTitle": "Eventos destacados",
       "pastTitle": "Eventos pasados"
     },
@@ -264,7 +264,7 @@
     "events": {
       "egi2025": {
         "header": "Presentación en EGI/Ibergrid",
-        "excerpt": "Participación en la conferencia europea de computación distribuida EGI 2025.",
+        "excerpt": "Participación en la conferencia europea de computación distribuida EGI 2025",
         "description": [
           "Participación en la conferencia europea de computación distribuida EGI 2025, celebrada en Santander.",
           "En este marco se presentó el Centro Demostrador Multisectorial One Health que impulsa el CESGA, destacando su papel como espacio de datos orientado a la investigación y la innovación.",
@@ -274,7 +274,7 @@
       },
       "datalife": {
         "header": "Jornada de presentación demostrador multisectorial DATAlife",
-        "excerpt": "Acto de lanzamiento del Centro Demostrador Multisectorial One Health (DATAlife).",
+        "excerpt": "Acto de lanzamiento del Centro Demostrador Multisectorial One Health (DATAlife)",
         "description": [
           "Acto de lanzamiento del Centro Demostrador Multisectorial One Health (DATAlife) en Santiago de Compostela.",
           "La jornada estuvo centrada en dar a conocer cómo este espacio de datos impulsa la investigación y la innovación en el marco One Health, con ponencias, presentación de casos de uso y oportunidades de colaboración.",
@@ -284,7 +284,7 @@
       },
       "baidata": {
         "header": "Asistencia al IV Foro BAIDATA",
-        "excerpt": "Participación en el foro nacional sobre economía del dato y espacios de datos europeos.",
+        "excerpt": "Participación en el foro nacional sobre economía del dato y espacios de datos europeos",
         "description": [
           "Participación en el IV Foro BAIDATA, celebrado en Bilbao y centrado en la economía del dato y los espacios europeos de datos.",
           "El encuentro reunió a profesionales, empresas y administraciones para debatir sobre interoperabilidad, gobernanza y casos de uso en sectores como salud, movilidad o industria.",
@@ -294,7 +294,7 @@
       },
       "gaiaxsalud": {
         "header": "Workshop grupo de trabajo de salud Gaia-X España",
-        "excerpt": "Sesión sobre retos y oportunidades del reglamento europeo de espacios de datos de salud.",
+        "excerpt": "Sesión sobre retos y oportunidades del reglamento europeo de espacios de datos de salud",
         "description": [
           "Participación en el workshop del grupo de trabajo de salud organizado por Gaia-X España en colaboración con la Universidad Politécnica de Madrid.",
           "La sesión, de carácter legal, técnico y sanitario, se centró en los retos y oportunidades que plantea el nuevo reglamento europeo de espacios de datos de salud.",
@@ -304,7 +304,7 @@
       },
       "normaune": {
         "header": "Presentación norma UNE-ISO/IEC 42001 sobre gestión de la IA",
-        "excerpt": "Jornada sobre el primer estándar internacional de gestión de la inteligencia artificial.",
+        "excerpt": "Jornada sobre el primer estándar internacional de gestión de la inteligencia artificial",
         "description": [
           "Asistencia a la jornada organizada por la Asociación Española de Normalización (UNE) y patrocinada por la Secretaría de Estado de Digitalización e Inteligencia Artificial (SEDIA).",
           "El encuentro sirvió para presentar la norma UNE-ISO/IEC 42001, primer estándar internacional que establece los requisitos para implantar un sistema de gestión de la inteligencia artificial en organizaciones.",
@@ -314,7 +314,7 @@
       },
       "tallercred": {
         "header": "1er Taller CRED: construyendo espacios de datos",
-        "excerpt": "Encuentro para beneficiarios de la convocatoria de Centros Demostradores y Casos de Uso.",
+        "excerpt": "Encuentro para beneficiarios de la convocatoria de Centros Demostradores y Casos de Uso",
         "description": [
           "Asistencia a un taller presencial exclusivo para beneficiarios de la convocatoria de Centros Demostradores y Casos de Uso, convocado en la sede del CRED en Madrid.",
           "Durante la sesión se aclararon dudas administrativas acerca de los proyectos.",
@@ -324,7 +324,7 @@
       },
       "tallersqs": {
         "header": "Taller de Espacio de Datos FarmaciaVAX con la plataforma D-Spacer de SQS",
-        "excerpt": "Taller práctico sobre el funcionamiento de un espacio de datos en el caso de uso FarmaciaVAX.",
+        "excerpt": "Taller práctico sobre el funcionamiento de un espacio de datos en el caso de uso FarmaciaVAX",
         "description": [
           "Taller orientado a mostrar el funcionamiento de un espacio de datos. Se centra en el caso de uso FarmaciaVAX, que está enmarcado en el Centro Demostrador Multisectorial DATAlife, y usa la tecnología D-Spacer de la empresa SQS.",
           "La sesión incluye una introducción a la plataforma y a su integración en el contexto de espacios de datos, la adhesión y activación de participantes, la revisión de políticas y contratos para comprender distintas restricciones, y ejemplos prácticos de compartición de datos entre farmacias y servicios de salud.",
@@ -336,16 +336,27 @@
         "header": "Lanzamiento del Kit de Datos CRED",
         "excerpt": "Evento para presentar el Kit de Datos por el CRED",
         "description": [
-          "Descripción extendida del evento ficticio.",
-          "Aquí podrías dar todos los detalles sobre la organización, agenda y conclusiones."
+          "Asistencia a la jornada sobre el Kit Espacios de Datos para facilitar la incorporación de organizaciones públicas y privadas a espacios de datos con apoyo financiero. El encuentro presentó las actividades cubiertas (identificación de oportunidades, preparación de datos, conexión técnica y gestión jurídica) y los gastos subvencionables (personal, servicios y productos). Se explicó el procedimiento de solicitud con concesión por orden de llegada."
         ],
-        "extra": null
+        "extra": "Si quieres refrescar la información del evento o no tuviste oportunidad de verlo, ¡no te lo pierdas!"
+      },
+      "kitdatoscred2": {
+        "header": "Taller práctico Kit Espacios de Datos",
+        "excerpt": "Taller práctico para preparar y presentar una candidatura al Kit Espacios de datos",
+        "description": [
+          "Si tu empresa es potencial beneficiaria del Kit Espacios de Datos, te interesará saber que próximamente se lanzará la convocatoria de ayudas de hasta 30.000€ destinadas a participantes y promotores de los espacios de datos.",
+          "Esta sesión online tendrá un enfoque muy práctico, en la que se explicará todo lo que necesitas saber sobre el Kit Espacios de Datos y se darán nociones clave para preparar y presentar correctamente la solicitud de la ayuda.",
+          "📅 Fecha: 30 de octubre de 2025",
+          "🕔 Hora: 10:00 h",
+          "📍 Formato: online"
+        ],
+        "extra": "Apúntate aquí:"
       }
     }
   },
   "catalog": {
     "title": "Catálogo de Datos",
-    "subtitle": "Explora el listado de conjuntos de datos y su información preliminar.",
+    "subtitle": "Explora el listado de conjuntos de datos y su información preliminar",
     "viewDetails": "Ver detalles",
     "close": "Cerrar",
     "previous": "Anterior",
