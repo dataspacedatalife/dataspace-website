@@ -351,6 +351,19 @@
           "📍 Formato: online"
         ],
         "extra": "Apúntate aquí:"
+      },
+      "tallergradiant": {
+        "header": "Taller sobre Espacios de Datos FarmaciaVAX con la plataforma XDataShare de Gradiant",
+        "excerpt": "Taller práctico para entender, paso a paso, cómo funciona un espacio de datos aplicándolo al caso de uso sintético FarmaciaVAX con la plataforma XDataShare.",
+        "description": [
+          "Taller práctico para comprender el funcionamiento real de un espacio de datos. Nos centraremos en el caso de uso sintético FarmaciaVAX, enmarcado en el Centro Demostrador Multisectorial DATAlife, utilizando la tecnología XDataShare.",
+          "La sesión incluye una introducción a la plataforma y su integración en el ecosistema de espacios de datos, el proceso de adhesión y activación de participantes, la revisión de políticas y contratos para entender restricciones, y ejemplos prácticos de compartición de datos entre farmacias y servicios de salud.",
+          "Abordaremos el rol de la Autoridad de Gobierno en la validación de solicitudes y cerraremos con un turno final de preguntas y respuestas.",
+          "📅 Fecha: 31 de octubre de 2025",
+          "🕔 Hora: 11:00 h",
+          "📍 Formato: online"
+        ],
+        "extra": "Apúntate aquí:"
       }
     }
   },

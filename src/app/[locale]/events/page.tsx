@@ -22,6 +22,7 @@ import KitDatosCREDImg from '../../../../public/events/lanzamientokitCRED.jpg';
 import NormaUNE42001Img from '../../../../public/events/NormaUNE42001Img.jpg';
 import TallerSQSImg from '../../../../public/events/TallerSQSImg.png';
 import TallerCREDImg from '../../../../public/events/tallerCRED.jpg';
+import tallergradiantImg from '../../../../public/events/tallergradiant.jpg';
 import KitDatosCREDImg2 from '../../../../public/events/tallerPracticokitCRED.jpg';
 
 const eventsPerPage = 5;
@@ -104,6 +105,15 @@ const events = [
     cesgalink:
       'https://events.teams.microsoft.com/event/9cd8319a-dd19-4c02-a32c-76e71d67ba24@24e38255-2c42-4538-999c-5fd53e8456d2',
     organizer: 'Centro de Referencia de Espacios de Datos (CRED)',
+    featured: true,
+  },
+  {
+    key: 'tallergradiant',
+    date: '2025-10-31',
+    image: tallergradiantImg,
+    cesgalink:
+      'https://www.cesga.es/taller-espacio-de-datos-farmaciavax-con-xdatashare/',
+    organizer: 'Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
   },
 ] as const satisfies Event[];

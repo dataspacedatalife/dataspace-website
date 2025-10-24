@@ -352,6 +352,19 @@
           "📍 Format: Online"
         ],
         "extra": "Register here:"
+      },
+      "tallergradiant": {
+        "header": "Workshop on Data Spaces FarmaciaVAX with Gradiant's XDataShare Platform",
+        "excerpt": "Hands-on workshop to understand, step by step, how a data space works by applying it to the synthetic use case FarmaciaVAX with the XDataShare platform.",
+        "description": [
+          "Practical workshop to understand the real operation of a data space. We will focus on the synthetic use case FarmaciaVAX, framed within the Multisector Demonstrator Center DATAlife, using XDataShare technology.",
+          "The session includes an introduction to the platform and its integration into the data space ecosystem, the process of joining and activating participants, a review of policies and contracts to understand constraints, and practical examples of data sharing between pharmacies and health services.",
+          "We will address the role of the Governance Authority in validating requests and will conclude with a final Q&A session.",
+          "📅 Date: October 31, 2025",
+          "🕔 Time: 11:00 a.m.",
+          "📍 Format: Online"
+        ],
+        "extra": "Register here:"
       }
     }
   },
