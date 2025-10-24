@@ -6,6 +6,7 @@ import {
   DisclosurePanel,
 } from '@headlessui/react';
 import { Bars2Icon } from '@heroicons/react/24/solid';
+import { ChevronUp } from 'lucide-react';
 import { motion } from 'motion/react';
 import { type Locale, useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/navigation';
@@ -95,11 +96,12 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
   const t = useTranslations('Navbar');
 
   const links = [
-    { href: '/how', label: t('participa') },
-    { href: '/use-cases', label: t('casos_de_uso') },
+    // { href: '/use-cases', label: t('casos_de_uso') },
     { href: '/catalog', label: t('catalogo') },
-    { href: '/team', label: t('el_equipo') },
+    { href: '/how', label: t('participa') },
     { href: '/events', label: t('eventos') },
+    { href: '/blog', label: t('blog') },
+    { href: '/team', label: t('el_equipo') },
   ];
 
   function DesktopNav() {
@@ -111,7 +113,12 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             href="/about"
             className="flex items-center px-4 py-3 text-base font-medium text-gray-950 cursor-pointer"
           >
-            {t('centro_demostrador')}
+            <div className="grow whitespace-nowrap">
+              {t('centro_demostrador')}
+            </div>
+            <div className="shrink-0">
+              <ChevronUp className="rotate-180 w-3.5" />
+            </div>
           </Link>
           <div className="absolute left-0 top-full hidden w-48 flex-col rounded-lg border border-gray-200 bg-white shadow-md group-hover:flex">
             <Link
@@ -125,6 +132,12 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
               className="px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
             >
               {t('que_es_un_espacio')}
+            </Link>
+            <Link
+              href="/use-cases"
+              className="px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
+            >
+              {t('casos_de_uso')}
             </Link>
           </div>
         </PlusGridItem>
@@ -170,8 +183,14 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             animate={{ opacity: 1, rotateX: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <Link href="/about" className="text-base font-medium text-gray-950">
-              {t('centro_demostrador')}
+            <Link
+              href="/about"
+              className="flex items-center gap-2 text-base font-medium text-gray-950"
+            >
+              <div className="">{t('centro_demostrador')}</div>
+              <div className="shrink-0">
+                <ChevronUp className="rotate-180 w-3.5" />
+              </div>
             </Link>
             <div className="ml-4 mt-2 flex flex-col gap-2">
               <Link href="/about" className="text-sm text-gray-800">
@@ -179,6 +198,9 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
               </Link>
               <Link href="/what" className="text-sm text-gray-800">
                 {t('que_es_un_espacio')}
+              </Link>
+              <Link href="/use-cases" className="text-sm text-gray-800">
+                {t('casos_de_uso')}
               </Link>
             </div>
           </motion.div>
