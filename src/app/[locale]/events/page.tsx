@@ -283,6 +283,7 @@ function Pagination({
 }: {
   pastEventsRef?: HTMLDivElement | null;
 }) {
+  const t = useTranslations('events');
   const totalEvents = getPastEventsCount();
   const pageCount = Math.ceil(totalEvents / eventsPerPage);
 
@@ -308,7 +309,7 @@ function Pagination({
         }}
       >
         <ChevronLeftIcon className="size-4" />
-        Previous
+        {t(`previous`)}
       </Button>
       <Button
         disabled={!hasNext}
@@ -322,7 +323,7 @@ function Pagination({
           });
         }}
       >
-        Next
+        {t(`next`)}
         <ChevronRightIcon className="size-4" />
       </Button>
     </div>

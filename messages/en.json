@@ -262,6 +262,8 @@
     "learnMore": "Learn more",
     "organizer": "Organizer",
     "noEvents": "No events found.",
+    "previous": "Previous",
+    "next": "Next",
     "events": {
       "egi2025": {
         "header": "Presentation at EGI/Ibergrid",
@@ -1157,6 +1159,8 @@
     "lead": "Stay updated with the latest developments and learn how we are enabling secure, interoperable and multi-sectoral data sharing",
     "learnMore": "Read more",
     "noPosts": "No news found.",
+    "previous": "Previous",
+    "next": "Next",
     "posts": {
       "post-1": {
         "title": "How to use our new feature",
