@@ -1169,6 +1169,126 @@
       }
     }
   },
+  "kit": {
+    "metadata": {
+      "title": "Kit Espacios de Datos",
+      "description": "Solicita las ayudas del Kit Espacios de Datos y conéctate al espacio sectorial a través del Centro Demostrador."
+    },
+    "header": {
+      "title": "Kit Espacios de Datos",
+      "lead": "¿Eres una empresa, institución sanitaria o nodo del ecosistema de salud digital? Solicita la ayuda del Kit Espacios de Datos y conéctate a nuestro espacio de datos sectorial desde el Centro Demostrador. Las ayudas cubren costes técnicos, jurídicos y organizativos de la conexión.",
+      "ctaPrimary": {
+        "label": "Consulta la Orden TDF/758/2025 (BOE)",
+        "href": "https://www.boe.es/eli/es/o/2025/07/11/tdf758"
+      },
+      "ctaSecondary": {
+        "label": "Asiste al taller del día 30 del CRED",
+        "href": "https://events.teams.microsoft.com/event/9cd8319a-dd19-4c02-a32c-76e71d67ba24@24e38255-2c42-4538-999c-5fd53e8456d2"
+      },
+      "cta3": {
+        "label": "Consulta el FAQ oficial",
+        "href": "https://datos.gob.es/sites/default/files/blog/file/2025-08/20250721_pyr_kted_0.pdf"
+      },
+      "ribbon": "Convocatoria prevista a partir de octubre de 2025"
+    },
+    "who": {
+      "title": "¿Quién puede solicitarla?",
+      "items": [
+        "Entidades públicas o privadas con personalidad jurídica y actividad económica en la UE.",
+        "Administraciones Públicas españolas.",
+        "Organismos públicos de investigación, asociaciones, fundaciones, etc."
+      ]
+    },
+    "benefits": {
+      "title": "¿Qué cubre?",
+      "items": [
+        "Identificación de oportunidades y plan de negocio para casos de uso basados en datos.",
+        "Asesoramiento jurídico y evaluación normativa (DGA, EEDS/EHDS, etc.).",
+        "Preparación de datos y metadatos (modelos, calidad, documentación).",
+        "Adaptación técnica: infraestructura, software y conectores para integrarse en el espacio de datos."
+      ]
+    },
+    "amounts": {
+      "title": "Cuantías orientativas",
+      "items": [
+        "Entidades públicas/privadas: hasta 15.000 € (básico) o 30.000 € (proveedor avanzado).",
+        "Administraciones Públicas: hasta 25.000 € (básico) o 50.000 € (proveedor avanzado).",
+        "Ayuda única por beneficiario. Concesión por orden de solicitud (no competitiva)."
+      ]
+    },
+    "conditions": {
+      "title": "Condiciones clave",
+      "items": [
+        "Alta efectiva como participante o proveedor avanzado.",
+        "Estar al corriente de obligaciones y respetar límites de minimis.",
+        "Empresas con ≥ 6 meses de actividad e inscripción censal.",
+        "No son beneficiarios: autónomos, UTEs, sociedades civiles ni comunidades de bienes."
+      ]
+    },
+    "steps": {
+      "title": "Pasos para solicitar",
+      "items": [
+        "Conéctate al espacio de datos del demostrador (onboarding).",
+        "Define tu caso de uso y prepara la documentación.",
+        "Alinea los aspectos jurídicos y de gobernanza.",
+        "Presenta la solicitud cuando se abra la convocatoria."
+      ]
+    },
+
+    "visual": {
+      "video": {
+        "title": "Qué es el Kit Espacios de Datos",
+        "url": "https://www.youtube.com/embed/HvzF9U5Bkhg?si=fan8T5GJYvKq6TFd"
+      },
+
+      "metrics": {
+        "title": "Cuantías orientativas",
+        "sections": {
+          "proveedor": {
+            "title": "Incorporación efectiva como proveedor",
+            "items": [
+              {
+                "label": "Entidades públicas y privadas",
+                "value": "Hasta 30.000 €"
+              },
+              {
+                "label": "Administraciones Públicas",
+                "value": "Hasta 50.000 €"
+              }
+            ]
+          },
+          "participante": {
+            "title": "Incorporación efectiva como participante",
+            "items": [
+              {
+                "label": "Entidades públicas y privadas",
+                "value": "Hasta 15.000 €"
+              },
+              {
+                "label": "Administraciones Públicas",
+                "value": "Hasta 25.000 €"
+              }
+            ]
+          }
+        }
+      },
+      "cards": {
+        "title": "Modalidades de participación",
+        "items": [
+          {
+            "title": "Proveedor avanzado",
+            "text": "Publica productos de datos y opera servicios interoperables.",
+            "icon": "Globe"
+          },
+          {
+            "title": "Participante",
+            "text": "Conéctate, consume y comparte productos de datos con gobernanza y control.",
+            "icon": "Users"
+          }
+        ]
+      }
+    }
+  },
   "Footer": {
     "contact_title": "¡Contáctanos!",
     "contact_subtitle": "¿Interesado en el proyecto?",
