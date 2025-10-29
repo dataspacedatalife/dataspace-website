@@ -1,7 +1,9 @@
 import { CheckCircle2, Globe, ShieldCheck, Users } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { type AppConfig, useMessages, useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
+import React, { Suspense } from 'react';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
@@ -72,6 +74,9 @@ function HeroIllustration({ src, alt }: { src: string; alt: string }) {
   );
 }
 
+const CardIcons = { Users, Globe, CheckCircle2 };
+export type CardIcon = keyof typeof CardIcons;
+
 function FeatureCards({
   title,
   items,
@@ -80,10 +85,9 @@ function FeatureCards({
   items: {
     title: string;
     text: string;
-    icon: 'Users' | 'Globe' | 'CheckCircle2';
+    icon: CardIcon;
   }[];
 }) {
-  const icons = { Users, Globe, CheckCircle2 };
   return (
     <section className="mt-20">
       <h3 className="text-center text-3xl font-semibold md:text-4xl">
@@ -98,7 +102,7 @@ function FeatureCards({
 
       <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
         {items.map((it) => {
-          const Icon = icons[it.icon];
+          const Icon = CardIcons[it.icon];
           return (
             <div
               key={it.title}
@@ -323,8 +327,10 @@ function Section({ title, items, icon: Icon, centered = false }: SectionProps) {
 }
 
 /* ---------- Page ---------- */
-export default async function KitPage() {
-  const t = await getTranslations('kit');
+const Kit = () => {
+  const messages = useMessages();
+
+  const t = useTranslations('kit');
 
   const who = t.raw('who.items') as string[];
   const benefits = t.raw('benefits.items') as string[];
@@ -335,21 +341,23 @@ export default async function KitPage() {
   // const stats = t.raw('stats.items') as { label: string; value: string }[];
   // const links = t.raw('links.items') as string[];
 
-  const visual = t.raw('visual') as {
-    heroImage: { src: string; alt: string };
-    video?: { title: string; url: string };
-    logos: { title: string; items: { name: string; src: string }[] };
-    metrics: { title: string; items: { label: string; value: string }[] };
-    cards: {
-      title: string;
-      items: {
-        title: string;
-        text: string;
-        icon: 'Users' | 'Globe' | 'CheckCircle2';
-      }[];
-    };
-    timeline: { title: string; steps: string[] };
-  };
+  // const visual = t.raw('visual') as {
+  //   heroImage: { src: string; alt: string };
+  //   video?: { title: string; url: string };
+  //   logos: { title: string; items: { name: string; src: string }[] };
+  //   metrics: { title: string; items: { label: string; value: string }[] };
+  //   cards: {
+  //     title: string;
+  //     items: {
+  //       title: string;
+  //       text: string;
+  //       icon: 'Users' | 'Globe' | 'CheckCircle2';
+  //     }[];
+  //   };
+  //   timeline: { title: string; steps: string[] };
+  // };
+
+  const visual = messages.kit.visual;
 
   return (
     <main className="overflow-hidden">
@@ -367,9 +375,22 @@ export default async function KitPage() {
         />
       </Container> */}
 
+      {/* Vídeo (opcional) */}
+      {visual.video?.url && (
+        <VideoEmbed title={visual.video.title} url={visual.video.url} />
+      )}
+
       <Container className="mt-20 mb-20">
         {/* Cards (modalidades) */}
-        <FeatureCards title={visual.cards.title} items={visual.cards.items} />
+        <FeatureCards
+          title={visual.cards.title}
+          items={
+            visual.cards
+              .items as (AppConfig['Messages']['kit']['visual']['cards']['items'][number] & {
+              icon: CardIcon;
+            })[]
+          }
+        />
 
         {/* Métricas compactas (visuales) */}
         <Metrics
@@ -397,14 +418,17 @@ export default async function KitPage() {
 
         {/* Timeline */}
         {/* <Timeline title={visual.timeline.title} steps={visual.timeline.steps} /> */}
-
-        {/* Vídeo (opcional) */}
-        {visual.video?.url && (
-          <VideoEmbed title={visual.video.title} url={visual.video.url} />
-        )}
       </Container>
 
       <Footer />
     </main>
+  );
+};
+
+export default function KitPage() {
+  return (
+    <Suspense>
+      <Kit />
+    </Suspense>
   );
 }
