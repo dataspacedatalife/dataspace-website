@@ -353,7 +353,7 @@
         "extra": "Apúntate aquí:"
       },
       "tallergradiant": {
-        "header": "Taller sobre Espacios de Datos FarmaciaVAX con la plataforma XDataShare de Gradiant",
+        "header": "Taller sobre Espacios de Datos FarmaciaVAX con la plataforma XDataShare",
         "excerpt": "Taller práctico para entender, paso a paso, cómo funciona un espacio de datos aplicándolo al caso de uso sintético FarmaciaVAX con la plataforma XDataShare.",
         "description": [
           "Taller práctico para comprender el funcionamiento real de un espacio de datos. Nos centraremos en el caso de uso sintético FarmaciaVAX, enmarcado en el Centro Demostrador Multisectorial DATAlife, utilizando la tecnología XDataShare.",
