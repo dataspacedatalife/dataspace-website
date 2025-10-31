@@ -267,14 +267,14 @@ async function Header() {
         >
           {t('cta3.label')}
         </a>
-        <a
+        {/* <a
           href={t('ctaSecondary.href')}
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-2xl border border-gray-200 bg-white/80 px-5 py-3 text-sm font-semibold shadow-sm hover:bg-white"
         >
           {t('ctaSecondary.label')}
-        </a>
+        </a> */}
       </div>
     </Container>
   );

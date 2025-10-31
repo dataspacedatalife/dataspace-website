@@ -1202,9 +1202,9 @@
     "benefits": {
       "title": "¿Qué cubre?",
       "items": [
-        "Identificación de oportunidades y plan de negocio para casos de uso basados en datos.",
-        "Asesoramiento jurídico y evaluación normativa (DGA, EEDS/EHDS, etc.).",
-        "Preparación de datos y metadatos (modelos, calidad, documentación).",
+        "Identificación de oportunidades y plan de negocio basados en la compartición de datos.",
+        "Gestión de las condiciones y requerimientos jurídicos y regulatorios.",
+        "Preparación de los datos y creación de los productos de datos.",
         "Adaptación técnica: infraestructura, software y conectores para integrarse en el espacio de datos."
       ]
     },
@@ -1244,19 +1244,6 @@
       "metrics": {
         "title": "Cuantías orientativas",
         "sections": {
-          "proveedor": {
-            "title": "Incorporación efectiva como proveedor",
-            "items": [
-              {
-                "label": "Entidades públicas y privadas",
-                "value": "Hasta 30.000 €"
-              },
-              {
-                "label": "Administraciones Públicas",
-                "value": "Hasta 50.000 €"
-              }
-            ]
-          },
           "participante": {
             "title": "Incorporación efectiva como participante",
             "items": [
@@ -1269,6 +1256,19 @@
                 "value": "Hasta 25.000 €"
               }
             ]
+          },
+          "proveedor": {
+            "title": "Incorporación efectiva como proveedor",
+            "items": [
+              {
+                "label": "Entidades públicas y privadas",
+                "value": "Hasta 30.000 €"
+              },
+              {
+                "label": "Administraciones Públicas",
+                "value": "Hasta 50.000 €"
+              }
+            ]
           }
         }
       },
@@ -1276,14 +1276,14 @@
         "title": "Modalidades de participación",
         "items": [
           {
-            "title": "Proveedor avanzado",
-            "text": "Publica productos de datos y opera servicios interoperables.",
-            "icon": "Globe"
-          },
-          {
             "title": "Participante",
             "text": "Conéctate, consume y comparte productos de datos con gobernanza y control.",
             "icon": "Users"
+          },
+          {
+            "title": "Proveedor avanzado",
+            "text": "Publica productos de datos y opera servicios interoperables.",
+            "icon": "Globe"
           }
         ]
       }
