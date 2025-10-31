@@ -13,8 +13,8 @@ import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
+import { useDateFormatter } from '@/hooks/formatters';
 import { useSearchState } from '@/hooks/useSearchState';
-
 import MCastineiraImg from '../../../../public/team/mcastineira.jpg';
 
 const postsPerPage = 5;
@@ -62,16 +62,6 @@ function getPastEvents(page: number) {
 function getPastEventsCount() {
   return posts.filter((e) => !e.featured).length;
 }
-
-const useDateFormatter = () => {
-  const format = useFormatter();
-  return (dateStr: string) =>
-    format.dateTime(new Date(dateStr), {
-      day: '2-digit',
-      month: 'long',
-      year: 'numeric',
-    });
-};
 
 function PastPosts({
   page,

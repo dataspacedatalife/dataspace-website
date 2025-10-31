@@ -2,8 +2,8 @@
 
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
-import { Suspense } from 'react';
+import { type Locale, useTranslations } from 'next-intl';
+import React, { Suspense } from 'react';
 import { Button } from '@/components/button';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
@@ -11,17 +11,18 @@ import { GradientBackground } from '@/components/gradient';
 import { Link } from '@/components/link';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
+import { useDateFormatter } from '@/hooks/formatters';
 import { useSearchState } from '@/hooks/useSearchState';
-import { blogPosts } from './posts';
+import { blogPosts, type Post } from './posts';
 
 interface BlogPageProps {
-  params: { locale: 'es' | 'en' };
+  params: Promise<{ locale: Locale }>;
 }
 
 const postsPerPage = 5;
 
 export default function BlogPage({ params }: BlogPageProps) {
-  const locale = params.locale;
+  const { locale } = React.use(params);
   const t = useTranslations('blog');
   const posts = blogPosts[locale] || [];
 
@@ -32,13 +33,6 @@ export default function BlogPage({ params }: BlogPageProps) {
     .slice((page - 1) * postsPerPage, page * postsPerPage);
 
   const totalPages = Math.ceil(posts.length / postsPerPage);
-
-  const formatDate = (dateStr: string) =>
-    new Intl.DateTimeFormat(locale === 'es' ? 'es-ES' : 'en-US', {
-      day: '2-digit',
-      month: 'long',
-      year: 'numeric',
-    }).format(new Date(dateStr));
 
   return (
     <Suspense>
@@ -53,12 +47,7 @@ export default function BlogPage({ params }: BlogPageProps) {
         </Container>
 
         <Container className="mt-16 pb-24">
-          <PastPostsList
-            posts={pastPosts}
-            formatDate={formatDate}
-            locale={locale}
-            t={t}
-          />
+          <PastPostsList posts={pastPosts} />
           <Pagination
             page={page}
             totalPages={totalPages}
@@ -73,19 +62,14 @@ export default function BlogPage({ params }: BlogPageProps) {
   );
 }
 
-function PastPostsList({
-  posts,
-  formatDate,
-  locale,
-  t,
-}: {
-  posts: any[];
-  formatDate: (dateStr: string) => string;
-  locale: 'es' | 'en';
-  t: ReturnType<typeof useTranslations>;
-}) {
-  if (posts.length === 0)
+function PastPostsList({ posts }: { posts: Post[] }) {
+  const t = useTranslations('blog');
+
+  const formatDate = useDateFormatter();
+
+  if (posts.length === 0) {
     return <p className="mt-6 text-gray-500">{t('noPosts')}</p>;
+  }
 
   return (
     <div>

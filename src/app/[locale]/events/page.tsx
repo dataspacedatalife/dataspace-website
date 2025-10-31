@@ -5,7 +5,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 import { Calendar, Pointer, X, ZoomIn } from 'lucide-react';
 import Image, { type StaticImageData } from 'next/image';
 import { useSearchParams } from 'next/navigation';
-import { type AppConfig, useFormatter, useTranslations } from 'next-intl';
+import { type AppConfig, useTranslations } from 'next-intl';
 import React, { Suspense, useState } from 'react';
 import { Button } from '@/components/button';
 import { Container } from '@/components/container';
@@ -13,6 +13,7 @@ import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
+import { useDateFormatter } from '@/hooks/formatters';
 import { useSearchState } from '@/hooks/useSearchState';
 import EGI2025Img from '../../../../public/events/EGI2025Img.jpg';
 import ForoBAIDATAImg from '../../../../public/events/ForoBAIDATAImg.jpg';
@@ -132,16 +133,6 @@ function getPastEvents(page: number) {
 function getPastEventsCount() {
   return events.filter((e) => !e.featured).length;
 }
-
-const useDateFormatter = () => {
-  const format = useFormatter();
-  return (dateStr: string) =>
-    format.dateTime(new Date(dateStr), {
-      day: '2-digit',
-      month: 'long',
-      year: 'numeric',
-    });
-};
 
 // Componentes
 function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {

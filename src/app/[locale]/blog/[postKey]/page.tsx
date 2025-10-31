@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import type { Locale } from 'next-intl';
+import { type Locale } from 'next-intl';
 import React from 'react';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
+import { useDateFormatter } from '@/hooks/formatters';
 import { blogPosts } from '../posts';
 
 interface BlogPostPageProps {
@@ -15,6 +16,8 @@ interface BlogPostPageProps {
 export default function BlogPostPage({ params }: BlogPostPageProps) {
   const { locale, postKey } = React.use(params);
   const post = blogPosts[locale].find((p) => p.key === postKey);
+
+  const formatDate = useDateFormatter();
 
   if (!post) return notFound();
 
@@ -34,13 +37,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               className="rounded-full"
             />
             <span>{post.author_name}</span> ·{' '}
-            <span>
-              {new Intl.DateTimeFormat(locale === 'es' ? 'es-ES' : 'en-US', {
-                day: '2-digit',
-                month: 'long',
-                year: 'numeric',
-              }).format(new Date(post.date))}
-            </span>
+            <span>{formatDate(post.date)}</span>
           </div>
 
           <Image
