@@ -1,8 +1,12 @@
-// src/app/[locale]/blog/posts.ts
-
 import type { StaticImageData } from 'next/image';
+import type { Locale } from 'next-intl';
 import ArchitectureImg from '../../../../public/logo.svg';
 import MCastineiraImg from '../../../../public/team/mcastineira.jpg';
+
+interface TextNode {
+  type: 'h1' | 'h2' | 'bold' | 'underline';
+  content: React.ReactNode;
+}
 
 export interface Post {
   key: string;
@@ -12,15 +16,12 @@ export interface Post {
   image: StaticImageData;
   author_name: string;
   author_image: StaticImageData;
-  description: Array<
-    string | { type: 'h1' | 'h2' | 'bold' | 'underline'; content: string }
-  >;
+  description: (React.ReactElement | string | TextNode)[];
   cesgalink?: string;
   featured?: boolean;
 }
 
-// Spanish posts
-export const blogPosts: Record<'es' | 'en', Post[]> = {
+export const blogPosts: Record<Locale, Post[]> = {
   es: [
     {
       key: 'datalife-2025',

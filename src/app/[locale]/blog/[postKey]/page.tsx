@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import type { Locale } from 'next-intl';
+import React from 'react';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
@@ -7,13 +9,12 @@ import { Navbar } from '@/components/navbar';
 import { blogPosts } from '../posts';
 
 interface BlogPostPageProps {
-  params: { locale: 'en' | 'es'; postKey: string };
+  params: Promise<{ locale: Locale; postKey: string }>;
 }
 
 export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const { locale, postKey } = params;
-  const posts = blogPosts[locale] || [];
-  const post = posts.find((p) => p.key === postKey);
+  const { locale, postKey } = React.use(params);
+  const post = blogPosts[locale].find((p) => p.key === postKey);
 
   if (!post) return notFound();
 
@@ -52,7 +53,10 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
           <div className="max-w-3xl mx-auto space-y-6">
             {post.description.map((item, idx) => {
-              if (typeof item === 'string')
+              if (React.isValidElement(item)) {
+                return item;
+              }
+              if (typeof item === 'string') {
                 return (
                   <p
                     key={idx}
@@ -61,6 +65,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     {item}
                   </p>
                 );
+              }
 
               switch (item.type) {
                 case 'h1':
@@ -89,15 +94,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     <p
                       key={idx}
                       className="text-gray-700 leading-relaxed text-base underline"
-                    >
-                      {item.content}
-                    </p>
-                  );
-                default:
-                  return (
-                    <p
-                      key={idx}
-                      className="text-gray-700 leading-relaxed text-base"
                     >
                       {item.content}
                     </p>
