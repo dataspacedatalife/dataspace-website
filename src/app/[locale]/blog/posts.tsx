@@ -24,8 +24,8 @@ export interface Post {
 export const blogPosts: Record<Locale, Post[]> = {
   es: [
     {
-      key: 'datalife-2025',
-      date: '2025-10-31',
+      key: 'initial-newsletter-2025',
+      date: '2025-11-04',
       title:
         'Del dato al impacto: así avanza el Centro Demostrador Multisectorial DATAlife',
       excerpt:
@@ -58,10 +58,17 @@ export const blogPosts: Record<Locale, Post[]> = {
           content:
             '31 de octubre · Taller de presentación de XDATAshared (MVD)',
         },
-        'To be completed',
-        { type: 'h2', content: 'Nuestra arquitectura (en una mirada)' },
-        'El espacio de datos DATAlife combina interoperabilidad, gobernanza, seguridad y operación sobre infraestructuras de alto rendimiento. En la web encontrarás un esquema actualizado de la arquitectura y los roles de participación. (Si lo deseas, incluimos aquí una infografía breve en la versión HTML).',
-        'To be completed con el contenido de XDatashare',
+        'Más adelante, ese mismo mes, organizamos un segundo taller donde mostramos como trabajar en un espacio de datos usando la plataforma XDATAShare y el mismo caso de uso sintético.',
+        'Concretamente, disfrutamos de una introducción a XDataShare. Se presentó la plataforma de intercambio de datos, sus principios de interoperabilidad y seguridad, los roles implicados (productores, consumidores, custodios) y la arquitectura básica: catálogo, control de acceso, trazabilidad y auditoría. Se abordarán beneficios, casos de uso típicos y requisitos previos para incorporarse.',
+        'A continuación, se describió el caso de uso FarmaciaVAX,  se introdujo el contexto y objetivos del caso, actores participantes, fuentes de datos, modelo de gobernanza y cumplimiento normativo. Se detalló el flujo de datos de extremo a extremo. Además, se hizo un recorrido guiado por el proceso de alta: registro institucional, verificación de identidad y asignación de roles. ',
+        {
+          type: 'underline',
+          content:
+            '▶️ Grabación: Próximamente disponible en nuestra página web. ',
+        },
+        { type: 'h2', content: 'Nuestro catálogo' },
+        'El espacio de datos DATAlife combina interoperabilidad, gobernanza, seguridad y operación sobre infraestructuras de alto rendimiento. En la web encontrarás nuestro catálogo así como información útil sobre nuestro espacio de datos.',
+        '▶️ Consulta el catálogo.',
         { type: 'h2', content: 'Casos de uso (en curso)' },
         { type: 'bold', content: 'Brilliant' },
         'Observatorio de sarcopenia con IA aplicada a RM lumbar (repositorios públicos) y variables demográficas simuladas. Entrega datasets estructurados e interoperables para detección precoz y análisis poblacional, con servicios reutilizables orientados a monitorización, diagnóstico asistido y explotación de datos clínicos anonimizados. Posible uso de datos hospitalarios externos.',
@@ -88,10 +95,9 @@ export const blogPosts: Record<Locale, Post[]> = {
             '▶️ Si no pudiste asistir, aquí tienes la grabación: Taller de espacio de datos FarmaciaVAX con la plataforma D-Spacer de SQS',
         },
         { type: 'h2', content: '¿Y ahora qué?' },
-        'Esto es solo el principio. En las próximas semanas publicaremos nuevos materiales, fichas detalladas de casos de uso y fechas de próximas sesiones. ¡Atento/a a nuestras novedades!',
+        'Esto es solo el principio. En las próximas semanas publicaremos nuevos materiales, fichas detalladas de casos de uso y fechas de próximas sesiones. ¡Atento/a nuestras novedades!',
         { type: 'h2', content: 'Cómo participar' },
         'Si quieres explorar un piloto o preparar a tu organización para conectarse a un espacio de datos, contáctanos:',
-        '🌐 dataspace.cesga.es → sección Participa',
         '✉️ Equipo del demostrador: dmd@cesga.es (respuesta rápida)',
         'Si eres pyme, administración o centro del ecosistema, existen líneas estatales como el Kit Espacios de Datos / CRED que ayudan a financiar la preparación y conexión. Te orientamos en el proceso.',
       ],
@@ -99,8 +105,8 @@ export const blogPosts: Record<Locale, Post[]> = {
   ],
   en: [
     {
-      key: 'datalife-2025',
-      date: '2025-10-31',
+      key: 'initial-newsletter-2025',
+      date: '2025-11-04',
       title:
         'From Data to Impact: How the DATAlife Multisector Demonstrator Center is Advancing',
       excerpt:
