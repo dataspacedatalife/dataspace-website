@@ -33,16 +33,46 @@ interface SectionProps {
   icon: any;
 }
 
-function Section({ title, items, icon: Icon }: SectionProps) {
+function Section({
+  title,
+  items,
+  icon: Icon,
+  centered = false,
+}: SectionProps & { centered?: boolean }) {
+  const isSingleItem = items.length === 1;
+
   return (
-    <div className="mt-20 text-center">
+    <div
+      className={`mt-20 text-center ${
+        centered ? 'mx-auto flex flex-col items-center' : ''
+      }`}
+    >
       <Subheading className="text-3xl md:text-4xl">{title}</Subheading>
       <hr className="mx-auto mt-6 w-24 border-t border-gray-200" />
-      <ul className="mx-auto mt-10 max-w-2xl space-y-4 text-left">
+
+      <ul
+        className={`mt-10 ${
+          centered ? 'w-full max-w-md' : 'mx-auto max-w-2xl'
+        } ${isSingleItem ? '' : 'space-y-4 text-left'}`}
+      >
         {items.map((item) => (
-          <li key={item} className="flex items-start gap-3">
-            <Icon className="h-5 w-5 text-gray-900 mt-0.5 shrink-0" />
-            <span className="text-lg text-gray-700">{item}</span>
+          <li
+            key={item}
+            className={`flex items-start gap-3 ${
+              centered ? 'justify-center' : ''
+            }`}
+          >
+            {isSingleItem ? (
+              <div className="w-full rounded-2xl border border-gray-200 bg-white/80 shadow-sm p-6 text-center">
+                {/* <Icon className="h-6 w-6 text-gray-900 mx-auto mb-3" /> */}
+                <span className="text-lg text-gray-700">{item}</span>
+              </div>
+            ) : (
+              <>
+                <Icon className="h-5 w-5 text-gray-900 mt-0.5 shrink-0" />
+                <span className="text-lg text-gray-700">{item}</span>
+              </>
+            )}
           </li>
         ))}
       </ul>
@@ -82,6 +112,7 @@ export default async function How() {
             title={t('howToJoin.title')}
             items={howToJoin}
             icon={CheckCircle2}
+            centered
           />
         </div>
       </Container>
