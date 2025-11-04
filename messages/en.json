@@ -91,12 +91,7 @@
     },
     "howToJoin": {
       "title": "How to join",
-      "items": [
-        "Request for participation through a Framework Agreement",
-        "Validation by the governing authority (CESGA)",
-        "Assignment of a role in the ecosystem",
-        "Activation of credentials and access to services"
-      ]
+      "items": ["Contact at dmd@cesga.es"]
     }
   },
   "team": {
