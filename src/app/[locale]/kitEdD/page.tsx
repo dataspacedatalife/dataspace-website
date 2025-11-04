@@ -1,14 +1,15 @@
 import { CheckCircle2, Globe, ShieldCheck, Users } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { type AppConfig, useMessages, useTranslations } from 'next-intl';
+import { useMessages, useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import React, { Suspense } from 'react';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
-import { Heading, Lead, Subheading } from '@/components/text';
+import { Heading, Lead } from '@/components/text';
+import KitEdDImg from '../../../../public/kit/portada-kit-espacios-de-datos.svg';
 
 /* ---------- Metadata ---------- */
 export async function generateMetadata(): Promise<Metadata> {
@@ -53,166 +54,8 @@ function Linkify({ text }: { text: string }) {
   );
 }
 
-function StatCard({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="rounded-2xl border border-emerald-200 bg-gradient-to-br from-cyan-400/10 via-emerald-200/10 to-green-400/10 p-6 text-center shadow-sm hover:shadow-md transition">
-      <div className="text-3xl font-bold">{value}</div>
-      <div className="mt-1 text-sm text-gray-700/80">{label}</div>
-    </div>
-  );
-}
-
-/* ---------- Visual blocks ---------- */
-function HeroIllustration({ src, alt }: { src: string; alt: string }) {
-  return (
-    <div className="mx-auto mt-10 max-w-5xl">
-      <div className="overflow-hidden rounded-3xl border border-gray-200 bg-white/70 shadow-sm">
-        {/* priority is optional; remove if you prefer */}
-        <Image src={src} alt={alt} width={1920} height={1080} priority />
-      </div>
-    </div>
-  );
-}
-
 const CardIcons = { Users, Globe, CheckCircle2 };
 export type CardIcon = keyof typeof CardIcons;
-
-function FeatureCards({
-  title,
-  items,
-}: {
-  title: string;
-  items: {
-    title: string;
-    text: string;
-    icon: CardIcon;
-  }[];
-}) {
-  return (
-    <section className="mt-20">
-      <h3 className="text-center text-3xl font-semibold md:text-4xl">
-        {title}
-      </h3>
-      <hr className="mx-auto mt-6 w-24 border-t border-gray-200" />
-
-      {/* <div className="font-mono text-2xl font-semibold tracking-widest text-gray-500 uppercase data-dark:text-gray-400">
-        {title}
-      </div>
-      <hr className="mt-6 border-t border-gray-200" /> */}
-
-      <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
-        {items.map((it) => {
-          const Icon = CardIcons[it.icon];
-          return (
-            <div
-              key={it.title}
-              className="rounded-2xl border border-emerald-200/50 bg-white/30 p-6 shadow-sm hover:shadow-md transition backdrop-blur-sm"
-            >
-              <div className="flex items-center gap-3">
-                <Icon className="h-6 w-6 text-green-600/80" />
-                <h4 className="text-lg font-semibold text-gray-900/90">
-                  {it.title}
-                </h4>
-              </div>
-              <p className="mt-3 text-gray-700/80">{it.text}</p>
-            </div>
-          );
-        })}
-      </div>
-    </section>
-  );
-}
-
-function Timeline({ title, steps }: { title: string; steps: string[] }) {
-  return (
-    <section className="mt-20">
-      <h3 className="text-center text-3xl font-semibold md:text-4xl">
-        {title}
-      </h3>
-      <hr className="mx-auto mt-6 w-24 border-t border-gray-200" />
-      <ol className="mx-auto mt-10 max-w-2xl space-y-6">
-        {steps.map((s, i) => (
-          <li key={s} className="flex items-start gap-4">
-            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gray-300 bg-white/80 text-sm font-semibold text-gray-900">
-              {i + 1}
-            </span>
-            <p className="text-lg text-gray-700">
-              <Linkify text={s} />
-            </p>
-          </li>
-        ))}
-      </ol>
-    </section>
-  );
-}
-
-type MetricItem = {
-  label: string;
-  value: string;
-};
-
-type MetricsProps = {
-  title: string;
-  sections: {
-    [key: string]: {
-      title: string;
-      items: MetricItem[];
-    };
-  };
-};
-
-function Metrics({ title, sections }: MetricsProps) {
-  return (
-    <section className="mt-20">
-      <h3 className="text-center text-3xl font-semibold md:text-4xl">
-        {title}
-      </h3>
-      <hr className="mx-auto mt-6 w-24 border-t border-gray-200" />
-
-      <div className="mx-auto mt-12 max-w-4xl space-y-12">
-        {Object.values(sections).map((section) => (
-          <div key={section.title}>
-            <h4 className="text-xl font-semibold text-center mb-6">
-              {section.title}
-            </h4>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {section.items.map((m) => (
-                <StatCard key={m.label} value={m.value} label={m.label} />
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function LogoCloud({
-  title,
-  items,
-}: {
-  title: string;
-  items: { name: string; src: string }[];
-}) {
-  return (
-    <section className="mt-20">
-      <h3 className="text-center text-3xl font-semibold md:text-4xl">
-        {title}
-      </h3>
-      <hr className="mx-auto mt-6 w-24 border-t border-gray-200" />
-      <div className="mx-auto mt-8 grid max-w-4xl grid-cols-2 items-center gap-8 sm:grid-cols-3">
-        {items.map((l) => (
-          <div
-            key={l.name}
-            className="flex items-center justify-center opacity-90"
-          >
-            <Image src={l.src} alt={l.name} width={140} height={40} />
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
 
 function VideoEmbed({ title, url }: { title: string; url: string }) {
   return (
@@ -243,11 +86,7 @@ async function Header() {
       <Heading as="h1" className="mt-4">
         {t('title')}
       </Heading>
-      {t('ribbon') && (
-        <div className="inline-block rounded-full bg-gray-900 mt-8 px-3 py-1 text-xs font-semibold text-white">
-          {t('ribbon')}
-        </div>
-      )}
+
       <Lead className="mt-6">{t('lead')}</Lead>
 
       <div className="mx-auto mt-8 flex w-full max-w-3xl flex-col items-center gap-3 sm:flex-row sm:justify-center">
@@ -267,14 +106,14 @@ async function Header() {
         >
           {t('cta3.label')}
         </a>
-        {/* <a
+        <a
           href={t('ctaSecondary.href')}
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-2xl border border-gray-200 bg-white/80 px-5 py-3 text-sm font-semibold shadow-sm hover:bg-white"
         >
           {t('ctaSecondary.label')}
-        </a> */}
+        </a>
       </div>
     </Container>
   );
@@ -293,7 +132,8 @@ function Section({ title, items, icon: Icon, centered = false }: SectionProps) {
     <div
       className={`mt-20 text-center ${centered ? 'mx-auto flex flex-col items-center' : ''}`}
     >
-      <Subheading className="text-3xl md:text-4xl">{title}</Subheading>
+      {/* <Subheading className="text-3xl md:text-4xl">{title}</Subheading> */}
+      <h3 className="text-3xl font-semibold text-gray-900">{title}</h3>
       <hr className="mx-auto mt-6 w-24 border-t border-gray-200" />
       <ul
         className={`mt-10 ${centered ? 'w-full max-w-md' : 'mx-auto max-w-2xl'} ${
@@ -326,37 +166,96 @@ function Section({ title, items, icon: Icon, centered = false }: SectionProps) {
   );
 }
 
+function FeatureCardsWithMetrics({
+  title,
+  cards,
+  metrics,
+}: {
+  title: string;
+  cards: {
+    title: string;
+    text: string;
+    icon: CardIcon;
+  }[];
+  metrics: {
+    sections: {
+      [key: string]: {
+        title: string;
+        items: { label: string; value: string }[];
+      };
+    };
+  };
+}) {
+  return (
+    <section className="mt-24">
+      <h3 className="text-center text-4xl font-semibold md:text-5xl">
+        {title}
+      </h3>
+      <hr className="mx-auto mt-6 w-28 border-t border-gray-300" />
+
+      <div className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2">
+        {cards.map((card) => {
+          const Icon = CardIcons[card.icon];
+          const metricSection = card.title.toLowerCase().includes('proveedor')
+            ? metrics.sections.proveedor
+            : metrics.sections.participante;
+
+          return (
+            <div
+              key={card.title}
+              className="rounded-2xl border border-emerald-200/50 bg-white/40 p-8 shadow-md hover:shadow-lg transition backdrop-blur-sm text-center"
+            >
+              {/* Card principal */}
+              <div className="flex flex-col items-center">
+                <Icon className="h-10 w-10 text-emerald-600/80 mb-3" />
+                <h4 className="text-xl font-semibold text-gray-900">
+                  {card.title}
+                </h4>
+              </div>
+
+              <p className="mt-4 text-gray-700 text-base leading-relaxed">
+                {card.text}
+              </p>
+
+              {/* Métricas unidas debajo */}
+              <div className="mt-8">
+                <h5 className="text-sm font-medium text-gray-800 mb-4 uppercase tracking-wide">
+                  {metricSection.title}
+                </h5>
+
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {metricSection.items.map((m) => (
+                    <div
+                      key={m.label}
+                      className="rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-100/20 via-emerald-100/10 to-transparent p-5 shadow-sm"
+                    >
+                      <div className="text-2xl font-bold text-black">
+                        {m.value}
+                      </div>
+                      <div className="mt-1 text-sm text-gray-700">
+                        {m.label}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
 /* ---------- Page ---------- */
 const Kit = () => {
   const messages = useMessages();
-
   const t = useTranslations('kit');
 
   const who = t.raw('who.items') as string[];
   const benefits = t.raw('benefits.items') as string[];
-  const amounts = t.raw('amounts.items') as string[];
   const conditions = t.raw('conditions.items') as string[];
-  // const why = t.raw('why.items') as string[];
   const steps = t.raw('steps.items') as string[];
-  // const stats = t.raw('stats.items') as { label: string; value: string }[];
-  // const links = t.raw('links.items') as string[];
-
-  // const visual = t.raw('visual') as {
-  //   heroImage: { src: string; alt: string };
-  //   video?: { title: string; url: string };
-  //   logos: { title: string; items: { name: string; src: string }[] };
-  //   metrics: { title: string; items: { label: string; value: string }[] };
-  //   cards: {
-  //     title: string;
-  //     items: {
-  //       title: string;
-  //       text: string;
-  //       icon: 'Users' | 'Globe' | 'CheckCircle2';
-  //     }[];
-  //   };
-  //   timeline: { title: string; steps: string[] };
-  // };
-
   const visual = messages.kit.visual;
 
   return (
@@ -367,57 +266,77 @@ const Kit = () => {
       </Container>
       <Header />
 
-      {/* Hero illustration */}
-      {/* <Container>
-        <HeroIllustration
-          src={visual.heroImage.src}
-          alt={visual.heroImage.alt}
-        />
-      </Container> */}
+      <Container className="mt-20 mb-20 space-y-24">
+        {/* Imagen y texto superior */}
+        <div className="relative mt-16 w-full overflow-hidden rounded-2xl">
+          <div
+            className="absolute inset-0"
+            style={{
+              maskImage:
+                'linear-gradient(to right, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.2) 35%, rgba(0,0,0,0.7) 70%, rgba(0,0,0,1) 100%)',
+              WebkitMaskImage:
+                'linear-gradient(to right, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.2) 35%, rgba(0,0,0,0.7) 70%, rgba(0,0,0,1) 100%)',
+            }}
+          >
+            <Image
+              src={KitEdDImg}
+              alt=""
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
 
-      {/* Vídeo (opcional) */}
-      {visual.video?.url && (
-        <VideoEmbed title={visual.video.title} url={visual.video.url} />
-      )}
-
-      <Container className="mt-20 mb-20">
-        {/* Cards (modalidades) */}
-        <FeatureCards
-          title={visual.cards.title}
-          items={
-            visual.cards
-              .items as (AppConfig['Messages']['kit']['visual']['cards']['items'][number] & {
-              icon: CardIcon;
-            })[]
-          }
-        />
-
-        {/* Métricas compactas (visuales) */}
-        <Metrics
-          title={visual.metrics.title}
-          sections={visual.metrics.sections}
-        />
-
-        {/* Secciones base */}
-        <div className="mt-20 grid grid-cols-1 gap-16 md:grid-cols-2">
-          <Section title={t('who.title')} items={who} icon={Users} />
-          <Section
-            title={t('benefits.title')}
-            items={benefits}
-            icon={CheckCircle2}
-          />
-          {/* <Section title={t('amounts.title')} items={amounts} icon={Globe} /> */}
-          <Section
-            title={t('conditions.title')}
-            items={conditions}
-            icon={ShieldCheck}
-          />
-          {/* <Section title={t('why.title')} items={why} icon={CheckCircle2} /> */}
-          <Section title={t('steps.title')} items={steps} icon={CheckCircle2} />
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 lg:gap-16 items-center w-full px-6 lg:px-16 py-20">
+            <div className="max-w-2xl text-center lg:text-left">
+              <h3 className="text-4xl font-semibold text-gray-900">
+                {t('what.title')}
+              </h3>
+              <p className="mt-4 text-lg text-gray-800">
+                {t('what.description')}
+              </p>
+            </div>
+          </div>
         </div>
 
-        {/* Timeline */}
-        {/* <Timeline title={visual.timeline.title} steps={visual.timeline.steps} /> */}
+        {/* Bloques principales */}
+        <div className="border-b border-gray-200/60 pb-16">
+          <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
+            <Section title={t('who.title')} items={who} icon={Users} />
+            <Section
+              title={t('benefits.title')}
+              items={benefits}
+              icon={CheckCircle2}
+            />
+          </div>
+        </div>
+
+        <div className="border-b border-gray-200/60 pb-16">
+          <FeatureCardsWithMetrics
+            title={visual.cards.title}
+            cards={visual.cards.items as any}
+            metrics={visual.metrics}
+          />
+        </div>
+
+        <div className="border-b border-gray-200/60 pb-16">
+          <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
+            <Section
+              title={t('conditions.title')}
+              items={conditions}
+              icon={ShieldCheck}
+            />
+            <Section
+              title={t('steps.title')}
+              items={steps}
+              icon={CheckCircle2}
+            />
+          </div>
+        </div>
+
+        {visual.video?.url && (
+          <VideoEmbed title={visual.video.title} url={visual.video.url} />
+        )}
       </Container>
 
       <Footer />

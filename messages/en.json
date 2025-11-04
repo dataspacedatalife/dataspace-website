@@ -1176,20 +1176,24 @@
     },
     "header": {
       "title": "Data Spaces Kit",
-      "lead": "Are you a company, healthcare institution, or a node in the digital health ecosystem? Apply for the Data Spaces Kit grant and connect to our sectoral data space via the Demonstrator Center. The grants cover technical, legal, and organizational costs of the connection.",
+      "lead": "Are you a company, healthcare institution, or a node in the digital health ecosystem? Apply for the Data Spaces Kit grant and connect to our sectoral data space from the Demonstrator Center.",
       "ctaPrimary": {
-        "label": "Check Order TDF/758/2025 (BOE)",
+        "label": "See Order TDF/758/2025 (BOE)",
         "href": "https://www.boe.es/eli/es/o/2025/07/11/tdf758"
       },
       "ctaSecondary": {
-        "label": "Attend the CRED workshop on the 30th",
-        "href": "https://events.teams.microsoft.com/event/9cd8319a-dd19-4c02-a32c-76e71d67ba24@24e38255-2c42-4538-999c-5fd53e8456d2"
+        "label": "Visit the official CRED website",
+        "href": "https://cred.digital.gob.es/kit-de-espacios-de-datos"
       },
       "cta3": {
-        "label": "Check the official FAQ",
-        "href": "https://datos.gob.es/sites/default/files/blog/file/2025-08/20250721_pyr_kted_0.pdf"
-      },
-      "ribbon": "Call expected from October 2025"
+        "label": "See the official FAQ",
+        "href": "https://cred.digital.gob.es/content/dam/cred/img/docs/pyr_kted.pdf"
+      }
+    },
+    "what": {
+      "title": "What is it and why?",
+      "description": "The Data Spaces Kit is national funding aimed at incentivizing data sharing in Data Spaces for participating entities to cover to achieve this sharing. In this way, it boosts sectoral competitiveness and economic activity, proposing new business models.",
+      "imageAlt": "Data Spaces Kit cover"
     },
     "who": {
       "title": "Who can apply?",
@@ -1200,82 +1204,82 @@
       ]
     },
     "benefits": {
-      "title": "What is covered?",
+      "title": "What does it cover?",
       "items": [
-        "Identification of opportunities and business plan for data-driven use cases.",
-        "Legal advice and regulatory assessment (DGA, EEDS/EHDS, etc.).",
-        "Data and metadata preparation (models, quality, documentation).",
+        "Identification of opportunities and a business plan based on data sharing.",
+        "Management of legal and regulatory conditions and requirements.",
+        "Data preparation and creation of data products.",
         "Technical adaptation: infrastructure, software, and connectors to integrate into the data space."
-      ]
-    },
-    "amounts": {
-      "title": "Indicative amounts",
-      "items": [
-        "Public/private entities: up to €15,000 (basic) or €30,000 (advanced provider).",
-        "Public Administrations: up to €25,000 (basic) or €50,000 (advanced provider).",
-        "One-time aid per beneficiary. Awarded in order of application (non-competitive)."
       ]
     },
     "conditions": {
       "title": "Key conditions",
       "items": [
         "Effective registration as a participant or advanced provider.",
-        "Compliant with obligations and respecting minimis limits.",
+        "Be up to date with obligations and comply with de minimis limits.",
         "Companies with ≥ 6 months of activity and tax registration.",
-        "Not eligible: freelancers, joint ventures, civil partnerships, or property communities."
+        "Not eligible: self-employed workers, temporary joint ventures (UTEs), civil partnerships, or joint ownership communities.",
+        "Each beneficiary entity, identified by its tax ID (CIF), may receive only one grant."
       ]
     },
     "steps": {
       "title": "Application steps",
       "items": [
-        "Connect to the demonstrator data space (onboarding).",
-        "Define your use case and prepare documentation.",
-        "Align legal and governance aspects.",
-        "Submit the application when the call opens."
+        "Find a data space to connect to.",
+        "Contact the promoter of the chosen data space and formalize an Adhesion Contract.",
+        "Assess whether you can integrate into a data space with or without external help (is it necessary to hire a systems integrator?).",
+        "Make the connection to the chosen data space.",
+        "Execute and pay: carry out the adaptation activities (legal, technical, data) before applying for the grant and keep all invoices and proofs of expenditure."
       ]
     },
     "visual": {
       "video": {
-        "title": "What is the Data Spaces Kit",
+        "title": "Watch the latest CRED webinar on the Kit",
         "url": "https://www.youtube.com/embed/HvzF9U5Bkhg?si=fan8T5GJYvKq6TFd"
       },
       "metrics": {
-        "title": "Indicative amounts",
+        "title": "Maximum amounts",
         "sections": {
-          "proveedor": {
-            "title": "Effective onboarding as a provider",
-            "items": [
-              {
-                "label": "Public and private entities",
-                "value": "Up to €30,000"
-              },
-              { "label": "Public Administrations", "value": "Up to €50,000" }
-            ]
-          },
           "participante": {
-            "title": "Effective onboarding as a participant",
+            "title": "Maximum amounts",
             "items": [
               {
                 "label": "Public and private entities",
                 "value": "Up to €15,000"
               },
-              { "label": "Public Administrations", "value": "Up to €25,000" }
+              {
+                "label": "Public Administrations",
+                "value": "Up to €25,000"
+              }
+            ]
+          },
+          "proveedor": {
+            "title": "Maximum amounts",
+            "items": [
+              {
+                "label": "Public and private entities",
+                "value": "Up to €30,000"
+              },
+              {
+                "label": "Public Administrations",
+                "value": "Up to €50,000"
+              }
             ]
           }
         }
       },
       "cards": {
-        "title": "Participation modalities",
+        "title": "Participation modes and maximum amounts",
         "items": [
           {
-            "title": "Advanced provider",
-            "text": "Publish data products and operate interoperable services.",
-            "icon": "Globe"
+            "title": "Participant",
+            "text": "Prepare your data, sign an adhesion contract with the chosen data space, and register in it.",
+            "icon": "Users"
           },
           {
-            "title": "Participant",
-            "text": "Connect, consume, and share data products with governance and control.",
-            "icon": "Users"
+            "title": "Advanced provider",
+            "text": "Additionally, publish a dataset in the catalog of the selected data space.",
+            "icon": "Globe"
           }
         ]
       }

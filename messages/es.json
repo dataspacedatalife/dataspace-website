@@ -1176,20 +1176,24 @@
     },
     "header": {
       "title": "Kit Espacios de Datos",
-      "lead": "¿Eres una empresa, institución sanitaria o nodo del ecosistema de salud digital? Solicita la ayuda del Kit Espacios de Datos y conéctate a nuestro espacio de datos sectorial desde el Centro Demostrador. Las ayudas cubren costes técnicos, jurídicos y organizativos de la conexión.",
+      "lead": "¿Eres una empresa, institución sanitaria o nodo del ecosistema de salud digital? Solicita la ayuda del Kit Espacios de Datos y conéctate a nuestro espacio de datos sectorial desde el Centro Demostrador.",
       "ctaPrimary": {
         "label": "Consulta la Orden TDF/758/2025 (BOE)",
         "href": "https://www.boe.es/eli/es/o/2025/07/11/tdf758"
       },
       "ctaSecondary": {
-        "label": "Asiste al taller del día 30 del CRED",
-        "href": "https://events.teams.microsoft.com/event/9cd8319a-dd19-4c02-a32c-76e71d67ba24@24e38255-2c42-4538-999c-5fd53e8456d2"
+        "label": "Consulta la web oficial del CRED",
+        "href": "https://cred.digital.gob.es/kit-de-espacios-de-datos"
       },
       "cta3": {
         "label": "Consulta el FAQ oficial",
-        "href": "https://datos.gob.es/sites/default/files/blog/file/2025-08/20250721_pyr_kted_0.pdf"
-      },
-      "ribbon": "Convocatoria prevista a partir de octubre de 2025"
+        "href": "https://cred.digital.gob.es/content/dam/cred/img/docs/pyr_kted.pdf"
+      }
+    },
+    "what": {
+      "title": "¿Qué es y por qué?",
+      "description": "El kit de espacio de datos es una ayuda que pretende incentivar la compartición de datos en Espacios de datos, financiando las entidades participantes, los costes incurridos para lograr esta compartición. De esta manera, se impulsa la competivitidad y la actividad económica sectorial, proponiendo nuevos modelos de negocio.",
+      "imageAlt": "Portada Kit Espacio de Datos"
     },
     "who": {
       "title": "¿Quién puede solicitarla?",
@@ -1208,36 +1212,30 @@
         "Adaptación técnica: infraestructura, software y conectores para integrarse en el espacio de datos."
       ]
     },
-    "amounts": {
-      "title": "Cuantías orientativas",
-      "items": [
-        "Entidades públicas/privadas: hasta 15.000 € (básico) o 30.000 € (proveedor avanzado).",
-        "Administraciones Públicas: hasta 25.000 € (básico) o 50.000 € (proveedor avanzado).",
-        "Ayuda única por beneficiario. Concesión por orden de solicitud (no competitiva)."
-      ]
-    },
     "conditions": {
       "title": "Condiciones clave",
       "items": [
         "Alta efectiva como participante o proveedor avanzado.",
         "Estar al corriente de obligaciones y respetar límites de minimis.",
         "Empresas con ≥ 6 meses de actividad e inscripción censal.",
-        "No son beneficiarios: autónomos, UTEs, sociedades civiles ni comunidades de bienes."
+        "No son beneficiarios: autónomos, UTEs, sociedades civiles ni comunidades de bienes.",
+        "Cada entidad beneficiaria, identificada por su CIF, podrá recibir únicamente una subvención."
       ]
     },
     "steps": {
       "title": "Pasos para solicitar",
       "items": [
-        "Conéctate al espacio de datos del demostrador (onboarding).",
-        "Define tu caso de uso y prepara la documentación.",
-        "Alinea los aspectos jurídicos y de gobernanza.",
-        "Presenta la solicitud cuando se abra la convocatoria."
+        "Busca un Espacio de Datos para conectarte.",
+        "Contacta con el promotor del Espacio de Datos elegido y formaliza un Contrato de adhesión.",
+        "Valora si puedes o no integrarte en un espacio de datos con o sin ayuda externa (¿es necesario contratar a una empresa integradora?).",
+        "Realiza la conexión al espacio de datos elegido.",
+        "Ejecuta y paga: realiza las actividades de adaptación (legal, técnica, datos) antes de solicitar la ayuda y guarda todas las facturas y justificantes de gasto."
       ]
     },
 
     "visual": {
       "video": {
-        "title": "Qué es el Kit Espacios de Datos",
+        "title": "Consulta el último webinar impartido por el CRED sobre el Kit",
         "url": "https://www.youtube.com/embed/HvzF9U5Bkhg?si=fan8T5GJYvKq6TFd"
       },
 
@@ -1245,7 +1243,7 @@
         "title": "Cuantías orientativas",
         "sections": {
           "participante": {
-            "title": "Incorporación efectiva como participante",
+            "title": "Cuantías orientativas",
             "items": [
               {
                 "label": "Entidades públicas y privadas",
@@ -1258,7 +1256,7 @@
             ]
           },
           "proveedor": {
-            "title": "Incorporación efectiva como proveedor",
+            "title": "Cuantías orientativas",
             "items": [
               {
                 "label": "Entidades públicas y privadas",
@@ -1273,16 +1271,16 @@
         }
       },
       "cards": {
-        "title": "Modalidades de participación",
+        "title": "Modalidades de participación y cuantías orientativas",
         "items": [
           {
             "title": "Participante",
-            "text": "Conéctate, consume y comparte productos de datos con gobernanza y control.",
+            "text": "Prepara datos, firma un contrato de adhesión con el espacio de datos elegido y registrate en él.",
             "icon": "Users"
           },
           {
             "title": "Proveedor avanzado",
-            "text": "Publica productos de datos y opera servicios interoperables.",
+            "text": "Adicionalmente, publica un conjunto de datos en el catálogo del espacio de datos.",
             "icon": "Globe"
           }
         ]
