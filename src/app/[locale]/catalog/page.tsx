@@ -355,6 +355,7 @@ function Pagination({
   currentPage: number;
   setPage: (p: number) => void;
 }) {
+  const t = useTranslations();
   const total = getDatasetsCount();
   const pageCount = Math.ceil(total / datasetsPerPage);
   if (pageCount < 2) return null;
@@ -365,13 +366,13 @@ function Pagination({
         disabled={currentPage === 1}
         onClick={() => setPage(currentPage - 1)}
       >
-        <ChevronLeftIcon className="size-4" /> Previous
+        <ChevronLeftIcon className="size-4" /> {t('catalog.previous')}
       </Button>
       <Button
         disabled={currentPage === pageCount}
         onClick={() => setPage(currentPage + 1)}
       >
-        Next <ChevronRightIcon className="size-4" />
+        {t('catalog.next')} <ChevronRightIcon className="size-4" />
       </Button>
     </div>
   );
