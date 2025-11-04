@@ -62,7 +62,7 @@ export const blogPosts: Record<Locale, Post[]> = {
   es: [
     {
       key: 'initial-post-2025',
-      date: '2025-11-04',
+      date: '2025-11-05',
       title:
         'Del dato al impacto: así avanza el Centro Demostrador Multisectorial DATAlife',
       excerpt:
@@ -153,7 +153,7 @@ export const blogPosts: Record<Locale, Post[]> = {
   en: [
     {
       key: 'initial-post-2025',
-      date: '2025-11-04',
+      date: '2025-11-05',
       title:
         'From Data to Impact: Progress of the DATAlife Multisector Demonstrator Center',
       excerpt:
