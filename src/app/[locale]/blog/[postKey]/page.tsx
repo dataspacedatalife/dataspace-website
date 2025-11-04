@@ -28,6 +28,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         <Navbar />
         <article className="max-w-3xl mx-auto mt-16 mb-24">
           <h1 className="text-3xl font-bold mb-6">{post.title}</h1>
+
           <div className="flex items-center gap-3 mb-6 text-gray-700 text-sm">
             <Image
               src={post.author_image}
@@ -95,6 +96,41 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                       {item.content}
                     </p>
                   );
+                case 'link':
+                  return (
+                    <p
+                      key={idx}
+                      className="text-gray-700 leading-relaxed text-base"
+                    >
+                      <a
+                        href={item.href}
+                        target={item.external ? '_blank' : '_self'}
+                        rel="noopener noreferrer"
+                        className="text-blue-600 underline hover:text-blue-800"
+                      >
+                        {item.content}
+                      </a>
+                    </p>
+                  );
+                case 'image':
+                  return (
+                    <figure key={idx} className="my-6">
+                      <Image
+                        src={item.src}
+                        alt={item.alt}
+                        width={800}
+                        height={400}
+                        className="rounded-lg mx-auto"
+                      />
+                      {item.caption && (
+                        <figcaption className="text-sm text-gray-500 mt-2 text-center">
+                          {item.caption}
+                        </figcaption>
+                      )}
+                    </figure>
+                  );
+                default:
+                  return null;
               }
             })}
           </div>
