@@ -103,8 +103,7 @@ const events = [
     key: 'kitdatoscred2',
     date: '2025-10-30',
     image: KitDatosCREDImg2,
-    cesgalink:
-      'https://events.teams.microsoft.com/event/9cd8319a-dd19-4c02-a32c-76e71d67ba24@24e38255-2c42-4538-999c-5fd53e8456d2',
+    cesgalink: 'https://www.youtube.com/watch?v=L5V9ISX40-g&t=4s',
     organizer: 'Centro de Referencia de Espacios de Datos (CRED)',
     featured: true,
   },
@@ -112,8 +111,7 @@ const events = [
     key: 'tallergradiant',
     date: '2025-10-31',
     image: tallergradiantImg,
-    cesgalink:
-      'https://www.cesga.es/taller-espacio-de-datos-farmaciavax-con-xdatashare/',
+    cesgalink: 'https://www.youtube.com/watch?v=u7zTyU795n8',
     organizer: 'Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
   },
