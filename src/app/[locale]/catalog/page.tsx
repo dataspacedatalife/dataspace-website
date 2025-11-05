@@ -3,8 +3,6 @@
 import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 import clsx from 'clsx';
-import { Database } from 'lucide-react';
-import { data } from 'motion/react-client';
 import Image, { type StaticImageData } from 'next/image';
 import { type AppConfig, useMessages, useTranslations } from 'next-intl';
 import React, { Suspense, useState } from 'react';
@@ -15,17 +13,12 @@ import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
 import { useSearchState } from '@/hooks/useSearchState';
-import LogoEmpresa from '../../../../public/logos/nuevoLogoCesga_mayo2023.png';
-import LogoCesga from '../../../../public/logos/nuevoLogoCesga_mayo2023.png';
 import LogoIISGS from '../../../../public/use-cases/IISGS.png';
 import LogoInverbis from '../../../../public/use-cases/Inverbis.png';
 import Logoi4life from '../../../../public/use-cases/i4life.png';
 import LogoUvigo from '../../../../public/use-cases/uvigo.png';
 
 type DatasetKey = keyof AppConfig['Messages']['catalog']['datasets'];
-
-type X =
-  AppConfig['Messages']['catalog']['datasets']['aidatamed_synthetic_patients']['subsets'];
 
 const useCasesData = [
   {
@@ -81,7 +74,7 @@ function getDatasetsCount() {
   return useCasesData.length;
 }
 
-function DatasetModal<Key extends DatasetKey>({
+function DatasetModal({
   datasetKey,
   onClose,
 }: {
@@ -107,8 +100,6 @@ function DatasetModal<Key extends DatasetKey>({
   const data_standard_txt = t('catalog.data_standard');
 
   const messages = useMessages();
-
-  const { subsets } = messages.catalog.datasets[datasetKey];
 
   const subsetEntries = Object.entries(
     messages.catalog.datasets[datasetKey].subsets,
