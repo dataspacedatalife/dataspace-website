@@ -21,8 +21,7 @@ interface BlogPageProps {
 
 const postsPerPage = 5;
 
-export default function BlogPage({ params }: BlogPageProps) {
-  const { locale } = React.use(params);
+function Blog({ locale }: { locale: Locale }) {
   const t = useTranslations('blog');
   const posts = blogPosts[locale] || [];
 
@@ -35,30 +34,28 @@ export default function BlogPage({ params }: BlogPageProps) {
   const totalPages = Math.ceil(posts.length / postsPerPage);
 
   return (
-    <Suspense>
-      <main className="overflow-hidden">
-        <GradientBackground />
-        <Container>
-          <Navbar />
-          <Heading as="h1" className="mt-16 text-center">
-            {t('title')}
-          </Heading>
-          <Lead className="mt-10 text-center">{t('lead')}</Lead>
-        </Container>
+    <main className="overflow-hidden">
+      <GradientBackground />
+      <Container>
+        <Navbar />
+        <Heading as="h1" className="mt-16 text-center">
+          {t('title')}
+        </Heading>
+        <Lead className="mt-10 text-center">{t('lead')}</Lead>
+      </Container>
 
-        <Container className="mt-16 pb-24">
-          <PastPostsList posts={pastPosts} />
-          <Pagination
-            page={page}
-            totalPages={totalPages}
-            setPage={setPage}
-            t={t}
-          />
-        </Container>
+      <Container className="mt-16 pb-24">
+        <PastPostsList posts={pastPosts} />
+        <Pagination
+          page={page}
+          totalPages={totalPages}
+          setPage={setPage}
+          t={t}
+        />
+      </Container>
 
-        <Footer />
-      </main>
-    </Suspense>
+      <Footer />
+    </main>
   );
 }
 
@@ -106,6 +103,15 @@ function PastPostsList({ posts }: { posts: Post[] }) {
         </div>
       ))}
     </div>
+  );
+}
+
+export default function BlogPage({ params }: BlogPageProps) {
+  const { locale } = React.use(params);
+  return (
+    <Suspense>
+      <Blog locale={locale} />
+    </Suspense>
   );
 }
 
