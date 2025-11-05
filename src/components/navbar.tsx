@@ -272,6 +272,82 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             </div>
           </motion.div>
 
+          <motion.div
+            initial={{ opacity: 0, rotateX: -90 }}
+            animate={{ opacity: 1, rotateX: 0 }}
+            transition={{
+              duration: 0.15,
+              ease: 'easeInOut',
+              rotateX: { duration: 0.3, delay: 0.1 },
+            }}
+          >
+            <Link
+              href="/catalog"
+              className="text-base font-medium text-gray-950"
+            >
+              {t('catalogo')}
+            </Link>
+          </motion.div>
+
+          {/* Tecnologias mimic */}
+          <motion.div
+            initial={{ opacity: 0, rotateX: -90 }}
+            animate={{ opacity: 1, rotateX: 0 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
+            <Link
+              href="https://xdatashare.srv.cesga.es/portal"
+              className="flex items-center gap-2 text-base font-medium text-gray-950"
+              target="_blank"
+            >
+              <div className="">{t('tecnologias')}</div>
+              <div className="shrink-0">
+                <ChevronUp className="rotate-180 w-3.5" />
+              </div>
+            </Link>
+            <div className="ml-4 mt-2 flex flex-col gap-2">
+              <Link
+                href="https://xdatashare.srv.cesga.es/portal"
+                className="text-sm text-gray-800"
+                target="_blank"
+              >
+                {t('xdatashare')}
+              </Link>
+              <Link
+                href="https://dspacer-cesga.es/portal"
+                className="text-sm text-gray-800"
+                target="_blank"
+              >
+                {t('dspacer')}
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* Unete mimic */}
+          <motion.div
+            initial={{ opacity: 0, rotateX: -90 }}
+            animate={{ opacity: 1, rotateX: 0 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
+            <Link
+              href="/how"
+              className="flex items-center gap-2 text-base font-medium text-gray-950"
+            >
+              <div className="">{t('participa')}</div>
+              <div className="shrink-0">
+                <ChevronUp className="rotate-180 w-3.5" />
+              </div>
+            </Link>
+            <div className="ml-4 mt-2 flex flex-col gap-2">
+              <Link href="how" className="text-sm text-gray-800">
+                {t('adhesion')}
+              </Link>
+              <Link href="/kitEdD" className="text-sm text-gray-800">
+                {t('kit')}
+              </Link>
+            </div>
+          </motion.div>
+
           {/* Other links */}
           {links.map(({ href, label }, idx) => (
             <motion.div
