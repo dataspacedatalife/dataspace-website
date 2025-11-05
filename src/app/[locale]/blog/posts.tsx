@@ -119,8 +119,7 @@ export const blogPosts: Record<Locale, Post[]> = {
         {
           type: 'link',
           content: '▶️ Consulta el catálogo',
-          href: 'https://dataspace.cesga.es/es/catalog',
-          external: true,
+          href: '/catalog',
         },
         { type: 'h2', content: 'Casos de uso actuales' },
         { type: 'bold', content: 'Brilliant' },
@@ -210,8 +209,7 @@ export const blogPosts: Record<Locale, Post[]> = {
         {
           type: 'link',
           content: '▶️ Explore the catalog',
-          href: 'https://dataspace.cesga.es/en/catalog',
-          external: true,
+          href: '/catalog',
         },
         { type: 'h2', content: 'Current Use Cases' },
         { type: 'bold', content: 'Brilliant' },
