@@ -34,7 +34,7 @@ function Hero() {
                 <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
                   <Button href="/about">{t('learnMore')}</Button>
                   <Button
-                    href="https://dspacer-cesga.es/portal"
+                    href="https://xdatashare.srv.cesga.es/portal"
                     target="_blank"
                   >
                     {t('testDemo')}

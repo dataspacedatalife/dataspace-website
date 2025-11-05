@@ -4,7 +4,7 @@
       "title": "One Health Multisectoral Data Space Demonstrator Center",
       "subtitle": "Only by sharing data can we unlock its true power",
       "learnMore": "Learn more",
-      "testDemo": "Try the demo"
+      "testDemo": "Access"
     }
   },
   "Navbar": {
@@ -13,6 +13,11 @@
     "saber_mas": "Learn more",
     "que_es_un_espacio": "What is a data space?",
     "participa": "Participate",
+    "adhesion": "Join",
+    "kit": "Data Spaces Kit",
+    "tecnologias": "Technologies",
+    "xdatashare": "XDataShare (MVD)",
+    "dspacer": "D-Spacer",
     "casos_de_uso": "Current Users",
     "catalogo": "Catalog",
     "el_equipo": "The Team",

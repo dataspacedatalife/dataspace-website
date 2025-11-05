@@ -97,8 +97,8 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
 
   const links = [
     // { href: '/use-cases', label: t('casos_de_uso') },
-    { href: '/catalog', label: t('catalogo') },
-    { href: '/how', label: t('participa') },
+    // { href: '/catalog', label: t('catalogo') },
+    // { href: '/how', label: t('participa') },
     { href: '/events', label: t('eventos') },
     { href: '/blog', label: t('blog') },
     { href: '/team', label: t('el_equipo') },
@@ -138,6 +138,73 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
               className="px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
             >
               {t('casos_de_uso')}
+            </Link>
+          </div>
+        </PlusGridItem>
+
+        {/* Link: Catalogo */}
+        <PlusGridItem className="relative flex">
+          <Link
+            href="/catalog"
+            className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-hover:bg-black/2.5"
+          >
+            {t('catalogo')}
+          </Link>
+        </PlusGridItem>
+
+        {/* Dropdown: Tecnologías */}
+        <PlusGridItem className="relative group flex">
+          <Link
+            href="https://xdatashare.srv.cesga.es/portal"
+            target="_blank"
+            className="flex items-center px-4 py-3 text-base font-medium text-gray-950 cursor-pointer"
+          >
+            <div className="grow whitespace-nowrap">{t('tecnologias')}</div>
+            <div className="shrink-0">
+              <ChevronUp className="rotate-180 w-3.5" />
+            </div>
+          </Link>
+          <div className="absolute left-0 top-full hidden w-48 flex-col rounded-lg border border-gray-200 bg-white shadow-md group-hover:flex">
+            <Link
+              href="https://xdatashare.srv.cesga.es/portal"
+              className="px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
+              target="_blank"
+            >
+              {t('xdatashare')}
+            </Link>
+            <Link
+              href="https://dspacer-cesga.es/portal"
+              className="px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
+              target="_blank"
+            >
+              {t('dspacer')}
+            </Link>
+          </div>
+        </PlusGridItem>
+
+        {/* Dropdown: Unete */}
+        <PlusGridItem className="relative group flex">
+          <Link
+            href="/how"
+            className="flex items-center px-4 py-3 text-base font-medium text-gray-950 cursor-pointer"
+          >
+            <div className="grow whitespace-nowrap">{t('participa')}</div>
+            <div className="shrink-0">
+              <ChevronUp className="rotate-180 w-3.5" />
+            </div>
+          </Link>
+          <div className="absolute left-0 top-full hidden w-48 flex-col rounded-lg border border-gray-200 bg-white shadow-md group-hover:flex">
+            <Link
+              href="/how"
+              className="px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
+            >
+              {t('adhesion')}
+            </Link>
+            <Link
+              href="/kitEdD"
+              className="px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
+            >
+              {t('kit')}
             </Link>
           </div>
         </PlusGridItem>

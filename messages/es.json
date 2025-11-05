@@ -4,7 +4,7 @@
       "title": "Centro demostrador de espacio de datos multisectorial One Health",
       "subtitle": "Porque solo compartiendo datos se puede extraer su verdadero valor",
       "learnMore": "Saber más",
-      "testDemo": "Prueba la demo"
+      "testDemo": "Acceder"
     }
   },
   "Navbar": {
@@ -12,7 +12,12 @@
     "centro_demostrador": "Proyecto",
     "saber_mas": "Saber más",
     "que_es_un_espacio": "¿Qué es un espacio de datos?",
-    "participa": "Participa",
+    "participa": "Únete",
+    "adhesion": "Adherirse",
+    "kit": "Kit Espacios de Datos",
+    "tecnologias": "Tecnologías",
+    "xdatashare": "XDataShare (MVD)",
+    "dspacer": "D-Spacer",
     "casos_de_uso": "Casos de Uso",
     "catalogo": "Catálogo",
     "el_equipo": "El Equipo",
