@@ -96,7 +96,12 @@
     },
     "howToJoin": {
       "title": "Cómo adherirse",
-      "items": ["Contacta a dmd@cesga.es"]
+      "items": [
+        "Consulta las condiciones del Espacio de Datos.",
+        "Si tienes dudas, contacta a dmd@cesga.es"
+      ],
+      "formButton": "Cubre el formulario de muestra de interés si estás interesado en adherirte",
+      "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
     }
   },
   "team": {
@@ -1237,7 +1242,12 @@
         "Ejecuta y paga: realiza las actividades de adaptación (legal, técnica, datos) antes de solicitar la ayuda y guarda todas las facturas y justificantes de gasto."
       ]
     },
-
+    "interest": {
+      "title": "¿Estás interesado en solicitar el Kit?",
+      "description": "Cubre este formulario como muestra de interés y te contactaremos lo antes posible.",
+      "button": "Rellenar formulario de interés",
+      "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
+    },
     "visual": {
       "video": {
         "title": "Consulta el último webinar impartido por el CRED sobre el Kit",

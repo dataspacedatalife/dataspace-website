@@ -334,6 +334,26 @@ const Kit = () => {
           </div>
         </div>
 
+        {/* Sección: Interés en solicitar el kit */}
+        <section className="mt-24 pb-16 border-b border-gray-200/60 text-center">
+          <h3 className="text-3xl font-semibold text-gray-900">
+            {t('interest.title')}
+          </h3>
+          <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
+            {t('interest.description')}
+          </p>
+          <div className="mt-8">
+            <a
+              href={t('interest.formLink')} // aquí luego pondrás tu link real
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-2xl border border-emerald-200 bg-emerald-600 px-6 py-3 text-white font-semibold shadow-md hover:bg-emerald-700 transition"
+            >
+              {t('interest.button')}
+            </a>
+          </div>
+        </section>
+
         {visual.video?.url && (
           <VideoEmbed title={visual.video.title} url={visual.video.url} />
         )}

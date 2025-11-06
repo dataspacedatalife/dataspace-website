@@ -96,7 +96,12 @@
     },
     "howToJoin": {
       "title": "How to join",
-      "items": ["Contact dmd@cesga.es"]
+      "items": [
+        "Check the requirements of the Data Space.",
+        "If you have any questions, contact dmd@cesga.es"
+      ],
+      "formButton": "Fill out the expression of interest form if you wish to join",
+      "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
     }
   },
   "team": {
@@ -1236,6 +1241,12 @@
         "Make the connection to the chosen data space.",
         "Execute and pay: carry out the adaptation activities (legal, technical, data) before applying for the grant and keep all invoices and proofs of expenditure."
       ]
+    },
+    "interest": {
+      "title": "Interested in applying for the Kit?",
+      "description": "Fill out this form to express your interest and we’ll contact as soon as possible.",
+      "button": "Fill out interest form",
+      "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
     },
     "visual": {
       "video": {

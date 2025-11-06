@@ -1,4 +1,10 @@
-import { CheckCircle2, Globe, ShieldCheck, Users } from 'lucide-react';
+import {
+  ArrowRight,
+  CheckCircle2,
+  Globe,
+  ShieldCheck,
+  Users,
+} from 'lucide-react';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { Container } from '@/components/container';
@@ -38,7 +44,11 @@ function Section({
   items,
   icon: Icon,
   centered = false,
-}: SectionProps & { centered?: boolean }) {
+  button, // 👈 añadimos esta prop opcional
+}: SectionProps & {
+  centered?: boolean;
+  button?: { label: string; href: string };
+}) {
   const isSingleItem = items.length === 1;
 
   return (
@@ -64,7 +74,6 @@ function Section({
           >
             {isSingleItem ? (
               <div className="w-full rounded-2xl border border-gray-200 bg-white/80 shadow-sm p-6 text-center">
-                {/* <Icon className="h-6 w-6 text-gray-900 mx-auto mb-3" /> */}
                 <span className="text-lg text-gray-700">{item}</span>
               </div>
             ) : (
@@ -76,6 +85,20 @@ function Section({
           </li>
         ))}
       </ul>
+
+      {/* 👇 botón opcional */}
+      {button && (
+        <div className="mt-10">
+          <a
+            href={button.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-2xl border border-emerald-200 bg-emerald-600 px-6 py-3 text-white font-semibold shadow-md hover:bg-emerald-700 transition"
+          >
+            {button.label}
+          </a>
+        </div>
+      )}
     </div>
   );
 }
@@ -111,12 +134,15 @@ export default async function How() {
           <Section
             title={t('howToJoin.title')}
             items={howToJoin}
-            icon={CheckCircle2}
+            icon={ArrowRight}
             centered
+            button={{
+              label: t('howToJoin.formButton'),
+              href: t('howToJoin.formLink'),
+            }}
           />
         </div>
       </Container>
-
       <Footer />
     </main>
   );
