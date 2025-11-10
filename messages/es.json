@@ -372,6 +372,18 @@
           "📍 Formato: online"
         ],
         "extra": "Conócelo aquí"
+      },
+      "tallergradiantconectores": {
+        "header": "Taller de espacio de datos sobre Conectores EDC",
+        "excerpt": "Taller práctico para abordar el tema de los conectores basados en tecnología EDC (Eclipse Dataspace Components) con la plataforma XDataShare.",
+        "description": [
+          "Desde el Centro Demostrador Multisectorial DATAlife presentamos una nueva sesión de Espacio de Datos. En esta ocasión, abordaremos el tema de los conectores basados en tecnología EDC (Eclipse Dataspace Components), uno de los elementos clave para lograr una compartición de datos soberana e interoperable.",
+          "La sesión incluye una descripción de un conector EDC, explicando su estructura básica y componentes de código principales.",
+          "📅 Fecha: 13 de noviembre de 2025",
+          "🕔 Hora: 10:00 h",
+          "📍 Formato: online"
+        ],
+        "extra": "Apúntate aquí"
       }
     }
   },

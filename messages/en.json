@@ -373,6 +373,18 @@
           "📍 Format: Online"
         ],
         "extra": "Discover it here"
+      },
+      "tallergradiantconectores": {
+        "header": "Data Space Workshop on EDC Connectors",
+        "excerpt": "Hands-on workshop to explore connectors based on EDC (Eclipse Dataspace Components) technology using the XDataShare platform.",
+        "description": [
+          "From the DATAlife Multisector Demonstration Center, we present a new Data Space session. This time, we will address connectors based on EDC (Eclipse Dataspace Components) technology, one of the key elements to achieve sovereign and interoperable data sharing.",
+          "The session includes a description of an EDC connector, explaining its basic structure and main code components.",
+          "📅 Date: November 13, 2025",
+          "🕔 Time: 10:00 AM",
+          "📍 Format: online"
+        ],
+        "extra": "Sign up here"
       }
     }
   },

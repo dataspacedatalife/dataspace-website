@@ -24,6 +24,7 @@ import NormaUNE42001Img from '../../../../public/events/NormaUNE42001Img.jpg';
 import TallerSQSImg from '../../../../public/events/TallerSQSImg.png';
 import TallerCREDImg from '../../../../public/events/tallerCRED.jpg';
 import tallergradiantImg from '../../../../public/events/tallergradiant.jpg';
+import tallergradiantConectoresImg from '../../../../public/events/tallergradiantConectores.png';
 import KitDatosCREDImg2 from '../../../../public/events/tallerPracticokitCRED.jpg';
 
 const eventsPerPage = 5;
@@ -100,11 +101,11 @@ const events = [
     featured: false,
   },
   {
-    key: 'kitdatoscred2',
-    date: '2025-10-30',
-    image: KitDatosCREDImg2,
-    cesgalink: 'https://www.youtube.com/watch?v=L5V9ISX40-g&t=4s',
-    organizer: 'Centro de Referencia de Espacios de Datos (CRED)',
+    key: 'tallergradiantconectores',
+    date: '2025-11-13',
+    image: tallergradiantConectoresImg,
+    cesgalink: 'https://www.cesga.es/taller-espacio-de-datos-conectores-edc/',
+    organizer: 'Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
   },
   {
@@ -113,7 +114,15 @@ const events = [
     image: tallergradiantImg,
     cesgalink: 'https://www.youtube.com/watch?v=u7zTyU795n8',
     organizer: 'Centro de Supercomputación de Galicia (CESGA)',
-    featured: true,
+    featured: false,
+  },
+  {
+    key: 'kitdatoscred2',
+    date: '2025-10-30',
+    image: KitDatosCREDImg2,
+    cesgalink: 'https://www.youtube.com/watch?v=L5V9ISX40-g&t=4s',
+    organizer: 'Centro de Referencia de Espacios de Datos (CRED)',
+    featured: false,
   },
 ] as const satisfies Event[];
 
