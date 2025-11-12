@@ -68,6 +68,9 @@
       "title": "Participa en el espacio de datos DATAlife",
       "lead": "Comparte, consume o desarrolla servicios basados en datos en un entorno confiable que garantiza soberanía, privacidad e interoperabilidad"
     },
+    "overview": {
+      "title": "Nuestro enfoque"
+    },
     "who": {
       "title": "¿Quién puede participar?",
       "items": [
@@ -95,13 +98,70 @@
       ]
     },
     "howToJoin": {
-      "title": "Cómo adherirse",
-      "items": [
-        "Consulta las condiciones del Espacio de Datos.",
-        "Si tienes dudas, contacta a dmd@cesga.es"
-      ],
+      "title": "Cubre nuestra solicitud de adhesión",
+      "description": "Si ya estás informado y deseas hacernos saber tu interés en participar en el Espacio de Datos, completa el siguiente formulario. Si tienes dudas, contacta a dmd@cesga.es",
       "formButton": "Cubre el formulario de muestra de interés si estás interesado en adherirte",
       "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
+    },
+    "process": {
+      "title": "Proceso de adhesión",
+      "step": "Paso",
+      "phases": [
+        {
+          "title": "Fase de solicitud y adhesión",
+          "items": [
+            {
+              "title": "Infórmate",
+              "description": "Descarga la <a>Guía del Participante</a> para conocer el funcionamiento del Espacio de Datos, los requisitos técnicos y legales, y los beneficios de unirte."
+            },
+            {
+              "title": "Solicita tu adhesión",
+              "description": "Rellena el formulario de muestra de interés, y nuestro equipo revisará tu solicitud y te contactará para los siguientes pasos."
+            }
+          ],
+          "intermediateMessage": "Si se aprueba la solicitud se pasa a la siguiente fase"
+        },
+        {
+          "title": "Fase de integración en el espacio de datos",
+          "items": [
+            {
+              "title": "Integración técnica",
+              "description": "Conecta tus sistemas y prepara tus datos para que cumplan con las políticas de interoperabilidad, calidad y seguridad del Centro demostrador de espacio de datos multisectorial One Health."
+            },
+            {
+              "title": "Participa y crece",
+              "description": "Una vez dentro, podrás intercambiar datos, participar en casos de uso y colaborar con otros miembros del ecosistema."
+            }
+          ]
+        }
+      ]
+    },
+    "process2": {
+      "title": "Proceso de adhesión",
+      "step": "Paso",
+      "items": [
+        {
+          "title": "Infórmate",
+          "description": "Descarga la Guía del Participante para conocer el funcionamiento del Espacio de Datos, los requisitos técnicos y legales, y los beneficios de unirte."
+        },
+        {
+          "title": "Solicita tu adhesión",
+          "description": "Rellena el formulario de muestra de interés, y nuestro equipo revisará tu solicitud en el correspondiente ciclo de evaluación y te contactará para los siguientes pasos."
+        },
+        {
+          "title": "Regístrate en el EdD",
+          "description": "Blabla."
+        },
+        {
+          "title": "Integración técnica",
+          "description": "Conecta tus sistemas y prepara tus datos para que cumplan con las políticas de interoperabilidad, calidad y seguridad del Centro demostrador de espacio de datos multisectorial One Health."
+        },
+
+        {
+          "title": "Participa y crece",
+          "description": "Una vez dentro, podrás intercambiar datos, participar en casos de uso y colaborar con otros miembros del ecosistema."
+        }
+      ]
     }
   },
   "team": {

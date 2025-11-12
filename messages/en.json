@@ -68,6 +68,9 @@
       "title": "Participate in the DATAlife data space",
       "lead": "Share, consume or develop data-based services in a trusted environment that guarantees sovereignty, privacy and interoperability"
     },
+    "overview": {
+      "title": "Our approach"
+    },
     "who": {
       "title": "Who can participate?",
       "items": [
@@ -95,13 +98,43 @@
       ]
     },
     "howToJoin": {
-      "title": "How to join",
-      "items": [
-        "Check the requirements of the Data Space.",
-        "If you have any questions, contact dmd@cesga.es"
-      ],
-      "formButton": "Fill out the expression of interest form if you wish to join",
+      "title": "Complete Our Membership Application",
+      "description": "If you’re already informed and would like to express your interest in joining the Data Space, please fill out the following form. If you have any questions, contact us at dmd@cesga.es.",
+      "formButton": "Fill out the expression of interest form if you’re interested in joining",
       "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
+    },
+    "process": {
+      "title": "Onboarding Process",
+      "step": "Step",
+      "phases": [
+        {
+          "title": "Application and Membership Phase",
+          "items": [
+            {
+              "title": "Get Informed",
+              "description": "Download the <a>Participant Guide</a> to learn how the Data Space works, the technical and legal requirements, and the benefits of joining."
+            },
+            {
+              "title": "Apply for Membership",
+              "description": "Fill out the expression of interest form, and our team will review your application and contact you for the next steps."
+            }
+          ],
+          "intermediateMessage": "If the application is approved, you will move on to the next phase."
+        },
+        {
+          "title": "Integration into the Data Space Phase",
+          "items": [
+            {
+              "title": "Technical Integration",
+              "description": "Connect your systems and prepare your data to comply with the interoperability, quality, and security policies of the One Health Multisectoral Data Space Demonstrator Center."
+            },
+            {
+              "title": "Participate and Grow",
+              "description": "Once inside, you can exchange data, participate in use cases, and collaborate with other members of the ecosystem."
+            }
+          ]
+        }
+      ]
     }
   },
   "team": {
