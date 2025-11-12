@@ -392,6 +392,7 @@
     "title": "Data Catalog",
     "subtitle": "Explore the list of datasets and their preliminary information",
     "viewDetails": "View details",
+    "contact": "Contact",
     "close": "Close",
     "previous": "Previous",
     "next": "Next",
@@ -403,6 +404,7 @@
     "data_type": "Data type",
     "file_format": "File format",
     "data_standard": "Data standard",
+    "license": "License",
     "metadata": {
       "title": "Metadata",
       "data_type": "Data type",
@@ -436,6 +438,7 @@
               "data_standard": "OMOP CDM",
               "date_added": "",
               "file_format": "CSV / Parquet",
+              "license": "Proprietary (restricted by contract)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -558,6 +561,7 @@
               "data_standard": "OMOP CDM",
               "date_added": "",
               "file_format": "CSV / Parquet",
+              "license": "Proprietary (restricted by contract)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -679,6 +683,7 @@
               "data_standard": "DICOM",
               "date_added": "",
               "file_format": "DICOM",
+              "license": "CC BY 4.0",
               "temporal_resolution": "-",
               "temporal_coverage": "-"
             },
@@ -692,6 +697,7 @@
               "data_standard": "",
               "date_added": "",
               "file_format": "CSV",
+              "license": "CC BY 4.0",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -716,6 +722,7 @@
               "data_standard": "",
               "date_added": "",
               "file_format": "CSV / Parquet",
+              "license": "Proprietary (restricted by contract)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -849,6 +856,7 @@
               "data_standard": "FASTQ",
               "date_added": "3",
               "file_format": "FASTQ.gz",
+              "license": "Proprietary (restricted by contract)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -873,6 +881,7 @@
               "data_standard": "",
               "date_added": "",
               "file_format": "CSV",
+              "license": "Proprietary (restricted by contract)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -964,6 +973,7 @@
               "data_standard": "HL7 FHIR",
               "date_added": "",
               "file_format": "CSV",
+              "license": "Proprietary (restricted by contract)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -988,6 +998,7 @@
               "data_standard": "",
               "date_added": "",
               "file_format": "Parquet",
+              "license": "Proprietary (restricted by contract)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -1038,6 +1049,7 @@
               "data_standard": "",
               "date_added": "",
               "file_format": "Parquet",
+              "license": "Proprietary (restricted by contract)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -1106,6 +1118,7 @@
               "data_standard": "",
               "date_added": "",
               "file_format": "Parquet",
+              "license": "Proprietary (restricted by contract)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },

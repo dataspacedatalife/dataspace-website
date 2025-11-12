@@ -2,6 +2,7 @@
 
 import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
+import { CheckIcon, ClipboardIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import Image, { type StaticImageData } from 'next/image';
 import { type AppConfig, useMessages, useTranslations } from 'next-intl';
@@ -25,41 +26,49 @@ const useCasesData = [
     id: 'aidatamed_synthetic_patients',
     imagen: LogoIISGS,
     link: 'https://www.iisgaliciasur.es/',
+    email: 'aidatamed@iisgaliciasur.es',
   },
   {
     id: 'biomexplore',
     imagen: LogoIISGS,
     link: 'https://www.iisgaliciasur.es/',
+    email: 'sonia.perez.castro@sergas.es',
   },
   {
     id: 'brilliant',
     imagen: LogoIISGS,
     link: 'https://www.iisgaliciasur.es/',
+    email: 'cesar.veiga@iisgaliciasur.es',
   },
   {
     id: 'celiaspace',
     imagen: LogoUvigo,
     link: 'https://www.uvigo.gal/',
+    email: 'javier@det.uvigo.es',
   },
   {
     id: 'datiacare',
     imagen: Logoi4life,
     link: 'https://i4life.es/',
+    email: 'info@i4life.es',
   },
   {
     id: 'gift_conversations',
     imagen: LogoIISGS,
     link: 'https://www.iisgaliciasur.es/',
+    email: 'gift@iisgaliciasur.es',
   },
   {
     id: 'salusbench',
     imagen: LogoInverbis,
     link: 'https://web.inverbisanalytics.com/',
+    email: 'salusbench@inverbisanalytics.com',
   },
 ] as const satisfies {
   id: DatasetKey;
   imagen: StaticImageData;
   link: string;
+  email: string;
 }[];
 
 // Pagination
@@ -98,6 +107,7 @@ function DatasetModal({
   const data_type_txt = t('catalog.data_type');
   const file_format_txt = t('catalog.file_format');
   const data_standard_txt = t('catalog.data_standard');
+  const data_license_txt = t('catalog.license');
 
   const messages = useMessages();
 
@@ -219,6 +229,14 @@ function DatasetModal({
                           {metadata.data_standard || '-'}
                         </span>
                       </div>
+                      <div className="bg-white border border-gray-200 rounded-md px-4 py-2 shadow-sm">
+                        <span className="font-medium text-gray-700">
+                          {data_license_txt}:
+                        </span>{' '}
+                        <span className="text-gray-900">
+                          {metadata.license || '-'}
+                        </span>
+                      </div>
                     </div>
 
                     {/* Variables table */}
@@ -278,6 +296,36 @@ function DatasetModal({
   );
 }
 
+function CopyEmailButton({ email }: { email: string }) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  };
+
+  return (
+    <Button
+      variant="secondary"
+      className="w-full flex items-center justify-center gap-2 text-xs py-1.5"
+      onClick={handleCopy}
+    >
+      {copied ? (
+        <>
+          <CheckIcon className="w-4 h-4 text-green-600" />
+          ¡Copiado!
+        </>
+      ) : (
+        <>
+          <ClipboardIcon className="w-4 h-4 text-gray-600" />
+          {email}
+        </>
+      )}
+    </Button>
+  );
+}
+
 // Dataset list
 function DatasetList({
   page,
@@ -297,38 +345,43 @@ function DatasetList({
           return (
             <div
               key={dataset.id}
-              className={clsx(
-                'flex flex-col sm:flex-row items-start sm:items-center border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition bg-white',
-              )}
+              className="flex flex-col sm:flex-row border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md bg-white"
             >
-              {/* Image on the left */}
-
+              {/* Imagen */}
               {dataset.imagen && (
                 <div className="flex-shrink-0 w-24 h-24 sm:w-32 sm:h-32 mr-6 mb-4 sm:mb-0">
                   <Image
                     src={dataset.imagen}
-                    alt={t(`${baseKey}.name`)}
+                    alt={t(`catalog.datasets.${dataset.id}.name`)}
                     className="object-contain w-full h-full rounded-lg"
                   />
                 </div>
               )}
-              {/* Text content */}
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold text-gray-900">
-                  {t(`${baseKey}.name`)}
-                </h3>
-                <p className="text-md text-gray-600 mt-1">
-                  {t(`${baseKey}.use_case`)}
-                </p>
-                <p className="mt-3 text-sm text-gray-500 max-w-3xl">
-                  {t(`${baseKey}.description`)}
-                </p>
-              </div>
-              {/* Button on the right */}
-              <div className="flex items-center justify-end mt-4 sm:mt-0">
-                <Button onClick={() => onOpen(dataset.id)}>
-                  {t('catalog.viewDetails')}
-                </Button>
+
+              {/* Contenido y columna de botones */}
+              <div className="flex flex-1 flex-col sm:flex-row gap-4">
+                {/* Texto */}
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    {t(`catalog.datasets.${dataset.id}.name`)}
+                  </h3>
+                  <p className="text-md text-gray-600 mt-1">
+                    {t(`catalog.datasets.${dataset.id}.use_case`)}
+                  </p>
+                  <p className="mt-3 text-sm text-gray-500 max-w-3xl">
+                    {t(`catalog.datasets.${dataset.id}.description`)}
+                  </p>
+                </div>
+
+                {/* Columna de botones, responsive */}
+
+                <div className="flex flex-col gap-2 sm:w-65 w-full">
+                  <Button className="w-full" onClick={() => onOpen(dataset.id)}>
+                    {t('catalog.viewDetails')}
+                  </Button>
+
+                  <CopyEmailButton email={dataset.email} />
+                </div>
               </div>
             </div>
           );

@@ -391,6 +391,7 @@
     "title": "Catálogo de Datos",
     "subtitle": "Explora el listado de conjuntos de datos y su información preliminar",
     "viewDetails": "Ver detalles",
+    "contact": "Contactar",
     "close": "Cerrar",
     "previous": "Anterior",
     "next": "Siguiente",
@@ -400,8 +401,9 @@
     "volume": "Volumen",
     "number_of_files": "Número de ficheros",
     "data_type": "Tipo de dato",
-    "file_format": "Formato del archivo",
-    "data_standard": "Estándar de datos",
+    "file_format": "Formato",
+    "data_standard": "Estándar",
+    "license": "Licencia",
     "metadata": {
       "title": "Metadatos",
       "data_type": "Tipo de dato",
@@ -435,6 +437,7 @@
               "data_standard": "OMOP CDM",
               "date_added": "",
               "file_format": "CSV / Parquet",
+              "license": "Propietaria (restringida bajo contrato)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -557,6 +560,7 @@
               "data_standard": "OMOP CDM",
               "date_added": "",
               "file_format": "CSV / Parquet",
+              "license": "Propietaria (restringida bajo contrato)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -678,6 +682,7 @@
               "data_standard": "DICOM",
               "date_added": "",
               "file_format": "DICOM",
+              "license": "CC BY 4.0",
               "temporal_resolution": "-",
               "temporal_coverage": "-"
             },
@@ -691,6 +696,7 @@
               "data_standard": "",
               "date_added": "",
               "file_format": "CSV",
+              "license": "CC BY 4.0",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -715,6 +721,7 @@
               "data_standard": "",
               "date_added": "",
               "file_format": "CSV / Parquet",
+              "license": "Propietaria (restringida bajo contrato)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -848,6 +855,7 @@
               "data_standard": "FASTQ",
               "date_added": "3",
               "file_format": "FASTQ.gz",
+              "license": "Propietaria (restringida bajo contrato)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -872,6 +880,7 @@
               "data_standard": "",
               "date_added": "",
               "file_format": "CSV",
+              "license": "Por definir",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -956,6 +965,7 @@
         "volumen": "10 usuarios, 1.000 interacciones cada usuario",
         "n_ficheros": "2",
         "subsets": {
+          "license": "Propietaria (restringida bajo contrato)",
           "serenia": {
             "name": "Conversaciones",
             "description": "Conversaciones entre usuarios mayores y la asistente Serenia.",
@@ -964,6 +974,7 @@
               "data_standard": "HL7 FHIR",
               "date_added": "",
               "file_format": "CSV",
+              "license": "Propietaria (restringida bajo contrato)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -988,6 +999,7 @@
               "data_standard": "",
               "date_added": "",
               "file_format": "Parquet",
+              "license": "Propietaria (restringida bajo contrato)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -1038,6 +1050,7 @@
               "data_standard": "",
               "date_added": "",
               "file_format": "Parquet",
+              "license": "Propietaria (restringida bajo contrato)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
@@ -1106,6 +1119,7 @@
               "data_standard": "",
               "date_added": "",
               "file_format": "Parquet",
+              "license": "Propietaria (restringida bajo contrato)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
