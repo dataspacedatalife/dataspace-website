@@ -36,7 +36,7 @@
     },
     "objective": {
       "title": "Demonstrator Objective",
-      "text1": "The demonstrator, developed under the European project Data Spaces Support Centre and led in Galicia by CESGA, aims to illustrate how multiple organizations in the biotechnology and health sectors can exchange data safely and following controlled protocols.",
+      "text1": "The demonstrator aims to illustrate how multiple organizations in the biotechnology and health sectors can exchange data safely and following controlled protocols.",
       "text2": "The system ensures regulatory compliance, data sovereignty, and interoperability between different actors, from hospitals and research centers to private companies."
     },
     "motivation": {

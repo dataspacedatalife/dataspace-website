@@ -36,7 +36,7 @@
     },
     "objective": {
       "title": "Objetivo del demostrador",
-      "text1": "El demostrador desarrollado en el marco del proyecto europeo Data Spaces Support Centre y liderado en Galicia por el CESGA, tiene como objetivo ilustrar cómo múltiples organizaciones del sector biotecnológico y de la salud pueden intercambiar datos de forma segura y controlada.",
+      "text1": "El centro demostrador tiene como objetivo ilustrar cómo múltiples organizaciones relacionadas con el ámbito OneHealth pueden intercambiar datos de forma segura y controlada.",
       "text2": "El sistema garantiza el cumplimiento normativo, la soberanía del dato y la interoperabilidad entre diferentes actores, desde hospitales y centros de investigación hasta empresas privadas."
     },
     "motivation": {
