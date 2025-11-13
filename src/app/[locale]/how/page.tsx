@@ -243,6 +243,16 @@ function How() {
                             {chunks}
                           </Link>
                         ),
+                        aForm: (chunks: React.ReactNode) => (
+                          <Link
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-emerald-600 underline hover:text-emerald-800 transition"
+                            href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
+                          >
+                            {chunks}
+                          </Link>
+                        ),
                       },
                     )}
                   </p>
@@ -250,11 +260,6 @@ function How() {
               ))}
               <div className="hidden md:absolute inset-x-10 h-0 border-emerald-600 border top-1/2 -translate-y-1/2"></div>
             </div>
-            {/* {phase.intermediateMessage && (
-              <div className="text-right mt-8 -mb-4 text-gray-500 italic">
-                {phase.intermediateMessage}
-              </div>
-            )} */}
           </Card>
         ))}
       </Container>

@@ -112,25 +112,24 @@
           "items": [
             {
               "title": "Infórmate",
-              "description": "Descarga la <a>Guía del Participante</a> para conocer el funcionamiento del Espacio de Datos, los requisitos técnicos y legales, y los beneficios de unirte."
+              "description": "Descarga la <a>Guía del Participante</a> para conocer en detalle cómo funciona el Espacio de Datos, los requisitos técnicos y legales, y todos los beneficios de unirte. Estamos aquí para acompañarte y apoyarte en cada paso del proceso."
             },
             {
               "title": "Solicita tu adhesión",
-              "description": "Rellena el formulario de muestra de interés, y nuestro equipo revisará tu solicitud y te contactará para los siguientes pasos."
+              "description": "Rellena el <aForm>formulario de muestra de interés</aForm> y nuestro equipo revisará tu solicitud y te contactará para los siguientes pasos."
             }
-          ],
-          "intermediateMessage": "Si se aprueba la solicitud se pasa a la siguiente fase"
+          ]
         },
         {
           "title": "Fase de integración en el espacio de datos",
           "items": [
             {
               "title": "Integración técnica",
-              "description": "Conecta tus sistemas y prepara tus datos para que cumplan con las políticas de interoperabilidad, calidad y seguridad del Centro demostrador de espacio de datos multisectorial One Health."
+              "description": "Conecta tus sistemas y prepara tus datos para cumplir con las políticas de interoperabilidad, calidad y seguridad del Espacio de Datos. Estamos a tu lado para ayudarte durante todo el proceso."
             },
             {
-              "title": "Participa y crece",
-              "description": "Una vez dentro, podrás intercambiar datos, participar en casos de uso y colaborar con otros miembros del ecosistema."
+              "title": "Participa y crece dentro del ecosistema",
+              "description": "Una vez formes parte, podrás intercambiar datos, sumarte a casos de uso y colaborar con otros participantes. Seguiremos acompañándote en cada etapa."
             }
           ]
         }
