@@ -155,8 +155,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
         {/* Dropdown: Tecnologías */}
         <PlusGridItem className="relative group flex">
           <Link
-            href="https://xdatashare.srv.cesga.es"
-            target="_blank"
+            href="/xdatashare"
             className="flex items-center px-4 py-3 text-base font-medium text-gray-950 cursor-pointer"
           >
             <div className="grow whitespace-nowrap">{t('tecnologias')}</div>
@@ -166,9 +165,8 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           </Link>
           <div className="absolute left-0 top-full hidden w-48 flex-col rounded-lg border border-gray-200 bg-white shadow-md group-hover:flex">
             <Link
-              href="https://xdatashare.srv.cesga.es"
+              href="/xdatashare"
               className="px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
-              target="_blank"
             >
               {t('xdatashare')}
             </Link>
@@ -296,9 +294,8 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
             <Link
-              href="https://xdatashare.srv.cesga.es"
+              href="/xdatashare"
               className="flex items-center gap-2 text-base font-medium text-gray-950"
-              target="_blank"
             >
               <div className="">{t('tecnologias')}</div>
               <div className="shrink-0">
@@ -306,11 +303,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
               </div>
             </Link>
             <div className="ml-4 mt-2 flex flex-col gap-2">
-              <Link
-                href="https://xdatashare.srv.cesga.es"
-                className="text-sm text-gray-800"
-                target="_blank"
-              >
+              <Link href="/xdatashare" className="text-sm text-gray-800">
                 {t('xdatashare')}
               </Link>
               <Link

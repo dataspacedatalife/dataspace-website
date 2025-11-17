@@ -59,6 +59,40 @@
       "linkUrl": "https://www.cesga.es/ejecucion-fondos-nextgenerationeu-mrr-prtr/#tabla7"
     }
   },
+  "technologies": {
+    "xdatashare": {
+      "header": {
+        "title": "XDataShare (MVD)",
+        "lead": "Este MVD es la primera versión operativa del Espacio de Datos que reúne las capacidades esenciales para poner en marcha un espacio de datos federado de forma segura y escalable.",
+        "imageAlt": "Diagrama del MVD"
+      },
+      "whatIs": {
+        "title": "¿Qué es el MVD?",
+        "text1": "El MVD es la primera versión operativa del Espacio de Datos que reúne el conjunto mínimo de capacidades necesarias para poner en marcha la federación: identidad y acceso, descubrimiento de datos, gobernanza básica, trazabilidad y conectividad.",
+        "text2": "Sirve para aprender rápido, medir impacto y ajustar el diseño antes del escalado."
+      },
+      "features": {
+        "title": "¿Qué incluye esta fase?",
+        "iam": "Gestión de identidad y acceso federado (IAM): autenticación y autorización por políticas y roles.",
+        "governance": "Acuerdos y gobernanza: plantillas de Data Sharing Agreement y políticas de uso.",
+        "connectors": "Conectores EDC para integración y entorno sandbox.",
+        "observability": "Observabilidad: registro de accesos, auditoría y trazabilidad de consentimientos.",
+        "support": "Soporte a casos de uso piloto, según demanda."
+      },
+      "videos": {
+        "title": "Explora el MVD en acción",
+        "workshopsTitle": "Talleres",
+        "tutorialsTitle": "Tutoriales",
+        "workshop1Caption": "Taller práctico sobre el funcionamiento de un espacio de datos en el caso de uso FarmaciaVAX con la plataforma XDataShare.",
+        "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
+        "tutorial1Caption": "Tutorial paso a paso sobre la subida y visualización de assets en un espacio de datos utilizando la plataforma XDataShare.",
+        "tutorial1Url": "/xdatashare/Screencast_Completo_12N.mp4"
+      },
+      "access": {
+        "button": "Accede"
+      }
+    }
+  },
   "how": {
     "metadata": {
       "title": "Participa",
