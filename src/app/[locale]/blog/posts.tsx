@@ -50,7 +50,7 @@ export interface Post {
   date: string;
   title: string;
   excerpt: string;
-  image: StaticImageData;
+  image?: StaticImageData;
   author_name: string;
   author_image: StaticImageData;
   description: (React.ReactElement | string | TextNode)[];
@@ -148,6 +148,73 @@ export const blogPosts: Record<Locale, Post[]> = {
         'Si quieres explorar la demo o preparar a tu organización para conectarse a un espacio de datos, contáctanos y estate atento/a a nuestra web.',
       ],
     },
+    {
+      key: 'dataspace-glossary-2025',
+      date: '2025-11-18',
+      title: 'Espacio de datos: 12 definiciones que te ahorran reuniones 🚀',
+      excerpt:
+        'Si estás montando o conectándote a un espacio de datos, alinear vocabulario desde el principio evita fricciones. Aquí tienes un glosario esencial 📘.',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        // {
+        //   type: 'h1',
+        //   content:
+        //     'Espacio de datos: 12 definiciones que te ahorran reuniones 🚀',
+        // },
+        { type: 'h1', content: 'Glosario esencial' },
+
+        'Si estás montando o conectándote a un espacio de datos, alinear vocabulario desde el principio evita fricciones y acelera decisiones. Aquí tienes un glosario esencial 📘:',
+
+        { type: 'bold', content: '1) Espacio de datos' },
+        'Ecosistema donde distintas organizaciones comparten y usan datos bajo reglas comunes de gobernanza, seguridad, interoperabilidad y confianza verificable (acuerdos, auditorías, trazabilidad).',
+
+        { type: 'bold', content: '2) Caso de uso' },
+        'Iniciativa liderada por una o más entidades que utiliza el espacio de datos para resolver un reto concreto mediante el uso de datos compartidos. Ejemplos: vigilancia epidemiológica, optimización de rutas logísticas, evaluación de resultados en salud.',
+
+        { type: 'bold', content: '3) Producto de datos' },
+        'Según UNE 0087:2025, un producto es una “unidad que incluye datos más metadatos, políticas, servicios y elementos de soporte”. En la práctica: una capa de valor sobre un conjunto de datos del espacio para que el consumo sea controlado, documentado y útil. Ejemplo: un portal de benchmarking hospitalario que expone indicadores normalizados y actualizados.',
+
+        { type: 'bold', content: '4) Catálogo de datos' },
+        'Inventario navegable con datos, productos y/o servicios de datos con metadatos estandarizados (quién, qué, periodicidad, calidad, licencias, coste y cómo acceder).',
+
+        { type: 'bold', content: '5) Proveedor de datos' },
+        'Participante que pone a disposición datos, productos y/o servicios. Si los datos son generados por él mismo, asume además el rol de productor (responsable del origen y la calidad).',
+
+        { type: 'bold', content: '6) Consumidor de datos' },
+        'Participante que utiliza datos, productos y/o servicios con un propósito declarado y bajo contrato/políticas. Puede ser una entidad, una persona o dispositivos.',
+
+        { type: 'bold', content: '7) Conector' },
+        'Componente técnico que habilita la interoperabilidad y el intercambio seguro. Próximamente habrá disponible una guía práctica para elegir y desplegar conectores.',
+
+        { type: 'bold', content: '8) Gobernanza' },
+        'Implementación práctica del gobierno del dato en el espacio: roles, normas y procesos (gestión de accesos, resolución de incidencias, métricas, auditorías y mejora continua).',
+
+        { type: 'bold', content: '9) Políticas de acceso y uso' },
+        'Condiciones legibles por personas y máquinas que rigen el uso de datos: propósito, minimización, retención, redistribución, anonimización/pseudonimización, seguridad y cumplimiento normativo.',
+
+        { type: 'bold', content: '10) Interoperabilidad semántica' },
+        'El “diccionario común” que asegura que términos como “paciente”, “centro” o “fecha” signifiquen lo mismo entre organizaciones: ontologías, vocabularios, esquemas y mappings. La interoperabilidad es un tema amplio que trataremos en detalle en un próximo artículo.',
+
+        {
+          type: 'bold',
+          content: '11) Trazabilidad y registro de consentimientos',
+        },
+        'Evidencias de quién accedió a qué, cuándo, para qué y con qué base legal/consentimiento; incluye logs verificables, versiones y mecanismos de rendición de cuentas.',
+
+        { type: 'bold', content: '12) Contrato de adhesión' },
+        'Marco legal que define responsabilidades, garantías, sanciones, propiedad intelectual, seguridad, política de salida (offboarding) y continuidad operativa.',
+
+        {
+          type: 'h2',
+          content: 'Consejos prácticos (para empezar con buen pie)',
+        },
+        '• Caso de uso primero: objetivo, métricas y valor esperado.',
+        '• Producto de datos mínimo viable: qué expones, a quién y cómo.',
+        '• Políticas y roles antes que tecnología: después alinea conectores, catálogos y APIs con esas decisiones.',
+      ],
+      featured: false,
+    },
   ],
   en: [
     {
@@ -236,6 +303,65 @@ export const blogPosts: Record<Locale, Post[]> = {
         { type: 'h2', content: 'How to Participate' },
         'If you’d like to explore the demo or prepare your organization to connect to a data space, get in touch with us and keep an eye on our website.',
       ],
+    },
+    {
+      key: 'dataspace-glossary-2025',
+      date: '2025-11-18',
+      title: 'Data Space: 12 Definitions That Will Save You Meetings 🚀',
+      excerpt:
+        'If you’re building or connecting to a data space, aligning vocabulary early prevents friction. Here’s an essential glossary 📘.',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        // {
+        //   type: 'h1',
+        //   content: 'Data Space: 12 Definitions That Will Save You Meetings 🚀',
+        // },
+        { type: 'h1', content: 'Essential Glossary' },
+        'If you’re building or connecting to a data space, aligning vocabulary from the start helps avoid friction and speeds up decision-making. Here’s an essential glossary 📘:',
+
+        { type: 'bold', content: '1) Data Space' },
+        'An ecosystem where different organizations share and use data under common rules of governance, security, interoperability, and verifiable trust (agreements, audits, traceability).',
+
+        { type: 'bold', content: '2) Use Case' },
+        'An initiative led by one or more entities that leverages the data space to solve a specific challenge through shared data. Examples: epidemiological surveillance, logistics route optimization, evaluation of health outcomes.',
+
+        { type: 'bold', content: '3) Data Product' },
+        'According to UNE 0087:2025, a product is a “unit that includes data plus metadata, policies, services, and support elements.” In practice: a value layer built on top of a dataset within the space enabling controlled, documented, and useful consumption. Example: a hospital benchmarking portal that provides standardized and updated indicators.',
+
+        { type: 'bold', content: '4) Data Catalog' },
+        'A browsable inventory of datasets, data products, and/or services with standardized metadata (who, what, frequency, quality, licenses, cost, and access methods).',
+
+        { type: 'bold', content: '5) Data Provider' },
+        'A participant who makes data, products, and/or services available. If the data is self-generated, they also act as a producer (responsible for origin and quality).',
+
+        { type: 'bold', content: '6) Data Consumer' },
+        'A participant that consumes data, products, and/or services for a declared purpose and under contractual or policy conditions. Can be an organization, an individual, or devices.',
+
+        { type: 'bold', content: '7) Connector' },
+        'A technical component that enables interoperability and secure data exchange. A practical guide to selecting and deploying connectors will be available soon.',
+
+        { type: 'bold', content: '8) Governance' },
+        'The practical implementation of data management within the space: roles, rules, and processes (access management, incident resolution, metrics, audits, and continuous improvement).',
+
+        { type: 'bold', content: '9) Access and Usage Policies' },
+        'Human- and machine-readable conditions governing data use: purpose, minimization, retention, redistribution, anonymization/pseudonymization, security, and regulatory compliance.',
+
+        { type: 'bold', content: '10) Semantic Interoperability' },
+        'The “common dictionary” ensuring that terms such as “patient,” “center,” or “date” mean the same across organizations: ontologies, vocabularies, schemas, and mappings. Interoperability is a broad topic that we’ll explore in detail in an upcoming article.',
+
+        { type: 'bold', content: '11) Traceability and Consent Logging' },
+        'Evidence of who accessed what, when, for what purpose, and under which legal basis/consent; includes verifiable logs, versioning, and accountability mechanisms.',
+
+        { type: 'bold', content: '12) Adhesion Contract' },
+        'The legal framework defining responsibilities, guarantees, penalties, intellectual property, security, exit policy (offboarding), and operational continuity.',
+
+        { type: 'h2', content: 'Practical Tips (for a good start)' },
+        '• Start with the use case: objective, metrics, and expected value.',
+        '• Define a minimum viable data product : what you expose, to whom, and how.',
+        '• Set policies and roles before technology: then align connectors, catalogs, and APIs with those decisions.',
+      ],
+      featured: false,
     },
   ],
 };

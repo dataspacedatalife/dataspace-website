@@ -28,7 +28,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         <Navbar />
         <article className="max-w-3xl mx-auto mt-16 mb-24">
           <h1 className="text-3xl font-bold mb-6">{post.title}</h1>
-
           <div className="flex items-center gap-3 mb-6 text-gray-700 text-sm">
             <Image
               src={post.author_image}
@@ -41,15 +40,17 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             <span>{formatDate(post.date)}</span>
           </div>
 
-          <Image
-            src={post.image}
-            alt={post.title}
-            width={800}
-            height={400}
-            className="rounded-lg mb-8"
-          />
+          {post.image && (
+            <Image
+              src={post.image}
+              alt={post.title}
+              width={800}
+              height={400}
+              className="rounded-lg mb-8"
+            />
+          )}
 
-          <div className="max-w-3xl mx-auto space-y-6">
+          <div className="max-w-3xl mx-auto mt-10 space-y-6">
             {post.description.map((item, idx) => {
               if (React.isValidElement(item)) {
                 return item;
