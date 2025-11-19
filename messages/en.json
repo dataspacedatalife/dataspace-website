@@ -450,7 +450,19 @@
           "🕔 Time: 10:00 AM",
           "📍 Format: online"
         ],
-        "extra": "Sign up here"
+        "extra": "Discover it here"
+      },
+      "webinarBaidataCESGA": {
+        "header": "Creating a One Health Data Space: CESGA’s Experience",
+        "excerpt": "Presentation of the DATAlife Multisector Demonstrator Center for secure and sovereign data sharing in One Health.",
+        "description": [
+          "CESGA presents the DATAlife Multisector Demonstrator Center in the latest BAIDATA 'Data in Action' session, enabling different One Health organizations to exchange data securely and in a controlled manner.",
+          "📅 Date: November 26th, 2025",
+          "🕔 Time: 10:00 AM",
+          "📍 Format: Online",
+          "Session open to the public."
+        ],
+        "extra": "Register here"
       }
     }
   },

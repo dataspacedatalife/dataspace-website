@@ -15,6 +15,7 @@ import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
 import { useDateFormatter } from '@/hooks/formatters';
 import { useSearchState } from '@/hooks/useSearchState';
+import webinarBaidataCESGAImg from '../../../../public/events/BAIDATA_Datos_Accion_Cesga.png';
 import EGI2025Img from '../../../../public/events/EGI2025Img.jpg';
 import ForoBAIDATAImg from '../../../../public/events/ForoBAIDATAImg.jpg';
 import GaiaXSaludImg from '../../../../public/events/GaiaXSaludImg.jpg';
@@ -104,9 +105,9 @@ const events = [
     key: 'tallergradiantconectores',
     date: '2025-11-13',
     image: tallergradiantConectoresImg,
-    cesgalink: 'https://www.cesga.es/taller-espacio-de-datos-conectores-edc/',
+    cesgalink: 'https://www.youtube.com/watch?v=WGBCGCz8vHc&t=2s',
     organizer: 'Centro de Supercomputación de Galicia (CESGA)',
-    featured: true,
+    featured: false,
   },
   {
     key: 'tallergradiant',
@@ -123,6 +124,14 @@ const events = [
     cesgalink: 'https://www.youtube.com/watch?v=L5V9ISX40-g&t=4s',
     organizer: 'Centro de Referencia de Espacios de Datos (CRED)',
     featured: false,
+  },
+  {
+    key: 'webinarBaidataCESGA',
+    date: '2025-10-26',
+    image: webinarBaidataCESGAImg,
+    cesgalink: 'https://baidata.eu/datos-en-accion-cesga',
+    organizer: 'BAIDATA',
+    featured: true,
   },
 ] as const satisfies Event[];
 
