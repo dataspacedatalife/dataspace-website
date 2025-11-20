@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { Button } from '@/components/button';
 
-const FIRST_REVIEW_DATE = new Date(2025, 10, 21); // 21 Nov 2025
+const FIRST_REVIEW_DATE = new Date(2025, 10, 21);
 
 export function ReviewCalendar() {
   const t = useTranslations('how.reviewCycle');
@@ -15,7 +15,7 @@ export function ReviewCalendar() {
     new Date(FIRST_REVIEW_DATE.getFullYear(), FIRST_REVIEW_DATE.getMonth(), 1),
   );
 
-  const today = new Date(); // Fecha actual
+  const today = new Date();
   const currentDay = today.getDate();
   const currentMonthIndex = today.getMonth();
   const currentYear = today.getFullYear();
@@ -87,7 +87,7 @@ export function ReviewCalendar() {
                 review
                   ? 'bg-emerald-600 text-white font-semibold border-emerald-700 shadow'
                   : 'border-gray-200',
-                isToday && 'ring-2 ring-emerald-500', // Resalta hoy
+                isToday && 'ring-2 ring-emerald-500',
               )}
             >
               {day}
