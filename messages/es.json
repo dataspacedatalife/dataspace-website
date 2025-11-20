@@ -132,7 +132,8 @@
       ]
     },
     "howToJoin": {
-      "title": "Cubre nuestra solicitud de adhesión",
+      "title": "Inicia el proceso de adhesión",
+      "subtitle": "Estoy interesado en adherirme",
       "description": "Si ya estás informado y deseas hacernos saber tu interés en participar en el Espacio de Datos, completa el siguiente formulario. Si tienes dudas, contacta a dmd@cesga.es",
       "formButton": "Cubre el formulario de muestra de interés si estás interesado en adherirte",
       "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
@@ -194,6 +195,26 @@
           "title": "Participa y crece",
           "description": "Una vez dentro, podrás intercambiar datos, participar en casos de uso y colaborar con otros miembros del ecosistema."
         }
+      ]
+    },
+    "reviewCycle": {
+      "title": "Ciclo de revisiones",
+      "description": "Las solicitudes se evalúan cada dos semanas en la reunión de revisión. Solo se tienen en cuenta aquellas recibidas hasta el día anterior a la reunión inclusive.",
+      "footer": "*Los días en verde corresponden a las reuniones de revisión.",
+      "weekdays": ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+      "months": [
+        "enero",
+        "febrero",
+        "marzo",
+        "abril",
+        "mayo",
+        "junio",
+        "julio",
+        "agosto",
+        "septiembre",
+        "octubre",
+        "noviembre",
+        "diciembre"
       ]
     }
   },

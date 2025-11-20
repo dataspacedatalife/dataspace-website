@@ -16,6 +16,7 @@ import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Link } from '@/components/link';
 import { Navbar } from '@/components/navbar';
+import { ReviewCalendar } from '@/components/review-calendar';
 import { Heading, Lead, Subheading } from '@/components/text';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -265,24 +266,46 @@ function How() {
       </Container>
 
       <Container className="mt-16 mb-24 relative z-10">
-        <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-3xl p-10 md:p-16 shadow-lg text-center">
-          <Subheading className="text-3xl md:text-4xl font-semibold mb-6 text-gray-900">
+        <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-3xl p-10 md:p-16 shadow-lg">
+          <Subheading className="text-3xl md:text-4xl font-semibold mb-6 text-center text-gray-900">
             {t('howToJoin.title')}
           </Subheading>
-          <hr className="mx-auto mt-6 mb-6 w-24 border-t border-gray-200" />
+          <hr className="mx-auto mt-6 mb-10 w-24 border-t border-gray-200" />
 
-          <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-8">
-            {t('howToJoin.description')}
-          </p>
+          {/* Grid responsive side-by-side */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+            {/* IZQUIERDA: Descripción + Botón */}
+            <div className="text-center md:text-left flex flex-col justify-center">
+              <h3 className="text-center text-2xl font-semibold text-gray-900 mb-4">
+                {t('howToJoin.subtitle')}
+              </h3>
+              <p className="text-center text-gray-700 text-lg md:text-xl leading-relaxed mb-8">
+                {t('howToJoin.description')}
+              </p>
 
-          <a
-            href={t('howToJoin.formLink')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-2xl border border-emerald-200 bg-emerald-600 px-8 py-4 text-white font-semibold shadow-md hover:bg-emerald-700 transition"
-          >
-            {t('howToJoin.formButton')}
-          </a>
+              <a
+                href={t('howToJoin.formLink')}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center inline-block rounded-2xl border border-emerald-200 bg-emerald-600 px-8 py-4 text-white font-semibold shadow-md hover:bg-emerald-700 transition"
+              >
+                {t('howToJoin.formButton')}
+              </a>
+            </div>
+
+            {/* DERECHA: Ciclo revisiones + Calendario */}
+            <div className="text-center md:text-left">
+              <h3 className="text-center text-2xl font-semibold text-gray-900 mb-4">
+                {t('reviewCycle.title')}
+              </h3>
+
+              <p className="text-center text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+                {t('reviewCycle.description')}
+              </p>
+
+              <ReviewCalendar />
+            </div>
+          </div>
         </div>
       </Container>
 

@@ -132,7 +132,8 @@
       ]
     },
     "howToJoin": {
-      "title": "Complete Our Membership Application",
+      "title": "Start the membership process",
+      "subtitle": "I am interested in joining",
       "description": "If you’re already informed and would like to express your interest in joining the Data Space, please fill out the following form. If you have any questions, contact us at dmd@cesga.es.",
       "formButton": "Fill out the expression of interest form if you’re interested in joining",
       "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
@@ -167,6 +168,26 @@
             }
           ]
         }
+      ]
+    },
+    "reviewCycle": {
+      "title": "Review cycle",
+      "description": "Applications are evaluated every two weeks during our review meeting. Only the ones submitted up to the day before (inclusive) will be considered.",
+      "footer": "*Days in green correspond to review meetings.",
+      "weekdays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "months": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
       ]
     }
   },
