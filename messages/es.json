@@ -16,8 +16,8 @@
     "adhesion": "Adherirse",
     "kit": "Kit Espacios de Datos",
     "tecnologias": "Tecnologías",
-    "xdatashare": "XDataShare (MVD)",
-    "dspacer": "D-Spacer",
+    "xdatashare": "Espacio de Datos (MVD)",
+    "dspacer": "Piloto FarmaciaVAX",
     "casos_de_uso": "Casos de Uso",
     "catalogo": "Catálogo",
     "el_equipo": "El Equipo",
@@ -62,7 +62,7 @@
   "technologies": {
     "xdatashare": {
       "header": {
-        "title": "XDataShare (MVD)",
+        "title": "Espacio de Datos (versión MVD)",
         "lead": "Este MVD es la primera versión operativa del Espacio de Datos que reúne las capacidades esenciales para poner en marcha un espacio de datos federado de forma segura y escalable.",
         "imageAlt": "Diagrama del MVD"
       },
@@ -83,10 +83,10 @@
         "title": "Explora el MVD en acción",
         "workshopsTitle": "Talleres",
         "tutorialsTitle": "Tutoriales",
-        "workshop1Caption": "Taller práctico sobre el funcionamiento de un espacio de datos en el caso de uso FarmaciaVAX con la plataforma XDataShare.",
+        "workshop1Caption": "Taller práctico sobre el funcionamiento de un espacio de datos en el caso de uso FarmaciaVAX con el MVD del Espacio de Datos.",
         "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
-        "tutorial1Caption": "Tutorial paso a paso sobre la subida y visualización de assets en un espacio de datos utilizando la plataforma XDataShare.",
-        "tutorial1Url": "/xdatashare/Screencast_Completo_12N.mp4"
+        "tutorial1Caption": "Tutorial paso a paso sobre la subida y visualización de assets en un espacio de datos utilizando el MVD del Espacio de Datos.",
+        "tutorial1Url": "/EdD_mvd/Screencast_Completo_12N.mp4"
       },
       "access": {
         "button": "Accede"

@@ -7,8 +7,8 @@ import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead, Subheading } from '@/components/text';
-import MVDImage from '../../../../public/xdatashare/XDataShare_MVD.png';
-import MVDEnglishImage from '../../../../public/xdatashare/XDataShare_MVD_en.png';
+import MVDImage from '../../../../public/EdD_mvd/EdD_MVD.png';
+import MVDEnglishImage from '../../../../public/EdD_mvd/EdD_MVD_en.png';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('technologies.xdatashare');
@@ -114,11 +114,7 @@ async function Header() {
           <hr className="w-16 border-t border-gray-300 mx-auto mb-6" />
           <div className="grid grid-cols-1 sm:grid-cols-1 gap-8">
             <div className="mx-auto aspect-video w-full max-w-3xl overflow-hidden rounded-2xl border border-gray-200 bg-white/80 shadow-sm">
-              <video
-                controls
-                className="w-full h-full object-cover"
-                poster="/xdatashare/video-poster.jpg"
-              >
+              <video controls className="w-full h-full object-cover">
                 <source src={t('videos.tutorial1Url')} type="video/mp4" />
               </video>
             </div>

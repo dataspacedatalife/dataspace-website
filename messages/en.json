@@ -16,8 +16,8 @@
     "adhesion": "Join",
     "kit": "Data Spaces Kit",
     "tecnologias": "Technologies",
-    "xdatashare": "XDataShare (MVD)",
-    "dspacer": "D-Spacer",
+    "xdatashare": "Data Space (MVD)",
+    "dspacer": "FarmaciaVAX Pilot",
     "casos_de_uso": "Current Users",
     "catalogo": "Catalog",
     "el_equipo": "The Team",
@@ -62,7 +62,7 @@
   "technologies": {
     "xdatashare": {
       "header": {
-        "title": "XDataShare (MVD)",
+        "title": "Data Space (MVD version)",
         "lead": "The MVD brings together the essential capabilities to launch a federated data space in a secure and scalable way.",
         "imageAlt": "MVD diagram"
       },
@@ -83,10 +83,10 @@
         "title": "Explore the MVD in action",
         "workshopsTitle": "Workshops",
         "tutorialsTitle": "Tutorials",
-        "workshop1Caption": "Workshop on the operation of a data space using the FarmaciaVAX use case with the XDataShare platform.",
+        "workshop1Caption": "Workshop on the operation of a data space using the FarmaciaVAX use case with the Data Space MVD.",
         "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
-        "tutorial1Caption": "Step-by-step tutorial on uploading and visualizing assets in a data space using the XDataShare platform.",
-        "tutorial1Url": "/xdatashare/Screencast_Completo_12N.mp4"
+        "tutorial1Caption": "Step-by-step tutorial on uploading and visualizing assets in a data space using the Data Space MVD.",
+        "tutorial1Url": "/EdD_mvd/Screencast_Completo_12N.mp4"
       },
       "access": {
         "button": "ACCESS"
