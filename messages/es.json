@@ -1091,7 +1091,6 @@
         "volumen": "10 usuarios, 1.000 interacciones cada usuario",
         "n_ficheros": "2",
         "subsets": {
-          "license": "Propietaria (restringida bajo contrato)",
           "serenia": {
             "name": "Conversaciones",
             "description": "Conversaciones entre usuarios mayores y la asistente Serenia.",
