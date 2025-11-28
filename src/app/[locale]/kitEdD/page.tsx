@@ -99,20 +99,20 @@ async function Header() {
           {t('ctaPrimary.label')}
         </a>
         <a
-          href={t('cta3.href')}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-2xl border border-gray-200 bg-white/80 px-5 py-3 text-sm font-semibold shadow-sm hover:bg-white"
-        >
-          {t('cta3.label')}
-        </a>
-        <a
           href={t('ctaSecondary.href')}
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-2xl border border-gray-200 bg-white/80 px-5 py-3 text-sm font-semibold shadow-sm hover:bg-white"
         >
           {t('ctaSecondary.label')}
+        </a>
+        <a
+          href={t('cta3.href')}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-gray-200 bg-white/80 px-5 py-3 text-sm font-semibold shadow-sm hover:bg-white"
+        >
+          {t('cta3.label')}
         </a>
       </div>
     </Container>
@@ -344,7 +344,7 @@ const Kit = () => {
           </p>
           <div className="mt-8">
             <a
-              href={t('interest.formLink')} // aquí luego pondrás tu link real
+              href={t('interest.formLink')}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-2xl border border-emerald-200 bg-emerald-600 px-6 py-3 text-white font-semibold shadow-md hover:bg-emerald-700 transition"
