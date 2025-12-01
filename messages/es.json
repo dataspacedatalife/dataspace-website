@@ -85,6 +85,8 @@
         "tutorialsTitle": "Tutoriales",
         "workshop1Caption": "Taller práctico sobre el funcionamiento de un espacio de datos en el caso de uso FarmaciaVAX con el MVD del Espacio de Datos.",
         "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
+        "workshop2Caption": "Taller de espacio de datos sobre Conectores EDC.",
+        "workshop2Url": "https://www.youtube.com/embed/WGBCGCz8vHc?si=vZ15mIvRVN_N9C5L",
         "tutorial1Caption": "Tutorial paso a paso sobre la subida y visualización de assets en un espacio de datos utilizando el MVD del Espacio de Datos.",
         "tutorial1Url": "/EdD_mvd/Screencast_Completo_12N.mp4"
       },
@@ -509,7 +511,7 @@
           "📍 Formato: online",
           "Sesión abierta a todo público."
         ],
-        "extra": "Inscríbete"
+        "extra": "Conócelo aquí"
       }
     }
   },

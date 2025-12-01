@@ -85,6 +85,8 @@
         "tutorialsTitle": "Tutorials",
         "workshop1Caption": "Workshop on the operation of a data space using the FarmaciaVAX use case with the Data Space MVD.",
         "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
+        "workshop2Caption": "Data Space Workshop on EDC Connectors.",
+        "workshop2Url": "https://www.youtube.com/embed/WGBCGCz8vHc?si=vZ15mIvRVN_N9C5L",
         "tutorial1Caption": "Step-by-step tutorial on uploading and visualizing assets in a data space using the Data Space MVD.",
         "tutorial1Url": "/EdD_mvd/Screencast_Completo_12N.mp4"
       },
@@ -483,7 +485,7 @@
           "📍 Format: Online",
           "Session open to the public."
         ],
-        "extra": "Register here"
+        "extra": "Discover it here"
       }
     }
   },

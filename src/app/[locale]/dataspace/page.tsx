@@ -136,7 +136,10 @@ async function Header() {
               title={t('videos.workshop1Caption')}
               url={t('videos.workshop1Url')}
             />
-            {/* <VideoEmbed title="Taller 2" url={t('videos.workshop2Url')} /> */}
+            <VideoEmbed
+              title={t('videos.workshop2Caption')}
+              url={t('videos.workshop2Url')}
+            />
           </div>
         </div>
       </div>
