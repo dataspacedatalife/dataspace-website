@@ -79,6 +79,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                       {item.content}
                     </h2>
                   );
+                case 'h3':
+                  return (
+                    <h3 key={idx} className="text-xl font-semibold mt-5 mb-2">
+                      {item.content}
+                    </h3>
+                  );
                 case 'bold':
                   return (
                     <p

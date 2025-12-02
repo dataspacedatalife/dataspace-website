@@ -53,7 +53,7 @@ export interface Post {
   image?: StaticImageData;
   author_name: string;
   author_image: StaticImageData;
-  description: (React.ReactElement | string | TextNode | React.ReactNode)[];
+  description: (React.ReactElement | string | TextNode)[];
   cesgalink?: string;
   featured?: boolean;
 }
@@ -286,7 +286,6 @@ export const blogPosts: Record<Locale, Post[]> = {
           external: true,
         },
         { type: 'bold', content: '💬 ¿Dudas? Escríbenos a dmd@cesga.es' },
-        ,
       ],
     },
   ],
