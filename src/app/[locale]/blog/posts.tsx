@@ -10,7 +10,7 @@ interface TextNodeBase {
 }
 
 interface HeadingNode extends TextNodeBase {
-  type: 'h1' | 'h2';
+  type: 'h1' | 'h2' | 'h3';
   content: React.ReactNode;
 }
 
@@ -53,7 +53,7 @@ export interface Post {
   image?: StaticImageData;
   author_name: string;
   author_image: StaticImageData;
-  description: (React.ReactElement | string | TextNode)[];
+  description: (React.ReactElement | string | TextNode | React.ReactNode)[];
   cesgalink?: string;
   featured?: boolean;
 }
@@ -215,6 +215,80 @@ export const blogPosts: Record<Locale, Post[]> = {
       ],
       featured: false,
     },
+    {
+      key: 'mvd-access-2025',
+      date: '2025-12-02',
+      title: 'Acceso al MVD de nuestro Espacio de Datos',
+      excerpt:
+        '¡Segundo gran hito! El MVD ya está operativo para nuestro Espacio de Datos en One Health.',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        {
+          type: 'bold',
+          content:
+            '¡Segundo gran hito! El MVD ya está operativo para nuestro Espacio de Datos en One Health.',
+        },
+
+        'Esta versión inicial permite validar de extremo a extremo los flujos de intercambio seguro de datos, probar los servicios comunes y ejercitar los primeros casos de uso piloto con datos en entorno de pruebas y, donde procede, con datos reales debidamente protegidos.',
+
+        { type: 'h2', content: '¿Qué es el MVD?' },
+        'El MVD (Minimum Viable Dataspace) es la primera versión operativa del Espacio de Datos que reúne el conjunto mínimo de capacidades necesarias para poner en marcha la federación: identidad y acceso, descubrimiento de datos, gobernanza básica, trazabilidad y conectividad entre proveedores y consumidores. Sirve para aprender rápido, medir impacto y ajustar el diseño antes del escalado.',
+
+        { type: 'h2', content: 'Qué incluye esta fase (capas y servicios)' },
+        '• Gestión de identidad y acceso federado: autenticación, autorización por políticas y roles.',
+        '• Acuerdos y gobernanza: políticas de uso.',
+        '• Conectores EDC.',
+        '• Soporte a casos de uso piloto, según demanda.',
+
+        { type: 'h2', content: 'Cómo adherirte' },
+        'Sigue nuestro proceso de adhesión con los siguientes pasos:',
+
+        { type: 'h3', content: 'Fase de solicitud y adhesión' },
+
+        { type: 'bold', content: '1️⃣ Infórmate' },
+        'Descarga la Guía del Participante para conocer en detalle cómo funciona el Espacio de Datos, los requisitos técnicos y legales, y los beneficios de unirte. Te acompañamos en cada paso.',
+
+        { type: 'bold', content: '2️⃣ Solicita tu adhesión' },
+        'Rellena el formulario de muestra de interés y nuestro equipo revisará tu solicitud y te contactará para los siguientes pasos.',
+
+        { type: 'h3', content: 'Fase de integración en el Espacio de Datos' },
+
+        { type: 'bold', content: '3️⃣ Integración técnica' },
+        'Conecta tus sistemas y prepara tus datos según las políticas de interoperabilidad, calidad y seguridad del Espacio de Datos. Estaremos a tu lado durante todo el proceso.',
+
+        { type: 'bold', content: '4️⃣ Participa y crece' },
+        'Una vez formes parte del Espacio, podrás intercambiar datos, participar en casos de uso y colaborar con otros participantes del ecosistema. Seguiremos acompañándote en cada etapa.',
+
+        { type: 'h2', content: 'Recursos útiles' },
+        {
+          type: 'link',
+          content: '▶️ Proceso de adhesión',
+          href: 'https://dataspace.cesga.es/es/how',
+          external: false,
+        },
+        {
+          type: 'link',
+          content: '▶️ Portal del MVD',
+          href: 'https://xdatashare.srv.cesga.es/portal',
+          external: true,
+        },
+        {
+          type: 'link',
+          content: '▶️ Tutorial guiado del MVD (Taller FarmaciaVAX)',
+          href: 'https://www.youtube.com/watch?v=u7zTyU795n8',
+          external: true,
+        },
+        {
+          type: 'link',
+          content: '▶️ Taller de espacio de datos sobre Conectores EDC',
+          href: 'https://www.youtube.com/watch?v=WGBCGCz8vHc',
+          external: true,
+        },
+        { type: 'bold', content: '💬 ¿Dudas? Escríbenos a dmd@cesga.es' },
+        ,
+      ],
+    },
   ],
   en: [
     {
@@ -362,6 +436,82 @@ export const blogPosts: Record<Locale, Post[]> = {
         '• Set policies and roles before technology: then align connectors, catalogs, and APIs with those decisions.',
       ],
       featured: false,
+    },
+    {
+      key: 'mvd-access-2025',
+      date: '2025-12-02',
+      title: 'Access to the MVD of our Data Space',
+      excerpt:
+        'Second major milestone! The MVD is now operational for our One Health Data Space.',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        {
+          type: 'bold',
+          content:
+            'Second major milestone! The MVD is now operational for our One Health Data Space.',
+        },
+
+        'This initial version allows end-to-end validation of secure data exchange flows, testing of common services, and exercising the first pilot use cases with test data and, where applicable, properly protected real data.',
+
+        { type: 'h2', content: 'What is the MVD?' },
+        'The MVD (Minimum Viable Dataspace) is the first operational version of the Data Space, bringing together the minimum set of capabilities needed to launch the federation: identity and access, data discovery, basic governance, traceability, and connectivity between providers and consumers. It helps to learn quickly, measure impact, and adjust the design before scaling.',
+
+        {
+          type: 'h2',
+          content: 'What this phase includes (layers and services)',
+        },
+        '• Federated identity and access management: authentication, policy- and role-based authorization.',
+        '• Agreements and governance: usage policies.',
+        '• EDC connectors.',
+        '• Support for pilot use cases, on demand.',
+
+        { type: 'h2', content: 'How to join' },
+        'Follow our onboarding process with the following steps:',
+
+        { type: 'h3', content: 'Application and membership phase' },
+
+        { type: 'bold', content: '1️⃣ Learn more' },
+        'Download the Participant Guide to understand in detail how the Data Space works, the technical and legal requirements, and the benefits of joining. We guide you every step of the way.',
+
+        { type: 'bold', content: '2️⃣ Request membership' },
+        'Fill out the expression of interest form and our team will review your request and contact you for the next steps.',
+
+        { type: 'h3', content: 'Integration phase in the Data Space' },
+
+        { type: 'bold', content: '3️⃣ Technical integration' },
+        'Connect your systems and prepare your data according to the Data Space interoperability, quality, and security policies. We will support you throughout the process.',
+
+        { type: 'bold', content: '4️⃣ Participate and grow' },
+        'Once you are part of the Data Space, you can exchange data, participate in use cases, and collaborate with other ecosystem participants. We will continue supporting you at every stage.',
+
+        { type: 'h2', content: 'Useful resources' },
+        {
+          type: 'link',
+          content: '▶️ Onboarding process',
+          href: 'https://dataspace.cesga.es/es/how',
+          external: false,
+        },
+        {
+          type: 'link',
+          content: '▶️ MVD Portal',
+          href: 'https://xdatashare.srv.cesga.es/portal',
+          external: true,
+        },
+        {
+          type: 'link',
+          content: '▶️ Guided MVD tutorial (FarmaciaVAX Workshop)',
+          href: 'https://www.youtube.com/watch?v=u7zTyU795n8',
+          external: true,
+        },
+        {
+          type: 'link',
+          content: '▶️ Data Space Workshop on EDC Connectors',
+          href: 'https://www.youtube.com/watch?v=WGBCGCz8vHc',
+          external: true,
+        },
+        { type: 'bold', content: '💬 Questions? Write to us at dmd@cesga.es' },
+      ],
     },
   ],
 };

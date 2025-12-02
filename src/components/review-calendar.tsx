@@ -11,11 +11,12 @@ const FIRST_REVIEW_DATE = new Date(2025, 10, 21);
 export function ReviewCalendar() {
   const t = useTranslations('how.reviewCycle');
 
+  const today = new Date();
+
   const [currentMonth, setCurrentMonth] = useState(
-    new Date(FIRST_REVIEW_DATE.getFullYear(), FIRST_REVIEW_DATE.getMonth(), 1),
+    new Date(today.getFullYear(), today.getMonth(), 1),
   );
 
-  const today = new Date();
   const currentDay = today.getDate();
   const currentMonthIndex = today.getMonth();
   const currentYear = today.getFullYear();
