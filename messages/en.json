@@ -486,6 +486,18 @@
           "Session open to the public."
         ],
         "extra": "Discover it here"
+      },
+      "kitDatosSaludCRED": {
+        "header": "Practical Workshop: Data Space Kit for the Health Sector",
+        "excerpt": "Free online workshop for the health sector on the Data Space Kit.",
+        "description": [
+          "This initiative from the General Data Directorate will facilitate the effective incorporation of public and private sector entities into data spaces. The key steps to apply for this support will be explained, with the goal of promoting participation in health data spaces.",
+          "📅 Date: December 16, 2025",
+          "🕔 Time: 1:00 PM",
+          "📍 Format: online",
+          "Open session for the general public."
+        ],
+        "extra": "Sign up here"
       }
     }
   },

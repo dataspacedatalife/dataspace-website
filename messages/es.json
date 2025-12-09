@@ -512,6 +512,18 @@
           "Sesión abierta a todo público."
         ],
         "extra": "Conócelo aquí"
+      },
+      "kitDatosSaludCRED": {
+        "header": "Taller práctico Kit Espacios de Datos para el sector salud ",
+        "excerpt": "Taller online gratuito, dirigido al sector salud, sobre el Kit Espacios de Datos.",
+        "description": [
+          "Esta iniciativa de la Dirección General del Dato facilitará la incorporación efectiva de entidades públicas y privadas del sector a los espacios de datos. Se explicarán los pasos clave para solicitar estas ayudas, con el objetivo de impulsar la participación en los espacios de datos de salud.",
+          "📅 Fecha: 16 de diciembre de 2025",
+          "🕔 Hora: 13:00 h",
+          "📍 Formato: online",
+          "Sesión abierta a todo público."
+        ],
+        "extra": "Apúntate aquí"
       }
     }
   },
