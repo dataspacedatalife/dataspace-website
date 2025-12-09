@@ -50,7 +50,7 @@ function Section({
   items,
   icon: Icon,
   centered = false,
-  button, // 👈 añadimos esta prop opcional
+  button,
 }: SectionProps & {
   centered?: boolean;
   button?: { label: string; href: string };
@@ -120,6 +120,7 @@ export default function HowPage() {
 function How() {
   const t = useTranslations('how');
   const who = t.raw('who.items') as string[];
+  const roles = t.raw('roles.items') as string[];
   const benefits = t.raw('benefits.items') as string[];
   const commitments = t.raw('commitments.items') as string[];
   // const howToJoin = t.raw('howToJoin.items') as string[];
@@ -158,10 +159,10 @@ function How() {
         </Subheading>
         <hr className="mx-auto mt-6 w-24 border-t border-gray-200" /> */}
 
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Users */}
           <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300">
-            <Subheading className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 text-center">
+            <Subheading className="text-3xl md:text-3xl font-semibold text-gray-900 mb-6 text-center">
               {t('who.title')}
             </Subheading>
             <ul className="space-y-3 text-left">
@@ -174,9 +175,24 @@ function How() {
             </ul>
           </div>
 
+          {/* Roles */}
+          <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300">
+            <Subheading className="text-3xl md:text-3xl font-semibold text-gray-900 mb-6 text-center">
+              {t('roles.title')}
+            </Subheading>
+            <ul className="space-y-3 text-left">
+              {roles.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <Users className="h-5 w-5 text-emerald-600 mt-1 shrink-0" />
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Benefits */}
           <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300">
-            <Subheading className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 text-center">
+            <Subheading className="text-3xl md:text-3xl font-semibold text-gray-900 mb-6 text-center">
               {t('benefits.title')}
             </Subheading>
             <ul className="space-y-3 text-left">
@@ -191,7 +207,7 @@ function How() {
 
           {/* Commitments */}
           <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300">
-            <Subheading className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 text-center">
+            <Subheading className="text-3xl md:text-3xl font-semibold text-gray-900 mb-6 text-center">
               {t('commitments.title')}
             </Subheading>
             <ul className="space-y-3 text-left">

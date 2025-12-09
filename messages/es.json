@@ -116,6 +116,15 @@
         "Colaboraciones nacionales y europeas"
       ]
     },
+    "roles": {
+      "title": "Tipos de participación",
+      "items": [
+        "Proveedores de datos que aportan datos al ecosistema.",
+        "Proveedores de servicios que ofrecen herramientas o capacidades.",
+        "Consumidores de datos que usan datos según las condiciones del proveedor.",
+        "Consumidores de servicios que utilizan servicios según las condiciones del proveedor."
+      ]
+    },
     "benefits": {
       "title": "Beneficios",
       "items": [

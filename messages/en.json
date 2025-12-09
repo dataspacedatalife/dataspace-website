@@ -116,6 +116,15 @@
         "National and European collaborations"
       ]
     },
+    "roles": {
+      "title": "Types of Participation",
+      "items": [
+        "Data providers who contribute data to the ecosystem.",
+        "Service providers who offer tools or capabilities.",
+        "Data consumers who use data according to the provider’s conditions.",
+        "Service consumers who use services according to the provider’s conditions."
+      ]
+    },
     "benefits": {
       "title": "Benefits",
       "items": [
