@@ -288,6 +288,102 @@ export const blogPosts: Record<Locale, Post[]> = {
         { type: 'bold', content: '💬 ¿Dudas? Escríbenos a dmd@cesga.es' },
       ],
     },
+    {
+      key: 'gobernanza-espacio-datos',
+      title:
+        'Gobernanza en un espacio de datos: la parte “invisible” que hace que todo funcione',
+      date: '2025-12-15',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      excerpt:
+        'La gobernanza es la capa invisible que permite que un espacio de datos funcione de forma segura, justa y reutilizable.',
+      description: [
+        'Cuando se habla de espacios de datos, casi siempre salen palabras como conectores, APIs, estándares o interoperabilidad. Todo eso es importante, pero hay una pieza que suele quedar en segundo plano y que, en realidad, lo sostiene todo: la gobernanza.',
+
+        'La gobernanza es lo que evita que el espacio de datos se convierta en un “grupo de WhatsApp de datasets” donde nadie sabe qué se puede usar, quién responde si algo falla o cómo se demuestra que se han respetado las condiciones.',
+
+        {
+          type: 'bold',
+          content:
+            'En el demostrador multisectorial DATAlife, la gobernanza está pensada para compartir datos de forma útil, segura y justa, generando valor en un entorno One Health.',
+        },
+
+        {
+          type: 'h2',
+          content: 'Entonces… ¿qué es exactamente la gobernanza?',
+        },
+
+        'Piensa en la gobernanza como las reglas del juego, pero también como el árbitro y el marcador.',
+
+        'Las reglas definen qué se puede compartir y bajo qué condiciones. El árbitro establece qué ocurre si hay un problema o un incumplimiento. El marcador permite medir si el espacio está funcionando y aportando valor.',
+
+        'En el Centro Demostrador se distingue además entre gobernanza (las reglas y controles del día a día) y gobierno del dato, que corresponde a la capa estratégica: objetivos, riesgos, políticas y seguimiento.',
+
+        {
+          type: 'h2',
+          content: 'Las tres grandes preguntas que responde la gobernanza',
+        },
+
+        {
+          type: 'h3',
+          content: '1) ¿Cómo se organiza el espacio?',
+        },
+
+        'La gobernanza define quién toma decisiones, cómo se incorporan nuevos participantes, qué ocurre cuando alguien abandona el espacio y cómo se gestionan los conflictos, todo ello mediante procesos claros y transparentes.',
+
+        {
+          type: 'h3',
+          content: '2) ¿Cómo se garantiza que todos hablan el mismo idioma?',
+        },
+
+        'En un espacio multisectorial, interoperabilidad no es solo intercambiar archivos, sino asegurar que los datos se entienden, se usan correctamente y se pueden reutilizar.',
+
+        'Por eso se trabaja a nivel legal, organizativo, semántico y técnico, usando formatos comunes y vocabularios reconocidos como FHIR, OMOP, DICOM, CIE-10, SNOMED o LOINC.',
+
+        {
+          type: 'h3',
+          content: '3) ¿Qué se puede hacer con los datos y qué no?',
+        },
+
+        'Aquí entran en juego las licencias, las condiciones de uso, la trazabilidad, la calidad de los datos y la privacidad. Cada entidad mantiene el control de sus datos dentro de un marco común que evita malentendidos y asegura cumplimiento.',
+
+        {
+          type: 'h2',
+          content: 'Roles claros para evitar zonas grises',
+        },
+
+        'Un espacio de datos funciona mejor cuando cada actor sabe qué le corresponde. En el Centro Demostrador se definen roles como autoridad de gobierno, operador del espacio, proveedor y consumidor de datos/servicios.',
+
+        'Esta definición reduce fricciones, ahorra tiempo y hace el sistema más escalable.',
+
+        {
+          type: 'h2',
+          content: 'Observabilidad: que se pueda demostrar',
+        },
+
+        'No basta con decir que se cumple. Un espacio confiable debe poder demostrarlo mediante registros, trazas y reportes que permitan auditar accesos, transferencias y usos de los datos.',
+
+        {
+          type: 'h2',
+          content: '¿Qué se gana con una buena gobernanza?',
+        },
+
+        'Menos incertidumbre, mayor seguridad jurídica y técnica, mejor reutilización de los datos y un impacto medible son algunos de los beneficios directos de una gobernanza bien diseñada.',
+
+        {
+          type: 'bold',
+          content:
+            'En resumen, la gobernanza es lo que permite que un espacio de datos no solo exista, sino que funcione de verdad.',
+        },
+
+        {
+          type: 'h2',
+          content: '¿Qué viene después?',
+        },
+
+        'Para incorporarse a un espacio como el nuestro es clave tener claro el rol, los datos o servicios que se aportan o consumen y las condiciones aplicables. Con eso, la adhesión deja de ser un laberinto y se convierte en un proceso ordenado y predecible.',
+      ],
+    },
   ],
   en: [
     {
@@ -510,6 +606,103 @@ export const blogPosts: Record<Locale, Post[]> = {
           external: true,
         },
         { type: 'bold', content: '💬 Questions? Write to us at dmd@cesga.es' },
+      ],
+    },
+    {
+      key: 'gobernanza-espacio-datos',
+      title:
+        'Governance in a data space: the “invisible” layer that makes everything work',
+      date: '2025-12-15',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      excerpt:
+        'Governance is the invisible layer that allows a data space to operate in a secure, fair, and reusable way.',
+      description: [
+        'When talking about data spaces, words like connectors, APIs, standards, or interoperability usually come up. All of that is important, but there is one piece that often remains in the background and actually holds everything together: governance.',
+
+        'Governance is what prevents a data space from turning into a “WhatsApp group of datasets,” where no one knows what can be used, who is responsible if something goes wrong, or how compliance with conditions can be demonstrated.',
+
+        {
+          type: 'bold',
+          content:
+            'In the DATAlife multisector demonstrator, governance is designed to enable data sharing that is useful, secure, and fair, generating value in a One Health environment.',
+        },
+
+        {
+          type: 'h2',
+          content: 'So… what exactly is governance?',
+        },
+
+        'Think of governance as the rules of the game, but also as the referee and the scoreboard.',
+
+        'The rules define what can be shared and under which conditions. The referee determines what happens in case of problems or non-compliance. The scoreboard shows whether the data space is working and delivering value.',
+
+        'At the Demonstrator Center, a distinction is also made between governance (day-to-day rules and controls) and data governance, which corresponds to the strategic layer: objectives, risks, policies, and monitoring.',
+
+        {
+          type: 'h2',
+          content: 'The three key questions governance answers',
+        },
+
+        {
+          type: 'h3',
+          content: '1) How is the data space organized?',
+        },
+
+        'Governance defines who makes decisions, how new participants join, what happens when someone leaves the space, and how conflicts are managed, all through clear and transparent processes.',
+
+        {
+          type: 'h3',
+          content:
+            '2) How is it ensured that everyone “speaks the same language”?',
+        },
+
+        'In a multisector data space, interoperability is not just about exchanging files, but about ensuring that data is understood, used correctly, and reusable.',
+
+        'This is why work is carried out at the legal, organizational, semantic, and technical levels, using common formats and recognized vocabularies such as FHIR, OMOP, DICOM, ICD-10, SNOMED, or LOINC.',
+
+        {
+          type: 'h3',
+          content: '3) What can be done with the data and what cannot?',
+        },
+
+        'This is where licenses, terms of use, traceability, data quality, privacy, and security come into play. Each entity retains control over its data within a common framework that prevents misunderstandings and ensures compliance.',
+
+        {
+          type: 'h2',
+          content: 'Clear roles to avoid grey areas',
+        },
+
+        'A data space works better when each actor knows their responsibilities. At the Demonstrator Center, roles such as governing authority, space operator, provider, and data/service consumer are defined.',
+
+        'This role definition reduces friction, saves time, and makes the system more scalable.',
+
+        {
+          type: 'h2',
+          content: 'Observability: being able to prove it',
+        },
+
+        'It is not enough to say “we comply.” A trustworthy data space must be able to demonstrate compliance through logs, traces, and reports that allow auditing access, transfers, and data usage.',
+
+        {
+          type: 'h2',
+          content: 'What do you gain from good governance?',
+        },
+
+        'Less uncertainty, greater legal and technical security, improved data reuse, and measurable impact are some of the direct benefits of well-designed governance.',
+
+        {
+          type: 'bold',
+          content:
+            'In short, governance is what allows a data space not only to exist, but to truly function.',
+        },
+
+        {
+          type: 'h2',
+          content: 'What comes next?',
+        },
+
+        'To join a data space like ours, it is essential to be clear about your role, the data or services you will provide or consume, and the applicable conditions. With this clarity, onboarding stops being a maze and becomes an orderly and predictable process.',
       ],
     },
   ],
