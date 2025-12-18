@@ -7,6 +7,10 @@ import { useState } from 'react';
 import { Button } from '@/components/button';
 
 const FIRST_REVIEW_DATE = new Date(2025, 10, 21);
+// Skip specific review days (use YYYY-MM-DD strings to avoid timezone surprises)
+const SKIP_REVIEW_DAYS = new Set([
+  '2026-01-02', // Friday 2 January 2026
+]);
 
 export function ReviewCalendar() {
   const t = useTranslations('how.reviewCycle');
@@ -31,8 +35,18 @@ export function ReviewCalendar() {
   const startDay = new Date(year, monthIndex, 1).getDay();
   const offsetStart = startDay === 0 ? 6 : startDay - 1;
 
+  const toYMD = (d: Date) => {
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${y}-${m}-${day}`;
+  };
+
   const isReviewDay = (day: number) => {
     const date = new Date(year, monthIndex, day);
+    // ✅ skip specific date(s)
+    if (SKIP_REVIEW_DAYS.has(toYMD(date))) return false;
+
     const diff = date.getTime() - FIRST_REVIEW_DATE.getTime();
     const weeks = diff / (1000 * 60 * 60 * 24 * 7);
 
