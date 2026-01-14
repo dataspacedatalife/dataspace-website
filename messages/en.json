@@ -102,7 +102,11 @@
     },
     "header": {
       "title": "Participate in the DATAlife data space",
-      "lead": "Share, consume or develop data-based services in a trusted environment that guarantees sovereignty, privacy and interoperability"
+      "lead": "Share, consume or develop data-based services in a trusted environment that guarantees sovereignty, privacy and interoperability",
+      "guideButton": {
+        "label": "Check our guide for participants",
+        "href": "/adhesion/Guía del participante - adhesión EdD DATAlife CESGA.pdf"
+      }
     },
     "overview": {
       "title": "Our approach"

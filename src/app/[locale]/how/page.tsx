@@ -35,6 +35,16 @@ function Header() {
         {t('title')}
       </Heading>
       <Lead className="mt-6 text-center">{t('lead')}</Lead>
+      <div className="mx-auto mt-8 flex w-full max-w-3xl flex-col items-center gap-3 sm:flex-row sm:justify-center">
+        <a
+          href={t('guideButton.href')}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-gray-200 bg-white/80 px-5 py-3 text-sm font-semibold shadow-sm hover:bg-white"
+        >
+          {t('guideButton.label')}
+        </a>
+      </div>
     </Container>
   );
 }
