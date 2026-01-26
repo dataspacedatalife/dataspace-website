@@ -56,10 +56,15 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 return item;
               }
               if (typeof item === 'string') {
+                const isBullet = item.trim().startsWith('•');
+
                 return (
                   <p
                     key={idx}
-                    className="text-gray-700 leading-relaxed text-base"
+                    className={[
+                      'text-gray-700 text-base',
+                      isBullet ? 'leading-normal mb-1!' : 'leading-relaxed',
+                    ].join(' ')}
                   >
                     {item}
                   </p>
@@ -84,6 +89,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     <h3 key={idx} className="text-xl font-semibold mt-5 mb-2">
                       {item.content}
                     </h3>
+                  );
+                case 'h4':
+                  return (
+                    <h4 key={idx} className="text-lg font-semibold mt-4 mb-2">
+                      {item.content}
+                    </h4>
                   );
                 case 'bold':
                   return (
@@ -135,6 +146,15 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                         </figcaption>
                       )}
                     </figure>
+                  );
+                case 'quote':
+                  return (
+                    <blockquote
+                      key={idx}
+                      className="border-l-4 pl-4 italic text-gray-700 my-8"
+                    >
+                      {item.content}
+                    </blockquote>
                   );
                 default:
                   return null;

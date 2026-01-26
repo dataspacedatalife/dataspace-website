@@ -10,7 +10,7 @@ interface TextNodeBase {
 }
 
 interface HeadingNode extends TextNodeBase {
-  type: 'h1' | 'h2' | 'h3';
+  type: 'h1' | 'h2' | 'h3' | 'h4';
   content: React.ReactNode;
 }
 
@@ -38,12 +38,18 @@ interface ImageNode extends TextNodeBase {
   caption?: string;
 }
 
+interface QuoteNode extends TextNodeBase {
+  type: 'quote';
+  content: React.ReactNode;
+}
+
 export type TextNode =
   | HeadingNode
   | BoldNode
   | UnderlineNode
   | LinkNode
-  | ImageNode;
+  | ImageNode
+  | QuoteNode;
 
 export interface Post {
   key: string;
@@ -384,6 +390,111 @@ export const blogPosts: Record<Locale, Post[]> = {
         'Para incorporarse a un espacio como el nuestro es clave tener claro el rol, los datos o servicios que se aportan o consumen y las condiciones aplicables. Con eso, la adhesión deja de ser un laberinto y se convierte en un proceso ordenado y predecible.',
       ],
     },
+    {
+      key: 'ontologies-vocabularies',
+      date: '2026-01-26',
+      title:
+        'Ontologías y vocabularios en espacios de datos: una guía sencilla desde el Centro Demostrador DATAlife',
+      excerpt:
+        'Para que un espacio de datos funcione, no basta con compartir: hay que entender lo compartido de la misma manera. Te explicamos, de forma práctica, qué son los vocabularios y las ontologías, qué estándares se usan y cómo alinear datos con ellos.',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        'En un espacio de datos no basta con compartir información: es fundamental entenderla de la misma manera. Para lograrlo se utilizan dos herramientas clave: vocabularios y ontologías, que permiten que distintos sistemas, organizaciones y profesionales hablen un lenguaje común.',
+
+        {
+          type: 'h2',
+          content: '➡️ Vocabularios y ontologías: dos piezas distintas',
+        },
+
+        { type: 'h4', content: '¿Qué es un vocabulario?' },
+        'Un vocabulario es un conjunto estructurado de términos y códigos que se utiliza para nombrar conceptos de forma uniforme. Por ejemplo, un código específico para “PCR”, otro para “SARS-CoV-2” o para “vacuna de la gripe”. Su objetivo es eliminar ambigüedades y garantizar que todas las partes utilizan las mismas denominaciones.',
+
+        { type: 'h4', content: '¿Qué es una ontología?' },
+        'Una ontología no solo define conceptos, sino también las relaciones entre ellos. Permite expresar, por ejemplo, que una “vacuna” pertenece a una categoría concreta, o que una “observación de laboratorio” está asociada a un “paciente”. Es, en esencia, un mapa conceptual que describe cómo se organiza un dominio de conocimiento.',
+
+        { type: 'h2', content: '➡️ Por qué importa hablar el mismo idioma' },
+
+        { type: 'h4', content: 'Interoperabilidad real' },
+        'Si cada entidad define los conceptos de manera diferente, conectar datos es extremadamente difícil. Los vocabularios comunes garantizan que “paciente”, “lote de vacuna” o “centro dispensador” se interpreten igual en todos los sistemas.',
+
+        { type: 'h4', content: 'Datos más FAIR' },
+        'Los estándares semánticos favorecen datos más localizables (gracias a metadatos claros), interoperables (gracias a formatos compatibles) y reutilizables (gracias a definiciones y licencias bien documentadas).',
+
+        { type: 'h4', content: 'Calidad y gobernanza' },
+        'Usar conceptos bien definidos y relaciones coherentes reduce errores, facilita la validación y aporta trazabilidad a cada modificación.',
+
+        { type: 'h4', content: 'Escalabilidad' },
+        'Una base semántica sólida permite conectar dominios tan diversos como la salud, el ámbito sociosanitario, la farmacia o el medio ambiente.',
+
+        { type: 'h2', content: '➡️ Estándares habituales en espacios de datos' },
+
+        { type: 'h4', content: 'Modelos de datos y formatos' },
+        '• HL7 FHIR para información clínica estructurada.',
+        '• OMOP CDM para análisis y ciencia de datos.',
+        '• RDF/OWL para construir grafos de conocimiento.',
+        '• DCAT / DCAT-AP para describir datasets en catálogos.',
+        '• JSON-LD / Schema.org para añadir semántica en la web.',
+
+        { type: 'h4', content: 'Vocabularios y terminologías' },
+        '• SNOMED CT para conceptos clínicos.',
+        '• LOINC para laboratorio y observaciones.',
+        '• ATC / RXNorm para medicamentos.',
+        '• ICD-10/11 para diagnósticos.',
+
+        { type: 'h4', content: 'Ontologías biomédicas y ómicas' },
+        '• Ontologías de OBO Foundry como HPO, CHEBI u OBI.',
+        '• Recursos impulsados por GA4GH para datos genómicos.',
+
+        {
+          type: 'h2',
+          content: '➡️ Cómo se alinean los datos con estos estándares',
+        },
+
+        { type: 'h4', content: '1) Identificar los conceptos clave' },
+        'Por ejemplo: tipo de vacuna, fecha de administración, lote, paciente, área sanitaria…',
+
+        {
+          type: 'h4',
+          content: '2) Vincular cada concepto con un código estándar',
+        },
+        'Ejemplos:',
+        '• “PCR” → LOINC.',
+        '• “Vacuna frente a influenza” → SNOMED o ATC.',
+        '• “Centro sanitario” → Conceptos de ubicación en FHIR.',
+
+        { type: 'h4', content: '3) Documentar reglas básicas' },
+        'Unidades, rangos válidos, obligatoriedad, tipos de dato, restricciones.',
+
+        { type: 'h4', content: '4) Transformar los datos' },
+        'A través de procesos de mapeo (ETL) que generan formatos como FHIR u OMOP a partir de fuentes originales.',
+
+        { type: 'h4', content: '5) Gestionar equivalencias' },
+        'Si distintas fuentes usan códigos distintos, se crean tablas de correspondencia o grafos SKOS.',
+
+        { type: 'h4', content: '6) Mantener gobernanza' },
+        'Versiones claras, procesos de actualización bien definidos y documentación comprensible.',
+
+        { type: 'h2', content: '➡️ Buenas prácticas recomendadas' },
+        '• Reutilizar vocabularios estándar siempre que sea posible.',
+        '• Publicar URIs estables para conceptos internos.',
+        '• Documentar con ejemplos sencillos y actualizados.',
+        '• Versionar modelos y ontologías con criterios claros.',
+        '• Incluir licencias y condiciones de uso de los metadatos.',
+
+        { type: 'h2', content: '➡️ Errores frecuentes' },
+        '• Asumir equivalencias exactas cuando solo existe una similitud aproximada.',
+        '• Crear códigos internos sin documentación accesible.',
+        '• Mezclar versiones de vocabularios sin indicarlo.',
+
+        {
+          type: 'quote',
+          content:
+            'La meta es clara: facilitar que la interoperabilidad suceda de forma fluida, comprensible y sostenible en el tiempo.',
+        },
+      ],
+      featured: false,
+    },
   ],
   en: [
     {
@@ -704,6 +815,106 @@ export const blogPosts: Record<Locale, Post[]> = {
 
         'To join a data space like ours, it is essential to be clear about your role, the data or services you will provide or consume, and the applicable conditions. With this clarity, onboarding stops being a maze and becomes an orderly and predictable process.',
       ],
+    },
+    {
+      key: 'ontologies-vocabularies',
+      date: '2026-01-26',
+      title:
+        'Ontologies and vocabularies in data spaces: a simple guide from the DATAlife Demonstrator Center',
+      excerpt:
+        'In a data space, sharing is not enough: everyone must understand the information in the same way. This practical guide explains vocabularies and ontologies, common standards, and a straightforward path to align data with them.',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        'In a data space, sharing information is not enough: it is essential to understand it in the same way. Two key tools help achieve this: vocabularies and ontologies. They allow different systems, organizations, and professionals to speak a shared language.',
+
+        {
+          type: 'h2',
+          content:
+            '➡️ Vocabularies and ontologies: two distinct building blocks',
+        },
+
+        { type: 'h4', content: 'What is a vocabulary?' },
+        'A vocabulary is a structured set of terms and codes used to name concepts consistently. For example, a specific code for “PCR”, another for “SARS-CoV-2”, or for “influenza vaccine”. Its goal is to remove ambiguity and ensure that all parties use the same identifiers.',
+
+        { type: 'h4', content: 'What is an ontology?' },
+        'An ontology not only defines concepts, but also the relationships between them. It can express, for instance, that a “vaccine” belongs to a certain category, or that a “laboratory observation” is associated with a “patient”. In essence, it is a conceptual map describing how a knowledge domain is organized.',
+
+        { type: 'h2', content: '➡️ Why speaking the same language matters' },
+
+        { type: 'h4', content: 'Real interoperability' },
+        'If each organization defines concepts differently, connecting data becomes extremely difficult. Shared vocabularies ensure that “patient”, “vaccine lot”, or “dispensing site” are interpreted consistently across systems.',
+
+        { type: 'h4', content: 'More FAIR data' },
+        'Semantic standards support data that is more findable (clear metadata), interoperable (compatible formats), and reusable (well-documented definitions and licenses).',
+
+        { type: 'h4', content: 'Quality and governance' },
+        'Using well-defined concepts and coherent relationships reduces errors, simplifies validation, and provides traceability for changes.',
+
+        { type: 'h4', content: 'Scalability' },
+        'A strong semantic foundation makes it possible to connect domains as diverse as health, social care, pharmacy, or the environment.',
+
+        { type: 'h2', content: '➡️ Common standards in data spaces' },
+
+        { type: 'h4', content: 'Data models and formats' },
+        '• HL7 FHIR for structured clinical information.',
+        '• OMOP CDM for analytics and data science.',
+        '• RDF/OWL to build knowledge graphs.',
+        '• DCAT / DCAT-AP to describe datasets in catalogs.',
+        '• JSON-LD / Schema.org to add semantics on the web.',
+
+        { type: 'h4', content: 'Vocabularies and terminologies' },
+        '• SNOMED CT for clinical concepts.',
+        '• LOINC for lab tests and observations.',
+        '• ATC / RxNorm for medications.',
+        '• ICD-10/11 for diagnoses.',
+
+        { type: 'h4', content: 'Biomedical and omics ontologies' },
+        '• OBO Foundry ontologies such as HPO, ChEBI, or OBI.',
+        '• GA4GH-driven resources for genomic data.',
+
+        { type: 'h2', content: '➡️ How data is aligned with these standards' },
+
+        { type: 'h4', content: '1) Identify key concepts' },
+        'For example: vaccine type, administration date, batch/lot, patient, health area…',
+
+        { type: 'h4', content: '2) Link each concept to a standard code' },
+        'Examples:',
+        '• “PCR” → LOINC.',
+        '• “Influenza vaccine” → SNOMED or ATC.',
+        '• “Healthcare facility” → location-related concepts in FHIR.',
+
+        { type: 'h4', content: '3) Document basic rules' },
+        'Units, valid ranges, required fields, data types, constraints.',
+
+        { type: 'h4', content: '4) Transform the data' },
+        'Through mapping (ETL) processes that produce formats such as FHIR or OMOP from original sources.',
+
+        { type: 'h4', content: '5) Manage equivalences' },
+        'If different sources use different codes, you can create mapping tables or SKOS graphs.',
+
+        { type: 'h4', content: '6) Maintain governance' },
+        'Clear versioning, well-defined update processes, and understandable documentation.',
+
+        { type: 'h2', content: '➡️ Recommended best practices' },
+        '• Reuse standard vocabularies whenever possible.',
+        '• Publish stable URIs for internal concepts.',
+        '• Document with simple, up-to-date examples.',
+        '• Version models and ontologies with clear criteria.',
+        '• Include licenses and usage conditions for metadata.',
+
+        { type: 'h2', content: '➡️ Common pitfalls' },
+        '• Assuming exact equivalences when only approximate similarity exists.',
+        '• Creating internal codes without accessible documentation.',
+        '• Mixing vocabulary versions without stating it.',
+
+        {
+          type: 'quote',
+          content:
+            'The goal is clear: make interoperability smooth, understandable, and sustainable over time.',
+        },
+      ],
+      featured: false,
     },
   ],
 };
