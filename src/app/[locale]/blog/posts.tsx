@@ -2,7 +2,12 @@ import type { StaticImageData } from 'next/image';
 import type { Locale } from 'next-intl';
 import DinamicaCRED from '../../../../public/blog/dinamicaEventoInicialCRED.png';
 import ArchitectureImg from '../../../../public/logo_completo.jpg';
+import JCacheiroImg from '../../../../public/team/jcacheiro.png';
+import LDiazImg from '../../../../public/team/ldiaz.jpg';
+import LVazquezImg from '../../../../public/team/lvazquez.jpg';
+import MCarmenaImg from '../../../../public/team/mcarmena.jpg';
 import MCastineiraImg from '../../../../public/team/mcastineira.jpg';
+import PFerreiroImg from '../../../../public/team/pferreiro.jpg';
 
 interface TextNodeBase {
   type: string;
@@ -31,6 +36,12 @@ interface LinkNode extends TextNodeBase {
   external?: boolean;
 }
 
+interface ImageProfileNode extends TextNodeBase {
+  type: 'image_profile';
+  src: StaticImageData;
+  alt: string;
+}
+
 interface ImageNode extends TextNodeBase {
   type: 'image';
   src: StaticImageData;
@@ -49,6 +60,7 @@ export type TextNode =
   | UnderlineNode
   | LinkNode
   | ImageNode
+  | ImageProfileNode
   | QuoteNode;
 
 export interface Post {
@@ -495,6 +507,80 @@ export const blogPosts: Record<Locale, Post[]> = {
       ],
       featured: false,
     },
+    {
+      key: 'team-demonstrator-2026',
+      date: '2026-02-19',
+      title: 'El equipo del Centro Demostrador',
+      excerpt:
+        'El Centro Demostrador de Espacio de Datos Multisectorial One Health del CESGA se apoya en un equipo multidisciplinar que combina coordinación, ingeniería y perfiles investigadores para trasladar tecnologías de compartición y valorización del dato a escenarios reales.',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        {
+          type: 'h2',
+          content: 'Conoce quién está detrás del espacio de datos',
+        },
+        // Introducción (tal cual)
+        'El Centro Demostrador de Espacio de Datos Multisectorial One Health del CESGA se apoya en un equipo multidisciplinar que combina coordinación, ingeniería y perfiles investigadores para trasladar tecnologías de compartición y valorización del dato a escenarios reales.',
+        'Nuestro objetivo es acelerar la transformación digital en ámbitos como la biotecnología, el agroalimentario, el sector forestal–marino–industrial y la salud, integrando capacidades de inteligencia artificial, big data y computación de alto rendimiento (HPC). Trabajamos para que los casos de uso del centro demostrador multisectorial DATAlife evolucionen desde la definición hasta la validación y la puesta en producción, fomentando un espacio de datos interoperable, seguro y escalable.',
+        'La actividad del equipo se articula a través de la coordinación del proyecto, liderada por Javier Cacheiro,  junto con el soporte y la ejecución técnica de Pedro Ferreiro. Ayudando a soporte técnico pero más centrados en el área investigadora, están el resto de los integrantes del equipo. Aportando experiencia en simulación y química computacional  encontramos a  Miguel Carmena y a a Marta Castiñeira y en analítica avanzada e inteligencia artificial, encontramos a Ledicia Díaz y  Lara Vázquez. De este modo, estamos cubriendo de extremo a extremo la validación de casos de uso, el despliegue de servicios y la adopción de buenas prácticas para crear un espacio de datos robusto y orientado a impacto.',
+
+        // Javier
+        { type: 'h2', content: 'Javier Cacheiro López' },
+        {
+          type: 'image_profile',
+          src: JCacheiroImg,
+          alt: 'Javier Cacheiro López',
+        },
+        'Javier Cacheiro López es Project Manager y responsable de la coordinación del área de Big Data en el Centro de Supercomputación de Galicia (CESGA), donde impulsa iniciativas que combinan gestión de proyectos complejos con una sólida base técnica en Big Data, computación de altas prestaciones (HPC) e inteligencia artificial (IA). Su perfil integra liderazgo de equipos multidisciplinares, planificación y seguimiento de hitos, y alineamiento de necesidades científicas y organizativas con soluciones tecnológicas avanzadas.',
+        'Cuenta con acreditación profesional en dirección de proyectos por el Project Management Institute (PMI) y es Project Management Professional (PMP) desde 2009. Es Doctor en Física (2003) y obtuvo Premio Extraordinario tanto en la Licenciatura como en el Doctorado, reflejo de una trayectoria académica de excelencia. En la actualidad coordina la creación del DATAlife (One Health), un espacio de datos estratégico que requiere integración de componentes técnicos, científicos y de gobernanza.',
+        'A lo largo de su carrera ha participado en más de 20 proyectos europeos, nacionales y regionales, incluyendo iniciativas como EGEE, EGI-InSPIRE y TRAFAIR, desempeñando funciones de coordinación y responsabilidad técnica. Es autor de más de 70 publicaciones científicas en revistas y congresos internacionales, lo que evidencia una actividad investigadora sostenida y una capacidad contrastada para orientar resultados en entornos de alta exigencia tecnológica y colaboración internacional.',
+
+        // Pedro
+        { type: 'h2', content: 'Pedro Ferreiro Rega' },
+        {
+          type: 'image_profile',
+          src: PFerreiroImg,
+          alt: 'Pedro Ferreiro Rega',
+        },
+        'Pedro Ferreiro Rega es graduado en Biotecnología por la Universidade de Santiago de Compostela (USC). Posteriormente, completó el máster en Bioinformática en la Universidad Internacional de Valencia (ViU).',
+        'Graduado en Biotecnología por la Universidade de Santiago de Compostela (USC) y Máster en Bioinformática por la Universidad Internacional de Valencia (VIU). En 2025 se incorporó al equipo de espacio de datos del CESGA, donde desarrolla su actividad actualmente. Con anterioridad, su trabajo investigador se centró en el estudio de patologías del sistema nervioso periférico mediante técnicas de análisis bioinformático, con especial interés en la neuropatía diabética. En su tiempo de ocio disfruta leyendo y compartiendo tiempo con sus amigos.',
+
+        // Lara
+        { type: 'h2', content: 'Lara María Vázquez González' },
+        {
+          type: 'image_profile',
+          src: LVazquezImg,
+          alt: 'Lara María Vázquez González',
+        },
+        'Lara Vázquez González es doctora en Investigación en Tecnologías de la Información por la Universidade de Santiago de Compostela (USC), donde también obtuvo el Grado en Ingeniería Informática en 2019. Posteriormente, completó el máster en Bioinformática y Bioestadística en la Universitat Oberta de Catalunya (UOC) en 2020.',
+        'En 2021 recibió la Ayuda de apoyo a la etapa predoctoral de la Xunta de Galicia, que le permitió desarrollar su tesis doctoral en el ámbito de la bioinformática. Su investigación se centró en la aplicación de técnicas de aprendizaje automático para mejorar y agilizar el diagnóstico de enfermedades de origen microbiano, con especial atención a la periodontitis. Actualmente, trabaja en el CESGA en el proyecto del Centro Demostrador. En su tiempo libre, le encanta leer, viajar y escuchar música.',
+
+        // Miguel
+        { type: 'h2', content: 'Miguel Carmena Bargueño' },
+        {
+          type: 'image_profile',
+          src: MCarmenaImg,
+          alt: 'Miguel Carmena Bargueño',
+        },
+        'Miguel Carmena Bargueño es bioquímico por la UCLM, realizó el Máster en Bioinformática por la Universidad de Murcia y la UPCT. Obtuvo su tesis doctoral en el grupo BIO-HPC de la UCAM (2024). Dicha tesis estuvo enfocada en el uso de las simulaciones de Dinámica Molecular y Machine Learning en el contexto del descubrimiento de fármacos. Durante el desarrollo de la tesis realizó una estancia en Viena, donde se formó sobre las aplicaciones y uso del modelado farmacológico. Actualmente se encuentra trabajando en el CESGA, siendo técnico investigador de química computacional. En su tiempo libre le gusta escuchar música, leer novelas gráficas y jugar a juegos de mesa.',
+
+        // Marta
+        { type: 'h2', content: 'Marta Castiñeira Reis' },
+        {
+          type: 'image_profile',
+          src: MCastineiraImg,
+          alt: 'Marta Castiñeira Reis',
+        },
+        'Marta Castiñeira Reis es química computacional especializada en la integración de química mecanística, catálisis y automatización. Se doctoró en Química Teórica y Modelización Molecular en la Universidad de Vigo (2019) y ha desarrollado una trayectoria internacional. Realizó un posdoctorado de tres años en la Universidad de Groningen, donde lideró la parte computacional del grupo de S. R. Harutyunyan, con foco en procesos enantioselectivos. En CiQUS (USC) co-lideró una línea en astroquímica orientada a la elucidación automática de mecanismos. Suma más de 500 horas de docencia, 10 TFG codirigidos y varios TFM. Actualmente trabaja en el CESGA en el proyecto del Centro Demostrador. Fuera del ámbito profesional, disfruta de la naturaleza, la lectura y los animales.',
+
+        // Ledicia
+        { type: 'h2', content: 'Ledicia Díaz Lago' },
+        { type: 'image_profile', src: LDiazImg, alt: 'Ledicia Díaz Lago' },
+        'Ledicia Díaz Lago es física orientada a software, especializada en ciencia de datos, modelización y machine learning aplicado. Se graduó en Física por la Universidade de Santiago de Compostela y cursó el Máster en Tecnologías del Sector Financiero en la Universidad Carlos III de Madrid, donde trabajó en aprendizaje por refuerzo profundo.',
+        'Ha desarrollado su trayectoria entre la investigación y la industria, con experiencia en modelos predictivos, análisis de datos complejos y analítica avanzada, tanto en entornos académicos como empresariales. Actualmente trabaja como técnica investigadora en machine learning y ciencia de datos en el CESGA, participando en proyectos relacionados con espacios de datos, interoperabilidad y transferencia tecnológica.',
+      ],
+    },
   ],
   en: [
     {
@@ -915,6 +1001,74 @@ export const blogPosts: Record<Locale, Post[]> = {
         },
       ],
       featured: false,
+    },
+    {
+      key: 'team-demonstrator-2026',
+      date: '2026-02-19',
+      title: 'The Demonstrator Center team',
+      excerpt:
+        'The CESGA Multisectoral One Health Data Space Demonstrator is supported by a multidisciplinary team that combines coordination, engineering and research profiles to bring data sharing and data valorization technologies into real-world scenarios.',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        {
+          type: 'h2',
+          content: 'Meet the people behind the data space',
+        },
+
+        'The CESGA Multisectoral One Health Data Space Demonstrator is supported by a multidisciplinary team that combines coordination, engineering and research profiles to bring data sharing and data valorization technologies into real-world scenarios.',
+        'Our goal is to accelerate digital transformation in areas such as biotechnology, agri-food, the forest–marine–industrial sector and health, integrating artificial intelligence, big data and high-performance computing (HPC) capabilities. We work so that the use cases of the DATAlife multisectoral demonstrator evolve from definition to validation and production deployment, fostering an interoperable, secure and scalable data space.',
+        'The team activity is structured through project coordination led by Javier Cacheiro, together with the technical support and execution carried out by Pedro Ferreiro. Supporting technically but more focused on the research area are the rest of the team members. Providing expertise in simulation and computational chemistry are Miguel Carmena and Marta Castiñeira, and in advanced analytics and artificial intelligence, Ledicia Díaz and Lara Vázquez. In this way, we cover end-to-end use case validation, service deployment and the adoption of best practices to create a robust and impact-oriented data space.',
+
+        { type: 'h2', content: 'Javier Cacheiro López' },
+        {
+          type: 'image_profile',
+          src: JCacheiroImg,
+          alt: 'Javier Cacheiro López',
+        },
+        'Javier Cacheiro López is Project Manager and responsible for coordinating the Big Data area at the Galicia Supercomputing Center (CESGA), where he promotes initiatives combining complex project management with a strong technical foundation in Big Data, high-performance computing (HPC) and artificial intelligence (AI). His profile integrates leadership of multidisciplinary teams, milestone planning and monitoring, and alignment of scientific and organizational needs with advanced technological solutions.',
+        'He holds professional accreditation in project management from the Project Management Institute (PMI) and has been a Project Management Professional (PMP) since 2009. He obtained his PhD in Physics in 2003 and received Extraordinary Awards in both his degree and doctorate, reflecting an academic trajectory of excellence. He currently coordinates the creation of DATAlife (One Health), a strategic data space requiring integration of technical, scientific and governance components.',
+        'Throughout his career he has participated in more than 20 European, national and regional projects, including initiatives such as EGEE, EGI-InSPIRE and TRAFAIR, performing coordination and technical responsibility roles. He is author of more than 70 scientific publications in international journals and conferences, demonstrating sustained research activity and proven ability to deliver results in highly demanding technological and collaborative environments.',
+
+        { type: 'h2', content: 'Pedro Ferreiro Rega' },
+        {
+          type: 'image_profile',
+          src: PFerreiroImg,
+          alt: 'Pedro Ferreiro Rega',
+        },
+        'Pedro Ferreiro Rega holds a degree in Biotechnology from the Universidade de Santiago de Compostela (USC). He later completed a Master’s in Bioinformatics at the Universidad Internacional de Valencia (VIU).',
+        'He joined the CESGA data space team in 2025, where he currently carries out his work. Previously, his research focused on the study of peripheral nervous system pathologies using bioinformatics analysis techniques, with particular interest in diabetic neuropathy. In his free time he enjoys reading and spending time with friends.',
+
+        { type: 'h2', content: 'Lara María Vázquez González' },
+        {
+          type: 'image_profile',
+          src: LVazquezImg,
+          alt: 'Lara María Vázquez González',
+        },
+        'Lara Vázquez González holds a PhD in Information Technology Research from the Universidade de Santiago de Compostela (USC), where she also obtained a degree in Computer Engineering in 2019. She later completed a Master’s in Bioinformatics and Biostatistics at the Universitat Oberta de Catalunya (UOC) in 2020.',
+        'In 2021 she received a predoctoral support grant from the Xunta de Galicia, which allowed her to develop her doctoral thesis in bioinformatics. Her research focused on the application of machine learning techniques to improve and accelerate the diagnosis of diseases of microbial origin, with special attention to periodontitis. She currently works at CESGA in the Demonstrator Center project. In her free time she enjoys reading, traveling and listening to music.',
+
+        { type: 'h2', content: 'Miguel Carmena Bargueño' },
+        {
+          type: 'image_profile',
+          src: MCarmenaImg,
+          alt: 'Miguel Carmena Bargueño',
+        },
+        'Miguel Carmena Bargueño is a biochemist from UCLM and completed a Master’s in Bioinformatics at the University of Murcia and UPCT. He obtained his PhD in the BIO-HPC group at UCAM (2024). His thesis focused on the use of Molecular Dynamics simulations and Machine Learning in the context of drug discovery. During his thesis he completed a research stay in Vienna, where he trained in pharmacological modeling applications. He currently works at CESGA as a research technician in computational chemistry. In his free time he enjoys listening to music, reading graphic novels and playing board games.',
+
+        { type: 'h2', content: 'Marta Castiñeira Reis' },
+        {
+          type: 'image_profile',
+          src: MCastineiraImg,
+          alt: 'Marta Castiñeira Reis',
+        },
+        'Marta Castiñeira Reis is a computational chemist specialized in mechanistic chemistry elucidation, catalysis and automation. She obtained her PhD in Theoretical Chemistry and Molecular Modeling at the University of Vigo (2019) and has developed an international career. She carried out a three-year postdoctoral stay at the University of Groningen, where she led the computational section of the S. R. Harutyunyan group focusing on enantioselective processes. At CiQUS (USC) she co-led a research line in astrochemistry focused on automated mechanism elucidation. She has accumulated more than 500 teaching hours, co-supervised 10 bachelor theses and several master theses. She currently works at CESGA in the Demonstrator Center project. Outside the professional field she enjoys nature, reading and animals.',
+
+        { type: 'h2', content: 'Ledicia Díaz Lago' },
+        { type: 'image_profile', src: LDiazImg, alt: 'Ledicia Díaz Lago' },
+        'Ledicia Díaz Lago is a software-oriented physicist specialized in data science, modeling and applied machine learning. She graduated in Physics from the Universidade de Santiago de Compostela and completed a Master’s in Financial Technologies at Universidad Carlos III de Madrid, where she worked on deep reinforcement learning.',
+        'She has developed her career between research and industry, with experience in predictive models, complex data analysis and advanced analytics in both academic and business environments. She currently works as a machine learning and data science research technician at CESGA, participating in projects related to data spaces, interoperability and technology transfer.',
+      ],
     },
   ],
 };

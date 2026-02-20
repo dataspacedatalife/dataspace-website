@@ -147,6 +147,18 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                       )}
                     </figure>
                   );
+                case 'image_profile':
+                  return (
+                    <div key={idx} className="float-left mr-5 mb-2 mt-1">
+                      <Image
+                        src={item.src}
+                        alt={item.alt}
+                        width={150}
+                        height={150}
+                        className="rounded-xl object-cover aspect-square"
+                      />
+                    </div>
+                  );
                 case 'quote':
                   return (
                     <blockquote
