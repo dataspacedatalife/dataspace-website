@@ -509,7 +509,7 @@ export const blogPosts: Record<Locale, Post[]> = {
     },
     {
       key: 'team-demonstrator-2026',
-      date: '2026-02-19',
+      date: '2026-02-20',
       title: 'El equipo del Centro Demostrador',
       excerpt:
         'El Centro Demostrador de Espacio de Datos Multisectorial One Health del CESGA se apoya en un equipo multidisciplinar que combina coordinación, ingeniería y perfiles investigadores para trasladar tecnologías de compartición y valorización del dato a escenarios reales.',
@@ -1004,7 +1004,7 @@ export const blogPosts: Record<Locale, Post[]> = {
     },
     {
       key: 'team-demonstrator-2026',
-      date: '2026-02-19',
+      date: '2026-02-20',
       title: 'The Demonstrator Center team',
       excerpt:
         'The CESGA Multisectoral One Health Data Space Demonstrator is supported by a multidisciplinary team that combines coordination, engineering and research profiles to bring data sharing and data valorization technologies into real-world scenarios.',
