@@ -110,7 +110,19 @@ async function Header() {
           <h3 className="text-2xl font-semibold text-gray-900 text-center mb-2">
             {t('videos.tutorialsTitle')}
           </h3>
-          {/* Línea pequeña debajo del título */}
+          {/* Tutorial deploy connector */}
+          <hr className="w-16 border-t border-gray-300 mx-auto mb-6" />
+          <div className="grid grid-cols-1 sm:grid-cols-1 gap-8">
+            <div className="mx-auto aspect-video w-full max-w-3xl overflow-hidden rounded-2xl border border-gray-200 bg-white/80 shadow-sm">
+              <video controls className="w-full h-full object-cover">
+                <source src={t('videos.tutorial2Url')} type="video/mp4" />
+              </video>
+            </div>
+            <p className="text-center text-gray-600 text-sm -mt-6">
+              {t('videos.tutorial2Caption')}
+            </p>
+          </div>
+          {/* Tutorial upload assets */}
           <hr className="w-16 border-t border-gray-300 mx-auto mb-6" />
           <div className="grid grid-cols-1 sm:grid-cols-1 gap-8">
             <div className="mx-auto aspect-video w-full max-w-3xl overflow-hidden rounded-2xl border border-gray-200 bg-white/80 shadow-sm">
