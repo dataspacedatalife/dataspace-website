@@ -539,6 +539,24 @@
           "Sesión abierta a todo público."
         ],
         "extra": "Apúntate aquí"
+      },
+      "conectorGestionActivos": {
+        "header": "Taller práctico sobre el Espacio de Datos One Health: conector y gestión de activos",
+        "excerpt": "Taller online gratuito, dirigido al sector salud, sobre el Kit Espacios de Datos.",
+        "description": [
+          "¿Quieres formar parte del Espacio de Datos One Health pero no tienes claro cómo hacerlo?",
+          "Desde el Centro Demostrador de Espacio de Datos Multisectorial ONE HEALTH organizamos una sesión formativa orientada a resolver dudas y facilitar la incorporación al Espacio de Datos One Health de instituciones, empresas y entidades interesadas, especialmente aquellas solicitantes del programa Kit de Espacio de Datos del CRED: Centro de Referencia de Espacios de Datos | LinkedIn.",
+          "En este taller abordaremos, de forma práctica, los elementos clave para participar en el Espacio de Datos One Health del CESGA, incluyendo:",
+          "- el despliegue del conector",
+          "- la subida de assets (activos de datos)",
+          "- la declaración de evidencias",
+          "Todo ello apoyado en un ejemplo real que permitirá entender paso a paso cómo se lleva a cabo este proceso.",
+          "Es una sesión pensada para ofrecer una base clara y útil que facilite la participación activa en el Espacio de Datos One Health.",
+          "🗓️Fecha: 23 de marzo",
+          "🕙Horario: 10:00 - 12:00 h",
+          "📍 Formato: Online"
+        ],
+        "extra": "Apúntate aquí"
       }
     }
   },

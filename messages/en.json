@@ -513,6 +513,24 @@
           "Open session for the general public."
         ],
         "extra": "Sign up here"
+      },
+  "conectorGestionActivos": {
+    "header": "Practical Workshop on the One Health Data Space: Connector and Asset Management",
+    "excerpt": "Free online workshop aimed at the healthcare sector about the Data Spaces Kit.",
+    "description": [
+      "Do you want to be part of the One Health Data Space but are not sure how to get started?",
+      "From the ONE HEALTH Multisector Data Space Demonstrator Center, we are organizing a training session aimed at resolving doubts and facilitating the integration into the One Health Data Space for institutions, companies, and interested entities, especially those applying for the CRED Data Spaces Kit program: Reference Center for Data Spaces | LinkedIn.",
+      "In this workshop, we will practically cover the key elements to participate in the CESGA One Health Data Space, including:",
+      "- connector deployment",
+      "- asset upload (data assets)",
+      "- evidence declaration",
+      "All of this will be supported by a real example that will help you understand step by step how this process is carried out.",
+      "This session is designed to provide a clear and useful foundation to enable active participation in the One Health Data Space.",
+      "🗓️Date: March 23",
+      "🕙Time: 10:00 - 12:00",
+      "📍 Format: Online"
+    ],
+        "extra": "Sign up here"
       }
     }
   },

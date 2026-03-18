@@ -28,6 +28,7 @@ import tallergradiantImg from '../../../../public/events/tallergradiant.jpg';
 import tallergradiantConectoresImg from '../../../../public/events/tallergradiantConectores.png';
 import tallerKitSaludCRED from '../../../../public/events/tallerKitSaludCRED.png';
 import KitDatosCREDImg2 from '../../../../public/events/tallerPracticokitCRED.jpg';
+import conectorGestionActivos from '../../../../public/events/conectorGestionActivos.png';
 
 const eventsPerPage = 5;
 
@@ -134,6 +135,15 @@ const events = [
     organizer: 'BAIDATA',
     featured: false,
   },
+  { //new!
+    key: 'conectorGestionActivos',
+    date: '2026-03-23',
+    image: conectorGestionActivos,
+    cesgalink:
+      'https://forms.cloud.microsoft/pages/responsepage.aspx?id=R5ZY0bQ3n0O0XEaqtYBirp5meC2Z8xZKgL5i1uIkS8ZUNjZYU1pFUEROR1gxMUQwUlFIVU1SUTBQUS4u&route=shorturl',
+    organizer: 'Centro demostrador de espacio de datos multisectorial One Health & Centro de Supercomputación de Galicia (CESGA)',
+    featured: true,
+  },
   {
     key: 'kitDatosSaludCRED',
     date: '2025-12-16',
@@ -141,8 +151,9 @@ const events = [
     cesgalink:
       'https://events.teams.microsoft.com/event/99b36601-cfc5-4bb8-9fb2-6f2e35a8b0b4@24e38255-2c42-4538-999c-5fd53e8456d2',
     organizer: 'Centro de Referencia de Espacios de Datos (CRED)',
-    featured: true,
+    featured: false,
   },
+   
 ] as const satisfies Event[];
 
 // Obtener eventos pasados paginados
