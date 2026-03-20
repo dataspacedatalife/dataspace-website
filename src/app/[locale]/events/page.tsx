@@ -140,10 +140,10 @@ const events = [
     date: '2026-03-23',
     image: conectorGestionActivos,
     cesgalink:
-      'https://forms.cloud.microsoft/pages/responsepage.aspx?id=R5ZY0bQ3n0O0XEaqtYBirp5meC2Z8xZKgL5i1uIkS8ZUNjZYU1pFUEROR1gxMUQwUlFIVU1SUTBQUS4u&route=shorturl',
+      'https://forms.cloud.microsoft/e/jzZ1aarLKP',
     organizer: 'Centro demostrador de espacio de datos multisectorial One Health & Centro de Supercomputación de Galicia (CESGA)',
-    featured: true,
-  },
+    featured: true, 
+  }, 
   {
     key: 'kitDatosSaludCRED',
     date: '2025-12-16',
