@@ -42,9 +42,8 @@ function LanguageSelector() {
           <Link
             key={code}
             href="#"
-            className={`px-4 py-2 text-sm text-gray-800 text-left hover:bg-gray-100 ${
-              currentLocale === code ? 'font-semibold' : ''
-            }`}
+            className={`px-4 py-2 text-sm text-gray-800 text-left hover:bg-gray-100 ${currentLocale === code ? 'font-semibold' : ''
+              }`}
             onClick={(e) => {
               e.preventDefault();
               switchLanguage(code);
@@ -76,9 +75,8 @@ function MobileLanguageSelector() {
           <Link
             key={code}
             href="#"
-            className={`text-sm text-gray-800 text-left hover:text-gray-950 hover:underline ${
-              currentLocale === code ? 'font-semibold' : ''
-            }`}
+            className={`text-sm text-gray-800 text-left hover:text-gray-950 hover:underline ${currentLocale === code ? 'font-semibold' : ''
+              }`}
             onClick={(e) => {
               e.preventDefault();
               switchLanguage(code);
@@ -102,6 +100,24 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     { href: '/events', label: t('eventos') },
     { href: '/blog', label: t('blog') },
     { href: '/team', label: t('el_equipo') },
+  ];
+
+  //añadir mas rapido nuevos 
+  const techLinks = [
+    { href: '/dataspace', label: t('xdatashare') },
+    { href: 'https://dspacer-cesga.es/portal', label: t('dspacer'), external: true },
+    { href: '/faq', label: t('preguntas_frecuentes') },
+  ];
+
+  const aboutLinks = [
+    { href: '/about', label: t('saber_mas') },
+    { href: '/what', label: t('que_es_un_espacio') },
+    { href: '/use-cases', label: t('casos_de_uso') },
+  ];
+
+  const joinLinks = [
+    { href: '/how', label: t('adhesion') },
+    { href: '/kitEdD', label: t('kit') },
   ];
 
   function DesktopNav() {
@@ -163,20 +179,18 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
               <ChevronUp className="rotate-180 w-3.5" />
             </div>
           </Link>
+
           <div className="absolute left-0 top-full hidden w-48 flex-col rounded-lg border border-gray-200 bg-white shadow-md group-hover:flex">
-            <Link
-              href="/dataspace"
-              className="px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
-            >
-              {t('xdatashare')}
-            </Link>
-            <Link
-              href="https://dspacer-cesga.es/portal"
-              className="px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
-              target="_blank"
-            >
-              {t('dspacer')}
-            </Link>
+            {techLinks.map(({ href, label, external }) => (
+              <Link
+                key={href}
+                href={href}
+                target={external ? '_blank' : undefined}
+                className="px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
+              >
+                {label}
+              </Link>
+            ))}
           </div>
         </PlusGridItem>
 
@@ -288,33 +302,34 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           </motion.div>
 
           {/* Tecnologias mimic */}
-          <motion.div
-            initial={{ opacity: 0, rotateX: -90 }}
-            animate={{ opacity: 1, rotateX: 0 }}
-            transition={{ duration: 0.3, ease: 'easeInOut' }}
-          >
-            <Link
-              href="/dataspace"
-              className="flex items-center gap-2 text-base font-medium text-gray-950"
-            >
-              <div className="">{t('tecnologias')}</div>
-              <div className="shrink-0">
-                <ChevronUp className="rotate-180 w-3.5" />
-              </div>
-            </Link>
-            <div className="ml-4 mt-2 flex flex-col gap-2">
-              <Link href="/dataspace" className="text-sm text-gray-800">
-                {t('xdatashare')}
-              </Link>
-              <Link
-                href="https://dspacer-cesga.es/portal"
-                className="text-sm text-gray-800"
-                target="_blank"
-              >
-                {t('dspacer')}
-              </Link>
-            </div>
-          </motion.div>
+<motion.div
+  initial={{ opacity: 0, rotateX: -90 }}
+  animate={{ opacity: 1, rotateX: 0 }}
+  transition={{ duration: 0.3, ease: 'easeInOut' }}
+>
+  <Link
+    href="/dataspace"
+    className="flex items-center gap-2 text-base font-medium text-gray-950"
+  >
+    <div>{t('tecnologias')}</div>
+    <div className="shrink-0">
+      <ChevronUp className="rotate-180 w-3.5" />
+    </div>
+  </Link>
+
+  <div className="ml-4 mt-2 flex flex-col gap-2">
+    {techLinks.map(({ href, label, external }) => (
+      <Link
+        key={href}
+        href={href}
+        target={external ? '_blank' : undefined}
+        className="text-sm text-gray-800"
+      >
+        {label}
+      </Link>
+    ))}
+  </div>
+</motion.div>
 
           {/* Unete mimic */}
           <motion.div
