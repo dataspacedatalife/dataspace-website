@@ -8,7 +8,7 @@ import LVazquezImg from '../../../../public/team/lvazquez.jpg';
 import MCarmenaImg from '../../../../public/team/mcarmena.jpg';
 import MCastineiraImg from '../../../../public/team/mcastineira.jpg';
 import PFerreiroImg from '../../../../public/team/pferreiro.jpg';
-import Avatar from '../../../../public/team/avatar.png';
+import Logo from '../../../../public/logos/reduced_logo.png';
 
 interface TextNodeBase {
   type: string;
@@ -590,7 +590,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'El Centro Demostrador Multisectorial DATAspace de CESGA celebró una sesión formativa práctica dirigida a resolver dudas y acompañar a empresas e instituciones en su incorporación al Espacio de Datos One Health como paso previo a la solicitud del Kit Espacios de Datos.',
       author_name: 'Iago Sequeiros',
-      author_image: Avatar,
+      author_image: Logo,
       description: [
         'El Centro Demostrador Multisectorial DATAspace de CESGA organizó el pasado 23 de marzo una sesión formativa orientada a empresas e instituciones para resolver dudas y facilitar su incorporación al Espacio de Datos One Health como paso previo a la solicitud del Kit Espacios de Datos. ',
 
@@ -1208,7 +1208,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'The CESGA Multisectoral DATAspace Demonstrator Center held a practical training session aimed at answering questions and supporting companies and institutions in joining the One Health Data Space as a preliminary step before requesting the Data Spaces Kit.',
       author_name: 'Iago Sequeiros',
-      author_image: Avatar,
+      author_image: Logo,
       description: [
         'On March 23, the CESGA Multisectoral DATAspace Demonstrator Center organized a training session for companies and institutions to answer questions and facilitate their integration into the One Health Data Space as a first step before requesting the Data Spaces Kit.',
 
