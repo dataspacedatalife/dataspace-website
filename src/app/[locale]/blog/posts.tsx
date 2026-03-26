@@ -8,6 +8,7 @@ import LVazquezImg from '../../../../public/team/lvazquez.jpg';
 import MCarmenaImg from '../../../../public/team/mcarmena.jpg';
 import MCastineiraImg from '../../../../public/team/mcastineira.jpg';
 import PFerreiroImg from '../../../../public/team/pferreiro.jpg';
+import Avatar from '../../../../public/team/avatar.png';
 
 interface TextNodeBase {
   type: string;
@@ -581,6 +582,135 @@ export const blogPosts: Record<Locale, Post[]> = {
         'Ha desarrollado su trayectoria entre la investigación y la industria, con experiencia en modelos predictivos, análisis de datos complejos y analítica avanzada, tanto en entornos académicos como empresariales. Actualmente trabaja como técnica investigadora en machine learning y ciencia de datos en el CESGA, participando en proyectos relacionados con espacios de datos, interoperabilidad y transferencia tecnológica.',
       ],
     },
+    { //NOVA NOTICIA: IAGO
+      key: 'taller-one-health-kit',
+      date: '2026-03-26',
+      title:
+        'El Espacio de Datos One Health del CESGA impulsa la integración en el Kit Espacios de Datos con un taller dirigido a empresas e instituciones ',
+      excerpt:
+        'El Centro Demostrador Multisectorial DATAspace de CESGA celebró una sesión formativa práctica dirigida a resolver dudas y acompañar a empresas e instituciones en su incorporación al Espacio de Datos One Health como paso previo a la solicitud del Kit Espacios de Datos.',
+      author_name: 'Iago Sequeiros',
+      author_image: Avatar,
+      description: [
+        'El Centro Demostrador Multisectorial DATAspace de CESGA organizó el pasado 23 de marzo una sesión formativa orientada a empresas e instituciones para resolver dudas y facilitar su incorporación al Espacio de Datos One Health como paso previo a la solicitud del Kit Espacios de Datos. ',
+
+        'La jornada reunió a 33 asistentes, en su mayoría empresas e instituciones interesadas en iniciarse o avanzar en el uso del Espacio de Datos One Health. Durante la sesión se ofreció una introducción práctica a los pasos necesarios para integrarse en este entorno.',
+
+        {
+          type: 'h2',
+          content: '➡️ Una formación orientada a la aplicación práctica',
+        },
+
+        'La compartición de datos segura e interoperable es uno de los pilares fundamentales de los espacios de datos, aunque muchas organizaciones —especialmente pymes e instituciones— siguen encontrando barreras técnicas y operativas para incorporarse.',
+
+        'Para responder a esta necesidad, DATAspace planteó esta sesión con un enfoque eminentemente práctico, explicando paso a paso cómo integrarse y participar activamente en el Espacio de Datos One Health.',
+
+        {
+          type: 'h4',
+          content: 'Despliegue del conector',
+        },
+        'Durante la sesión se explicó el proceso de despliegue del conector necesario para comenzar a operar dentro del espacio de datos.',
+        {
+          type: 'link',
+          content:
+            'https://www.youtube.com/watch?v=z72j1-uQCVo',
+          href: 'https://www.youtube.com/watch?v=z72j1-uQCVo',
+          external: true,
+        },
+
+
+
+        {
+          type: 'h4',
+          content: 'Subida y gestión de activos de datos (assets)',
+        },
+        'También se mostró cómo cargar, organizar y gestionar activos de datos dentro del ecosistema de intercambio.',
+        {
+          type: 'link',
+          content:
+            'https://www.youtube.com/watch?v=yshUdWjAsw8',
+          href: 'https://www.youtube.com/watch?v=yshUdWjAsw8',
+          external: true,
+        },
+
+        {
+          type: 'h4',
+          content: 'Declaración de evidencias dentro del espacio de datos',
+        },
+        'Otro de los aspectos abordados fue la declaración de evidencias necesarias para operar correctamente dentro del entorno compartido.',
+
+        {
+          type: 'link',
+          content:
+            'https://www.youtube.com/watch?v=CRtcBkdf0Wg',
+          href: 'https://www.youtube.com/watch?v=CRtcBkdf0Wg',
+          external: true,
+        },
+
+
+        'Todo ello permitió a las y los asistentes entender de forma progresiva cómo participar en el Espacio de Datos One Health y aplicar este proceso en contextos reales.',
+
+        {
+          type: 'h2',
+          content: '➡️ Próximas acciones y recursos disponibles',
+        },
+
+        'El DATAspace One Health de CESGA continuará organizando nuevas sesiones formativas en las próximas semanas con el objetivo de seguir acompañando a empresas y organizaciones públicas y privadas en su proceso de incorporación y desarrollo dentro del Espacio de Datos One Health.',
+
+        {
+          type: 'h2',
+          content: '➡️ Sobre el proyecto DATAspace One Health',
+        },
+
+        'Impulsado por el Centro de Supercomputación de Galicia, entidad pública vinculada al Consejo Superior de Investigaciones Científicas y a la Xunta de Galicia, el proyecto tiene como objetivo habilitar un espacio de datos que permita una cooperación segura y la generación de valor en el ecosistema biosanitario desde el enfoque One Health.',
+
+        'Está financiado con fondos del Plan de Recuperación, Transformación y Resiliencia (PRTR) a través del Mecanismo de Recuperación y Resiliencia (MRR) del Ministerio para la Transformación Digital y de la Función Pública.',
+
+        {
+          type: 'h4',
+          content: 'Un entorno estratégico para el ecosistema biosanitario',
+        },
+
+        'El ámbito biosanitario constituye un pilar estratégico de la economía del dato, generando información heterogénea y de alto valor —clínica, farmacéutica, veterinaria, agroalimentaria o ambiental— que en muchos casos permanece fragmentada en distintos sistemas.',
+
+        {
+          type: 'h4',
+          content: 'Un patrón socio-técnico para compartir datos',
+        },
+
+        'En este contexto, los espacios de datos como el promovido por CESGA emergen como un patrón socio-técnico que habilita el intercambio y uso conjunto de datos mediante reglas, roles y responsabilidades claras.',
+
+        'Este modelo combina mecanismos tecnológicos como identidad, control de acceso, trazabilidad, seguridad e interoperabilidad con componentes organizativos como gobernanza, políticas, acuerdos y procesos de adhesión.',
+
+        {
+          type: 'quote',
+          content:
+            'Un Espacio de Datos One Health puede acelerar la cooperación y la generación de valor cuando confluyen datos de calidad, capacidades de cómputo e inteligencia artificial.',
+        },
+
+        {
+          type: 'h2',
+          content: '➡️ Más información',
+        },
+
+        {
+          type: 'link',
+          content:
+            '• Guía del participante del Espacio de Datos.',
+          href: 'https://xdatashare.srv.cesga.es/assets/static/files/Guia-del-participante.pdf',
+          external: true,
+        },
+
+        {
+          type: 'link',
+          content:
+            '• Guía del Kit de solicitud del Espacio de Datos.',
+          href: 'https://dataspace.cesga.es/kit/guia_solicitud_KIT_CESGA.pdf',
+          external: true,
+        },
+      ],
+      featured: false,
+    },
   ],
   en: [
     {
@@ -1068,6 +1198,125 @@ export const blogPosts: Record<Locale, Post[]> = {
         { type: 'image_profile', src: LDiazImg, alt: 'Ledicia Díaz Lago' },
         'Ledicia Díaz Lago is a software-oriented physicist specialized in data science, modeling and applied machine learning. She graduated in Physics from the Universidade de Santiago de Compostela and completed a Master’s in Financial Technologies at Universidad Carlos III de Madrid, where she worked on deep reinforcement learning.',
         'She has developed her career between research and industry, with experience in predictive models, complex data analysis and advanced analytics in both academic and business environments. She currently works as a machine learning and data science research technician at CESGA, participating in projects related to data spaces, interoperability and technology transfer.',
+      ],
+    },
+    { //NEW ARTICLE: IAGO
+      key: 'taller-one-health-kit',
+      date: '2026-03-26',
+      title:
+        'CESGA One Health Data Space drives integration in the Data Spaces Kit with a workshop for companies and institutions',
+      excerpt:
+        'The CESGA Multisectoral DATAspace Demonstrator Center held a practical training session aimed at answering questions and supporting companies and institutions in joining the One Health Data Space as a preliminary step before requesting the Data Spaces Kit.',
+      author_name: 'Iago Sequeiros',
+      author_image: Avatar,
+      description: [
+        'On March 23, the CESGA Multisectoral DATAspace Demonstrator Center organized a training session for companies and institutions to answer questions and facilitate their integration into the One Health Data Space as a first step before requesting the Data Spaces Kit.',
+
+        'The session brought together 33 participants, mostly companies and institutions interested in starting or advancing in the use of the One Health Data Space. During the session, a practical introduction to the necessary steps for integration was provided.',
+
+        {
+          type: 'h2',
+          content: '➡️ Training focused on practical application',
+        },
+
+        'Secure and interoperable data sharing is one of the fundamental pillars of data spaces, although many organizations—especially SMEs and institutions—still encounter technical and operational barriers to joining.',
+
+        'To address this need, DATAspace designed this session with a highly practical approach, explaining step by step how to integrate and actively participate in the One Health Data Space.',
+
+        {
+          type: 'h4',
+          content: 'Connector deployment',
+        },
+        'The session explained the process for deploying the connector necessary to start operating within the data space.',
+        {
+          type: 'link',
+          content: 'https://www.youtube.com/watch?v=z72j1-uQCVo',
+          href: 'https://www.youtube.com/watch?v=z72j1-uQCVo',
+          external: true,
+        },
+
+        {
+          type: 'h4',
+          content: 'Uploading and managing data assets',
+        },
+        'It also showed how to upload, organize, and manage data assets within the exchange ecosystem.',
+        {
+          type: 'link',
+          content: 'https://www.youtube.com/watch?v=yshUdWjAsw8',
+          href: 'https://www.youtube.com/watch?v=yshUdWjAsw8',
+          external: true,
+        },
+
+        {
+          type: 'h4',
+          content: 'Declaring evidences within the data space',
+        },
+        'Another aspect covered was declaring the evidence required to operate correctly within the shared environment.',
+        {
+          type: 'link',
+          content: 'https://www.youtube.com/watch?v=CRtcBkdf0Wg',
+          href: 'https://www.youtube.com/watch?v=CRtcBkdf0Wg',
+          external: true,
+        },
+
+        'All of this allowed participants to progressively understand how to engage in the One Health Data Space and apply this process in real contexts.',
+
+        {
+          type: 'h2',
+          content: '➡️ Next steps and available resources',
+        },
+
+        'CESGA One Health DATAspace will continue organizing new training sessions in the coming weeks to keep supporting companies and public and private organizations in their integration and development within the One Health Data Space.',
+
+        {
+          type: 'h2',
+          content: '➡️ About the DATAspace One Health project',
+        },
+
+        'Driven by the Galicia Supercomputing Center, a public entity linked to the Spanish National Research Council and the Xunta de Galicia, the project aims to enable a data space that allows secure cooperation and value generation in the biosanitary ecosystem under the One Health approach.',
+
+        'It is funded with resources from the Recovery, Transformation, and Resilience Plan (PRTR) through the Recovery and Resilience Mechanism (MRR) of the Ministry for Digital Transformation and Public Administration.',
+
+        {
+          type: 'h4',
+          content: 'A strategic environment for the biosanitary ecosystem',
+        },
+
+        'The biosanitary sector constitutes a strategic pillar of the data economy, generating heterogeneous and high-value information—clinical, pharmaceutical, veterinary, agri-food, or environmental—that often remains fragmented across different systems.',
+
+        {
+          type: 'h4',
+          content: 'A socio-technical pattern for data sharing',
+        },
+
+        'In this context, data spaces promoted by CESGA emerge as a socio-technical pattern enabling joint data exchange and usage through clear rules, roles, and responsibilities.',
+
+        'This model combines technological mechanisms like identity, access control, traceability, security, and interoperability with organizational components such as governance, policies, agreements, and onboarding processes.',
+
+        {
+          type: 'quote',
+          content:
+            'A One Health Data Space can accelerate cooperation and value generation when quality data, computing capabilities, and artificial intelligence converge.',
+        },
+
+        {
+          type: 'h2',
+          content: '➡️ More information',
+        },
+
+        {
+          type: 'link',
+          content: '• One Health Data Space participant guide.',
+          href: 'https://xdatashare.srv.cesga.es/assets/static/files/Guia-del-participante.pdf',
+          external: true,
+        },
+
+        {
+          type: 'link',
+          content: '• Data Spaces Kit application guide.',
+          href: 'https://dataspace.cesga.es/kit/guia_solicitud_KIT_CESGA.pdf',
+          external: true,
+        },
       ],
     },
   ],
