@@ -98,64 +98,88 @@ async function Header() {
 
       {/* <Subheading>{t('videos.title')}</Subheading> */}
 
-      {/* Videos */}
+      {/* Videos del taller del 23 de marzo */}
       <div className="mb-24">
         <h2 className="text-3xl tracking-tight text-gray-900">
           {t('videos.title')}
         </h2>
         <hr className="mt-6 mb-10 border-t border-gray-200" />
 
-        {/* Tutoriales */}
+        {/* Sección: Workshop 23 de marzo */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold text-gray-900 text-center mb-2">
+            {t('videos.workshop23marchTitle')}
+          </h3>
+          <hr className="w-16 border-t border-gray-300 mx-auto mb-8" />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.workshop23marchCaption1')}
+                url={t('videos.workshop23marchUrl1')}
+              />
+            </div>
+
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.workshop23marchCaption2')}
+                url={t('videos.workshop23marchUrl2')}
+              />
+            </div>
+
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.workshop23marchCaption3')}
+                url={t('videos.workshop23marchUrl3')}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Sección: Talleres */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold text-gray-900 text-center mb-2">
+            {t('videos.workshopsTitle')}
+          </h3>
+          <hr className="w-16 border-t border-gray-300 mx-auto mb-6" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center px-4 md:px-16">
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.workshop1Caption')}
+                url={t('videos.workshop1Url')}
+              />
+            </div>
+
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.workshop2Caption')}
+                url={t('videos.workshop2Url')}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Sección: Tutoriales */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-gray-900 text-center mb-2">
             {t('videos.tutorialsTitle')}
           </h3>
-          {/* Tutorial deploy connector */}
-          <hr className="w-16 border-t border-gray-300 mx-auto mb-6" />
-          <div className="grid grid-cols-1 sm:grid-cols-1 gap-8">
-            <div className="mx-auto aspect-video w-full max-w-3xl overflow-hidden rounded-2xl border border-gray-200 bg-white/80 shadow-sm">
-              <video controls className="w-full h-full object-cover">
-                <source src={t('videos.tutorial2Url')} type="video/mp4" />
-              </video>
+          <hr className="w-16 border-t border-gray-300 mx-auto mb-8" />
+
+          <div className="flex justify-center">
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.tutorial1Caption')}
+                url={t('videos.tutorial1Url')}
+              />
             </div>
-            <p className="text-center text-gray-600 text-sm -mt-6">
-              {t('videos.tutorial2Caption')}
-            </p>
-          </div>
-          {/* Tutorial upload assets */}
-          <hr className="w-16 border-t border-gray-300 mx-auto mb-6" />
-          <div className="grid grid-cols-1 sm:grid-cols-1 gap-8">
-            <div className="mx-auto aspect-video w-full max-w-3xl overflow-hidden rounded-2xl border border-gray-200 bg-white/80 shadow-sm">
-              <video controls className="w-full h-full object-cover">
-                <source src={t('videos.tutorial1Url')} type="video/mp4" />
-              </video>
-            </div>
-            <p className="text-center text-gray-600 text-sm -mt-6">
-              {t('videos.tutorial1Caption')}
-            </p>
           </div>
         </div>
 
-        {/* Talleres */}
-        <div>
-          <h3 className="text-2xl font-semibold text-gray-900 text-center mb-2">
-            {t('videos.workshopsTitle')}
-          </h3>
-          {/* Línea pequeña debajo del título */}
-          <hr className="w-16 border-t border-gray-300 mx-auto mb-6" />
-          <div className="grid grid-cols-1 sm:grid-cols-1 gap-8">
-            <VideoEmbed
-              title={t('videos.workshop1Caption')}
-              url={t('videos.workshop1Url')}
-            />
-            <VideoEmbed
-              title={t('videos.workshop2Caption')}
-              url={t('videos.workshop2Url')}
-            />
-          </div>
-        </div>
+
       </div>
-    </Container>
+    </Container >
   );
 }
 
