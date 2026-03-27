@@ -675,10 +675,10 @@ export const blogPosts: Record<Locale, Post[]> = {
 
         {
           type: 'h4',
-          content: 'Un patrón socio-técnico para compartir datos',
+          content: 'Un patrón sociotécnico para compartir datos',
         },
 
-        'En este contexto, los espacios de datos como el promovido por CESGA emergen como un patrón socio-técnico que habilita el intercambio y uso conjunto de datos mediante reglas, roles y responsabilidades claras.',
+        'En este contexto, los espacios de datos como el promovido por CESGA emergen como un patrón sociotécnico que habilita el intercambio y uso conjunto de datos mediante reglas, roles y responsabilidades claras.',
 
         'Este modelo combina mecanismos tecnológicos como identidad, control de acceso, trazabilidad, seguridad e interoperabilidad con componentes organizativos como gobernanza, políticas, acuerdos y procesos de adhesión.',
 
