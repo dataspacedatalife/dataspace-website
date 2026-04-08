@@ -1,5 +1,6 @@
+
+
 import clsx from 'clsx';
-import { color } from 'motion';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
@@ -23,60 +24,19 @@ export async function generateMetadata(): Promise<Metadata> {
     description: t('description'),
   };
 }
-const colors_blue = ['bg-gradient-to-br from-blue-100 via-sky-100 to-cyan-100'];
-const colors_green = [
-  'bg-gradient-to-br from-green-100 via-lime-100 to-emerald-100',
-];
+
+const colors_blue = 'bg-gradient-to-br from-sky-100 via-sky-100 to-cyan-300';
+const colors_green = 'bg-gradient-to-br from-sky-200 via-emerald-100 to-emerald-300';
 
 const useCasesData = [
-  {
-    id: 'farmaciavax',
-    imagen: LogoCesga,
-    link: 'https://dspacer-cesga.es/portal',
-    color: colors_green,
-  },
-  {
-    id: 'aidamed',
-    imagen: LogoIISGS,
-    link: 'https://www.iisgaliciasur.es/',
-    color: colors_blue,
-  },
-  {
-    id: 'brilliant',
-    imagen: LogoIISGS,
-    link: 'https://www.iisgaliciasur.es/',
-    color: colors_blue,
-  },
-  {
-    id: 'gift',
-    imagen: LogoIISGS,
-    link: 'https://www.iisgaliciasur.es/',
-    color: colors_blue,
-  },
-  {
-    id: 'biomexplore',
-    imagen: LogoIISGS,
-    link: 'https://www.iisgaliciasur.es/',
-    color: colors_blue,
-  },
-  {
-    id: 'salusbench',
-    imagen: LogoInverbis,
-    link: 'https://web.inverbisanalytics.com/',
-    color: colors_blue,
-  },
-  {
-    id: 'celiaspace',
-    imagen: LogoUvigo,
-    link: 'https://www.uvigo.gal/',
-    color: colors_blue,
-  },
-  {
-    id: 'datiacare',
-    imagen: Logoi4life,
-    link: 'https://i4life.es/',
-    color: colors_blue,
-  },
+  { id: 'farmaciavax', imagen: LogoCesga, link: 'https://dspacer-cesga.es/portal', color: colors_green },
+  { id: 'aidamed', imagen: LogoIISGS, link: 'https://www.iisgaliciasur.es/', color: colors_blue },
+  { id: 'brilliant', imagen: LogoIISGS, link: 'https://www.iisgaliciasur.es/', color: colors_blue },
+  { id: 'gift', imagen: LogoIISGS, link: 'https://www.iisgaliciasur.es/', color: colors_blue },
+  { id: 'biomexplore', imagen: LogoIISGS, link: 'https://www.iisgaliciasur.es/', color: colors_blue },
+  { id: 'salusbench', imagen: LogoInverbis, link: 'https://web.inverbisanalytics.com/', color: colors_blue },
+  { id: 'celiaspace', imagen: LogoUvigo, link: 'https://www.uvigo.gal/', color: colors_blue },
+  { id: 'datiacare', imagen: Logoi4life, link: 'https://i4life.es/', color: colors_blue },
 ] as const;
 
 async function Header() {
@@ -84,12 +44,7 @@ async function Header() {
   return (
     <Container className="mt-16 flex flex-col items-center">
       <div className="flex items-center mb-6">
-        <Heading
-          as="h1"
-          className="text-4xl font-extrabold text-gray-900 mx-auto"
-        >
-          {t('title')}
-        </Heading>
+        <Heading as="h1" className="text-4xl font-extrabold mx-auto">{t('title')}</Heading>
       </div>
       <Lead className="mt-6 text-center">{t('lead')}</Lead>
     </Container>
@@ -112,30 +67,19 @@ async function UseCaseGrid() {
           const imagenSrc = caso.imagen ?? LogoEmpresa;
 
           return (
-            <Link
-              key={i}
-              href={caso.link}
-              target="_blank"
-              className="w-full sm:w-1/2 lg:w-1/3 max-w-[400px]"
-            >
+            <Link key={i} href={caso.link} target="_blank" className="w-full sm:w-1/2 lg:w-1/3 max-w-[400px]">
               <div
                 className={clsx(
                   'flex flex-row items-center justify-between rounded-2xl border border-gray-200 p-6 shadow-sm transition hover:shadow-md hover:scale-[1.02] duration-200',
-                  caso.color[i % caso.color.length],
+                  caso.color 
                 )}
               >
                 <div className="flex flex-col text-left pr-4">
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    {caso.nombre}
-                  </h3>
+                  <h3 className="text-2xl font-bold text-gray-900">{caso.nombre}</h3>
                   <p className="text-gray-700 mt-1">{caso.objetivo}</p>
                 </div>
                 <div className="flex-shrink-0 w-20 h-20 bg-white/70 p-2 rounded-lg flex items-center justify-center">
-                  <Image
-                    src={imagenSrc}
-                    alt={`Logo of ${caso.entidad}`}
-                    className="object-contain w-full h-full opacity-80"
-                  />
+                  <Image src={imagenSrc} alt={`Logo of ${caso.entidad}`} className="object-contain w-full h-full opacity-80" />
                 </div>
               </div>
             </Link>
@@ -146,13 +90,16 @@ async function UseCaseGrid() {
   );
 }
 
+
 export default function UseCases() {
   return (
-    <main className="overflow-hidden bg-gray-50 min-h-screen">
+    <main className="overflow-hidden min-h-screen relative">
       <GradientBackground />
+      
       <Container>
         <Navbar />
       </Container>
+
       <Header />
       <UseCaseGrid />
       <Footer />

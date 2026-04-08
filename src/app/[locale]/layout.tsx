@@ -44,7 +44,7 @@ export default async function RootLayout({ params, children }: LayoutProps) {
       </head>
 
       {/* Fondo verde muy claro aplicado globalmente */}
-      <body className="bg-[#C2FAE2] text-gray-950 antialiased">
+      <body className="bg-[#f5fcfe] text-gray-950 antialiased">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
