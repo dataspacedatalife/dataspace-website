@@ -67,12 +67,11 @@ async function Header() {
 
   return (
     <Container className="mt-16">
-      <Heading as="h1" className="text-center">
+      <Heading as="h1" className="text-center font-heading text-[#199AB6]">
         {tHeader('title')}
       </Heading>
       <Lead className="mt-10 text-center">{tHeader('lead')}</Lead>
 
-      {/* Imagen + texto lado a lado */}
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12 items-start">
         <div className="mt-10 lg:mt-0">
           <h2 className="text-3xl font-medium tracking-tight">
@@ -89,7 +88,7 @@ async function Header() {
         </div>
       </section>
 
-      {/* Sección con iconos grandes y coloridos */}
+
       <section className="mt-20 mb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {features.map((feature) => (
           <div

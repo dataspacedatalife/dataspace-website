@@ -7,8 +7,8 @@ import { routing } from '@/i18n/routing';
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - DATAlife | CESGA',
-    default: 'DATAlife | CESGA',
+    template: '%s - OneHealth DataSpace',
+    default: 'OneHealth DataSpace',
   },
 };
 
@@ -32,12 +32,19 @@ export default async function RootLayout({ params, children }: LayoutProps) {
   return (
     <html lang="en">
       <head>
+        {/* Fuentes */}
         <link
           rel="stylesheet"
-          href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap"
         />
       </head>
-      <body className="text-gray-950 antialiased">
+
+      {/* Fondo verde muy claro aplicado globalmente */}
+      <body className="bg-[#C2FAE2] text-gray-950 antialiased">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

@@ -8,7 +8,7 @@ import LVazquezImg from '../../../../public/team/lvazquez.jpg';
 import MCarmenaImg from '../../../../public/team/mcarmena.jpg';
 import MCastineiraImg from '../../../../public/team/mcastineira.jpg';
 import PFerreiroImg from '../../../../public/team/pferreiro.jpg';
-import Logo from '../../../../public/logos/reduced_logo.png';
+import Logo from '../../../../public/logos/onehealth_simbolo_blog.png';
 
 interface TextNodeBase {
   type: string;

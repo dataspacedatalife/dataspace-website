@@ -3,7 +3,7 @@
 import { clsx } from 'clsx';
 import { motion } from 'motion/react';
 import Image from 'next/image';
-import LogoImage from '../../public/logos/reduced_logo.png';
+import LogoImage from '../../public/logos/onehealth_imagotipo.png';
 
 export function Logo({ className }: { className?: string }) {
   let transition = {

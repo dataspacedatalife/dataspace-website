@@ -11,11 +11,12 @@ import { Heading, Lead, Subheading } from '@/components/text';
 import EntornoDemostrador from '../../../../public/demostrador/demostrador_entorno.png';
 import EntornoDemostradorIngles from '../../../../public/demostrador/demostrador_entorno_ingles.png';
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations('about');
 
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('about.metadata');
   return {
-    title: t('header.title'),
+    title: t('title'),
+    description: t('description'),
   };
 }
 

@@ -9,13 +9,25 @@ import { Navbar } from '@/components/navbar';
 import { useDateFormatter } from '@/hooks/formatters';
 import { blogPosts } from '../posts';
 
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+
 interface BlogPostPageProps {
   params: Promise<{ locale: Locale; postKey: string }>;
 }
 
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('blog.metadata');
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
+
 export default function BlogPostPage({ params }: BlogPostPageProps) {
   const { locale, postKey } = React.use(params);
-  const post = blogPosts[locale].find((p) => p.key === postKey);
+  const post = blogPosts[locale]?.find((p) => p.key === postKey);
 
   const formatDate = useDateFormatter();
 
@@ -32,9 +44,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             <Image
               src={post.author_image}
               alt={post.author_name}
-              width={32}
-              height={32}
-              className="rounded-full"
+              width={48}
+              height={48}
+              className="rounded-full w-12 h-12 object-cove"
             />
             <span>{post.author_name}</span> ·{' '}
             <span>{formatDate(post.date)}</span>

@@ -13,7 +13,8 @@ import MVDEnglishImage from '../../../../public/EdD_mvd/EdD_MVD_en.png';
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('technologies.xdatashare');
   return {
-    title: t('header.title'),
+    title: t('metadata.title'),
+    description: t('metadata.description'),
   };
 }
 

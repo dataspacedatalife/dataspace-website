@@ -1,8 +1,8 @@
 {
   "home": {
     "hero": {
-      "title": "Centro demostrador de espacio de datos multisectorial One Health",
-      "subtitle": "Porque solo compartiendo datos se puede extraer su verdadero valor",
+      "title": "Espacio de datos multisectorial One Health",
+      "subtitle": "Más que datos",
       "learnMore": "Saber más",
       "testDemo": "Acceder"
     }
@@ -30,10 +30,14 @@
     "galego": "Galego"
   },
   "about": {
+    "metadata": {
+      "title": "Demostrador",
+      "description": "Explicación de que es el demostrador"
+    },
     "header": {
-      "title": "¿Qué es el demostrador DATAlife?",
+      "title": "¿Qué es el demostrador?",
       "lead": "Se trata de una plataforma que permite compartir y acceder a datos del sector salud de forma segura, ética, gobernada e interoperable, respetando la soberanía del dato",
-      "imageAlt": "Entorno del demostrador DATAlife"
+      "imageAlt": "Entorno del demostrador"
     },
     "objective": {
       "title": "Objetivo del demostrador",
@@ -62,6 +66,10 @@
   },
   "technologies": {
     "xdatashare": {
+      "metadata": {
+      "title": "MVD",
+      "description": "Explicación de que es el MVD"
+    },
       "header": {
         "title": "Espacio de Datos (versión MVD)",
         "lead": "Este MVD es la primera versión operativa del Espacio de Datos que reúne las capacidades esenciales para poner en marcha un espacio de datos federado de forma segura y escalable.",
@@ -107,7 +115,7 @@
   },
   "how": {
     "metadata": {
-      "title": "Participa",
+      "title": "Únete",
       "description": "Cómo unirse al espacio de datos: quién puede participar, pasos de adhesión, compromisos y beneficios"
     },
     "header": {
@@ -350,8 +358,8 @@
   },
   "what": {
     "metadata": {
-      "title": "¿Qué es un espacio de datos?",
-      "description": "Estamos construyendo un ecosistema donde los datos puedan ser compartidos de forma segura, gobernada y ética entre múltiples organizaciones"
+      "title": "Espacio de datos",
+      "description": "Explicación de que es un espacio de datos"
     },
     "header": {
       "title": "¿Qué es un espacio de datos?",
@@ -1365,6 +1373,10 @@
     }
   },
   "blog": {
+    "metadata": {
+      "title": "Blog",
+      "description": "Mantente informado sobre todas las noticias"
+    },
     "title": "Novedades del centro demostrador",
     "subtitle": "Noticias",
     "lead": "Mantente al tanto de los últimos avances y descubre cómo estamos impulsando la compartición de datos segura, interoperable y multisectorial",
@@ -1516,10 +1528,14 @@
     "social_facebook": "Visítanos en Facebook",
     "social_x": "Visítanos en X",
     "social_linkedin": "Visítanos en LinkedIn",
-    "copyright": "DATAlife | CESGA",
+    "copyright": "OneHealth Dataspace",
     "funding_note": "Proyecto financiado por el Ministerio de Transformación Digital y Función Pública a través del proyecto «TSI-100120-2024-12» con cargo a los fondos europeos del Plan de Recuperación, Transformación y Resiliencia y «Financiado por la Unión Europea – NextGenerationEU»"
   },
   "faq": {
+    "metadata":{
+      "title":"FAQ",
+      "description": "Preguntas más frecuentes por los usuarios"
+    },
   "title": "Preguntas frecuentes",
   "description": "A continuación, mostramos las preguntas más frecuentes realizadas por los usuarios que pueden consultarse de manera más detallada en el siguiente enlace: ",
   "link": "Manual de usuario",

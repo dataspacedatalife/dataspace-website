@@ -1,8 +1,8 @@
 {
   "home": {
     "hero": {
-      "title": "One Health Multisectoral Data Space Demonstrator Center",
-      "subtitle": "Only by sharing data can we unlock its true power",
+      "title": "One Health Data Space Demonstrator Center",
+      "subtitle": "More than data",
       "learnMore": "Learn more",
       "testDemo": "Access"
     }
@@ -30,6 +30,10 @@
     "galego": "Galego"
   },
   "about": {
+    "metadata": {
+      "title": "Demostrador",
+      "description": "Explicación de que es el demostrador"
+    },
     "header": {
       "title": "What is the DATAlife Demonstrator?",
       "lead": "It is a platform that allows sharing and accessing health data in a secure, ethical, governed and interoperable manner, respecting data sovereignty",
@@ -62,6 +66,10 @@
   },
   "technologies": {
     "xdatashare": {
+      "metadata": {
+        "title": "MVD",
+        "description": "Explanation of what the MVD is"
+      },
       "header": {
         "title": "Data Space (MVD version)",
         "lead": "The MVD brings together the essential capabilities to launch a federated data space in a secure and scalable way.",
@@ -107,7 +115,7 @@
   },
   "how": {
     "metadata": {
-      "title": "Participate",
+      "title": "Join",
       "description": "How to join the data space: who can participate, steps to join, commitments and benefits"
     },
     "header": {
@@ -331,8 +339,8 @@
   },
   "what": {
     "metadata": {
-      "title": "What is a Data Space?",
-      "description": "We are building an ecosystem where data can be shared securely, governed and ethically among multiple organizations"
+      "title": "Data Space",
+      "description": "Explanation of what a data space is"
     },
     "header": {
       "title": "What is a data space?",
@@ -1346,6 +1354,10 @@
     }
   },
   "blog": {
+    "metadata": {
+      "title": "Blog",
+      "description": "Stay informed about all the news"
+    },
     "title": "What’s happening at our Data Space Demonstrator Center",
     "subtitle": "News",
     "lead": "Stay updated with the latest developments and learn how we are enabling secure, interoperable and multi-sectoral data sharing",
@@ -1498,10 +1510,14 @@
     "social_facebook": "Visit us on Facebook",
     "social_x": "Visit us on X",
     "social_linkedin": "Visit us on LinkedIn",
-    "copyright": "DATAlife | CESGA",
+    "copyright": "OneHealth DataSpace",
     "funding_note": "Project funded by the Ministry of Digital Transformation and Public Administration through the project \"TSI-100120-2024-12\", using European funds from the Recovery, Transformation, and Resilience Plan, and \"Funded by the European Union – NextGenerationEU\""
   },
   "faq": {
+    "metadata":{
+      "title":"FAQ",
+      "description": "Preguntas más frecuentes por los usuarios"
+    },
     "title": "Frequently Asked Questions",
     "description": "Below we show the most frequently asked questions by users, which can be consulted in more detail at the following link: ",
     "link": "User Manual",
