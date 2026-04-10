@@ -37,7 +37,7 @@ async function Header() {
           <div className="overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 max-w-lg">
             <img
               alt={t('imageAlt')}
-              src="/cesga/FTIII.png"
+              src="/cesga/FTIII_azul.jpg"
               className="block w-full h-auto object-cover"
             />
           </div>
@@ -58,7 +58,11 @@ function Person({
 }) {
   return (
     <li className="flex items-center gap-3">
-      <img alt="" src={img} className="size-35 rounded-full" />
+      <img
+        alt=""
+        src={img}
+        className="size-35 rounded-full border-4 border-[#009AB8]"
+      />
       <div className="text-sm/6">
         <h3 className="font-medium">{name}</h3>
         <p className="text-gray-500">{description}</p>
