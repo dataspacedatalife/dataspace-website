@@ -34,10 +34,15 @@
       "title": "Demostrador",
       "description": "Explicación de que es el demostrador"
     },
+    "graphic":{
+      "human": "Human health",
+      "animal": "Animal health",
+      "environmental": "Environmental health"
+    },
     "header": {
-      "title": "What is the DATAlife Demonstrator?",
+      "title": "What is the Demonstrator?",
       "lead": "It is a platform that allows sharing and accessing health data in a secure, ethical, governed and interoperable manner, respecting data sovereignty",
-      "imageAlt": "DATAlife Demonstrator Environment"
+      "imageAlt": "Demonstrator Environment"
     },
     "objective": {
       "title": "Demonstrator Objective",
@@ -119,7 +124,7 @@
       "description": "How to join the data space: who can participate, steps to join, commitments and benefits"
     },
     "header": {
-      "title": "Participate in the DATAlife data space",
+      "title": "Participate in the data space",
       "lead": "Share, consume or develop data-based services in a trusted environment that guarantees sovereignty, privacy and interoperability",
       "guideButton": {
         "label": "Check our guide for participants",

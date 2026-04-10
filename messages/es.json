@@ -34,6 +34,11 @@
       "title": "Demostrador",
       "description": "Explicación de que es el demostrador"
     },
+    "graphic":{
+      "human": "Salud humana",
+      "animal": "Salud animal",
+      "environmental": "Salud ambiental"
+    },
     "header": {
       "title": "¿Qué es el demostrador?",
       "lead": "Se trata de una plataforma que permite compartir y acceder a datos del sector salud de forma segura, ética, gobernada e interoperable, respetando la soberanía del dato",
@@ -119,7 +124,7 @@
       "description": "Cómo unirse al espacio de datos: quién puede participar, pasos de adhesión, compromisos y beneficios"
     },
     "header": {
-      "title": "Participa en el espacio de datos DATAlife",
+      "title": "Participa en el espacio de datos",
       "lead": "Comparte, consume o desarrolla servicios basados en datos en un entorno confiable que garantiza soberanía, privacidad e interoperabilidad",
       "guideButton": {
         "label": "Consulta nuestra guía del participante",
