@@ -12,6 +12,7 @@ import { Logo } from './logo';
 const languageOptions = [
   { code: 'es', key: 'espanol' },
   { code: 'en', key: 'english' },
+  { code: 'gl', key: 'galego' },
 ] as const satisfies { code: Locale; key: string }[];
 
 const navItemClass =

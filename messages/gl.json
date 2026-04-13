@@ -1,0 +1,1598 @@
+{
+  "home": {
+    "hero": {
+      "title": "Espazo de datos multisectorial One Health",
+      "subtitle": "Máis que datos",
+      "learnMore": "Saber máis",
+      "testDemo": "Acceder"
+    }
+  },
+  "Navbar": {
+    "home": "Inicio",
+    "centro_demostrador": "Proxecto",
+    "saber_mas": "Saber máis",
+    "que_es_un_espacio": "Que é un espazo de datos?",
+    "participa": "Únete",
+    "adhesion": "Adherirse",
+    "kit": "Kit Espazos de Datos",
+    "tecnologias": "Tecnoloxías",
+    "xdatashare": "Espazo de Datos (MVD)",
+    "dspacer": "Piloto FarmaciaVAX",
+    "preguntas_frecuentes": "Preguntas frecuentes",
+    "casos_de_uso": "Casos de Uso",
+    "catalogo": "Catálogo",
+    "el_equipo": "O Equipo",
+    "eventos": "Eventos",
+    "blog": "Novas",
+    "idioma": "Idioma",
+    "espanol": "Español",
+    "english": "English",
+    "galego": "Galego"
+  },
+  "about": {
+    "metadata": {
+      "title": "Demostrador",
+      "description": "Explicación do que é o demostrador"
+    },
+    "graphic": {
+      "human": "Saúde humana",
+      "animal": "Saúde animal",
+      "environmental": "Saúde ambiental"
+    },
+    "header": {
+      "title": "Que é o demostrador?",
+      "lead": "Trátase dunha plataforma que permite compartir e acceder a datos do sector saúde de forma segura, ética, gobernada e interoperable, respectando a soberanía do dato",
+      "imageAlt": "Contorno do demostrador"
+    },
+    "objective": {
+      "title": "Obxectivo do demostrador",
+      "text1": "O centro demostrador ten como obxectivo ilustrar como múltiples organizacións relacionadas co ámbito OneHealth poden intercambiar datos de forma segura e controlada.",
+      "text2": "O sistema garante o cumprimento normativo, a soberanía do dato e a interoperabilidade entre diferentes actores, desde hospitais e centros de investigación ata empresas privadas."
+    },
+    "motivation": {
+      "title": "Motivación",
+      "text": "Os retos na saúde humana, animal e ambiental están interconectados e requiren unha visión conxunta baseada en datos que permitan afrontalos. Este demostrador ofrece unha plataforma para integrar e analizar información multisectorial, facilitando decisións informadas e políticas públicas baseadas en evidencia."
+    },
+    "impact": {
+      "title": "Impacto do proxecto",
+      "useCases": "Casos de uso",
+      "sectors": "Sectores implicados",
+      "organizations": "Organizacións participantes"
+    },
+    "funding": {
+      "title": "Información sobre financiamento",
+      "call": "Convocatoria do Ministerio para a Transformación Dixital e da Función Pública: Demostradores e casos de uso de espazos de datos.",
+      "grant": "Convocatoria de axudas: “Espazos de datos sectoriais 2023 para a creación de demostradores e casos de uso de espazos de compartición de datos.”",
+      "program": "O programa “Espazos de datos sectoriais” forma parte do investimento 1 do compoñente 12 do Plan de Recuperación, Transformación e Resiliencia, financiado a través do Mecanismo de Recuperación e Resiliencia (MRR).",
+      "details": "Número de expediente: TSI-100120-2024-12\nPeríodo: 13-12-2024 – 30-06-2026\nFinanciado por: Ministerio para a Transformación Dixital e da Función Pública\nImporte total: 3.077.058 €",
+      "linkText": "Ver seguimento da execución",
+      "linkUrl": "https://www.cesga.es/ejecucion-fondos-nextgenerationeu-mrr-prtr/#tabla7"
+    }
+  },
+  "technologies": {
+    "xdatashare": {
+      "metadata": {
+        "title": "MVD",
+        "description": "Explicación do que é o MVD"
+      },
+      "header": {
+        "title": "Espazo de datos (versión MVD)",
+        "lead": "Este MVD é a primeira versión operativa do espazo de datos que reúne as capacidades esenciais para poñer en marcha un espazo de datos federado de forma segura e escalable.",
+        "imageAlt": "Diagrama do MVD"
+      },
+      "whatIs": {
+        "title": "Que é o MVD?",
+        "text1": "O MVD é a primeira versión operativa do espazo de datos que reúne o conxunto mínimo de capacidades necesarias para poñer en marcha a federación: identidade e acceso, descubrimento de datos, gobernanza básica, trazabilidade e conectividade.",
+        "text2": "Serve para aprender rápido, medir impacto e axustar o deseño antes do escalado."
+      },
+      "features": {
+        "title": "Que inclúe esta fase?",
+        "iam": "Xestión de identidade e acceso federado (IAM): autenticación e autorización por políticas e roles.",
+        "governance": "Acordos e gobernanza: modelos de Data Sharing Agreement e políticas de uso.",
+        "connectors": "Conectores EDC para integración e contorno sandbox.",
+        "observability": "Observabilidade: rexistro de accesos, auditoría e trazabilidade dos consentimentos.",
+        "support": "Soporte a casos de uso piloto, segundo demanda."
+      },
+      "videos": {
+        "title": "Explora o MVD en acción",
+        "workshop23marchTitle": "Obradoiro práctico do 23 de marzo",
+        "workshop23marchUrl1": "https://www.youtube.com/embed/z72j1-uQCVo?si=3lLfks_4DLuDf46g&amp;start=2",
+        "workshop23marchCaption1": "PARTE 1: Formación para realizar a configuración necesaria para o lanzamento do conector.",
+        "workshop23marchUrl2": "https://www.youtube.com/embed/yshUdWjAsw8?si=G9SbUUgK6TOh4Y8h",
+        "workshop23marchCaption2": "PARTE 2: Formación para realizar a configuración necesaria para o lanzamento do conector.",
+        "workshop23marchUrl3": "https://www.youtube.com/embed/CRtcBkdf0Wg?si=H0ojdgeV_Li_iV48",
+        "workshop23marchCaption3": "PARTE 3: Capturas para a declaración de evidencias.",
+        "workshopsTitle": "Obradoiros",
+        "tutorialsTitle": "Titoriais",
+        "workshop1Caption": "Obradoiro práctico sobre o funcionamento dun espazo de datos no caso de uso FarmaciaVAX co MVD do espazo de datos.",
+        "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
+        "workshop2Caption": "Obradoiro de espazo de datos sobre conectores EDC.",
+        "workshop2Url": "https://www.youtube.com/embed/WGBCGCz8vHc?si=vZ15mIvRVN_N9C5L",
+        "tutorial1Caption": "Titorial paso a paso sobre a subida e visualización de assets utilizando o MVD do espazo de datos.",
+        "tutorial1Url": "/EdD_mvd/Screencast_Completo_12N.mp4",
+        "tutorial2Caption": "Titorial de despregamento do conector do espazo de datos.",
+        "tutorial2Url": "/EdD_mvd/ScreenCast_Connector_v5.mp4"
+      },
+      "access": {
+        "button": "Acceder"
+      }
+    }
+},
+ "how": {
+  "metadata": {
+    "title": "Únete",
+    "description": "Como unirse ao espazo de datos: quen pode participar, pasos de adhesión, compromisos e beneficios"
+  },
+  "header": {
+    "title": "Participa no espazo de datos",
+    "lead": "Comparte, consume ou desenvolve servizos baseados en datos nun contorno confiable que garante soberanía, privacidade e interoperabilidade",
+    "guideButton": {
+      "label": "Consulta a nosa guía do participante",
+      "href": "/adhesion/Guía del participante - adhesión EdD DATAlife CESGA.pdf"
+    }
+  },
+  "overview": {
+    "title": "O noso enfoque"
+  },
+  "who": {
+    "title": "Quen pode participar?",
+    "items": [
+      "Hospitais, centros de investigación e universidades",
+      "Administracións e entidades públicas",
+      "Empresas, startups e centros tecnolóxicos",
+      "Colaboracións nacionais e europeas"
+    ]
+  },
+  "roles": {
+    "title": "Tipos de participación",
+    "items": [
+      "Provedores de datos que achegan datos ao ecosistema.",
+      "Provedores de servizos que ofrecen ferramentas ou capacidades.",
+      "Consumidores de datos que usan datos segundo as condicións do provedor.",
+      "Consumidores de servizos que utilizan servizos segundo as condicións do provedor."
+    ]
+  },
+  "benefits": {
+    "title": "Beneficios",
+    "items": [
+      "Integración con actores e espazos de datos europeos",
+      "Dispoñibilidade de servizos comúns: catálogos, anonimización, análise",
+      "Oportunidade de establecer novas colaboracións e alianzas"
+    ]
+  },
+  "commitments": {
+    "title": "Compromisos",
+    "items": [
+      "Cumprir o marco de gobernanza e as regras de acceso e uso",
+      "Garantir a calidade e trazabilidade dos datos",
+      "Respectar a normativa de privacidade, seguridade e ética",
+      "Informar de incidencias ou disputas polos canles habilitados"
+    ]
+  },
+  "howToJoin": {
+    "title": "Inicia o proceso de adhesión",
+    "subtitle": "Estou interesado en adherirme",
+    "description": "Se xa estás informado e desexas facernos saber o teu interese en participar no Espazo de Datos, completa o seguinte formulario. Se tes dúbidas, contacta con dmd@cesga.es",
+    "formButton": "Cubre o formulario de mostra de interese se estás interesado en adherirte",
+    "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
+  },
+  "process": {
+    "title": "Proceso de adhesión",
+    "step": "Paso",
+    "phases": [
+      {
+        "title": "Fase de solicitude e adhesión",
+        "items": [
+          {
+            "title": "Infórmate",
+            "description": "Descarga a <a>Guía do Participante</a> para coñecer en detalle como funciona o Espazo de Datos, os requisitos técnicos e legais, e todos os beneficios de unirte. Estamos aquí para acompañarte e apoiarte en cada paso do proceso."
+          },
+          {
+            "title": "Solicita a túa adhesión",
+            "description": "Enche o <aForm>formulario de mostra de interese</aForm> e o noso equipo revisará a túa solicitude e contactará contigo para os seguintes pasos."
+          }
+        ]
+      },
+      {
+        "title": "Fase de integración no espazo de datos",
+        "items": [
+          {
+            "title": "Integración técnica",
+            "description": "Conecta os teus sistemas e prepara os teus datos para cumprir coas políticas de interoperabilidade, calidade e seguridade do Espazo de Datos. Estamos ao teu lado para axudarche durante todo o proceso."
+          },
+          {
+            "title": "Participa e medra dentro do ecosistema",
+            "description": "Unha vez formes parte, poderás intercambiar datos, sumarte a casos de uso e colaborar con outros participantes. Seguiremos acompañándote en cada etapa."
+          }
+        ]
+      }
+    ]
+  },
+  "process2": {
+    "title": "Proceso de adhesión",
+    "step": "Paso",
+    "items": [
+      {
+        "title": "Infórmate",
+        "description": "Descarga a Guía do Participante para coñecer o funcionamento do Espazo de Datos, os requisitos técnicos e legais, e os beneficios de unirte."
+      },
+      {
+        "title": "Solicita a túa adhesión",
+        "description": "Enche o formulario de mostra de interese, e o noso equipo revisará a túa solicitude no correspondente ciclo de avaliación e contactará contigo para os seguintes pasos."
+      },
+      {
+        "title": "Rexístrate no EdD",
+        "description": "Blabla."
+      },
+      {
+        "title": "Integración técnica",
+        "description": "Conecta os teus sistemas e prepara os teus datos para que cumpran coas políticas de interoperabilidade, calidade e seguridade do Centro demostrador de espazo de datos multisectorial One Health."
+      },
+      {
+        "title": "Participa e medra",
+        "description": "Unha vez dentro, poderás intercambiar datos, participar en casos de uso e colaborar con outros membros do ecosistema."
+      }
+    ]
+  },
+  "reviewCycle": {
+    "title": "Ciclo de revisións",
+    "description": "As solicitudes avalíanse cada dúas semanas na reunión de revisión. Só se teñen en conta aquelas recibidas ata o día anterior á reunión inclusive.",
+    "footer": "*Os días en verde corresponden ás reunións de revisión.",
+    "weekdays": ["Lun", "Mar", "Mér", "Xov", "Ven", "Sáb", "Dom"],
+    "months": [
+      "xaneiro",
+      "febreiro",
+      "marzo",
+      "abril",
+      "maio",
+      "xuño",
+      "xullo",
+      "agosto",
+      "setembro",
+      "outubro",
+      "novembro",
+      "decembro"
+    ]
+  }
+},"team": {
+  "metadata": {
+    "title": "Equipo",
+    "description": "Impulsando a innovación desde o CESGA. A nosa misión é acelerar a transformación dixital dos sectores da biotecnoloxía, agroalimentario, forestal-mar-industrial e saúde"
+  },
+  "header": {
+    "title": "Impulsando a innovación desde o CESGA",
+    "mission": "A nosa misión",
+    "missionText1": "No CESGA, a nosa misión é acelerar a transformación dixital dos sectores da biotecnoloxía, agroalimentario, forestal-mar-industrial e saúde. A través do demostrador multisectorial, proporcionamos solucións baseadas en intelixencia artificial, big data e computación de altas prestacións.",
+    "missionText2": "Este proxecto busca explotar, mediante casos reais, tecnoloxías emerxentes que poidan mellorar a competitividade das empresas galegas, apostando por unha Galicia conectada, sostible e líder en innovación.",
+    "imageAlt": "Supercomputador Finisterrae"
+  },
+  "team": {
+    "title": "O equipo",
+    "members": {
+      "jcacheiro": {
+        "name": "Javier Cacheiro",
+        "description": "Coordinador do proxecto",
+        "img": "jcacheiro.png"
+      },
+      "aambroa": {
+        "name": "Antón Ambroa",
+        "description": "Coordinador técnico do proxecto",
+        "img": "aambroa.jpg"
+      },
+      "pferreiro": {
+        "name": "Pedro Ferreiro",
+        "description": "Técnico de proxecto",
+        "img": "pferreiro.jpg"
+      },
+      "mcastineira": {
+        "name": "Marta Castiñeira",
+        "description": "Técnica investigadora en simulación computacional",
+        "img": "mcastineira.jpg"
+      },
+      "ldiaz": {
+        "name": "Ledicia Díaz",
+        "description": "Técnica investigadora en Machine Learning e Data Science",
+        "img": "ldiaz.jpg"
+      },
+      "lvazquez": {
+        "name": "Lara Vázquez",
+        "description": "Técnica investigadora en intelixencia artificial",
+        "img": "lvazquez.jpg"
+      },
+      "mcarmena": {
+        "name": "Miguel Carmena",
+        "description": "Técnico investigador en química computacional",
+        "img": "mcarmena.jpg"
+      }
+    }
+  }
+},
+"use-cases": {
+  "metadata": {
+    "title": "Casos de uso",
+    "description": "Exemplos reais de aplicación de espazos de datos en distintos sectores: saúde, xestión, benchmarking e máis"
+  },
+  "header": {
+    "title": "Casos de uso",
+    "lead": "Estes son algúns dos casos de uso que aproveitan os espazos de datos para xerar valor científico, social e operativo"
+  },
+  "cases": {
+    "farmaciavax": {
+      "name": "[DEMO] FarmaciaVAX",
+      "entity": "CESGA",
+      "objective": "Xestión de vacinas en farmacias"
+    },
+    "aidamed": {
+      "name": "AiDataMed",
+      "entity": "Chup/IISGS",
+      "objective": "Análise de datos sanitarios"
+    },
+    "brilliant": {
+      "name": "Brilliant",
+      "entity": "IISGS",
+      "objective": "Observatorio de sarcopenia"
+    },
+    "gift": {
+      "name": "GIFT",
+      "entity": "Chup/IISGS",
+      "objective": "Saúde gastrointestinal"
+    },
+    "biomexplore": {
+      "name": "BiomeXplore",
+      "entity": "IISGS",
+      "objective": "Observatorio do índice poboacional de microbiota intestinal"
+    },
+    "salusbench": {
+      "name": "SALUSBENCH",
+      "entity": "Inverbis",
+      "objective": "Benchmarking de procesos de xestión hospitalaria"
+    },
+    "celiaspace": {
+      "name": "CeliaSpace",
+      "entity": "Uvigo",
+      "objective": "Datos de asistentes conversacionais con persoas maiores"
+    },
+    "datiacare": {
+      "name": "Datiacare",
+      "entity": "i4life",
+      "objective": "Coidado de persoas maiores"
+    }
+  }
+},
+  "what": {
+    "metadata": {
+      "title": "Espazo de datos",
+      "description": "Explicación de que é un espazo de datos"
+    },
+    "header": {
+      "title": "Que é un espazo de datos?",
+      "lead": "Un espazo de datos é un marco estruturado que permite o intercambio, acceso, xestión e uso de datos entre múltiples entidades de maneira segura, interoperable e conforme á normativa"
+    },
+    "objective": {
+      "title": "Obxectivo",
+      "text": "O obxectivo é facilitar a colaboración baseada en datos, respectando principios como a soberanía dos datos, a privacidade e a ética. Os espazos de datos combinan tecnoloxías como infraestruturas de intercambio, estándares comúns e control de acceso, xunto con acordos legais e organizativos, para permitir un uso compartido e responsable."
+    },
+    "motivation": {
+      "title": "Motivación",
+      "text": "Os grandes retos sociais, económicos e ambientais adoitan estar interconectados e requiren unha visión conxunta baseada en datos que permita afrontalos. Os espazos de datos proporcionan un marco para integrar e analizar información de distintos sectores, o que facilita a colaboración entre actores, a toma de decisións informadas e o desenvolvemento de políticas e servizos baseados en evidencias."
+    },
+    "features": {
+      "security": {
+        "title": "Seguridade",
+        "description": "Protección integral dos datos mediante cifrado e autenticación."
+      },
+      "interoperability": {
+        "title": "Interoperabilidade",
+        "description": "Integración entre plataformas e sistemas mediante estándares abertos."
+      },
+      "privacy": {
+        "title": "Privacidade",
+        "description": "Acceso a datos baseado no consentimento e en políticas transparentes."
+      },
+      "governance": {
+        "title": "Gobernanza",
+        "description": "Normas claras sobre como se accede, usa e comparte a información."
+      },
+      "collaboration": {
+        "title": "Colaboración",
+        "description": "Cooperación entre sectores públicos, privados e cidadáns."
+      },
+      "sovereignty": {
+        "title": "Soberanía dos datos",
+        "description": "Cada organización mantén o control sobre os seus propios datos."
+      }
+    }
+  },
+  "events": {
+    "metadata": {
+      "title": "Eventos",
+      "description": "Mantente informado sobre os próximos eventos e presentacións"
+    },
+    "header": {
+      "title": "Eventos",
+      "description": "Mantente informado sobre os próximos eventos e presentacións",
+      "featuredTitle": "Eventos destacados",
+      "pastTitle": "Eventos pasados"
+    },
+    "learnMore": "Máis información",
+    "organizer": "Organizador",
+    "noEvents": "Non se atoparon eventos.",
+    "previous": "Anterior",
+    "next": "Seguinte",
+    "events": {
+      "egi2025": {
+        "header": "Presentación en EGI/Ibergrid",
+        "excerpt": "Participación na conferencia europea de computación distribuída EGI 2025",
+        "description": [
+          "Participación na conferencia europea de computación distribuída EGI 2025, celebrada en Santander.",
+          "Neste marco presentouse o Centro Demostrador Multisectorial One Health impulsado polo CESGA, destacando o seu papel como espazo de datos orientado á investigación e á innovación.",
+          "O evento reuniu comunidades científicas, provedores de servizos e iniciativas europeas para debater sobre infraestruturas dixitais, análise de datos e novos retos na investigación."
+        ],
+        "extra": null
+      },
+      "datalife": {
+        "header": "Xornada de presentación do demostrador multisectorial DATAlife",
+        "excerpt": "Acto de lanzamento do Centro Demostrador Multisectorial One Health (DATAlife)",
+        "description": [
+          "Acto de lanzamento do Centro Demostrador Multisectorial One Health (DATAlife) en Santiago de Compostela.",
+          "A xornada estivo centrada en dar a coñecer como este espazo de datos impulsa a investigación e a innovación no marco One Health, con relatorios, presentación de casos de uso e oportunidades de colaboración.",
+          "Incluíu un obradoiro práctico para o despregamento de espazos de datos, con participación da comunidade investigadora, empresas e administracións públicas."
+        ],
+        "extra": null
+      },
+      "baidata": {
+        "header": "Asistencia ao IV Foro BAIDATA",
+        "excerpt": "Participación no foro nacional sobre economía do dato e espazos de datos europeos",
+        "description": [
+          "Participación no IV Foro BAIDATA, celebrado en Bilbao e centrado na economía do dato e os espazos europeos de datos.",
+          "O encontro reuniu profesionais, empresas e administracións para debater sobre interoperabilidade, gobernanza e casos de uso en sectores como saúde, mobilidade ou industria.",
+          "O evento ofreceu amplas oportunidades de contacto con outros proxectos a nivel nacional, tanto en reunións bilaterais como nun segundo obradoiro de coordinación co Ministerio."
+        ],
+        "extra": null
+      },
+      "gaiaxsalud": {
+        "header": "Obradoiro do grupo de traballo de saúde de Gaia-X España",
+        "excerpt": "Sesión sobre retos e oportunidades do regulamento europeo de espazos de datos de saúde",
+        "description": [
+          "Participación no obradoiro do grupo de traballo de saúde organizado por Gaia-X España en colaboración coa Universidade Politécnica de Madrid.",
+          "A sesión, de carácter legal, técnico e sanitario, centrouse nos retos e oportunidades que expón o novo regulamento europeo de espazos de datos de saúde.",
+          "O obxectivo foi identificar solucións para a súa posta en marcha."
+        ],
+        "extra": null
+      },
+      "normaune": {
+        "header": "Presentación da norma UNE-ISO/IEC 42001 sobre xestión da IA",
+        "excerpt": "Xornada sobre o primeiro estándar internacional de xestión da intelixencia artificial",
+        "description": [
+          "Asistencia á xornada organizada pola Asociación Española de Normalización (UNE) e patrocinada pola Secretaría de Estado de Dixitalización e Intelixencia Artificial (SEDIA).",
+          "O encontro serviu para presentar a norma UNE-ISO/IEC 42001, primeiro estándar internacional que establece os requisitos para implantar un sistema de xestión da intelixencia artificial nas organizacións.",
+          "A xornada abordou o contexto regulatorio e os beneficios de aplicar este marco para garantir un uso ético, seguro e transparente da IA."
+        ],
+        "extra": null
+      },
+      "tallercred": {
+        "header": "1º Obradoiro CRED: construíndo espazos de datos",
+        "excerpt": "Encontro para beneficiarios da convocatoria de Centros Demostradores e Casos de Uso",
+        "description": [
+          "Asistencia a un obradoiro presencial exclusivo para beneficiarios da convocatoria de Centros Demostradores e Casos de Uso, convocado na sede do CRED en Madrid.",
+          "Durante a sesión aclaráronse dúbidas administrativas sobre os proxectos.",
+          "Presentouse oficialmente o kit de espazos de datos."
+        ],
+        "extra": null
+      },
+      "tallersqs": {
+        "header": "Obradoiro de Espazo de Datos FarmaciaVAX coa plataforma D-Spacer de SQS",
+        "excerpt": "Obradoiro práctico sobre o funcionamento dun espazo de datos no caso de uso FarmaciaVAX",
+        "description": [
+          "Obradoiro orientado a mostrar o funcionamento dun espazo de datos. Céntrase no caso de uso FarmaciaVAX, enmarcado no Centro Demostrador Multisectorial DATAlife, empregando a tecnoloxía D-Spacer da empresa SQS.",
+          "A sesión inclúe unha introdución á plataforma e á súa integración no contexto de espazos de datos, a adhesión e activación de participantes, a revisión de políticas e contratos para comprender distintas restricións, e exemplos prácticos de compartición de datos entre farmacias e servizos de saúde.",
+          "Tamén se aborda o papel da Autoridade de Goberno na validación de solicitudes e resérvase un espazo final para preguntas e respostas."
+        ],
+        "extra": "Coñéceo aquí"
+      },
+      "kitdatoscred": {
+        "header": "Lanzamento do Kit de Datos CRED",
+        "excerpt": "Evento para presentar o Kit de Datos polo CRED",
+        "description": [
+          "Asistencia á xornada sobre o Kit de Espazos de Datos para facilitar a incorporación de organizacións públicas e privadas a espazos de datos con apoio financeiro. O encontro presentou as actividades cubertas (identificación de oportunidades, preparación de datos, conexión técnica e xestión xurídica) e os gastos subvencionables (persoal, servizos e produtos). Explicouse o procedemento de solicitude con concesión por orde de chegada."
+        ],
+        "extra": "Se queres repasar a información do evento ou non tiveches oportunidade de velo, non o perdas!"
+      },
+      "kitdatoscred2": {
+        "header": "Obradoiro práctico Kit Espazos de Datos",
+        "excerpt": "Obradoiro práctico para preparar e presentar unha candidatura ao Kit Espazos de datos",
+        "description": [
+          "Se a túa empresa é potencial beneficiaria do Kit Espazos de Datos, interesarache saber que proximamente se lanzará a convocatoria de axudas de ata 30.000€ destinadas a participantes e promotores dos espazos de datos.",
+          "Esta sesión en liña terá un enfoque moi práctico, no que se explicará todo o que necesitas saber sobre o Kit Espazos de Datos e se darán nocións clave para preparar e presentar correctamente a solicitude da axuda.",
+          "📅 Data: 30 de outubro de 2025",
+          "🕔 Hora: 10:00 h",
+          "📍 Formato: en liña"
+        ],
+        "extra": "Coñéceo aquí"
+      },
+      "tallergradiant": {
+        "header": "Obradoiro sobre Espazos de Datos FarmaciaVAX coa plataforma XDataShare",
+        "excerpt": "Obradoiro práctico para entender, paso a paso, como funciona un espazo de datos aplicándoo ao caso de uso sintético FarmaciaVAX coa plataforma XDataShare.",
+        "description": [
+          "Obradoiro práctico para comprender o funcionamento real dun espazo de datos. Centrámonos no caso de uso sintético FarmaciaVAX, enmarcado no Centro Demostrador Multisectorial DATAlife, utilizando a tecnoloxía XDataShare.",
+          "A sesión inclúe unha introdución á plataforma e a súa integración no ecosistema de espazos de datos, o proceso de adhesión e activación de participantes, a revisión de políticas e contratos para entender restricións, e exemplos prácticos de compartición de datos entre farmacias e servizos de saúde.",
+          "Abórdase o papel da Autoridade de Goberno na validación de solicitudes e péchase cun turno final de preguntas e respostas.",
+          "📅 Data: 31 de outubro de 2025",
+          "🕔 Hora: 11:00 h",
+          "📍 Formato: en liña"
+        ],
+        "extra": "Coñéceo aquí"
+      },
+      "tallergradiantconectores": {
+        "header": "Obradoiro de espazo de datos sobre Conectores EDC",
+        "excerpt": "Obradoiro práctico para abordar o tema dos conectores baseados en tecnoloxía EDC (Eclipse Dataspace Components) coa plataforma XDataShare.",
+        "description": [
+          "Desde o Centro Demostrador Multisectorial DATAlife presentamos unha nova sesión de Espazo de Datos. Nesta ocasión, abordaremos os conectores baseados en tecnoloxía EDC (Eclipse Dataspace Components), un dos elementos clave para lograr unha compartición de datos soberana e interoperable.",
+          "A sesión inclúe unha descrición dun conector EDC, explicando a súa estrutura básica e os principais compoñentes de código.",
+          "📅 Data: 13 de novembro de 2025",
+          "🕔 Hora: 10:00 h",
+          "📍 Formato: en liña"
+        ],
+        "extra": "Coñéceo aquí"
+      },
+      "webinarBaidataCESGA": {
+        "header": "Creando un espazo de datos One Health: experiencia desde o CESGA",
+        "excerpt": "Presentación do Centro Demostrador Multisectorial DATAlife para compartir datos de forma segura e soberana en One Health.",
+        "description": [
+          "O CESGA presenta o Centro Demostrador Multisectorial DATAlife na última sesión de Datos en Acción de BAIDATA, que permite a distintas organizacións do ámbito One Health intercambiar datos de maneira segura e controlada.",
+          "📅 Data: 26 de novembro de 2025",
+          "🕔 Hora: 10:00 h",
+          "📍 Formato: en liña",
+          "Sesión aberta a todo o público."
+        ],
+        "extra": "Coñéceo aquí"
+      },
+      "kitDatosSaludCRED": {
+        "header": "Obradoiro práctico Kit Espazos de Datos para o sector saúde",
+        "excerpt": "Obradoiro en liña gratuíto, dirixido ao sector saúde, sobre o Kit Espazos de Datos.",
+        "description": [
+          "Esta iniciativa da Dirección Xeral do Dato facilitará a incorporación efectiva de entidades públicas e privadas do sector aos espazos de datos. Explicaranse os pasos clave para solicitar estas axudas, co obxectivo de impulsar a participación nos espazos de datos de saúde.",
+          "📅 Data: 16 de decembro de 2025",
+          "🕔 Hora: 13:00 h",
+          "📍 Formato: en liña",
+          "Sesión aberta a todo o público."
+        ],
+        "extra": "Apúntate aquí"
+      },
+      "conectorGestionActivos": {
+        "header": "Obradoiro práctico sobre o Espazo de Datos One Health: conector e xestión de activos",
+        "excerpt": "Obradoiro en liña gratuíto, dirixido ao sector saúde, sobre o Kit Espazos de Datos.",
+        "description": [
+          "Queres formar parte do Espazo de Datos One Health pero non tes claro como facelo?",
+          "Desde o Centro Demostrador de Espazo de Datos Multisectorial ONE HEALTH organizamos unha sesión formativa orientada a resolver dúbidas e facilitar a incorporación ao Espazo de Datos One Health de institucións, empresas e entidades interesadas, especialmente aquelas solicitantes do programa Kit de Espazo de Datos do CRED: Centro de Referencia de Espazos de Datos.",
+          "Nesta sesión abordaremos, de forma práctica, os elementos clave para participar no Espazo de Datos One Health do CESGA, incluíndo:",
+          "- o despregamento do conector",
+          "- a subida de activos de datos",
+          "- a declaración de evidencias",
+          "Todo isto apoiado nun exemplo real que permitirá entender paso a paso como se leva a cabo este proceso.",
+          "É unha sesión pensada para ofrecer unha base clara e útil que facilite a participación activa no Espazo de Datos One Health.",
+          "🗓️ Data: 23 de marzo",
+          "🕙 Horario: 10:00 - 12:00 h",
+          "📍 Formato: en liña"
+        ],
+        "extra": "Apúntate aquí"
+      }
+    }
+  },
+  "catalog": {
+    "title": "Catálogo de datos",
+    "subtitle": "Explora o listado de conxuntos de datos e a súa información preliminar",
+    "viewDetails": "Ver detalles",
+    "contact": "Contactar",
+    "close": "Pechar",
+    "previous": "Anterior",
+    "next": "Seguinte",
+    "source": "Fonte",
+    "dataset_name": "Nome do conxunto de datos",
+    "provider": "Provedor",
+    "volume": "Volume",
+    "number_of_files": "Número de ficheiros",
+    "data_type": "Tipo de dato",
+    "file_format": "Formato",
+    "data_standard": "Estándar",
+    "license": "Licenza",
+    "metadata": {
+      "title": "Metadatos",
+      "data_type": "Tipo de dato",
+      "date_added": "Data de incorporación",
+      "file_format": "Formato do ficheiro",
+      "temporal_resolution": "Resolución temporal",
+      "temporal_coverage": "Cobertura temporal"
+    },
+    "variables": {
+      "title": "Variables",
+      "name": "Variable",
+      "description": "Descrición",
+      "type": "Tipo de dato",
+      "detailed_description": "Descrición detallada"
+    },
+    "datasets": {
+      "aidatamed_synthetic_patients": {
+        "name": "Datos sinteticamente xerados de pacientes",
+        "dataset_name": "data_synthetic_patients_[specialty]_[size]_v[MAJOR].[MINOR]",
+        "use_case": "AIDataMed",
+        "provider": "IIS Galicia Sur",
+        "description": "Conxunto de datos sintéticos que reproducen información clínica de pacientes xerada polos modelos de IA do proxecto AIDataMed. Inclúe datos demográficos, diagnósticos e eventos clínicos seguindo o modelo OMOP CDM.",
+        "volumen": "50 GB",
+        "n_ficheros": "105 - 300",
+        "subsets": {
+          "person": {
+            "name": "Datos demográficos de pacientes",
+            "description": "Datos demográficos de pacientes sintéticos, incluíndo identificadores únicos, xénero, data de nacemento, raza e etnicidade.",
+            "metadata": {
+              "data_type": "Sintético",
+              "data_standard": "OMOP CDM",
+              "date_added": "",
+              "file_format": "CSV / Parquet",
+              "license": "Propietaria (restrinxida baixo contrato)",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "person_id",
+                "units": "-",
+                "data_description": "Identificador único do paciente sintético.",
+                "data_type": "string"
+              },
+              {
+                "name": "gender_concept_id",
+                "units": "-",
+                "data_description": "Concepto de xénero do paciente segundo o vocabulario OMOP. Exemplo: 8532 (Feminino), 8507 (Masculino).",
+                "data_type": "number"
+              },
+              {
+                "name": "year_of_birth",
+                "units": "Ano",
+                "data_description": "Ano de nacemento do paciente sintético.",
+                "data_type": "number"
+              },
+              {
+                "name": "month_of_birth",
+                "units": "Mes",
+                "data_description": "Mes de nacemento do paciente sintético.",
+                "data_type": "number"
+              },
+              {
+                "name": "day_of_birth",
+                "units": "Día",
+                "data_description": "Día de nacemento do paciente sintético.",
+                "data_type": "number"
+              },
+              {
+                "name": "birth_datetime",
+                "units": "Data",
+                "data_description": "Data de nacemento completa en formato ISO 8601 (YYYY-MM-DD).",
+                "data_type": "datetime"
+              },
+              {
+                "name": "race_concept_id",
+                "units": "-",
+                "data_description": "Concepto de raza do paciente segundo OMOP (exemplo: 8527 para 'White').",
+                "data_type": "number"
+              },
+              {
+                "name": "ethnicity_concept_id",
+                "units": "-",
+                "data_description": "Concepto de etnicidade do paciente segundo OMOP (exemplo: 0 para 'Non-Hispanic').",
+                "data_type": "number"
+              },
+              {
+                "name": "location_id",
+                "units": "-",
+                "data_description": "Identificador do rexistro de localización asociado ao paciente (referencia á táboa LOCATION).",
+                "data_type": "string"
+              },
+              {
+                "name": "provider_id",
+                "units": "-",
+                "data_description": "Identificador do provedor de atención sanitaria principal do paciente (referencia á táboa PROVIDER).",
+                "data_type": "string"
+              },
+              {
+                "name": "care_site_id",
+                "units": "-",
+                "data_description": "Identificador do centro de atención ou instalación sanitaria asociada ao paciente (referencia á táboa CARE_SITE).",
+                "data_type": "string"
+              },
+              {
+                "name": "person_source_value",
+                "units": "-",
+                "data_description": "Identificador de orixe ou pseudónimo do paciente sintético.",
+                "data_type": "string"
+              },
+              {
+                "name": "gender_source_value",
+                "units": "-",
+                "data_description": "Valor orixinal do xénero na fonte (exemplo: 'M', 'F').",
+                "data_type": "string"
+              },
+              {
+                "name": "gender_source_concept_id",
+                "units": "-",
+                "data_description": "Concepto asociado ao valor fonte do xénero.",
+                "data_type": "number"
+              },
+              {
+                "name": "race_source_value",
+                "units": "-",
+                "data_description": "Valor orixinal de raza na fonte (exemplo: 'white').",
+                "data_type": "string"
+              },
+              {
+                "name": "race_source_concept_id",
+                "units": "-",
+                "data_description": "Concepto asociado ao valor fonte da raza.",
+                "data_type": "number"
+              },
+              {
+                "name": "ethnicity_source_value",
+                "units": "-",
+                "data_description": "Valor orixinal de etnicidade na fonte (exemplo: 'nonhispanic').",
+                "data_type": "string"
+              },
+              {
+                "name": "ethnicity_source_concept_id",
+                "units": "-",
+                "data_description": "Concepto asociado ao valor fonte da etnicidade.",
+                "data_type": "number"
+              }
+            ]
+          },
+          "condition_occurrence": {
+            "name": "Condicións clínicas",
+            "description": "Diagnósticos e condicións clínicas asociadas aos pacientes sintéticos, incluíndo códigos SNOMED-CT e datas de inicio e fin das condicións.",
+            "metadata": {
+              "data_type": "Sintético",
+              "data_standard": "OMOP CDM",
+              "date_added": "",
+              "file_format": "CSV / Parquet",
+              "license": "Propietaria (restrinxida baixo contrato)",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "condition_occurrence_id",
+                "units": "-",
+                "data_description": "Identificador único da ocorrencia dunha condición clínica.",
+                "data_type": "string"
+              },
+              {
+                "name": "person_id",
+                "units": "-",
+                "data_description": "Identificador do paciente asociado á condición.",
+                "data_type": "string"
+              },
+              {
+                "name": "condition_concept_id",
+                "units": "-",
+                "data_description": "Código da condición clínica.",
+                "data_type": "number"
+              },
+              {
+                "name": "condition_start_date",
+                "units": "Data",
+                "data_description": "Data de inicio da condición clínica (formato ISO 8601).",
+                "data_type": "date"
+              },
+              {
+                "name": "condition_start_datetime",
+                "units": "Data e hora",
+                "data_description": "Data e hora de inicio da condición clínica (formato ISO 8601).",
+                "data_type": "datetime"
+              },
+              {
+                "name": "condition_end_date",
+                "units": "Data",
+                "data_description": "Data de finalización da condición clínica (formato ISO 8601).",
+                "data_type": "date"
+              },
+              {
+                "name": "condition_end_datetime",
+                "units": "Data e hora",
+                "data_description": "Data e hora de finalización da condición clínica (formato ISO 8601).",
+                "data_type": "datetime"
+              },
+              {
+                "name": "condition_type_concept_id",
+                "units": "-",
+                "data_description": "Concepto que indica o tipo de fonte ou contexto do diagnóstico.",
+                "data_type": "number"
+              },
+              {
+                "name": "condition_status_concept_id",
+                "units": "-",
+                "data_description": "Concepto que describe o estado da condición.",
+                "data_type": "number"
+              },
+              {
+                "name": "stop_reason",
+                "units": "-",
+                "data_description": "Motivo polo que a condición ou diagnóstico foi pechado.",
+                "data_type": "string"
+              },
+              {
+                "name": "provider_id",
+                "units": "-",
+                "data_description": "Identificador do provedor de atención sanitaria asociado á condición.",
+                "data_type": "string"
+              },
+              {
+                "name": "visit_occurrence_id",
+                "units": "-",
+                "data_description": "Identificador da visita na que se rexistrou a condición.",
+                "data_type": "string"
+              },
+              {
+                "name": "visit_detail_id",
+                "units": "-",
+                "data_description": "Identificador de detalle de visita na que se documentou a condición.",
+                "data_type": "string"
+              },
+              {
+                "name": "condition_source_value",
+                "units": "-",
+                "data_description": "Código ou valor orixinal da condición clínica na fonte de datos.",
+                "data_type": "string"
+              },
+              {
+                "name": "condition_source_concept_id",
+                "units": "-",
+                "data_description": "Concepto asociado ao código da fonte para a condición.",
+                "data_type": "number"
+              },
+              {
+                "name": "condition_status_source_value",
+                "units": "-",
+                "data_description": "Valor textual do estado da condición na fonte orixinal.",
+                "data_type": "string"
+              }
+            ]
+          }
+        }
+      },
+      "brilliant": {
+        "name": "Datos de resonancia magnética lumbar",
+        "dataset_name": "MRI_BRILLIANT",
+        "use_case": "Brilliant",
+        "provider": "IIS Galicia Sur",
+        "description": "Datos sintéticos de resonancia magnética lumbar. A estes datos engadíronse datos demográficos artificiais como idade, xénero e un código postal xerado aleatoriamente dentro do territorio galego.",
+        "volumen": "1 TB",
+        "n_ficheros": "10.000 ficheiros",
+        "subsets": {
+          "mri_DICOM": {
+            "name": "MRI_BRILLIANT_DICOM",
+            "description": "Datos de imaxes de resonancia magnética lumbar (rexión L3).",
+            "metadata": {
+              "data_type": "Sintético",
+              "data_standard": "DICOM",
+              "date_added": "",
+              "file_format": "DICOM",
+              "license": "CC BY 4.0",
+              "temporal_resolution": "-",
+              "temporal_coverage": "-"
+            },
+            "variables": []
+          },
+          "mri_csv": {
+            "name": "MRI_BRILLIANT_CSV",
+            "description": "Datos persoais sintéticos asociados ás resonancias magnéticas lumbares (rexión L3).",
+            "metadata": {
+              "data_type": "Sintético",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV",
+              "license": "CC BY 4.0",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": []
+          }
+        }
+      },
+      "gift_conversations": {
+        "name": "Datos de conversas médicas",
+        "dataset_name": "data_gift_conversations_[start_date]_[end_date]",
+        "use_case": "GIFT",
+        "provider": "IIS Galicia Sur",
+        "description": "Conxunto de datos de conversas médicas xeradas cun asistente conversacional baseado en IA. Inclúe preguntas, respostas, metadatos de LLM, contexto e estatísticas de uso.",
+        "volumen": "5 GB",
+        "n_ficheros": "500",
+        "subsets": {
+          "conversation": {
+            "name": "Conversas médicas",
+            "description": "Conversas médicas anonimizadas, con preguntas, respostas, contexto e metadatos do modelo de linguaxe que as xerou.",
+            "metadata": {
+              "data_type": "Empírico",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV / Parquet",
+              "license": "Propietaria (restrinxida baixo contrato)",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "conversation_id",
+                "units": "-",
+                "data_description": "Identificador único da conversa.",
+                "data_type": "string"
+              },
+              {
+                "name": "timestamp",
+                "units": "Data e hora",
+                "data_description": "Marca temporal da conversa.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "question",
+                "units": "-",
+                "data_description": "Pregunta realizada polo usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "answer",
+                "units": "-",
+                "data_description": "Resposta xerada polo modelo de IA.",
+                "data_type": "string"
+              },
+              {
+                "name": "llm_name",
+                "units": "-",
+                "data_description": "Nome do modelo de linguaxe que xerou a resposta.",
+                "data_type": "string"
+              },
+              {
+                "name": "llm_provider",
+                "units": "-",
+                "data_description": "Provedor do modelo de linguaxe.",
+                "data_type": "string"
+              },
+              {
+                "name": "llm_temperature",
+                "units": "-",
+                "data_description": "Valor de temperatura usado na xeración da resposta.",
+                "data_type": "number"
+              },
+              {
+                "name": "llm_top_k",
+                "units": "-",
+                "data_description": "",
+                "data_type": "number"
+              },
+              {
+                "name": "llm_top_p",
+                "units": "-",
+                "data_description": "",
+                "data_type": "number"
+              },
+              {
+                "name": "prompt_id",
+                "units": "-",
+                "data_description": "Identificador do prompt utilizado para xerar a resposta.",
+                "data_type": "number"
+              },
+              {
+                "name": "prompt_content",
+                "units": "-",
+                "data_description": "Contido do prompt usado para a xeración da resposta.",
+                "data_type": "string"
+              },
+              {
+                "name": "context_chunks",
+                "units": "-",
+                "data_description": "",
+                "data_type": "string"
+              },
+              {
+                "name": "context_images",
+                "units": "-",
+                "data_description": "Referencias a imaxes usadas como contexto para a resposta.",
+                "data_type": "string"
+              },
+              {
+                "name": "input_tokens",
+                "units": "Tokens",
+                "data_description": "Cantidade de tokens de entrada ao modelo.",
+                "data_type": "number"
+              },
+              {
+                "name": "output_tokens",
+                "units": "Tokens",
+                "data_description": "Cantidade de tokens xerados polo modelo.",
+                "data_type": "number"
+              },
+              {
+                "name": "cost",
+                "units": "-",
+                "data_description": "",
+                "data_type": "number"
+              },
+              {
+                "name": "config_id",
+                "units": "-",
+                "data_description": "Identificador da configuración do modelo usada.",
+                "data_type": "number"
+              },
+              {
+                "name": "user_category",
+                "units": "-",
+                "data_description": "Categoría do usuario que realizou a pregunta.",
+                "data_type": "string"
+              }
+            ]
+          }
+        }
+      },
+      "biomexplore": {
+        "name": "Datos de metaxenomas sinteticamente xerados",
+        "dataset_name": "dataset_biomexplore",
+        "use_case": "BiomeXplore",
+        "provider": "IIS Galicia Sur",
+        "description": "Datos de metaxenomas fecais artificiais xerados sinteticamente, incluíndo lecturas de secuenciación masiva (FASTQ) e metadatos sintéticos que representan variables epidemiolóxicas, clínicas e demográficas.",
+        "volumen": "250 - 1000 TB",
+        "n_ficheros": "100000",
+        "subsets": {
+          "metagenomic_reads": {
+            "name": "Lecturas de secuenciación metaxenómica",
+            "description": "Lecturas de secuenciación masiva (shotgun) de microbiota bacteriana fecal xeradas sinteticamente. Ficheiros en formato FASTQ comprimidos (.fastq.gz).",
+            "metadata": {
+              "data_type": "Sintético",
+              "data_standard": "FASTQ",
+              "date_added": "3",
+              "file_format": "FASTQ.gz",
+              "license": "Propietaria (restrinxida baixo contrato)",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": []
+          }
+        }
+      },
+      "salusbench": {
+        "name": "Datos de minería de procesos hospitalarios",
+        "dataset_name": "data_proceso_id_hospital_id",
+        "use_case": "SALUSBENCH",
+        "provider": "Inverbis",
+        "description": "Datos hospitalarios xerados a partir de técnicas de minería de procesos.",
+        "volumen": "50 - 300 GB por ficheiro",
+        "n_ficheros": "-",
+        "subsets": {
+          "data_hospital": {
+            "name": "data_proceso_id_hospital_id",
+            "description": "Conxunto de datos hospitalarios xerado a partir de técnicas de minería de procesos. Contén un log de eventos enriquecido que inclúe información sobre trazas (casos), actividades realizadas, atributos temporais e contextuais, variantes do proceso e relacións entre eventos (arcos).",
+            "metadata": {
+              "data_type": "Mixto (empírico + sintético)",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV",
+              "license": "Por definir",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "case_id",
+                "units": "-",
+                "data_description": "Identificador de proceso ou paciente",
+                "data_type": "string"
+              },
+              {
+                "name": "event_id",
+                "units": "-",
+                "data_description": "Identificador do evento dentro do caso",
+                "data_type": "string"
+              },
+              {
+                "name": "activity",
+                "units": "-",
+                "data_description": "Nome da actividade ou paso clínico",
+                "data_type": "string"
+              },
+              {
+                "name": "Start",
+                "units": "Data e hora do evento de inicio (ISO 8601)",
+                "data_description": "Data e hora exacta do inicio do evento",
+                "data_type": "datetime"
+              },
+              {
+                "name": "End",
+                "units": "Data e hora do evento de fin (ISO 8601)",
+                "data_description": "Data e hora exacta do fin do evento.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "Attribute",
+                "units": "",
+                "data_description": "Campos adicionais (recurso, departamento, idade, sexo, tipo de ingreso, etc.)",
+                "data_type": "string, number, datetime"
+              },
+              {
+                "name": "TraceDuration",
+                "units": "",
+                "data_description": "Duración total do caso en horas ou días",
+                "data_type": "number"
+              },
+              {
+                "name": "Duration",
+                "units": "",
+                "data_description": "Duración do evento",
+                "data_type": "number"
+              },
+              {
+                "name": "VariantName",
+                "units": "",
+                "data_description": "Nome do camiño do proceso",
+                "data_type": "string"
+              },
+              {
+                "name": "Transition",
+                "units": "-",
+                "data_description": "Transición entre actividades",
+                "data_type": "string"
+              },
+              {
+                "name": "TransitionDuration",
+                "units": "",
+                "data_description": "Duración da transición entre actividades",
+                "data_type": "number"
+              }
+            ]
+          }
+        }
+      },
+      "celiaspace": {
+        "name": "Datos de conversas coa asistente de persoas maiores Serenia",
+        "dataset_name": "serenia_senior_conversations",
+        "use_case": "CeliaSpace",
+        "provider": "Universidade de Vigo",
+        "description": "Conversas que conteñen interaccións entre usuarios maiores e a asistente Serenia orientada ao acompañamento, entretemento e coidado deste colectivo.",
+        "volumen": "10 usuarios, 1.000 interaccións cada usuario",
+        "n_ficheros": "2",
+        "subsets": {
+          "serenia": {
+            "name": "Conversas",
+            "description": "Conversas entre usuarios maiores e a asistente Serenia.",
+            "metadata": {
+              "data_type": "Empírico",
+              "data_standard": "HL7 FHIR",
+              "date_added": "",
+              "file_format": "CSV",
+              "license": "Propietaria (restrinxida baixo contrato)",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": []
+          }
+        }
+      },
+      "datiacare": {
+        "name": "Datos de monitorización no fogar para persoas maiores",
+        "dataset_name": "datiacare_home_monitoring",
+        "use_case": "Datiacare",
+        "provider": "i4life",
+        "description": "Conxunto de datos recollidos por sensores instalados nos fogares de persoas maiores (maiores de 65 anos), que inclúen eventos de presenza no hall, vibración en asento habitual e apertura de neveira, así como datos de actividade diaria recollidos por un reloxo intelixente.",
+        "volumen": "200.000 rexistros por ano e por usuario",
+        "n_ficheros": "50 - 300",
+        "subsets": {
+          "iot": {
+            "name": "Medicións relacionadas con IoT",
+            "description": "Datos dos dispositivos domóticos que integran a plataforma de monitorización",
+            "metadata": {
+              "data_type": "Mixto (empírico + sintético)",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "Parquet",
+              "license": "Propietaria (restrinxida baixo contrato)",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "value",
+                "units": "Booleano",
+                "data_description": "Valor de detección do sensor IoT (true ou false). Por exemplo: detección de movemento, vibración ou apertura de porta.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "unit",
+                "units": "-",
+                "data_description": "Unidade de medida do valor",
+                "data_type": "string"
+              },
+              {
+                "name": "date",
+                "units": "Data e hora (ISO 8601)",
+                "data_description": "Data e hora exacta da medición do sensor.",
+                "data_type": "date-time"
+              },
+              {
+                "name": "type",
+                "units": "texto",
+                "data_description": "Tipo de sensor: pir (infravermello pasivo), vibration (vibración) ou door (porta).",
+                "data_type": "string"
+              },
+              {
+                "name": "users.gender",
+                "units": "texto",
+                "data_description": "Xénero do usuario asociado ao dispositivo (M ou F).",
+                "data_type": "string"
+              },
+              {
+                "name": "users.birth_date",
+                "units": "Data (ISO 8601)",
+                "data_description": "Data de nacemento do usuario vinculado ao sensor.",
+                "data_type": "date-time"
+              }
+            ]
+          },
+          "health": {
+            "name": "Medicións relacionadas coa saúde",
+            "description": "Datos dos dispositivos de saúde que integran a plataforma de monitorización",
+            "metadata": {
+              "data_type": "Mixto (empírico + sintético)",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "Parquet",
+              "license": "Propietaria (restrinxida baixo contrato)",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "date",
+                "units": "Data e hora (ISO 8601)",
+                "data_description": "Data e hora exacta na que se tomou a medición.",
+                "data_type": "date-time"
+              },
+              {
+                "name": "type",
+                "units": "texto",
+                "data_description": "Tipo de sensor: HEART (frecuencia cardíaca) ou BP (presión arterial).",
+                "data_type": "string"
+              },
+              {
+                "name": "users.gender",
+                "units": "texto",
+                "data_description": "Xénero do usuario ao que se tomou a medición (M ou F).",
+                "data_type": "string"
+              },
+              {
+                "name": "users.birth_date",
+                "units": "Data (ISO 8601)",
+                "data_description": "Data de nacemento do usuario vinculado.",
+                "data_type": "date-time"
+              },
+              {
+                "name": "value1",
+                "units": "numérico",
+                "data_description": "Valor principal da medición: frecuencia cardíaca (bpm) ou presión sistólica (mmHg).",
+                "data_type": "number"
+              },
+              {
+                "name": "value2",
+                "units": "numérico",
+                "data_description": "Valor secundario da medición: presión diastólica en medicións do tipo BP.",
+                "data_type": "number"
+              },
+              {
+                "name": "value3",
+                "units": "numérico",
+                "data_description": "Valor terciario da medición: media de medidas ou valor auxiliar se aplica.",
+                "data_type": "number"
+              },
+              {
+                "name": "metricHours.hourOfDay",
+                "units": "Numérico (0-23)",
+                "data_description": "Hora do día para as métricas horarias, se a medición está agregada.",
+                "data_type": "number"
+              },
+              {
+                "name": "metricHours.value",
+                "units": "Numérico",
+                "data_description": "Valor medio ou total da métrica nesa hora.",
+                "data_type": "number"
+              }
+            ]
+          },
+          "movement": {
+            "name": "Medicións relacionadas co movemento",
+            "description": "Datos dos dispositivos de actividade física",
+            "metadata": {
+              "data_type": "Mixto (empírico + sintético)",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "Parquet",
+              "license": "Propietaria (restrinxida baixo contrato)",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "date",
+                "units": "Data e hora (ISO 8601)",
+                "data_description": "Data e hora exacta na que se rexistrou a actividade.",
+                "data_type": "date-time"
+              },
+              {
+                "name": "type",
+                "units": "texto",
+                "data_description": "Tipo de sensor: STEPS (número de pasos) ou LOCATION (localización).",
+                "data_type": "string"
+              },
+              {
+                "name": "users.gender",
+                "units": "texto",
+                "data_description": "Xénero do usuario ao que se tomou a medición (M ou F).",
+                "data_type": "string"
+              },
+              {
+                "name": "users.birth_date",
+                "units": "Data (ISO 8601)",
+                "data_description": "Data de nacemento do usuario vinculado.",
+                "data_type": "date-time"
+              },
+              {
+                "name": "value1",
+                "units": "numérico",
+                "data_description": "Valor principal da medición: número de pasos ou latitude da posición.",
+                "data_type": "number"
+              },
+              {
+                "name": "value2",
+                "units": "numérico",
+                "data_description": "Valor secundario da medición: lonxitude da posición.",
+                "data_type": "number"
+              },
+              {
+                "name": "value3",
+                "units": "numérico",
+                "data_description": "Valor terciario da medición: media de medidas ou valor auxiliar se aplica.",
+                "data_type": "number"
+              },
+              {
+                "name": "metricHours.hourOfDay",
+                "units": "Numérico (0-23)",
+                "data_description": "Hora do día para as métricas horarias, se a medición está agregada.",
+                "data_type": "number"
+              },
+              {
+                "name": "metricHours.value",
+                "units": "Numérico",
+                "data_description": "Valor medio ou total da métrica nesa hora.",
+                "data_type": "number"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "blog": {
+    "metadata": {
+      "title": "Blog",
+      "description": "Mantente informado sobre todas as novas"
+    },
+    "title": "Novidades do centro demostrador",
+    "subtitle": "Novas",
+    "lead": "Mantente ao tanto dos últimos avances e descubre como estamos impulsando a compartición de datos segura, interoperable e multisectorial",
+    "learnMore": "Máis información",
+    "noPosts": "Non se atoparon novas.",
+    "previous": "Anterior",
+    "next": "Seguinte",
+    "posts": {
+      "post-1": {
+        "title": "Como usar a nosa nova funcionalidade",
+        "date": "2025-09-12",
+        "excerpt": "Aprende como aproveitar a nosa última versión."
+      },
+      "post-2": {
+        "title": "Actualizacións da empresa",
+        "date": "2025-10-10",
+        "excerpt": "Están a pasar cousas interesantes en Radiant."
+      }
+    }
+  },
+  "kit": {
+    "metadata": {
+      "title": "Kit Espazos de Datos",
+      "description": "Solicita as axudas do Kit Espazos de Datos e conéctate ao espazo sectorial a través do Centro Demostrador."
+    },
+    "header": {
+      "title": "Kit Espazos de Datos",
+      "lead": "Es unha empresa, institución sanitaria ou nodo do ecosistema de saúde dixital? Solicita a axuda do Kit Espazos de Datos e conéctate ao noso espazo de datos sectorial desde o Centro Demostrador.",
+      "ctaPrimary": {
+        "label": "Consulta a Orde TDF/758/2025 (BOE)",
+        "href": "https://www.boe.es/eli/es/o/2025/07/11/tdf758"
+      },
+      "ctaSecondary": {
+        "label": "Consulta a web oficial do CRED",
+        "href": "https://cred.digital.gob.es/kit-de-espacios-de-datos"
+      },
+      "cta3": {
+        "label": "Consulta a nosa guía",
+        "href": "/kit/guia_solicitud_KIT_CESGA.pdf"
+      }
+    },
+    "what": {
+      "title": "Que é e por que?",
+      "description": "O kit de espazo de datos é unha axuda que pretende incentivar a compartición de datos en Espazos de datos, financiando as entidades participantes, os custos incorridos para lograr esta compartición. Deste xeito, impúlsase a competitividade e a actividade económica sectorial, propoñendo novos modelos de negocio.",
+      "imageAlt": "Portada Kit Espazo de Datos"
+    },
+    "who": {
+      "title": "Quen pode solicitala?",
+      "items": [
+        "Entidades públicas ou privadas con personalidade xurídica e actividade económica na UE.",
+        "Administracións Públicas españolas.",
+        "Organismos públicos de investigación, asociacións, fundacións, etc."
+      ]
+    },
+    "benefits": {
+      "title": "Que cobre?",
+      "items": [
+        "Identificación de oportunidades e plan de negocio baseados na compartición de datos.",
+        "Xestión das condicións e requisitos xurídicos e regulatorios.",
+        "Preparación dos datos e creación dos produtos de datos.",
+        "Adaptación técnica: infraestrutura, software e conectores para integrarse no espazo de datos."
+      ]
+    },
+    "conditions": {
+      "title": "Condicións clave",
+      "items": [
+        "Alta efectiva como participante ou provedor avanzado.",
+        "Estar ao corrente das obrigas e respectar límites de minimis.",
+        "Empresas con ≥ 6 meses de actividade e inscrición censal.",
+        "Non son beneficiarios: autónomos, UTEs, sociedades civís nin comunidades de bens.",
+        "Cada entidade beneficiaria, identificada polo seu CIF, só poderá recibir unha subvención."
+      ]
+    },
+    "steps": {
+      "title": "Pasos para solicitar",
+      "items": [
+        "Busca un Espazo de Datos ao que conectarte.",
+        "Contacta co promotor do Espazo de Datos elixido e formaliza un contrato de adhesión.",
+        "Valora se podes ou non integrarte nun espazo de datos con ou sen axuda externa (é necesario contratar unha empresa integradora?).",
+        "Realiza a conexión ao espazo de datos elixido.",
+        "Executa e paga: realiza as actividades de adaptación (legal, técnica, datos) antes de solicitar a axuda e garda todas as facturas e xustificantes de gasto."
+      ]
+    },
+    "interest": {
+      "title": "Estás interesado en solicitar o Kit?",
+      "description": "Cubre este formulario como mostra de interese e contactarémoste o antes posible.",
+      "button": "Cubrir formulario de interese",
+      "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
+    },
+    "visual": {
+      "video": {
+        "title": "Consulta o último webinar impartido polo CRED sobre o Kit",
+        "url": "https://www.youtube.com/embed/L5V9ISX40-g?si=pQP2iYRyd9n6WEhp"
+      },
+      "metrics": {
+        "title": "Contías orientativas",
+        "sections": {
+          "participante": {
+            "title": "Contías orientativas",
+            "items": [
+              {
+                "label": "Entidades públicas e privadas",
+                "value": "Ata 15.000 €"
+              },
+              {
+                "label": "Administracións Públicas",
+                "value": "Ata 25.000 €"
+              }
+            ]
+          },
+          "proveedor": {
+            "title": "Contías orientativas",
+            "items": [
+              {
+                "label": "Entidades públicas e privadas",
+                "value": "Ata 30.000 €"
+              },
+              {
+                "label": "Administracións Públicas",
+                "value": "Ata 50.000 €"
+              }
+            ]
+          }
+        }
+      },
+      "cards": {
+        "title": "Modalidades de participación e contías orientativas",
+        "items": [
+          {
+            "title": "Participante",
+            "text": "Prepara datos, asina un contrato de adhesión co espazo de datos elixido e rexístrate nel.",
+            "icon": "Users"
+          },
+          {
+            "title": "Provedor avanzado",
+            "text": "Adicionalmente, publica un conxunto de datos no catálogo do espazo de datos.",
+            "icon": "Globe"
+          }
+        ]
+      }
+    }
+  },
+  "Footer": {
+    "contact_title": "Contacta connosco!",
+    "contact_subtitle": "Interesado no proxecto?",
+    "contact_text": "Se estás interesado en saber máis ou participar neste proxecto, podes enviarnos un correo a",
+    "email": "dmd@cesga.es",
+    "social_facebook": "Visítanos en Facebook",
+    "social_x": "Visítanos en X",
+    "social_linkedin": "Visítanos en LinkedIn",
+    "copyright": "OneHealth Dataspace",
+    "funding_note": "Proxecto financiado polo Ministerio de Transformación Dixital e Función Pública a través do proxecto «TSI-100120-2024-12» con cargo aos fondos europeos do Plan de Recuperación, Transformación e Resiliencia e «Financiado pola Unión Europea – NextGenerationEU»"
+  },
+  "faq": {
+    "metadata": {
+      "title": "FAQ",
+      "description": "Preguntas máis frecuentes dos usuarios"
+    },
+    "title": "Preguntas frecuentes",
+    "description": "A continuación, mostramos as preguntas máis frecuentes realizadas polos usuarios que poden consultarse de maneira máis detallada no seguinte enlace: ",
+    "link": "Manual de usuario",
+    "section1": "Sobre o espazo de datos",
+    "section2": "Roles e participación",
+    "section3": "Proceso de adhesión",
+    "section4": "Parte técnica (conectores e datos)",
+    "section5": "Seguridade e gobernanza",
+    "section6": "Uso e funcionamento",
+    "section7": "Problemas comúns",
+    "section8": "Recomendacións para comezar",
+    "question1": "Que é o Espazo de Datos?",
+    "answer1": "É un entorno seguro onde as organizacións poden compartir, acceder e utilizar datos ou servizos mantendo sempre o control sobre eles.",
+    "question2": "Que significa “adherirse” ao espazo de datos?",
+    "answer2": "Significa incorporarse ao ecosistema para:\n• Compartir datos\n• Consumir datos\n• Ofrecer ou usar servizos\nSempre baixo regras de seguridade, privacidade e control.",
+    "question3": "Perdo a propiedade dos meus datos ao participar?",
+    "answer3": "Non. Ti decides:\n• Que datos compartes\n• Con quen\n• En que condicións\nNunca hai cesión obrigatoria de datos.",
+    "question4": "Quen pode participar?",
+    "answer4": "• Hospitais e centros sanitarios\n• Universidades e centros de investigación\n• Administracións públicas\n• Empresas, startups e centros tecnolóxicos.",
+    "question5": "Que roles existen dentro do espazo de datos?",
+    "answer5": "Podes participar como:\n• Provedor de datos\n• Consumidor de datos\n• Provedor de servizos\n• Consumidor de servizos\nUnha mesma entidade pode ter varios roles á vez.",
+    "question6": "Cal é o rol máis habitual para comezar?",
+    "answer6": "O máis común é Provedor de datos, compartindo un dataset para validación ou uso por outros participantes.",
+    "question7": "Como me adhiero ao espazo de datos?",
+    "answer7": "O proceso ten dúas fases:\n• Solicitude administrativa: completar formulario de interese e validación por CESGA.\n• Integración técnica: despregar o conector e publicar datos ou servizos.",
+    "question8": "Canto tarda o proceso?",
+    "answer8": "Avaliación da solicitude: ata 2 semanas.\nIntegración técnica: depende do usuario (horas ou días).",
+    "question9": "Necesito asinar algún acordo?",
+    "answer9": "Si, nalgúns casos formalízase un contrato de adhesión antes da integración técnica.",
+    "question10": "Que é un conector?",
+    "answer10": "É unha ferramenta que permite conectar os teus sistemas co espazo de datos.\nImportante:\n• Non almacena datos\n• Só xestiona acceso e intercambio.",
+    "question11": "Necesito infraestrutura propia?",
+    "answer11": "Si. Necesitas:\n• Servidor (local ou cloud)\n• Recursos mínimos (RAM, CPU)\n• Conexión a internet.",
+    "question12": "Onde se almacenan os meus datos?",
+    "answer12": "Na túa propia infraestrutura ou en servizos externos (por exemplo, nube).\nO conector só apunta a eles mediante unha URL.",
+    "question13": "Que é un asset?",
+    "answer13": "É un paquete de datos ou servizo que compartes no espazo de datos.\nInclúe:\n• Datos\n• Metadatos\n• Licenza\n• Documentación.",
+    "question14": "Como se controla o acceso aos datos?",
+    "answer14": "Mediante:\n• Contratos de uso\n• Políticas definidas polo provedor\nTi decides quen accede e como.",
+    "question15": "Que normativas debo cumprir?",
+    "answer15": "• Protección de datos (RGPD)\n• Seguridade\n• Ética e gobernanza do espazo.",
+    "question16": "Hai supervisión ou auditoría?",
+    "answer16": "Si. O sistema pode incluír:\n• Verificación de calidade\n• Auditorías\n• Supervisión de cumprimento.",
+    "question17": "Como accedo a datos doutros participantes?",
+    "answer17": "A través do catálogo do espazo de datos, onde podes:\n• Buscar datasets\n• Solicitar acceso\n• Aceptar condicións.",
+    "question18": "Que beneficios obteño ao participar?",
+    "answer18": "• Acceso a datos e servizos\n• Colaboración con outras entidades\n• Visibilidade dos teus datos\n• Integración con ecosistemas europeos.",
+    "question19": "Non vexo datos no catálogo, que pasa?",
+    "answer19": "Pode deberse a:\n• Problemas de conexión\n• Configuración incorrecta do conector.",
+    "question20": "Que ocorre se o meu dataset non cumpre requisitos?",
+    "answer20": "Non será validado.\nDebe cumprir:\n• Calidade\n• Documentación\n• Coherencia co declarado.",
+    "question21": "Podo modificar ou retirar os meus datos?",
+    "answer21": "Si. Mantés o control total en todo momento.",
+    "question22": "Como comezo se son principiante?",
+    "answer22": "• Define un caso de uso sinxelo\n• Prepara un dataset pequeno\n• Despregua o conector\n• Publica un primeiro asset\n• Valida con CESGA.",
+    "question23": "Que se debe evitar?",
+    "answer23": "• Non documentar os datos\n• Usar URLs inaccesibles\n• Reconfigurar o conector sen control\n• Non definir condicións de uso."
+  }
+}
