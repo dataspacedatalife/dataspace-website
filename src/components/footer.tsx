@@ -37,8 +37,10 @@ export function Footer() {
 
   return (
     <footer className="relative">
-      {/* Gradiente */}
-      <div className="relative w-full overflow-hidden bg-gradient-to-b from-[#F5FCFE] via-[#199AB6] to-[#005596] min-h-[80vh] flex flex-col justify-end">
+
+      {/* 🔧 SOLO CAMBIO AQUÍ */}
+      <div className="relative w-full overflow-hidden bg-gradient-to-b from-[#F5FCFE] via-[#199AB6] to-[#005596] py-16 sm:py-20 md:py-24 flex flex-col justify-center">
+
         {/* Cuadrados decorativos */}
         <div className="absolute inset-0 flex flex-col justify-start gap-2 pointer-events-none z-0 opacity-25">
           {Array.from({ length: rows }).map((_, rowIndex) => (
@@ -51,7 +53,12 @@ export function Footer() {
                   return (
                     <div
                       key={i}
-                      style={{ width: `${size}px`, height: `${size}px`, flex: '0 0 auto', boxSizing: 'content-box' }}
+                      style={{
+                        width: `${size}px`,
+                        height: `${size}px`,
+                        flex: '0 0 auto',
+                        boxSizing: 'content-box'
+                      }}
                     />
                   );
                 }
@@ -59,7 +66,12 @@ export function Footer() {
                 return (
                   <div
                     key={i}
-                    style={{ width: `${size}px`, height: `${size}px`, flex: '0 0 auto', boxSizing: 'content-box' }}
+                    style={{
+                      width: `${size}px`,
+                      height: `${size}px`,
+                      flex: '0 0 auto',
+                      boxSizing: 'content-box'
+                    }}
                     className="bg-[#009ab8]"
                   />
                 );
@@ -69,7 +81,8 @@ export function Footer() {
         </div>
 
         {/* Contenido principal */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center text-white">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+
           <hgroup>
             <p className={`${barlowCondensed.className} mt-6 text-3xl font-medium tracking-tight sm:text-5xl`}>
               {t('contact_subtitle')}
@@ -104,7 +117,7 @@ export function Footer() {
               className="group flex items-center justify-center w-10 h-10 rounded-full border border-white text-white transition-all duration-300 hover:bg-white hover:text-[#FF0000]"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.498 6.186a2.995 2.995 0 0 0-2.115-2.117C19.465 3.5 12 3.5 12 3.5s-7.465 0-9.383.569A2.995 2.995 0 0 0 .502 6.186 31.15 31.15 0 0 0 0 12a31.15 31.15 0 0 0 .502 5.814 2.995 2.995 0 0 0 2.115 2.117C4.535 20.5 12 20.5 12 20.5s7.465 0 9.383-.569a2.995 2.995 0 0 0 2.115-2.117A31.15 31.15 0 0 0 24 12a31.15 31.15 0 0 0-.502-5.814ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z" />
+                <path d="M23.498 6.186a2.995 2.995 0 0 0-2.115-2.117C19.465 3.5 12 3.5 12 3.5s-7.465 0-9.383.569A2.995 2.995 0 0 0 .502 6.186 31.15 31.15 0 0 0 0 12a31.15 31.15 0 0 0 .502 5.814 2.995 2.995 0 0 0 2.115 2.117C4.535 20.5 12 20.5 12 20.5s7.465 0 9.383-.57a2.995 2.995 0 0 0 2.115-2.117A31.15 31.15 0 0 0 24 12a31.15 31.15 0 0 0-.502-5.814ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z" />
               </svg>
             </Link>
           </div>
@@ -135,6 +148,7 @@ export function Footer() {
           </div>
         </div>
       </div>
+
     </footer>
   );
 }
