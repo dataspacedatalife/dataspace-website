@@ -38,7 +38,6 @@ export function Footer() {
   return (
     <footer className="relative">
 
-      {/* 🔧 SOLO CAMBIO AQUÍ */}
       <div className="relative w-full overflow-hidden bg-gradient-to-b from-[#F5FCFE] via-[#199AB6] to-[#005596] py-16 sm:py-20 md:py-24 flex flex-col justify-center">
 
         {/* Cuadrados decorativos */}
@@ -99,7 +98,7 @@ export function Footer() {
           <div className="mt-8 flex justify-center gap-4">
             {/* LinkedIn */}
             <Link
-              href="https://www.linkedin.com/in/centro-demostrador-de-espacio-de-datos-multisectorial-one-health-8a4a2838a/"
+              href="https://www.linkedin.com/in/onehealth-dataspace"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center w-10 h-10 rounded-full border border-white text-white transition-all duration-300 hover:bg-white hover:text-[#0A66C2]"
