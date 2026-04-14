@@ -38,7 +38,7 @@ export function Footer() {
   return (
     <footer className="relative">
 
-      <div className="relative w-full overflow-hidden bg-gradient-to-b from-[#F5FCFE] via-[#199AB6] to-[#005596] py-16 sm:py-20 md:py-24 flex flex-col justify-center">
+      <div className="relative w-full overflow-hidden bg-gradient-to-b from-[#F5FCFE] via-[#009AB8] to-[#005596] py-16 sm:py-20 md:py-24 flex flex-col justify-center">
 
         {/* Cuadrados decorativos */}
         <div className="absolute inset-0 flex flex-col justify-start gap-2 pointer-events-none z-0 opacity-25">

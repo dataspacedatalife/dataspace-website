@@ -67,7 +67,7 @@ async function Header() {
 
   return (
     <Container className="mt-16">
-      <Heading as="h1" className="text-center font-heading text-[#199AB6]">
+      <Heading as="h1" className="text-center font-heading text-[#009AB8]">
         {tHeader('title')}
       </Heading>
       <Lead className="mt-10 text-center">{tHeader('lead')}</Lead>

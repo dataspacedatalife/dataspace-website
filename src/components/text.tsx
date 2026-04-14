@@ -13,7 +13,7 @@ type HeadingProps = {
  * Componente para todos los encabezados (h1-h6).
  *
  * Tipografía:
- * - h1: Barlow Condensed, color #199AB6 (para títulos principales)
+ * - h1: Barlow Condensed, color #009AB8 (para títulos principales)
  * - h2-h6: Barlow Condensed, color gris oscuro por defecto (text-gray-950)
  *
  * Otras clases:
@@ -31,7 +31,7 @@ export function Heading({
   // Determina las clases base según el tipo de heading
   const baseClass =
     Element === 'h1'
-      ? 'font-heading text-[#199AB6] text-4xl font-medium tracking-tighter sm:text-6xl'
+      ? 'font-heading text-[#009AB8] text-4xl font-medium tracking-tighter sm:text-6xl'
       : 'font-barlow-condensed text-4xl font-medium tracking-tighter text-pretty text-gray-950 data-dark:text-white sm:text-6xl';
 
   return (
