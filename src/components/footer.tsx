@@ -5,13 +5,14 @@ import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import LogoEU from '../../public/logos/ES_Financiado_por_la_Unión_Europea_RGB_POS.png';
 import LogoPRTR from '../../public/logos/Logo-PRTR-tres-lineas_COLOR-1536x864.png';
-import LogoMinisterio from '../../public/logos/LogoMinisterio-cropped.svg';
+import LogoMinisterio from '../../public/logos/Ministerio-transformacion.jpg';
 import LogoCESGA from '../../public/logos/nuevoLogoCesga_mayo2023.png';
+import LogoXacobeo from '../../public/logos/Xacobeo.png';
 import OneHealthLogo from '../../public/logos/onehealth_logo_white.png';
 import { Link } from './link';
 import { Barlow_Condensed } from 'next/font/google';
 
-const barlowCondensed = Barlow_Condensed({ subsets: ['latin'], weight: ['400','700'] });
+const barlowCondensed = Barlow_Condensed({ subsets: ['latin'], weight: ['400', '700'] });
 
 export function Footer() {
   const t = useTranslations('Footer');
@@ -125,14 +126,25 @@ export function Footer() {
 
       {/* Logos */}
       <div className="w-full bg-white py-8">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center justify-center w-full px-4 md:px-8">
-          <Image src={LogoEU} alt="Financiado por la Unión Europea" className="object-contain h-20 w-auto" />
-          <Image src={LogoMinisterio} alt="Ministerio para la Transformación Digital y de la Función Pública" className="object-contain h-20 w-auto" />
-          <Image src={LogoPRTR} alt="Plan de Recuperación, Transformación y Resiliencia" className="object-contain h-20 w-auto" />
-          <Image src={LogoCESGA} alt="CESGA" className="object-contain h-20 w-auto" />
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-6 md:gap-8 items-center px-4 md:px-8">
+
+          <Image src={LogoEU} alt="Financiado por la Unión Europea" className="object-contain h-10 sm:h-12 md:h-16 w-auto justify-self-center" />
+
+          <Image src={LogoMinisterio} alt="Ministerio para la Transformación Digital y de la Función Pública" className="object-contain h-10 sm:h-12 md:h-16 w-auto justify-self-center" />
+
+          <Image src={LogoPRTR} alt="Plan de Recuperación, Transformación y Resiliencia" className="object-contain h-10 sm:h-12 md:h-16 w-auto justify-self-center" />
+
+          <Image src={LogoCESGA} alt="CESGA" className="object-contain h-10 sm:h-12 md:h-16 w-auto justify-self-center" />
+          <div className="col-span-2 sm:col-span-1 flex justify-center">
+            <Image
+              src={LogoXacobeo}
+              alt="Xacobeo"
+              className="object-contain h-10 sm:h-12 md:h-16 w-auto"
+            />
+          </div>
+
         </div>
       </div>
-
       {/* Footer inferior */}
       <div className="bg-[#005596] relative w-full py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-3">
