@@ -2,13 +2,13 @@ import type { StaticImageData } from 'next/image';
 import type { Locale } from 'next-intl';
 import DinamicaCRED from '../../../../public/blog/dinamicaEventoInicialCRED.png';
 import ArchitectureImg from '../../../../public/logo_completo.jpg';
+import Logo from '../../../../public/logos/onehealth_simbolo_blog.png';
 import JCacheiroImg from '../../../../public/team/jcacheiro.png';
 import LDiazImg from '../../../../public/team/ldiaz.jpg';
 import LVazquezImg from '../../../../public/team/lvazquez.jpg';
 import MCarmenaImg from '../../../../public/team/mcarmena.jpg';
 import MCastineiraImg from '../../../../public/team/mcastineira.jpg';
 import PFerreiroImg from '../../../../public/team/pferreiro.jpg';
-import Logo from '../../../../public/logos/onehealth_simbolo_blog.png';
 
 interface TextNodeBase {
   type: string;
@@ -16,7 +16,7 @@ interface TextNodeBase {
 }
 
 interface HeadingNode extends TextNodeBase {
-  type: 'h1' | 'h2' | 'h3' | 'h4';
+  type: 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
   content: React.ReactNode;
 }
 
@@ -582,7 +582,8 @@ export const blogPosts: Record<Locale, Post[]> = {
         'Ha desarrollado su trayectoria entre la investigación y la industria, con experiencia en modelos predictivos, análisis de datos complejos y analítica avanzada, tanto en entornos académicos como empresariales. Actualmente trabaja como técnica investigadora en machine learning y ciencia de datos en el CESGA, participando en proyectos relacionados con espacios de datos, interoperabilidad y transferencia tecnológica.',
       ],
     },
-    { //NOVA NOTICIA: IAGO
+    {
+      //NOVA NOTICIA: IAGO
       key: 'taller-one-health-kit',
       date: '2026-03-26',
       title:
@@ -612,13 +613,10 @@ export const blogPosts: Record<Locale, Post[]> = {
         'Durante la sesión se explicó el proceso de despliegue del conector necesario para comenzar a operar dentro del espacio de datos.',
         {
           type: 'link',
-          content:
-            'https://www.youtube.com/watch?v=z72j1-uQCVo',
+          content: 'https://www.youtube.com/watch?v=z72j1-uQCVo',
           href: 'https://www.youtube.com/watch?v=z72j1-uQCVo',
           external: true,
         },
-
-
 
         {
           type: 'h4',
@@ -627,8 +625,7 @@ export const blogPosts: Record<Locale, Post[]> = {
         'También se mostró cómo cargar, organizar y gestionar activos de datos dentro del ecosistema de intercambio.',
         {
           type: 'link',
-          content:
-            'https://www.youtube.com/watch?v=yshUdWjAsw8',
+          content: 'https://www.youtube.com/watch?v=yshUdWjAsw8',
           href: 'https://www.youtube.com/watch?v=yshUdWjAsw8',
           external: true,
         },
@@ -641,12 +638,10 @@ export const blogPosts: Record<Locale, Post[]> = {
 
         {
           type: 'link',
-          content:
-            'https://www.youtube.com/watch?v=CRtcBkdf0Wg',
+          content: 'https://www.youtube.com/watch?v=CRtcBkdf0Wg',
           href: 'https://www.youtube.com/watch?v=CRtcBkdf0Wg',
           external: true,
         },
-
 
         'Todo ello permitió a las y los asistentes entender de forma progresiva cómo participar en el Espacio de Datos One Health y aplicar este proceso en contextos reales.',
 
@@ -695,19 +690,71 @@ export const blogPosts: Record<Locale, Post[]> = {
 
         {
           type: 'link',
-          content:
-            '• Guía del participante del Espacio de Datos.',
+          content: '• Guía del participante del Espacio de Datos.',
           href: 'https://xdatashare.srv.cesga.es/assets/static/files/Guia-del-participante.pdf',
           external: true,
         },
 
         {
           type: 'link',
-          content:
-            '• Guía del Kit de solicitud del Espacio de Datos.',
+          content: '• Guía del Kit de solicitud del Espacio de Datos.',
           href: 'https://dataspace.cesga.es/kit/guia_solicitud_KIT_CESGA.pdf',
           external: true,
         },
+      ],
+      featured: false,
+    },
+    {
+      key: 'onehealth-dataspace-consolidacion-2026',
+      date: '2026-04-16',
+      title:
+        'El proyecto OneHealth DataSpace del CESGA se consolida como iniciativa de intercambio de datos en favor de la salud global',
+      excerpt:
+        'El Espacio de Datos OneHealth DataSpace ha avanzado en su proceso de consolidación como iniciativa puntera de innovación en favor de la salud global con la adhesión de más de 10 nuevas entidades en los últimos meses.',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        'El Espacio de Datos OneHealth DataSpace, centrado en el concepto One Health —término en inglés acuñado por la Organización Mundial de la Salud (OMS) para describir la interrelación entre la salud humana, animal y medioambiental—, ha avanzado en su proceso de consolidación como iniciativa puntera de innovación en favor de la salud global con la adhesión de más de 10 nuevas entidades en los últimos meses.',
+
+        'La iniciativa OneHealth DataSpace —financiada por el Ministerio para la Transformación Digital y de la Función Pública a través del Plan de Recuperación, Transformación y Resiliencia (PRTR), con cargo a los fondos europeos NextGenerationEU— ha facilitado el acceso al Kit Espacios de Datos del CRED (Centro de Referencia de Espacios de Datos) a las entidades adheridas al proyecto. Este entorno se integrará en la futura Factoría de IA One Health 1HealthAI del CESGA.',
+
+        {
+          type: 'h2',
+          content: '22 entidades, un ecosistema One Health real',
+        },
+
+        'OneHealth DataSpace ha alcanzado un total de 22 entidades adheridas al espacio de datos tras el cierre, el pasado 31 de marzo, del plazo de solicitud del Kit Espacios de Datos del CRED. Este marco de colaboración permite a empresas, pymes e instituciones compartir datos de forma segura y optimizar su explotación mediante tecnologías avanzadas.',
+
+        'Con una base ya definida de participantes, OneHealth DataSpace configura un escenario real de colaboración en torno al dato, con una fuerte presencia del ámbito sanitario. Del total de 22 entidades adheridas:',
+
+        '• El 81,8% pertenece al sector de la salud humana',
+        '• El 13,6% que genera datos de salud medioambiental',
+        '• El 4,5% corresponde a salud animal',
+
+        'En términos de actividad, 14 de las 22 entidades (63,6%) ya ofrecen datos dentro del espacio, lo que refleja un nivel relevante de adopción en una fase temprana del proyecto.',
+
+        {
+          type: 'h3',
+          content: 'Más allá que compartir datos: HPC, Big Data y Cloud',
+        },
+
+        'Además de la compartición de datos, OneHealth DataSpace proporciona a las organizaciones un entorno tecnológico avanzado que combina HPC (computación de alto rendimiento), Big Data y Cloud (computación en la nube). Este conjunto de capacidades permite transformar los datos en conocimiento útil y aplicable.',
+
+        'Más que datos. More than data.',
+
+        {
+          type: 'h4',
+          content: 'Sobre la Factoría de IA One Health 1HealthAI',
+        },
+
+        'La 1Health AI Factory es la única infraestructura de la red de Factorías de IA de EuroHPC JU concebida específicamente para dar soporte a la investigación e innovación enmarcadas en la estrategia One Health. Impulsada por el CESGA y el Consejo Superior de Investigaciones Científicas (CSIC), situará a Galicia y España en la vanguardia europea del ecosistema tecnológico en salud global, ofreciendo acceso a supercomputación, herramientas avanzadas de IA, y servicios de formación y acompañamiento al tejido empresarial, académico e investigador.',
+
+        {
+          type: 'h5',
+          content: 'Sobre el CESGA',
+        },
+
+        'La Fundación CESGA (Centro de Supercomputación de Galicia) es una organización sin ánimo de lucro al servicio de la investigación científica, el desarrollo tecnológico y la innovación desde 1993, participada por la Xunta de Galicia y el CSIC. Ejecuta investigación, gestiona una infraestructura integrada en la Red Española de Supercomputación (RES), reconocida como Instalación Científico-Técnica Singular (ICTS) del Estado, y proporciona servicios avanzados de HPC, Big Data, Cloud e IA a la comunidad científica, educativa y empresarial.',
       ],
       featured: false,
     },
@@ -1200,7 +1247,8 @@ export const blogPosts: Record<Locale, Post[]> = {
         'She has developed her career between research and industry, with experience in predictive models, complex data analysis and advanced analytics in both academic and business environments. She currently works as a machine learning and data science research technician at CESGA, participating in projects related to data spaces, interoperability and technology transfer.',
       ],
     },
-    { //NEW ARTICLE: IAGO
+    {
+      //NEW ARTICLE: IAGO
       key: 'taller-one-health-kit',
       date: '2026-03-26',
       title:
@@ -1319,663 +1367,767 @@ export const blogPosts: Record<Locale, Post[]> = {
         },
       ],
     },
+    {
+      key: 'onehealth-dataspace-consolidacion-2026',
+      date: '2026-04-16',
+      title:
+        'The OneHealth DataSpace project of CESGA consolidates itself as a data-sharing initiative for global health',
+      excerpt:
+        'The OneHealth DataSpace has advanced in its consolidation process as a leading innovation initiative for global health, with the incorporation of more than 10 new entities in recent months.',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        'The OneHealth DataSpace, focused on the One Health concept —a term coined by the World Health Organization (WHO) to describe the interrelationship between human, animal and environmental health— has advanced in its consolidation process as a leading innovation initiative for global health with the incorporation of more than 10 new entities in recent months.',
+
+        'The OneHealth DataSpace initiative —funded by the Ministry for Digital Transformation and Public Administration through the Recovery, Transformation and Resilience Plan (PRTR), financed by NextGenerationEU funds— has facilitated access to the Data Spaces Kit of CRED (Data Spaces Reference Center) for the entities that have joined the project. This environment will be integrated into the future One Health 1HealthAI AI Factory of CESGA.',
+
+        {
+          type: 'h2',
+          content: '22 entities, a real One Health ecosystem',
+        },
+
+        'OneHealth DataSpace has reached a total of 22 entities joined to the data space after the closing, on March 31, of the application period for the Data Spaces Kit of CRED. This collaboration framework allows companies, SMEs and institutions to share data securely and optimize its exploitation through advanced technologies.',
+
+        'With an already defined base of participants, OneHealth DataSpace configures a real collaboration scenario around data, with a strong presence of the healthcare domain. Of the total 22 entities joined:',
+
+        '• 81.8% belong to the human health sector',
+        '• 13.6% generate environmental health data',
+        '• 4.5% correspond to animal health',
+
+        'In terms of activity, 14 of the 22 entities (63.6%) already provide data within the space, reflecting a relevant level of adoption in an early phase of the project.',
+
+        {
+          type: 'h3',
+          content: 'Beyond data sharing: HPC, Big Data and Cloud',
+        },
+
+        'In addition to data sharing, OneHealth DataSpace provides organizations with an advanced technological environment that combines HPC (high-performance computing), Big Data and Cloud (cloud computing). This set of capabilities makes it possible to transform data into useful and actionable knowledge.',
+
+        'More than data. More than data.',
+
+        {
+          type: 'h4',
+          content: 'About the One Health 1HealthAI AI Factory',
+        },
+
+        'The 1Health AI Factory is the only infrastructure within the EuroHPC JU network of AI Factories specifically conceived to support research and innovation framed within the One Health strategy. Driven by CESGA and the Spanish National Research Council (CSIC), it will place Galicia and Spain at the forefront of the European technological ecosystem in global health, offering access to supercomputing, advanced AI tools, and training and support services for the business, academic and research sectors.',
+
+        {
+          type: 'h5',
+          content: 'About CESGA',
+        },
+
+        'The CESGA Foundation (Galicia Supercomputing Center) is a non-profit organization dedicated to scientific research, technological development and innovation since 1993, supported by the Xunta de Galicia and the CSIC. It conducts research, manages an infrastructure integrated into the Spanish Supercomputing Network (RES), recognized as a Singular Scientific-Technical Infrastructure (ICTS) of the State, and provides advanced HPC, Big Data, Cloud and AI services to the scientific, educational and business communities.',
+      ],
+      featured: false,
+    },
   ],
 
   gl: [
-  {
-    key: 'initial-post-2025',
-    date: '2025-11-05',
-    title:
-      'Do dato ao impacto: así avanza o Centro Demostrador Multisectorial DATAlife',
-    excerpt:
-      'Nos últimos meses demos pasos firmes para aterrar os espazos de datos no ecosistema galego, conectando necesidades reais con tecnoloxía, gobernanza e boas prácticas.',
-    image: ArchitectureImg,
-    author_name: 'Marta Castiñeira',
-    author_image: MCastineiraImg,
-    description: [
-      { type: 'h1', content: 'Do dato ao impacto' },
-      'Nos últimos meses demos pasos firmes para aterrar os espazos de datos no ecosistema galego, conectando necesidades reais con tecnoloxía, gobernanza e boas prácticas. A continuación, contámosche que fixemos, que aprendemos e como sumarte a unha iniciativa que está cambiando o xeito no que compartimos e aproveitamos a información.',
-      { type: 'h2', content: 'Que fixemos?' },
-      {
-        type: 'bold',
-        content: '18 de xuño · Presentación pública do Centro Demostrador',
-      },
-      'Celebramos a presentación oficial do Centro Demostrador multisectorial DATAlife, con foco en como un espazo de datos impulsa a investigación e a innovación baixo o paraugas One Health. Houbo relatorios de persoas expertas, casos de uso e unha chamada clara á colaboración.',
-      'Tras as charlas da mañá, puidemos gozar dunha sesión colaborativa na que participamos tanto o Centro Demostrador como os casos de uso, guiados por asesores do Centro de Referencia de Espazos de Datos (CRED). Foi unha sesión moi produtiva!',
-      {
-        type: 'image',
-        src: DinamicaCRED,
-        alt: 'Participantes da dinámica colaborativa',
-        caption:
-          'Equipo do Centro Demostrador e casos de uso durante a dinámica colaborativa do evento inicial co CRED',
-      },
-      {
-        type: 'bold',
-        content:
-          '2 de outubro · Obradoiro técnico con SQS: FarmaciaVAX + D-Spacer',
-      },
-      'Organizamos un obradoiro práctico onde mostramos, de extremo a extremo, como se materializa un espazo de datos en saúde coa plataforma D-Spacer (SQS). Exploramos como conectarse ao espazo de datos, como intercambiar información mantendo a soberanía, así como operar de forma segura entre organizacións.',
-      {
-        type: 'link',
-        content:
-          '▶️ Gravación: Obradoiro de espazo de datos FarmaciaVAX coa plataforma D-Spacer de SQS',
-        href: 'https://www.youtube.com/watch?v=50Ahpz-1VPI',
-        external: true,
-      },
-      {
-        type: 'bold',
-        content:
-          '31 de outubro · Obradoiro de presentación de XDataShare (MVD)',
-      },
-      'Máis adiante, ese mesmo mes, organizamos un segundo obradoiro onde mostramos como traballar nun espazo de datos usando a plataforma XDataShare baseada en Eclipse Dataspace Components (EDC) a través do noso caso de uso sintético (FarmaciaVAX).',
-      'Concretamente, tivemos unha introdución a XDataShare na que se presentou a plataforma de intercambio de datos, os seus principios de interoperabilidade e seguridade, os roles implicados e a arquitectura básica: catálogo, control de acceso, trazabilidade e auditoría.',
-      'A continuación, describiuse o caso de uso FarmaciaVAX, introduciuse o contexto e obxectivos do caso, actores participantes, fontes de datos, modelo de gobernanza e cumprimento normativo. Detallouse o fluxo de datos de extremo a extremo. Ademais, fixose un percorrido guiado polo proceso de alta: rexistro institucional, verificación de identidade e asignación de roles.',
-      {
-        type: 'link',
-        content:
-          '▶️ Gravación: Obradoiro de espazo de datos FarmaciaVAX coa plataforma XDataShare (MVD)',
-        href: 'https://www.youtube.com/watch?v=u7zTyU795n8',
-        external: true,
-      },
-      { type: 'h2', content: 'O noso catálogo' },
-      'O espazo de datos DATAlife combina interoperabilidade, gobernanza, seguridade e operación sobre infraestruturas de alto rendemento. Na web atoparás o noso catálogo así como información útil sobre o noso espazo de datos.',
-      {
-        type: 'link',
-        content: '▶️ Consulta o catálogo',
-        href: '/catalog',
-      },
-      { type: 'h2', content: 'Casos de uso actuais' },
-      { type: 'bold', content: 'Brilliant' },
-      'Observatorio de sarcopenia con IA aplicada a RM lumbar (repositorios públicos) e variables demográficas simuladas. Entrega datasets estruturados e interoperables para detección temperá e análise poboacional, con servizos reutilizables orientados a monitorización, diagnóstico asistido e explotación de datos clínicos anonimizados. Posible uso de datos hospitalarios externos.',
-      { type: 'bold', content: 'CeliaSpace' },
-      'Conxunto de datos procedentes de conversas entre persoas maiores e a asistente virtual Serenia (app e WhatsApp), enfocado no acompañamento e benestar emocional. Tras anonimización, compártese con entidades como Serenia Solutions S.L. e i4Life (Datiacare) para desenvolvemento e adestramento de algoritmos de avaliación de saúde.',
-      { type: 'bold', content: 'Datiacare' },
-      'Plataforma para seguimento domiciliario de persoas maiores mediante sensores + IA. Analiza actividade cotiá para detectar anomalías e xerar alertas. Modelo mixto B2C/B2B/B2G (familias, centros e administracións). Achega valor económico, social, científico e ambiental, con forte enfoque en ética e privacidade (RGPD, DPIA) e visión de integración en nós europeos.',
-      { type: 'bold', content: 'AIDataMed' },
-      'Xeración de datos sintéticos en gastroenteroloxía con modelos de IA adestrados sobre información clínica, sociodemográfica, nutricional e ambiental anonimizada e validada por expertos. Corrixe sesgos e mellora representatividade. Implementación en OMOP CDM, aliñada con IDSA/Gaia-X, despregada en CESGA e baixo principios FAIR.',
-      {
-        type: 'bold',
-        content: 'GIFT (Gastroenterology Interface with Fair Treatment)',
-      },
-      'Asistente conversacional para gastroenteroloxía e hepatoloxía con evidencia científica e referencias actualizadas. Apoia a toma de decisións clínicas e a xestión, acelerando trámites e fomentando a investigación con altos estándares de calidade e fiabilidade.',
-      { type: 'bold', content: 'BiomeXplore' },
-      'Plataforma interoperable para análise de microbiota a partir de datos sintéticos (p.ex. SEQ2MGS + metadatos simulados). Ofrece repositorio, APIs, pipelines, IA, visualización e benchmarking. Nó reutilizable e escalable que promove compartición responsable e cumprimento FAIR. Posible integración de datos ambientais.',
-      { type: 'bold', content: 'Salusbench' },
-      'Plataforma de minería de procesos hospitalarios con apoio de LLMs. Reconstrúe fluxos reais a partir de datos anonimizados, xera indicadores e facilita benchmarking, simulación de cambios e detección de pescozos de botella. Colabora con hospitais (públicos/privados) e aplica marcos RGPD e UNE 0087:2025. Modelo de negocio por subscrición + servizos; prevé mecanismos de retorno para provedores de datos.',
-      { type: 'h2', content: 'Divulgación: por que o contamos e como' },
-      'Desde o equipo do Centro Demostrador puxemos en marcha unha liña de divulgación para explicar os conceptos clave dos espazos de datos cun enfoque claro, útil e ameno... Mantente atento/a porque proximamente iniciaremos esta liña!',
-
-      { type: 'h2', content: 'E agora que?' },
-      'Isto é só o comezo. Nas próximas semanas publicaremos novos materiais, fichas detalladas de casos de uso e datas de próximas sesións. Atento/a ás nosas novidades!',
-
-      { type: 'h2', content: 'Como participar' },
-      'Se queres explorar a demo ou preparar a túa organización para conectarse a un espazo de datos, contáctanos e permanece atento/a á nosa web.',
-    ],
-  },
-
- {
-  key: 'dataspace-glossary-2025',
-  date: '2025-11-18',
-  title: 'Espazo de datos: 12 definicións que che aforran reunións 🚀',
-  excerpt:
-    'Se estás a montar ou conectarte a un espazo de datos, aliñar vocabulario desde o principio evita friccións. Aquí tes un glosario esencial 📘.',
-  author_name: 'Marta Castiñeira',
-  author_image: MCastineiraImg,
-  description: [
-    { type: 'h1', content: 'Glosario esencial' },
-
-    'Se estás a montar ou conectarte a un espazo de datos, aliñar vocabulario desde o principio evita friccións e acelera decisións. Aquí tes un glosario esencial 📘:',
-
-    { type: 'bold', content: '1) Espazo de datos' },
-    'Ecosistema onde distintas organizacións comparten e usan datos baixo regras comúns de gobernanza, seguridade, interoperabilidade e confianza verificable (acordos, auditorías, trazabilidade).',
-
-    { type: 'bold', content: '2) Caso de uso' },
-    'Iniciativa liderada por unha ou máis entidades que emprega o espazo de datos para resolver un reto concreto mediante o uso de datos compartidos. Exemplos: vixilancia epidemiolóxica, optimización de rutas loxísticas, avaliación de resultados en saúde.',
-
-    { type: 'bold', content: '3) Produto de datos' },
-    'Segundo UNE 0087:2025, un produto é unha “unidade que inclúe datos máis metadatos, políticas, servizos e elementos de soporte”. Na práctica: unha capa de valor sobre un conxunto de datos do espazo para que o consumo sexa controlado, documentado e útil. Exemplo: un portal de benchmarking hospitalario que expón indicadores normalizados e actualizados.',
-
-    { type: 'bold', content: '4) Catálogo de datos' },
-    'Inventario navegable con datos, produtos e/ou servizos de datos con metadatos estandarizados (quen, que, periodicidade, calidade, licenzas, custo e como acceder).',
-
-    { type: 'bold', content: '5) Provedor de datos' },
-    'Participante que pon a disposición datos, produtos e/ou servizos. Se os datos son xerados por el mesmo, asume ademais o rol de produtor (responsable da orixe e da calidade).',
-
-    { type: 'bold', content: '6) Consumidor de datos' },
-    'Participante que emprega datos, produtos e/ou servizos cun propósito declarado e baixo contrato/políticas. Pode ser unha entidade, unha persoa ou dispositivos.',
-
-    { type: 'bold', content: '7) Conector' },
-    'Compoñente técnico que permite a interoperabilidade e o intercambio seguro. Próximamente haberá unha guía práctica para escoller e despregar conectores.',
-
-    { type: 'bold', content: '8) Gobernanza' },
-    'Implementación práctica do goberno do dato no espazo: roles, normas e procesos (xestión de accesos, resolución de incidencias, métricas, auditorías e mellora continua).',
-
-    { type: 'bold', content: '9) Políticas de acceso e uso' },
-    'Condicións lexibles por persoas e máquinas que regulan o uso dos datos: propósito, minimización, retención, redistribución, anonimización/pseudonimización, seguridade e cumprimento normativo.',
-
-    { type: 'bold', content: '10) Interoperabilidade semántica' },
-    'O “dicionario común” que asegura que termos como “paciente”, “centro” ou “data” signifiquen o mesmo entre organizacións: ontoloxías, vocabularios, esquemas e mapeos. A interoperabilidade é un tema amplo que se tratará en detalle nun próximo artigo.',
-
     {
-      type: 'bold',
-      content: '11) Rastrexabilidade e rexistro de consentimentos',
+      key: 'initial-post-2025',
+      date: '2025-11-05',
+      title:
+        'Do dato ao impacto: así avanza o Centro Demostrador Multisectorial DATAlife',
+      excerpt:
+        'Nos últimos meses demos pasos firmes para aterrar os espazos de datos no ecosistema galego, conectando necesidades reais con tecnoloxía, gobernanza e boas prácticas.',
+      image: ArchitectureImg,
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        { type: 'h1', content: 'Do dato ao impacto' },
+        'Nos últimos meses demos pasos firmes para aterrar os espazos de datos no ecosistema galego, conectando necesidades reais con tecnoloxía, gobernanza e boas prácticas. A continuación, contámosche que fixemos, que aprendemos e como sumarte a unha iniciativa que está cambiando o xeito no que compartimos e aproveitamos a información.',
+        { type: 'h2', content: 'Que fixemos?' },
+        {
+          type: 'bold',
+          content: '18 de xuño · Presentación pública do Centro Demostrador',
+        },
+        'Celebramos a presentación oficial do Centro Demostrador multisectorial DATAlife, con foco en como un espazo de datos impulsa a investigación e a innovación baixo o paraugas One Health. Houbo relatorios de persoas expertas, casos de uso e unha chamada clara á colaboración.',
+        'Tras as charlas da mañá, puidemos gozar dunha sesión colaborativa na que participamos tanto o Centro Demostrador como os casos de uso, guiados por asesores do Centro de Referencia de Espazos de Datos (CRED). Foi unha sesión moi produtiva!',
+        {
+          type: 'image',
+          src: DinamicaCRED,
+          alt: 'Participantes da dinámica colaborativa',
+          caption:
+            'Equipo do Centro Demostrador e casos de uso durante a dinámica colaborativa do evento inicial co CRED',
+        },
+        {
+          type: 'bold',
+          content:
+            '2 de outubro · Obradoiro técnico con SQS: FarmaciaVAX + D-Spacer',
+        },
+        'Organizamos un obradoiro práctico onde mostramos, de extremo a extremo, como se materializa un espazo de datos en saúde coa plataforma D-Spacer (SQS). Exploramos como conectarse ao espazo de datos, como intercambiar información mantendo a soberanía, así como operar de forma segura entre organizacións.',
+        {
+          type: 'link',
+          content:
+            '▶️ Gravación: Obradoiro de espazo de datos FarmaciaVAX coa plataforma D-Spacer de SQS',
+          href: 'https://www.youtube.com/watch?v=50Ahpz-1VPI',
+          external: true,
+        },
+        {
+          type: 'bold',
+          content:
+            '31 de outubro · Obradoiro de presentación de XDataShare (MVD)',
+        },
+        'Máis adiante, ese mesmo mes, organizamos un segundo obradoiro onde mostramos como traballar nun espazo de datos usando a plataforma XDataShare baseada en Eclipse Dataspace Components (EDC) a través do noso caso de uso sintético (FarmaciaVAX).',
+        'Concretamente, tivemos unha introdución a XDataShare na que se presentou a plataforma de intercambio de datos, os seus principios de interoperabilidade e seguridade, os roles implicados e a arquitectura básica: catálogo, control de acceso, trazabilidade e auditoría.',
+        'A continuación, describiuse o caso de uso FarmaciaVAX, introduciuse o contexto e obxectivos do caso, actores participantes, fontes de datos, modelo de gobernanza e cumprimento normativo. Detallouse o fluxo de datos de extremo a extremo. Ademais, fixose un percorrido guiado polo proceso de alta: rexistro institucional, verificación de identidade e asignación de roles.',
+        {
+          type: 'link',
+          content:
+            '▶️ Gravación: Obradoiro de espazo de datos FarmaciaVAX coa plataforma XDataShare (MVD)',
+          href: 'https://www.youtube.com/watch?v=u7zTyU795n8',
+          external: true,
+        },
+        { type: 'h2', content: 'O noso catálogo' },
+        'O espazo de datos DATAlife combina interoperabilidade, gobernanza, seguridade e operación sobre infraestruturas de alto rendemento. Na web atoparás o noso catálogo así como información útil sobre o noso espazo de datos.',
+        {
+          type: 'link',
+          content: '▶️ Consulta o catálogo',
+          href: '/catalog',
+        },
+        { type: 'h2', content: 'Casos de uso actuais' },
+        { type: 'bold', content: 'Brilliant' },
+        'Observatorio de sarcopenia con IA aplicada a RM lumbar (repositorios públicos) e variables demográficas simuladas. Entrega datasets estruturados e interoperables para detección temperá e análise poboacional, con servizos reutilizables orientados a monitorización, diagnóstico asistido e explotación de datos clínicos anonimizados. Posible uso de datos hospitalarios externos.',
+        { type: 'bold', content: 'CeliaSpace' },
+        'Conxunto de datos procedentes de conversas entre persoas maiores e a asistente virtual Serenia (app e WhatsApp), enfocado no acompañamento e benestar emocional. Tras anonimización, compártese con entidades como Serenia Solutions S.L. e i4Life (Datiacare) para desenvolvemento e adestramento de algoritmos de avaliación de saúde.',
+        { type: 'bold', content: 'Datiacare' },
+        'Plataforma para seguimento domiciliario de persoas maiores mediante sensores + IA. Analiza actividade cotiá para detectar anomalías e xerar alertas. Modelo mixto B2C/B2B/B2G (familias, centros e administracións). Achega valor económico, social, científico e ambiental, con forte enfoque en ética e privacidade (RGPD, DPIA) e visión de integración en nós europeos.',
+        { type: 'bold', content: 'AIDataMed' },
+        'Xeración de datos sintéticos en gastroenteroloxía con modelos de IA adestrados sobre información clínica, sociodemográfica, nutricional e ambiental anonimizada e validada por expertos. Corrixe sesgos e mellora representatividade. Implementación en OMOP CDM, aliñada con IDSA/Gaia-X, despregada en CESGA e baixo principios FAIR.',
+        {
+          type: 'bold',
+          content: 'GIFT (Gastroenterology Interface with Fair Treatment)',
+        },
+        'Asistente conversacional para gastroenteroloxía e hepatoloxía con evidencia científica e referencias actualizadas. Apoia a toma de decisións clínicas e a xestión, acelerando trámites e fomentando a investigación con altos estándares de calidade e fiabilidade.',
+        { type: 'bold', content: 'BiomeXplore' },
+        'Plataforma interoperable para análise de microbiota a partir de datos sintéticos (p.ex. SEQ2MGS + metadatos simulados). Ofrece repositorio, APIs, pipelines, IA, visualización e benchmarking. Nó reutilizable e escalable que promove compartición responsable e cumprimento FAIR. Posible integración de datos ambientais.',
+        { type: 'bold', content: 'Salusbench' },
+        'Plataforma de minería de procesos hospitalarios con apoio de LLMs. Reconstrúe fluxos reais a partir de datos anonimizados, xera indicadores e facilita benchmarking, simulación de cambios e detección de pescozos de botella. Colabora con hospitais (públicos/privados) e aplica marcos RGPD e UNE 0087:2025. Modelo de negocio por subscrición + servizos; prevé mecanismos de retorno para provedores de datos.',
+        { type: 'h2', content: 'Divulgación: por que o contamos e como' },
+        'Desde o equipo do Centro Demostrador puxemos en marcha unha liña de divulgación para explicar os conceptos clave dos espazos de datos cun enfoque claro, útil e ameno... Mantente atento/a porque proximamente iniciaremos esta liña!',
+
+        { type: 'h2', content: 'E agora que?' },
+        'Isto é só o comezo. Nas próximas semanas publicaremos novos materiais, fichas detalladas de casos de uso e datas de próximas sesións. Atento/a ás nosas novidades!',
+
+        { type: 'h2', content: 'Como participar' },
+        'Se queres explorar a demo ou preparar a túa organización para conectarse a un espazo de datos, contáctanos e permanece atento/a á nosa web.',
+      ],
     },
-    'Evidencias de quen accedeu a que, cando, para que e con que base legal/consentimento; inclúe rexistros verificables, versións e mecanismos de rendición de contas.',
-
-    { type: 'bold', content: '12) Contrato de adhesión' },
-    'Marco legal que define responsabilidades, garantías, sancións, propiedade intelectual, seguridade, política de saída (offboarding) e continuidade operativa.',
 
     {
-      type: 'h2',
-      content: 'Consellos prácticos (para comezar con bo pé)',
+      key: 'dataspace-glossary-2025',
+      date: '2025-11-18',
+      title: 'Espazo de datos: 12 definicións que che aforran reunións 🚀',
+      excerpt:
+        'Se estás a montar ou conectarte a un espazo de datos, aliñar vocabulario desde o principio evita friccións. Aquí tes un glosario esencial 📘.',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        { type: 'h1', content: 'Glosario esencial' },
+
+        'Se estás a montar ou conectarte a un espazo de datos, aliñar vocabulario desde o principio evita friccións e acelera decisións. Aquí tes un glosario esencial 📘:',
+
+        { type: 'bold', content: '1) Espazo de datos' },
+        'Ecosistema onde distintas organizacións comparten e usan datos baixo regras comúns de gobernanza, seguridade, interoperabilidade e confianza verificable (acordos, auditorías, trazabilidade).',
+
+        { type: 'bold', content: '2) Caso de uso' },
+        'Iniciativa liderada por unha ou máis entidades que emprega o espazo de datos para resolver un reto concreto mediante o uso de datos compartidos. Exemplos: vixilancia epidemiolóxica, optimización de rutas loxísticas, avaliación de resultados en saúde.',
+
+        { type: 'bold', content: '3) Produto de datos' },
+        'Segundo UNE 0087:2025, un produto é unha “unidade que inclúe datos máis metadatos, políticas, servizos e elementos de soporte”. Na práctica: unha capa de valor sobre un conxunto de datos do espazo para que o consumo sexa controlado, documentado e útil. Exemplo: un portal de benchmarking hospitalario que expón indicadores normalizados e actualizados.',
+
+        { type: 'bold', content: '4) Catálogo de datos' },
+        'Inventario navegable con datos, produtos e/ou servizos de datos con metadatos estandarizados (quen, que, periodicidade, calidade, licenzas, custo e como acceder).',
+
+        { type: 'bold', content: '5) Provedor de datos' },
+        'Participante que pon a disposición datos, produtos e/ou servizos. Se os datos son xerados por el mesmo, asume ademais o rol de produtor (responsable da orixe e da calidade).',
+
+        { type: 'bold', content: '6) Consumidor de datos' },
+        'Participante que emprega datos, produtos e/ou servizos cun propósito declarado e baixo contrato/políticas. Pode ser unha entidade, unha persoa ou dispositivos.',
+
+        { type: 'bold', content: '7) Conector' },
+        'Compoñente técnico que permite a interoperabilidade e o intercambio seguro. Próximamente haberá unha guía práctica para escoller e despregar conectores.',
+
+        { type: 'bold', content: '8) Gobernanza' },
+        'Implementación práctica do goberno do dato no espazo: roles, normas e procesos (xestión de accesos, resolución de incidencias, métricas, auditorías e mellora continua).',
+
+        { type: 'bold', content: '9) Políticas de acceso e uso' },
+        'Condicións lexibles por persoas e máquinas que regulan o uso dos datos: propósito, minimización, retención, redistribución, anonimización/pseudonimización, seguridade e cumprimento normativo.',
+
+        { type: 'bold', content: '10) Interoperabilidade semántica' },
+        'O “dicionario común” que asegura que termos como “paciente”, “centro” ou “data” signifiquen o mesmo entre organizacións: ontoloxías, vocabularios, esquemas e mapeos. A interoperabilidade é un tema amplo que se tratará en detalle nun próximo artigo.',
+
+        {
+          type: 'bold',
+          content: '11) Rastrexabilidade e rexistro de consentimentos',
+        },
+        'Evidencias de quen accedeu a que, cando, para que e con que base legal/consentimento; inclúe rexistros verificables, versións e mecanismos de rendición de contas.',
+
+        { type: 'bold', content: '12) Contrato de adhesión' },
+        'Marco legal que define responsabilidades, garantías, sancións, propiedade intelectual, seguridade, política de saída (offboarding) e continuidade operativa.',
+
+        {
+          type: 'h2',
+          content: 'Consellos prácticos (para comezar con bo pé)',
+        },
+        '• Caso de uso primeiro: obxectivo, métricas e valor agardado.',
+        '• Produto de datos mínimo viable: que expones, a quen e como.',
+        '• Políticas e roles antes que tecnoloxía: despois aliña conectores, catálogos e APIs con esas decisións.',
+      ],
+      featured: false,
     },
-    '• Caso de uso primeiro: obxectivo, métricas e valor agardado.',
-    '• Produto de datos mínimo viable: que expones, a quen e como.',
-    '• Políticas e roles antes que tecnoloxía: despois aliña conectores, catálogos e APIs con esas decisións.',
-  ],
-  featured: false,
-},
 
-  {
-  key: 'mvd-access-2025',
-  date: '2025-12-02',
-  title: 'Acceso ao MVD do noso Espazo de Datos',
-  excerpt:
-    '¡Segundo gran fito! O MVD xa está operativo para o noso Espazo de Datos en One Health.',
-  author_name: 'Marta Castiñeira',
-  author_image: MCastineiraImg,
-  description: [
     {
-      type: 'bold',
-      content:
+      key: 'mvd-access-2025',
+      date: '2025-12-02',
+      title: 'Acceso ao MVD do noso Espazo de Datos',
+      excerpt:
         '¡Segundo gran fito! O MVD xa está operativo para o noso Espazo de Datos en One Health.',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        {
+          type: 'bold',
+          content:
+            '¡Segundo gran fito! O MVD xa está operativo para o noso Espazo de Datos en One Health.',
+        },
+
+        'Esta versión inicial permite validar de extremo a extremo os fluxos de intercambio seguro de datos, probar os servizos comúns e exercitar os primeiros casos de uso piloto con datos en contorno de probas e, cando proceda, con datos reais debidamente protexidos.',
+
+        { type: 'h2', content: 'Que é o MVD?' },
+        'O MVD (Minimum Viable Dataspace) é a primeira versión operativa do Espazo de Datos que reúne o conxunto mínimo de capacidades necesarias para poñer en marcha a federación: identidade e acceso, descubrimento de datos, gobernanza básica, trazabilidade e conectividade entre provedores e consumidores. Serve para aprender rápido, medir impacto e axustar o deseño antes do escalado.',
+
+        { type: 'h2', content: 'Que inclúe esta fase (capas e servizos)' },
+        '• Xestión de identidade e acceso federado: autenticación, autorización por políticas e roles.',
+        '• Acordos e gobernanza: políticas de uso.',
+        '• Conectores EDC.',
+        '• Soporte a casos de uso piloto, segundo demanda.',
+
+        { type: 'h2', content: 'Como adherirte' },
+        'Segue o noso proceso de adhesión cos seguintes pasos:',
+
+        { type: 'h3', content: 'Fase de solicitude e adhesión' },
+
+        { type: 'bold', content: '1️⃣ Infórmate' },
+        'Descarga a Guía do Participante para coñecer en detalle como funciona o Espazo de Datos, os requisitos técnicos e legais, e os beneficios de unirte. Acompañámoste en cada paso.',
+
+        { type: 'bold', content: '2️⃣ Solicita a túa adhesión' },
+        'Enche o formulario de mostra de interese e o noso equipo revisará a túa solicitude e contactará contigo para os seguintes pasos.',
+
+        { type: 'h3', content: 'Fase de integración no Espazo de Datos' },
+
+        { type: 'bold', content: '3️⃣ Integración técnica' },
+        'Conecta os teus sistemas e prepara os teus datos segundo as políticas de interoperabilidade, calidade e seguridade do Espazo de Datos. Estaremos ao teu lado durante todo o proceso.',
+
+        { type: 'bold', content: '4️⃣ Participa e medra' },
+        'Unha vez formes parte do Espazo, poderás intercambiar datos, participar en casos de uso e colaborar con outros participantes do ecosistema. Seguiremos acompañándote en cada etapa.',
+
+        { type: 'h2', content: 'Recursos útiles' },
+        {
+          type: 'link',
+          content: '▶️ Proceso de adhesión',
+          href: 'https://dataspace.cesga.es/es/how',
+          external: false,
+        },
+        {
+          type: 'link',
+          content: '▶️ Portal do MVD',
+          href: 'https://xdatashare.srv.cesga.es/portal',
+          external: true,
+        },
+        {
+          type: 'link',
+          content: '▶️ Titorial guiado do MVD (Obradoiro FarmaciaVAX)',
+          href: 'https://www.youtube.com/watch?v=u7zTyU795n8',
+          external: true,
+        },
+        {
+          type: 'link',
+          content: '▶️ Obradoiro de espazo de datos sobre Conectores EDC',
+          href: 'https://www.youtube.com/watch?v=WGBCGCz8vHc',
+          external: true,
+        },
+        { type: 'bold', content: '💬 Dúbidas? Escríbenos a dmd@cesga.es' },
+      ],
     },
-
-    'Esta versión inicial permite validar de extremo a extremo os fluxos de intercambio seguro de datos, probar os servizos comúns e exercitar os primeiros casos de uso piloto con datos en contorno de probas e, cando proceda, con datos reais debidamente protexidos.',
-
-    { type: 'h2', content: 'Que é o MVD?' },
-    'O MVD (Minimum Viable Dataspace) é a primeira versión operativa do Espazo de Datos que reúne o conxunto mínimo de capacidades necesarias para poñer en marcha a federación: identidade e acceso, descubrimento de datos, gobernanza básica, trazabilidade e conectividade entre provedores e consumidores. Serve para aprender rápido, medir impacto e axustar o deseño antes do escalado.',
-
-    { type: 'h2', content: 'Que inclúe esta fase (capas e servizos)' },
-    '• Xestión de identidade e acceso federado: autenticación, autorización por políticas e roles.',
-    '• Acordos e gobernanza: políticas de uso.',
-    '• Conectores EDC.',
-    '• Soporte a casos de uso piloto, segundo demanda.',
-
-    { type: 'h2', content: 'Como adherirte' },
-    'Segue o noso proceso de adhesión cos seguintes pasos:',
-
-    { type: 'h3', content: 'Fase de solicitude e adhesión' },
-
-    { type: 'bold', content: '1️⃣ Infórmate' },
-    'Descarga a Guía do Participante para coñecer en detalle como funciona o Espazo de Datos, os requisitos técnicos e legais, e os beneficios de unirte. Acompañámoste en cada paso.',
-
-    { type: 'bold', content: '2️⃣ Solicita a túa adhesión' },
-    'Enche o formulario de mostra de interese e o noso equipo revisará a túa solicitude e contactará contigo para os seguintes pasos.',
-
-    { type: 'h3', content: 'Fase de integración no Espazo de Datos' },
-
-    { type: 'bold', content: '3️⃣ Integración técnica' },
-    'Conecta os teus sistemas e prepara os teus datos segundo as políticas de interoperabilidade, calidade e seguridade do Espazo de Datos. Estaremos ao teu lado durante todo o proceso.',
-
-    { type: 'bold', content: '4️⃣ Participa e medra' },
-    'Unha vez formes parte do Espazo, poderás intercambiar datos, participar en casos de uso e colaborar con outros participantes do ecosistema. Seguiremos acompañándote en cada etapa.',
-
-    { type: 'h2', content: 'Recursos útiles' },
     {
-      type: 'link',
-      content: '▶️ Proceso de adhesión',
-      href: 'https://dataspace.cesga.es/es/how',
-      external: false,
+      key: 'gobernanza-espacio-datos',
+      title:
+        'Gobernanza nun espazo de datos: a parte “invisible” que fai que todo funcione',
+      date: '2025-12-15',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      excerpt:
+        'A gobernanza é a capa invisible que permite que un espazo de datos funcione de forma segura, xusta e reutilizable.',
+      description: [
+        'Cando se fala de espazos de datos, case sempre aparecen palabras como conectores, APIs, estándares ou interoperabilidade. Todo iso é importante, pero hai unha peza que adoita quedar en segundo plano e que, en realidade, o sostén todo: a gobernanza.',
+
+        'A gobernanza é o que evita que o espazo de datos se converta nun “grupo de WhatsApp de datasets” onde ninguén sabe que se pode usar, quen responde se algo falla ou como se demostra que se respectaron as condicións.',
+
+        {
+          type: 'bold',
+          content:
+            'No demostrador multisectorial DATAlife, a gobernanza está pensada para compartir datos de forma útil, segura e xusta, xerando valor nun entorno One Health.',
+        },
+
+        {
+          type: 'h2',
+          content: 'Entón… que é exactamente a gobernanza?',
+        },
+
+        'Pensa na gobernanza como as regras do xogo, pero tamén como o árbitro e o marcador.',
+
+        'As regras definen que se pode compartir e baixo que condicións. O árbitro establece que ocorre se hai un problema ou un incumprimento. O marcador permite medir se o espazo está funcionando e achegando valor.',
+
+        'No Centro Demostrador distínguese ademais entre gobernanza (as regras e controis do día a día) e goberno do dato, que corresponde á capa estratéxica: obxectivos, riscos, políticas e seguimento.',
+
+        {
+          type: 'h2',
+          content: 'As tres grandes preguntas que responde a gobernanza',
+        },
+
+        {
+          type: 'h3',
+          content: '1) Como se organiza o espazo?',
+        },
+
+        'A gobernanza define quen toma decisións, como se incorporan novos participantes, que ocorre cando alguén abandona o espazo e como se xestionan os conflitos, todo iso mediante procesos claros e transparentes.',
+
+        {
+          type: 'h3',
+          content: '2) Como se garante que todos falan o mesmo idioma?',
+        },
+
+        'Nun espazo multisectorial, a interoperabilidade non é só intercambiar arquivos, senón asegurar que os datos se entenden, se usan correctamente e se poden reutilizar.',
+
+        'Por iso trabállase a nivel legal, organizativo, semántico e técnico, usando formatos comúns e vocabularios recoñecidos como FHIR, OMOP, DICOM, CIE-10, SNOMED ou LOINC.',
+
+        {
+          type: 'h3',
+          content: '3) Que se pode facer cos datos e que non?',
+        },
+
+        'Aquí entran en xogo as licenzas, as condicións de uso, a trazabilidade, a calidade dos datos e a privacidade. Cada entidade mantén o control dos seus datos dentro dun marco común que evita malentendidos e asegura o cumprimento.',
+
+        {
+          type: 'h2',
+          content: 'Roles claros para evitar zonas grises',
+        },
+
+        'Un espazo de datos funciona mellor cando cada actor sabe que lle corresponde. No Centro Demostrador defínense roles como autoridade de goberno, operador do espazo, provedor e consumidor de datos/servizos.',
+
+        'Esta definición reduce friccións, aforra tempo e fai o sistema máis escalable.',
+
+        {
+          type: 'h2',
+          content: 'Observabilidade: que se poida demostrar',
+        },
+
+        'Non chega con dicir que se cumpre. Un espazo confiable debe poder demostralo mediante rexistros, trazas e informes que permitan auditar accesos, transferencias e usos dos datos.',
+
+        {
+          type: 'h2',
+          content: 'Que se gaña cunha boa gobernanza?',
+        },
+
+        'Menos incerteza, maior seguridade xurídica e técnica, mellor reutilización dos datos e un impacto medible son algúns dos beneficios directos dunha gobernanza ben deseñada.',
+
+        {
+          type: 'bold',
+          content:
+            'En resumo, a gobernanza é o que permite que un espazo de datos non só exista, senón que funcione de verdade.',
+        },
+
+        {
+          type: 'h2',
+          content: 'Que vén despois?',
+        },
+
+        'Para incorporarse a un espazo como o noso é clave ter claro o rol, os datos ou servizos que se achegan ou consumen e as condicións aplicables. Con iso, a adhesión deixa de ser un labirinto e convértese nun proceso ordenado e predicible.',
+      ],
     },
     {
-      type: 'link',
-      content: '▶️ Portal do MVD',
-      href: 'https://xdatashare.srv.cesga.es/portal',
-      external: true,
+      key: 'ontologies-vocabularies',
+      date: '2026-01-26',
+      title:
+        'Ontoloxías e vocabularios en espazos de datos: unha guía sinxela desde o Centro Demostrador DATAlife',
+      excerpt:
+        'Para que un espazo de datos funcione, non abonda con compartir: hai que entender o compartido da mesma maneira. Explicámosche, de forma práctica, que son os vocabularios e as ontoloxías, que estándares se usan e como aliñar datos con eles.',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        'Nun espazo de datos non abonda con compartir información: é fundamental entendela da mesma maneira. Para logralo utilízanse dúas ferramentas clave: vocabularios e ontoloxías, que permiten que distintos sistemas, organizacións e profesionais falen unha linguaxe común.',
+
+        {
+          type: 'h2',
+          content: '➡️ Vocabularios e ontoloxías: dúas pezas distintas',
+        },
+
+        { type: 'h4', content: 'Que é un vocabulario?' },
+        'Un vocabulario é un conxunto estruturado de termos e códigos que se utiliza para nomear conceptos de forma uniforme. Por exemplo, un código específico para “PCR”, outro para “SARS-CoV-2” ou para “vacina da gripe”. O seu obxectivo é eliminar ambigüidades e garantir que todas as partes utilizan as mesmas denominacións.',
+
+        { type: 'h4', content: 'Que é unha ontoloxía?' },
+        'Unha ontoloxía non só define conceptos, senón tamén as relacións entre eles. Permite expresar, por exemplo, que unha “vacina” pertence a unha categoría concreta, ou que unha “observación de laboratorio” está asociada a un “paciente”. É, en esencia, un mapa conceptual que describe como se organiza un dominio de coñecemento.',
+
+        {
+          type: 'h2',
+          content: '➡️ Por que importa falar o mesmo idioma',
+        },
+
+        { type: 'h4', content: 'Interoperabilidade real' },
+        'Se cada entidade define os conceptos de maneira diferente, conectar datos é extremadamente difícil. Os vocabularios comúns garanten que “paciente”, “lote de vacina” ou “centro dispensador” se interpreten igual en todos os sistemas.',
+
+        { type: 'h4', content: 'Datos máis FAIR' },
+        'Os estándares semánticos favorecen datos máis localizables (grazas a metadatos claros), interoperables (grazas a formatos compatibles) e reutilizables (grazas a definicións e licenzas ben documentadas).',
+
+        { type: 'h4', content: 'Calidade e gobernanza' },
+        'Usar conceptos ben definidos e relacións coherentes reduce erros, facilita a validación e achega trazabilidade a cada modificación.',
+
+        { type: 'h4', content: 'Escalabilidade' },
+        'Unha base semántica sólida permite conectar dominios tan diversos como a saúde, o ámbito sociosanitario, a farmacia ou o medio ambiente.',
+
+        {
+          type: 'h2',
+          content: '➡️ Estándares habituais en espazos de datos',
+        },
+
+        { type: 'h4', content: 'Modelos de datos e formatos' },
+        '• HL7 FHIR para información clínica estruturada.',
+        '• OMOP CDM para análise e ciencia de datos.',
+        '• RDF/OWL para construír grafos de coñecemento.',
+        '• DCAT / DCAT-AP para describir datasets en catálogos.',
+        '• JSON-LD / Schema.org para engadir semántica na web.',
+
+        { type: 'h4', content: 'Vocabularios e terminoloxías' },
+        '• SNOMED CT para conceptos clínicos.',
+        '• LOINC para laboratorio e observacións.',
+        '• ATC / RXNorm para medicamentos.',
+        '• ICD-10/11 para diagnósticos.',
+
+        { type: 'h4', content: 'Ontoloxías biomédicas e ómicas' },
+        '• Ontoloxías de OBO Foundry como HPO, CHEBI ou OBI.',
+        '• Recursos impulsados por GA4GH para datos xenómicos.',
+
+        {
+          type: 'h2',
+          content: '➡️ Como se aliñan os datos con estes estándares',
+        },
+
+        { type: 'h4', content: '1) Identificar os conceptos clave' },
+        'Por exemplo: tipo de vacina, data de administración, lote, paciente, área sanitaria…',
+
+        {
+          type: 'h4',
+          content: '2) Vincular cada concepto cun código estándar',
+        },
+        'Exemplos:',
+        '• “PCR” → LOINC.',
+        '• “Vacina fronte á gripe” → SNOMED ou ATC.',
+        '• “Centro sanitario” → conceptos de localización en FHIR.',
+
+        { type: 'h4', content: '3) Documentar regras básicas' },
+        'Unidades, rangos válidos, obrigatoriedade, tipos de dato, restricións.',
+
+        { type: 'h4', content: '4) Transformar os datos' },
+        'A través de procesos de mapeo (ETL) que xeran formatos como FHIR ou OMOP a partir de fontes orixinais.',
+
+        { type: 'h4', content: '5) Xestionar equivalencias' },
+        'Se distintas fontes usan códigos diferentes, créanse táboas de correspondencia ou grafos SKOS.',
+
+        { type: 'h4', content: '6) Manter gobernanza' },
+        'Versións claras, procesos de actualización ben definidos e documentación comprensible.',
+
+        {
+          type: 'h2',
+          content: '➡️ Boas prácticas recomendadas',
+        },
+        '• Reutilizar vocabularios estándar sempre que sexa posible.',
+        '• Publicar URIs estables para conceptos internos.',
+        '• Documentar con exemplos sinxelos e actualizados.',
+        '• Versionar modelos e ontoloxías con criterios claros.',
+        '• Incluír licenzas e condicións de uso dos metadatos.',
+
+        {
+          type: 'h2',
+          content: '➡️ Erros frecuentes',
+        },
+        '• Asumir equivalencias exactas cando só existe unha similitude aproximada.',
+        '• Crear códigos internos sen documentación accesible.',
+        '• Mesturar versións de vocabularios sen indicalo.',
+
+        {
+          type: 'quote',
+          content:
+            'A meta é clara: facilitar que a interoperabilidade suceda de forma fluída, comprensible e sostible no tempo.',
+        },
+      ],
+      featured: false,
     },
     {
-      type: 'link',
-      content: '▶️ Titorial guiado do MVD (Obradoiro FarmaciaVAX)',
-      href: 'https://www.youtube.com/watch?v=u7zTyU795n8',
-      external: true,
+      key: 'team-demonstrator-2026',
+      date: '2026-02-20',
+      title: 'O equipo do Centro Demostrador',
+      excerpt:
+        'O Centro Demostrador de Espazo de Datos Multisectorial One Health do CESGA apóiase nun equipo multidisciplinar que combina coordinación, enxeñaría e perfís investigadores para trasladar tecnoloxías de compartición e valorización do dato a escenarios reais.',
+      author_name: 'Marta Castiñeira',
+      author_image: MCastineiraImg,
+      description: [
+        {
+          type: 'h2',
+          content: 'Coñece quen está detrás do espazo de datos',
+        },
+
+        'O Centro Demostrador de Espazo de Datos Multisectorial One Health do CESGA apóiase nun equipo multidisciplinar que combina coordinación, enxeñaría e perfís investigadores para trasladar tecnoloxías de compartición e valorización do dato a escenarios reais.',
+
+        'O noso obxectivo é acelerar a transformación dixital en ámbitos como a biotecnoloxía, o agroalimentario, o sector forestal–marino–industrial e a saúde, integrando capacidades de intelixencia artificial, big data e computación de alto rendemento (HPC). Traballamos para que os casos de uso do centro demostrador multisectorial DATAlife evolucionen desde a definición ata a validación e a posta en produción, fomentando un espazo de datos interoperable, seguro e escalable.',
+
+        'A actividade do equipo articúlase a través da coordinación do proxecto, liderada por Javier Cacheiro, xunto co soporte e a execución técnica de Pedro Ferreiro. Axudando no soporte técnico pero máis centrados na área investigadora, están o resto dos integrantes do equipo. Achegando experiencia en simulación e química computacional atopamos a Miguel Carmena e a Marta Castiñeira, e en analítica avanzada e intelixencia artificial atopamos a Ledicia Díaz e Lara Vázquez. Deste xeito, estamos cubrindo de extremo a extremo a validación de casos de uso, o despregamento de servizos e a adopción de boas prácticas para crear un espazo de datos robusto e orientado a impacto.',
+
+        {
+          type: 'h2',
+          content: 'Javier Cacheiro López',
+        },
+        {
+          type: 'image_profile',
+          src: JCacheiroImg,
+          alt: 'Javier Cacheiro López',
+        },
+        'Javier Cacheiro López é Project Manager e responsable da coordinación da área de Big Data no Centro de Supercomputación de Galicia (CESGA), onde impulsa iniciativas que combinan xestión de proxectos complexos cunha sólida base técnica en Big Data, computación de altas prestacións (HPC) e intelixencia artificial (IA). O seu perfil integra liderado de equipos multidisciplinares, planificación e seguimento de fitos, e aliñamento de necesidades científicas e organizativas con solucións tecnolóxicas avanzadas.',
+        'Conta con acreditación profesional en dirección de proxectos polo Project Management Institute (PMI) e é Project Management Professional (PMP) desde 2009. É Doutor en Física (2003) e obtivo Premio Extraordinario tanto na Licenciatura como no Doutoramento, reflexo dunha traxectoria académica de excelencia. Na actualidade coordina a creación do DATAlife (One Health), un espazo de datos estratéxico que require integración de compoñentes técnicos, científicos e de gobernanza.',
+        'Ao longo da súa carreira participou en máis de 20 proxectos europeos, nacionais e rexionais, incluíndo iniciativas como EGEE, EGI-InSPIRE e TRAFAIR, desempeñando funcións de coordinación e responsabilidade técnica. É autor de máis de 70 publicacións científicas en revistas e congresos internacionais, o que evidencia unha actividade investigadora sostida e unha capacidade contrastada para orientar resultados en contornos de alta esixencia tecnolóxica e colaboración internacional.',
+
+        {
+          type: 'h2',
+          content: 'Pedro Ferreiro Rega',
+        },
+        {
+          type: 'image_profile',
+          src: PFerreiroImg,
+          alt: 'Pedro Ferreiro Rega',
+        },
+        'Pedro Ferreiro Rega é graduado en Biotecnoloxía pola Universidade de Santiago de Compostela (USC). Posteriormente, completou o máster en Bioinformática na Universidade Internacional de Valencia (VIU).',
+        'Graduado en Biotecnoloxía pola Universidade de Santiago de Compostela (USC) e Máster en Bioinformática pola Universidade Internacional de Valencia (VIU). En 2025 incorporouse ao equipo de espazo de datos do CESGA, onde desenvolve a súa actividade actualmente. Con anterioridade, o seu traballo investigador centrouse no estudo de patoloxías do sistema nervioso periférico mediante técnicas de análise bioinformática, con especial interese na neuropatía diabética. No seu tempo de lecer gústalle ler e compartir tempo cos seus amigos.',
+
+        {
+          type: 'h2',
+          content: 'Lara María Vázquez González',
+        },
+        {
+          type: 'image_profile',
+          src: LVazquezImg,
+          alt: 'Lara María Vázquez González',
+        },
+        'Lara Vázquez González é doutora en Investigación en Tecnoloxías da Información pola Universidade de Santiago de Compostela (USC), onde tamén obtivo o Grao en Enxeñaría Informática en 2019. Posteriormente, completou o máster en Bioinformática e Bioestatística na Universitat Oberta de Catalunya (UOC) en 2020.',
+        'En 2021 recibiu a Axuda de apoio á etapa predoutoral da Xunta de Galicia, que lle permitiu desenvolver a súa tese doutoral no ámbito da bioinformática. A súa investigación centrouse na aplicación de técnicas de aprendizaxe automática para mellorar e axilizar o diagnóstico de enfermidades de orixe microbiana, con especial atención á periodontite. Actualmente traballa no CESGA no proxecto do Centro Demostrador. No seu tempo libre encántalle ler, viaxar e escoitar música.',
+
+        {
+          type: 'h2',
+          content: 'Miguel Carmena Bargueño',
+        },
+        {
+          type: 'image_profile',
+          src: MCarmenaImg,
+          alt: 'Miguel Carmena Bargueño',
+        },
+        'Miguel Carmena Bargueño é bioquímico pola UCLM, realizou o Máster en Bioinformática pola Universidade de Murcia e a UPCT. Obtivo a súa tese doutoral no grupo BIO-HPC da UCAM (2024), centrada no uso de simulacións de dinámica molecular e machine learning no contexto do descubrimento de fármacos. Durante o doutoramento realizou unha estadía en Viena, onde se formou sobre aplicacións e uso do modelado farmacolóxico. Actualmente traballa no CESGA como técnico investigador de química computacional. No seu tempo libre gústalle escoitar música, ler novelas gráficas e xogar a xogos de mesa.',
+
+        {
+          type: 'h2',
+          content: 'Marta Castiñeira Reis',
+        },
+        {
+          type: 'image_profile',
+          src: MCastineiraImg,
+          alt: 'Marta Castiñeira Reis',
+        },
+        'Marta Castiñeira Reis é química computacional especializada na integración de química mecanística, catálise e automatización. Doutorouse en Química Teórica e Modelización Molecular na Universidade de Vigo (2019) e desenvolveu unha traxectoria internacional. Realizou un posdoutoramento de tres anos na Universidade de Groningen, onde liderou a parte computacional do grupo de S. R. Harutyunyan, con foco en procesos enantioselectivos. No CiQUS (USC) co-liderou unha liña en astroquímica orientada á elucidación automática de mecanismos. Suma máis de 500 horas de docencia, 10 TFG codirixidos e varios TFM. Actualmente traballa no CESGA no proxecto do Centro Demostrador. Fóra do ámbito profesional, goza da natureza, da lectura e dos animais.',
+
+        {
+          type: 'h2',
+          content: 'Ledicia Díaz Lago',
+        },
+        {
+          type: 'image_profile',
+          src: LDiazImg,
+          alt: 'Ledicia Díaz Lago',
+        },
+        'Ledicia Díaz Lago é física orientada ao software, especializada en ciencia de datos, modelización e machine learning aplicado. Licenciouse en Física pola Universidade de Santiago de Compostela e cursou o Máster en Tecnoloxías do Sector Financeiro na Universidade Carlos III de Madrid, onde traballou en aprendizaxe por reforzo profundo.',
+        'Desenvolveu a súa traxectoria entre a investigación e a industria, con experiencia en modelos preditivos, análise de datos complexos e analítica avanzada, tanto en contornos académicos como empresariais. Actualmente traballa como técnica investigadora en machine learning e ciencia de datos no CESGA, participando en proxectos relacionados con espazos de datos, interoperabilidade e transferencia tecnolóxica.',
+      ],
     },
     {
-      type: 'link',
-      content: '▶️ Obradoiro de espazo de datos sobre Conectores EDC',
-      href: 'https://www.youtube.com/watch?v=WGBCGCz8vHc',
-      external: true,
+      key: 'taller-one-health-kit',
+      date: '2026-03-26',
+      title:
+        'O Espazo de Datos One Health do CESGA impulsa a integración no Kit de Espazos de Datos cun obradoiro dirixido a empresas e institucións',
+      excerpt:
+        'O Centro Demostrador Multisectorial DATAspace do CESGA celebrou unha sesión formativa práctica dirixida a resolver dúbidas e acompañar a empresas e institucións na súa incorporación ao Espazo de Datos One Health como paso previo á solicitude do Kit de Espazos de Datos.',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        'O Centro Demostrador Multisectorial DATAspace do CESGA organizou o pasado 23 de marzo unha sesión formativa orientada a empresas e institucións para resolver dúbidas e facilitar a súa incorporación ao Espazo de Datos One Health como primeiro paso antes de solicitar o Kit de Espazos de Datos.',
+
+        'A xornada reuniu a 33 participantes, na súa maioría empresas e institucións interesadas en iniciarse ou avanzar no uso do Espazo de Datos One Health. Durante a sesión ofreceuse unha introdución práctica aos pasos necesarios para a súa integración.',
+
+        {
+          type: 'h2',
+          content: '➡️ Formación orientada á aplicación práctica',
+        },
+
+        'A compartición de datos segura e interoperable é un dos piares fundamentais dos espazos de datos, aínda que moitas organizacións —especialmente pemes e institucións— seguen a atopar barreiras técnicas e operativas para incorporarse.',
+
+        'Para dar resposta a esta necesidade, DATAspace deseñou esta sesión cun enfoque eminentemente práctico, explicando paso a paso como integrarse e participar activamente no Espazo de Datos One Health.',
+
+        {
+          type: 'h4',
+          content: 'Desprega do conector',
+        },
+        'Durante a sesión explicouse o proceso de despregue do conector necesario para comezar a operar dentro do espazo de datos.',
+        {
+          type: 'link',
+          content: 'https://www.youtube.com/watch?v=z72j1-uQCVo',
+          href: 'https://www.youtube.com/watch?v=z72j1-uQCVo',
+          external: true,
+        },
+
+        {
+          type: 'h4',
+          content: 'Subida e xestión de activos de datos',
+        },
+        'Tamén se amosou como cargar, organizar e xestionar activos de datos dentro do ecosistema de intercambio.',
+        {
+          type: 'link',
+          content: 'https://www.youtube.com/watch?v=yshUdWjAsw8',
+          href: 'https://www.youtube.com/watch?v=yshUdWjAsw8',
+          external: true,
+        },
+
+        {
+          type: 'h4',
+          content: 'Declaración de evidencias no espazo de datos',
+        },
+        'Outro dos aspectos abordados foi a declaración das evidencias necesarias para operar correctamente dentro do entorno compartido.',
+        {
+          type: 'link',
+          content: 'https://www.youtube.com/watch?v=CRtcBkdf0Wg',
+          href: 'https://www.youtube.com/watch?v=CRtcBkdf0Wg',
+          external: true,
+        },
+
+        'Todo isto permitiu ás persoas asistentes comprender de forma progresiva como participar no Espazo de Datos One Health e aplicar este proceso en contextos reais.',
+
+        {
+          type: 'h2',
+          content: '➡️ Próximos pasos e recursos dispoñibles',
+        },
+
+        'O DATAspace One Health do CESGA continuará organizando novas sesións formativas nas próximas semanas co obxectivo de seguir acompañando a empresas e organizacións públicas e privadas no seu proceso de incorporación e desenvolvemento dentro do Espazo de Datos One Health.',
+
+        {
+          type: 'h2',
+          content: '➡️ Sobre o proxecto DATAspace One Health',
+        },
+
+        'Impulsado polo Centro de Supercomputación de Galicia, entidade pública vinculada ao Consello Superior de Investigacións Científicas e á Xunta de Galicia, o proxecto ten como obxectivo habilitar un espazo de datos que permita a cooperación segura e a xeración de valor no ecosistema biosanitario baixo o enfoque One Health.',
+
+        'Está financiado con fondos do Plan de Recuperación, Transformación e Resiliencia (PRTR) a través do Mecanismo de Recuperación e Resiliencia (MRR) do Ministerio para a Transformación Dixital e da Función Pública.',
+
+        {
+          type: 'h4',
+          content: 'Un entorno estratéxico para o ecosistema biosanitario',
+        },
+
+        'O ámbito biosanitario constitúe un piar estratéxico da economía do dato, xerando información heteroxénea e de alto valor —clínica, farmacéutica, veterinaria, agroalimentaria ou ambiental— que en moitos casos permanece fragmentada en distintos sistemas.',
+
+        {
+          type: 'h4',
+          content: 'Un patrón socio-técnico para compartir datos',
+        },
+
+        'Neste contexto, os espazos de datos promovidos polo CESGA emerxen como un patrón socio-técnico que habilita o intercambio e uso conxunto de datos mediante regras, roles e responsabilidades claras.',
+
+        'Este modelo combina mecanismos tecnolóxicos como identidade, control de acceso, trazabilidade, seguridade e interoperabilidade con compoñentes organizativos como gobernanza, políticas, acordos e procesos de adhesión.',
+
+        {
+          type: 'quote',
+          content:
+            'Un Espazo de Datos One Health pode acelerar a cooperación e a xeración de valor cando conflúen datos de calidade, capacidades de cómputo e intelixencia artificial.',
+        },
+
+        {
+          type: 'h2',
+          content: '➡️ Máis información',
+        },
+
+        {
+          type: 'link',
+          content: '• Guía do participante do Espazo de Datos One Health.',
+          href: 'https://xdatashare.srv.cesga.es/assets/static/files/Guia-del-participante.pdf',
+          external: true,
+        },
+
+        {
+          type: 'link',
+          content: '• Guía do Kit de solicitude de Espazos de Datos.',
+          href: 'https://dataspace.cesga.es/kit/guia_solicitud_KIT_CESGA.pdf',
+          external: true,
+        },
+      ],
     },
-    { type: 'bold', content: '💬 Dúbidas? Escríbenos a dmd@cesga.es' },
+    {
+      key: 'onehealth-dataspace-consolidacion-2026',
+      date: '2026-04-16',
+      title:
+        'O proxecto OneHealth DataSpace do CESGA consolídase como iniciativa de intercambio de datos en favor da saúde global',
+      excerpt:
+        'O Espazo de Datos OneHealth DataSpace avanzou no seu proceso de consolidación como iniciativa punteira de innovación en favor da saúde global coa adhesión de máis de 10 novas entidades nos últimos meses.',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        'O Espazo de Datos OneHealth DataSpace, centrado no concepto One Health —termo en inglés acuñado pola Organización Mundial da Saúde (OMS) para describir a interrelación entre a saúde humana, animal e medioambiental—, avanzou no seu proceso de consolidación como iniciativa punteira de innovación en favor da saúde global coa adhesión de máis de 10 novas entidades nos últimos meses.',
+
+        'A iniciativa OneHealth DataSpace —financiada polo Ministerio para a Transformación Dixital e da Función Pública a través do Plan de Recuperación, Transformación e Resiliencia (PRTR), con cargo aos fondos europeos NextGenerationEU— facilitou o acceso ao Kit de Espazos de Datos do CRED (Centro de Referencia de Espazos de Datos) ás entidades adheridas ao proxecto. Este entorno integrarase na futura Factoría de IA One Health 1HealthAI do CESGA.',
+
+        {
+          type: 'h2',
+          content: '22 entidades, un ecosistema One Health real',
+        },
+
+        'OneHealth DataSpace acadou un total de 22 entidades adheridas ao espazo de datos tras o peche, o pasado 31 de marzo, do prazo de solicitude do Kit de Espazos de Datos do CRED. Este marco de colaboración permite a empresas, pemes e institucións compartir datos de forma segura e optimizar a súa explotación mediante tecnoloxías avanzadas.',
+
+        'Cunha base xa definida de participantes, OneHealth DataSpace configura un escenario real de colaboración arredor do dato, cunha forte presenza do ámbito sanitario. Do total de 22 entidades adheridas:',
+
+        '• O 81,8% pertence ao sector da saúde humana',
+        '• O 13,6% que xera datos de saúde medioambiental',
+        '• O 4,5% corresponde á saúde animal',
+
+        'En termos de actividade, 14 das 22 entidades (63,6%) xa ofrecen datos dentro do espazo, o que reflicte un nivel relevante de adopción nunha fase temperá do proxecto.',
+
+        {
+          type: 'h3',
+          content: 'Máis alá de compartir datos: HPC, Big Data e Cloud',
+        },
+
+        'Ademais da compartición de datos, OneHealth DataSpace proporciona ás organizacións un entorno tecnolóxico avanzado que combina HPC (computación de alto rendemento), Big Data e Cloud (computación na nube). Este conxunto de capacidades permite transformar os datos en coñecemento útil e aplicable.',
+
+        'Máis que datos. More than data.',
+
+        {
+          type: 'h4',
+          content: 'Sobre a Factoría de IA One Health 1HealthAI',
+        },
+
+        'A 1Health AI Factory é a única infraestrutura da rede de Factorías de IA de EuroHPC JU concibida especificamente para dar soporte á investigación e innovación enmarcadas na estratexia One Health. Impulsada polo CESGA e o Consello Superior de Investigacións Científicas (CSIC), situará Galicia e España na vangarda europea do ecosistema tecnolóxico en saúde global, ofrecendo acceso a supercomputación, ferramentas avanzadas de IA, e servizos de formación e acompañamento ao tecido empresarial, académico e investigador.',
+
+        {
+          type: 'h5',
+          content: 'Sobre o CESGA',
+        },
+
+        'A Fundación CESGA (Centro de Supercomputación de Galicia) é unha organización sen ánimo de lucro ao servizo da investigación científica, o desenvolvemento tecnolóxico e a innovación desde 1993, participada pola Xunta de Galicia e o CSIC. Executa investigación, xestiona unha infraestrutura integrada na Rede Española de Supercomputación (RES), recoñecida como Instalación Científico-Técnica Singular (ICTS) do Estado, e proporciona servizos avanzados de HPC, Big Data, Cloud e IA á comunidade científica, educativa e empresarial.',
+      ],
+      featured: false,
+    },
   ],
-},
-{
-  key: 'gobernanza-espacio-datos',
-  title:
-    'Gobernanza nun espazo de datos: a parte “invisible” que fai que todo funcione',
-  date: '2025-12-15',
-  author_name: 'Marta Castiñeira',
-  author_image: MCastineiraImg,
-  excerpt:
-    'A gobernanza é a capa invisible que permite que un espazo de datos funcione de forma segura, xusta e reutilizable.',
-  description: [
-    'Cando se fala de espazos de datos, case sempre aparecen palabras como conectores, APIs, estándares ou interoperabilidade. Todo iso é importante, pero hai unha peza que adoita quedar en segundo plano e que, en realidade, o sostén todo: a gobernanza.',
-
-    'A gobernanza é o que evita que o espazo de datos se converta nun “grupo de WhatsApp de datasets” onde ninguén sabe que se pode usar, quen responde se algo falla ou como se demostra que se respectaron as condicións.',
-
-    {
-      type: 'bold',
-      content:
-        'No demostrador multisectorial DATAlife, a gobernanza está pensada para compartir datos de forma útil, segura e xusta, xerando valor nun entorno One Health.',
-    },
-
-    {
-      type: 'h2',
-      content: 'Entón… que é exactamente a gobernanza?',
-    },
-
-    'Pensa na gobernanza como as regras do xogo, pero tamén como o árbitro e o marcador.',
-
-    'As regras definen que se pode compartir e baixo que condicións. O árbitro establece que ocorre se hai un problema ou un incumprimento. O marcador permite medir se o espazo está funcionando e achegando valor.',
-
-    'No Centro Demostrador distínguese ademais entre gobernanza (as regras e controis do día a día) e goberno do dato, que corresponde á capa estratéxica: obxectivos, riscos, políticas e seguimento.',
-
-    {
-      type: 'h2',
-      content: 'As tres grandes preguntas que responde a gobernanza',
-    },
-
-    {
-      type: 'h3',
-      content: '1) Como se organiza o espazo?',
-    },
-
-    'A gobernanza define quen toma decisións, como se incorporan novos participantes, que ocorre cando alguén abandona o espazo e como se xestionan os conflitos, todo iso mediante procesos claros e transparentes.',
-
-    {
-      type: 'h3',
-      content: '2) Como se garante que todos falan o mesmo idioma?',
-    },
-
-    'Nun espazo multisectorial, a interoperabilidade non é só intercambiar arquivos, senón asegurar que os datos se entenden, se usan correctamente e se poden reutilizar.',
-
-    'Por iso trabállase a nivel legal, organizativo, semántico e técnico, usando formatos comúns e vocabularios recoñecidos como FHIR, OMOP, DICOM, CIE-10, SNOMED ou LOINC.',
-
-    {
-      type: 'h3',
-      content: '3) Que se pode facer cos datos e que non?',
-    },
-
-    'Aquí entran en xogo as licenzas, as condicións de uso, a trazabilidade, a calidade dos datos e a privacidade. Cada entidade mantén o control dos seus datos dentro dun marco común que evita malentendidos e asegura o cumprimento.',
-
-    {
-      type: 'h2',
-      content: 'Roles claros para evitar zonas grises',
-    },
-
-    'Un espazo de datos funciona mellor cando cada actor sabe que lle corresponde. No Centro Demostrador defínense roles como autoridade de goberno, operador do espazo, provedor e consumidor de datos/servizos.',
-
-    'Esta definición reduce friccións, aforra tempo e fai o sistema máis escalable.',
-
-    {
-      type: 'h2',
-      content: 'Observabilidade: que se poida demostrar',
-    },
-
-    'Non chega con dicir que se cumpre. Un espazo confiable debe poder demostralo mediante rexistros, trazas e informes que permitan auditar accesos, transferencias e usos dos datos.',
-
-    {
-      type: 'h2',
-      content: 'Que se gaña cunha boa gobernanza?',
-    },
-
-    'Menos incerteza, maior seguridade xurídica e técnica, mellor reutilización dos datos e un impacto medible son algúns dos beneficios directos dunha gobernanza ben deseñada.',
-
-    {
-      type: 'bold',
-      content:
-        'En resumo, a gobernanza é o que permite que un espazo de datos non só exista, senón que funcione de verdade.',
-    },
-
-    {
-      type: 'h2',
-      content: 'Que vén despois?',
-    },
-
-    'Para incorporarse a un espazo como o noso é clave ter claro o rol, os datos ou servizos que se achegan ou consumen e as condicións aplicables. Con iso, a adhesión deixa de ser un labirinto e convértese nun proceso ordenado e predicible.',
-  ],
-},
-{
-  key: 'ontologies-vocabularies',
-  date: '2026-01-26',
-  title:
-    'Ontoloxías e vocabularios en espazos de datos: unha guía sinxela desde o Centro Demostrador DATAlife',
-  excerpt:
-    'Para que un espazo de datos funcione, non abonda con compartir: hai que entender o compartido da mesma maneira. Explicámosche, de forma práctica, que son os vocabularios e as ontoloxías, que estándares se usan e como aliñar datos con eles.',
-  author_name: 'Marta Castiñeira',
-  author_image: MCastineiraImg,
-  description: [
-    'Nun espazo de datos non abonda con compartir información: é fundamental entendela da mesma maneira. Para logralo utilízanse dúas ferramentas clave: vocabularios e ontoloxías, que permiten que distintos sistemas, organizacións e profesionais falen unha linguaxe común.',
-
-    {
-      type: 'h2',
-      content: '➡️ Vocabularios e ontoloxías: dúas pezas distintas',
-    },
-
-    { type: 'h4', content: 'Que é un vocabulario?' },
-    'Un vocabulario é un conxunto estruturado de termos e códigos que se utiliza para nomear conceptos de forma uniforme. Por exemplo, un código específico para “PCR”, outro para “SARS-CoV-2” ou para “vacina da gripe”. O seu obxectivo é eliminar ambigüidades e garantir que todas as partes utilizan as mesmas denominacións.',
-
-    { type: 'h4', content: 'Que é unha ontoloxía?' },
-    'Unha ontoloxía non só define conceptos, senón tamén as relacións entre eles. Permite expresar, por exemplo, que unha “vacina” pertence a unha categoría concreta, ou que unha “observación de laboratorio” está asociada a un “paciente”. É, en esencia, un mapa conceptual que describe como se organiza un dominio de coñecemento.',
-
-    {
-      type: 'h2',
-      content: '➡️ Por que importa falar o mesmo idioma',
-    },
-
-    { type: 'h4', content: 'Interoperabilidade real' },
-    'Se cada entidade define os conceptos de maneira diferente, conectar datos é extremadamente difícil. Os vocabularios comúns garanten que “paciente”, “lote de vacina” ou “centro dispensador” se interpreten igual en todos os sistemas.',
-
-    { type: 'h4', content: 'Datos máis FAIR' },
-    'Os estándares semánticos favorecen datos máis localizables (grazas a metadatos claros), interoperables (grazas a formatos compatibles) e reutilizables (grazas a definicións e licenzas ben documentadas).',
-
-    { type: 'h4', content: 'Calidade e gobernanza' },
-    'Usar conceptos ben definidos e relacións coherentes reduce erros, facilita a validación e achega trazabilidade a cada modificación.',
-
-    { type: 'h4', content: 'Escalabilidade' },
-    'Unha base semántica sólida permite conectar dominios tan diversos como a saúde, o ámbito sociosanitario, a farmacia ou o medio ambiente.',
-
-    {
-      type: 'h2',
-      content: '➡️ Estándares habituais en espazos de datos',
-    },
-
-    { type: 'h4', content: 'Modelos de datos e formatos' },
-    '• HL7 FHIR para información clínica estruturada.',
-    '• OMOP CDM para análise e ciencia de datos.',
-    '• RDF/OWL para construír grafos de coñecemento.',
-    '• DCAT / DCAT-AP para describir datasets en catálogos.',
-    '• JSON-LD / Schema.org para engadir semántica na web.',
-
-    { type: 'h4', content: 'Vocabularios e terminoloxías' },
-    '• SNOMED CT para conceptos clínicos.',
-    '• LOINC para laboratorio e observacións.',
-    '• ATC / RXNorm para medicamentos.',
-    '• ICD-10/11 para diagnósticos.',
-
-    { type: 'h4', content: 'Ontoloxías biomédicas e ómicas' },
-    '• Ontoloxías de OBO Foundry como HPO, CHEBI ou OBI.',
-    '• Recursos impulsados por GA4GH para datos xenómicos.',
-
-    {
-      type: 'h2',
-      content: '➡️ Como se aliñan os datos con estes estándares',
-    },
-
-    { type: 'h4', content: '1) Identificar os conceptos clave' },
-    'Por exemplo: tipo de vacina, data de administración, lote, paciente, área sanitaria…',
-
-    {
-      type: 'h4',
-      content: '2) Vincular cada concepto cun código estándar',
-    },
-    'Exemplos:',
-    '• “PCR” → LOINC.',
-    '• “Vacina fronte á gripe” → SNOMED ou ATC.',
-    '• “Centro sanitario” → conceptos de localización en FHIR.',
-
-    { type: 'h4', content: '3) Documentar regras básicas' },
-    'Unidades, rangos válidos, obrigatoriedade, tipos de dato, restricións.',
-
-    { type: 'h4', content: '4) Transformar os datos' },
-    'A través de procesos de mapeo (ETL) que xeran formatos como FHIR ou OMOP a partir de fontes orixinais.',
-
-    { type: 'h4', content: '5) Xestionar equivalencias' },
-    'Se distintas fontes usan códigos diferentes, créanse táboas de correspondencia ou grafos SKOS.',
-
-    { type: 'h4', content: '6) Manter gobernanza' },
-    'Versións claras, procesos de actualización ben definidos e documentación comprensible.',
-
-    {
-      type: 'h2',
-      content: '➡️ Boas prácticas recomendadas',
-    },
-    '• Reutilizar vocabularios estándar sempre que sexa posible.',
-    '• Publicar URIs estables para conceptos internos.',
-    '• Documentar con exemplos sinxelos e actualizados.',
-    '• Versionar modelos e ontoloxías con criterios claros.',
-    '• Incluír licenzas e condicións de uso dos metadatos.',
-
-    {
-      type: 'h2',
-      content: '➡️ Erros frecuentes',
-    },
-    '• Asumir equivalencias exactas cando só existe unha similitude aproximada.',
-    '• Crear códigos internos sen documentación accesible.',
-    '• Mesturar versións de vocabularios sen indicalo.',
-
-    {
-      type: 'quote',
-      content:
-        'A meta é clara: facilitar que a interoperabilidade suceda de forma fluída, comprensible e sostible no tempo.',
-    },
-  ],
-  featured: false,
-},
-{
-  key: 'team-demonstrator-2026',
-  date: '2026-02-20',
-  title: 'O equipo do Centro Demostrador',
-  excerpt:
-    'O Centro Demostrador de Espazo de Datos Multisectorial One Health do CESGA apóiase nun equipo multidisciplinar que combina coordinación, enxeñaría e perfís investigadores para trasladar tecnoloxías de compartición e valorización do dato a escenarios reais.',
-  author_name: 'Marta Castiñeira',
-  author_image: MCastineiraImg,
-  description: [
-    {
-      type: 'h2',
-      content: 'Coñece quen está detrás do espazo de datos',
-    },
-
-    'O Centro Demostrador de Espazo de Datos Multisectorial One Health do CESGA apóiase nun equipo multidisciplinar que combina coordinación, enxeñaría e perfís investigadores para trasladar tecnoloxías de compartición e valorización do dato a escenarios reais.',
-
-    'O noso obxectivo é acelerar a transformación dixital en ámbitos como a biotecnoloxía, o agroalimentario, o sector forestal–marino–industrial e a saúde, integrando capacidades de intelixencia artificial, big data e computación de alto rendemento (HPC). Traballamos para que os casos de uso do centro demostrador multisectorial DATAlife evolucionen desde a definición ata a validación e a posta en produción, fomentando un espazo de datos interoperable, seguro e escalable.',
-
-    'A actividade do equipo articúlase a través da coordinación do proxecto, liderada por Javier Cacheiro, xunto co soporte e a execución técnica de Pedro Ferreiro. Axudando no soporte técnico pero máis centrados na área investigadora, están o resto dos integrantes do equipo. Achegando experiencia en simulación e química computacional atopamos a Miguel Carmena e a Marta Castiñeira, e en analítica avanzada e intelixencia artificial atopamos a Ledicia Díaz e Lara Vázquez. Deste xeito, estamos cubrindo de extremo a extremo a validación de casos de uso, o despregamento de servizos e a adopción de boas prácticas para crear un espazo de datos robusto e orientado a impacto.',
-
-    {
-      type: 'h2',
-      content: 'Javier Cacheiro López',
-    },
-    {
-      type: 'image_profile',
-      src: JCacheiroImg,
-      alt: 'Javier Cacheiro López',
-    },
-    'Javier Cacheiro López é Project Manager e responsable da coordinación da área de Big Data no Centro de Supercomputación de Galicia (CESGA), onde impulsa iniciativas que combinan xestión de proxectos complexos cunha sólida base técnica en Big Data, computación de altas prestacións (HPC) e intelixencia artificial (IA). O seu perfil integra liderado de equipos multidisciplinares, planificación e seguimento de fitos, e aliñamento de necesidades científicas e organizativas con solucións tecnolóxicas avanzadas.',
-    'Conta con acreditación profesional en dirección de proxectos polo Project Management Institute (PMI) e é Project Management Professional (PMP) desde 2009. É Doutor en Física (2003) e obtivo Premio Extraordinario tanto na Licenciatura como no Doutoramento, reflexo dunha traxectoria académica de excelencia. Na actualidade coordina a creación do DATAlife (One Health), un espazo de datos estratéxico que require integración de compoñentes técnicos, científicos e de gobernanza.',
-    'Ao longo da súa carreira participou en máis de 20 proxectos europeos, nacionais e rexionais, incluíndo iniciativas como EGEE, EGI-InSPIRE e TRAFAIR, desempeñando funcións de coordinación e responsabilidade técnica. É autor de máis de 70 publicacións científicas en revistas e congresos internacionais, o que evidencia unha actividade investigadora sostida e unha capacidade contrastada para orientar resultados en contornos de alta esixencia tecnolóxica e colaboración internacional.',
-
-    {
-      type: 'h2',
-      content: 'Pedro Ferreiro Rega',
-    },
-    {
-      type: 'image_profile',
-      src: PFerreiroImg,
-      alt: 'Pedro Ferreiro Rega',
-    },
-    'Pedro Ferreiro Rega é graduado en Biotecnoloxía pola Universidade de Santiago de Compostela (USC). Posteriormente, completou o máster en Bioinformática na Universidade Internacional de Valencia (VIU).',
-    'Graduado en Biotecnoloxía pola Universidade de Santiago de Compostela (USC) e Máster en Bioinformática pola Universidade Internacional de Valencia (VIU). En 2025 incorporouse ao equipo de espazo de datos do CESGA, onde desenvolve a súa actividade actualmente. Con anterioridade, o seu traballo investigador centrouse no estudo de patoloxías do sistema nervioso periférico mediante técnicas de análise bioinformática, con especial interese na neuropatía diabética. No seu tempo de lecer gústalle ler e compartir tempo cos seus amigos.',
-
-    {
-      type: 'h2',
-      content: 'Lara María Vázquez González',
-    },
-    {
-      type: 'image_profile',
-      src: LVazquezImg,
-      alt: 'Lara María Vázquez González',
-    },
-    'Lara Vázquez González é doutora en Investigación en Tecnoloxías da Información pola Universidade de Santiago de Compostela (USC), onde tamén obtivo o Grao en Enxeñaría Informática en 2019. Posteriormente, completou o máster en Bioinformática e Bioestatística na Universitat Oberta de Catalunya (UOC) en 2020.',
-    'En 2021 recibiu a Axuda de apoio á etapa predoutoral da Xunta de Galicia, que lle permitiu desenvolver a súa tese doutoral no ámbito da bioinformática. A súa investigación centrouse na aplicación de técnicas de aprendizaxe automática para mellorar e axilizar o diagnóstico de enfermidades de orixe microbiana, con especial atención á periodontite. Actualmente traballa no CESGA no proxecto do Centro Demostrador. No seu tempo libre encántalle ler, viaxar e escoitar música.',
-
-    {
-      type: 'h2',
-      content: 'Miguel Carmena Bargueño',
-    },
-    {
-      type: 'image_profile',
-      src: MCarmenaImg,
-      alt: 'Miguel Carmena Bargueño',
-    },
-    'Miguel Carmena Bargueño é bioquímico pola UCLM, realizou o Máster en Bioinformática pola Universidade de Murcia e a UPCT. Obtivo a súa tese doutoral no grupo BIO-HPC da UCAM (2024), centrada no uso de simulacións de dinámica molecular e machine learning no contexto do descubrimento de fármacos. Durante o doutoramento realizou unha estadía en Viena, onde se formou sobre aplicacións e uso do modelado farmacolóxico. Actualmente traballa no CESGA como técnico investigador de química computacional. No seu tempo libre gústalle escoitar música, ler novelas gráficas e xogar a xogos de mesa.',
-
-    {
-      type: 'h2',
-      content: 'Marta Castiñeira Reis',
-    },
-    {
-      type: 'image_profile',
-      src: MCastineiraImg,
-      alt: 'Marta Castiñeira Reis',
-    },
-    'Marta Castiñeira Reis é química computacional especializada na integración de química mecanística, catálise e automatización. Doutorouse en Química Teórica e Modelización Molecular na Universidade de Vigo (2019) e desenvolveu unha traxectoria internacional. Realizou un posdoutoramento de tres anos na Universidade de Groningen, onde liderou a parte computacional do grupo de S. R. Harutyunyan, con foco en procesos enantioselectivos. No CiQUS (USC) co-liderou unha liña en astroquímica orientada á elucidación automática de mecanismos. Suma máis de 500 horas de docencia, 10 TFG codirixidos e varios TFM. Actualmente traballa no CESGA no proxecto do Centro Demostrador. Fóra do ámbito profesional, goza da natureza, da lectura e dos animais.',
-
-    {
-      type: 'h2',
-      content: 'Ledicia Díaz Lago',
-    },
-    {
-      type: 'image_profile',
-      src: LDiazImg,
-      alt: 'Ledicia Díaz Lago',
-    },
-    'Ledicia Díaz Lago é física orientada ao software, especializada en ciencia de datos, modelización e machine learning aplicado. Licenciouse en Física pola Universidade de Santiago de Compostela e cursou o Máster en Tecnoloxías do Sector Financeiro na Universidade Carlos III de Madrid, onde traballou en aprendizaxe por reforzo profundo.',
-    'Desenvolveu a súa traxectoria entre a investigación e a industria, con experiencia en modelos preditivos, análise de datos complexos e analítica avanzada, tanto en contornos académicos como empresariais. Actualmente traballa como técnica investigadora en machine learning e ciencia de datos no CESGA, participando en proxectos relacionados con espazos de datos, interoperabilidade e transferencia tecnolóxica.',
-  ],
-},
-
-{
-  key: 'taller-one-health-kit',
-  date: '2026-03-26',
-  title:
-    'O Espazo de Datos One Health do CESGA impulsa a integración no Kit de Espazos de Datos cun obradoiro dirixido a empresas e institucións',
-  excerpt:
-    'O Centro Demostrador Multisectorial DATAspace do CESGA celebrou unha sesión formativa práctica dirixida a resolver dúbidas e acompañar a empresas e institucións na súa incorporación ao Espazo de Datos One Health como paso previo á solicitude do Kit de Espazos de Datos.',
-  author_name: 'Iago Sequeiros',
-  author_image: Logo,
-  description: [
-    'O Centro Demostrador Multisectorial DATAspace do CESGA organizou o pasado 23 de marzo unha sesión formativa orientada a empresas e institucións para resolver dúbidas e facilitar a súa incorporación ao Espazo de Datos One Health como primeiro paso antes de solicitar o Kit de Espazos de Datos.',
-
-    'A xornada reuniu a 33 participantes, na súa maioría empresas e institucións interesadas en iniciarse ou avanzar no uso do Espazo de Datos One Health. Durante a sesión ofreceuse unha introdución práctica aos pasos necesarios para a súa integración.',
-
-    {
-      type: 'h2',
-      content: '➡️ Formación orientada á aplicación práctica',
-    },
-
-    'A compartición de datos segura e interoperable é un dos piares fundamentais dos espazos de datos, aínda que moitas organizacións —especialmente pemes e institucións— seguen a atopar barreiras técnicas e operativas para incorporarse.',
-
-    'Para dar resposta a esta necesidade, DATAspace deseñou esta sesión cun enfoque eminentemente práctico, explicando paso a paso como integrarse e participar activamente no Espazo de Datos One Health.',
-
-    {
-      type: 'h4',
-      content: 'Desprega do conector',
-    },
-    'Durante a sesión explicouse o proceso de despregue do conector necesario para comezar a operar dentro do espazo de datos.',
-    {
-      type: 'link',
-      content: 'https://www.youtube.com/watch?v=z72j1-uQCVo',
-      href: 'https://www.youtube.com/watch?v=z72j1-uQCVo',
-      external: true,
-    },
-
-    {
-      type: 'h4',
-      content: 'Subida e xestión de activos de datos',
-    },
-    'Tamén se amosou como cargar, organizar e xestionar activos de datos dentro do ecosistema de intercambio.',
-    {
-      type: 'link',
-      content: 'https://www.youtube.com/watch?v=yshUdWjAsw8',
-      href: 'https://www.youtube.com/watch?v=yshUdWjAsw8',
-      external: true,
-    },
-
-    {
-      type: 'h4',
-      content: 'Declaración de evidencias no espazo de datos',
-    },
-    'Outro dos aspectos abordados foi a declaración das evidencias necesarias para operar correctamente dentro do entorno compartido.',
-    {
-      type: 'link',
-      content: 'https://www.youtube.com/watch?v=CRtcBkdf0Wg',
-      href: 'https://www.youtube.com/watch?v=CRtcBkdf0Wg',
-      external: true,
-    },
-
-    'Todo isto permitiu ás persoas asistentes comprender de forma progresiva como participar no Espazo de Datos One Health e aplicar este proceso en contextos reais.',
-
-    {
-      type: 'h2',
-      content: '➡️ Próximos pasos e recursos dispoñibles',
-    },
-
-    'O DATAspace One Health do CESGA continuará organizando novas sesións formativas nas próximas semanas co obxectivo de seguir acompañando a empresas e organizacións públicas e privadas no seu proceso de incorporación e desenvolvemento dentro do Espazo de Datos One Health.',
-
-    {
-      type: 'h2',
-      content: '➡️ Sobre o proxecto DATAspace One Health',
-    },
-
-    'Impulsado polo Centro de Supercomputación de Galicia, entidade pública vinculada ao Consello Superior de Investigacións Científicas e á Xunta de Galicia, o proxecto ten como obxectivo habilitar un espazo de datos que permita a cooperación segura e a xeración de valor no ecosistema biosanitario baixo o enfoque One Health.',
-
-    'Está financiado con fondos do Plan de Recuperación, Transformación e Resiliencia (PRTR) a través do Mecanismo de Recuperación e Resiliencia (MRR) do Ministerio para a Transformación Dixital e da Función Pública.',
-
-    {
-      type: 'h4',
-      content: 'Un entorno estratéxico para o ecosistema biosanitario',
-    },
-
-    'O ámbito biosanitario constitúe un piar estratéxico da economía do dato, xerando información heteroxénea e de alto valor —clínica, farmacéutica, veterinaria, agroalimentaria ou ambiental— que en moitos casos permanece fragmentada en distintos sistemas.',
-
-    {
-      type: 'h4',
-      content: 'Un patrón socio-técnico para compartir datos',
-    },
-
-    'Neste contexto, os espazos de datos promovidos polo CESGA emerxen como un patrón socio-técnico que habilita o intercambio e uso conxunto de datos mediante regras, roles e responsabilidades claras.',
-
-    'Este modelo combina mecanismos tecnolóxicos como identidade, control de acceso, trazabilidade, seguridade e interoperabilidade con compoñentes organizativos como gobernanza, políticas, acordos e procesos de adhesión.',
-
-    {
-      type: 'quote',
-      content:
-        'Un Espazo de Datos One Health pode acelerar a cooperación e a xeración de valor cando conflúen datos de calidade, capacidades de cómputo e intelixencia artificial.',
-    },
-
-    {
-      type: 'h2',
-      content: '➡️ Máis información',
-    },
-
-    {
-      type: 'link',
-      content: '• Guía do participante do Espazo de Datos One Health.',
-      href: 'https://xdatashare.srv.cesga.es/assets/static/files/Guia-del-participante.pdf',
-      external: true,
-    },
-
-    {
-      type: 'link',
-      content: '• Guía do Kit de solicitude de Espazos de Datos.',
-      href: 'https://dataspace.cesga.es/kit/guia_solicitud_KIT_CESGA.pdf',
-      external: true,
-    },
-  ],
-},
-
-
-
-]
 };

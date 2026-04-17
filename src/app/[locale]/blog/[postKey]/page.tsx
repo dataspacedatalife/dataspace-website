@@ -1,6 +1,8 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { type Locale } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import React from 'react';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
@@ -8,9 +10,6 @@ import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { useDateFormatter } from '@/hooks/formatters';
 import { blogPosts } from '../posts';
-
-import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
 
 interface BlogPostPageProps {
   params: Promise<{ locale: Locale; postKey: string }>;
@@ -107,6 +106,13 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     <h4 key={idx} className="text-lg font-semibold mt-4 mb-2">
                       {item.content}
                     </h4>
+                  );
+
+                case 'h5':
+                  return (
+                    <h5 key={idx} className="text-md font-semibold mt-3 mb-1">
+                      {item.content}
+                    </h5>
                   );
                 case 'bold':
                   return (
