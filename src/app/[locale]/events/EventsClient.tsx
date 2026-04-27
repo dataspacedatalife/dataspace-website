@@ -29,6 +29,7 @@ import tallergradiantConectoresImg from '../../../../public/events/tallergradian
 import tallerKitSaludCRED from '../../../../public/events/tallerKitSaludCRED.png';
 import KitDatosCREDImg2 from '../../../../public/events/tallerPracticokitCRED.jpg';
 import conectorGestionActivos from '../../../../public/events/conectorGestionActivos.png';
+import formacionDesarrolloExtensiones from '../../../../public/events/formacion-avanzada-sobre-desarrollo-de-extensiones-para-casos-de-uso.png';
 
 const eventsPerPage = 5;
 
@@ -142,7 +143,7 @@ const events = [
     cesgalink:
       'https://forms.cloud.microsoft/e/jzZ1aarLKP',
     organizer: 'Centro demostrador de espacio de datos multisectorial One Health & Centro de Supercomputación de Galicia (CESGA)',
-    featured: true, 
+    featured: false, 
   }, 
   {
     key: 'kitDatosSaludCRED',
@@ -153,6 +154,15 @@ const events = [
     organizer: 'Centro de Referencia de Espacios de Datos (CRED)',
     featured: false,
   },
+   {
+    key: 'formacionDesarrolloExtensiones',
+    date: '2026-04-29',
+    image: formacionDesarrolloExtensiones,
+    cesgalink:
+      'https://aula.cesga.es/main/auth/inscription.php?c=EDDOHDS00129042026&',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: true,
+  }
    
 ] as const satisfies Event[];
 

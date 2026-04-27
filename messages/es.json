@@ -578,6 +578,27 @@
           "📍 Formato: Online"
         ],
         "extra": "Apúntate aquí"
+      },
+
+      "formacionDesarrolloExtensiones": {
+        "header": "Formación avanzada sobre desarrollo de extensiones para casos de uso",
+        "excerpt": "Formación online para conocer el funcionamiento del conector Eclipse Dataspace Connector (EDC), entender cómo se amplía mediante extensiones y aprender a desarrollar módulos propios para adaptarlo a nuevas necesidades de negocio e integración.",
+        "description": [
+          "Esta formación servirá para entender cómo funciona el Eclipse Dataspace Connector (EDC), cómo se amplía mediante extensiones y cómo desarrollar módulos propios para adaptarlo a nuevas necesidades.",
+          "¿Qué es el conector EDC?",
+          "Es una tecnología open source que permite el intercambio seguro y controlado de datos entre organizaciones, conectando sistemas diferentes y manteniendo la soberanía de la información.",
+          "¿Para qué sirve?",
+          "Automatiza el intercambio de datos aplicando políticas de uso, acceso y compartición. Es clave en espacios de datos porque garantiza seguridad, trazabilidad, interoperabilidad y cumplimiento de condiciones.",
+          "¿A quién va dirigido?",
+          "Perfiles técnicos como desarrolladores, arquitectos, integradores y responsables de plataformas de datos, así como cualquier persona implicada en proyectos de intercambio e interoperabilidad de datos.",
+          "¿Dónde se aplica?",
+          "En proyectos de integración de datos heterogéneos, desarrollo de conectores personalizados y definición de políticas de intercambio, especialmente en entornos de federación de datos, ecosistemas colaborativos y Gaia-X.",
+          "📅 Fecha: 29 de abril de 2026",
+          "🕔 Hora: 11:00-13:00h",
+          "📍 Formato: online",
+          "📺 La sesión estará disponible posteriormente en el canal de YouTube del CESGA"
+        ],
+        "extra": "Apúntate aquí"
       }
     }
   },

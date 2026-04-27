@@ -34,7 +34,7 @@
       "title": "Demostrador",
       "description": "Explicación de que es el demostrador"
     },
-    "graphic":{
+    "graphic": {
       "human": "Human health",
       "animal": "Animal health",
       "environmental": "Environmental health"
@@ -558,6 +558,26 @@
           "🗓️Date: March 23",
           "🕙Time: 10:00 - 12:00",
           "📍 Format: Online"
+        ],
+        "extra": "Sign up here"
+      },
+      "formacionDesarrolloExtensiones": {
+        "header": "Advanced training on extension development for use cases",
+        "excerpt": "Online training to understand how the Eclipse Dataspace Connector (EDC) works, how it can be extended through extensions, and how to develop custom modules to adapt it to new business and integration needs.",
+        "description": [
+          "This training will help you understand how the Eclipse Dataspace Connector (EDC) works, how it can be extended through extensions, and how to develop custom modules to adapt it to new requirements.",
+          "What is the EDC connector?",
+          "It is an open-source technology that enables secure and controlled data exchange between organizations, connecting different systems while maintaining data sovereignty.",
+          "What is it used for?",
+          "It automates data exchange by applying usage, access, and sharing policies. It is key in data spaces as it ensures security, traceability, interoperability, and compliance with conditions.",
+          "Who is it for?",
+          "Technical profiles such as developers, architects, integrators, and data platform managers, as well as anyone involved in data exchange and interoperability projects.",
+          "Where is it applied?",
+          "In projects involving heterogeneous data integration, development of custom connectors, and definition of data-sharing policies, especially in data federation environments, collaborative ecosystems, and Gaia-X.",
+          "📅 Date: April 29, 2026",
+          "🕔 Time: 11:00–13:00",
+          "📍 Format: Online",
+          "📺 The session will later be available on the CESGA YouTube channel"
         ],
         "extra": "Sign up here"
       }
@@ -1519,8 +1539,8 @@
     "funding_note": "Project funded by the Ministry of Digital Transformation and Public Administration through the project \"TSI-100120-2024-12\", using European funds from the Recovery, Transformation, and Resilience Plan, and \"Funded by the European Union – NextGenerationEU\""
   },
   "faq": {
-    "metadata":{
-      "title":"FAQ",
+    "metadata": {
+      "title": "FAQ",
       "description": "Preguntas más frecuentes por los usuarios"
     },
     "title": "Frequently Asked Questions",

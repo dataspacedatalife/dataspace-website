@@ -117,248 +117,257 @@
         "button": "Acceder"
       }
     }
-},
- "how": {
-  "metadata": {
-    "title": "Únete",
-    "description": "Como unirse ao espazo de datos: quen pode participar, pasos de adhesión, compromisos e beneficios"
   },
-  "header": {
-    "title": "Participa no espazo de datos",
-    "lead": "Comparte, consume ou desenvolve servizos baseados en datos nun contorno confiable que garante soberanía, privacidade e interoperabilidade",
-    "guideButton": {
-      "label": "Consulta a nosa guía do participante",
-      "href": "/adhesion/Guía del participante - adhesión EdD DATAlife CESGA.pdf"
+  "how": {
+    "metadata": {
+      "title": "Únete",
+      "description": "Como unirse ao espazo de datos: quen pode participar, pasos de adhesión, compromisos e beneficios"
+    },
+    "header": {
+      "title": "Participa no espazo de datos",
+      "lead": "Comparte, consume ou desenvolve servizos baseados en datos nun contorno confiable que garante soberanía, privacidade e interoperabilidade",
+      "guideButton": {
+        "label": "Consulta a nosa guía do participante",
+        "href": "/adhesion/Guía del participante - adhesión EdD DATAlife CESGA.pdf"
+      }
+    },
+    "overview": {
+      "title": "O noso enfoque"
+    },
+    "who": {
+      "title": "Quen pode participar?",
+      "items": [
+        "Hospitais, centros de investigación e universidades",
+        "Administracións e entidades públicas",
+        "Empresas, startups e centros tecnolóxicos",
+        "Colaboracións nacionais e europeas"
+      ]
+    },
+    "roles": {
+      "title": "Tipos de participación",
+      "items": [
+        "Provedores de datos que achegan datos ao ecosistema.",
+        "Provedores de servizos que ofrecen ferramentas ou capacidades.",
+        "Consumidores de datos que usan datos segundo as condicións do provedor.",
+        "Consumidores de servizos que utilizan servizos segundo as condicións do provedor."
+      ]
+    },
+    "benefits": {
+      "title": "Beneficios",
+      "items": [
+        "Integración con actores e espazos de datos europeos",
+        "Dispoñibilidade de servizos comúns: catálogos, anonimización, análise",
+        "Oportunidade de establecer novas colaboracións e alianzas"
+      ]
+    },
+    "commitments": {
+      "title": "Compromisos",
+      "items": [
+        "Cumprir o marco de gobernanza e as regras de acceso e uso",
+        "Garantir a calidade e trazabilidade dos datos",
+        "Respectar a normativa de privacidade, seguridade e ética",
+        "Informar de incidencias ou disputas polos canles habilitados"
+      ]
+    },
+    "howToJoin": {
+      "title": "Inicia o proceso de adhesión",
+      "subtitle": "Estou interesado en adherirme",
+      "description": "Se xa estás informado e desexas facernos saber o teu interese en participar no Espazo de Datos, completa o seguinte formulario. Se tes dúbidas, contacta con onehealth@cesga.es",
+      "formButton": "Cubre o formulario de mostra de interese se estás interesado en adherirte",
+      "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
+    },
+    "process": {
+      "title": "Proceso de adhesión",
+      "step": "Paso",
+      "phases": [
+        {
+          "title": "Fase de solicitude e adhesión",
+          "items": [
+            {
+              "title": "Infórmate",
+              "description": "Descarga a <a>Guía do Participante</a> para coñecer en detalle como funciona o Espazo de Datos, os requisitos técnicos e legais, e todos os beneficios de unirte. Estamos aquí para acompañarte e apoiarte en cada paso do proceso."
+            },
+            {
+              "title": "Solicita a túa adhesión",
+              "description": "Enche o <aForm>formulario de mostra de interese</aForm> e o noso equipo revisará a túa solicitude e contactará contigo para os seguintes pasos."
+            }
+          ]
+        },
+        {
+          "title": "Fase de integración no espazo de datos",
+          "items": [
+            {
+              "title": "Integración técnica",
+              "description": "Conecta os teus sistemas e prepara os teus datos para cumprir coas políticas de interoperabilidade, calidade e seguridade do Espazo de Datos. Estamos ao teu lado para axudarche durante todo o proceso."
+            },
+            {
+              "title": "Participa e medra dentro do ecosistema",
+              "description": "Unha vez formes parte, poderás intercambiar datos, sumarte a casos de uso e colaborar con outros participantes. Seguiremos acompañándote en cada etapa."
+            }
+          ]
+        }
+      ]
+    },
+    "process2": {
+      "title": "Proceso de adhesión",
+      "step": "Paso",
+      "items": [
+        {
+          "title": "Infórmate",
+          "description": "Descarga a Guía do Participante para coñecer o funcionamento do Espazo de Datos, os requisitos técnicos e legais, e os beneficios de unirte."
+        },
+        {
+          "title": "Solicita a túa adhesión",
+          "description": "Enche o formulario de mostra de interese, e o noso equipo revisará a túa solicitude no correspondente ciclo de avaliación e contactará contigo para os seguintes pasos."
+        },
+        {
+          "title": "Rexístrate no EdD",
+          "description": "Blabla."
+        },
+        {
+          "title": "Integración técnica",
+          "description": "Conecta os teus sistemas e prepara os teus datos para que cumpran coas políticas de interoperabilidade, calidade e seguridade do Centro demostrador de espazo de datos multisectorial One Health."
+        },
+        {
+          "title": "Participa e medra",
+          "description": "Unha vez dentro, poderás intercambiar datos, participar en casos de uso e colaborar con outros membros do ecosistema."
+        }
+      ]
+    },
+    "reviewCycle": {
+      "title": "Ciclo de revisións",
+      "description": "As solicitudes avalíanse cada dúas semanas na reunión de revisión. Só se teñen en conta aquelas recibidas ata o día anterior á reunión inclusive.",
+      "footer": "*Os días en verde corresponden ás reunións de revisión.",
+      "weekdays": [
+        "Lun",
+        "Mar",
+        "Mér",
+        "Xov",
+        "Ven",
+        "Sáb",
+        "Dom"
+      ],
+      "months": [
+        "xaneiro",
+        "febreiro",
+        "marzo",
+        "abril",
+        "maio",
+        "xuño",
+        "xullo",
+        "agosto",
+        "setembro",
+        "outubro",
+        "novembro",
+        "decembro"
+      ]
     }
-  },
-  "overview": {
-    "title": "O noso enfoque"
-  },
-  "who": {
-    "title": "Quen pode participar?",
-    "items": [
-      "Hospitais, centros de investigación e universidades",
-      "Administracións e entidades públicas",
-      "Empresas, startups e centros tecnolóxicos",
-      "Colaboracións nacionais e europeas"
-    ]
-  },
-  "roles": {
-    "title": "Tipos de participación",
-    "items": [
-      "Provedores de datos que achegan datos ao ecosistema.",
-      "Provedores de servizos que ofrecen ferramentas ou capacidades.",
-      "Consumidores de datos que usan datos segundo as condicións do provedor.",
-      "Consumidores de servizos que utilizan servizos segundo as condicións do provedor."
-    ]
-  },
-  "benefits": {
-    "title": "Beneficios",
-    "items": [
-      "Integración con actores e espazos de datos europeos",
-      "Dispoñibilidade de servizos comúns: catálogos, anonimización, análise",
-      "Oportunidade de establecer novas colaboracións e alianzas"
-    ]
-  },
-  "commitments": {
-    "title": "Compromisos",
-    "items": [
-      "Cumprir o marco de gobernanza e as regras de acceso e uso",
-      "Garantir a calidade e trazabilidade dos datos",
-      "Respectar a normativa de privacidade, seguridade e ética",
-      "Informar de incidencias ou disputas polos canles habilitados"
-    ]
-  },
-  "howToJoin": {
-    "title": "Inicia o proceso de adhesión",
-    "subtitle": "Estou interesado en adherirme",
-    "description": "Se xa estás informado e desexas facernos saber o teu interese en participar no Espazo de Datos, completa o seguinte formulario. Se tes dúbidas, contacta con onehealth@cesga.es",
-    "formButton": "Cubre o formulario de mostra de interese se estás interesado en adherirte",
-    "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
-  },
-  "process": {
-    "title": "Proceso de adhesión",
-    "step": "Paso",
-    "phases": [
-      {
-        "title": "Fase de solicitude e adhesión",
-        "items": [
-          {
-            "title": "Infórmate",
-            "description": "Descarga a <a>Guía do Participante</a> para coñecer en detalle como funciona o Espazo de Datos, os requisitos técnicos e legais, e todos os beneficios de unirte. Estamos aquí para acompañarte e apoiarte en cada paso do proceso."
-          },
-          {
-            "title": "Solicita a túa adhesión",
-            "description": "Enche o <aForm>formulario de mostra de interese</aForm> e o noso equipo revisará a túa solicitude e contactará contigo para os seguintes pasos."
-          }
-        ]
-      },
-      {
-        "title": "Fase de integración no espazo de datos",
-        "items": [
-          {
-            "title": "Integración técnica",
-            "description": "Conecta os teus sistemas e prepara os teus datos para cumprir coas políticas de interoperabilidade, calidade e seguridade do Espazo de Datos. Estamos ao teu lado para axudarche durante todo o proceso."
-          },
-          {
-            "title": "Participa e medra dentro do ecosistema",
-            "description": "Unha vez formes parte, poderás intercambiar datos, sumarte a casos de uso e colaborar con outros participantes. Seguiremos acompañándote en cada etapa."
-          }
-        ]
-      }
-    ]
-  },
-  "process2": {
-    "title": "Proceso de adhesión",
-    "step": "Paso",
-    "items": [
-      {
-        "title": "Infórmate",
-        "description": "Descarga a Guía do Participante para coñecer o funcionamento do Espazo de Datos, os requisitos técnicos e legais, e os beneficios de unirte."
-      },
-      {
-        "title": "Solicita a túa adhesión",
-        "description": "Enche o formulario de mostra de interese, e o noso equipo revisará a túa solicitude no correspondente ciclo de avaliación e contactará contigo para os seguintes pasos."
-      },
-      {
-        "title": "Rexístrate no EdD",
-        "description": "Blabla."
-      },
-      {
-        "title": "Integración técnica",
-        "description": "Conecta os teus sistemas e prepara os teus datos para que cumpran coas políticas de interoperabilidade, calidade e seguridade do Centro demostrador de espazo de datos multisectorial One Health."
-      },
-      {
-        "title": "Participa e medra",
-        "description": "Unha vez dentro, poderás intercambiar datos, participar en casos de uso e colaborar con outros membros do ecosistema."
-      }
-    ]
-  },
-  "reviewCycle": {
-    "title": "Ciclo de revisións",
-    "description": "As solicitudes avalíanse cada dúas semanas na reunión de revisión. Só se teñen en conta aquelas recibidas ata o día anterior á reunión inclusive.",
-    "footer": "*Os días en verde corresponden ás reunións de revisión.",
-    "weekdays": ["Lun", "Mar", "Mér", "Xov", "Ven", "Sáb", "Dom"],
-    "months": [
-      "xaneiro",
-      "febreiro",
-      "marzo",
-      "abril",
-      "maio",
-      "xuño",
-      "xullo",
-      "agosto",
-      "setembro",
-      "outubro",
-      "novembro",
-      "decembro"
-    ]
-  }
-},"team": {
-  "metadata": {
-    "title": "Equipo",
-    "description": "Impulsando a innovación desde o CESGA. A nosa misión é acelerar a transformación dixital dos sectores da biotecnoloxía, agroalimentario, forestal-mar-industrial e saúde"
-  },
-  "header": {
-    "title": "Impulsando a innovación desde o CESGA",
-    "mission": "A nosa misión",
-    "missionText1": "No CESGA, a nosa misión é acelerar a transformación dixital dos sectores da biotecnoloxía, agroalimentario, forestal-mar-industrial e saúde. A través do demostrador multisectorial, proporcionamos solucións baseadas en intelixencia artificial, big data e computación de altas prestacións.",
-    "missionText2": "Este proxecto busca explotar, mediante casos reais, tecnoloxías emerxentes que poidan mellorar a competitividade das empresas galegas, apostando por unha Galicia conectada, sostible e líder en innovación.",
-    "imageAlt": "Supercomputador Finisterrae"
   },
   "team": {
-    "title": "O equipo",
-    "members": {
-      "jcacheiro": {
-        "name": "Javier Cacheiro",
-        "description": "Coordinador do proxecto",
-        "img": "jcacheiro.png"
-      },
-      "aambroa": {
-        "name": "Antón Ambroa",
-        "description": "Coordinador técnico do proxecto",
-        "img": "aambroa.jpg"
-      },
-      "pferreiro": {
-        "name": "Pedro Ferreiro",
-        "description": "Técnico de proxecto",
-        "img": "pferreiro.jpg"
-      },
-      "mcastineira": {
-        "name": "Marta Castiñeira",
-        "description": "Técnica investigadora en simulación computacional",
-        "img": "mcastineira.jpg"
-      },
-      "ldiaz": {
-        "name": "Ledicia Díaz",
-        "description": "Técnica investigadora en Machine Learning e Data Science",
-        "img": "ldiaz.jpg"
-      },
-      "lvazquez": {
-        "name": "Lara Vázquez",
-        "description": "Técnica investigadora en intelixencia artificial",
-        "img": "lvazquez.jpg"
-      },
-      "mcarmena": {
-        "name": "Miguel Carmena",
-        "description": "Técnico investigador en química computacional",
-        "img": "mcarmena.jpg"
+    "metadata": {
+      "title": "Equipo",
+      "description": "Impulsando a innovación desde o CESGA. A nosa misión é acelerar a transformación dixital dos sectores da biotecnoloxía, agroalimentario, forestal-mar-industrial e saúde"
+    },
+    "header": {
+      "title": "Impulsando a innovación desde o CESGA",
+      "mission": "A nosa misión",
+      "missionText1": "No CESGA, a nosa misión é acelerar a transformación dixital dos sectores da biotecnoloxía, agroalimentario, forestal-mar-industrial e saúde. A través do demostrador multisectorial, proporcionamos solucións baseadas en intelixencia artificial, big data e computación de altas prestacións.",
+      "missionText2": "Este proxecto busca explotar, mediante casos reais, tecnoloxías emerxentes que poidan mellorar a competitividade das empresas galegas, apostando por unha Galicia conectada, sostible e líder en innovación.",
+      "imageAlt": "Supercomputador Finisterrae"
+    },
+    "team": {
+      "title": "O equipo",
+      "members": {
+        "jcacheiro": {
+          "name": "Javier Cacheiro",
+          "description": "Coordinador do proxecto",
+          "img": "jcacheiro.png"
+        },
+        "aambroa": {
+          "name": "Antón Ambroa",
+          "description": "Coordinador técnico do proxecto",
+          "img": "aambroa.jpg"
+        },
+        "pferreiro": {
+          "name": "Pedro Ferreiro",
+          "description": "Técnico de proxecto",
+          "img": "pferreiro.jpg"
+        },
+        "mcastineira": {
+          "name": "Marta Castiñeira",
+          "description": "Técnica investigadora en simulación computacional",
+          "img": "mcastineira.jpg"
+        },
+        "ldiaz": {
+          "name": "Ledicia Díaz",
+          "description": "Técnica investigadora en Machine Learning e Data Science",
+          "img": "ldiaz.jpg"
+        },
+        "lvazquez": {
+          "name": "Lara Vázquez",
+          "description": "Técnica investigadora en intelixencia artificial",
+          "img": "lvazquez.jpg"
+        },
+        "mcarmena": {
+          "name": "Miguel Carmena",
+          "description": "Técnico investigador en química computacional",
+          "img": "mcarmena.jpg"
+        }
       }
     }
-  }
-},
-"use-cases": {
-  "metadata": {
-    "title": "Casos de uso",
-    "description": "Exemplos reais de aplicación de espazos de datos en distintos sectores: saúde, xestión, benchmarking e máis"
   },
-  "header": {
-    "title": "Casos de uso",
-    "lead": "Estes son algúns dos casos de uso que aproveitan os espazos de datos para xerar valor científico, social e operativo"
-  },
-  "cases": {
-    "farmaciavax": {
-      "name": "[DEMO] FarmaciaVAX",
-      "entity": "CESGA",
-      "objective": "Xestión de vacinas en farmacias"
+  "use-cases": {
+    "metadata": {
+      "title": "Casos de uso",
+      "description": "Exemplos reais de aplicación de espazos de datos en distintos sectores: saúde, xestión, benchmarking e máis"
     },
-    "aidamed": {
-      "name": "AiDataMed",
-      "entity": "Chup/IISGS",
-      "objective": "Análise de datos sanitarios"
+    "header": {
+      "title": "Casos de uso",
+      "lead": "Estes son algúns dos casos de uso que aproveitan os espazos de datos para xerar valor científico, social e operativo"
     },
-    "brilliant": {
-      "name": "Brilliant",
-      "entity": "IISGS",
-      "objective": "Observatorio de sarcopenia"
-    },
-    "gift": {
-      "name": "GIFT",
-      "entity": "Chup/IISGS",
-      "objective": "Saúde gastrointestinal"
-    },
-    "biomexplore": {
-      "name": "BiomeXplore",
-      "entity": "IISGS",
-      "objective": "Observatorio do índice poboacional de microbiota intestinal"
-    },
-    "salusbench": {
-      "name": "SALUSBENCH",
-      "entity": "Inverbis",
-      "objective": "Benchmarking de procesos de xestión hospitalaria"
-    },
-    "celiaspace": {
-      "name": "CeliaSpace",
-      "entity": "Uvigo",
-      "objective": "Datos de asistentes conversacionais con persoas maiores"
-    },
-    "datiacare": {
-      "name": "Datiacare",
-      "entity": "i4life",
-      "objective": "Coidado de persoas maiores"
+    "cases": {
+      "farmaciavax": {
+        "name": "[DEMO] FarmaciaVAX",
+        "entity": "CESGA",
+        "objective": "Xestión de vacinas en farmacias"
+      },
+      "aidamed": {
+        "name": "AiDataMed",
+        "entity": "Chup/IISGS",
+        "objective": "Análise de datos sanitarios"
+      },
+      "brilliant": {
+        "name": "Brilliant",
+        "entity": "IISGS",
+        "objective": "Observatorio de sarcopenia"
+      },
+      "gift": {
+        "name": "GIFT",
+        "entity": "Chup/IISGS",
+        "objective": "Saúde gastrointestinal"
+      },
+      "biomexplore": {
+        "name": "BiomeXplore",
+        "entity": "IISGS",
+        "objective": "Observatorio do índice poboacional de microbiota intestinal"
+      },
+      "salusbench": {
+        "name": "SALUSBENCH",
+        "entity": "Inverbis",
+        "objective": "Benchmarking de procesos de xestión hospitalaria"
+      },
+      "celiaspace": {
+        "name": "CeliaSpace",
+        "entity": "Uvigo",
+        "objective": "Datos de asistentes conversacionais con persoas maiores"
+      },
+      "datiacare": {
+        "name": "Datiacare",
+        "entity": "i4life",
+        "objective": "Coidado de persoas maiores"
+      }
     }
-  }
-},
+  },
   "what": {
     "metadata": {
       "title": "Espazo de datos",
@@ -574,6 +583,26 @@
           "🗓️ Data: 23 de marzo",
           "🕙 Horario: 10:00 - 12:00 h",
           "📍 Formato: en liña"
+        ],
+        "extra": "Apúntate aquí"
+      },
+      "formacionDesarrolloExtensiones": {
+        "header": "Formación avanzada sobre desenvolvemento de extensións para casos de uso",
+        "excerpt": "Formación en liña para coñecer o funcionamento do Eclipse Dataspace Connector (EDC), entender como se amplía mediante extensións e aprender a desenvolver módulos propios para adaptalo a novas necesidades de negocio e integración.",
+        "description": [
+          "Esta formación servirá para entender como funciona o Eclipse Dataspace Connector (EDC), como se amplía mediante extensións e como desenvolver módulos propios para adaptalo a novas necesidades.",
+          "Que é o conector EDC?",
+          "É unha tecnoloxía de código aberto que permite o intercambio seguro e controlado de datos entre organizacións, conectando sistemas diferentes e mantendo a soberanía da información.",
+          "Para que serve?",
+          "Automatiza o intercambio de datos aplicando políticas de uso, acceso e compartición. É clave nos espazos de datos porque garante seguridade, trazabilidade, interoperabilidade e cumprimento das condicións.",
+          "A quen vai dirixido?",
+          "Perfís técnicos como desenvolvedores, arquitectos, integradores e responsables de plataformas de datos, así como calquera persoa implicada en proxectos de intercambio e interoperabilidade de datos.",
+          "Onde se aplica?",
+          "En proxectos de integración de datos heteroxéneos, desenvolvemento de conectores personalizados e definición de políticas de intercambio, especialmente en contornos de federación de datos, ecosistemas colaborativos e Gaia-X.",
+          "📅 Data: 29 de abril de 2026",
+          "🕔 Hora: 11:00–13:00",
+          "📍 Formato: en liña",
+          "📺 A sesión estará dispoñible posteriormente na canle de YouTube do CESGA"
         ],
         "extra": "Apúntate aquí"
       }
