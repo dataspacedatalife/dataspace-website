@@ -305,7 +305,7 @@ export const blogPosts: Record<Locale, Post[]> = {
           href: 'https://www.youtube.com/watch?v=WGBCGCz8vHc',
           external: true,
         },
-        { type: 'bold', content: '💬 ¿Dudas? Escríbenos a dmd@cesga.es' },
+        { type: 'bold', content: '💬 ¿Dudas? Escríbenos a onehealth@cesga.es' },
       ],
     },
     {
@@ -1043,7 +1043,7 @@ export const blogPosts: Record<Locale, Post[]> = {
           href: 'https://www.youtube.com/watch?v=WGBCGCz8vHc',
           external: true,
         },
-        { type: 'bold', content: '💬 Questions? Write to us at dmd@cesga.es' },
+        { type: 'bold', content: '💬 Questions? Write to us at onehealth@cesga.es' },
       ],
     },
     {
@@ -1775,7 +1775,7 @@ export const blogPosts: Record<Locale, Post[]> = {
           href: 'https://www.youtube.com/watch?v=WGBCGCz8vHc',
           external: true,
         },
-        { type: 'bold', content: '💬 Dúbidas? Escríbenos a dmd@cesga.es' },
+        { type: 'bold', content: '💬 Dúbidas? Escríbenos a onehealth@cesga.es' },
       ],
     },
     {

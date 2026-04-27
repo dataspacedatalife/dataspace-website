@@ -172,7 +172,7 @@
     "howToJoin": {
       "title": "Inicia el proceso de adhesión",
       "subtitle": "Estoy interesado en adherirme",
-      "description": "Si ya estás informado y deseas hacernos saber tu interés en participar en el Espacio de Datos, completa el siguiente formulario. Si tienes dudas, contacta a dmd@cesga.es",
+      "description": "Si ya estás informado y deseas hacernos saber tu interés en participar en el Espacio de Datos, completa el siguiente formulario. Si tienes dudas, contacta a onehealth@cesga.es",
       "formButton": "Cubre el formulario de muestra de interés si estás interesado en adherirte",
       "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
     },
@@ -1529,7 +1529,7 @@
     "contact_title": "¡Contáctanos!",
     "contact_subtitle": "¿Interesado en el proyecto?",
     "contact_text": "Si estás interesado en saber más o participar en este proyecto, puedes mandarnos un email a",
-    "email": "dmd@cesga.es",
+    "email": "onehealth@cesga.es",
     "social_facebook": "Visítanos en Facebook",
     "social_x": "Visítanos en X",
     "social_linkedin": "Visítanos en LinkedIn",

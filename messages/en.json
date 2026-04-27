@@ -172,7 +172,7 @@
     "howToJoin": {
       "title": "Start the membership process",
       "subtitle": "I am interested in joining",
-      "description": "If you’re already informed and would like to express your interest in joining the Data Space, please fill out the following form. If you have any questions, contact us at dmd@cesga.es.",
+      "description": "If you’re already informed and would like to express your interest in joining the Data Space, please fill out the following form. If you have any questions, contact us at onehealth@cesga.es.",
       "formButton": "Fill out the expression of interest form if you’re interested in joining",
       "formLink": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
     },
@@ -1511,7 +1511,7 @@
     "contact_text": "If you are interested in learning more or participating in this project, you can send us an email at",
     "section1": "Sobre el espacio de datos",
     "section2": "Roles y participación",
-    "email": "dmd@cesga.es",
+    "email": "onehealth@cesga.es",
     "social_facebook": "Visit us on Facebook",
     "social_x": "Visit us on X",
     "social_linkedin": "Visit us on LinkedIn",
