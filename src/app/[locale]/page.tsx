@@ -54,63 +54,7 @@ function Hero() {
               </div>
             </div>
 
-            {/* DASHBOARD */}
-            <div className="relative flex items-center justify-center w-full">
-
-              <div className="absolute w-52 h-52 sm:w-72 sm:h-72 rounded-full bg-[#009AB8]/20 blur-3xl" />
-
-              <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md rounded-3xl border border-white/30 bg-white/50 backdrop-blur-xl shadow-2xl p-4 sm:p-6">
-
-                <div className="flex gap-2 mb-4 sm:mb-6">
-                  <div className="w-3 h-3 rounded-full bg-[#009AB8]/70" />
-                  <div className="w-3 h-3 rounded-full bg-[#009AB8]/40" />
-                  <div className="w-3 h-3 rounded-full bg-[#009AB8]/20" />
-                </div>
-
-                <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-4 sm:mb-6">
-                     <div className="rounded-xl bg-[#009AB8]/10 p-2 sm:p-3">
-                    <div className="text-[10px] sm:text-xs text-gray-500">Use Cases</div>
-                    <div className="text-sm sm:text-lg font-semibold text-[#009AB8]">7</div>
-                  </div>
-
-                  <div className="rounded-xl bg-[#009AB8]/10 p-2 sm:p-3">
-                    <div className="text-[10px] sm:text-xs text-gray-500">Involved Sectors</div>
-                    <div className="text-sm sm:text-lg font-semibold text-[#009AB8]">4</div>
-                  </div>
-
-                  <div className="rounded-xl bg-[#009AB8]/10 p-2 sm:p-3">
-                    <div className="text-[10px] sm:text-xs text-gray-500">Participating Organizations</div>
-                    <div className="text-sm sm:text-lg font-semibold text-[#009AB8]">6</div>
-                  </div>
-                </div>
-
-                <div className="mb-4 sm:mb-6">
-                  <div className="flex items-end gap-1 sm:gap-2 h-20 sm:h-24">
-                    <div className="w-4 sm:w-6 h-10 rounded bg-[#009AB8]/20" />
-                    <div className="w-4 sm:w-6 h-16 rounded bg-[#009AB8]/30" />
-                    <div className="w-4 sm:w-6 h-10 rounded bg-[#009AB8]/40" />
-                    <div className="w-4 sm:w-6 h-12 rounded bg-[#009AB8]/40" />
-                    <div className="w-4 sm:w-6 h-9 rounded bg-[#009AB8]/40" />
-                    <div className="w-4 sm:w-6 h-16 rounded bg-[#009AB8]/40" />
-                    <div className="w-4 sm:w-6 h-20 rounded bg-[#009AB8]/40" />
-                    <div className="w-4 sm:w-6 h-24 rounded bg-[#009AB8]/40" />
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex justify-between items-center rounded-xl bg-[#009AB8]/5 px-3 py-2">
-                    <span className="text-sm text-gray-700">Clinical dataset</span>
-                    <span className="text-xs text-[#009AB8]">active</span>
-                  </div>
-
-                  <div className="flex justify-between items-center rounded-xl bg-[#009AB8]/5 px-3 py-2">
-                    <span className="text-sm text-gray-700">Research node</span>
-                    <span className="text-xs text-[#009AB8]">online</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
+           
 
           </div>
         </div>
