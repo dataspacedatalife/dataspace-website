@@ -108,10 +108,10 @@
         "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
         "workshop2Caption": "Obradoiro de espazo de datos sobre conectores EDC.",
         "workshop2Url": "https://www.youtube.com/embed/WGBCGCz8vHc?si=vZ15mIvRVN_N9C5L",
+        "workshop3Caption": "Obradoiro do espazo de datos FarmaciaVAX coa plataforma D-Spacer de SQS",
+        "workshop3Url": "https://www.youtube.com/embed/50Ahpz-1VPI?si=xibL743aZEnhWinB",
         "tutorial1Caption": "Titorial paso a paso sobre a subida e visualización de assets utilizando o MVD do espazo de datos.",
-        "tutorial1Url": "/EdD_mvd/Screencast_Completo_12N.mp4",
-        "tutorial2Caption": "Titorial de despregamento do conector do espazo de datos.",
-        "tutorial2Url": "/EdD_mvd/ScreenCast_Connector_v5.mp4"
+        "tutorial1Url": "https://www.youtube.com/embed/2bZ2O_1Hkr4?si=oOdRF3eBMPX7Ocai"
       },
       "access": {
         "button": "Acceder"
