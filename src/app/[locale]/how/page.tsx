@@ -275,7 +275,7 @@ function How() {
                             target="_blank"
                             rel="noreferrer"
                             className="text-emerald-600 underline hover:text-emerald-800 transition"
-                            href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQnCH95UNzE4SVFKRDlMNlNKU0ROODlEM1dNSFdCQy4u"
+                            href="https://forms.office.com/r/mGvvF5qe4k"
                           >
                             {chunks}
                           </Link>
