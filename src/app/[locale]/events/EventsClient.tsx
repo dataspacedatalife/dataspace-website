@@ -30,7 +30,7 @@ import tallerKitSaludCRED from '../../../../public/events/tallerKitSaludCRED.png
 import KitDatosCREDImg2 from '../../../../public/events/tallerPracticokitCRED.jpg';
 import conectorGestionActivos from '../../../../public/events/conectorGestionActivos.png';
 import formacionDesarrolloExtensiones from '../../../../public/events/formacion-avanzada-sobre-desarrollo-de-extensiones-para-casos-de-uso.png';
-
+import evolucionEspacioDatos from  '../../../../public/events/evolucion-espacio-datos.png';
 const eventsPerPage = 5;
 
 interface Event {
@@ -160,6 +160,15 @@ const events = [
     image: formacionDesarrolloExtensiones,
     cesgalink:
       'https://aula.cesga.es/main/auth/inscription.php?c=EDDOHDS00129042026&',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: false,
+  },
+  {
+    key: 'evolucionEspacioDatos',
+    date: '2026-05-08',
+    image: evolucionEspacioDatos,
+    cesgalink:
+      'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
   }

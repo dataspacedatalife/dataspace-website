@@ -580,6 +580,38 @@
           "📺 The session will later be available on the CESGA YouTube channel"
         ],
         "extra": "Sign up here"
+      },
+      "evolucionEspacioDatos": {
+        "header": "Evolution of OneHealth DataSpace: integration with high-performance file systems",
+        "excerpt": "Online training to learn about one of the latest developments in the OneHealth DataSpace ecosystem: integration with high-performance storage systems at CESGA such as Lustre and NetApp.",
+        "description": [
+          "Session objective",
+          "To explore one of the latest developments in the OneHealth DataSpace ecosystem: integration with high-performance storage systems at CESGA such as Lustre and NetApp.",
+          "The session will demonstrate how to use the selected solution to access folders and files hosted on HPC infrastructures in a simple and user-friendly graphical way.",
+          "Within the OneHealth DataSpace environment, this integration will enable the creation of assets using data stored directly in high-performance storage systems.",
+          "What are HPC storage systems?",
+          "CESGA provides high-performance storage systems such as:",
+          "▸ User home directories",
+          "▸ Lustre",
+          "Infrastructure associated with the FinisTerrae III supercomputer",
+          "More information about CESGA HPC storage systems:",
+          "👉 https://www.cesga.es/infraestructuras/almacenamiento/",
+          "What will be covered in the session?",
+          "▸ Integration with HPC file systems",
+          "▸ Solution architecture within the OneHealth DataSpace ecosystem",
+          "▸ Platform access",
+          "▸ Main functionalities",
+          "▸ Practical demo",
+          "Who is it for?",
+          "Aimed at any user interacting with tools in the OneHealth DataSpace ecosystem who wants to learn about this solution.",
+          "Especially useful for use cases working with data hosted in HPC environments.",
+          "📅 Date: May 8, 2026",
+          "🕚 Time: 11:00",
+          "📍 Location: CESGA Seminar",
+          "👤 Delivered by: Cecilia Grela and David Martínez",
+          "📺 The session video will be available soon on CESGA's YouTube channel (@CesgaTV)"
+        ],
+        "extra": "Sign up here"
       }
     }
   },

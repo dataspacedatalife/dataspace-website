@@ -605,6 +605,38 @@
           "📺 A sesión estará dispoñible posteriormente na canle de YouTube do CESGA"
         ],
         "extra": "Apúntate aquí"
+      },
+      "evolucionEspacioDatos": {
+        "header": "Evolución do OneHealth DataSpace: integración con sistemas de ficheiros de altas prestacións",
+        "excerpt": "Formación en liña para coñecer unha das últimas evolucións do ecosistema OneHealth DataSpace: a integración con sistemas de almacenamento de altas prestacións do CESGA como Lustre e NetApp.",
+        "description": [
+          "Obxectivo da sesión",
+          "Coñecer unha das últimas evolucións do ecosistema OneHealth DataSpace: a integración con sistemas de almacenamento de altas prestacións do CESGA como Lustre e NetApp.",
+          "A sesión amosará como utilizar a solución seleccionada para acceder de forma gráfica e sinxela a cartafoles e ficheiros aloxados en infraestruturas HPC.",
+          "No contorno OneHealth DataSpace, esta integración permitirá crear assets empregando datos almacenados directamente en sistemas de almacenamento de altas prestacións.",
+          "Que son os sistemas de almacenamento HPC?",
+          "O CESGA ofrece sistemas de almacenamento de altas prestacións como:",
+          "▸ Directorios persoais de usuario",
+          "▸ Lustre",
+          "Infraestrutura asociada ao supercomputador FinisTerrae III",
+          "Máis información sobre os sistemas de almacenamento HPC do CESGA:",
+          "👉 https://www.cesga.es/infraestructuras/almacenamiento/",
+          "Que se abordará na sesión?",
+          "▸ Integración con sistemas de ficheiros HPC",
+          "▸ Arquitectura da solución dentro do ecosistema OneHealth DataSpace",
+          "▸ Acceso á plataforma",
+          "▸ Principais funcionalidades",
+          "▸ Demostración práctica",
+          "A quen vai dirixido?",
+          "Dirixido a calquera usuario ou usuaria que interactúe con ferramentas do ecosistema OneHealth DataSpace e queira coñecer esta solución.",
+          "Especialmente útil para casos de uso que traballen con datos aloxados en contornos HPC.",
+          "📅 Data: 8 de maio de 2026",
+          "🕚 Hora: 11:00",
+          "📍 Lugar: Seminario CESGA",
+          "👤 Impartido por: Cecilia Grela e David Martínez",
+          "📺 O vídeo da sesión estará dispoñible proximamente na canle de YouTube do CESGA (@CesgaTV)"
+        ],
+        "extra": "Inscríbete aquí"
       }
     }
   },
