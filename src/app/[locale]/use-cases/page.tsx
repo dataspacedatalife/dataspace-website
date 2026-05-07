@@ -16,6 +16,7 @@ import LogoIISGS from '../../../../public/use-cases/IISGS.png';
 import LogoInverbis from '../../../../public/use-cases/Inverbis.png';
 import Logoi4life from '../../../../public/use-cases/i4life.png';
 import LogoUvigo from '../../../../public/use-cases/uvigo.png';
+import LogoCienciasMarinas from '../../../../public/use-cases/Logo_CienciasMarinasGalicia.png'
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('use-cases.metadata');
@@ -37,6 +38,7 @@ const useCasesData = [
   { id: 'salusbench', imagen: LogoInverbis, link: 'https://web.inverbisanalytics.com/', color: colors_blue },
   { id: 'celiaspace', imagen: LogoUvigo, link: 'https://www.uvigo.gal/', color: colors_blue },
   { id: 'datiacare', imagen: Logoi4life, link: 'https://i4life.es/', color: colors_blue },
+  { id: 'cienciasmarinas', imagen: LogoCienciasMarinas, link: 'https://ccmmbigdata.cesga.es/datasets', color: colors_blue},
 ] as const;
 
 async function Header() {
