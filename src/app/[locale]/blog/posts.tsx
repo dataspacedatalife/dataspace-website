@@ -821,6 +821,77 @@ export const blogPosts: Record<Locale, Post[]> = {
     
    
   ],
+}, 
+{
+  key: 'galicia-biodays-2026',
+  date: '2026-05-08',
+  title:
+    'OneHealth DataSpace presenta en Galicia Biodays 2026 su evolución hacia la futura 1HealthAI Factory',
+  excerpt:
+    'El Director Científico del proyecto, Javier Cacheiro, analiza en una entrevista para Faro de Vigo el papel del espacio de datos y la futura infraestructura europea de IA en Galicia',
+  author_name: 'Iago Sequeiros',
+  author_image: Logo,
+  description: [
+    { type: 'h1', content: '' },
+    'El Director Científico del proyecto, Javier Cacheiro, analiza en una entrevista para Faro de Vigo el papel del espacio de datos y la futura infraestructura europea de IA en Galicia',
+
+    'OneHealth DataSpace participó en los Galicia Biodays 2026, organizados por BIOGA, en un encuentro que reunió a empresas, centros tecnológicos, grupos de investigación, entidades y profesionales del ecosistema biosanitario y biotecnológico.',
+
+    'En este escenario, nuestro Director Científico, Javier Cacheiro, concedió una entrevista a Faro de Vigo en la que abordó algunos de los principales ejes estratégicos de OneHealth DataSpace y el desarrollo del proyecto hacia la futura 1HealthAI Factory.',
+
+    { type: 'h2', content: 'One Health: datos y computación' },
+
+    'Durante la entrevista, Javier Cacheiro explicó el enfoque One Health como un modelo que integra salud humana, animal y medioambiental desde una perspectiva interconectada.',
+
+    'Uno de los aspectos centrales destacados fue el papel diferencial de OneHealth DataSpace frente a otros espacios de datos convencionales.',
+
+    '“Lo importante es la capacidad adicional para que en una sola plataforma puedas hacerlo todo: obtener datos y computación.',
+
+    'En este sentido, el proyecto no solo facilita el intercambio seguro de datos entre entidades participantes, sino que se apoya en tecnologías avanzadas de procesamiento y análisis de datos.',
+
+    'OneHealth DataSpace incorpora capacidades de supercomputación (HPC), Big Data y Cloud proporcionadas por el CESGA, permitiendo trabajar con grandes volúmenes de información de forma segura, interoperable y escalable.',
+
+    'El objetivo es ofrecer un entorno integrado donde los datos puedan analizarse, procesarse y transformarse en soluciones aplicables a retos del ámbito biosanitario.',
+
+    { type: 'h2', content: 'OneHealth DataSpace como antesala de la 1HealthAI Factory' },
+
+    'La entrevista también permitió profundizar en la relación entre OneHealth DataSpace y la futura 1HealthAI Factory.',
+
+    'Tal y como explicó Javier Cacheiro:',
+
+    '“OneHealth DataSpace es el primer paso hacia la 1HealthAI Factory.”',
+
+    'La futura infraestructura estará impulsada por el CESGA y contará con financiación del European High Performance Computing Joint Undertaking (EuroHPC JU), el Ministerio de Ciencia, Innovación y Universidades y la Xunta de Galicia.',
+
+    'Se convertirá así en la única factoría europea de inteligencia artificial diseñada específicamente bajo el enfoque One Health.',
+
+    'Esta nueva infraestructura permitirá reforzar las capacidades de computación e inteligencia artificial aplicadas al ámbito de la salud humana, animal y medioambiental.',
+
+    { type: 'h2', content: 'Un proyecto en expansión' },
+
+    'Actualmente, OneHealth DataSpace continúa incorporando nuevas entidades y casos de uso vinculados a salud, investigación y análisis avanzado de datos.',
+
+    'La participación en Galicia Biodays 2026 también permitió reforzar la conexión del proyecto con el ecosistema One Health, además de abrir nuevas oportunidades de colaboración en el ámbito biotecnológico y biosanitario.',
+
+    { type: 'h2', content: 'Entrevista completa' },
+
+    {
+          type: 'link',
+          content: '🔗 Entrevista en Faro de Vigo',
+          href: 'https://www.farodevigo.es/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129964134.html',
+          external: true,
+        },
+        {
+          type: 'link',
+          content: '🔗 Vídeo de la entrevista',
+          href: 'https://www.farodevigo.es/videos/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129969476.html',
+          external: true,
+        },
+    {
+      type: 'bold',
+      content: 'Más que datos. More than data.',
+    },
+  ],
 }
   ],
   en: [
@@ -1542,6 +1613,77 @@ export const blogPosts: Record<Locale, Post[]> = {
     { type: 'h2', content: 'About CESGA' },
     'The CESGA Foundation (Galicia Supercomputing Center) is a non-profit organization serving scientific research, technological development, and innovation since 1993, supported by the Xunta de Galicia and CSIC. It operates an infrastructure integrated into the Spanish Supercomputing Network (RES), recognized as a Unique Scientific and Technical Infrastructure (ICTS).',
     
+    {
+      type: 'bold',
+      content: 'More than data.',
+    },
+  ],
+},
+{
+  key: 'galicia-biodays-2026',
+  date: '2026-05-08',
+  title:
+    'OneHealth DataSpace presents its evolution towards the future 1HealthAI Factory at Galicia Biodays 2026',
+  excerpt:
+    'The project’s Scientific Director, Javier Cacheiro, discusses in an interview with Faro de Vigo the role of the data space and the future European AI infrastructure in Galicia',
+  author_name: 'Iago Sequeiros',
+  author_image: Logo,
+  description: [
+    { type: 'h1', content: '' },
+    'The project’s Scientific Director, Javier Cacheiro, discusses in an interview with Faro de Vigo the role of the data space and the future European AI infrastructure in Galicia',
+
+    'OneHealth DataSpace participated in Galicia Biodays 2026, organized by BIOGA, an event that brought together companies, technology centers, research groups, organizations, and professionals from the biosanitary and biotechnology ecosystem.',
+
+    'In this context, our Scientific Director, Javier Cacheiro, gave an interview to Faro de Vigo in which he addressed some of the main strategic pillars of OneHealth DataSpace and the project’s evolution towards the future 1HealthAI Factory.',
+
+    { type: 'h2', content: 'One Health: data and computing' },
+
+    'During the interview, Javier Cacheiro explained the One Health approach as a model that integrates human, animal, and environmental health from an interconnected perspective.',
+
+    'One of the key aspects highlighted was the distinctive role of OneHealth DataSpace compared to other conventional data spaces.',
+
+    '“The important thing is the additional capability that allows you to do everything within a single platform: access data and computing.”',
+
+    'In this regard, the project not only facilitates the secure exchange of data between participating entities, but also relies on advanced data processing and analysis technologies.',
+
+    'OneHealth DataSpace incorporates High Performance Computing (HPC), Big Data, and Cloud capabilities provided by CESGA, enabling the secure, interoperable, and scalable management of large volumes of information.',
+
+    'The objective is to provide an integrated environment where data can be analyzed, processed, and transformed into solutions applicable to biosanitary challenges.',
+
+    { type: 'h2', content: 'OneHealth DataSpace as a first step towards the 1HealthAI Factory' },
+
+    'The interview also provided an opportunity to further explore the relationship between OneHealth DataSpace and the future 1HealthAI Factory.',
+
+    'As Javier Cacheiro explained:',
+
+    '“OneHealth DataSpace is the first step towards the 1HealthAI Factory.”',
+
+    'The future infrastructure will be led by CESGA and funded by the European High Performance Computing Joint Undertaking (EuroHPC JU), the Ministry of Science, Innovation and Universities, and the Xunta de Galicia.',
+
+    'It will become the only European artificial intelligence factory specifically designed under the One Health approach.',
+
+    'This new infrastructure will strengthen computing and artificial intelligence capabilities applied to human, animal, and environmental health.',
+
+    { type: 'h2', content: 'A growing project' },
+
+    'OneHealth DataSpace continues to incorporate new entities and use cases related to health, research, and advanced data analysis.',
+
+    'Participation in Galicia Biodays 2026 also strengthened the project’s connection with the One Health ecosystem and opened new collaboration opportunities within the biotechnology and biosanitary sectors.',
+
+    { type: 'h2', content: 'Full interview' },
+
+    {
+      type: 'link',
+      content: '🔗 Interview in Faro de Vigo',
+      href: 'https://www.farodevigo.es/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129964134.html',
+      external: true,
+    },
+    {
+      type: 'link',
+      content: '🔗 Interview video',
+      href: 'https://www.farodevigo.es/videos/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129969476.html',
+      external: true,
+    },
     {
       type: 'bold',
       content: 'More than data.',
@@ -2313,6 +2455,77 @@ export const blogPosts: Record<Locale, Post[]> = {
     { type: 'h2', content: 'Sobre o CESGA' },
     'A Fundación CESGA (Centro de Supercomputación de Galicia) é unha organización sen ánimo de lucro ao servizo da investigación científica, o desenvolvemento tecnolóxico e a innovación desde 1993, participada pola Xunta de Galicia e o CSIC. Xestiona unha infraestrutura integrada na Rede Española de Supercomputación (RES), recoñecida como Instalación Científico-Técnica Singular (ICTS).',
     
+    {
+      type: 'bold',
+      content: 'Máis que datos.',
+    },
+  ],
+},
+{
+  key: 'galicia-biodays-2026',
+  date: '2026-05-08',
+  title:
+    'OneHealth DataSpace presenta en Galicia Biodays 2026 a súa evolución cara á futura 1HealthAI Factory',
+  excerpt:
+    'O Director Científico do proxecto, Javier Cacheiro, analiza nunha entrevista para Faro de Vigo o papel do espazo de datos e da futura infraestrutura europea de IA en Galicia',
+  author_name: 'Iago Sequeiros',
+  author_image: Logo,
+  description: [
+    { type: 'h1', content: '' },
+    'O Director Científico do proxecto, Javier Cacheiro, analiza nunha entrevista para Faro de Vigo o papel do espazo de datos e da futura infraestrutura europea de IA en Galicia',
+
+    'OneHealth DataSpace participou nos Galicia Biodays 2026, organizados por BIOGA, nun encontro que reuniu empresas, centros tecnolóxicos, grupos de investigación, entidades e profesionais do ecosistema biosanitario e biotecnolóxico.',
+
+    'Neste escenario, o noso Director Científico, Javier Cacheiro, concedeu unha entrevista a Faro de Vigo na que abordou algúns dos principais eixos estratéxicos de OneHealth DataSpace e o desenvolvemento do proxecto cara á futura 1HealthAI Factory.',
+
+    { type: 'h2', content: 'One Health: datos e computación' },
+
+    'Durante a entrevista, Javier Cacheiro explicou o enfoque One Health como un modelo que integra saúde humana, animal e medioambiental desde unha perspectiva interconectada.',
+
+    'Un dos aspectos centrais destacados foi o papel diferencial de OneHealth DataSpace fronte a outros espazos de datos convencionais.',
+
+    '“O importante é a capacidade adicional para que nunha soa plataforma poidas facelo todo: obter datos e computación.”',
+
+    'Neste sentido, o proxecto non só facilita o intercambio seguro de datos entre entidades participantes, senón que se apoia en tecnoloxías avanzadas de procesamento e análise de datos.',
+
+    'OneHealth DataSpace incorpora capacidades de supercomputación (HPC), Big Data e Cloud proporcionadas polo CESGA, permitindo traballar con grandes volumes de información de forma segura, interoperable e escalable.',
+
+    'O obxectivo é ofrecer un contorno integrado onde os datos poidan analizarse, procesarse e transformarse en solucións aplicables a retos do ámbito biosanitario.',
+
+    { type: 'h2', content: 'OneHealth DataSpace como antesala da 1HealthAI Factory' },
+
+    'A entrevista tamén permitiu afondar na relación entre OneHealth DataSpace e a futura 1HealthAI Factory.',
+
+    'Tal e como explicou Javier Cacheiro:',
+
+    '“OneHealth DataSpace é o primeiro paso cara á 1HealthAI Factory.”',
+
+    'A futura infraestrutura estará impulsada polo CESGA e contará con financiamento do European High Performance Computing Joint Undertaking (EuroHPC JU), o Ministerio de Ciencia, Innovación e Universidades e a Xunta de Galicia.',
+
+    'Converterase así na única factoría europea de intelixencia artificial deseñada especificamente baixo o enfoque One Health.',
+
+    'Esta nova infraestrutura permitirá reforzar as capacidades de computación e intelixencia artificial aplicadas ao ámbito da saúde humana, animal e medioambiental.',
+
+    { type: 'h2', content: 'Un proxecto en expansión' },
+
+    'Actualmente, OneHealth DataSpace continúa incorporando novas entidades e casos de uso vinculados á saúde, á investigación e á análise avanzada de datos.',
+
+    'A participación en Galicia Biodays 2026 tamén permitiu reforzar a conexión do proxecto co ecosistema One Health, ademais de abrir novas oportunidades de colaboración no ámbito biotecnolóxico e biosanitario.',
+
+    { type: 'h2', content: 'Entrevista completa' },
+
+    {
+      type: 'link',
+      content: '🔗 Entrevista en Faro de Vigo',
+      href: 'https://www.farodevigo.es/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129964134.html',
+      external: true,
+    },
+    {
+      type: 'link',
+      content: '🔗 Vídeo da entrevista',
+      href: 'https://www.farodevigo.es/videos/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129969476.html',
+      external: true,
+    },
     {
       type: 'bold',
       content: 'Máis que datos.',
