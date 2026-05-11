@@ -638,7 +638,38 @@
           "📺 O vídeo da sesión estará dispoñible proximamente na canle de YouTube do CESGA (@CesgaTV)"
         ],
         "extra": "Inscríbete aquí"
-      }
+      },
+    "usoPractico": {
+  "header": "Uso práctico de AnonymiX, Clever e Portal do Participante",
+  "excerpt": "Formación para mostrar como utilizar ferramentas do ecosistema OneHealth DataSpace para compartir, xestionar e protexer datos de forma segura, interoperable e aliñada cos principios de soberanía do dato e cumprimento normativo",
+  "description": [
+    "Obxectivo da sesión",
+    "Mostrar como utilizar ferramentas do ecosistema OneHealth DataSpace para compartir, xestionar e protexer datos de forma segura, interoperable e aliñada cos principios de soberanía do dato e cumprimento normativo.",
+    "A sesión permitirá comprender como aplicar estas solucións en escenarios reais de colaboración dentro do espazo de datos.",
+    "Que son AnonymiX, Clever e o Portal do Participante?",
+    "▸ AnonymiX permite anonimizar e protexer datos sensibles mantendo o seu valor analítico.",
+    "▸ Clever e o Portal do Participante facilitan a xestión de participantes, o acceso a recursos e a interacción co ecosistema OneHealth DataSpace.",
+    "Que se abordará na sesión?",
+    "▸ Uso de AnonymiX para a anonimización e protección de datos",
+    "▸ Funcionalidades principais de Clever",
+    "▸ Operativa do Portal do Participante",
+    "▸ Boas prácticas para compartir e consumir datos",
+    "▸ Casos de uso aplicados ao ámbito One Health",
+    "▸ Integración de ferramentas dentro da arquitectura federada do espazo de datos do CESGA",
+    "A quen vai dirixido?",
+    "Dirixido a:",
+    "▸ Entidades adheridas ou interesadas en participar en OneHealth DataSpace",
+    "▸ Profesionais do ámbito sanitario, tecnolóxico, investigador e biotecnolóxico",
+    "▸ Persoal técnico e responsables de datos",
+    "▸ Empresas, startups e centros tecnolóxicos",
+    "▸ Estudantes e profesionais interesados en espazos de datos, interoperabilidade e privacidade aplicada á IA",
+    "📅 Data: 15 de maio de 2026",
+    "🕚 Hora: 11:00-13:00",
+    "📍 Lugar: Seminario CESGA",
+    "📺 O vídeo da sesión estará dispoñible posteriormente na canle de YouTube do CESGA (@CesgaTV)"
+  ],
+  "extra": "Acceso e inscrición"
+}
     }
   },
   "catalog": {

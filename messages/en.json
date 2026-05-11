@@ -613,7 +613,38 @@
           "📺 The session video will be available soon on CESGA's YouTube channel (@CesgaTV)"
         ],
         "extra": "Sign up here"
-      }
+      },
+      "usoPractico": {
+  "header": "Practical Use of AnonymiX, Clever and the Participant Portal",
+  "excerpt": "Training session showcasing how to use tools from the OneHealth DataSpace ecosystem to securely share, manage and protect data in an interoperable way aligned with data sovereignty principles and regulatory compliance",
+  "description": [
+    "Session objective",
+    "Show how to use tools from the OneHealth DataSpace ecosystem to securely share, manage and protect data in an interoperable way aligned with data sovereignty principles and regulatory compliance.",
+    "The session will provide an understanding of how to apply these solutions in real collaboration scenarios within the data space.",
+    "What are AnonymiX, Clever and the Participant Portal?",
+    "▸ AnonymiX enables the anonymization and protection of sensitive data while preserving its analytical value.",
+    "▸ Clever and the Participant Portal facilitate participant management, access to resources and interaction with the OneHealth DataSpace ecosystem.",
+    "What will be covered during the session?",
+    "▸ Using AnonymiX for data anonymization and protection",
+    "▸ Main functionalities of Clever",
+    "▸ Operation of the Participant Portal",
+    "▸ Best practices for sharing and consuming data",
+    "▸ Use cases applied to the One Health environment",
+    "▸ Integration of tools within the federated architecture of the CESGA data space",
+    "Who is it aimed at?",
+    "Target audience:",
+    "▸ Organizations already participating in or interested in joining OneHealth DataSpace",
+    "▸ Professionals from the healthcare, technology, research and biotechnology sectors",
+    "▸ Technical staff and data managers",
+    "▸ Companies, startups and technology centers",
+    "▸ Students and professionals interested in data spaces, interoperability and privacy applied to AI",
+    "📅 Date: May 15, 2026",
+    "🕚 Time: 11:00 AM - 1:00 PM",
+    "📍 Location: CESGA Seminar Room",
+    "📺 The session video will later be available on the CESGA YouTube channel (@CesgaTV)"
+  ],
+  "extra": "Access and registration"
+}
     }
   },
   "catalog": {

@@ -31,6 +31,7 @@ import KitDatosCREDImg2 from '../../../../public/events/tallerPracticokitCRED.jp
 import conectorGestionActivos from '../../../../public/events/conectorGestionActivos.png';
 import formacionDesarrolloExtensiones from '../../../../public/events/formacion-avanzada-sobre-desarrollo-de-extensiones-para-casos-de-uso.png';
 import evolucionEspacioDatos from  '../../../../public/events/evolucion-espacio-datos.png';
+import usoPracticoImage from  '../../../../public/events/uso-practico.png';
 const eventsPerPage = 5;
 
 interface Event {
@@ -170,8 +171,17 @@ const events = [
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: false,
+  },
+  {
+    key: 'usoPractico',
+    date: '2026-05-15',
+    image: usoPracticoImage,
+    cesgalink:
+      'https://www.cesga.es/formacion-onehealth-dataspace/',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
-  }
+  },
    
 ] as const satisfies Event[];
 
