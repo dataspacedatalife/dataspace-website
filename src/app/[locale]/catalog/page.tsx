@@ -46,8 +46,7 @@ async function UseCaseGrid() {
           const name = t(`${caso.id}.name`);
           const objective = t(`${caso.id}.objective`);
 
-          // 👇 lógica clave
-          const href = caso.url ?? `/datalog/${caso.id}`;
+          const href = caso.url ?? `/catalog/${caso.id}`;
           const isExternal = !!caso.url;
 
           return (
