@@ -106,8 +106,6 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
   const t = useTranslations('Navbar');
 
   const links = [
-    { href: '/events', label: t('eventos') },
-    { href: '/blog', label: t('blog') },
     { href: '/team', label: t('el_equipo') },
   ];
 
@@ -127,6 +125,11 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     { href: '/how', label: t('adhesion') },
     { href: '/kitEdD', label: t('kit') },
   ];
+    const latestLinks = [
+    { href: '/events', label: t('eventos') },
+    { href: '/blog', label: t('blog') },
+  ];
+
 
 
   function DesktopNav() {
@@ -184,6 +187,22 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
               </Link>
             ))}
           </div>
+         
+        </div>
+         <div className="relative group flex">
+          <Link href="/how" className={navItemClass}>
+            <div className="whitespace-nowrap">{t('latest')}</div>
+            <ChevronUp className="ml-0.5 h-4 w-4 rotate-180 transition-transform duration-300 group-hover:rotate-0" />
+          </Link>
+
+          <div className={dropdownClass}>
+            {latestLinks.map(({ href, label }) => (
+              <Link key={href} href={href} className="px-4 py-3 text-base text-gray-700 transition-colors duration-200 hover:bg-[#005467]/10 hover:text-[#005467]">
+                {label}
+              </Link>
+            ))}
+          </div>
+         
         </div>
 
         {links.map(({ href, label }) => (
