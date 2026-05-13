@@ -253,42 +253,102 @@
     "team": {
       "title": "The team",
       "members": {
-        "jcacheiro": {
-          "name": "Javier Cacheiro",
-          "description": "Project coordinator",
-          "img": "jcacheiro.png"
-        },
-        "aambroa": {
-          "name": "Antón Ambroa",
-          "description": "Technical project coordinator",
-          "img": "aambroa.jpg"
-        },
-        "pferreiro": {
-          "name": "Pedro Ferreiro",
-          "description": "Project technician",
-          "img": "pferreiro.jpg"
-        },
-        "mcastineira": {
-          "name": "Marta Castiñeira",
-          "description": "Research technician in computational simulation",
-          "img": "mcastineira.jpg"
-        },
-        "ldiaz": {
-          "name": "Ledicia Díaz",
-          "description": "Research technician in Machine Learning and Data Science",
-          "img": "ldiaz.jpg"
-        },
-        "lvazquez": {
-          "name": "Lara Vázquez",
-          "description": "Research technician in Artificial Intelligence",
-          "img": "lvazquez.jpg"
-        },
-        "mcarmena": {
-          "name": "Miguel Carmena",
-          "description": "Research technician in computational chemistry",
-          "img": "mcarmena.jpg"
-        }
-      }
+  "jcacheiro": {
+    "name": "Javier Cacheiro",
+    "description": "Project coordinator",
+    "img": "jcacheiro.webp"
+  },
+  "hfernandez": {
+    "name": "Helena Fernández",
+    "description": "PMO Director",
+    "img": "hfernandez.webp"
+  },
+  "asantolino": {
+    "name": "Alejo Santolino",
+    "description": "Coordinator of data legal framework and business analysis",
+    "img": "asantolino.webp"
+  },
+  "pferreiro": {
+    "name": "Pedro Ferreiro",
+    "description": "Project technician",
+    "img": "pferreiro.webp"
+  },
+  "mcastineira": {
+    "name": "Marta Castiñeira",
+    "description": "Research technician in computational simulation",
+    "img": "mcastineira.webp"
+  },
+  "ldiaz": {
+    "name": "Ledicia Díaz",
+    "description": "Research technician in Machine Learning and Data Science",
+    "img": "ldiaz.webp"
+  },
+  "lvazquez": {
+    "name": "Lara Vázquez",
+    "description": "Research technician in Artificial Intelligence",
+    "img": "lvazquez.webp"
+  },
+  "mcarmena": {
+    "name": "Miguel Carmena",
+    "description": "Research technician in computational chemistry",
+    "img": "mcarmena.webp"
+  },
+  "llosada": {
+    "name": "Laura Losada",
+    "description": "Coordinator of outreach and training",
+    "img": "onehealth_nophoto.png"
+  },
+  "isequeiros": {
+    "name": "Iago Xosé Sequeiros",
+    "description": "Outreach technician",
+    "img": "isequeiros.webp"
+  },
+  "acalvo": {
+    "name": "Arturo José Calvo",
+    "description": "Training technician",
+    "img": "acalvo.webp"
+  },
+  "cgrela": {
+    "name": "Cecilia Grela",
+    "description": "Data integration and management technician for innovation",
+    "img": "cgrela.webp"
+  },
+  "tpaz": {
+    "name": "Tania Paz",
+    "description": "Administrative specialist technician",
+    "img": "onehealth_nophoto.png"
+  },
+  "mcurty": {
+    "name": "Martín Curty",
+    "description": "Data engineering and integration technician in cloud environments",
+    "img": "mcurty.webp"
+  },
+  "boliveira": {
+    "name": "Brais Oliveira",
+    "description": "Platform administrator technician",
+    "img": "boliveira.webp"
+  },
+  "dmartinez": {
+    "name": "David Martínez",
+    "description": "Platform administrator technician",
+    "img": "dmartinez.webp"
+  },
+  "rdiaz": {
+    "name": "Roi Díaz",
+    "description": "Platform administrator technician",
+    "img": "rdiaz.webp"
+  },
+  "dramos": {
+    "name": "Diana Ramos",
+    "description": "Specialist technician in content design and production",
+    "img": "dramos.webp"
+  },
+  "lprados": {
+    "name": "Luis Prados",
+    "description": "Specialist technician in content design and production",
+    "img": "lprados.webp"
+  }
+}
     }
   },
   "use-cases": {

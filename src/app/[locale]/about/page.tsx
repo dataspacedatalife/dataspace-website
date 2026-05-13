@@ -114,42 +114,6 @@ async function Header() {
         </div>
       </section>
 
-      {/* IMPACTO */}
-      <div className="mb-16 max-lg:mt-16 lg:col-span-2">
-        <Subheading>{t('impact.title')}</Subheading>
-        <hr className="mt-6 border-t border-gray-200" />
-
-        <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-4">
-
-          <div className="flex flex-col items-center text-center gap-y-2 border-b border-dotted border-gray-200 pb-4">
-            <dt className="text-sm/6 text-gray-600">
-              {t('impact.useCases')}
-            </dt>
-            <dd className="order-first text-6xl font-medium tracking-tight">
-              <AnimatedNumber start={1} end={7} />
-            </dd>
-          </div>
-
-          <div className="flex flex-col items-center text-center gap-y-2 border-b border-dotted border-gray-200 pb-4">
-            <dt className="text-sm/6 text-gray-600">
-              {t('impact.sectors')}
-            </dt>
-            <dd className="order-first text-6xl font-medium tracking-tight">
-              <AnimatedNumber start={1} end={4} />
-            </dd>
-          </div>
-
-          <div className="flex flex-col items-center text-center gap-y-2">
-            <dt className="text-sm/6 text-gray-600">
-              {t('impact.organizations')}
-            </dt>
-            <dd className="order-first text-6xl font-medium tracking-tight">
-              <AnimatedNumber start={1} end={6} />
-            </dd>
-          </div>
-
-        </dl>
-      </div>
 
       {/* FUNDING */}
       <div className="mb-16 mt-12 pt-6">

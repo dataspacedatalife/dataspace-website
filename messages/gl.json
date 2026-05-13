@@ -281,38 +281,98 @@
       "members": {
         "jcacheiro": {
           "name": "Javier Cacheiro",
-          "description": "Coordinador do proxecto",
-          "img": "jcacheiro.png"
+          "description": "Coordinador de proxecto",
+          "img": "jcacheiro.webp"
         },
-        "aambroa": {
-          "name": "Antón Ambroa",
-          "description": "Coordinador técnico do proxecto",
-          "img": "aambroa.jpg"
+         "hfernandez": {
+          "name": "Helena Fernández",
+          "description": "Directora da PMO",
+          "img": "hfernandez.webp"
+        },
+        "asantolino": {
+          "name": "Alejo Santolino",
+          "description": "Coordinador do marco legal de datos e análise de negocio",
+          "img": "asantolino.webp"
         },
         "pferreiro": {
           "name": "Pedro Ferreiro",
           "description": "Técnico de proxecto",
-          "img": "pferreiro.jpg"
+          "img": "pferreiro.webp"
         },
         "mcastineira": {
           "name": "Marta Castiñeira",
           "description": "Técnica investigadora en simulación computacional",
-          "img": "mcastineira.jpg"
+          "img": "mcastineira.webp"
         },
         "ldiaz": {
           "name": "Ledicia Díaz",
-          "description": "Técnica investigadora en Machine Learning e Data Science",
-          "img": "ldiaz.jpg"
+          "description": "Técnica investigadora en aprendizaxe automática e ciencia de datos",
+          "img": "ldiaz.webp"
         },
         "lvazquez": {
           "name": "Lara Vázquez",
           "description": "Técnica investigadora en intelixencia artificial",
-          "img": "lvazquez.jpg"
+          "img": "lvazquez.webp"
         },
         "mcarmena": {
           "name": "Miguel Carmena",
           "description": "Técnico investigador en química computacional",
-          "img": "mcarmena.jpg"
+          "img": "mcarmena.webp"
+        },
+        "llosada": {
+          "name": "Laura Losada",
+          "description": "Coordinadora de promoción e formación",
+          "img": "onehealth_nophoto.png"
+        },
+        "isequeiros": {
+          "name": "Iago Xosé Sequeiros",
+          "description": "Técnico de promoción",
+          "img": "isequeiros.webp"
+        },
+        "acalvo": {
+          "name": "Arturo José Calvo",
+          "description": "Técnico de formación",
+          "img": "acalvo.webp"
+        },
+        "cgrela": {
+          "name": "Cecilia Grela",
+          "description": "Técnica en integración e xestión de datos para a innovación",
+          "img": "cgrela.webp"
+        },
+        "tpaz": {
+          "name": "Tania Paz",
+          "description": "Técnica especialista en administración",
+          "img": "onehealth_nophoto.png"
+        },
+        "mcurty": {
+          "name": "Martín Curty",
+          "description": "Técnico en enxeñaría de datos e integración en contornas cloud",
+          "img": "mcurty.webp"
+        },
+        "boliveira": {
+          "name": "Brais Oliveira",
+          "description": "Técnico administrador de plataforma",
+          "img": "boliveira.webp"
+        },
+        "dmartinez": {
+          "name": "David Martínez",
+          "description": "Técnico administrador de plataforma",
+          "img": "dmartinez.webp"
+        },
+        "rdiaz": {
+          "name": "Roi Díaz",
+          "description": "Técnico administrador de plataforma",
+          "img": "rdiaz.webp"
+        },
+        "dramos": {
+          "name": "Diana Ramos",
+          "description": "Técnica especialista en deseño e produción de contidos",
+          "img": "dramos.webp"
+        },
+        "lprados": {
+          "name": "Luis Prados",
+          "description": "Técnico especialista en deseño e produción de contidos",
+          "img": "lprados.webp"
         }
       }
     }
@@ -639,37 +699,37 @@
         ],
         "extra": "Inscríbete aquí"
       },
-    "usoPractico": {
-  "header": "Uso práctico de AnonymiX, Clever e Portal do Participante",
-  "excerpt": "Formación para mostrar como utilizar ferramentas do ecosistema OneHealth DataSpace para compartir, xestionar e protexer datos de forma segura, interoperable e aliñada cos principios de soberanía do dato e cumprimento normativo",
-  "description": [
-    "Obxectivo da sesión",
-    "Mostrar como utilizar ferramentas do ecosistema OneHealth DataSpace para compartir, xestionar e protexer datos de forma segura, interoperable e aliñada cos principios de soberanía do dato e cumprimento normativo.",
-    "A sesión permitirá comprender como aplicar estas solucións en escenarios reais de colaboración dentro do espazo de datos.",
-    "Que son AnonymiX, Clever e o Portal do Participante?",
-    "▸ AnonymiX permite anonimizar e protexer datos sensibles mantendo o seu valor analítico.",
-    "▸ Clever e o Portal do Participante facilitan a xestión de participantes, o acceso a recursos e a interacción co ecosistema OneHealth DataSpace.",
-    "Que se abordará na sesión?",
-    "▸ Uso de AnonymiX para a anonimización e protección de datos",
-    "▸ Funcionalidades principais de Clever",
-    "▸ Operativa do Portal do Participante",
-    "▸ Boas prácticas para compartir e consumir datos",
-    "▸ Casos de uso aplicados ao ámbito One Health",
-    "▸ Integración de ferramentas dentro da arquitectura federada do espazo de datos do CESGA",
-    "A quen vai dirixido?",
-    "Dirixido a:",
-    "▸ Entidades adheridas ou interesadas en participar en OneHealth DataSpace",
-    "▸ Profesionais do ámbito sanitario, tecnolóxico, investigador e biotecnolóxico",
-    "▸ Persoal técnico e responsables de datos",
-    "▸ Empresas, startups e centros tecnolóxicos",
-    "▸ Estudantes e profesionais interesados en espazos de datos, interoperabilidade e privacidade aplicada á IA",
-    "📅 Data: 15 de maio de 2026",
-    "🕚 Hora: 11:00-13:00",
-    "📍 Lugar: Seminario CESGA",
-    "📺 O vídeo da sesión estará dispoñible posteriormente na canle de YouTube do CESGA (@CesgaTV)"
-  ],
-  "extra": "Acceso e inscrición"
-}
+      "usoPractico": {
+        "header": "Uso práctico de AnonymiX, Clever e Portal do Participante",
+        "excerpt": "Formación para mostrar como utilizar ferramentas do ecosistema OneHealth DataSpace para compartir, xestionar e protexer datos de forma segura, interoperable e aliñada cos principios de soberanía do dato e cumprimento normativo",
+        "description": [
+          "Obxectivo da sesión",
+          "Mostrar como utilizar ferramentas do ecosistema OneHealth DataSpace para compartir, xestionar e protexer datos de forma segura, interoperable e aliñada cos principios de soberanía do dato e cumprimento normativo.",
+          "A sesión permitirá comprender como aplicar estas solucións en escenarios reais de colaboración dentro do espazo de datos.",
+          "Que son AnonymiX, Clever e o Portal do Participante?",
+          "▸ AnonymiX permite anonimizar e protexer datos sensibles mantendo o seu valor analítico.",
+          "▸ Clever e o Portal do Participante facilitan a xestión de participantes, o acceso a recursos e a interacción co ecosistema OneHealth DataSpace.",
+          "Que se abordará na sesión?",
+          "▸ Uso de AnonymiX para a anonimización e protección de datos",
+          "▸ Funcionalidades principais de Clever",
+          "▸ Operativa do Portal do Participante",
+          "▸ Boas prácticas para compartir e consumir datos",
+          "▸ Casos de uso aplicados ao ámbito One Health",
+          "▸ Integración de ferramentas dentro da arquitectura federada do espazo de datos do CESGA",
+          "A quen vai dirixido?",
+          "Dirixido a:",
+          "▸ Entidades adheridas ou interesadas en participar en OneHealth DataSpace",
+          "▸ Profesionais do ámbito sanitario, tecnolóxico, investigador e biotecnolóxico",
+          "▸ Persoal técnico e responsables de datos",
+          "▸ Empresas, startups e centros tecnolóxicos",
+          "▸ Estudantes e profesionais interesados en espazos de datos, interoperabilidade e privacidade aplicada á IA",
+          "📅 Data: 15 de maio de 2026",
+          "🕚 Hora: 11:00-13:00",
+          "📍 Lugar: Seminario CESGA",
+          "📺 O vídeo da sesión estará dispoñible posteriormente na canle de YouTube do CESGA (@CesgaTV)"
+        ],
+        "extra": "Acceso e inscrición"
+      }
     }
   },
   "catalog": {

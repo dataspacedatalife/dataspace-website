@@ -54,7 +54,18 @@ function Hero() {
               </div>
             </div>
 
-           
+            {/* IMAGEN */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="w-full max-w-md lg:max-w-lg">
+                <img
+                  src="./demostrador/diagram.png"
+                  alt="Diagrama OneHealth DataSpace"
+                  className="w-full h-auto object-contain"
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+            </div>
 
           </div>
         </div>
