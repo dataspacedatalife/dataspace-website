@@ -4,12 +4,12 @@ import DinamicaCRED from '../../../../public/blog/dinamicaEventoInicialCRED.png'
 import GaiaXPonencia from '../../../../public/blog/GAIAXCumbreDatoPonenciaAlejoSantolino.jpeg';
 import ArchitectureImg from '../../../../public/logo_completo.jpg';
 import Logo from '../../../../public/logos/onehealth_simbolo_blog.png';
-import JCacheiroImg from '../../../../public/team/jcacheiro.png';
-import LDiazImg from '../../../../public/team/ldiaz.jpg';
-import LVazquezImg from '../../../../public/team/lvazquez.jpg';
-import MCarmenaImg from '../../../../public/team/mcarmena.jpg';
-import MCastineiraImg from '../../../../public/team/mcastineira.jpg';
-import PFerreiroImg from '../../../../public/team/pferreiro.jpg';
+import JCacheiroImg from '../../../../public/team/jcacheiro.webp';
+import LDiazImg from '../../../../public/team/ldiaz.webp';
+import LVazquezImg from '../../../../public/team/lvazquez.webp';
+import MCarmenaImg from '../../../../public/team/mcarmena.webp';
+import MCastineiraImg from '../../../../public/team/mcastineira.webp';
+import PFerreiroImg from '../../../../public/team/pferreiro.webp';
 
 interface TextNodeBase {
   type: string;
