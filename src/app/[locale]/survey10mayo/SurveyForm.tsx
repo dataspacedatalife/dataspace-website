@@ -9,7 +9,7 @@ export default function SurveyForm() {
     necesidades: '',
     claridad: '',
     dudas: '',
-    recomendaria: '',
+    recomendaria: false,
     valoracionGlobal: '',
     futurasFormaciones: [] as string[],
     propuestaCurso: '',
@@ -48,11 +48,13 @@ export default function SurveyForm() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
-    const { name, value } = e.target;
+    const target = e.target as HTMLInputElement;
+
+    const { name, value, type, checked } = target;
 
     setForm(prev => ({
       ...prev,
-      [name]: value,
+      [name]: type === 'checkbox' ? checked : value,
     }));
   };
 
@@ -77,7 +79,6 @@ export default function SurveyForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    /* CAPTCHA FIX */
     if (Number(captcha.answer) !== captchaResult.current) {
       setMessage('Captcha incorrecto');
       resetCaptcha();
@@ -110,7 +111,7 @@ export default function SurveyForm() {
           necesidades: '',
           claridad: '',
           dudas: '',
-          recomendaria: '',
+          recomendaria: false,
           valoracionGlobal: '',
           futurasFormaciones: [],
           propuestaCurso: '',
@@ -129,12 +130,17 @@ export default function SurveyForm() {
 
   return (
     <form className="survey-form" onSubmit={handleSubmit}>
-
       <h1>Encuesta de Satisfacción - OneHealth DataSpace (CESGA)</h1>
       <h2>Curso 10 de mayo</h2>
 
       <label>Perfil del participante</label>
-      <select name="perfil" value={form.perfil} onChange={handleChange} required>
+
+      <select
+        name="perfil"
+        value={form.perfil}
+        onChange={handleChange}
+        required
+      >
         <option value="">Seleccione</option>
         <option>Investigador/a</option>
         <option>Técnico/a</option>
@@ -172,19 +178,20 @@ export default function SurveyForm() {
         </div>
       ))}
 
-      <label>¿Recomendaría este curso?</label>
-      <select
-        name="recomendaria"
-        value={form.recomendaria}
-        onChange={handleChange}
-        required
-      >
-        <option value="">Seleccione</option>
-        <option>Sí</option>
-        <option>No</option>
-      </select>
+      <div className="recommend-box">
+        <label htmlFor="recomendaria">¿Recomendaría este curso?</label>
+
+        <input
+          id="recomendaria"
+          type="checkbox"
+          name="recomendaria"
+          checked={form.recomendaria}
+          onChange={handleChange}
+        />
+      </div>
 
       <label>Formación futura</label>
+
       <div className="checkbox-group">
         {[
           'IA / Machine Learning',
@@ -210,16 +217,16 @@ export default function SurveyForm() {
       </div>
 
       <label>Propuesta de curso</label>
+
       <textarea
         name="propuestaCurso"
         value={form.propuestaCurso}
         onChange={handleChange}
       />
 
- 
-
       {/* CAPTCHA */}
       <label>Verificación anti-bots</label>
+
       <div className="captcha-box">
         <span>
           ¿Cuánto es {captcha.a} + {captcha.b}?
@@ -240,7 +247,6 @@ export default function SurveyForm() {
           {message}
         </p>
       )}
-
     </form>
   );
 }

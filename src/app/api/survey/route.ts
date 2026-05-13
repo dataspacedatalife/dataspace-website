@@ -20,6 +20,7 @@ function withLock<T>(key: string, fn: () => Promise<T> | T): Promise<T> {
     .then(fn)
     .finally(() => {
       release();
+
       if (locks.get(key) === current) {
         locks.delete(key);
       }
@@ -30,24 +31,24 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    /* ---------------- VALIDACIÓN MANUAL SEGURA ---------------- */
+    /* ---------------- VALIDACIÓN ---------------- */
     const required = [
       'perfil',
-      'objetivos',
       'contenidos',
       'necesidades',
-      'dominio',
       'claridad',
       'dudas',
-      'organizacion',
       'valoracionGlobal',
-      'modalidad',
     ];
 
     for (const field of required) {
       const value = body?.[field];
 
-      if (value === undefined || value === null || String(value).trim() === '') {
+      if (
+        value === undefined ||
+        value === null ||
+        String(value).trim() === ''
+      ) {
         return NextResponse.json(
           { error: `Missing field: ${field}` },
           { status: 400 }
@@ -70,20 +71,16 @@ export async function POST(req: Request) {
     /* ---------------- NORMALIZACIÓN ---------------- */
     const safeData = {
       perfil: String(body.perfil || ''),
-      objetivos: String(body.objetivos || ''),
       contenidos: String(body.contenidos || ''),
       necesidades: String(body.necesidades || ''),
-      dominio: String(body.dominio || ''),
       claridad: String(body.claridad || ''),
       dudas: String(body.dudas || ''),
-      organizacion: String(body.organizacion || ''),
+      recomendaria: Boolean(body.recomendaria),
       valoracionGlobal: String(body.valoracionGlobal || ''),
-      recomendaria: String(body.recomendaria || ''),
       futurasFormaciones: Array.isArray(body.futurasFormaciones)
         ? body.futurasFormaciones
         : [],
       propuestaCurso: String(body.propuestaCurso || ''),
-      modalidad: String(body.modalidad || ''),
       survey: String(body.survey || 'default'),
     };
 
@@ -98,14 +95,14 @@ export async function POST(req: Request) {
       const files = fs.readdirSync(dir).filter(f => f.endsWith('.csv'));
 
       /* ---------------- LÍMITE ---------------- */
-      if (files.length >= 5) {
+      if (files.length >= 100) {
         return NextResponse.json(
           { error: 'Límite de respuestas para la encuesta' },
           { status: 403 }
         );
       }
 
-      /* ---------------- NOMBRE SEGURO (SIN COLISIÓN) ---------------- */
+      /* ---------------- NOMBRE SEGURO ---------------- */
       const filePath = path.join(
         dir,
         `answer-${Date.now()}-${Math.random().toString(36).slice(2, 8)}.csv`
@@ -121,25 +118,20 @@ export async function POST(req: Request) {
 
       const csv = `
 perfil,${clean(safeData.perfil)}
-objetivos,${clean(safeData.objetivos)}
 contenidos,${clean(safeData.contenidos)}
 necesidades,${clean(safeData.necesidades)}
-dominio,${clean(safeData.dominio)}
 claridad,${clean(safeData.claridad)}
 dudas,${clean(safeData.dudas)}
-organizacion,${clean(safeData.organizacion)}
-recomendaria,${clean(safeData.recomendaria)}
+recomendaria,${safeData.recomendaria ? 'Sí' : 'No'}
 valoracionGlobal,${clean(safeData.valoracionGlobal)}
 futurasFormaciones,${clean(safeData.futurasFormaciones.join(' | '))}
 propuestaCurso,${clean(safeData.propuestaCurso)}
-modalidad,${clean(safeData.modalidad)}
 `;
 
       fs.writeFileSync(filePath, csv);
 
       return NextResponse.json({ success: true });
     });
-
   } catch (e) {
     console.error('SERVER ERROR:', e);
 
