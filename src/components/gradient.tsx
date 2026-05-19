@@ -7,13 +7,13 @@ export function GradientBackground() {
       <div
         className={clsx(
           'absolute inset-0',
-          'bg-gradient-to-r from-[#24B678] via-[#12BFD1] to-[#00AEEC]',
+          'bg-gradient-to-r from-[#3fd7c0] via-[#00a8b8] to-[#006b8f]',
           'rounded-full pointer-events-none',
           'opacity-90 transform-gpu',
         )}
         style={{
           filter: 'blur(20px)',
-          margin: '-10px',
+          margin: '-20px',
         }}
       />
     </div>
