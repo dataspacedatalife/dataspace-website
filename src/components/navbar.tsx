@@ -106,7 +106,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
   const t = useTranslations('Navbar');
 
   const links = [
-    { href: '/team', label: t('el_equipo') },
+    { href: 'https://www.youtube.com/playlist?list=PLvAJrckik_UPT2zDxHGaO5jOd27q1hBIz', label: t('training') },
   ];
 
   const techLinks = [
@@ -119,6 +119,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     { href: '/about', label: t('saber_mas') },
     { href: '/what', label: t('que_es_un_espacio') },
     { href: '/use-cases', label: t('casos_de_uso') },
+    { href: '/team', label: t('el_equipo') },
   ];
 
   const joinLinks = [
