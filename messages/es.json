@@ -319,12 +319,12 @@
           "description": "Técnico investigador en química computacional",
           "img": "mcarmena.webp"
         },
-         "llosada": {
+        "llosada": {
           "name": "Laura Losada",
           "description": "Coordinadora de promoción y formación",
           "img": "onehealth_nophoto.png"
         },
-         "isequeiros": {
+        "isequeiros": {
           "name": "Iago Xosé Sequeiros",
           "description": "Técnico de promoción",
           "img": "isequeiros.webp"
@@ -334,7 +334,7 @@
           "description": "Técnico de formación",
           "img": "acalvo.webp"
         },
-         "cgrela": {
+        "cgrela": {
           "name": "Cecilia Grela",
           "description": "Técnica en integración y gestión de datos para la innovación",
           "img": "cgrela.webp"
@@ -344,27 +344,27 @@
           "description": "Técnica especialista en administración",
           "img": "onehealth_nophoto.png"
         },
-         "mcurty": {
+        "mcurty": {
           "name": "Martín Curty",
           "description": "Técnico en ingeniería de datos e integración en entornos cloud",
           "img": "mcurty.webp"
         },
-         "boliveira": {
+        "boliveira": {
           "name": "Brais Oliveira",
           "description": "Técnico administrador plataforma",
           "img": "boliveira.webp"
         },
-         "dmartinez": {
+        "dmartinez": {
           "name": "David Martínez",
           "description": "Técnico administrador plataforma",
           "img": "dmartinez.webp"
         },
-         "rdiaz": {
+        "rdiaz": {
           "name": "Roi Díaz",
           "description": "Técnico administrador plataforma",
           "img": "rdiaz.webp"
         },
-         "dramos": {
+        "dramos": {
           "name": "Diana Ramos",
           "description": "Técnica especialista en diseño y producción de contenidos",
           "img": "dramos.webp"
@@ -374,9 +374,6 @@
           "description": "Técnico especialista en diseño y producción de contenidos",
           "img": "lprados.webp"
         }
-
-
-
       }
     }
   },
@@ -729,6 +726,43 @@
           "📅 Fecha: 15 de mayo de 2026",
           "🕚 Hora: 11:00-13:00",
           "📍 Lugar: Seminar CESGA",
+          "📺 El vídeo de la sesión estará disponible posteriormente en el canal de YouTube del CESGA (@CesgaTV)"
+        ],
+        "extra": "Acceso e inscripción"
+      },
+      "evolucionEspacioDatosHPCBigDataCloud": {
+        "header": "Evolución del espacio de datos OneHealth DataSpace: integración con recursos HPC, Big Data y Cloud",
+        "excerpt": "Sesión para comprender cómo OneHealth DataSpace evoluciona como una plataforma integrada capaz de compartir, almacenar, procesar y analizar datos mediante tecnologías HPC, Big Data, Cloud e IA dentro del ecosistema CESGA",
+        "description": [
+          "Objetivo de la sesión:",
+          "Comprender cómo OneHealth DataSpace evoluciona como una plataforma integrada para el ciclo de vida completo del dato One Health: compartir, almacenar, procesar, analizar y entregar resultados como servicios o soluciones aplicadas.",
+          "A diferencia de un espacio de datos convencional, el ecosistema integra capacidades avanzadas del CESGA en HPC, Big Data, Cloud, IA, GPU y computación cuántica para ampliar las posibilidades de procesamiento y explotación de datos.",
+          "La sesión permitirá conocer cómo el espacio de datos se integra con:",
+          "▸ Computación de alto rendimiento (HPC)",
+          "▸ Procesamiento masivo de datos mediante tecnologías Big Data",
+          "▸ Entornos Cloud para desplegar servicios y aplicaciones",
+          "¿Qué se abordará en la sesión?",
+          "▸ Integración con recursos HPC",
+          "▸ Procesamiento y análisis de datos mediante tecnologías Big Data",
+          "▸ Evolución Cloud del ecosistema OneHealth DataSpace",
+          "▸ Arquitectura tecnológica integrada",
+          "▸ Capacidades avanzadas de procesamiento y análisis",
+          "▸ Casos de uso y posibilidades de explotación de datos",
+          "¿Para qué sirven estas capacidades?",
+          "▸ Transformar datos en soluciones aplicadas",
+          "▸ Ampliar capacidades de procesamiento y análisis",
+          "▸ Facilitar nuevos servicios dentro del ecosistema One Health",
+          "▸ Integrar computación avanzada, datos e IA dentro de una misma infraestructura tecnológica",
+          "¿A quién va dirigido?",
+          "Dirigido a:",
+          "▸ Entidades adheridas o interesadas en participar en OneHealth DataSpace",
+          "▸ Casos de uso activos o en desarrollo",
+          "▸ Profesionales interesados en HPC, Big Data, Cloud, IA y espacios de datos",
+          "▸ Personal técnico, investigadores y estudiantes",
+          "📅 Fecha: 22 de mayo de 2026",
+          "🕚 Hora: 11:00",
+          "📍 Lugar: https://seminar.cesga.es/",
+          "🎓 Instructores: Cecilia Grela, David Martinez y Martín Curty",
           "📺 El vídeo de la sesión estará disponible posteriormente en el canal de YouTube del CESGA (@CesgaTV)"
         ],
         "extra": "Acceso e inscripción"

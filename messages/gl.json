@@ -284,7 +284,7 @@
           "description": "Coordinador de proxecto",
           "img": "jcacheiro.webp"
         },
-         "hfernandez": {
+        "hfernandez": {
           "name": "Helena Fernández",
           "description": "Directora da PMO",
           "img": "hfernandez.webp"
@@ -726,6 +726,43 @@
           "📅 Data: 15 de maio de 2026",
           "🕚 Hora: 11:00-13:00",
           "📍 Lugar: Seminario CESGA",
+          "📺 O vídeo da sesión estará dispoñible posteriormente na canle de YouTube do CESGA (@CesgaTV)"
+        ],
+        "extra": "Acceso e inscrición"
+      },
+      "evolucionEspacioDatosHPCBigDataCloud": {
+        "header": "Evolución do espazo de datos OneHealth DataSpace: integración con recursos HPC, Big Data e Cloud",
+        "excerpt": "Sesión para comprender como OneHealth DataSpace evoluciona cara a unha plataforma integrada capaz de compartir, almacenar, procesar e analizar datos mediante tecnoloxías HPC, Big Data, Cloud e IA dentro do ecosistema CESGA",
+        "description": [
+          "Obxectivo da sesión:",
+          "Comprender como OneHealth DataSpace evoluciona como unha plataforma integrada para o ciclo de vida completo do dato One Health: compartir, almacenar, procesar, analizar e entregar resultados como servizos ou solucións aplicadas.",
+          "A diferenza dun espazo de datos convencional, o ecosistema integra capacidades avanzadas do CESGA en HPC, Big Data, Cloud, IA, GPU e computación cuántica para ampliar as posibilidades de procesamento e explotación de datos.",
+          "A sesión permitirá coñecer como o espazo de datos se integra con:",
+          "▸ Computación de alto rendemento (HPC)",
+          "▸ Procesamento masivo de datos mediante tecnoloxías Big Data",
+          "▸ Contornas Cloud para despregar servizos e aplicacións",
+          "Que se abordará na sesión?",
+          "▸ Integración con recursos HPC",
+          "▸ Procesamento e análise de datos mediante tecnoloxías Big Data",
+          "▸ Evolución Cloud do ecosistema OneHealth DataSpace",
+          "▸ Arquitectura tecnolóxica integrada",
+          "▸ Capacidades avanzadas de procesamento e análise",
+          "▸ Casos de uso e posibilidades de explotación de datos",
+          "Para que serven estas capacidades?",
+          "▸ Transformar datos en solucións aplicadas",
+          "▸ Ampliar capacidades de procesamento e análise",
+          "▸ Facilitar novos servizos dentro do ecosistema One Health",
+          "▸ Integrar computación avanzada, datos e IA dentro dunha mesma infraestrutura tecnolóxica",
+          "A quen vai dirixido?",
+          "Dirixido a:",
+          "▸ Entidades adheridas ou interesadas en participar en OneHealth DataSpace",
+          "▸ Casos de uso activos ou en desenvolvemento",
+          "▸ Profesionais interesados en HPC, Big Data, Cloud, IA e espazos de datos",
+          "▸ Persoal técnico, investigadores e estudantes",
+          "📅 Data: 22 de maio de 2026",
+          "🕚 Hora: 11:00",
+          "📍 Lugar: https://seminar.cesga.es/",
+          "🎓 Instrutores: Cecilia Grela, David Martinez e Martín Curty",
           "📺 O vídeo da sesión estará dispoñible posteriormente na canle de YouTube do CESGA (@CesgaTV)"
         ],
         "extra": "Acceso e inscrición"

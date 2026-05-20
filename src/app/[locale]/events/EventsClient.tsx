@@ -32,6 +32,8 @@ import conectorGestionActivos from '../../../../public/events/conectorGestionAct
 import formacionDesarrolloExtensiones from '../../../../public/events/formacion-avanzada-sobre-desarrollo-de-extensiones-para-casos-de-uso.png';
 import evolucionEspacioDatos from  '../../../../public/events/evolucion-espacio-datos.png';
 import usoPracticoImage from  '../../../../public/events/uso-practico.png';
+import evolucionEspacioDatosHPCBigDataCloud from '../../../../public/events/evolucion-espacio-datos-hpc-bigdata-cloud.png';
+
 const eventsPerPage = 5;
 
 interface Event {
@@ -177,6 +179,15 @@ const events = [
     key: 'usoPractico',
     date: '2026-05-15',
     image: usoPracticoImage,
+    cesgalink:
+      'https://www.cesga.es/formacion-onehealth-dataspace/',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: false,
+  },
+  {
+    key: 'evolucionEspacioDatosHPCBigDataCloud',
+    date: '2026-05-22',
+    image: evolucionEspacioDatosHPCBigDataCloud,
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',

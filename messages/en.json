@@ -253,102 +253,102 @@
     "team": {
       "title": "The team",
       "members": {
-  "jcacheiro": {
-    "name": "Javier Cacheiro",
-    "description": "Project coordinator",
-    "img": "jcacheiro.webp"
-  },
-  "hfernandez": {
-    "name": "Helena Fernández",
-    "description": "PMO Director",
-    "img": "hfernandez.webp"
-  },
-  "asantolino": {
-    "name": "Alejo Santolino",
-    "description": "Coordinator of data legal framework and business analysis",
-    "img": "asantolino.webp"
-  },
-  "pferreiro": {
-    "name": "Pedro Ferreiro",
-    "description": "Project technician",
-    "img": "pferreiro.webp"
-  },
-  "mcastineira": {
-    "name": "Marta Castiñeira",
-    "description": "Research technician in computational simulation",
-    "img": "mcastineira.webp"
-  },
-  "ldiaz": {
-    "name": "Ledicia Díaz",
-    "description": "Research technician in Machine Learning and Data Science",
-    "img": "ldiaz.webp"
-  },
-  "lvazquez": {
-    "name": "Lara Vázquez",
-    "description": "Research technician in Artificial Intelligence",
-    "img": "lvazquez.webp"
-  },
-  "mcarmena": {
-    "name": "Miguel Carmena",
-    "description": "Research technician in computational chemistry",
-    "img": "mcarmena.webp"
-  },
-  "llosada": {
-    "name": "Laura Losada",
-    "description": "Coordinator of outreach and training",
-    "img": "onehealth_nophoto.png"
-  },
-  "isequeiros": {
-    "name": "Iago Xosé Sequeiros",
-    "description": "Outreach technician",
-    "img": "isequeiros.webp"
-  },
-  "acalvo": {
-    "name": "Arturo José Calvo",
-    "description": "Training technician",
-    "img": "acalvo.webp"
-  },
-  "cgrela": {
-    "name": "Cecilia Grela",
-    "description": "Data integration and management technician for innovation",
-    "img": "cgrela.webp"
-  },
-  "tpaz": {
-    "name": "Tania Paz",
-    "description": "Administrative specialist technician",
-    "img": "onehealth_nophoto.png"
-  },
-  "mcurty": {
-    "name": "Martín Curty",
-    "description": "Data engineering and integration technician in cloud environments",
-    "img": "mcurty.webp"
-  },
-  "boliveira": {
-    "name": "Brais Oliveira",
-    "description": "Platform administrator technician",
-    "img": "boliveira.webp"
-  },
-  "dmartinez": {
-    "name": "David Martínez",
-    "description": "Platform administrator technician",
-    "img": "dmartinez.webp"
-  },
-  "rdiaz": {
-    "name": "Roi Díaz",
-    "description": "Platform administrator technician",
-    "img": "rdiaz.webp"
-  },
-  "dramos": {
-    "name": "Diana Ramos",
-    "description": "Specialist technician in content design and production",
-    "img": "dramos.webp"
-  },
-  "lprados": {
-    "name": "Luis Prados",
-    "description": "Specialist technician in content design and production",
-    "img": "lprados.webp"
-  }
-}
+        "jcacheiro": {
+          "name": "Javier Cacheiro",
+          "description": "Project coordinator",
+          "img": "jcacheiro.webp"
+        },
+        "hfernandez": {
+          "name": "Helena Fernández",
+          "description": "PMO Director",
+          "img": "hfernandez.webp"
+        },
+        "asantolino": {
+          "name": "Alejo Santolino",
+          "description": "Coordinator of data legal framework and business analysis",
+          "img": "asantolino.webp"
+        },
+        "pferreiro": {
+          "name": "Pedro Ferreiro",
+          "description": "Project technician",
+          "img": "pferreiro.webp"
+        },
+        "mcastineira": {
+          "name": "Marta Castiñeira",
+          "description": "Research technician in computational simulation",
+          "img": "mcastineira.webp"
+        },
+        "ldiaz": {
+          "name": "Ledicia Díaz",
+          "description": "Research technician in Machine Learning and Data Science",
+          "img": "ldiaz.webp"
+        },
+        "lvazquez": {
+          "name": "Lara Vázquez",
+          "description": "Research technician in Artificial Intelligence",
+          "img": "lvazquez.webp"
+        },
+        "mcarmena": {
+          "name": "Miguel Carmena",
+          "description": "Research technician in computational chemistry",
+          "img": "mcarmena.webp"
+        },
+        "llosada": {
+          "name": "Laura Losada",
+          "description": "Coordinator of outreach and training",
+          "img": "onehealth_nophoto.png"
+        },
+        "isequeiros": {
+          "name": "Iago Xosé Sequeiros",
+          "description": "Outreach technician",
+          "img": "isequeiros.webp"
+        },
+        "acalvo": {
+          "name": "Arturo José Calvo",
+          "description": "Training technician",
+          "img": "acalvo.webp"
+        },
+        "cgrela": {
+          "name": "Cecilia Grela",
+          "description": "Data integration and management technician for innovation",
+          "img": "cgrela.webp"
+        },
+        "tpaz": {
+          "name": "Tania Paz",
+          "description": "Administrative specialist technician",
+          "img": "onehealth_nophoto.png"
+        },
+        "mcurty": {
+          "name": "Martín Curty",
+          "description": "Data engineering and integration technician in cloud environments",
+          "img": "mcurty.webp"
+        },
+        "boliveira": {
+          "name": "Brais Oliveira",
+          "description": "Platform administrator technician",
+          "img": "boliveira.webp"
+        },
+        "dmartinez": {
+          "name": "David Martínez",
+          "description": "Platform administrator technician",
+          "img": "dmartinez.webp"
+        },
+        "rdiaz": {
+          "name": "Roi Díaz",
+          "description": "Platform administrator technician",
+          "img": "rdiaz.webp"
+        },
+        "dramos": {
+          "name": "Diana Ramos",
+          "description": "Specialist technician in content design and production",
+          "img": "dramos.webp"
+        },
+        "lprados": {
+          "name": "Luis Prados",
+          "description": "Specialist technician in content design and production",
+          "img": "lprados.webp"
+        }
+      }
     }
   },
   "use-cases": {
@@ -675,36 +675,73 @@
         "extra": "Sign up here"
       },
       "usoPractico": {
-  "header": "Practical Use of AnonymiX, Clever and the Participant Portal",
-  "excerpt": "Training session showcasing how to use tools from the OneHealth DataSpace ecosystem to securely share, manage and protect data in an interoperable way aligned with data sovereignty principles and regulatory compliance",
-  "description": [
-    "Session objective",
-    "Show how to use tools from the OneHealth DataSpace ecosystem to securely share, manage and protect data in an interoperable way aligned with data sovereignty principles and regulatory compliance.",
-    "The session will provide an understanding of how to apply these solutions in real collaboration scenarios within the data space.",
-    "What are AnonymiX, Clever and the Participant Portal?",
-    "▸ AnonymiX enables the anonymization and protection of sensitive data while preserving its analytical value.",
-    "▸ Clever and the Participant Portal facilitate participant management, access to resources and interaction with the OneHealth DataSpace ecosystem.",
-    "What will be covered during the session?",
-    "▸ Using AnonymiX for data anonymization and protection",
-    "▸ Main functionalities of Clever",
-    "▸ Operation of the Participant Portal",
-    "▸ Best practices for sharing and consuming data",
-    "▸ Use cases applied to the One Health environment",
-    "▸ Integration of tools within the federated architecture of the CESGA data space",
-    "Who is it aimed at?",
-    "Target audience:",
-    "▸ Organizations already participating in or interested in joining OneHealth DataSpace",
-    "▸ Professionals from the healthcare, technology, research and biotechnology sectors",
-    "▸ Technical staff and data managers",
-    "▸ Companies, startups and technology centers",
-    "▸ Students and professionals interested in data spaces, interoperability and privacy applied to AI",
-    "📅 Date: May 15, 2026",
-    "🕚 Time: 11:00 AM - 1:00 PM",
-    "📍 Location: CESGA Seminar Room",
-    "📺 The session video will later be available on the CESGA YouTube channel (@CesgaTV)"
-  ],
-  "extra": "Access and registration"
-}
+        "header": "Practical Use of AnonymiX, Clever and the Participant Portal",
+        "excerpt": "Training session showcasing how to use tools from the OneHealth DataSpace ecosystem to securely share, manage and protect data in an interoperable way aligned with data sovereignty principles and regulatory compliance",
+        "description": [
+          "Session objective",
+          "Show how to use tools from the OneHealth DataSpace ecosystem to securely share, manage and protect data in an interoperable way aligned with data sovereignty principles and regulatory compliance.",
+          "The session will provide an understanding of how to apply these solutions in real collaboration scenarios within the data space.",
+          "What are AnonymiX, Clever and the Participant Portal?",
+          "▸ AnonymiX enables the anonymization and protection of sensitive data while preserving its analytical value.",
+          "▸ Clever and the Participant Portal facilitate participant management, access to resources and interaction with the OneHealth DataSpace ecosystem.",
+          "What will be covered during the session?",
+          "▸ Using AnonymiX for data anonymization and protection",
+          "▸ Main functionalities of Clever",
+          "▸ Operation of the Participant Portal",
+          "▸ Best practices for sharing and consuming data",
+          "▸ Use cases applied to the One Health environment",
+          "▸ Integration of tools within the federated architecture of the CESGA data space",
+          "Who is it aimed at?",
+          "Target audience:",
+          "▸ Organizations already participating in or interested in joining OneHealth DataSpace",
+          "▸ Professionals from the healthcare, technology, research and biotechnology sectors",
+          "▸ Technical staff and data managers",
+          "▸ Companies, startups and technology centers",
+          "▸ Students and professionals interested in data spaces, interoperability and privacy applied to AI",
+          "📅 Date: May 15, 2026",
+          "🕚 Time: 11:00 AM - 1:00 PM",
+          "📍 Location: CESGA Seminar Room",
+          "📺 The session video will later be available on the CESGA YouTube channel (@CesgaTV)"
+        ],
+        "extra": "Access and registration"
+      },
+      "evolucionEspacioDatosHPCBigDataCloud": {
+        "header": "Evolution of the OneHealth DataSpace: integration with HPC, Big Data and Cloud resources",
+        "excerpt": "Session focused on understanding how OneHealth DataSpace evolves into an integrated platform capable of sharing, storing, processing and analyzing data through HPC, Big Data, Cloud and AI technologies within the CESGA ecosystem",
+        "description": [
+          "Session objective:",
+          "Understand how OneHealth DataSpace evolves as an integrated platform for the complete One Health data lifecycle: sharing, storing, processing, analyzing and delivering results as services or applied solutions.",
+          "Unlike a conventional data space, the ecosystem integrates advanced CESGA capabilities in HPC, Big Data, Cloud, AI, GPU and quantum computing to expand data processing and exploitation possibilities.",
+          "The session will explain how the data space integrates with:",
+          "▸ High Performance Computing (HPC)",
+          "▸ Large-scale data processing through Big Data technologies",
+          "▸ Cloud environments for deploying services and applications",
+          "What will be covered during the session?",
+          "▸ Integration with HPC resources",
+          "▸ Data processing and analysis using Big Data technologies",
+          "▸ Cloud evolution of the OneHealth DataSpace ecosystem",
+          "▸ Integrated technological architecture",
+          "▸ Advanced processing and analysis capabilities",
+          "▸ Use cases and data exploitation possibilities",
+          "What are these capabilities for?",
+          "▸ Transforming data into applied solutions",
+          "▸ Expanding processing and analysis capabilities",
+          "▸ Enabling new services within the One Health ecosystem",
+          "▸ Integrating advanced computing, data and AI within the same technological infrastructure",
+          "Who is this session intended for?",
+          "Target audience:",
+          "▸ Organizations already participating or interested in joining OneHealth DataSpace",
+          "▸ Active or developing use cases",
+          "▸ Professionals interested in HPC, Big Data, Cloud, AI and data spaces",
+          "▸ Technical staff, researchers and students",
+          "📅 Date: May 22, 2026",
+          "🕚 Time: 11:00",
+          "📍 Location: https://seminar.cesga.es/",
+          "🎓 Instructors: Cecilia Grela, David Martinez and Martín Curty",
+          "📺 The session video will later be available on the CESGA YouTube channel (@CesgaTV)"
+        ],
+        "extra": "Access and registration"
+      }
     }
   },
   "catalog": {
