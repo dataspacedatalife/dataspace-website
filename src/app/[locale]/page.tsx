@@ -23,7 +23,7 @@ function Hero() {
 
       {/* CONTENIDO CENTRADO REAL */}
       <div className="px-4 sm:px-6 lg:px-8 flex flex-col justify-center min-h-[calc(100vh-150px)]">
-        <div className="mx-auto w-full max-w-5xl">
+        <div className="mx-auto w-full max-w-6xl">
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
 
@@ -43,7 +43,7 @@ function Hero() {
                   <Button href="/about">{t('learnMore')}</Button>
 
                   <Button
-                    href="https://xdatashare.srv.cesga.es"
+                    href="https://dashboard.dataspace.cesga.es"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -56,11 +56,11 @@ function Hero() {
 
             {/* IMAGEN */}
             <div className="flex justify-center lg:justify-end">
-              <div className="w-full max-w-md lg:max-w-lg">
+              <div className="w-full max-w-lg lg:max-w-2xl">
                 <img
-                  src="/demostrador/diagram.png"
+                  src="/demostrador/grafica_evolucion_fondo_transparente.png"
                   alt="Diagrama OneHealth DataSpace"
-                  className="w-full h-auto object-contain"
+                  className="w-[90%] mx-auto h-auto object-contain scale-100 lg:w-full lg:scale-125"
                   loading="eager"
                   decoding="async"
                 />
