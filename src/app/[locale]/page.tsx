@@ -43,7 +43,7 @@ function Hero() {
                   <Button href="/about">{t('learnMore')}</Button>
 
                   <Button
-                    href="https://xdatashare.srv.cesga.es"
+                    href="https://dashboard.dataspace.cesga.es"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
