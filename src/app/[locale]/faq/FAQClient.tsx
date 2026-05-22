@@ -91,7 +91,7 @@ export default function FAQClient() {
 
         <div className="mt-4 text-center">
           <a
-            href="https://xdatashare.srv.cesga.es/assets/static/files/Manual_de_Usuario-MVD.pdf"
+            href="https://xdatashare.srv.cesga.es/static/files/Manual_de_Usuario-MVD.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
