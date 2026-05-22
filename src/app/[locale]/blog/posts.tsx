@@ -892,6 +892,60 @@ export const blogPosts: Record<Locale, Post[]> = {
       content: 'Más que datos. More than data.',
     },
   ],
+},
+{
+  key: 'gift-premio-ia-salud-2026',
+  date: '2026-05-22',
+  title:
+    'GIFT, Caso de Uso de OneHealth DataSpace, recibe el Premio IA en Salud a la Mejor Unidad',
+  excerpt:
+    'El equipo del Servicio Digestivo del CHUP y su Grupo de Investigación IDARA recogen en Madrid dos galardones en los Premios IA BIC',
+  author_name: 'Iago Sequeiros',
+  author_image: Logo,
+  description: [
+    { type: 'h1', content: '' },
+
+    'El equipo del Servicio Digestivo del CHUP y su Grupo de Investigación IDARA recogieron en Madrid dos galardones en los Premios IA BIC, organizados por FUNDAMED, Gaceta Médica y la Cátedra de Innovación y Gestión Sanitaria de la Universidad Rey Juan Carlos.',
+
+    'El proyecto GIFT (Gastroenterology Interface with Fair Treatment), integrado en OneHealth DataSpace, fue reconocido con el Premio IA en Salud a la Mejor Unidad por su contribución al desarrollo de soluciones innovadoras basadas en inteligencia artificial aplicada al ámbito sanitario.',
+
+    'El reconocimiento fue recogido el 21 de mayo de 2026 por Juan Turnes Vázquez, Investigador Principal del Grupo IDARA, junto a Eva Poveda López, Directora Científica del Instituto de Investigación Sanitaria Galicia Sur (IIS Galicia Sur).',
+
+    'Además, el equipo del Servicio de Digestivo del Complexo Hospitalario Universitario de Pontevedra (CHUP) y su Grupo de Investigación IDARA recibieron un segundo galardón por el proyecto “Aicomta”, destacado por su capacidad para mejorar las consultas clínicas.',
+
+    { type: 'h2', content: 'GIFT y OneHealth DataSpace' },
+
+    'GIFT es un asistente conversacional de inteligencia artificial orientado al ámbito de la salud gastrointestinal.',
+
+    'La herramienta facilita a profesionales sanitarios la búsqueda de información mediante respuestas fundamentadas y trazables, validadas por el Servicio de Digestivo del CHUP.',
+
+    'El proyecto destaca especialmente por su papel en el apoyo clínico y la formación de profesionales sanitarios, integrando capacidades avanzadas de análisis y acceso inteligente a la información.',
+
+    'En el número de marzo de 2026 de la revista Díxitos del CESGA se abordó el papel de este caso de uso dentro del ecosistema de OneHealth DataSpace.',
+
+    { type: 'h2', content: 'Casos de uso vinculados al IIS Galicia Sur' },
+
+    'Paralelamente, otros casos de uso vinculados al IIS Galicia Sur continúan avanzando dentro de OneHealth DataSpace.',
+
+    'Entre ellos se encuentran BiomeXplore, Brilliant y AiDataMed, iniciativas centradas en ámbitos relacionados con salud, inteligencia artificial y análisis avanzado de datos.',
+
+    'Este ecosistema forma parte del desarrollo de la futura 1HealthAI Factory, la infraestructura europea impulsada desde Galicia bajo el enfoque One Health.',
+
+    'La futura infraestructura integrará capacidades avanzadas de supercomputación, inteligencia artificial y análisis de datos aplicadas a la salud humana, animal y medioambiental.',
+
+    { type: 'h2', content: 'Formación e innovación en IA aplicada a salud' },
+
+    'En esta misma línea, los próximos 25 y 26 de junio se celebrará el cierre de la iniciativa “Pontevedra, quen pasa? 6 expertos en saúde, 6 meses”, centrada en formación e innovación en inteligencia artificial aplicada a salud.',
+
+    'El encuentro contará con la participación de Senén Barro, Director Científico del CiTIUS y una de las figuras más destacadas del ámbito de la inteligencia artificial generativa.',
+
+    'También participará el cirujano Julio Mayol, referente en innovación médica y transformación digital en salud.',
+
+    {
+      type: 'bold',
+      content: 'Más que datos. More than data. ',
+    },
+  ],
 }
   ],
   en: [
@@ -1684,6 +1738,60 @@ export const blogPosts: Record<Locale, Post[]> = {
       href: 'https://www.farodevigo.es/videos/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129969476.html',
       external: true,
     },
+    {
+      type: 'bold',
+      content: 'More than data.',
+    },
+  ],
+},
+{
+  key: 'gift-premio-ia-salud-2026',
+  date: '2026-05-22',
+  title:
+    'GIFT, a OneHealth DataSpace Use Case, receives the AI in Health Award for Best Unit',
+  excerpt:
+    'The CHUP Digestive Service team and its IDARA Research Group received two awards in Madrid at the AI BIC Awards',
+  author_name: 'Iago Sequeiros',
+  author_image: Logo,
+  description: [
+    { type: 'h1', content: '' },
+
+    'The CHUP Digestive Service team and its IDARA Research Group received two awards in Madrid at the AI BIC Awards, organised by FUNDAMED, Gaceta Médica and the Chair of Innovation and Healthcare Management at Rey Juan Carlos University.',
+
+    'The GIFT project (Gastroenterology Interface with Fair Treatment), integrated into OneHealth DataSpace, was recognised with the AI in Health Award for Best Unit for its contribution to the development of innovative artificial intelligence solutions applied to healthcare.',
+
+    'The award was received on 21 May 2026 by Juan Turnes Vázquez, Principal Investigator of the IDARA Group, together with Eva Poveda López, Scientific Director of the Galicia Sur Health Research Institute (IIS Galicia Sur).',
+
+    'In addition, the Digestive Service team of the Complexo Hospitalario Universitario de Pontevedra (CHUP) and its IDARA Research Group received a second award for the “Aicomta” project, recognised for its ability to improve clinical consultations.',
+
+    { type: 'h2', content: 'GIFT and OneHealth DataSpace' },
+
+    'GIFT is an artificial intelligence conversational assistant focused on gastrointestinal health.',
+
+    'The tool helps healthcare professionals search for information through evidence-based and traceable responses validated by the CHUP Digestive Service.',
+
+    'The project stands out for its role in clinical support and healthcare professional training, integrating advanced capabilities for analysis and intelligent access to information.',
+
+    'The March 2026 issue of CESGA’s Díxitos magazine explored the role of this use case within the OneHealth DataSpace ecosystem.',
+
+    { type: 'h2', content: 'Use cases linked to IIS Galicia Sur' },
+
+    'At the same time, other use cases linked to IIS Galicia Sur continue to advance within OneHealth DataSpace.',
+
+    'These include BiomeXplore, Brilliant and AiDataMed, initiatives focused on health, artificial intelligence and advanced data analytics.',
+
+    'This ecosystem is part of the development of the future 1HealthAI Factory, the European infrastructure promoted from Galicia under the One Health approach.',
+
+    'The future infrastructure will integrate advanced supercomputing, artificial intelligence and data analytics capabilities applied to human, animal and environmental health.',
+
+    { type: 'h2', content: 'Training and innovation in AI applied to healthcare' },
+
+    'In this context, the closing event of the initiative “Pontevedra, quen pasa? 6 expertos en saúde, 6 meses” will take place on 25 and 26 June, focused on training and innovation in artificial intelligence applied to healthcare.',
+
+    'The event will feature the participation of Senén Barro, Scientific Director of CiTIUS and one of the leading figures in the field of generative artificial intelligence.',
+
+    'Surgeon Julio Mayol, a reference in medical innovation and digital transformation in healthcare, will also participate.',
+
     {
       type: 'bold',
       content: 'More than data.',
@@ -2529,6 +2637,60 @@ export const blogPosts: Record<Locale, Post[]> = {
     {
       type: 'bold',
       content: 'Máis que datos.',
+    },
+  ],
+},
+{
+  key: 'gift-premio-ia-salud-2026',
+  date: '2026-05-22',
+  title:
+    'GIFT, Caso de Uso de OneHealth DataSpace, recibe o Premio IA en Saúde á Mellor Unidade',
+  excerpt:
+    'O equipo do Servizo Dixestivo do CHUP e o seu Grupo de Investigación IDARA recollen en Madrid dous galardóns nos Premios IA BIC',
+  author_name: 'Iago Sequeiros',
+  author_image: Logo,
+  description: [
+    { type: 'h1', content: '' },
+
+    'O equipo do Servizo Dixestivo do CHUP e o seu Grupo de Investigación IDARA recolleron en Madrid dous galardóns nos Premios IA BIC, organizados por FUNDAMED, Gaceta Médica e a Cátedra de Innovación e Xestión Sanitaria da Universidade Rey Juan Carlos.',
+
+    'O proxecto GIFT (Gastroenterology Interface with Fair Treatment), integrado en OneHealth DataSpace, foi recoñecido co Premio IA en Saúde á Mellor Unidade pola súa contribución ao desenvolvemento de solucións innovadoras baseadas en intelixencia artificial aplicada ao ámbito sanitario.',
+
+    'O recoñecemento foi recollido o 21 de maio de 2026 por Juan Turnes Vázquez, Investigador Principal do Grupo IDARA, xunto con Eva Poveda López, Directora Científica do Instituto de Investigación Sanitaria Galicia Sur (IIS Galicia Sur).',
+
+    'Ademais, o equipo do Servizo de Dixestivo do Complexo Hospitalario Universitario de Pontevedra (CHUP) e o seu Grupo de Investigación IDARA recibiron un segundo galardón polo proxecto “Aicomta”, destacado pola súa capacidade para mellorar as consultas clínicas.',
+
+    { type: 'h2', content: 'GIFT e OneHealth DataSpace' },
+
+    'GIFT é un asistente conversacional de intelixencia artificial orientado ao ámbito da saúde gastrointestinal.',
+
+    'A ferramenta facilita aos profesionais sanitarios a busca de información mediante respostas fundamentadas e trazables, validadas polo Servizo de Dixestivo do CHUP.',
+
+    'O proxecto destaca especialmente polo seu papel no apoio clínico e na formación de profesionais sanitarios, integrando capacidades avanzadas de análise e acceso intelixente á información.',
+
+    'No número de marzo de 2026 da revista Díxitos do CESGA abordouse o papel deste caso de uso dentro do ecosistema de OneHealth DataSpace.',
+
+    { type: 'h2', content: 'Casos de uso vinculados ao IIS Galicia Sur' },
+
+    'Paralelamente, outros casos de uso vinculados ao IIS Galicia Sur continúan avanzando dentro de OneHealth DataSpace.',
+
+    'Entre eles atópanse BiomeXplore, Brilliant e AiDataMed, iniciativas centradas en ámbitos relacionados coa saúde, a intelixencia artificial e a análise avanzada de datos.',
+
+    'Este ecosistema forma parte do desenvolvemento da futura 1HealthAI Factory, a infraestrutura europea impulsada desde Galicia baixo o enfoque One Health.',
+
+    'A futura infraestrutura integrará capacidades avanzadas de supercomputación, intelixencia artificial e análise de datos aplicadas á saúde humana, animal e medioambiental.',
+
+    { type: 'h2', content: 'Formación e innovación en IA aplicada á saúde' },
+
+    'Nesta mesma liña, os próximos 25 e 26 de xuño celebrarase o peche da iniciativa “Pontevedra, quen pasa? 6 expertos en saúde, 6 meses”, centrada en formación e innovación en intelixencia artificial aplicada á saúde.',
+
+    'O encontro contará coa participación de Senén Barro, Director Científico do CiTIUS e unha das figuras máis destacadas do ámbito da intelixencia artificial xerativa.',
+
+    'Tamén participará o cirurxián Julio Mayol, referente en innovación médica e transformación dixital en saúde.',
+
+    {
+      type: 'bold',
+      content: 'Máis que datos. More than data.',
     },
   ],
 }
