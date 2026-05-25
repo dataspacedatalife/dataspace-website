@@ -58,7 +58,7 @@ function Hero() {
             <div className="flex justify-center lg:justify-end">
               <div className="w-full max-w-lg lg:max-w-2xl">
                 <img
-                  src="/demostrador/grafica_evolucion_fondo_transparente.png"
+                  src="/demostrador/grafica_evo_web_fondo-transparente.png"
                   alt="Diagrama OneHealth DataSpace"
                   className="w-[90%] mx-auto h-auto object-contain scale-100 lg:w-full lg:scale-125"
                   loading="eager"
