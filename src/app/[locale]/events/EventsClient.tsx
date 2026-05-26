@@ -33,6 +33,7 @@ import formacionDesarrolloExtensiones from '../../../../public/events/formacion-
 import evolucionEspacioDatos from  '../../../../public/events/evolucion-espacio-datos.png';
 import usoPracticoImage from  '../../../../public/events/uso-practico.png';
 import evolucionEspacioDatosHPCBigDataCloud from '../../../../public/events/evolucion-espacio-datos-hpc-bigdata-cloud.png';
+import gobernanzaDeDatos from '../../../../public/events/gobernanza-de-datos.png';
 
 const eventsPerPage = 5;
 
@@ -188,6 +189,15 @@ const events = [
     key: 'evolucionEspacioDatosHPCBigDataCloud',
     date: '2026-05-22',
     image: evolucionEspacioDatosHPCBigDataCloud,
+    cesgalink:
+      'https://www.cesga.es/formacion-onehealth-dataspace/',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: false,
+  },
+   {
+    key: 'gobernanzaDeDatos',
+    date: '2026-05-29',
+    image: gobernanzaDeDatos,
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',

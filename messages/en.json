@@ -742,6 +742,47 @@
           "📺 The session video will later be available on the CESGA YouTube channel (@CesgaTV)"
         ],
         "extra": "Access and registration"
+      },
+      "gobernanzaDeDatos": {
+        "header": "Data Governance",
+        "excerpt": "Session to understand how data is governed within OneHealth DataSpace and why governance is key to ensuring trust, interoperability, data sovereignty, and regulatory compliance within the CESGA ecosystem",
+        "description": [
+          "Session objective:",
+          "Understand how data is governed within OneHealth DataSpace and why governance is a fundamental element to ensure trust, traceability, interoperability, and regulatory compliance within the ecosystem.",
+          "OneHealth DataSpace integrates advanced CESGA capabilities in HPC, Big Data, Cloud, AI, GPU, and quantum computing to share, store, process, and analyze data under the One Health approach.",
+          "The session will help understand the mechanisms that enable different organizations to share and use data securely, in a sovereign way, and in compliance with European regulations.",
+          "What is Data Governance?",
+          "▸ Data governance defines how data is managed, protected, shared, and used throughout its lifecycle.",
+          "▸ In OneHealth DataSpace, it establishes the rules, responsibilities, and guarantees required for different entities to collaborate while maintaining control over their data.",
+          "▸ It enables the operation of the data space by ensuring security, data sovereignty, transparency, and regulatory compliance.",
+          "What will be covered in the session?",
+          "▸ OneHealth DataSpace governance model: governance structure, roles, responsibilities, and the FRAND principle.",
+          "▸ Applicable regulatory framework: GDPR, Data Governance Act (DGA), EHDS, AI Act, ENS, and NIS2.",
+          "▸ Contractual instruments: Governance Framework, Accession Agreement, and Specific Terms of Use.",
+          "▸ Lifecycle of a data exchange: publication, negotiation, access, and traceability.",
+          "▸ Data protection and non-custodial architecture.",
+          "▸ Practical cases and Q&A session.",
+          "What is data governance for?",
+          "▸ Ensuring secure and traceable data exchange.",
+          "▸ Defining who can access which data and under what conditions.",
+          "▸ Protecting both data providers and data consumers.",
+          "▸ Enabling collaboration between entities with legal and technical certainty.",
+          "▸ Allowing complex data spaces to operate under European regulations.",
+          "Who is it for?",
+          "Target audience:",
+          "▸ Entities already part of or interested in joining OneHealth DataSpace.",
+          "▸ Active or developing use cases.",
+          "▸ Professionals related to governance, interoperability, and data protection.",
+          "▸ Technical staff, legal experts, and data managers.",
+          "▸ Researchers, companies, and students interested in data spaces.",
+          "📅 Date: 29 May 2026",
+          "🕚 Time: 11:00",
+          "📍 Format: Online",
+          "🎓 Instructor: Alejo Santolino Simón, Data Legal Framework and Business Analysis Coordinator",
+          "⚠️ Registration is mandatory to join the session and receive the participation certificate.",
+          "📺 The session video will be available later on the CESGA YouTube channel (@CesgaTV)"
+        ],
+        "extra": "Access and registration"
       }
     }
   },

@@ -767,6 +767,47 @@
           "📺 O vídeo da sesión estará dispoñible posteriormente na canle de YouTube do CESGA (@CesgaTV)"
         ],
         "extra": "Acceso e inscrición"
+      },
+      "gobernanzaDeDatos": {
+        "header": "Gobernanza de datos",
+        "excerpt": "Sesión para comprender como se gobernan os datos dentro de OneHealth DataSpace e por que a gobernanza é clave para garantir confianza, interoperabilidade, soberanía do dato e cumprimento normativo no ecosistema CESGA",
+        "description": [
+          "Obxectivo da sesión:",
+          "Comprender como se gobernan os datos dentro de OneHealth DataSpace e por que a gobernanza é un elemento fundamental para garantir confianza, trazabilidade, interoperabilidade e cumprimento normativo dentro do ecosistema.",
+          "OneHealth DataSpace integra capacidades avanzadas do CESGA en HPC, Big Data, Cloud, IA, GPU e computación cuántica para compartir, almacenar, procesar e analizar datos baixo o enfoque One Health.",
+          "A sesión permitirá comprender que mecanismos fan posible que distintas organizacións compartan e utilicen datos de forma segura, soberana e conforme á normativa europea.",
+          "Que é a Gobernanza de Datos?",
+          "▸ A gobernanza de datos define como se xestionan, protexen, comparten e utilizan os datos ao longo do seu ciclo de vida.",
+          "▸ En OneHealth DataSpace establece as regras, responsabilidades e garantías necesarias para que entidades distintas poidan colaborar mantendo o control sobre os seus datos.",
+          "▸ Permite operar o espazo de datos garantindo seguridade, soberanía do dato, transparencia e cumprimento normativo.",
+          "Que se abordará na sesión?",
+          "▸ Modelo de gobernanza de OneHealth DataSpace: estrutura de goberno, roles, responsabilidades e principio FRAND.",
+          "▸ Marco normativo aplicable: RGPD, DGA, EHDS, AI Act, ENS e NIS2.",
+          "▸ Instrumentos contractuais: Marco de Gobernanza, Contrato de Adhesión e Condicións Específicas de Uso.",
+          "▸ Ciclo de vida dun intercambio de datos: publicación, negociación, acceso e trazabilidade.",
+          "▸ Protección de datos e arquitectura de non custodia.",
+          "▸ Casos prácticos e rolda de preguntas.",
+          "Para que serve a gobernanza?",
+          "▸ Garantir un intercambio de datos seguro e trazable.",
+          "▸ Definir quen pode acceder a que datos e baixo que condicións.",
+          "▸ Protexer provedores e consumidores de datos.",
+          "▸ Facilitar a colaboración entre entidades con seguridade xurídica e técnica.",
+          "▸ Permitir operar espazos de datos complexos baixo normativa europea.",
+          "A quen vai dirixido?",
+          "Dirixido a:",
+          "▸ Entidades adheridas ou interesadas en participar en OneHealth DataSpace.",
+          "▸ Casos de uso activos ou en desenvolvemento.",
+          "▸ Profesionais relacionados con gobernanza, interoperabilidade e protección de datos.",
+          "▸ Persoal técnico, xurídico e responsables de datos.",
+          "▸ Investigadores, empresas e estudantes interesados en espazos de datos.",
+          "📅 Data: 29 de maio de 2026",
+          "🕚 Hora: 11:00",
+          "📍 Modalidade: Online",
+          "🎓 Instructor: Alejo Santolino Simón, Coordinador de Marco Legal de Datos e Análise de Negocio",
+          "⚠️ A inscrición é obrigatoria para conectarse á sesión e recibir o certificado de participación.",
+          "📺 O vídeo da sesión estará dispoñible posteriormente na canle de YouTube do CESGA (@CesgaTV)"
+        ],
+        "extra": "Acceso e inscrición"
       }
     }
   },
