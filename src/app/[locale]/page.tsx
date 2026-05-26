@@ -60,7 +60,7 @@ function Hero() {
                 <img
                   src="/demostrador/grafica_evo_web_fondo-transparente.png"
                   alt="Diagrama OneHealth DataSpace"
-                  className="w-[90%] mx-auto h-auto object-contain scale-100 lg:w-full lg:scale-125"
+                  className="w-[90%] mx-auto h-auto object-contain scale-100 lg:w-full lg:scale-105"
                   loading="eager"
                   decoding="async"
                 />
