@@ -20,6 +20,10 @@ interface HeadingNode extends TextNodeBase {
   type: 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
   content: React.ReactNode;
 }
+interface ItalicNode extends TextNodeBase {
+  type: 'italic';
+  content: React.ReactNode;
+}
 
 interface BoldNode extends TextNodeBase {
   type: 'bold';
@@ -62,6 +66,7 @@ export type TextNode =
   | UnderlineNode
   | LinkNode
   | ImageNode
+  | ItalicNode
   | ImageProfileNode
   | QuoteNode;
 
@@ -760,122 +765,122 @@ export const blogPosts: Record<Locale, Post[]> = {
       featured: false,
     },
     {
-  key: 'cumbre-economia-dato-gaiax',
-  date: '2026-04-24',
-  title: 'OneHealth DataSpace participa en la II Cumbre de la Economía del Dato Gaia-X España',
-  excerpt:
-    'El proyecto del Centro de Supercomputación de Galicia comparte en Toledo su experiencia en el desarrollo de un espacio de datos operativo en el ámbito One Health',
-  image: GaiaXPonencia,
-  author_name: 'Iago Sequeiros',
-  author_image: Logo,
-  description: [
-    { type: 'h1', content: '' },
-    'El proyecto del Centro de Supercomputación de Galicia comparte en Toledo su experiencia en el desarrollo de un espacio de datos operativo en el ámbito One Health',
-    'El Data Space del CESGA aporta de forma gratuita, recursos de almacenamiento, procesamiento, supercomputación y análisis, todos ellos de gran valor para las entidades que generan datos en el ámbito One Health (Una sola Salud); el concepto liderado por la OMS que integra salud humana, animal y ambiental ',
-    
-    { type: 'h2', content: 'Un momento decisivo para la economía del dato en Europa' },
-    'OneHealth DataSpace, iniciativa impulsada por el Centro de Supercomputación de Galicia (CESGA), participó los días 21 y 22 de abril en la II Cumbre de la Economía del Dato de Gaia-X España, celebrada en el Palacio de Congresos El Greco de Toledo.:',
-    'El encuentro reunió a empresas, administraciones y entidades tecnológicas en un momento clave para el ecosistema del dato: la transición desde proyectos piloto hacia espacios de datos operativos, escalables y sostenibles. En este contexto se puso el foco en retos clave como la interoperabilidad o la generación de valor a partir del dato.',
-    
-    { type: 'h2', content: 'Intervención en Gaia-X: colaboración intersectorial y soberanía del dato' },
-    'Nuestro compañero Alejo Santolino Simón, Coordinador de Marco Legal y Análisis de Negocios de OneHealth DataSpace participó activamente en el programa del evento, con intervención en el bloque de economía del dato y presencia en las mesas del ámbito socio-sanitario.',
-    'Durante su intervención, el proyecto fue presentado bajo el título “El futuro de la colaboración intersectorial: impulsando la soberanía del dato en la economía digital”, destacando el papel de los espacios de datos como habilitadores de nuevos modelos de cooperación entre sectores.',
-    'La intervención permitió poner en valor las capacidades tecnológicas del CESGA, en las que destacan:',
-    '• Supercomputación (HPC) para el análisis de escenarios complejos',
-    '• Entornos Cloud para el despliegue de servicios y almacenamiento federado',
-    '• Big Data para transformar datos en conocimiento',
-    '',
+      key: 'cumbre-economia-dato-gaiax',
+      date: '2026-04-24',
+      title: 'OneHealth DataSpace participa en la II Cumbre de la Economía del Dato Gaia-X España',
+      excerpt:
+        'El proyecto del Centro de Supercomputación de Galicia comparte en Toledo su experiencia en el desarrollo de un espacio de datos operativo en el ámbito One Health',
+      image: GaiaXPonencia,
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        'El proyecto del Centro de Supercomputación de Galicia comparte en Toledo su experiencia en el desarrollo de un espacio de datos operativo en el ámbito One Health',
+        'El Data Space del CESGA aporta de forma gratuita, recursos de almacenamiento, procesamiento, supercomputación y análisis, todos ellos de gran valor para las entidades que generan datos en el ámbito One Health (Una sola Salud); el concepto liderado por la OMS que integra salud humana, animal y ambiental ',
 
-    'Este conjunto de capacidades posiciona al CESGA como un operador tecnológico capaz de garantizar neutralidad y soberanía del dato en el desarrollo del ecosistema One Health.',
-    { type: 'h2', content: 'Más que un espacio de datos'},
+        { type: 'h2', content: 'Un momento decisivo para la economía del dato en Europa' },
+        'OneHealth DataSpace, iniciativa impulsada por el Centro de Supercomputación de Galicia (CESGA), participó los días 21 y 22 de abril en la II Cumbre de la Economía del Dato de Gaia-X España, celebrada en el Palacio de Congresos El Greco de Toledo.:',
+        'El encuentro reunió a empresas, administraciones y entidades tecnológicas en un momento clave para el ecosistema del dato: la transición desde proyectos piloto hacia espacios de datos operativos, escalables y sostenibles. En este contexto se puso el foco en retos clave como la interoperabilidad o la generación de valor a partir del dato.',
 
-    'OneHealth DataSpace es mucho más que un espacio de intercambio de datos. Se apoya en un centro de supercomputación que pone a disposición de las entidades capacidades avanzadas de computación, procesamiento, almacenamiento y explotación de la información. Gracias a esta infraestructura, los usuarios pueden trabajar con sus datos sin preocuparse por la complejidad técnica subyacente, accediendo de forma transparente a los recursos necesarios en cada caso. El sistema es altamente flexible y se adapta a las necesidades específicas de cada reto, ya sea mediante un mayor uso de CPU —el “cerebro” que gestiona las tareas generales y el sistema operativo—, GPU para el procesamiento masivo y paralelo de grandes volúmenes de datos, almacenamiento avanzado u otras capacidades especializadas.',
-   { type: 'h2', content: 'Un modelo federado para compartir datos con control'},
-   'El proyecto se basa en una arquitectura federada, en la que los datos permanecen bajo el control de sus propietarios y se comparten bajo condiciones definidas.',
-   'Esta perspectiva, alineada con los principios de Gaia-X, permite avanzar hacia un modelo de economía del dato basada en interoperabilidad, colaboración y generación de valor.',
-   'En el caso de OneHealth DataSpace, este modelo se aplica al enfoque One Health, integrando datos de salud humana, animal y medioambiental para generar conocimiento compartido.',
+        { type: 'h2', content: 'Intervención en Gaia-X: colaboración intersectorial y soberanía del dato' },
+        'Nuestro compañero Alejo Santolino Simón, Coordinador de Marco Legal y Análisis de Negocios de OneHealth DataSpace participó activamente en el programa del evento, con intervención en el bloque de economía del dato y presencia en las mesas del ámbito socio-sanitario.',
+        'Durante su intervención, el proyecto fue presentado bajo el título “El futuro de la colaboración intersectorial: impulsando la soberanía del dato en la economía digital”, destacando el papel de los espacios de datos como habilitadores de nuevos modelos de cooperación entre sectores.',
+        'La intervención permitió poner en valor las capacidades tecnológicas del CESGA, en las que destacan:',
+        '• Supercomputación (HPC) para el análisis de escenarios complejos',
+        '• Entornos Cloud para el despliegue de servicios y almacenamiento federado',
+        '• Big Data para transformar datos en conocimiento',
+        '',
 
-     { type: 'h2', content: 'Un espacio de datos ya operativo'},
-     'Uno de los elementos clave presentados fue el desarrollo de una primera versión operativa del espacio de datos, el MVD, que reúne las capacidades esenciales para una federación segura y escalable.',
-     'Este entorno incluye capacidades como:',
-     '• Gestión IAM,  identidad y acceso federado',
-     '• Gobernanza, plantilla de Data Sharing Agreement y políticas de uso automatizadas',
-     '• Integración técnica mediante conectores EDC y entorno sandbox',
-     '• Observabilidad, registro de accesos y trazabilidad de consentimientos',
+        'Este conjunto de capacidades posiciona al CESGA como un operador tecnológico capaz de garantizar neutralidad y soberanía del dato en el desarrollo del ecosistema One Health.',
+        { type: 'h2', content: 'Más que un espacio de datos' },
 
-      { type: 'h2', content: 'Próximo paso: la Factoría de IA One Health'},
-      'La participación en la II Cumbre del Dato también permitió conectar con la siguiente evolución del proyecto.',
-      'OneHealth DataSpace tendrá continuidad en la futura Factoría de IA One Health 1HealthAI, impulsada por el CESGA y el Consejo Superior de Investigaciones Científicas (CSIC) en el marco de EuroHPC-JU.',
-      'Esta nueva infraestructura permitirá avanzar en el uso de inteligencia artificial aplicada al dato y consolidar un ecosistema de innovación en salud global, bajo el enfoque One Health.',
-      
-        { type: 'h2', content: 'Sobre OneHealth DataSpace'},
+        'OneHealth DataSpace es mucho más que un espacio de intercambio de datos. Se apoya en un centro de supercomputación que pone a disposición de las entidades capacidades avanzadas de computación, procesamiento, almacenamiento y explotación de la información. Gracias a esta infraestructura, los usuarios pueden trabajar con sus datos sin preocuparse por la complejidad técnica subyacente, accediendo de forma transparente a los recursos necesarios en cada caso. El sistema es altamente flexible y se adapta a las necesidades específicas de cada reto, ya sea mediante un mayor uso de CPU —el “cerebro” que gestiona las tareas generales y el sistema operativo—, GPU para el procesamiento masivo y paralelo de grandes volúmenes de datos, almacenamiento avanzado u otras capacidades especializadas.',
+        { type: 'h2', content: 'Un modelo federado para compartir datos con control' },
+        'El proyecto se basa en una arquitectura federada, en la que los datos permanecen bajo el control de sus propietarios y se comparten bajo condiciones definidas.',
+        'Esta perspectiva, alineada con los principios de Gaia-X, permite avanzar hacia un modelo de economía del dato basada en interoperabilidad, colaboración y generación de valor.',
+        'En el caso de OneHealth DataSpace, este modelo se aplica al enfoque One Health, integrando datos de salud humana, animal y medioambiental para generar conocimiento compartido.',
+
+        { type: 'h2', content: 'Un espacio de datos ya operativo' },
+        'Uno de los elementos clave presentados fue el desarrollo de una primera versión operativa del espacio de datos, el MVD, que reúne las capacidades esenciales para una federación segura y escalable.',
+        'Este entorno incluye capacidades como:',
+        '• Gestión IAM,  identidad y acceso federado',
+        '• Gobernanza, plantilla de Data Sharing Agreement y políticas de uso automatizadas',
+        '• Integración técnica mediante conectores EDC y entorno sandbox',
+        '• Observabilidad, registro de accesos y trazabilidad de consentimientos',
+
+        { type: 'h2', content: 'Próximo paso: la Factoría de IA One Health' },
+        'La participación en la II Cumbre del Dato también permitió conectar con la siguiente evolución del proyecto.',
+        'OneHealth DataSpace tendrá continuidad en la futura Factoría de IA One Health 1HealthAI, impulsada por el CESGA y el Consejo Superior de Investigaciones Científicas (CSIC) en el marco de EuroHPC-JU.',
+        'Esta nueva infraestructura permitirá avanzar en el uso de inteligencia artificial aplicada al dato y consolidar un ecosistema de innovación en salud global, bajo el enfoque One Health.',
+
+        { type: 'h2', content: 'Sobre OneHealth DataSpace' },
         'El proyecto OneHealth DataSpace del CESGA está financiado por el Ministerio para la Transformación Digital y de la Función Pública a través del Plan de Recuperación, Transformación y Resiliencia (PRTR), con cargo a los fondos europeos NextGenerationEU (exp. TSI-100120-2024-12).',
-       { type: 'h2', content: 'Sobre el CESGA'},
-       'La Fundación CESGA (Centro de Supercomputación de Galicia) es una organización sin ánimo de lucro al servicio de la investigación científica, el desarrollo tecnológico y la innovación desde 1993, participada por la Xunta de Galicia y el CSIC. Ejecuta investigación, gestiona una infraestructura integrada en la Red Española de Supercomputación (RES), reconocida como Instalación Científico-Técnica Singular (ICTS) del Estado.',
+        { type: 'h2', content: 'Sobre el CESGA' },
+        'La Fundación CESGA (Centro de Supercomputación de Galicia) es una organización sin ánimo de lucro al servicio de la investigación científica, el desarrollo tecnológico y la innovación desde 1993, participada por la Xunta de Galicia y el CSIC. Ejecuta investigación, gestiona una infraestructura integrada en la Red Española de Supercomputación (RES), reconocida como Instalación Científico-Técnica Singular (ICTS) del Estado.',
 
         {
           type: 'bold',
           content: 'Más que datos. More than data.',
         },
 
-    
-   
-  ],
-}, 
-{
-  key: 'galicia-biodays-2026',
-  date: '2026-05-08',
-  title:
-    'OneHealth DataSpace presenta en Galicia Biodays 2026 su evolución hacia la futura 1HealthAI Factory',
-  excerpt:
-    'El Director Científico del proyecto, Javier Cacheiro, analiza en una entrevista para Faro de Vigo el papel del espacio de datos y la futura infraestructura europea de IA en Galicia',
-  author_name: 'Iago Sequeiros',
-  author_image: Logo,
-  description: [
-    { type: 'h1', content: '' },
-    'El Director Científico del proyecto, Javier Cacheiro, analiza en una entrevista para Faro de Vigo el papel del espacio de datos y la futura infraestructura europea de IA en Galicia',
 
-    'OneHealth DataSpace participó en los Galicia Biodays 2026, organizados por BIOGA, en un encuentro que reunió a empresas, centros tecnológicos, grupos de investigación, entidades y profesionales del ecosistema biosanitario y biotecnológico.',
 
-    'En este escenario, nuestro Director Científico, Javier Cacheiro, concedió una entrevista a Faro de Vigo en la que abordó algunos de los principales ejes estratégicos de OneHealth DataSpace y el desarrollo del proyecto hacia la futura 1HealthAI Factory.',
-
-    { type: 'h2', content: 'One Health: datos y computación' },
-
-    'Durante la entrevista, Javier Cacheiro explicó el enfoque One Health como un modelo que integra salud humana, animal y medioambiental desde una perspectiva interconectada.',
-
-    'Uno de los aspectos centrales destacados fue el papel diferencial de OneHealth DataSpace frente a otros espacios de datos convencionales.',
-
-    '“Lo importante es la capacidad adicional para que en una sola plataforma puedas hacerlo todo: obtener datos y computación.',
-
-    'En este sentido, el proyecto no solo facilita el intercambio seguro de datos entre entidades participantes, sino que se apoya en tecnologías avanzadas de procesamiento y análisis de datos.',
-
-    'OneHealth DataSpace incorpora capacidades de supercomputación (HPC), Big Data y Cloud proporcionadas por el CESGA, permitiendo trabajar con grandes volúmenes de información de forma segura, interoperable y escalable.',
-
-    'El objetivo es ofrecer un entorno integrado donde los datos puedan analizarse, procesarse y transformarse en soluciones aplicables a retos del ámbito biosanitario.',
-
-    { type: 'h2', content: 'OneHealth DataSpace como antesala de la 1HealthAI Factory' },
-
-    'La entrevista también permitió profundizar en la relación entre OneHealth DataSpace y la futura 1HealthAI Factory.',
-
-    'Tal y como explicó Javier Cacheiro:',
-
-    '“OneHealth DataSpace es el primer paso hacia la 1HealthAI Factory.”',
-
-    'La futura infraestructura estará impulsada por el CESGA y contará con financiación del European High Performance Computing Joint Undertaking (EuroHPC JU), el Ministerio de Ciencia, Innovación y Universidades y la Xunta de Galicia.',
-
-    'Se convertirá así en la única factoría europea de inteligencia artificial diseñada específicamente bajo el enfoque One Health.',
-
-    'Esta nueva infraestructura permitirá reforzar las capacidades de computación e inteligencia artificial aplicadas al ámbito de la salud humana, animal y medioambiental.',
-
-    { type: 'h2', content: 'Un proyecto en expansión' },
-
-    'Actualmente, OneHealth DataSpace continúa incorporando nuevas entidades y casos de uso vinculados a salud, investigación y análisis avanzado de datos.',
-
-    'La participación en Galicia Biodays 2026 también permitió reforzar la conexión del proyecto con el ecosistema One Health, además de abrir nuevas oportunidades de colaboración en el ámbito biotecnológico y biosanitario.',
-
-    { type: 'h2', content: 'Entrevista completa' },
-
+      ],
+    },
     {
+      key: 'galicia-biodays-2026',
+      date: '2026-05-08',
+      title:
+        'OneHealth DataSpace presenta en Galicia Biodays 2026 su evolución hacia la futura 1HealthAI Factory',
+      excerpt:
+        'El Director Científico del proyecto, Javier Cacheiro, analiza en una entrevista para Faro de Vigo el papel del espacio de datos y la futura infraestructura europea de IA en Galicia',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        'El Director Científico del proyecto, Javier Cacheiro, analiza en una entrevista para Faro de Vigo el papel del espacio de datos y la futura infraestructura europea de IA en Galicia',
+
+        'OneHealth DataSpace participó en los Galicia Biodays 2026, organizados por BIOGA, en un encuentro que reunió a empresas, centros tecnológicos, grupos de investigación, entidades y profesionales del ecosistema biosanitario y biotecnológico.',
+
+        'En este escenario, nuestro Director Científico, Javier Cacheiro, concedió una entrevista a Faro de Vigo en la que abordó algunos de los principales ejes estratégicos de OneHealth DataSpace y el desarrollo del proyecto hacia la futura 1HealthAI Factory.',
+
+        { type: 'h2', content: 'One Health: datos y computación' },
+
+        'Durante la entrevista, Javier Cacheiro explicó el enfoque One Health como un modelo que integra salud humana, animal y medioambiental desde una perspectiva interconectada.',
+
+        'Uno de los aspectos centrales destacados fue el papel diferencial de OneHealth DataSpace frente a otros espacios de datos convencionales.',
+
+        '“Lo importante es la capacidad adicional para que en una sola plataforma puedas hacerlo todo: obtener datos y computación.',
+
+        'En este sentido, el proyecto no solo facilita el intercambio seguro de datos entre entidades participantes, sino que se apoya en tecnologías avanzadas de procesamiento y análisis de datos.',
+
+        'OneHealth DataSpace incorpora capacidades de supercomputación (HPC), Big Data y Cloud proporcionadas por el CESGA, permitiendo trabajar con grandes volúmenes de información de forma segura, interoperable y escalable.',
+
+        'El objetivo es ofrecer un entorno integrado donde los datos puedan analizarse, procesarse y transformarse en soluciones aplicables a retos del ámbito biosanitario.',
+
+        { type: 'h2', content: 'OneHealth DataSpace como antesala de la 1HealthAI Factory' },
+
+        'La entrevista también permitió profundizar en la relación entre OneHealth DataSpace y la futura 1HealthAI Factory.',
+
+        'Tal y como explicó Javier Cacheiro:',
+
+        '“OneHealth DataSpace es el primer paso hacia la 1HealthAI Factory.”',
+
+        'La futura infraestructura estará impulsada por el CESGA y contará con financiación del European High Performance Computing Joint Undertaking (EuroHPC JU), el Ministerio de Ciencia, Innovación y Universidades y la Xunta de Galicia.',
+
+        'Se convertirá así en la única factoría europea de inteligencia artificial diseñada específicamente bajo el enfoque One Health.',
+
+        'Esta nueva infraestructura permitirá reforzar las capacidades de computación e inteligencia artificial aplicadas al ámbito de la salud humana, animal y medioambiental.',
+
+        { type: 'h2', content: 'Un proyecto en expansión' },
+
+        'Actualmente, OneHealth DataSpace continúa incorporando nuevas entidades y casos de uso vinculados a salud, investigación y análisis avanzado de datos.',
+
+        'La participación en Galicia Biodays 2026 también permitió reforzar la conexión del proyecto con el ecosistema One Health, además de abrir nuevas oportunidades de colaboración en el ámbito biotecnológico y biosanitario.',
+
+        { type: 'h2', content: 'Entrevista completa' },
+
+        {
           type: 'link',
           content: '🔗 Entrevista en Faro de Vigo',
           href: 'https://www.farodevigo.es/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129964134.html',
@@ -887,66 +892,101 @@ export const blogPosts: Record<Locale, Post[]> = {
           href: 'https://www.farodevigo.es/videos/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129969476.html',
           external: true,
         },
-    {
-      type: 'bold',
-      content: 'Más que datos. More than data.',
+        {
+          type: 'bold',
+          content: 'Más que datos. More than data.',
+        },
+      ],
     },
-  ],
-},
-{
-  key: 'gift-premio-ia-salud-2026',
-  date: '2026-05-22',
-  title:
-    'GIFT, Caso de Uso de OneHealth DataSpace, recibe el Premio IA en Salud a la Mejor Unidad',
-  excerpt:
-    'El equipo del Servicio Digestivo del CHUP y su Grupo de Investigación IDARA recogen en Madrid dos galardones en los Premios IA BIC',
-  author_name: 'Iago Sequeiros',
-  author_image: Logo,
-  description: [
-    { type: 'h1', content: '' },
-
-    'El equipo del Servicio Digestivo del CHUP y su Grupo de Investigación IDARA recogieron en Madrid dos galardones en los Premios IA BIC, organizados por FUNDAMED, Gaceta Médica y la Cátedra de Innovación y Gestión Sanitaria de la Universidad Rey Juan Carlos.',
-
-    'El proyecto GIFT (Gastroenterology Interface with Fair Treatment), integrado en OneHealth DataSpace, fue reconocido con el Premio IA en Salud a la Mejor Unidad por su contribución al desarrollo de soluciones innovadoras basadas en inteligencia artificial aplicada al ámbito sanitario.',
-
-    'El reconocimiento fue recogido el 21 de mayo de 2026 por Juan Turnes Vázquez, Investigador Principal del Grupo IDARA, junto a Eva Poveda López, Directora Científica del Instituto de Investigación Sanitaria Galicia Sur (IIS Galicia Sur).',
-
-    'Además, el equipo del Servicio de Digestivo del Complexo Hospitalario Universitario de Pontevedra (CHUP) y su Grupo de Investigación IDARA recibieron un segundo galardón por el proyecto “Aicomta”, destacado por su capacidad para mejorar las consultas clínicas.',
-
-    { type: 'h2', content: 'GIFT y OneHealth DataSpace' },
-
-    'GIFT es un asistente conversacional de inteligencia artificial orientado al ámbito de la salud gastrointestinal.',
-
-    'La herramienta facilita a profesionales sanitarios la búsqueda de información mediante respuestas fundamentadas y trazables, validadas por el Servicio de Digestivo del CHUP.',
-
-    'El proyecto destaca especialmente por su papel en el apoyo clínico y la formación de profesionales sanitarios, integrando capacidades avanzadas de análisis y acceso inteligente a la información.',
-
-    'En el número de marzo de 2026 de la revista Díxitos del CESGA se abordó el papel de este caso de uso dentro del ecosistema de OneHealth DataSpace.',
-
-    { type: 'h2', content: 'Casos de uso vinculados al IIS Galicia Sur' },
-
-    'Paralelamente, otros casos de uso vinculados al IIS Galicia Sur continúan avanzando dentro de OneHealth DataSpace.',
-
-    'Entre ellos se encuentran BiomeXplore, Brilliant y AiDataMed, iniciativas centradas en ámbitos relacionados con salud, inteligencia artificial y análisis avanzado de datos.',
-
-    'Este ecosistema forma parte del desarrollo de la futura 1HealthAI Factory, la infraestructura europea impulsada desde Galicia bajo el enfoque One Health.',
-
-    'La futura infraestructura integrará capacidades avanzadas de supercomputación, inteligencia artificial y análisis de datos aplicadas a la salud humana, animal y medioambiental.',
-
-    { type: 'h2', content: 'Formación e innovación en IA aplicada a salud' },
-
-    'En esta misma línea, los próximos 25 y 26 de junio se celebrará el cierre de la iniciativa “Pontevedra, quen pasa? 6 expertos en saúde, 6 meses”, centrada en formación e innovación en inteligencia artificial aplicada a salud.',
-
-    'El encuentro contará con la participación de Senén Barro, Director Científico del CiTIUS y una de las figuras más destacadas del ámbito de la inteligencia artificial generativa.',
-
-    'También participará el cirujano Julio Mayol, referente en innovación médica y transformación digital en salud.',
-
     {
-      type: 'bold',
-      content: 'Más que datos. More than data. ',
+      key: 'gift-premio-ia-salud-2026',
+      date: '2026-05-22',
+      title:
+        'GIFT, Caso de Uso de OneHealth DataSpace, recibe el Premio IA en Salud a la Mejor Unidad',
+      excerpt:
+        'El equipo del Servicio Digestivo del CHUP y su Grupo de Investigación IDARA recogen en Madrid dos galardones en los Premios IA BIC',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+
+        'El equipo del Servicio Digestivo del CHUP y su Grupo de Investigación IDARA recogieron en Madrid dos galardones en los Premios IA BIC, organizados por FUNDAMED, Gaceta Médica y la Cátedra de Innovación y Gestión Sanitaria de la Universidad Rey Juan Carlos.',
+
+        'El proyecto GIFT (Gastroenterology Interface with Fair Treatment), integrado en OneHealth DataSpace, fue reconocido con el Premio IA en Salud a la Mejor Unidad por su contribución al desarrollo de soluciones innovadoras basadas en inteligencia artificial aplicada al ámbito sanitario.',
+
+        'El reconocimiento fue recogido el 21 de mayo de 2026 por Juan Turnes Vázquez, Investigador Principal del Grupo IDARA, junto a Eva Poveda López, Directora Científica del Instituto de Investigación Sanitaria Galicia Sur (IIS Galicia Sur).',
+
+        'Además, el equipo del Servicio de Digestivo del Complexo Hospitalario Universitario de Pontevedra (CHUP) y su Grupo de Investigación IDARA recibieron un segundo galardón por el proyecto “Aicomta”, destacado por su capacidad para mejorar las consultas clínicas.',
+
+        { type: 'h2', content: 'GIFT y OneHealth DataSpace' },
+
+        'GIFT es un asistente conversacional de inteligencia artificial orientado al ámbito de la salud gastrointestinal.',
+
+        'La herramienta facilita a profesionales sanitarios la búsqueda de información mediante respuestas fundamentadas y trazables, validadas por el Servicio de Digestivo del CHUP.',
+
+        'El proyecto destaca especialmente por su papel en el apoyo clínico y la formación de profesionales sanitarios, integrando capacidades avanzadas de análisis y acceso inteligente a la información.',
+
+        'En el número de marzo de 2026 de la revista Díxitos del CESGA se abordó el papel de este caso de uso dentro del ecosistema de OneHealth DataSpace.',
+
+        { type: 'h2', content: 'Casos de uso vinculados al IIS Galicia Sur' },
+
+        'Paralelamente, otros casos de uso vinculados al IIS Galicia Sur continúan avanzando dentro de OneHealth DataSpace.',
+
+        'Entre ellos se encuentran BiomeXplore, Brilliant y AiDataMed, iniciativas centradas en ámbitos relacionados con salud, inteligencia artificial y análisis avanzado de datos.',
+
+        'Este ecosistema forma parte del desarrollo de la futura 1HealthAI Factory, la infraestructura europea impulsada desde Galicia bajo el enfoque One Health.',
+
+        'La futura infraestructura integrará capacidades avanzadas de supercomputación, inteligencia artificial y análisis de datos aplicadas a la salud humana, animal y medioambiental.',
+
+        { type: 'h2', content: 'Formación e innovación en IA aplicada a salud' },
+
+        'En esta misma línea, los próximos 25 y 26 de junio se celebrará el cierre de la iniciativa “Pontevedra, quen pasa? 6 expertos en saúde, 6 meses”, centrada en formación e innovación en inteligencia artificial aplicada a salud.',
+
+        'El encuentro contará con la participación de Senén Barro, Director Científico del CiTIUS y una de las figuras más destacadas del ámbito de la inteligencia artificial generativa.',
+
+        'También participará el cirujano Julio Mayol, referente en innovación médica y transformación digital en salud.',
+
+        {
+          type: 'bold',
+          content: 'Más que datos. More than data. ',
+        },
+      ],
     },
-  ],
-}
+    {
+      key: 'onehealth-dataspace-1healthai-factory',
+      date: '2026-05-28',
+      title:
+        'OneHealth DataSpace presenta resultados y abre camino a la 1HealthAI Factory',
+      excerpt:
+        'El encuentro final del proyecto reunirá en el CHUS a entidades, investigadores e instituciones para compartir resultados y avances del ecosistema One Health',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        {
+          type: 'italic',
+          content: 'El Espacio de datos del CESGA enfocado a mejorar la salud global, One Health DataSpace, celebra el 17 de junio, a las 9.30h en el CHUS, su encuentro final. En él expondrá los resultados alcanzados durante estos dos años de trayectoria. Grupos de investigación con vinculaciones entre salud humana, animal y medioambiental presentarán los casos de uso en los que el Espacio de Datos está resultando ser una iniciativa de gran valor en su aportación tecnológica para la consecución de mejores resultados y evidencias.',
+        },
+
+        'El próximo miércoles 17 de junio tendrá lugar en el Salón de Actos del Complexo Hospitalario Universitario de Santiago (CHUS) evento de cierre del OneHealth DataSpace en el que el CESGA dará cuenta de los resultados del proyecto OneHealth DataSpace, una iniciativa, antesala de la 1HealthAI Factory, la factoría de inteligencia artificial encaminada a mejorar la salud global, única en en la UE. El encuentro reunirá a representantes institucionales, entidades participantes y casos de uso para compartir los principales avances del proyecto y su evolución dentro del ecosistema One Health.',
+        'El proyecto forma parte de la estrategia europea de espacios de datos y trabaja en la creación de un entorno seguro, interoperable y gobernado para compartir y explotar datos vinculados a salud humana, animal y medioambiental, respetando la soberanía del dato; todo ello bajo el enfoque One Health "Una sola salud". El OneHealth DataSpace conecta entidades de salud, investigación y empresa en un entorno apoyado por capacidades avanzadas de HPC (computación de alto rendimiento), Big Data, Cloud e Inteligencia Artificial proporcionadas por el CESGA.',
+
+        'Durante la jornada el equipo del proyecto y las entidades que participan de sus servicios compartirán resultados, aprendizajes y retos identificados a lo largo del proyecto, además de distintas iniciativas desarrolladas dentro del ecosistema One Health. Asimismo, Antonio Alcolea, responsable del Ministerio para la Transformación Digital y de la Función Pública, hará un balance acerca del Avance de resultados de la Política de Impulso a Espacios de Datos en España.',
+
+        'Inscripción en:',
+        {
+          type: 'link',
+          content:
+            'dataspacedatalife.github.io/onehealth-dataspace-evento-final',
+          href: 'https://dataspacedatalife.github.io/onehealth-dataspace-evento-final/',
+          external: true,
+        },
+        {
+          type: 'bold',
+          content: 'Más que datos. More than data. ',
+        },
+      ],
+    },
   ],
   en: [
     {
@@ -1611,194 +1651,232 @@ export const blogPosts: Record<Locale, Post[]> = {
       featured: false,
     },
     {
-  key: 'cumbre-economia-dato-gaiax',
-  date: '2026-04-24',
-  title: 'OneHealth DataSpace participates in the II Gaia-X Spain Data Economy Summit',
-  excerpt:
-    'The Galicia Supercomputing Center project shares in Toledo its experience in developing an operational data space within the One Health domain',
-  image: GaiaXPonencia,
-  author_name: 'Iago Sequeiros',
-  author_image: Logo,
-  description: [
-    { type: 'h1', content: '' },
-    'The Galicia Supercomputing Center project shares in Toledo its experience in developing an operational data space within the One Health domain.',
-    'The CESGA Data Space provides, free of charge, storage, processing, supercomputing, and analytics resources, all of which are highly valuable for organizations generating data in the One Health domain; a concept led by the WHO that integrates human, animal, and environmental health.',
-    
-    { type: 'h2', content: 'A key moment for the data economy in Europe' },
-    'OneHealth DataSpace, an initiative promoted by the Galicia Supercomputing Center (CESGA), participated on April 21–22 in the II Gaia-X Spain Data Economy Summit, held at the El Greco Conference Center in Toledo.',
-    'The event brought together companies, public administrations, and technology organizations at a crucial moment for the data ecosystem: the transition from pilot projects to operational, scalable, and sustainable data spaces. In this context, key challenges such as interoperability and value creation from data were highlighted.',
-    
-    { type: 'h2', content: 'Participation in Gaia-X: cross-sector collaboration and data sovereignty' },
-    'Our colleague Alejo Santolino Simón, Legal Framework and Business Analysis Coordinator of OneHealth DataSpace, actively participated in the event program, contributing to the data economy sessions and socio-health discussions.',
-    'During his presentation, the project was introduced under the title “The future of cross-sector collaboration: driving data sovereignty in the digital economy”, highlighting the role of data spaces as enablers of new cooperation models across sectors.',
-    'The presentation showcased CESGA’s technological capabilities, including:',
-    '• High Performance Computing (HPC) for analyzing complex scenarios',
-    '• Cloud environments for service deployment and federated storage',
-    '• Big Data technologies to transform data into knowledge',
-    '',
-    'These capabilities position CESGA as a technological operator capable of ensuring neutrality and data sovereignty in the development of the One Health ecosystem.',
-    
-    { type: 'h2', content: 'More than a data space' },
-    'OneHealth DataSpace is much more than a data exchange platform. It is built on a supercomputing center that provides organizations with advanced capabilities for computing, processing, storage, and data exploitation.',
-    'Thanks to this infrastructure, users can work with their data without worrying about underlying technical complexity, accessing the required resources transparently.',
-    'The system is highly flexible and adapts to specific needs, whether through increased CPU usage —the “brain” managing general tasks and the operating system—, GPUs for massive parallel data processing, advanced storage, or other specialized capabilities.',
-    
-    { type: 'h2', content: 'A federated model for controlled data sharing' },
-    'The project is based on a federated architecture in which data remains under the control of its owners and is shared under defined conditions.',
-    'This approach, aligned with Gaia-X principles, supports the development of a data economy based on interoperability, collaboration, and value creation.',
-    'In the case of OneHealth DataSpace, this model is applied to the One Health approach, integrating human, animal, and environmental health data to generate shared knowledge.',
-    
-    { type: 'h2', content: 'An already operational data space' },
-    'One of the key elements presented was the development of a first operational version of the data space, the MVD, which brings together the essential capabilities for a secure and scalable federation.',
-    'This environment includes features such as:',
-    '• IAM management, federated identity and access',
-    '• Governance, Data Sharing Agreement templates, and automated usage policies',
-    '• Technical integration through EDC connectors and a sandbox environment',
-    '• Observability, access logging, and consent traceability',
-    
-    { type: 'h2', content: 'Next step: the One Health AI Factory' },
-    'Participation in the II Data Economy Summit also enabled connections with the next stage of the project.',
-    'OneHealth DataSpace will continue through the future One Health AI Factory (1HealthAI), promoted by CESGA and the Spanish National Research Council (CSIC) within the EuroHPC-JU framework.',
-    'This new infrastructure will advance the use of artificial intelligence applied to data and consolidate a global health innovation ecosystem under the One Health approach.',
-    
-    { type: 'h2', content: 'About OneHealth DataSpace' },
-    'The OneHealth DataSpace project by CESGA is funded by the Spanish Ministry for Digital Transformation and Public Administration through the Recovery, Transformation and Resilience Plan (PRTR), financed by the European Union NextGenerationEU funds (exp. TSI-100120-2024-12).',
-    
-    { type: 'h2', content: 'About CESGA' },
-    'The CESGA Foundation (Galicia Supercomputing Center) is a non-profit organization serving scientific research, technological development, and innovation since 1993, supported by the Xunta de Galicia and CSIC. It operates an infrastructure integrated into the Spanish Supercomputing Network (RES), recognized as a Unique Scientific and Technical Infrastructure (ICTS).',
-    
-    {
-      type: 'bold',
-      content: 'More than data.',
+      key: 'cumbre-economia-dato-gaiax',
+      date: '2026-04-24',
+      title: 'OneHealth DataSpace participates in the II Gaia-X Spain Data Economy Summit',
+      excerpt:
+        'The Galicia Supercomputing Center project shares in Toledo its experience in developing an operational data space within the One Health domain',
+      image: GaiaXPonencia,
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        'The Galicia Supercomputing Center project shares in Toledo its experience in developing an operational data space within the One Health domain.',
+        'The CESGA Data Space provides, free of charge, storage, processing, supercomputing, and analytics resources, all of which are highly valuable for organizations generating data in the One Health domain; a concept led by the WHO that integrates human, animal, and environmental health.',
+
+        { type: 'h2', content: 'A key moment for the data economy in Europe' },
+        'OneHealth DataSpace, an initiative promoted by the Galicia Supercomputing Center (CESGA), participated on April 21–22 in the II Gaia-X Spain Data Economy Summit, held at the El Greco Conference Center in Toledo.',
+        'The event brought together companies, public administrations, and technology organizations at a crucial moment for the data ecosystem: the transition from pilot projects to operational, scalable, and sustainable data spaces. In this context, key challenges such as interoperability and value creation from data were highlighted.',
+
+        { type: 'h2', content: 'Participation in Gaia-X: cross-sector collaboration and data sovereignty' },
+        'Our colleague Alejo Santolino Simón, Legal Framework and Business Analysis Coordinator of OneHealth DataSpace, actively participated in the event program, contributing to the data economy sessions and socio-health discussions.',
+        'During his presentation, the project was introduced under the title “The future of cross-sector collaboration: driving data sovereignty in the digital economy”, highlighting the role of data spaces as enablers of new cooperation models across sectors.',
+        'The presentation showcased CESGA’s technological capabilities, including:',
+        '• High Performance Computing (HPC) for analyzing complex scenarios',
+        '• Cloud environments for service deployment and federated storage',
+        '• Big Data technologies to transform data into knowledge',
+        '',
+        'These capabilities position CESGA as a technological operator capable of ensuring neutrality and data sovereignty in the development of the One Health ecosystem.',
+
+        { type: 'h2', content: 'More than a data space' },
+        'OneHealth DataSpace is much more than a data exchange platform. It is built on a supercomputing center that provides organizations with advanced capabilities for computing, processing, storage, and data exploitation.',
+        'Thanks to this infrastructure, users can work with their data without worrying about underlying technical complexity, accessing the required resources transparently.',
+        'The system is highly flexible and adapts to specific needs, whether through increased CPU usage —the “brain” managing general tasks and the operating system—, GPUs for massive parallel data processing, advanced storage, or other specialized capabilities.',
+
+        { type: 'h2', content: 'A federated model for controlled data sharing' },
+        'The project is based on a federated architecture in which data remains under the control of its owners and is shared under defined conditions.',
+        'This approach, aligned with Gaia-X principles, supports the development of a data economy based on interoperability, collaboration, and value creation.',
+        'In the case of OneHealth DataSpace, this model is applied to the One Health approach, integrating human, animal, and environmental health data to generate shared knowledge.',
+
+        { type: 'h2', content: 'An already operational data space' },
+        'One of the key elements presented was the development of a first operational version of the data space, the MVD, which brings together the essential capabilities for a secure and scalable federation.',
+        'This environment includes features such as:',
+        '• IAM management, federated identity and access',
+        '• Governance, Data Sharing Agreement templates, and automated usage policies',
+        '• Technical integration through EDC connectors and a sandbox environment',
+        '• Observability, access logging, and consent traceability',
+
+        { type: 'h2', content: 'Next step: the One Health AI Factory' },
+        'Participation in the II Data Economy Summit also enabled connections with the next stage of the project.',
+        'OneHealth DataSpace will continue through the future One Health AI Factory (1HealthAI), promoted by CESGA and the Spanish National Research Council (CSIC) within the EuroHPC-JU framework.',
+        'This new infrastructure will advance the use of artificial intelligence applied to data and consolidate a global health innovation ecosystem under the One Health approach.',
+
+        { type: 'h2', content: 'About OneHealth DataSpace' },
+        'The OneHealth DataSpace project by CESGA is funded by the Spanish Ministry for Digital Transformation and Public Administration through the Recovery, Transformation and Resilience Plan (PRTR), financed by the European Union NextGenerationEU funds (exp. TSI-100120-2024-12).',
+
+        { type: 'h2', content: 'About CESGA' },
+        'The CESGA Foundation (Galicia Supercomputing Center) is a non-profit organization serving scientific research, technological development, and innovation since 1993, supported by the Xunta de Galicia and CSIC. It operates an infrastructure integrated into the Spanish Supercomputing Network (RES), recognized as a Unique Scientific and Technical Infrastructure (ICTS).',
+
+        {
+          type: 'bold',
+          content: 'More than data.',
+        },
+      ],
     },
+    {
+      key: 'galicia-biodays-2026',
+      date: '2026-05-08',
+      title:
+        'OneHealth DataSpace presents its evolution towards the future 1HealthAI Factory at Galicia Biodays 2026',
+      excerpt:
+        'The project’s Scientific Director, Javier Cacheiro, discusses in an interview with Faro de Vigo the role of the data space and the future European AI infrastructure in Galicia',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        'The project’s Scientific Director, Javier Cacheiro, discusses in an interview with Faro de Vigo the role of the data space and the future European AI infrastructure in Galicia',
+
+        'OneHealth DataSpace participated in Galicia Biodays 2026, organized by BIOGA, an event that brought together companies, technology centers, research groups, organizations, and professionals from the biosanitary and biotechnology ecosystem.',
+
+        'In this context, our Scientific Director, Javier Cacheiro, gave an interview to Faro de Vigo in which he addressed some of the main strategic pillars of OneHealth DataSpace and the project’s evolution towards the future 1HealthAI Factory.',
+
+        { type: 'h2', content: 'One Health: data and computing' },
+
+        'During the interview, Javier Cacheiro explained the One Health approach as a model that integrates human, animal, and environmental health from an interconnected perspective.',
+
+        'One of the key aspects highlighted was the distinctive role of OneHealth DataSpace compared to other conventional data spaces.',
+
+        '“The important thing is the additional capability that allows you to do everything within a single platform: access data and computing.”',
+
+        'In this regard, the project not only facilitates the secure exchange of data between participating entities, but also relies on advanced data processing and analysis technologies.',
+
+        'OneHealth DataSpace incorporates High Performance Computing (HPC), Big Data, and Cloud capabilities provided by CESGA, enabling the secure, interoperable, and scalable management of large volumes of information.',
+
+        'The objective is to provide an integrated environment where data can be analyzed, processed, and transformed into solutions applicable to biosanitary challenges.',
+
+        { type: 'h2', content: 'OneHealth DataSpace as a first step towards the 1HealthAI Factory' },
+
+        'The interview also provided an opportunity to further explore the relationship between OneHealth DataSpace and the future 1HealthAI Factory.',
+
+        'As Javier Cacheiro explained:',
+
+        '“OneHealth DataSpace is the first step towards the 1HealthAI Factory.”',
+
+        'The future infrastructure will be led by CESGA and funded by the European High Performance Computing Joint Undertaking (EuroHPC JU), the Ministry of Science, Innovation and Universities, and the Xunta de Galicia.',
+
+        'It will become the only European artificial intelligence factory specifically designed under the One Health approach.',
+
+        'This new infrastructure will strengthen computing and artificial intelligence capabilities applied to human, animal, and environmental health.',
+
+        { type: 'h2', content: 'A growing project' },
+
+        'OneHealth DataSpace continues to incorporate new entities and use cases related to health, research, and advanced data analysis.',
+
+        'Participation in Galicia Biodays 2026 also strengthened the project’s connection with the One Health ecosystem and opened new collaboration opportunities within the biotechnology and biosanitary sectors.',
+
+        { type: 'h2', content: 'Full interview' },
+
+        {
+          type: 'link',
+          content: '🔗 Interview in Faro de Vigo',
+          href: 'https://www.farodevigo.es/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129964134.html',
+          external: true,
+        },
+        {
+          type: 'link',
+          content: '🔗 Interview video',
+          href: 'https://www.farodevigo.es/videos/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129969476.html',
+          external: true,
+        },
+        {
+          type: 'bold',
+          content: 'More than data.',
+        },
+      ],
+    },
+    {
+      key: 'gift-premio-ia-salud-2026',
+      date: '2026-05-22',
+      title:
+        'GIFT, a OneHealth DataSpace Use Case, receives the AI in Health Award for Best Unit',
+      excerpt:
+        'The CHUP Digestive Service team and its IDARA Research Group received two awards in Madrid at the AI BIC Awards',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+
+        'The CHUP Digestive Service team and its IDARA Research Group received two awards in Madrid at the AI BIC Awards, organised by FUNDAMED, Gaceta Médica and the Chair of Innovation and Healthcare Management at Rey Juan Carlos University.',
+
+        'The GIFT project (Gastroenterology Interface with Fair Treatment), integrated into OneHealth DataSpace, was recognised with the AI in Health Award for Best Unit for its contribution to the development of innovative artificial intelligence solutions applied to healthcare.',
+
+        'The award was received on 21 May 2026 by Juan Turnes Vázquez, Principal Investigator of the IDARA Group, together with Eva Poveda López, Scientific Director of the Galicia Sur Health Research Institute (IIS Galicia Sur).',
+
+        'In addition, the Digestive Service team of the Complexo Hospitalario Universitario de Pontevedra (CHUP) and its IDARA Research Group received a second award for the “Aicomta” project, recognised for its ability to improve clinical consultations.',
+
+        { type: 'h2', content: 'GIFT and OneHealth DataSpace' },
+
+        'GIFT is an artificial intelligence conversational assistant focused on gastrointestinal health.',
+
+        'The tool helps healthcare professionals search for information through evidence-based and traceable responses validated by the CHUP Digestive Service.',
+
+        'The project stands out for its role in clinical support and healthcare professional training, integrating advanced capabilities for analysis and intelligent access to information.',
+
+        'The March 2026 issue of CESGA’s Díxitos magazine explored the role of this use case within the OneHealth DataSpace ecosystem.',
+
+        { type: 'h2', content: 'Use cases linked to IIS Galicia Sur' },
+
+        'At the same time, other use cases linked to IIS Galicia Sur continue to advance within OneHealth DataSpace.',
+
+        'These include BiomeXplore, Brilliant and AiDataMed, initiatives focused on health, artificial intelligence and advanced data analytics.',
+
+        'This ecosystem is part of the development of the future 1HealthAI Factory, the European infrastructure promoted from Galicia under the One Health approach.',
+
+        'The future infrastructure will integrate advanced supercomputing, artificial intelligence and data analytics capabilities applied to human, animal and environmental health.',
+
+        { type: 'h2', content: 'Training and innovation in AI applied to healthcare' },
+
+        'In this context, the closing event of the initiative “Pontevedra, quen pasa? 6 expertos en saúde, 6 meses” will take place on 25 and 26 June, focused on training and innovation in artificial intelligence applied to healthcare.',
+
+        'The event will feature the participation of Senén Barro, Scientific Director of CiTIUS and one of the leading figures in the field of generative artificial intelligence.',
+
+        'Surgeon Julio Mayol, a reference in medical innovation and digital transformation in healthcare, will also participate.',
+
+        {
+          type: 'bold',
+          content: 'More than data.',
+        },
+      ],
+    },
+    {
+      key: 'onehealth-dataspace-1healthai-factory',
+      date: '2026-05-28',
+      title:
+        'OneHealth DataSpace presents results and opens the path to the 1HealthAI Factory',
+      excerpt:
+        'The final project meeting will bring together institutions, researchers, and organizations at CHUS to share results and progress from the One Health ecosystem',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        {
+          type: 'italic',
+          content:
+            'The CESGA data space focused on improving global health, OneHealth DataSpace, will hold its final meeting on June 17 at 9:30 a.m. at CHUS. During the event, it will present the results achieved over the past two years. Research groups working across human, animal, and environmental health will present use cases where the Data Space is proving to be a highly valuable initiative, contributing technological support for better outcomes and evidence generation.',
+        },
+
+        'On Wednesday, June 17, the closing event of the OneHealth DataSpace will take place at the Auditorium of the Santiago University Hospital Complex (CHUS). During this event, CESGA will present the results of the OneHealth DataSpace project, an initiative that serves as a precursor to the 1HealthAI Factory, an artificial intelligence factory aimed at improving global health, and a unique initiative in the EU. The meeting will bring together institutional representatives, participating organizations, and use cases to share the main achievements of the project and its evolution within the One Health ecosystem.',
+
+        'The project is part of the European data space strategy and works toward creating a secure, interoperable, and governed environment for sharing and exploiting data related to human, animal, and environmental health, while respecting data sovereignty. All of this follows the One Health approach, “One single health.” The OneHealth DataSpace connects health, research, and industry entities in an environment supported by advanced HPC (High-Performance Computing), Big Data, Cloud, and Artificial Intelligence capabilities provided by CESGA.',
+
+        'During the event, the project team and participating organizations will share results, lessons learned, and challenges identified throughout the project, as well as various initiatives developed within the One Health ecosystem. In addition, Antonio Alcolea, representative of the Ministry for Digital Transformation and Public Administration, will provide an overview of the progress of the Data Space Policy Promotion in Spain.',
+
+        'Registration at:',
+        {
+          type: 'link',
+          content:
+            'dataspacedatalife.github.io/onehealth-dataspace-evento-final',
+          href: 'https://dataspacedatalife.github.io/onehealth-dataspace-evento-final/',
+          external: true,
+        },
+        {
+          type: 'bold',
+          content: 'More than data.',
+        },
+      ],
+    }
   ],
-},
-{
-  key: 'galicia-biodays-2026',
-  date: '2026-05-08',
-  title:
-    'OneHealth DataSpace presents its evolution towards the future 1HealthAI Factory at Galicia Biodays 2026',
-  excerpt:
-    'The project’s Scientific Director, Javier Cacheiro, discusses in an interview with Faro de Vigo the role of the data space and the future European AI infrastructure in Galicia',
-  author_name: 'Iago Sequeiros',
-  author_image: Logo,
-  description: [
-    { type: 'h1', content: '' },
-    'The project’s Scientific Director, Javier Cacheiro, discusses in an interview with Faro de Vigo the role of the data space and the future European AI infrastructure in Galicia',
 
-    'OneHealth DataSpace participated in Galicia Biodays 2026, organized by BIOGA, an event that brought together companies, technology centers, research groups, organizations, and professionals from the biosanitary and biotechnology ecosystem.',
-
-    'In this context, our Scientific Director, Javier Cacheiro, gave an interview to Faro de Vigo in which he addressed some of the main strategic pillars of OneHealth DataSpace and the project’s evolution towards the future 1HealthAI Factory.',
-
-    { type: 'h2', content: 'One Health: data and computing' },
-
-    'During the interview, Javier Cacheiro explained the One Health approach as a model that integrates human, animal, and environmental health from an interconnected perspective.',
-
-    'One of the key aspects highlighted was the distinctive role of OneHealth DataSpace compared to other conventional data spaces.',
-
-    '“The important thing is the additional capability that allows you to do everything within a single platform: access data and computing.”',
-
-    'In this regard, the project not only facilitates the secure exchange of data between participating entities, but also relies on advanced data processing and analysis technologies.',
-
-    'OneHealth DataSpace incorporates High Performance Computing (HPC), Big Data, and Cloud capabilities provided by CESGA, enabling the secure, interoperable, and scalable management of large volumes of information.',
-
-    'The objective is to provide an integrated environment where data can be analyzed, processed, and transformed into solutions applicable to biosanitary challenges.',
-
-    { type: 'h2', content: 'OneHealth DataSpace as a first step towards the 1HealthAI Factory' },
-
-    'The interview also provided an opportunity to further explore the relationship between OneHealth DataSpace and the future 1HealthAI Factory.',
-
-    'As Javier Cacheiro explained:',
-
-    '“OneHealth DataSpace is the first step towards the 1HealthAI Factory.”',
-
-    'The future infrastructure will be led by CESGA and funded by the European High Performance Computing Joint Undertaking (EuroHPC JU), the Ministry of Science, Innovation and Universities, and the Xunta de Galicia.',
-
-    'It will become the only European artificial intelligence factory specifically designed under the One Health approach.',
-
-    'This new infrastructure will strengthen computing and artificial intelligence capabilities applied to human, animal, and environmental health.',
-
-    { type: 'h2', content: 'A growing project' },
-
-    'OneHealth DataSpace continues to incorporate new entities and use cases related to health, research, and advanced data analysis.',
-
-    'Participation in Galicia Biodays 2026 also strengthened the project’s connection with the One Health ecosystem and opened new collaboration opportunities within the biotechnology and biosanitary sectors.',
-
-    { type: 'h2', content: 'Full interview' },
-
-    {
-      type: 'link',
-      content: '🔗 Interview in Faro de Vigo',
-      href: 'https://www.farodevigo.es/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129964134.html',
-      external: true,
-    },
-    {
-      type: 'link',
-      content: '🔗 Interview video',
-      href: 'https://www.farodevigo.es/videos/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129969476.html',
-      external: true,
-    },
-    {
-      type: 'bold',
-      content: 'More than data.',
-    },
-  ],
-},
-{
-  key: 'gift-premio-ia-salud-2026',
-  date: '2026-05-22',
-  title:
-    'GIFT, a OneHealth DataSpace Use Case, receives the AI in Health Award for Best Unit',
-  excerpt:
-    'The CHUP Digestive Service team and its IDARA Research Group received two awards in Madrid at the AI BIC Awards',
-  author_name: 'Iago Sequeiros',
-  author_image: Logo,
-  description: [
-    { type: 'h1', content: '' },
-
-    'The CHUP Digestive Service team and its IDARA Research Group received two awards in Madrid at the AI BIC Awards, organised by FUNDAMED, Gaceta Médica and the Chair of Innovation and Healthcare Management at Rey Juan Carlos University.',
-
-    'The GIFT project (Gastroenterology Interface with Fair Treatment), integrated into OneHealth DataSpace, was recognised with the AI in Health Award for Best Unit for its contribution to the development of innovative artificial intelligence solutions applied to healthcare.',
-
-    'The award was received on 21 May 2026 by Juan Turnes Vázquez, Principal Investigator of the IDARA Group, together with Eva Poveda López, Scientific Director of the Galicia Sur Health Research Institute (IIS Galicia Sur).',
-
-    'In addition, the Digestive Service team of the Complexo Hospitalario Universitario de Pontevedra (CHUP) and its IDARA Research Group received a second award for the “Aicomta” project, recognised for its ability to improve clinical consultations.',
-
-    { type: 'h2', content: 'GIFT and OneHealth DataSpace' },
-
-    'GIFT is an artificial intelligence conversational assistant focused on gastrointestinal health.',
-
-    'The tool helps healthcare professionals search for information through evidence-based and traceable responses validated by the CHUP Digestive Service.',
-
-    'The project stands out for its role in clinical support and healthcare professional training, integrating advanced capabilities for analysis and intelligent access to information.',
-
-    'The March 2026 issue of CESGA’s Díxitos magazine explored the role of this use case within the OneHealth DataSpace ecosystem.',
-
-    { type: 'h2', content: 'Use cases linked to IIS Galicia Sur' },
-
-    'At the same time, other use cases linked to IIS Galicia Sur continue to advance within OneHealth DataSpace.',
-
-    'These include BiomeXplore, Brilliant and AiDataMed, initiatives focused on health, artificial intelligence and advanced data analytics.',
-
-    'This ecosystem is part of the development of the future 1HealthAI Factory, the European infrastructure promoted from Galicia under the One Health approach.',
-
-    'The future infrastructure will integrate advanced supercomputing, artificial intelligence and data analytics capabilities applied to human, animal and environmental health.',
-
-    { type: 'h2', content: 'Training and innovation in AI applied to healthcare' },
-
-    'In this context, the closing event of the initiative “Pontevedra, quen pasa? 6 expertos en saúde, 6 meses” will take place on 25 and 26 June, focused on training and innovation in artificial intelligence applied to healthcare.',
-
-    'The event will feature the participation of Senén Barro, Scientific Director of CiTIUS and one of the leading figures in the field of generative artificial intelligence.',
-
-    'Surgeon Julio Mayol, a reference in medical innovation and digital transformation in healthcare, will also participate.',
-
-    {
-      type: 'bold',
-      content: 'More than data.',
-    },
-  ],
-}
-  ],
 
   gl: [
     {
@@ -2507,192 +2585,229 @@ export const blogPosts: Record<Locale, Post[]> = {
       featured: false,
     },
     {
-  key: 'cumbre-economia-dato-gaiax',
-  date: '2026-04-24',
-  title: 'OneHealth DataSpace participa na II Cumbre da Economía do Dato Gaia-X España',
-  excerpt:
-    'O proxecto do Centro de Supercomputación de Galicia comparte en Toledo a súa experiencia no desenvolvemento dun espazo de datos operativo no ámbito One Health',
-  image: GaiaXPonencia,
-  author_name: 'Iago Sequeiros',
-  author_image: Logo,
-  description: [
-    { type: 'h1', content: '' },
-    'O proxecto do Centro de Supercomputación de Galicia comparte en Toledo a súa experiencia no desenvolvemento dun espazo de datos operativo no ámbito One Health.',
-    'O Data Space do CESGA achega de forma gratuíta recursos de almacenamento, procesamento, supercomputación e análise, todos eles de gran valor para as entidades que xeran datos no ámbito One Health (Unha soa Saúde), concepto liderado pola OMS que integra saúde humana, animal e ambiental.',
-    
-    { type: 'h2', content: 'Un momento clave para a economía do dato en Europa' },
-    'OneHealth DataSpace, iniciativa impulsada polo Centro de Supercomputación de Galicia (CESGA), participou os días 21 e 22 de abril na II Cumbre da Economía do Dato de Gaia-X España, celebrada no Palacio de Congresos El Greco de Toledo.',
-    'O encontro reuniu empresas, administracións e entidades tecnolóxicas nun momento clave para o ecosistema do dato: a transición desde proxectos piloto cara a espazos de datos operativos, escalables e sostibles. Neste contexto, puxéronse sobre a mesa retos clave como a interoperabilidade ou a xeración de valor a partir do dato.',
-    
-    { type: 'h2', content: 'Participación en Gaia-X: colaboración intersectorial e soberanía do dato' },
-    'O noso compañeiro Alejo Santolino Simón, Coordinador de Marco Legal e Análise de Negocio de OneHealth DataSpace, participou activamente no programa do evento, intervindo nos bloques de economía do dato e no ámbito sociosanitario.',
-    'Durante a súa intervención, o proxecto presentouse baixo o título “O futuro da colaboración intersectorial: impulsando a soberanía do dato na economía dixital”, destacando o papel dos espazos de datos como habilitadores de novos modelos de cooperación entre sectores.',
-    'A intervención permitiu poñer en valor as capacidades tecnolóxicas do CESGA, entre as que destacan:',
-    '• Supercomputación (HPC) para a análise de escenarios complexos',
-    '• Contornas Cloud para o despregamento de servizos e almacenamento federado',
-    '• Big Data para transformar datos en coñecemento',
-    '',
-    'Este conxunto de capacidades posiciona ao CESGA como un operador tecnolóxico capaz de garantir neutralidade e soberanía do dato no desenvolvemento do ecosistema One Health.',
-    
-    { type: 'h2', content: 'Máis que un espazo de datos' },
-    'OneHealth DataSpace é moito máis ca un espazo de intercambio de datos. Apóiase nun centro de supercomputación que pon á disposición das entidades capacidades avanzadas de computación, procesamento, almacenamento e explotación da información.',
-    'Grazas a esta infraestrutura, os usuarios poden traballar cos seus datos sen preocuparse pola complexidade técnica subxacente, accedendo de forma transparente aos recursos necesarios en cada caso.',
-    'O sistema é altamente flexible e adáptase ás necesidades específicas de cada reto, xa sexa mediante un maior uso de CPU —o “cerebro” que xestiona as tarefas xerais e o sistema operativo—, GPU para o procesamento masivo e paralelo de grandes volumes de datos, almacenamento avanzado ou outras capacidades especializadas.',
-    
-    { type: 'h2', content: 'Un modelo federado para compartir datos con control' },
-    'O proxecto baséase nunha arquitectura federada, na que os datos permanecen baixo o control dos seus propietarios e compártense baixo condicións definidas.',
-    'Esta perspectiva, aliñada cos principios de Gaia-X, permite avanzar cara a un modelo de economía do dato baseado na interoperabilidade, a colaboración e a xeración de valor.',
-    'No caso de OneHealth DataSpace, este modelo aplícase ao enfoque One Health, integrando datos de saúde humana, animal e ambiental para xerar coñecemento compartido.',
-    
-    { type: 'h2', content: 'Un espazo de datos xa operativo' },
-    'Un dos elementos clave presentados foi o desenvolvemento dunha primeira versión operativa do espazo de datos, o MVD, que reúne as capacidades esenciais para unha federación segura e escalable.',
-    'Este contorno inclúe capacidades como:',
-    '• Xestión IAM, identidade e acceso federado',
-    '• Gobernanza, plantillas de Data Sharing Agreement e políticas de uso automatizadas',
-    '• Integración técnica mediante conectores EDC e contorno sandbox',
-    '• Observabilidade, rexistro de accesos e trazabilidade de consentimentos',
-    
-    { type: 'h2', content: 'Próximo paso: a Factoría de IA One Health' },
-    'A participación na II Cumbre da Economía do Dato tamén permitiu conectar coa seguinte evolución do proxecto.',
-    'OneHealth DataSpace terá continuidade na futura Factoría de IA One Health (1HealthAI), impulsada polo CESGA e o Consello Superior de Investigacións Científicas (CSIC) no marco de EuroHPC-JU.',
-    'Esta nova infraestrutura permitirá avanzar no uso da intelixencia artificial aplicada ao dato e consolidar un ecosistema de innovación en saúde global baixo o enfoque One Health.',
-    
-    { type: 'h2', content: 'Sobre OneHealth DataSpace' },
-    'O proxecto OneHealth DataSpace do CESGA está financiado polo Ministerio para a Transformación Dixital e da Función Pública a través do Plan de Recuperación, Transformación e Resiliencia (PRTR), con cargo aos fondos europeos NextGenerationEU (exp. TSI-100120-2024-12).',
-    
-    { type: 'h2', content: 'Sobre o CESGA' },
-    'A Fundación CESGA (Centro de Supercomputación de Galicia) é unha organización sen ánimo de lucro ao servizo da investigación científica, o desenvolvemento tecnolóxico e a innovación desde 1993, participada pola Xunta de Galicia e o CSIC. Xestiona unha infraestrutura integrada na Rede Española de Supercomputación (RES), recoñecida como Instalación Científico-Técnica Singular (ICTS).',
-    
-    {
-      type: 'bold',
-      content: 'Máis que datos.',
-    },
-  ],
-},
-{
-  key: 'galicia-biodays-2026',
-  date: '2026-05-08',
-  title:
-    'OneHealth DataSpace presenta en Galicia Biodays 2026 a súa evolución cara á futura 1HealthAI Factory',
-  excerpt:
-    'O Director Científico do proxecto, Javier Cacheiro, analiza nunha entrevista para Faro de Vigo o papel do espazo de datos e da futura infraestrutura europea de IA en Galicia',
-  author_name: 'Iago Sequeiros',
-  author_image: Logo,
-  description: [
-    { type: 'h1', content: '' },
-    'O Director Científico do proxecto, Javier Cacheiro, analiza nunha entrevista para Faro de Vigo o papel do espazo de datos e da futura infraestrutura europea de IA en Galicia',
+      key: 'cumbre-economia-dato-gaiax',
+      date: '2026-04-24',
+      title: 'OneHealth DataSpace participa na II Cumbre da Economía do Dato Gaia-X España',
+      excerpt:
+        'O proxecto do Centro de Supercomputación de Galicia comparte en Toledo a súa experiencia no desenvolvemento dun espazo de datos operativo no ámbito One Health',
+      image: GaiaXPonencia,
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        'O proxecto do Centro de Supercomputación de Galicia comparte en Toledo a súa experiencia no desenvolvemento dun espazo de datos operativo no ámbito One Health.',
+        'O Data Space do CESGA achega de forma gratuíta recursos de almacenamento, procesamento, supercomputación e análise, todos eles de gran valor para as entidades que xeran datos no ámbito One Health (Unha soa Saúde), concepto liderado pola OMS que integra saúde humana, animal e ambiental.',
 
-    'OneHealth DataSpace participou nos Galicia Biodays 2026, organizados por BIOGA, nun encontro que reuniu empresas, centros tecnolóxicos, grupos de investigación, entidades e profesionais do ecosistema biosanitario e biotecnolóxico.',
+        { type: 'h2', content: 'Un momento clave para a economía do dato en Europa' },
+        'OneHealth DataSpace, iniciativa impulsada polo Centro de Supercomputación de Galicia (CESGA), participou os días 21 e 22 de abril na II Cumbre da Economía do Dato de Gaia-X España, celebrada no Palacio de Congresos El Greco de Toledo.',
+        'O encontro reuniu empresas, administracións e entidades tecnolóxicas nun momento clave para o ecosistema do dato: a transición desde proxectos piloto cara a espazos de datos operativos, escalables e sostibles. Neste contexto, puxéronse sobre a mesa retos clave como a interoperabilidade ou a xeración de valor a partir do dato.',
 
-    'Neste escenario, o noso Director Científico, Javier Cacheiro, concedeu unha entrevista a Faro de Vigo na que abordou algúns dos principais eixos estratéxicos de OneHealth DataSpace e o desenvolvemento do proxecto cara á futura 1HealthAI Factory.',
+        { type: 'h2', content: 'Participación en Gaia-X: colaboración intersectorial e soberanía do dato' },
+        'O noso compañeiro Alejo Santolino Simón, Coordinador de Marco Legal e Análise de Negocio de OneHealth DataSpace, participou activamente no programa do evento, intervindo nos bloques de economía do dato e no ámbito sociosanitario.',
+        'Durante a súa intervención, o proxecto presentouse baixo o título “O futuro da colaboración intersectorial: impulsando a soberanía do dato na economía dixital”, destacando o papel dos espazos de datos como habilitadores de novos modelos de cooperación entre sectores.',
+        'A intervención permitiu poñer en valor as capacidades tecnolóxicas do CESGA, entre as que destacan:',
+        '• Supercomputación (HPC) para a análise de escenarios complexos',
+        '• Contornas Cloud para o despregamento de servizos e almacenamento federado',
+        '• Big Data para transformar datos en coñecemento',
+        '',
+        'Este conxunto de capacidades posiciona ao CESGA como un operador tecnolóxico capaz de garantir neutralidade e soberanía do dato no desenvolvemento do ecosistema One Health.',
 
-    { type: 'h2', content: 'One Health: datos e computación' },
+        { type: 'h2', content: 'Máis que un espazo de datos' },
+        'OneHealth DataSpace é moito máis ca un espazo de intercambio de datos. Apóiase nun centro de supercomputación que pon á disposición das entidades capacidades avanzadas de computación, procesamento, almacenamento e explotación da información.',
+        'Grazas a esta infraestrutura, os usuarios poden traballar cos seus datos sen preocuparse pola complexidade técnica subxacente, accedendo de forma transparente aos recursos necesarios en cada caso.',
+        'O sistema é altamente flexible e adáptase ás necesidades específicas de cada reto, xa sexa mediante un maior uso de CPU —o “cerebro” que xestiona as tarefas xerais e o sistema operativo—, GPU para o procesamento masivo e paralelo de grandes volumes de datos, almacenamento avanzado ou outras capacidades especializadas.',
 
-    'Durante a entrevista, Javier Cacheiro explicou o enfoque One Health como un modelo que integra saúde humana, animal e medioambiental desde unha perspectiva interconectada.',
+        { type: 'h2', content: 'Un modelo federado para compartir datos con control' },
+        'O proxecto baséase nunha arquitectura federada, na que os datos permanecen baixo o control dos seus propietarios e compártense baixo condicións definidas.',
+        'Esta perspectiva, aliñada cos principios de Gaia-X, permite avanzar cara a un modelo de economía do dato baseado na interoperabilidade, a colaboración e a xeración de valor.',
+        'No caso de OneHealth DataSpace, este modelo aplícase ao enfoque One Health, integrando datos de saúde humana, animal e ambiental para xerar coñecemento compartido.',
 
-    'Un dos aspectos centrais destacados foi o papel diferencial de OneHealth DataSpace fronte a outros espazos de datos convencionais.',
+        { type: 'h2', content: 'Un espazo de datos xa operativo' },
+        'Un dos elementos clave presentados foi o desenvolvemento dunha primeira versión operativa do espazo de datos, o MVD, que reúne as capacidades esenciais para unha federación segura e escalable.',
+        'Este contorno inclúe capacidades como:',
+        '• Xestión IAM, identidade e acceso federado',
+        '• Gobernanza, plantillas de Data Sharing Agreement e políticas de uso automatizadas',
+        '• Integración técnica mediante conectores EDC e contorno sandbox',
+        '• Observabilidade, rexistro de accesos e trazabilidade de consentimentos',
 
-    '“O importante é a capacidade adicional para que nunha soa plataforma poidas facelo todo: obter datos e computación.”',
+        { type: 'h2', content: 'Próximo paso: a Factoría de IA One Health' },
+        'A participación na II Cumbre da Economía do Dato tamén permitiu conectar coa seguinte evolución do proxecto.',
+        'OneHealth DataSpace terá continuidade na futura Factoría de IA One Health (1HealthAI), impulsada polo CESGA e o Consello Superior de Investigacións Científicas (CSIC) no marco de EuroHPC-JU.',
+        'Esta nova infraestrutura permitirá avanzar no uso da intelixencia artificial aplicada ao dato e consolidar un ecosistema de innovación en saúde global baixo o enfoque One Health.',
 
-    'Neste sentido, o proxecto non só facilita o intercambio seguro de datos entre entidades participantes, senón que se apoia en tecnoloxías avanzadas de procesamento e análise de datos.',
+        { type: 'h2', content: 'Sobre OneHealth DataSpace' },
+        'O proxecto OneHealth DataSpace do CESGA está financiado polo Ministerio para a Transformación Dixital e da Función Pública a través do Plan de Recuperación, Transformación e Resiliencia (PRTR), con cargo aos fondos europeos NextGenerationEU (exp. TSI-100120-2024-12).',
 
-    'OneHealth DataSpace incorpora capacidades de supercomputación (HPC), Big Data e Cloud proporcionadas polo CESGA, permitindo traballar con grandes volumes de información de forma segura, interoperable e escalable.',
+        { type: 'h2', content: 'Sobre o CESGA' },
+        'A Fundación CESGA (Centro de Supercomputación de Galicia) é unha organización sen ánimo de lucro ao servizo da investigación científica, o desenvolvemento tecnolóxico e a innovación desde 1993, participada pola Xunta de Galicia e o CSIC. Xestiona unha infraestrutura integrada na Rede Española de Supercomputación (RES), recoñecida como Instalación Científico-Técnica Singular (ICTS).',
 
-    'O obxectivo é ofrecer un contorno integrado onde os datos poidan analizarse, procesarse e transformarse en solucións aplicables a retos do ámbito biosanitario.',
-
-    { type: 'h2', content: 'OneHealth DataSpace como antesala da 1HealthAI Factory' },
-
-    'A entrevista tamén permitiu afondar na relación entre OneHealth DataSpace e a futura 1HealthAI Factory.',
-
-    'Tal e como explicou Javier Cacheiro:',
-
-    '“OneHealth DataSpace é o primeiro paso cara á 1HealthAI Factory.”',
-
-    'A futura infraestrutura estará impulsada polo CESGA e contará con financiamento do European High Performance Computing Joint Undertaking (EuroHPC JU), o Ministerio de Ciencia, Innovación e Universidades e a Xunta de Galicia.',
-
-    'Converterase así na única factoría europea de intelixencia artificial deseñada especificamente baixo o enfoque One Health.',
-
-    'Esta nova infraestrutura permitirá reforzar as capacidades de computación e intelixencia artificial aplicadas ao ámbito da saúde humana, animal e medioambiental.',
-
-    { type: 'h2', content: 'Un proxecto en expansión' },
-
-    'Actualmente, OneHealth DataSpace continúa incorporando novas entidades e casos de uso vinculados á saúde, á investigación e á análise avanzada de datos.',
-
-    'A participación en Galicia Biodays 2026 tamén permitiu reforzar a conexión do proxecto co ecosistema One Health, ademais de abrir novas oportunidades de colaboración no ámbito biotecnolóxico e biosanitario.',
-
-    { type: 'h2', content: 'Entrevista completa' },
-
-    {
-      type: 'link',
-      content: '🔗 Entrevista en Faro de Vigo',
-      href: 'https://www.farodevigo.es/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129964134.html',
-      external: true,
+        {
+          type: 'bold',
+          content: 'Máis que datos.',
+        },
+      ],
     },
     {
-      type: 'link',
-      content: '🔗 Vídeo da entrevista',
-      href: 'https://www.farodevigo.es/videos/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129969476.html',
-      external: true,
+      key: 'galicia-biodays-2026',
+      date: '2026-05-08',
+      title:
+        'OneHealth DataSpace presenta en Galicia Biodays 2026 a súa evolución cara á futura 1HealthAI Factory',
+      excerpt:
+        'O Director Científico do proxecto, Javier Cacheiro, analiza nunha entrevista para Faro de Vigo o papel do espazo de datos e da futura infraestrutura europea de IA en Galicia',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        'O Director Científico do proxecto, Javier Cacheiro, analiza nunha entrevista para Faro de Vigo o papel do espazo de datos e da futura infraestrutura europea de IA en Galicia',
+
+        'OneHealth DataSpace participou nos Galicia Biodays 2026, organizados por BIOGA, nun encontro que reuniu empresas, centros tecnolóxicos, grupos de investigación, entidades e profesionais do ecosistema biosanitario e biotecnolóxico.',
+
+        'Neste escenario, o noso Director Científico, Javier Cacheiro, concedeu unha entrevista a Faro de Vigo na que abordou algúns dos principais eixos estratéxicos de OneHealth DataSpace e o desenvolvemento do proxecto cara á futura 1HealthAI Factory.',
+
+        { type: 'h2', content: 'One Health: datos e computación' },
+
+        'Durante a entrevista, Javier Cacheiro explicou o enfoque One Health como un modelo que integra saúde humana, animal e medioambiental desde unha perspectiva interconectada.',
+
+        'Un dos aspectos centrais destacados foi o papel diferencial de OneHealth DataSpace fronte a outros espazos de datos convencionais.',
+
+        '“O importante é a capacidade adicional para que nunha soa plataforma poidas facelo todo: obter datos e computación.”',
+
+        'Neste sentido, o proxecto non só facilita o intercambio seguro de datos entre entidades participantes, senón que se apoia en tecnoloxías avanzadas de procesamento e análise de datos.',
+
+        'OneHealth DataSpace incorpora capacidades de supercomputación (HPC), Big Data e Cloud proporcionadas polo CESGA, permitindo traballar con grandes volumes de información de forma segura, interoperable e escalable.',
+
+        'O obxectivo é ofrecer un contorno integrado onde os datos poidan analizarse, procesarse e transformarse en solucións aplicables a retos do ámbito biosanitario.',
+
+        { type: 'h2', content: 'OneHealth DataSpace como antesala da 1HealthAI Factory' },
+
+        'A entrevista tamén permitiu afondar na relación entre OneHealth DataSpace e a futura 1HealthAI Factory.',
+
+        'Tal e como explicou Javier Cacheiro:',
+
+        '“OneHealth DataSpace é o primeiro paso cara á 1HealthAI Factory.”',
+
+        'A futura infraestrutura estará impulsada polo CESGA e contará con financiamento do European High Performance Computing Joint Undertaking (EuroHPC JU), o Ministerio de Ciencia, Innovación e Universidades e a Xunta de Galicia.',
+
+        'Converterase así na única factoría europea de intelixencia artificial deseñada especificamente baixo o enfoque One Health.',
+
+        'Esta nova infraestrutura permitirá reforzar as capacidades de computación e intelixencia artificial aplicadas ao ámbito da saúde humana, animal e medioambiental.',
+
+        { type: 'h2', content: 'Un proxecto en expansión' },
+
+        'Actualmente, OneHealth DataSpace continúa incorporando novas entidades e casos de uso vinculados á saúde, á investigación e á análise avanzada de datos.',
+
+        'A participación en Galicia Biodays 2026 tamén permitiu reforzar a conexión do proxecto co ecosistema One Health, ademais de abrir novas oportunidades de colaboración no ámbito biotecnolóxico e biosanitario.',
+
+        { type: 'h2', content: 'Entrevista completa' },
+
+        {
+          type: 'link',
+          content: '🔗 Entrevista en Faro de Vigo',
+          href: 'https://www.farodevigo.es/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129964134.html',
+          external: true,
+        },
+        {
+          type: 'link',
+          content: '🔗 Vídeo da entrevista',
+          href: 'https://www.farodevigo.es/videos/gran-vigo/2026/05/08/javier-cacheiro-director-cientifico-one-129969476.html',
+          external: true,
+        },
+        {
+          type: 'bold',
+          content: 'Máis que datos.',
+        },
+      ],
     },
     {
-      type: 'bold',
-      content: 'Máis que datos.',
+      key: 'gift-premio-ia-salud-2026',
+      date: '2026-05-22',
+      title:
+        'GIFT, Caso de Uso de OneHealth DataSpace, recibe o Premio IA en Saúde á Mellor Unidade',
+      excerpt:
+        'O equipo do Servizo Dixestivo do CHUP e o seu Grupo de Investigación IDARA recollen en Madrid dous galardóns nos Premios IA BIC',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+
+        'O equipo do Servizo Dixestivo do CHUP e o seu Grupo de Investigación IDARA recolleron en Madrid dous galardóns nos Premios IA BIC, organizados por FUNDAMED, Gaceta Médica e a Cátedra de Innovación e Xestión Sanitaria da Universidade Rey Juan Carlos.',
+
+        'O proxecto GIFT (Gastroenterology Interface with Fair Treatment), integrado en OneHealth DataSpace, foi recoñecido co Premio IA en Saúde á Mellor Unidade pola súa contribución ao desenvolvemento de solucións innovadoras baseadas en intelixencia artificial aplicada ao ámbito sanitario.',
+
+        'O recoñecemento foi recollido o 21 de maio de 2026 por Juan Turnes Vázquez, Investigador Principal do Grupo IDARA, xunto con Eva Poveda López, Directora Científica do Instituto de Investigación Sanitaria Galicia Sur (IIS Galicia Sur).',
+
+        'Ademais, o equipo do Servizo de Dixestivo do Complexo Hospitalario Universitario de Pontevedra (CHUP) e o seu Grupo de Investigación IDARA recibiron un segundo galardón polo proxecto “Aicomta”, destacado pola súa capacidade para mellorar as consultas clínicas.',
+
+        { type: 'h2', content: 'GIFT e OneHealth DataSpace' },
+
+        'GIFT é un asistente conversacional de intelixencia artificial orientado ao ámbito da saúde gastrointestinal.',
+
+        'A ferramenta facilita aos profesionais sanitarios a busca de información mediante respostas fundamentadas e trazables, validadas polo Servizo de Dixestivo do CHUP.',
+
+        'O proxecto destaca especialmente polo seu papel no apoio clínico e na formación de profesionais sanitarios, integrando capacidades avanzadas de análise e acceso intelixente á información.',
+
+        'No número de marzo de 2026 da revista Díxitos do CESGA abordouse o papel deste caso de uso dentro do ecosistema de OneHealth DataSpace.',
+
+        { type: 'h2', content: 'Casos de uso vinculados ao IIS Galicia Sur' },
+
+        'Paralelamente, outros casos de uso vinculados ao IIS Galicia Sur continúan avanzando dentro de OneHealth DataSpace.',
+
+        'Entre eles atópanse BiomeXplore, Brilliant e AiDataMed, iniciativas centradas en ámbitos relacionados coa saúde, a intelixencia artificial e a análise avanzada de datos.',
+
+        'Este ecosistema forma parte do desenvolvemento da futura 1HealthAI Factory, a infraestrutura europea impulsada desde Galicia baixo o enfoque One Health.',
+
+        'A futura infraestrutura integrará capacidades avanzadas de supercomputación, intelixencia artificial e análise de datos aplicadas á saúde humana, animal e medioambiental.',
+
+        { type: 'h2', content: 'Formación e innovación en IA aplicada á saúde' },
+
+        'Nesta mesma liña, os próximos 25 e 26 de xuño celebrarase o peche da iniciativa “Pontevedra, quen pasa? 6 expertos en saúde, 6 meses”, centrada en formación e innovación en intelixencia artificial aplicada á saúde.',
+
+        'O encontro contará coa participación de Senén Barro, Director Científico do CiTIUS e unha das figuras máis destacadas do ámbito da intelixencia artificial xerativa.',
+
+        'Tamén participará o cirurxián Julio Mayol, referente en innovación médica e transformación dixital en saúde.',
+
+        {
+          type: 'bold',
+          content: 'Máis que datos. More than data.',
+        },
+      ],
     },
-  ],
-},
-{
-  key: 'gift-premio-ia-salud-2026',
-  date: '2026-05-22',
-  title:
-    'GIFT, Caso de Uso de OneHealth DataSpace, recibe o Premio IA en Saúde á Mellor Unidade',
-  excerpt:
-    'O equipo do Servizo Dixestivo do CHUP e o seu Grupo de Investigación IDARA recollen en Madrid dous galardóns nos Premios IA BIC',
-  author_name: 'Iago Sequeiros',
-  author_image: Logo,
-  description: [
-    { type: 'h1', content: '' },
-
-    'O equipo do Servizo Dixestivo do CHUP e o seu Grupo de Investigación IDARA recolleron en Madrid dous galardóns nos Premios IA BIC, organizados por FUNDAMED, Gaceta Médica e a Cátedra de Innovación e Xestión Sanitaria da Universidade Rey Juan Carlos.',
-
-    'O proxecto GIFT (Gastroenterology Interface with Fair Treatment), integrado en OneHealth DataSpace, foi recoñecido co Premio IA en Saúde á Mellor Unidade pola súa contribución ao desenvolvemento de solucións innovadoras baseadas en intelixencia artificial aplicada ao ámbito sanitario.',
-
-    'O recoñecemento foi recollido o 21 de maio de 2026 por Juan Turnes Vázquez, Investigador Principal do Grupo IDARA, xunto con Eva Poveda López, Directora Científica do Instituto de Investigación Sanitaria Galicia Sur (IIS Galicia Sur).',
-
-    'Ademais, o equipo do Servizo de Dixestivo do Complexo Hospitalario Universitario de Pontevedra (CHUP) e o seu Grupo de Investigación IDARA recibiron un segundo galardón polo proxecto “Aicomta”, destacado pola súa capacidade para mellorar as consultas clínicas.',
-
-    { type: 'h2', content: 'GIFT e OneHealth DataSpace' },
-
-    'GIFT é un asistente conversacional de intelixencia artificial orientado ao ámbito da saúde gastrointestinal.',
-
-    'A ferramenta facilita aos profesionais sanitarios a busca de información mediante respostas fundamentadas e trazables, validadas polo Servizo de Dixestivo do CHUP.',
-
-    'O proxecto destaca especialmente polo seu papel no apoio clínico e na formación de profesionais sanitarios, integrando capacidades avanzadas de análise e acceso intelixente á información.',
-
-    'No número de marzo de 2026 da revista Díxitos do CESGA abordouse o papel deste caso de uso dentro do ecosistema de OneHealth DataSpace.',
-
-    { type: 'h2', content: 'Casos de uso vinculados ao IIS Galicia Sur' },
-
-    'Paralelamente, outros casos de uso vinculados ao IIS Galicia Sur continúan avanzando dentro de OneHealth DataSpace.',
-
-    'Entre eles atópanse BiomeXplore, Brilliant e AiDataMed, iniciativas centradas en ámbitos relacionados coa saúde, a intelixencia artificial e a análise avanzada de datos.',
-
-    'Este ecosistema forma parte do desenvolvemento da futura 1HealthAI Factory, a infraestrutura europea impulsada desde Galicia baixo o enfoque One Health.',
-
-    'A futura infraestrutura integrará capacidades avanzadas de supercomputación, intelixencia artificial e análise de datos aplicadas á saúde humana, animal e medioambiental.',
-
-    { type: 'h2', content: 'Formación e innovación en IA aplicada á saúde' },
-
-    'Nesta mesma liña, os próximos 25 e 26 de xuño celebrarase o peche da iniciativa “Pontevedra, quen pasa? 6 expertos en saúde, 6 meses”, centrada en formación e innovación en intelixencia artificial aplicada á saúde.',
-
-    'O encontro contará coa participación de Senén Barro, Director Científico do CiTIUS e unha das figuras máis destacadas do ámbito da intelixencia artificial xerativa.',
-
-    'Tamén participará o cirurxián Julio Mayol, referente en innovación médica e transformación dixital en saúde.',
-
     {
-      type: 'bold',
-      content: 'Máis que datos. More than data.',
-    },
-  ],
-}
+      key: 'onehealth-dataspace-1healthai-factory',
+      date: '2026-05-28',
+      title:
+        'OneHealth DataSpace presenta resultados e abre camiño á 1HealthAI Factory',
+      excerpt:
+        'O encontro final do proxecto reunirá no CHUS a entidades, investigadores e institucións para compartir resultados e avances do ecosistema One Health',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        {
+          type: 'italic',
+          content:
+            'O espazo de datos do CESGA enfocado a mellorar a saúde global, OneHealth DataSpace, celebra o 17 de xuño ás 9:30 no CHUS o seu encontro final. Nel exporanse os resultados acadados durante estes dous anos de traxectoria. Grupos de investigación con vinculacións entre saúde humana, animal e ambiental presentarán os casos de uso nos que o Espazo de Datos está a resultar unha iniciativa de gran valor pola súa achega tecnolóxica para a consecución de mellores resultados e evidencias.',
+        },
+
+        'O vindeiro mércores 17 de xuño terá lugar no Salón de Actos do Complexo Hospitalario Universitario de Santiago (CHUS) o evento de peche do OneHealth DataSpace, no que o CESGA dará conta dos resultados do proxecto OneHealth DataSpace, unha iniciativa, antesala da 1HealthAI Factory, a factoría de intelixencia artificial orientada a mellorar a saúde global, única na UE. O encontro reunirá representantes institucionais, entidades participantes e casos de uso para compartir os principais avances do proxecto e a súa evolución dentro do ecosistema One Health.',
+
+        'O proxecto forma parte da estratexia europea de espazos de datos e traballa na creación dun contorno seguro, interoperable e gobernado para compartir e explotar datos vinculados á saúde humana, animal e ambiental, respectando a soberanía do dato; todo isto baixo o enfoque One Health, “Unha soa saúde”. O OneHealth DataSpace conecta entidades de saúde, investigación e empresa nun contorno apoiado por capacidades avanzadas de HPC (computación de alto rendemento), Big Data, Cloud e Intelixencia Artificial proporcionadas polo CESGA.',
+
+        'Durante a xornada, o equipo do proxecto e as entidades participantes nos seus servizos compartirán resultados, aprendizaxes e retos identificados ao longo do proxecto, ademais de distintas iniciativas desenvolvidas dentro do ecosistema One Health. Así mesmo, Antonio Alcolea, responsable do Ministerio para a Transformación Dixital e da Función Pública, fará un balance sobre o avance dos resultados da Política de Impulso aos Espazos de Datos en España.',
+
+        'Inscrición en:',
+        {
+          type: 'link',
+          content:
+            'dataspacedatalife.github.io/onehealth-dataspace-evento-final',
+          href: 'https://dataspacedatalife.github.io/onehealth-dataspace-evento-final/',
+          external: true,
+        },
+        {
+          type: 'bold',
+          content: 'Máis que datos.',
+        },
+      ],
+    }
   ],
 };

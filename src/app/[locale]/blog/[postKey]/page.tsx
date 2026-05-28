@@ -132,6 +132,15 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                       {item.content}
                     </p>
                   );
+                  case 'italic':
+                    return (
+                      <p
+                        key={idx}
+                        className="text-gray-700 leading-relaxed text-base italic"
+                      >
+                        {item.content}
+                      </p>
+                    );
                 case 'link':
                   return (
                     <p
