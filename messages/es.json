@@ -849,7 +849,50 @@
           "⚠️ La inscripción es obligatoria para asistir al evento."
         ],
         "extra": "Invitación e inscripción"
-      }
+      },
+      "gobernanzaDeDatosAporte": {
+  "header": "Gobernanza de Datos. Aporte al Espacio de Datos",
+  "excerpt": "Sesión para comprender el modelo de negocio de OneHealth DataSpace, el valor que aporta a sus participantes y los mecanismos que garantizan su sostenibilidad y crecimiento como infraestructura de datos, computación e innovación en el ecosistema CESGA.",
+  "description": [
+    "Objetivo de la sesión:",
+    "Comprender cómo funciona el modelo de negocio de OneHealth DataSpace, qué valor aporta a sus participantes y cuáles son los mecanismos que garantizan su sostenibilidad y crecimiento como infraestructura de datos, computación e innovación en el ámbito One Health.",
+    "OneHealth DataSpace es una plataforma integrada para todo el ciclo de vida del dato One Health: compartir, almacenar, procesar, analizar y generar resultados.",
+    "Integra capacidades avanzadas del CESGA en HPC, Big Data, Cloud, IA, GPU y computación cuántica para transformar datos en soluciones reales con impacto.",
+    "La sesión permitirá comprender cómo se genera valor dentro del ecosistema y qué elementos hacen posible su crecimiento sostenible a largo plazo.",
+    "¿Qué es la Gobernanza de Datos?",
+    "▸ La gobernanza de datos es el conjunto de normas, procesos, acuerdos y mecanismos que regulan el acceso, uso, compartición y protección de los datos.",
+    "▸ Garantiza la soberanía y el control por parte de los propietarios de los datos.",
+    "▸ Constituye la base de confianza necesaria para la colaboración entre organizaciones dentro de un espacio de datos.",
+    "¿Qué se abordará en la sesión?",
+    "▸ Fundamentos del modelo de negocio de OneHealth DataSpace.",
+    "▸ Propuesta de valor para empresas, administraciones públicas, centros de investigación y entidades sanitarias.",
+    "▸ Mecanismos de sostenibilidad y crecimiento del ecosistema.",
+    "▸ Gobernanza y generación de confianza entre participantes.",
+    "▸ Estrategias de captación y participación dentro del espacio de datos.",
+    "▸ Generación de valor mediante el uso compartido de datos, computación e inteligencia artificial.",
+    "¿Para qué sirve este modelo?",
+    "▸ Facilitar la incorporación de nuevas entidades al ecosistema.",
+    "▸ Impulsar nuevos casos de uso basados en datos.",
+    "▸ Aprovechar capacidades avanzadas de computación, almacenamiento e IA.",
+    "▸ Garantizar la sostenibilidad del espacio de datos a largo plazo.",
+    "▸ Generar valor para participantes públicos y privados.",
+    "¿A quién va dirigido?",
+    "▸ Entidades adheridas o interesadas en participar en OneHealth DataSpace.",
+    "▸ Responsables de innovación, transformación digital y gestión de datos.",
+    "▸ Personal técnico y directivo de empresas, administraciones públicas, hospitales, centros tecnológicos y organismos de investigación.",
+    "▸ Miembros actuales o potenciales del ecosistema.",
+    "▸ Profesionales, investigadores y estudiantes interesados en espacios de datos.",
+    "📅 Fecha: 05 de junio de 2026",
+    "🕚 Hora: 11:00",
+    "📍 Modalidad: Online",
+    "🎓 Instructor: Alejo Santolino Simón, Coordinador de Marco Legal de Datos y Análisis de Negocio",
+    "📺 El vídeo de la sesión estará disponible posteriormente en el canal de YouTube del CESGA (@CesgaTV)",
+    "🔗 Próximos cursos: https://dataspace.cesga.es/es/events",
+    "⚠️ La inscripción es obligatoria para conectarse a la sesión y recibir el certificado de participación.",
+    "⚠️ Se recomienda utilizar Mozilla Firefox."
+  ],
+  "extra": "Acceso e inscripción"
+}
     }
   },
   "catalog": {
