@@ -240,68 +240,93 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
       </Disclosure.Button>
     );
   }
+function MobileNav() {
+  return (
+    <Disclosure.Panel className="lg:hidden">
+      <div className="mx-4 mt-4 rounded-2xl bg-white/90 backdrop-blur-xl shadow-lg border border-gray-200/60 p-5 max-h-[80vh] overflow-y-auto">
 
-  function MobileNav() {
-    return (
-      <Disclosure.Panel className="lg:hidden">
-        <div className="mx-4 mt-4 rounded-2xl bg-white/90 backdrop-blur-xl shadow-lg border border-gray-200/60 p-5 max-h-[80vh] overflow-y-auto">
-          <div className="flex flex-col gap-6">
-            <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.25 }}>
-              <Link href="/about" className="flex items-center gap-2 text-base font-medium text-gray-950 hover:text-[#005467]">
-                {t('centro_demostrador')}
-                <ChevronUp className="h-4 w-4 rotate-180" />
-              </Link>
+        {/*ANIMACIÓN GLOBAL */}
+        <motion.div
+          className="flex flex-col gap-6"
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.25 }}
+        >
 
-              <div className="ml-4 mt-2 flex flex-col gap-2">
-                {aboutLinks.map(({ href, label }) => (
-                  <Link key={href} href={href} className="text-sm text-gray-800 hover:text-[#005467]">
-                    {label}
-                  </Link>
-                ))}
-              </div>
-            </motion.div>
+          <div>
+            <Link href="/about" className="flex items-center gap-2 text-base font-medium text-gray-950 hover:text-[#005467]">
+              {t('centro_demostrador')}
+              <ChevronUp className="h-4 w-4 rotate-180" />
+            </Link>
 
-            <Link href="/catalog" className="text-base font-medium">{t('catalogo')}</Link>
-
-            <div>
-              <Link href="/dataspace" className="flex items-center gap-2 text-base font-medium">
-                {t('tecnologias')}
-              </Link>
-              <div className="ml-4 mt-2 flex flex-col gap-2">
-                {techLinks.map(({ href, label, external }) => (
-                  <Link key={href} href={href} target={external ? '_blank' : undefined} className="text-sm">
-                    {label}
-                  </Link>
-                ))}
-              </div>
+            <div className="ml-4 mt-2 flex flex-col gap-2">
+              {aboutLinks.map(({ href, label }) => (
+                <Link key={href} href={href} className="text-sm text-gray-800 hover:text-[#005467]">
+                  {label}
+                </Link>
+              ))}
             </div>
-
-            <div>
-              <Link href="/how" className="flex items-center gap-2 text-base font-medium">
-                {t('participa')}
-              </Link>
-              <div className="ml-4 mt-2 flex flex-col gap-2">
-                {joinLinks.map(({ href, label }) => (
-                  <Link key={href} href={href} className="text-sm">
-                    {label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {links.map(({ href, label }) => (
-              <Link key={href} href={href} className="text-base font-medium">
-                {label}
-              </Link>
-            ))}
-
-            <MobileLanguageSelector />
           </div>
-        </div>
-      </Disclosure.Panel>
-    );
-  }
 
+          <Link href="/catalog" className="text-base font-medium">
+            {t('catalogo')}
+          </Link>
+
+          <div>
+            <Link href="/dataspace" className="flex items-center gap-2 text-base font-medium">
+              {t('tecnologias')}
+            </Link>
+
+            <div className="ml-4 mt-2 flex flex-col gap-2">
+              {techLinks.map(({ href, label, external }) => (
+                <Link key={href} href={href} target={external ? '_blank' : undefined} className="text-sm">
+                  {label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <Link href="/how" className="flex items-center gap-2 text-base font-medium">
+              {t('participa')}
+            </Link>
+
+            <div className="ml-4 mt-2 flex flex-col gap-2">
+              {joinLinks.map(({ href, label }) => (
+                <Link key={href} href={href} className="text-sm">
+                  {label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <Link href="/how" className="flex items-center gap-2 text-base font-medium">
+              {t('latest')}
+            </Link>
+
+            <div className="ml-4 mt-2 flex flex-col gap-2">
+              {latestLinks.map(({ href, label }) => (
+                <Link key={href} href={href} className="text-sm">
+                  {label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {links.map(({ href, label }) => (
+            <Link key={href} href={href} className="text-base font-medium">
+              {label}
+            </Link>
+          ))}
+
+          <MobileLanguageSelector />
+
+        </motion.div>
+      </div>
+    </Disclosure.Panel>
+  );
+}
 
 
   return (
