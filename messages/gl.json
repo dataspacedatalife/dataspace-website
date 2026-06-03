@@ -808,6 +808,47 @@
           "📺 O vídeo da sesión estará dispoñible posteriormente na canle de YouTube do CESGA (@CesgaTV)"
         ],
         "extra": "Acceso e inscrición"
+      },
+      "eventoFinal": {
+        "header": "Evento de peche de OneHealth DataSpace",
+        "excerpt": "OneHealth DataSpace presenta resultados e abre camiño á 1HealthAI Factory. Unha xornada para compartir os principais logros do proxecto, a evolución dos casos de uso e as oportunidades futuras do ecosistema One Health.",
+        "description": [
+          "Obxectivo da xornada:",
+          "Presentar os principais resultados acadados por OneHealth DataSpace, compartir a evolución dos casos de uso participantes e mostrar as oportunidades de continuidade do ecosistema a través da futura 1HealthAI Factory.",
+          "Durante os dous anos de desenvolvemento do proxecto, OneHealth DataSpace impulsou a compartición e explotación segura de datos baixo o enfoque One Health, conectando entidades do ámbito sanitario, investigador e empresarial mediante capacidades avanzadas de HPC, Big Data, Cloud e Intelixencia Artificial.",
+          "A xornada permitirá coñecer os avances conseguidos, as leccións aprendidas e o papel de OneHealth DataSpace como base para novas iniciativas de innovación baseadas en datos e intelixencia artificial.",
+          "Programa",
+          "- 09:30 h. Apertura institucional",
+          " Interveñen:",
+          " ▸ María Luz Couce Pico, Directora Científica do IDIS.",
+          " ▸ Carmen Cotelo Queijo, Directora de GAIN.",
+          " ▸ Antonio Alcolea Muñoz, Subdirector Xeral de Programas, Gobernanza e Promoción da Dirección Xeral do Dato no Ministerio para a Transformación Dixital e da Función Pública.",
+          " ▸ Javier Cacheiro López, Director Científico de OneHealth DataSpace do CESGA.",
+          "- 10:00 h. Avance de resultados da Política de Impulso aos Espazos de Datos en España",
+          " ▸ Intervén: Antonio Alcolea Muñoz.",
+          "- 10:15 h. OneHealth DataSpace, máis que datos. Resultados",
+          " Interveñen:",
+          " ▸ Helena Fernández, Directora da PMO do proxecto OneHealth DataSpace.",
+          " ▸ Pedro Ferreiro, Técnico de Proxecto OneHealth DataSpace.",
+          " ▸ Marta Castiñeira, Técnica investigadora en simulación computacional do proxecto OneHealth DataSpace.",
+          "- 11:00 h. Pausa café.",
+          "- 11:30 h. Mesa redonda cos casos de uso participantes.",
+          "- 12:45 h. OneHealth DataSpace, antesala da 1HealthAI Factory",
+          " ▸ Intervén: Javier Cacheiro López, Director Científico de OneHealth DataSpace.",
+          "*Axenda provisional.",
+          "A quen vai dirixido?",
+          "Dirixido a:",
+          "▸ Entidades participantes ou interesadas en espazos de datos.",
+          "▸ Organizacións do ámbito sanitario, investigador e empresarial.",
+          "▸ Casos de uso activos ou potenciais dentro do ecosistema One Health.",
+          "▸ Profesionais relacionados cos datos, a intelixencia artificial e a innovación dixital.",
+          "▸ Persoal investigador, empresas, administracións públicas e estudantes interesados en espazos de datos e IA.",
+          "📅 Data: 17 de xuño de 2026.",
+          "🕤 Horario: 09:30 h – 13:00 h.",
+          "📍 Lugar: Salón de actos do CHUS (Hospital Clínico Universitario de Santiago de Compostela).",
+          "⚠️ A inscrición é obrigatoria para asistir ao evento."
+        ],
+        "extra": "Convite e inscrición"
       }
     }
   },

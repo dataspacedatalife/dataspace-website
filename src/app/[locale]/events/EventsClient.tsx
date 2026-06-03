@@ -34,6 +34,7 @@ import evolucionEspacioDatos from  '../../../../public/events/evolucion-espacio-
 import usoPracticoImage from  '../../../../public/events/uso-practico.png';
 import evolucionEspacioDatosHPCBigDataCloud from '../../../../public/events/evolucion-espacio-datos-hpc-bigdata-cloud.png';
 import gobernanzaDeDatos from '../../../../public/events/gobernanza-de-datos.png';
+import eventoFinal from '../../../../public/events/evento-final-onehealth-dataspace.png';
 
 const eventsPerPage = 5;
 
@@ -200,6 +201,15 @@ const events = [
     image: gobernanzaDeDatos,
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: false,
+  },
+   {
+    key: 'eventoFinal',
+    date: '2026-06-17',
+    image: eventoFinal,
+    cesgalink:
+      'https://dataspacedatalife.github.io/onehealth-dataspace-evento-final/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
   },
