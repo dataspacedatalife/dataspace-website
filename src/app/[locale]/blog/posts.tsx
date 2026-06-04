@@ -987,6 +987,96 @@ export const blogPosts: Record<Locale, Post[]> = {
         },
       ],
     },
+    {
+      key: 'onehealth-dataspace-salud-global',
+      date: '2026-06-04',
+      title:
+        'OneHealth DataSpace, el espacio de datos del CESGA ante el reto de impulsar la salud global',
+      excerpt:
+        'La iniciativa del CESGA combina datos, colaboración y supercomputación para impulsar la investigación y la innovación en salud humana, animal y medioambiental bajo el enfoque One Health.',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        {
+          type: 'italic',
+          content:
+            'OneHealth DataSpace es la iniciativa del CESGA orientada a facilitar la colaboración científica y tecnológica para mejorar la salud global mediante el intercambio seguro de datos y el uso de capacidades avanzadas de computación, inteligencia artificial y análisis de datos.',
+        },
+
+        'La crisis del ébola, otras más próximas geográficamente como la del hantavirus, o pandemias de gran impacto como la COVID-19 tienen algo en común: una realidad interconectada entre las personas, los animales y el entorno en el que habitan. La Organización Mundial de la Salud (OMS) denomina a esta visión One Health —Una sola salud—.',
+
+        'En este contexto, el Centro de Supercomputación de Galicia (CESGA) impulsa OneHealth DataSpace, una iniciativa construida sobre una de las infraestructuras tecnológicas públicas más avanzadas de Europa y orientada a facilitar la colaboración científica y tecnológica para mejorar la salud global bajo el enfoque One Health.',
+
+        {
+          type: 'h2',
+          content: 'Datos, colaboración y tecnología',
+        },
+
+        '¿Cómo contribuye la supercomputación gallega a este desafío? Combinando tres elementos: datos, colaboración y tecnología. La disponibilidad de información de calidad permite construir bases científicas sólidas para abordar retos complejos relacionados con la salud humana, animal y medioambiental, siempre garantizando la soberanía de la información y la privacidad de los datos de salud de las personas.',
+
+        'La capacidad de colaborar sin comprometer la seguridad de los datos constituye uno de los grandes desafíos tecnológicos actuales. OneHealth DataSpace (OHDS), ecosistema colaborativo del CESGA, nace precisamente para facilitar esa colaboración entre entidades de salud, investigación y empresa.',
+
+        'Financiado con fondos europeos NextGenerationEU por la Secretaría de Estado de Digitalización e Inteligencia Artificial del Ministerio para la Transformación Digital y de la Función Pública, el proyecto integra datos y computación en una única plataforma, proporcionando a sus participantes las herramientas necesarias para transformar datos de salud humana, animal y medioambiental en soluciones reales.',
+
+        'Todo ello sin comprometer la seguridad ni la soberanía de la información. De hecho, en OneHealth DataSpace los datos permanecen bajo el control de sus propietarios.',
+
+        {
+          type: 'h2',
+          content: 'Más que datos',
+        },
+
+        'Tradicionalmente, los espacios de datos tratan de resolver el problema de cómo compartir datos. Sin embargo, desde el punto de vista científico, sabemos que obtener datos es solo el inicio de la investigación.',
+
+        'Para poder aprovecharlos necesitamos un entorno donde almacenarlos, analizarlos y procesarlos. Solo después de este proceso es posible obtener resultados que aporten valor, ya sea a otras investigaciones e iniciativas o directamente a la sociedad.',
+
+        'OneHealth DataSpace ofrece estos servicios y pone a disposición de los participantes recursos de Big Data, computación de altas prestaciones (HPC) y Cloud, integrados directamente en el espacio de datos.',
+
+        'El objetivo es facilitar que los datos puedan transformarse en evidencias, conocimiento y nuevas soluciones para afrontar los retos de la salud global.',
+
+        {
+          type: 'h2',
+          content: 'Pilares del ecosistema: soberanía y supercomputación',
+        },
+
+        'OneHealth DataSpace aporta además un entorno de confianza sustentado en tres pilares tecnológicos.',
+
+        '● Los participantes mantienen en todo momento el control sobre quién accede a sus datos y con qué finalidad. Asimismo, se garantiza la privacidad de la información, permitiendo compartir datos sensibles en un entorno seguro.',
+
+        '● A diferencia de otros espacios de datos, OneHealth DataSpace está conectado directamente con las capacidades de computación y almacenamiento del CESGA. Esto permite pasar del descubrimiento de los datos a su análisis sin abandonar el ecosistema seguro.',
+
+        '● La plataforma incorpora mecanismos de interoperabilidad y enriquecimiento de metadatos que garantizan que la información sea localizable, accesible, interoperable y reutilizable (FAIR), maximizando el impacto de cada proyecto.',
+
+        {
+          type: 'h2',
+          content: 'Un ecosistema abierto a la participación',
+        },
+
+        'La participación en OneHealth DataSpace está abierta a instituciones y empresas vinculadas al ámbito One Health. Actualmente integra 22 entidades adheridas y distintos casos de uso relacionados con ámbitos tan diversos como la salud gastrointestinal, la búsqueda de nuevos fármacos o el análisis del impacto de los parques eólicos sobre el medio ambiente.',
+
+        'El diseño del proyecto incorpora un proceso de adhesión simplificado que fomenta la participación tanto en el procesamiento de datos como en la incorporación a casos de uso ya existentes o en la coordinación de nuevos proyectos colaborativos con otros miembros.',
+
+        'Se trata de reunir iniciativas que, mediante la colaboración o el uso de los servicios ofrecidos por OneHealth DataSpace, contribuyan a mejorar la salud global.',
+
+        {
+          type: 'h2',
+          content: 'La antesala de la 1HealthAI Factory',
+        },
+
+        'OneHealth DataSpace constituye la antesala necesaria de la 1HealthAI Factory, la única factoría europea de inteligencia artificial dedicada en exclusiva al ecosistema One Health.',
+
+        'Esto sitúa al CESGA como referente europeo en inteligencia artificial aplicada a la salud global dentro de la red EuroHPC Joint Undertaking, una infraestructura con visión de futuro en la que el dato se convierte en motor de una salud global más integrada, inteligente y soberana.',
+
+        'El proyecto del Centro Demostrador de Espacios de Datos DATAlife, en el que se integra OneHealth DataSpace, está financiado por la Secretaría de Estado de Digitalización e Inteligencia Artificial (SEDIA) del Ministerio para la Transformación Digital y de la Función Pública, en el marco de la convocatoria de Centros Demostradores y Casos de Uso de Espacios de Datos (Orden TDF/1461/2023, de 29 de diciembre).',
+
+        'Además, cuenta con financiación de la Unión Europea – NextGenerationEU a través del Plan de Recuperación, Transformación y Resiliencia.',
+
+        {
+          type: 'bold',
+          content: 'Más que datos. More than data.',
+        },
+      ],
+    },
   ],
   en: [
     {
@@ -1874,7 +1964,98 @@ export const blogPosts: Record<Locale, Post[]> = {
           content: 'More than data.',
         },
       ],
-    }
+    },
+    {
+      key: 'onehealth-dataspace-salud-global',
+      date: '2026-06-04',
+      title:
+        'OneHealth DataSpace: CESGA’s Data Space Addressing the Challenge of Advancing Global Health',
+      excerpt:
+        'CESGA’s initiative combines data, collaboration, and supercomputing to drive research and innovation in human, animal, and environmental health under the One Health approach.',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        {
+          type: 'italic',
+          content:
+            'OneHealth DataSpace is CESGA’s initiative aimed at facilitating scientific and technological collaboration to improve global health through secure data sharing and the use of advanced computing, artificial intelligence, and data analytics capabilities.',
+        },
+
+        'The Ebola crisis, geographically closer outbreaks such as hantavirus, and major pandemics such as COVID-19 all share one thing in common: an interconnected reality linking people, animals, and the environment in which they live. The World Health Organization (WHO) refers to this vision as One Health.',
+
+        'In this context, the Galicia Supercomputing Center (CESGA) promotes OneHealth DataSpace, an initiative built upon one of Europe’s most advanced public technological infrastructures and designed to facilitate scientific and technological collaboration to improve global health under the One Health approach.',
+
+        {
+          type: 'h2',
+          content: 'Data, Collaboration and Technology',
+        },
+
+        'How does Galician supercomputing contribute to this challenge? By combining three key elements: data, collaboration, and technology. The availability of high-quality information makes it possible to build solid scientific foundations for addressing complex challenges related to human, animal, and environmental health, while always ensuring data sovereignty and the privacy of personal health information.',
+
+        'The ability to collaborate without compromising data security is one of today’s greatest technological challenges. OneHealth DataSpace (OHDS), CESGA’s collaborative ecosystem, was created precisely to facilitate cooperation among healthcare organizations, research institutions, and companies.',
+
+        'Funded through the European NextGenerationEU programme by the State Secretariat for Digitalization and Artificial Intelligence of the Ministry for Digital Transformation and Public Administration, the project integrates data and computing within a single platform, providing participants with the tools needed to transform human, animal, and environmental health data into real-world solutions.',
+
+        'All of this is achieved without compromising security or data sovereignty. In fact, within OneHealth DataSpace, data always remains under the control of its owners.',
+
+        {
+          type: 'h2',
+          content: 'More Than Data',
+        },
+
+        'Traditionally, data spaces seek to solve the problem of how to share data. However, from a scientific perspective, obtaining data is only the beginning of the research process.',
+
+        'To fully leverage data, we need an environment where it can be stored, analyzed, and processed. Only then is it possible to generate results that create value, whether for other research initiatives or directly for society.',
+
+        'OneHealth DataSpace provides these services and makes Big Data, High-Performance Computing (HPC), and Cloud resources available to participants, all integrated directly within the data space.',
+
+        'The goal is to enable data to be transformed into evidence, knowledge, and innovative solutions capable of addressing global health challenges.',
+
+        {
+          type: 'h2',
+          content: 'The Ecosystem’s Pillars: Sovereignty and Supercomputing',
+        },
+
+        'OneHealth DataSpace also provides a trusted environment built upon three technological pillars.',
+
+        '● Participants retain full control at all times over who can access their data and for what purpose. At the same time, privacy is guaranteed, allowing sensitive information to be shared within a secure environment.',
+
+        '● Unlike other data spaces, OneHealth DataSpace is directly connected to CESGA’s computing and storage capabilities. This makes it possible to move from data discovery to analysis without leaving the secure ecosystem.',
+
+        '● The platform incorporates interoperability and metadata enrichment mechanisms that ensure information is Findable, Accessible, Interoperable, and Reusable (FAIR), maximizing the impact of every project.',
+
+        {
+          type: 'h2',
+          content: 'An Ecosystem Open to Participation',
+        },
+
+        'Participation in OneHealth DataSpace is open to institutions and companies linked to the One Health domain. The ecosystem currently includes 22 participating organizations and several use cases covering areas as diverse as gastrointestinal health, drug discovery, and the analysis of wind farms’ environmental impact.',
+
+        'The project’s design incorporates a simplified onboarding process that encourages participation in both data processing activities and existing use cases, while also supporting the coordination of new collaborative projects among members.',
+
+        'The objective is to bring together initiatives that, through collaboration or the use of OneHealth DataSpace services, contribute to improving global health.',
+
+        {
+          type: 'h2',
+          content: 'The Gateway to the 1HealthAI Factory',
+        },
+
+        'OneHealth DataSpace serves as the essential foundation for the 1HealthAI Factory, the only European artificial intelligence factory dedicated exclusively to the One Health ecosystem.',
+
+        'This positions CESGA as a European leader in artificial intelligence applied to global health within the EuroHPC Joint Undertaking network, a forward-looking infrastructure where data becomes the driving force behind a more integrated, intelligent, and sovereign approach to global health.',
+
+        'The DATAlife Data Spaces Demonstration Center project, within which OneHealth DataSpace is integrated, is funded by the State Secretariat for Digitalization and Artificial Intelligence (SEDIA) of the Ministry for Digital Transformation and Public Administration, under the call for Data Space Demonstration Centers and Use Cases (Order TDF/1461/2023 of December 29).',
+
+        'The project also receives funding from the European Union – NextGenerationEU through Spain’s Recovery, Transformation and Resilience Plan.',
+
+        {
+          type: 'bold',
+          content: 'More than data.',
+        },
+      ],
+    },
+
   ],
 
 
@@ -2808,6 +2989,97 @@ export const blogPosts: Record<Locale, Post[]> = {
           content: 'Máis que datos.',
         },
       ],
-    }
+    },
+    {
+      key: 'onehealth-dataspace-salud-global',
+      date: '2026-06-04',
+      title:
+        'OneHealth DataSpace, o espazo de datos do CESGA ante o reto de impulsar a saúde global',
+      excerpt:
+        'A iniciativa do CESGA combina datos, colaboración e supercomputación para impulsar a investigación e a innovación en saúde humana, animal e ambiental baixo o enfoque One Health.',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        {
+          type: 'italic',
+          content:
+            'OneHealth DataSpace é a iniciativa do CESGA orientada a facilitar a colaboración científica e tecnolóxica para mellorar a saúde global mediante o intercambio seguro de datos e o uso de capacidades avanzadas de computación, intelixencia artificial e análise de datos.',
+        },
+
+        'A crise do ébola, outras máis próximas xeograficamente como a do hantavirus, ou pandemias de grande impacto como a COVID-19 teñen algo en común: unha realidade interconectada entre as persoas, os animais e o medio no que habitan. A Organización Mundial da Saúde (OMS) denomina esta visión One Health —Unha soa saúde—.',
+
+        'Neste contexto, o Centro de Supercomputación de Galicia (CESGA) impulsa OneHealth DataSpace, unha iniciativa construída sobre unha das infraestruturas tecnolóxicas públicas máis avanzadas de Europa e orientada a facilitar a colaboración científica e tecnolóxica para mellorar a saúde global baixo o enfoque One Health.',
+
+        {
+          type: 'h2',
+          content: 'Datos, colaboración e tecnoloxía',
+        },
+
+        'Como contribúe a supercomputación galega a este desafío? Combinando tres elementos: datos, colaboración e tecnoloxía. A dispoñibilidade de información de calidade permite construír bases científicas sólidas para abordar retos complexos relacionados coa saúde humana, animal e ambiental, garantindo sempre a soberanía da información e a privacidade dos datos de saúde das persoas.',
+
+        'A capacidade de colaborar sen comprometer a seguridade dos datos constitúe un dos grandes desafíos tecnolóxicos actuais. OneHealth DataSpace (OHDS), ecosistema colaborativo do CESGA, nace precisamente para facilitar esa colaboración entre entidades de saúde, investigación e empresa.',
+
+        'Financiado con fondos europeos NextGenerationEU pola Secretaría de Estado de Dixitalización e Intelixencia Artificial do Ministerio para a Transformación Dixital e da Función Pública, o proxecto integra datos e computación nunha única plataforma, proporcionando aos seus participantes as ferramentas necesarias para transformar datos de saúde humana, animal e ambiental en solucións reais.',
+
+        'Todo isto sen comprometer a seguridade nin a soberanía da información. De feito, en OneHealth DataSpace os datos permanecen baixo o control dos seus propietarios.',
+
+        {
+          type: 'h2',
+          content: 'Máis ca datos',
+        },
+
+        'Tradicionalmente, os espazos de datos tratan de resolver o problema de como compartir datos. Porén, desde o punto de vista científico, sabemos que obter datos é só o inicio da investigación.',
+
+        'Para poder aproveitalos necesitamos un contorno onde almacenalos, analizalos e procesalos. Só despois deste proceso é posible obter resultados que acheguen valor, xa sexa a outras investigacións e iniciativas ou directamente á sociedade.',
+
+        'OneHealth DataSpace ofrece estes servizos e pon á disposición dos participantes recursos de Big Data, computación de altas prestacións (HPC) e Cloud, integrados directamente no espazo de datos.',
+
+        'O obxectivo é facilitar que os datos poidan transformarse en evidencias, coñecemento e novas solucións para afrontar os retos da saúde global.',
+
+        {
+          type: 'h2',
+          content: 'Piares do ecosistema: soberanía e supercomputación',
+        },
+
+        'OneHealth DataSpace achega ademais un contorno de confianza sustentado en tres piares tecnolóxicos.',
+
+        '● Os participantes manteñen en todo momento o control sobre quen accede aos seus datos e con que finalidade. Así mesmo, garántese a privacidade da información, permitindo compartir datos sensibles nun contorno seguro.',
+
+        '● A diferenza doutros espazos de datos, OneHealth DataSpace está conectado directamente coas capacidades de computación e almacenamento do CESGA. Isto permite pasar do descubrimento dos datos á súa análise sen abandonar o ecosistema seguro.',
+
+        '● A plataforma incorpora mecanismos de interoperabilidade e enriquecemento de metadatos que garanten que a información sexa localizable, accesible, interoperable e reutilizable (FAIR), maximizando o impacto de cada proxecto.',
+
+        {
+          type: 'h2',
+          content: 'Un ecosistema aberto á participación',
+        },
+
+        'A participación en OneHealth DataSpace está aberta a institucións e empresas vinculadas ao ámbito One Health. Actualmente integra 22 entidades adheridas e distintos casos de uso relacionados con ámbitos tan diversos como a saúde gastrointestinal, a procura de novos fármacos ou a análise do impacto dos parques eólicos sobre o medio ambiente.',
+
+        'O deseño do proxecto incorpora un proceso de adhesión simplificado que fomenta a participación tanto no procesamento de datos como na incorporación a casos de uso xa existentes ou na coordinación de novos proxectos colaborativos con outros membros.',
+
+        'Trátase de reunir iniciativas que, mediante a colaboración ou o uso dos servizos ofrecidos por OneHealth DataSpace, contribúan a mellorar a saúde global.',
+
+        {
+          type: 'h2',
+          content: 'A antesala da 1HealthAI Factory',
+        },
+
+        'OneHealth DataSpace constitúe a antesala necesaria da 1HealthAI Factory, a única factoría europea de intelixencia artificial dedicada en exclusiva ao ecosistema One Health.',
+
+        'Isto sitúa ao CESGA como referente europeo en intelixencia artificial aplicada á saúde global dentro da rede EuroHPC Joint Undertaking, unha infraestrutura con visión de futuro na que o dato se converte no motor dunha saúde global máis integrada, intelixente e soberana.',
+
+        'O proxecto do Centro Demostrador de Espazos de Datos DATAlife, no que se integra OneHealth DataSpace, está financiado pola Secretaría de Estado de Dixitalización e Intelixencia Artificial (SEDIA) do Ministerio para a Transformación Dixital e da Función Pública, no marco da convocatoria de Centros Demostradores e Casos de Uso de Espazos de Datos (Orde TDF/1461/2023, do 29 de decembro).',
+
+        'Ademais, conta con financiamento da Unión Europea – NextGenerationEU a través do Plan de Recuperación, Transformación e Resiliencia.',
+
+        {
+          type: 'bold',
+          content: 'Máis ca datos.',
+        },
+      ],
+    },
+
   ],
 };
