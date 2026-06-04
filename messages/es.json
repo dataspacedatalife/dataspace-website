@@ -381,7 +381,7 @@
   "use-cases": {
     "metadata": {
       "title": "Casos de uso",
-      "description": "Estos son algunos de los casos de uso que aprovechan los espacios de datos para generar valor científico, social y operativo"
+      "description": "Ejemplos reales de aplicación de espacios de datos en distintos sectores: salud, gestión, benchmarking y más"
     },
     "header": {
       "title": "Casos de uso",
@@ -391,159 +391,43 @@
       "farmaciavax": {
         "name": "[DEMO] FarmaciaVAX",
         "entity": "CESGA",
-        "objective": "Gestión de vacunas en farmacias",
-        "data":"",
-        "contact":""
+        "objective": "Gestión de vacunas en farmacias"
       },
       "aidamed": {
         "name": "AiDataMed",
-        "entity": "CESGA; entidades clínicas (IISGS + CHUP)",
-        "objective": "Generación de bases de datos sintéticas representativas a partir de información clínica previamente anonimizada y validada.",
-        "data": "Datos clínicos sintéticos en OMOP CDM + metadatos de calidad/representatividad",
-        "contact": ""
+        "entity": "Chup/IISGS",
+        "objective": "Análisis de datos sanitarios"
       },
       "brilliant": {
-        "name": "Brilliant Sarcopenia Observatory",
-        "entity": "CESGA; entidades sanitarias colaboradoras; IISGS (Biocaps)",
-        "objective": "Observatorio de sarcopenia con IA sobre RM lumbar (repositorios públicos) + variables demográficas simuladas.",
-        "data": "RM lumbar + variables demográficas simuladas; resultados derivados (segmentaciones/índices) y metadatos",
-        "contact":""
+        "name": "Brilliant",
+        "entity": "IISGS",
+        "objective": "Observatorio de sarcopenia"
       },
       "gift": {
         "name": "GIFT",
-        "entity": "Entidades médicas (IISGS + CHUP)",
-        "objective": "Asistente para soporte a profesionales (información basada en evidencia, referencias, apoyo a gestión)",
-        "data": "Conocimiento médico estructurado y corpus curado; métricas/trazas de uso según despliegue",
-        "contact": ""
+        "entity": "Chup/IISGS",
+        "objective": "Salud gastrointestinal"
       },
       "biomexplore": {
-        "name": "BiomeXplore Microbiome Lab",
-        "entity": "Entidades biomédicas; CESGA",
-        "objective": "Plataforma para análisis de microbiota con datasets sintéticos y enfoque FAIR/cumplimiento.",
-        "data": "Microbioma (principalmente sintético), metadatos simulados y resultados de pipelines/servicios.",
-        "contact": ""
+        "name": "BiomeXplore",
+        "entity": "IISGS",
+        "objective": "Observatorio del índice poblacional de microbiota intestinal"
       },
       "salusbench": {
         "name": "SALUSBENCH",
         "entity": "Inverbis",
-        "objective": "Benchmarking de procesos de gestión hospitalaria",
-        "data": "",
-        "contact": ""
+        "objective": "Benchmarking de procesos de gestión hospitalaria"
       },
       "celiaspace": {
-        "name": "CeliaSpace Serenia",
-        "entity": "Serenia Solutions; i4Life",
-        "objective": "Dataset de conversaciones con asistente virtual Serenia para acompañamiento/bienestar en mayores (anonimizado).",
-        "data": "Texto conversacional (app/WhatsApp) y metadatos derivados para entrenamiento/evaluación",
-        "contact": ""
+        "name": "CeliaSpace",
+        "entity": "Uvigo",
+        "objective": "Datos de asistentes conversacionales con seniors"
       },
       "datiacare": {
         "name": "Datiacare",
-        "entity": "i4Life; entidades sociosanitarias",
-        "objective": "Seguimiento en domicilio con sensores + IA para rutinas, anomalías y alertas a profesionales/familia",
-        "data":"Datos IoT/eventos de actividad, series temporales y alertas/anotaciones derivadas.",
-        "contact": ""
-      },
-      "cienciasmarinas": {
-        "name": "CCMM Ocean Data & Services",
-        "entity": "IEO-CSIC (COAC); Instituto Español de Oceanografía",
-        "objective": "Integración y explotación de datos oceanográficos multidisciplinares y resultados de modelos numéricos para generar servicios orientados a usuarios finales en ámbitos como acuicultura, pesca y riesgos marinos.",
-        "data": "Datos de pesquerías, series ambientales oceanográficas y salidas de modelos numéricos del ecosistema marino; catálogos de datos estandarizados y servicios asociados.",
-        "contact": ""
-      },
-       "micresist": {
-        "name": "MIC-Resist:",
-        "entity": "Universidad de Pennsylvania",
-        "objective": "Uso de datos de Minimal Inhibition Concentration (MIC) para estudiar/modelar resistencia antimicrobiana y apoyar entrenamiento/validación de modelos",
-        "data": "Tablas de MIC (CSV) y metadatos experimentales (cepa, antibiótico, condiciones).",
-        "contact":""
-      },
-      "neuroictus": {
-        "name": "NeuroIctus-IDIS",
-        "entity": "IDIS (Fundación Pública Galega Instituto de Investigación Sanitaria de Santiago de Compostela)",
-        "objective": "Base de datos de neuroimagen clínica (ictus) y preclínica (modelos animales de ictus/glioblastoma) para análisis biomédico e investigación.",
-        "data": "Neuroimagen RM/TC (formatos DICOM y NIfTI/nii) y variables fisiológicas asociadas (según disponibilidad)",
-        "contact":""
-      },
-      "cribadovirtual": {
-        "name": "Cribado virtual ultra-masivo anticancerígeno por consenso e IA (BIO-HPC)",
-        "entity": "UCAM (BIO-HPC); UGR; Villapharma/Eurofins",
-        "objective": "Pipeline multi-ciclo de cribado virtual (estructura/ligando + ML/LLMs) con re-ranking por consenso y realimentación experimental (Wee1, DDR1, hsEH).",
-        "data": "Librerías químicas (SMILES/SDF), estructuras diana (PDB), resultados de docking (poses/scores), modelos ML/LLM, listas rankeadas, SAR, resultados experimentales y metadatos de campañas",
-        "contact": ""
-      },
-       "offshore": {
-        "name": "Offshore Wind Footprint",
-        "entity": "CESGA",
-        "objective": "Simulaciones WRF con efecto de turbinas para cuantificar cambios en viento regional y alimentar modelos oceanográficos/biogeoquímicos.",
-        "data": "Campos WRF (viento/turbulencia/estabilidad), configuración del modelo, parámetros de turbinas y salidas derivadas (producción/forzamientos).",
-        "contact": ""
-      },
-      "canarywind": {
-        "name": "CanaryWind AI Downscaling",
-        "entity": "CESGA",
-        "objective": "Downscaling meteorológico con IA para refinar viento superficial en orografía compleja y mejorar estimaciones del recurso eólico.",
-        "data": "Reanálisis/observaciones/productos meteo, orografía, datasets train/val y salidas (viento alta resolución + métricas).", 
-        "contact": ""
-      },
-      "peptmem": {
-        "name": "PeptMem-ML",
-        "entity": "USC (CiQUS, SIMBIOS); CESGA",
-        "objective": "Simulaciones atomísticas y coarse-grained para estudiar inserción/disrupción y entrenar ML para selectividad/diseño de péptidos.",
-        "data": "Trayectorias MD, estructuras/topologías/parámetros, variables colectivas, PMF, métricas, descriptores y scripts/metadatos.",
-        "contact": ""
-      },
-      "medfound": {
-        "name": "MedFound-Bench",
-        "entity": "GrHeCo-Xen (IDIS)",
-        "objective": "Evaluación/benchmark y fine-tuning de modelos de lenguaje para uso médico con enfoque aplicado.",
-        "data": "Resultados de fine-tuning/evaluación y outputs bioinformáticos asociados (p. ej., proteómica) según campañas.",
-        "contact": ""
-      },
-      "stardist": {
-        "name": "StarDist-HistoGPU",
-        "entity": "GrHeCo-Xen (IDIS)",
-        "objective": "Pipeline de análisis histopatológico (incl. segmentación tipo StarDist) y optimización computacional.",
-        "data": "Resultados de análisis histopatológico y salidas/metricado del pipeline.",
-        "contact": ""
-      },
-      "cdligand": {
-        "name": "CD-Ligand Free Energy",
-        "entity": "MD.USE; USC; CESGA",
-        "objective": "Datasets MD + PMF para caracterizar afinidad/estabilidad y entrenar modelos predictivos",
-        "data": "Trayectorias MD, entradas PLUMED, PMFs, descriptores físico-químicos, metadatos y scripts.",
-        "contact": ""
-      },
-      "gem": {
-        "name": "GeM-MPNST Reanalysis",
-        "entity": "USC (CiMUS); EGA",
-        "objective": "Descarga y reanálisis HPC de WGS y RNA-seq con pipelines actualizados; compartición de resultados agregados.", 
-        "data": "BAM/FASTQ y derivados (variantes agregadas, CNV, expresión, metadatos clínicos), evitando datos identificables.",
-        "contact": ""
-      },
-       "breezefill": {
-        "name": "BreezeFill AI",
-        "entity": "CIDE (CSIC-UV-GVA); CLIMATOC-LAB",
-        "objective": "IA para infilling de series de viento incompletas e identificación de regímenes de brisa.",
-        "data": "Series climáticas (estaciones, ERA5-Land, CERRA…), modelos IA entrenados y datasets de brisas en alta resolución",
-        "contact": ""
-      },
-      "deepmeteo": {
-        "name": "DeepMeteo-Spain",
-        "entity": " CIDE (CSIC-UV-GVA)",
-        "objective": "DL para predicción horaria y downscaling/super-resolución de variables meteorológicas",
-        "data": "NetCDF multivariable (viento, temp, precipitación, presión) con ERA5/AEMET/Copernicus.",
-        "contact":""
-      },
-      "wrf": {
-        "name": "WRF SeaBreeze Extreme",
-        "entity": "CLIMATOC-LAB; CIDE (CSIC-UV-GVA)",
-        "objective": "Simulación de eventos con WRF para estudiar olas de calor y brisa marina.",
-        "data": "NetCDF 3D de alta frecuencia; forzados por ERA5/GFS; outputs para tesis/publicación.",
-        "contact": ""
+        "entity": "i4life",
+        "objective": "Cuidado de personas mayores"
       }
-
-      
     }
   },
   "what": {
@@ -927,14 +811,12 @@
       },
       "eventoFinal": {
         "header": "Evento de cierre OneHealth DataSpace",
-        "excerpt": "OneHealth DataSpace presenta resultados y abre camino a la 1HealthAI Factory. Una jornada para compartir los principales logros del proyecto, la evolución de los casos de uso y las oportunidades futuras del ecosistema One Health.",
+        "excerpt": "OneHealth DataSpace presenta resultados y abre camino a la 1HealthAI Factory",
         "description": [
-          "Objetivo de la jornada:",
-          "Presentar los principales resultados alcanzados por OneHealth DataSpace, compartir la evolución de los casos de uso participantes y mostrar las oportunidades de continuidad del ecosistema a través de la futura 1HealthAI Factory.",
-          "Durante los dos años de desarrollo del proyecto, OneHealth DataSpace ha impulsado la compartición y explotación segura de datos bajo el enfoque One Health, conectando entidades de salud, investigación y empresa mediante capacidades avanzadas de HPC, Big Data, Cloud e Inteligencia Artificial.",
-          "La jornada permitirá conocer los avances conseguidos, las lecciones aprendidas y el papel de OneHealth DataSpace como base para nuevas iniciativas de innovación basadas en datos e inteligencia artificial.",
+          "El próximo 17 de junio, el CESGA celebrará en el CHUS (Hospital Clínico Universitario de Santiago de Compostela) el encuentro final de OneHealth DataSpace, una jornada en la que se presentarán los principales resultados del proyecto, la evolución de los casos de uso participantes y las oportunidades de continuidad del espacio de datos.",
+          "Durante estos dos años, OneHealth DataSpace ha impulsado la compartición y explotación segura de datos bajo el enfoque One Health, conectando entidades de salud, investigación y empresa mediante capacidades avanzadas de HPC, Big Data, Cloud e Inteligencia Artificial. La jornada abordará además el papel del proyecto como antesala de la futura 1HealthAI Factory.",
           "Programa",
-          "- 09:30h. Apertura institucional",
+          "09:30h. Apertura institucional",
           " Intervienen:",
           " ▸ María Luz Couce Pico, Directora Científica del IDIS.",
           " ▸ Carmen Cotelo Queijo, Directora de GAIN.",
@@ -942,77 +824,70 @@
           " ▸ Javier Cacheiro López, Director Científico de OneHealth DataSpace del CESGA.",
           "- 10:00h. Avance de resultados de la Política de Impulso a Espacios de Datos en España",
           " ▸ Interviene: Antonio Alcolea Muñoz.",
-          "- 10:15h. El OneHealth DataSpace, más que datos. Resultados",
+          "10:15h. El OneHealth DataSpace, más que datos. Resultados",
           "Intervienen:",
           "▸ Helena Fernández, Directora de la PMO del proyecto OneHealth DataSpace.",
           "▸ Pedro Ferreiro, Técnico de Proyecto OneHealth DataSpace.",
           "▸ Marta Castiñeira, Técnica investigadora en simulación computacional del proyecto OneHealth DataSpace.",
-          "- 11:00h. Pausa café.",
-          "- 11:30h. Mesa redonda con casos de uso participantes.",
-          "- 12:45h. OneHealth DataSpace, antesala de la 1HealthAI Factory",
+          "11:00h. Pausa café.",
+          "11:30h. Mesa redonda con casos de uso participantes.",
+          "12:45h. OneHealth DataSpace, antesala de la 1HealthAI Factory",
           "▸ Interviene: Javier Cacheiro López, Director Científico de OneHealth DataSpace.",
-          "*Agenda provisional.",
-          "¿A quién va dirigido?",
-          "Dirigido a:",
-          "▸ Entidades participantes o interesadas en espacios de datos.",
-          "▸ Organizaciones del ámbito sanitario, investigador y empresarial.",
-          "▸ Casos de uso activos o potenciales dentro del ecosistema One Health.",
-          "▸ Profesionales relacionados con datos, inteligencia artificial e innovación digital.",
-          "▸ Investigadores, empresas, administraciones públicas y estudiantes interesados en espacios de datos e IA.",
-          "📅 Fecha: 17 de junio de 2026.",
-          "🕤 Horario: 09:30h – 13:00h.",
-          "📍 Lugar: Salón de actos del CHUS (Hospital Clínico Universitario de Santiago de Compostela).",
-          "⚠️ La inscripción es obligatoria para asistir al evento."
+          "Agenda provisional.",
+          "📍 Salón de actos del CHUS (Hospital Clínico Universitario de Santiago de Compostela).",
+          "📅 17 de junio de 2026",
+          "🕤 09:30h – 13:00h"
+
         ],
         "extra": "Invitación e inscripción"
       },
       "gobernanzaDeDatosAporte": {
-  "header": "Gobernanza de Datos. Aporte al Espacio de Datos",
-  "excerpt": "Sesión para comprender el modelo de negocio de OneHealth DataSpace, el valor que aporta a sus participantes y los mecanismos que garantizan su sostenibilidad y crecimiento como infraestructura de datos, computación e innovación en el ecosistema CESGA.",
-  "description": [
-    "Objetivo de la sesión:",
-    "Comprender cómo funciona el modelo de negocio de OneHealth DataSpace, qué valor aporta a sus participantes y cuáles son los mecanismos que garantizan su sostenibilidad y crecimiento como infraestructura de datos, computación e innovación en el ámbito One Health.",
-    "OneHealth DataSpace es una plataforma integrada para todo el ciclo de vida del dato One Health: compartir, almacenar, procesar, analizar y generar resultados.",
-    "Integra capacidades avanzadas del CESGA en HPC, Big Data, Cloud, IA, GPU y computación cuántica para transformar datos en soluciones reales con impacto.",
-    "La sesión permitirá comprender cómo se genera valor dentro del ecosistema y qué elementos hacen posible su crecimiento sostenible a largo plazo.",
-    "¿Qué es la Gobernanza de Datos?",
-    "▸ La gobernanza de datos es el conjunto de normas, procesos, acuerdos y mecanismos que regulan el acceso, uso, compartición y protección de los datos.",
-    "▸ Garantiza la soberanía y el control por parte de los propietarios de los datos.",
-    "▸ Constituye la base de confianza necesaria para la colaboración entre organizaciones dentro de un espacio de datos.",
-    "¿Qué se abordará en la sesión?",
-    "▸ Fundamentos del modelo de negocio de OneHealth DataSpace.",
-    "▸ Propuesta de valor para empresas, administraciones públicas, centros de investigación y entidades sanitarias.",
-    "▸ Mecanismos de sostenibilidad y crecimiento del ecosistema.",
-    "▸ Gobernanza y generación de confianza entre participantes.",
-    "▸ Estrategias de captación y participación dentro del espacio de datos.",
-    "▸ Generación de valor mediante el uso compartido de datos, computación e inteligencia artificial.",
-    "¿Para qué sirve este modelo?",
-    "▸ Facilitar la incorporación de nuevas entidades al ecosistema.",
-    "▸ Impulsar nuevos casos de uso basados en datos.",
-    "▸ Aprovechar capacidades avanzadas de computación, almacenamiento e IA.",
-    "▸ Garantizar la sostenibilidad del espacio de datos a largo plazo.",
-    "▸ Generar valor para participantes públicos y privados.",
-    "¿A quién va dirigido?",
-    "▸ Entidades adheridas o interesadas en participar en OneHealth DataSpace.",
-    "▸ Responsables de innovación, transformación digital y gestión de datos.",
-    "▸ Personal técnico y directivo de empresas, administraciones públicas, hospitales, centros tecnológicos y organismos de investigación.",
-    "▸ Miembros actuales o potenciales del ecosistema.",
-    "▸ Profesionales, investigadores y estudiantes interesados en espacios de datos.",
-    "📅 Fecha: 05 de junio de 2026",
-    "🕚 Hora: 11:00",
-    "📍 Modalidad: Online",
-    "🎓 Instructor: Alejo Santolino Simón, Coordinador de Marco Legal de Datos y Análisis de Negocio",
-    "📺 El vídeo de la sesión estará disponible posteriormente en el canal de YouTube del CESGA (@CesgaTV)",
-    "🔗 Próximos cursos: https://dataspace.cesga.es/es/events",
-    "⚠️ La inscripción es obligatoria para conectarse a la sesión y recibir el certificado de participación.",
-    "⚠️ Se recomienda utilizar Mozilla Firefox."
-  ],
-  "extra": "Acceso e inscripción"
-}
+        "header": "Gobernanza de Datos. Aporte al Espacio de Datos",
+        "excerpt": "Sesión para comprender el modelo de negocio de OneHealth DataSpace, el valor que aporta a sus participantes y los mecanismos que garantizan su sostenibilidad y crecimiento como infraestructura de datos, computación e innovación en el ecosistema CESGA.",
+        "description": [
+          "Objetivo de la sesión:",
+          "Comprender cómo funciona el modelo de negocio de OneHealth DataSpace, qué valor aporta a sus participantes y cuáles son los mecanismos que garantizan su sostenibilidad y crecimiento como infraestructura de datos, computación e innovación en el ámbito One Health.",
+          "OneHealth DataSpace es una plataforma integrada para todo el ciclo de vida del dato One Health: compartir, almacenar, procesar, analizar y generar resultados.",
+          "Integra capacidades avanzadas del CESGA en HPC, Big Data, Cloud, IA, GPU y computación cuántica para transformar datos en soluciones reales con impacto.",
+          "La sesión permitirá comprender cómo se genera valor dentro del ecosistema y qué elementos hacen posible su crecimiento sostenible a largo plazo.",
+          "¿Qué es la Gobernanza de Datos?",
+          "▸ La gobernanza de datos es el conjunto de normas, procesos, acuerdos y mecanismos que regulan el acceso, uso, compartición y protección de los datos.",
+          "▸ Garantiza la soberanía y el control por parte de los propietarios de los datos.",
+          "▸ Constituye la base de confianza necesaria para la colaboración entre organizaciones dentro de un espacio de datos.",
+          "¿Qué se abordará en la sesión?",
+          "▸ Fundamentos del modelo de negocio de OneHealth DataSpace.",
+          "▸ Propuesta de valor para empresas, administraciones públicas, centros de investigación y entidades sanitarias.",
+          "▸ Mecanismos de sostenibilidad y crecimiento del ecosistema.",
+          "▸ Gobernanza y generación de confianza entre participantes.",
+          "▸ Estrategias de captación y participación dentro del espacio de datos.",
+          "▸ Generación de valor mediante el uso compartido de datos, computación e inteligencia artificial.",
+          "¿Para qué sirve este modelo?",
+          "▸ Facilitar la incorporación de nuevas entidades al ecosistema.",
+          "▸ Impulsar nuevos casos de uso basados en datos.",
+          "▸ Aprovechar capacidades avanzadas de computación, almacenamiento e IA.",
+          "▸ Garantizar la sostenibilidad del espacio de datos a largo plazo.",
+          "▸ Generar valor para participantes públicos y privados.",
+          "¿A quién va dirigido?",
+          "▸ Entidades adheridas o interesadas en participar en OneHealth DataSpace.",
+          "▸ Responsables de innovación, transformación digital y gestión de datos.",
+          "▸ Personal técnico y directivo de empresas, administraciones públicas, hospitales, centros tecnológicos y organismos de investigación.",
+          "▸ Miembros actuales o potenciales del ecosistema.",
+          "▸ Profesionales, investigadores y estudiantes interesados en espacios de datos.",
+          "📅 Fecha: 05 de junio de 2026",
+          "🕚 Hora: 11:00",
+          "📍 Modalidad: Online",
+          "🎓 Instructor: Alejo Santolino Simón, Coordinador de Marco Legal de Datos y Análisis de Negocio",
+          "📺 El vídeo de la sesión estará disponible posteriormente en el canal de YouTube del CESGA (@CesgaTV)",
+          "🔗 Próximos cursos: https://dataspace.cesga.es/es/events",
+          "⚠️ La inscripción es obligatoria para conectarse a la sesión y recibir el certificado de participación.",
+          "⚠️ Se recomienda utilizar Mozilla Firefox."
+        ],
+        "extra": "Acceso e inscripción"
+      }
     }
   },
   "catalog": {
-    "title": "Catálogo",
+    "title": "Catálogo de Datos",
     "subtitle": "Explora el listado de conjuntos de datos y su información preliminar",
     "viewDetails": "Ver detalles",
     "contact": "Contactar",
