@@ -242,7 +242,7 @@
   "two": {
     "denominacion_oficial": "Trueworld Organization",
     "acronimo": "TWO",
-    "entidad_promotora": "Cesga",
+    "entidad_promotora": "-",
     "entidades_participantes": "Trueworld / Cesga",
     "descripcion_completa_resultados_esperados": "Integración y compartición de datos ambientales y agronómicos de TrueWorld en el Espacio de Datos DATAlife.\nNuestro caso de uso consiste en la incorporación al Espacio de Datos DATAlife de datos ambientales y agronómicos generados por la infraestructura de monitorización de TrueWorld, así como la habilitación del acceso a datos de terceros para su integración en sistemas analíticos.\nLa información que se incorpora incluye variables como temperatura, humedad relativa, presión atmosférica, viento, radiación solar, precipitación, evapotranspiración, índice UV, temperatura y humedad del suelo y humedad foliar, procedentes de estaciones instrumentales propias, con capacidad de actualización en tiempo real.\nLa motivación principal es estructurar estos datos dentro de un entorno interoperable, seguro y gobernado, permitiendo su compartición con terceros y su utilización en combinación con otros datasets disponibles en el espacio de datos.\nLa utilidad de los datos se orienta a:\n- Monitorización ambiental y agronómica,\n- Apoyo a la toma de decisiones en gestión territorial y agrícola,\n- Desarrollo de modelos analíticos y predictivos,\nintegración en plataformas de análisis y gemelos digitales.\nEl caso de uso se ha materializado mediante la publicación del dataset meteo-dataset-v3 dentro del espacio de datos.",
     "categoria_caso_uso": "Salud Humana y Salud Medioambiental",
