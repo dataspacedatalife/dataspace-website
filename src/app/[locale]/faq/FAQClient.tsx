@@ -100,33 +100,36 @@ export default function FAQClient() {
           </a>
         </div>
       </Container>
+<Container className="mt-16 pb-24">
+  <div className="mx-auto max-w-5xl space-y-14 text-left">
+    {sections.map((section, index) => (
+      <section key={index}>
+        <h2 className="text-2xl font-bold text-[#009AB8] mb-6 text-center">
+          {section.title}
+        </h2>
 
-      <Container className="mt-16 pb-24 max-w-4xl space-y-14">
-        {sections.map((section, index) => (
-          <section key={index}>
-            <h2 className="text-2xl font-bold text-[#24B678] mb-6">
-              {section.title}
-            </h2>
+        <div className="space-y-6">
+          {section.items.map((item, i) => (
+            <div
+              key={i}
+              className={`pb-6 ${
+                i !== section.items.length - 1 ? 'border-b border-gray-200' : ''
+              }`}
+            >
+              <h3 className="text-xl font-semibold text-gray-900">
+                {item.q}
+              </h3>
 
-            <div className="space-y-6">
-              {section.items.map((item, i) => (
-                <div
-                  key={i}
-                  className={`pb-6 ${
-                    i !== section.items.length - 1 ? 'border-b border-gray-200' : ''
-                  }`}
-                >
-                  <h3 className="text-xl font-semibold text-gray-900">{item.q}</h3>
-                  <p className="mt-3 text-gray-600 leading-relaxed whitespace-pre-line">
-                    {item.a}
-                  </p>
-                </div>
-              ))}
+              <p className="mt-3 text-gray-600 leading-relaxed whitespace-pre-line">
+                {item.a}
+              </p>
             </div>
-          </section>
-        ))}
-      </Container>
-
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Container>
       <Footer />
     </main>
   );
