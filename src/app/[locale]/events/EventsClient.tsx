@@ -205,6 +205,7 @@ const events = [
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: false,
   },
+  /* EVENTO FINAL APLAZADO
    {
     key: 'eventoFinal',
     date: '2026-06-17',
@@ -214,6 +215,7 @@ const events = [
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
   },
+  */
   {
     key: 'gobernanzaDeDatosAporte',
     date: '2026-06-05',
