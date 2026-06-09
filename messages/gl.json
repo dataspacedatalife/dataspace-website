@@ -996,7 +996,56 @@
           "⚠️ Recoméndase utilizar Mozilla Firefox."
         ],
         "extra": "Acceso e inscrición"
-      }
+      },
+      "formacionGestionCoordinacionComunicacion": {
+"header": "Xestión, Coordinación e Comunicación",
+"excerpt": "Sesión para comprender o papel da xestión, a coordinación e a comunicación dentro de OneHealth DataSpace e a súa importancia para garantir a colaboración, a gobernanza e o uso eficiente dos datos no ecosistema One Health.",
+"description": [
+"Obxectivo da sesión:",
+"Comprender o papel da xestión, a coordinación e a comunicación dentro de OneHealth DataSpace.",
+"OneHealth DataSpace é unha plataforma integrada para todo o ciclo de vida do dato One Health: compartir, almacenar, procesar, analizar e entregar resultados.",
+"A diferenza dun espazo de datos convencional, integra capacidades avanzadas do CESGA en HPC, Big Data, Cloud, IA, GPU e computación cuántica para transformar datos existentes en solucións reais.",
+"Para que serve?",
+"▸ Desenvolver unha comprensión común sobre a xestión, coordinación e comunicación externa dentro do ecosistema OneHealth DataSpace.",
+"▸ Promover a aliñación entre equipos técnicos e funcionais.",
+"▸ Mellorar a eficiencia na execución de proxectos e no uso dos datos.",
+"Cales son os principios básicos da xestión, coordinación e comunicación no ámbito de OneHealth DataSpace?",
+"▸ Baséanse nunha gobernanza clara.",
+"▸ Promoven a interoperabilidade dos datos.",
+"▸ Garanten o cumprimento dos requisitos de seguridade e privacidade.",
+"▸ Favorecen a coordinación entre os ámbitos da saúde humana, saúde animal e medio ambiente.",
+"▸ Impulsan unha comunicación clara e continua entre os distintos actores.",
+"Para que serve e por que é necesaria?",
+"▸ A coordinación asegura coherencia nos obxectivos e procesos.",
+"▸ A xestión permite organizar e gobernar o intercambio seguro e eficiente de datos.",
+"▸ A comunicación facilita a colaboración continua e a toma de decisións informadas.",
+"▸ Resulta clave para detectar riscos, responder a ameazas sanitarias e xerar coñecemento compartido.",
+"Que se abordará na sesión?",
+"▸ Principios básicos de xestión, coordinación e comunicación en contornas de datos.",
+"▸ Roles e responsabilidades dentro do modelo de gobernanza do ecosistema.",
+"▸ A comunicación como servizo transversal do proxecto.",
+"▸ Estratexias e operativas de comunicación.",
+"▸ O relato, a visibilidade e a captación de clientes.",
+"Como e cando se aplica?",
+"▸ De forma continua durante todo o ciclo de vida de OneHealth DataSpace.",
+"▸ Desde o seu deseño ata a súa evolución.",
+"▸ Garantindo unha aliñación constante entre os distintos actores.",
+"Quen debería realizalo?",
+"▸ Calquera usuario ou usuaria que interactúe nos espazos de datos ou coas ferramentas do ecosistema OneHealth.",
+"▸ Persoas interesadas en coñecer esta solución.",
+"📅 Data: 12 de xuño de 2026",
+"🕚 Hora: 11:00",
+"📍 Modalidade: En liña",
+"🎓 Instrutoras:",
+"▸ Helena Fernández, Directora da PMO do proxecto OneHealth DataSpace.",
+"▸ Laura Losada, Coordinadora de Promoción e Formación do proxecto OneHealth DataSpace.",
+"📺 O vídeo da sesión estará dispoñible posteriormente na canle de YouTube do CESGA (@CesgaTV).",
+"🔗 Próximos cursos: https://dataspace.cesga.es/gl/events",
+"⚠️ A inscrición é obrigatoria para conectarse á sesión e recibir o certificado de participación.",
+"⚠️ Recoméndase utilizar Mozilla Firefox."
+],
+"extra": "Acceso e inscrición"
+}
     }
   },
   "catalog": {

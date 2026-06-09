@@ -36,7 +36,7 @@ import evolucionEspacioDatosHPCBigDataCloud from '../../../../public/events/evol
 import gobernanzaDeDatos from '../../../../public/events/gobernanza-de-datos.png';
 import eventoFinal from '../../../../public/events/evento-final-onehealth-dataspace-aplazado.png';
 import gobernanzaDeDatosAporte from '../../../../public/events/gobernanza-de-datos-aporte.png';
-
+import gestionCoordinacionComunicacion from '../../../../public/events/formacion-gestion-coordinacion-comunicacion.png';
 const eventsPerPage = 5;
 
 interface Event {
@@ -218,6 +218,15 @@ const events = [
     key: 'gobernanzaDeDatosAporte',
     date: '2026-06-05',
     image: gobernanzaDeDatosAporte,
+    cesgalink:
+      'https://www.cesga.es/formacion-onehealth-dataspace/',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: false,
+  },
+  {
+    key: 'formacionGestionCoordinacionComunicacion',
+    date: '2026-06-12',
+    image: gestionCoordinacionComunicacion,
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
