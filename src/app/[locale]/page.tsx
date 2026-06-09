@@ -77,23 +77,13 @@ function Hero() {
                 </h1>
 
                 <p className="mt-6 sm:mt-8 text-m sm:text-m md:text-m font-normal text-gray-950/75">
-                  {t.rich('subtitle1', {
+                  {t.rich('subtitle', {
                     b: (chunks) => <strong>{chunks}</strong>,
                   })}
                 </p>
-                 <p className="mt-6 sm:mt-8 text-m sm:text-m md:text-m font-normal text-gray-950/75">
-                  {t.rich('subtitle2', {
-                    b: (chunks) => <strong>{chunks}</strong>,
-                  })}
-                </p>
+                <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row gap-4 sm:gap-x-6 justify-center lg:justify-start">
+                  <Button href="/about">{t('learnMore')}</Button>
 
-                <div className="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
-                   <Button
-                    href="/about"
-                    className="px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-white font-semibold bg-[#009AB8] shadow-lg hover:scale-105 transition"
-                  >
-                    {t('learnMore')}
-                  </Button>
                   <Button
                     href="https://dashboard.dataspace.cesga.es"
                     target="_blank"
