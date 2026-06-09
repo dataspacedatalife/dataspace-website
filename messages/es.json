@@ -1,10 +1,11 @@
 {
   "home": {
     "hero": {
-      "title": "Espacio de datos multisectorial One Health",
-      "subtitle": "Más que datos",
+      "title": "OneHealth DataSpace",
+      "subtitle1": "Nuestra infraestructura digital federada permite <b> compartir, procesar y explotar datos </b>relacionados con la <b>salud humana, salud animal, medio ambiente </b>de forma segura, soberana e interoperable; con el fin de mejorar la salud global.",
+      "subtitle2": "<b>Más que datos.</b> Convertimos los datos en conocimiento accionable. Ofrecemos a las entidades participantes un ciclo completo de trabajo, desde su integración y gestión, hasta su procesamiento avanzado, análisis, ejecución de modelos y almacenamiento de resultados; todo ello, <b>sin perder el control sobre sus datos. </b>",
       "learnMore": "Saber más",
-      "testDemo": "Acceder"
+      "testDemo": "Qué ofrecemos"
     }
   },
   "Navbar": {

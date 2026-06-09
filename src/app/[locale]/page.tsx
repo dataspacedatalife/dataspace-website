@@ -35,8 +35,15 @@ function Hero() {
                   {t('title')}
                 </h1>
 
-                <p className="mt-6 sm:mt-8 text-lg sm:text-xl md:text-2xl font-medium text-gray-950/75">
-                  {t('subtitle')}
+                <p className="mt-6 sm:mt-8 text-m sm:text-m md:text-m font-normal text-gray-950/75">
+                  {t.rich('subtitle1', {
+                    b: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                 <p className="mt-6 sm:mt-8 text-m sm:text-m md:text-m font-normal text-gray-950/75">
+                  {t.rich('subtitle2', {
+                    b: (chunks) => <strong>{chunks}</strong>,
+                  })}
                 </p>
 
                 <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row gap-4 sm:gap-x-6 justify-center lg:justify-start">
