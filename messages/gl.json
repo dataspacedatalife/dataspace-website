@@ -2,8 +2,7 @@
   "home": {
     "hero": {
       "title": "OneHealth DataSpace",
-      "subtitle1": "A nosa infraestrutura dixital federada permite <b>compartir, procesar e explotar datos</b> relacionados coa <b>saúde humana, saúde animal e medio ambiente</b> de forma segura, soberana e interoperable, co obxectivo de mellorar a saúde global.",
-      "subtitle2": "<b>Máis que datos.</b> Transformamos os datos en coñecemento accionable. Ofrecemos ás entidades participantes un ciclo completo de traballo, desde a súa integración e xestión ata o seu procesamento avanzado, análise, execución de modelos e almacenamento de resultados; todo iso, <b>sen perder o control sobre os seus datos.</b>",
+       "subtitle": "Facilita ás entidades participantes compartir, procesar, almacenar e analizar datos de saúde humana, animal e ambiental — mantendo o control sobre eles — transformándoos en coñecemento para mellorar a saúde global.",
       "learnMore": "Saber máis",
       "testDemo": "Que ofrecemos"
     }
