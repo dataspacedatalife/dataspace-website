@@ -1,10 +1,11 @@
 {
   "home": {
     "hero": {
-      "title": "One Health Data Space Demonstrator Center",
-      "subtitle": "We enable participating organizations to share, process, store, and analyze human, animal, and environmental health data, while maintaining full control over it and transforming it into knowledge to improve global health.",
+      "title": "OneHealth DataSpace",
+      "subtitle1": "Our federated digital infrastructure enables the <b>sharing, processing, and exploitation of data</b> related to <b>human health, animal health, and the environment</b> in a secure, sovereign, and interoperable manner, with the aim of improving global health.",
+      "subtitle2": "<b>More than data.</b> We transform data into actionable knowledge. We provide participating organizations with a complete workflow, from data integration and management to advanced processing, analytics, model execution, and results storage—all <b>without losing control of their data.</b>",
       "learnMore": "Learn more",
-      "testDemo": "Access"
+      "testDemo": "What we offer"
     }
   },
   "Navbar": {

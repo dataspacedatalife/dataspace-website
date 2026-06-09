@@ -76,8 +76,15 @@ function Hero() {
                   DataSpace
                 </h1>
 
-                <p className="mt-6 sm:mt-8 text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed">
-                  {t('subtitle')}
+                <p className="mt-6 sm:mt-8 text-m sm:text-m md:text-m font-normal text-gray-950/75">
+                  {t.rich('subtitle1', {
+                    b: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                 <p className="mt-6 sm:mt-8 text-m sm:text-m md:text-m font-normal text-gray-950/75">
+                  {t.rich('subtitle2', {
+                    b: (chunks) => <strong>{chunks}</strong>,
+                  })}
                 </p>
 
                 <div className="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
