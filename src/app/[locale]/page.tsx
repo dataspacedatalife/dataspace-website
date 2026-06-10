@@ -32,7 +32,7 @@ function Hero() {
               <div className="max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
 
                 <h1 className="font-heading text-3xl font-medium tracking-tight text-balance text-[#009AB8] sm:text-5xl md:text-6xl">
-                  {t('title')}
+                  OneHealth DataSpace
                 </h1>
 
                 <p className="mt-6 sm:mt-8 text-lg sm:text-xl md:text-2xl font-medium text-gray-950/75">
