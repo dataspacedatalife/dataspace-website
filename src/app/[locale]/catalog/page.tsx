@@ -8,7 +8,7 @@ import { Heading, Lead } from '@/components/text';
 import { Link } from '@/components/link';
 import clsx from 'clsx';
 
-import useCasesData from '../catalog/data/useCases.json';
+import { useCasesData } from '../catalog/data/useCases';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('catalog');
@@ -36,64 +36,54 @@ async function Header() {
     </Container>
   );
 }
-
 async function UseCaseGrid() {
-  const casos = Object.entries(useCasesData);
-
-  const colors = [
-    'bg-gradient-to-br from-sky-100 via-sky-100 to-cyan-300',
-  ];
+  const t = await getTranslations('use-cases.cases');
 
   return (
     <Container className="py-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {casos.map(([id, caso], index) => (
-          <Link
-            key={id}
-            href={`/catalog/${id}`}
-            className="w-full"
-          >
-            <div
-              className={clsx(
-                'flex flex-col justify-between rounded-2xl border border-gray-200 p-10 shadow-sm transition hover:shadow-md hover:scale-[1.02] duration-200 h-full',
-                colors[index % colors.length]
-              )}
+        {useCasesData.map((caso) => {
+          const name = t(`${caso.id}.name`);
+          const objective = t(`${caso.id}.objective`);
+
+          const href = caso.url ?? `/catalog/${caso.id}`;
+          const isExternal = !!caso.url;
+
+          return (
+            <Link
+              key={caso.id}
+              href={href}
+              className="w-full"
+              {...(isExternal && {
+                target: '_blank',
+                rel: 'noopener noreferrer',
+              })}
             >
-              <div className="flex h-full flex-col text-left">
+              <div
+                className={clsx(
+                  'flex flex-col justify-between rounded-2xl border border-gray-200 p-10 shadow-sm transition hover:shadow-md hover:scale-[1.02] duration-200 h-full',
+                  caso.color
+                )}
+              >
+                <div className="flex flex-col text-left">
+                  <h3 className="text-3xl font-bold text-gray-900">
+                    {name}
+                  </h3>
 
-  <div>
-    <h3 className="text-3xl font-bold text-gray-900">
-      {caso.acronimo || caso.denominacion_oficial}
-    </h3>
-
-    <p className="mt-4 text-lg leading-relaxed text-gray-700">
-      {caso.denominacion_oficial}
-    </p>
-
-    <div className="mt-2">
-      <span className="text-sm font-medium text-gray-600">
-        Entidad promotora: {caso.entidad_promotora}
-      </span>
-    </div>
-  </div>
-
-  {/* Categoría siempre abajo */}
-  <div className="mt-auto pt-6">
-    <span className="inline-flex items-center rounded-lg bg-[#009AB8] px-4 py-2 text-sm font-semibold text-white shadow-sm">
-      {caso.categoria_caso_uso}
-    </span>
-  </div>
-
-</div>
-            </div>
-          </Link>
-        ))}
+                  <p className="text-gray-700 mt-4 text-lg leading-relaxed">
+                    {objective}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          );
+        })}
       </div>
     </Container>
   );
 }
 
-export default function CatalogPage() {
+export default function DatalogPage() {
   return (
     <main className="overflow-hidden min-h-screen relative">
       <GradientBackground />
