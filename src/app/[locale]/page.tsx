@@ -55,7 +55,7 @@ function Hero() {
                   className="gradient-text"
                   style={{
                     fontFamily: "'Barlow Condensed', sans-serif",
-                    fontSize: 'clamp(4rem, 10vw, 6rem)',
+                    fontSize: 'clamp(4rem, 10vw, 5rem)',
                     fontWeight: 500,
                     lineHeight: 1.05,
                     letterSpacing: '-0.02em',
