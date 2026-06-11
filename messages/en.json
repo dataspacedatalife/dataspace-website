@@ -19,7 +19,7 @@
     "xdatashare": "Data Space (MVD)",
     "dspacer": "FarmaciaVAX Pilot",
     "preguntas_frecuentes": "FAQ",
-    "casos_de_uso": "Current Users",
+    "casos_de_uso": "Use cases",
     "catalogo": "Catalog",
     "el_equipo": "The Team",
     "training": "Training",
@@ -352,10 +352,10 @@
       }
     }
   },
-  "use-cases": {
+   "use-cases": {
     "metadata": {
       "title": "Use Cases",
-      "description": "These are some of the use cases that benefit from data spaces to generate scientific, social and operational value"
+      "description": "Real-world examples of data space applications in different sectors: health, management, benchmarking and more"
     },
     "header": {
       "title": "Use Cases",
@@ -365,156 +365,42 @@
       "farmaciavax": {
         "name": "[DEMO] FarmaciaVAX",
         "entity": "CESGA",
-        "objective": "Vaccination management in pharmacies",
-        "data": "",
-        "contact": ""
+        "objective": "Vaccine management in pharmacies"
       },
       "aidamed": {
         "name": "AiDataMed",
-        "entity": "CESGA; clinical entities (IISGS + CHUP)",
-        "objective": "Generation of representative synthetic databases from previously anonymized and validated clinical information.",
-        "data": "Synthetic clinical data in OMOP CDM + quality/representativeness metadata",
-        "contact": ""
+        "entity": "Chup/IISGS",
+        "objective": "Health data analysis"
       },
       "brilliant": {
-        "name": "Brilliant Sarcopenia Observatory",
-        "entity": "CESGA; collaborating healthcare entities; IISGS (Biocaps)",
-        "objective": "Sarcopenia observatory using AI on lumbar MRI (public repositories) + simulated demographic variables.",
-        "data": "Lumbar MRI + simulated demographic variables; derived outputs (segmentations/indices) and metadata",
-        "contact": ""
+        "name": "Brilliant",
+        "entity": "IISGS",
+        "objective": "Sarcopenia observatory"
       },
       "gift": {
         "name": "GIFT",
-        "entity": "Medical entities (IISGS + CHUP)",
-        "objective": "Assistant for professional support (evidence-based information, references, management support)",
-        "data": "Structured medical knowledge and curated corpus; usage metrics/traces depending on deployment",
-        "contact": ""
+        "entity": "Chup/IISGS",
+        "objective": "Gastrointestinal health"
       },
       "biomexplore": {
-        "name": "BiomeXplore Microbiome Lab",
-        "entity": "Biomedical entities; CESGA",
-        "objective": "Platform for microbiome analysis with synthetic datasets and FAIR/compliance-oriented approach.",
-        "data": "Microbiome (mainly synthetic), simulated metadata and pipeline/service outputs",
-        "contact": ""
+        "name": "BiomeXplore",
+        "entity": "IISGS",
+        "objective": "Intestinal microbiota population indices observatory"
       },
       "salusbench": {
         "name": "SALUSBENCH",
         "entity": "Inverbis",
-        "objective": "Benchmarking of hospital management processes",
-        "data": "",
-        "contact": ""
+        "objective": "Benchmarking of hospital management processes"
       },
       "celiaspace": {
-        "name": "CeliaSpace Serenia",
-        "entity": "Serenia Solutions; i4Life",
-        "objective": "Dataset of conversations with the Serenia virtual assistant for elderly well-being/support (anonymized).",
-        "data": "Conversational text (app/WhatsApp) and derived metadata for training/evaluation",
-        "contact": ""
+        "name": "CeliaSpace",
+        "entity": "Uvigo",
+        "objective": "Data from conversational assistants with seniors"
       },
       "datiacare": {
         "name": "Datiacare",
-        "entity": "i4Life; social and healthcare entities",
-        "objective": "Home monitoring with sensors + AI for routines, anomalies, and alerts to professionals/family",
-        "data": "IoT/activity event data, time series, and derived alerts/annotations",
-        "contact": ""
-      },
-      "cienciasmarinas": {
-        "name": "CCMM Ocean Data & Services",
-        "entity": "IEO-CSIC (COAC); Instituto Español de Oceanografía",
-        "objective": "Integration and exploitation of multidisciplinary oceanographic data and numerical model outputs to generate end-user-oriented services in areas such as aquaculture, fisheries, and marine risk management.",
-        "data": "Fisheries data, oceanographic environmental time series, and outputs from marine ecosystem numerical models; standardized data catalogs and associated services.",
-        "contact": ""
-      },
-      "micresist": {
-        "name": "MIC-Resist",
-        "entity": "University of Pennsylvania",
-        "objective": "Use of Minimal Inhibitory Concentration (MIC) data to study/model antimicrobial resistance and support model training/validation",
-        "data": "MIC tables (CSV) and experimental metadata (strain, antibiotic, conditions)",
-        "contact": ""
-      },
-      "neuroictus": {
-        "name": "NeuroIctus-IDIS",
-        "entity": "IDIS (Galician Public Foundation for Health Research, Santiago de Compostela)",
-        "objective": "Clinical neuroimaging database (stroke) and preclinical (animal models of stroke/glioblastoma) for biomedical research and analysis.",
-        "data": "MRI/CT neuroimaging (DICOM and NIfTI formats) and associated physiological variables (when available)",
-        "contact": ""
-      },
-      "cribadovirtual": {
-        "name": "Ultra-large-scale anticancer virtual screening via consensus and AI (BIO-HPC)",
-        "entity": "UCAM (BIO-HPC); UGR; Villapharma/Eurofins",
-        "objective": "Multi-cycle virtual screening pipeline (structure/ligand + ML/LLMs) with consensus re-ranking and experimental feedback (Wee1, DDR1, hsEH).",
-        "data": "Chemical libraries (SMILES/SDF), target structures (PDB), docking results (poses/scores), ML/LLM models, ranked lists, SAR, experimental results, and campaign metadata",
-        "contact": ""
-      },
-      "offshore": {
-        "name": "Offshore Wind Footprint",
-        "entity": "CESGA",
-        "objective": "WRF simulations with turbine effects to quantify regional wind changes and feed oceanographic/biogeochemical models.",
-        "data": "WRF fields (wind/turbulence/stability), model configuration, turbine parameters, and derived outputs (production/forcing)",
-        "contact": ""
-      },
-      "canarywind": {
-        "name": "CanaryWind AI Downscaling",
-        "entity": "CESGA",
-        "objective": "AI-based meteorological downscaling to refine surface wind in complex terrain and improve wind resource estimates.",
-        "data": "Reanalysis/observations/meteorological products, orography, train/validation datasets, and outputs (high-resolution wind + metrics)",
-        "contact": ""
-      },
-      "peptmem": {
-        "name": "PeptMem-ML",
-        "entity": "USC (CiQUS, SIMBIOS); CESGA",
-        "objective": "Atomistic and coarse-grained simulations to study insertion/disruption and train ML for peptide selectivity/design.",
-        "data": "MD trajectories, structures/topologies/parameters, collective variables, PMFs, metrics, descriptors, and scripts/metadata",
-        "contact": ""
-      },
-      "medfound": {
-        "name": "MedFound-Bench",
-        "entity": "GrHeCo-Xen (IDIS)",
-        "objective": "Evaluation/benchmarking and fine-tuning of language models for medical applications with an applied focus.",
-        "data": "Fine-tuning/evaluation results and associated bioinformatics outputs (e.g., proteomics) depending on campaigns",
-        "contact": ""
-      },
-      "stardist": {
-        "name": "StarDist-HistoGPU",
-        "entity": "GrHeCo-Xen (IDIS)",
-        "objective": "Histopathological analysis pipeline (including StarDist-type segmentation) and computational optimization.",
-        "data": "Histopathology analysis outputs and pipeline metrics/results",
-        "contact": ""
-      },
-      "cdligand": {
-        "name": "CD-Ligand Free Energy",
-        "entity": "MD.USE; USC; CESGA",
-        "objective": "MD + PMF datasets to characterize affinity/stability and train predictive models.",
-        "data": "MD trajectories, PLUMED inputs, PMFs, physicochemical descriptors, metadata, and scripts",
-        "contact": ""
-      },
-      "gem": {
-        "name": "GeM-MPNST Reanalysis",
-        "entity": "USC (CiMUS); EGA",
-        "objective": "HPC download and reanalysis of WGS and RNA-seq with updated pipelines; sharing aggregated results.",
-        "data": "BAM/FASTQ and derived data (aggregated variants, CNV, expression, clinical metadata), avoiding identifiable data",
-        "contact": ""
-      },
-      "breezefill": {
-        "name": "BreezeFill AI",
-        "entity": "CIDE (CSIC-UV-GVA); CLIMATOC-LAB",
-        "objective": "AI for infilling incomplete wind time series and identifying breeze regimes.",
-        "data": "Climate time series (stations, ERA5-Land, CERRA…), trained AI models and high-resolution breeze datasets",
-        "contact": ""
-      },
-      "deepmeteo": {
-        "name": "DeepMeteo-Spain",
-        "entity": "CIDE (CSIC-UV-GVA)",
-        "objective": "Deep learning for hourly prediction and downscaling/super-resolution of meteorological variables.",
-        "data": "Multivariable NetCDF (wind, temperature, precipitation, pressure) using ERA5/AEMET/Copernicus",
-        "contact": ""
-      },
-      "wrf": {
-        "name": "WRF SeaBreeze Extreme",
-        "entity": "CLIMATOC-LAB; CIDE (CSIC-UV-GVA)",
-        "objective": "Simulation of events with WRF to study heatwaves and sea breeze.",
-        "data": "High-frequency 3D NetCDF outputs; forced by ERA5/GFS; outputs for thesis/publication",
-        "contact": ""
+        "entity": "i4life",
+        "objective": "Elderly care"
       }
     }
   },
