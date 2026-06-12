@@ -23,57 +23,61 @@ function OneHealthLanding() {
   return (
     <>
       <style>{`
-        @keyframes gradientMove {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
-        @keyframes float {
-          0% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
-          100% { transform: translateY(0px); }
-        }
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
 
-        .gradient-text {
-          background: linear-gradient(
-            135deg,
-            #3fd7c0 0%,
-            #00b7d4 35%,
-            #009ab8 65%,
-            #006b8f 100%
-          );
-          background-size: 300% 300%;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          animation: gradientMove 10s ease infinite;
-        }
+    50% {
+      transform: translateY(-10px);
+    }
 
-        .float-1 { animation: float 5s ease-in-out infinite; }
-        .float-2 { animation: float 6s ease-in-out infinite; }
-        .float-3 { animation: float 7s ease-in-out infinite; }
-      `}</style>
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .gradient-text {
+    background: linear-gradient(
+      135deg,
+      #3fd7c0 0%,
+      #00b7d4 35%,
+      #009ab8 65%,
+      #006b8f 100%
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 10s ease infinite;
+  }
+`}</style>
 
       <main className="min-h-screen bg-gradient-to-br from-slate-50 via-cyan-50 to-teal-50">
-        <section className="max-w-7xl mx-auto px-6 py-20 lg:py-32">
+        <section className="max-w-7xl mx-auto px-6 min-h-[calc(100vh-95px)] flex items-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h1
-                className="gradient-text"
-                style={{
-                  fontFamily: "'Barlow Condensed', sans-serif",
-                  fontSize: 'clamp(4rem, 10vw, 8rem)',
-                  fontWeight: 500,
-                  lineHeight: 1.05,
-                  letterSpacing: '-0.02em',
-                  overflow: 'visible',
-                  paddingBottom: '0.1em',
-                }}
-              >
-                OneHealth
-                <br />
-                DataSpace
-              </h1>
+  className="hidden sm:block gradient-text"
+  style={{
+    fontFamily: "'Barlow Condensed', sans-serif",
+    fontSize: 'clamp(4rem, 10vw, 6rem)',
+    fontWeight: 500,
+    lineHeight: 1.05,
+    letterSpacing: '-0.02em',
+    overflow: 'visible',
+    paddingBottom: '0.1em',
+  }}
+>
+  OneHealth
+  <br />
+  DataSpace
+</h1>
 
               <p className="mt-8 text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
                 Facilitamos a las entidades participantes compartir,
@@ -100,18 +104,28 @@ function OneHealthLanding() {
             </div>
 
             <div className="flex justify-center">
-              <div className="relative w-[320px] h-[320px] md:w-[450px] md:h-[450px]">
-                <div className="absolute left-1/2 top-0 -translate-x-1/2 w-28 h-28 md:w-44 md:h-44 rounded-full bg-gradient-to-br from-[#3fd7c0] to-[#00B7D4] flex items-center justify-center text-white text-4xl md:text-6xl shadow-xl float-1" />
-                <div className="absolute left-0 bottom-8 w-28 h-28 md:w-44 md:h-44 rounded-full bg-gradient-to-br from-[#009AB8] to-[#006B8F] flex items-center justify-center text-white text-4xl md:text-6xl shadow-xl float-2" />
-                <div className="absolute right-0 bottom-8 w-28 h-28 md:w-44 md:h-44 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center text-white text-4xl md:text-6xl shadow-xl float-3" />
+  <div
+    className="relative w-full max-w-[650px] flex items-center justify-center"
+    style={{
+      minHeight: '420px',
+    }}
+  >
+    <div
+      className="absolute inset-0 blur-3xl opacity-30"
+      style={{
+        background:
+          'radial-gradient(circle at center, #00B7D4 0%, transparent 70%)',
+      }}
+    />
 
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 md:w-36 md:h-36 rounded-full bg-white shadow-2xl flex items-center justify-center">
-                  <span className="text-[#009AB8] font-bold text-center text-sm md:text-xl">
-                    ONE<br />HEALTH
-                  </span>
-                </div>
-              </div>
-            </div>
+    <img
+      src="/demostrador/grafica-web-home-600px.png"
+      alt="OneHealth DataSpace"
+      className="relative z-10 w-full max-w-[450px] h-auto object-contain"
+     
+    />
+  </div>
+</div>
           </div>
         </section>
 
