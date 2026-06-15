@@ -352,7 +352,7 @@
       }
     }
   },
-   "use-cases": {
+  "use-cases": {
     "metadata": {
       "title": "Use Cases",
       "description": "Real-world examples of data space applications in different sectors: health, management, benchmarking and more"
@@ -1478,27 +1478,292 @@
         }
       },
       "celiaspace": {
-        "name": "Conversations with the Serenia assistant for older adults",
+        "name": "Conversations with the Serenia Assistant for Older Adults",
         "dataset_name": "serenia_senior_conversations",
         "use_case": "CeliaSpace",
-        "provider": "Universidad de Vigo",
-        "description": "Conversations containing interactions between older users and the Serenia assistant aimed at companionship, entertainment, and care for this group.",
-        "volumen": "10 users, 1,000 interactions per user",
-        "n_ficheros": "2",
+        "provider": "University of Vigo",
+        "description": "Dataset containing conversations and interactions between older adults and the Serenia assistant, focused on companionship, entertainment, and care for this population.",
+        "volumen": "67 users, 21,608 interactions and 2,526 assessments",
+        "n_ficheros": "3",
         "subsets": {
-          "serenia": {
-            "name": "Conversations",
-            "description": "Conversations between older users and the Serenia assistant.",
+          "users": {
+            "name": "User Information",
+            "description": "This file contains information about 67 users.",
             "metadata": {
               "data_type": "Empirical",
-              "data_standard": "HL7 FHIR",
+              "data_standard": "",
               "date_added": "",
               "file_format": "CSV",
-              "license": "Proprietary (restricted by contract)",
+              "license": "Proprietary (restricted under contract)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
-            "variables": []
+            "variables": [
+              {
+                "name": "user_id",
+                "units": "-",
+                "data_description": "Anonymized user identifier.",
+                "data_type": "number"
+              },
+              {
+                "name": "birth_year",
+                "units": "Year",
+                "data_description": "User year of birth.",
+                "data_type": "number"
+              },
+              {
+                "name": "gender",
+                "units": "-",
+                "data_description": "User gender.",
+                "data_type": "string"
+              },
+              {
+                "name": "country",
+                "units": "-",
+                "data_description": "User country code.",
+                "data_type": "string"
+              },
+              {
+                "name": "language",
+                "units": "-",
+                "data_description": "System language configured for the user.",
+                "data_type": "string"
+              },
+              {
+                "name": "location",
+                "units": "-",
+                "data_description": "Anonymized user location.",
+                "data_type": "string"
+              },
+              {
+                "name": "zipcode",
+                "units": "-",
+                "data_description": "Anonymized user postal code.",
+                "data_type": "string"
+              },
+              {
+                "name": "education_level",
+                "units": "-",
+                "data_description": "Highest education level attained by the user.",
+                "data_type": "string"
+              },
+              {
+                "name": "tech_familiarity",
+                "units": "-",
+                "data_description": "User familiarity with technology.",
+                "data_type": "string"
+              },
+              {
+                "name": "cognitive_impairment",
+                "units": "-",
+                "data_description": "Level of cognitive impairment.",
+                "data_type": "string"
+              },
+              {
+                "name": "hearing_impairment",
+                "units": "-",
+                "data_description": "Level of hearing impairment.",
+                "data_type": "string"
+              },
+              {
+                "name": "movement_impairment",
+                "units": "-",
+                "data_description": "Level of movement impairment.",
+                "data_type": "string"
+              },
+              {
+                "name": "visual_impairment",
+                "units": "-",
+                "data_description": "Level of visual impairment.",
+                "data_type": "string"
+              },
+              {
+                "name": "medication_intake",
+                "units": "-",
+                "data_description": "Frequency of continuous medication intake.",
+                "data_type": "string"
+              },
+              {
+                "name": "care_dependent",
+                "units": "-",
+                "data_description": "Indicates whether the user is care dependent.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "has_children",
+                "units": "-",
+                "data_description": "Indicates whether the user has children.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "has_grandchildren",
+                "units": "-",
+                "data_description": "Indicates whether the user has grandchildren.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "has_siblings",
+                "units": "-",
+                "data_description": "Indicates whether the user has siblings.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "marital_status",
+                "units": "-",
+                "data_description": "User marital status.",
+                "data_type": "string"
+              },
+              {
+                "name": "job",
+                "units": "-",
+                "data_description": "Main profession or occupation.",
+                "data_type": "string"
+              },
+              {
+                "name": "years_active",
+                "units": "Years",
+                "data_description": "Years of work activity.",
+                "data_type": "number"
+              }
+            ]
+          },
+          "interactions": {
+            "name": "Serenia Interactions",
+            "description": "This file contains information about 21,608 interactions from conversations of 67 users with an AI assistant (linked by user_id).",
+            "metadata": {
+              "data_type": "Empirical",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV",
+              "license": "Proprietary (restricted under contract)",
+              "temporal_resolution": "Interaction",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "user_id",
+                "units": "-",
+                "data_description": "Anonymized user identifier.",
+                "data_type": "number"
+              },
+              {
+                "name": "session_uuid",
+                "units": "-",
+                "data_description": "Unique session identifier.",
+                "data_type": "string"
+              },
+              {
+                "name": "session_start",
+                "units": "Timestamp",
+                "data_description": "Session start timestamp.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "session_end",
+                "units": "Timestamp",
+                "data_description": "Session end timestamp.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "interaction_timestamp",
+                "units": "Date and time",
+                "data_description": "Timestamp when the interaction was recorded.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "category",
+                "units": "-",
+                "data_description": "Response category used to generate the interaction.",
+                "data_type": "string"
+              },
+              {
+                "name": "intent",
+                "units": "-",
+                "data_description": "Detected interaction intent.",
+                "data_type": "string"
+              },
+              {
+                "name": "input_mode",
+                "units": "-",
+                "data_description": "Input mode used by the user.",
+                "data_type": "string"
+              },
+              {
+                "name": "input_text",
+                "units": "-",
+                "data_description": "User-entered or transcribed text.",
+                "data_type": "string"
+              },
+              {
+                "name": "output_mode",
+                "units": "-",
+                "data_description": "Output mode used by Serenia.",
+                "data_type": "string"
+              },
+              {
+                "name": "messages",
+                "units": "-",
+                "data_description": "Messages generated by Serenia during the interaction.",
+                "data_type": "string"
+              }
+            ]
+          },
+          "assessments": {
+            "name": "Cognitive and Performance Assessments",
+            "description": "This file contains information about 2,526 assessments from the 67 users throughout the 21,608 interactions. They can be related by user_id, session_uuid and interaction_timestamp.",
+            "metadata": {
+              "data_type": "Empirical",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV",
+              "license": "Proprietary (restricted under contract)",
+              "temporal_resolution": "Event",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "user_id",
+                "units": "-",
+                "data_description": "Anonymized user identifier.",
+                "data_type": "number"
+              },
+              {
+                "name": "session_uuid",
+                "units": "-",
+                "data_description": "Unique session identifier.",
+                "data_type": "string"
+              },
+              {
+                "name": "session_start",
+                "units": "Timestamp",
+                "data_description": "Session start timestamp.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "interaction_timestamp",
+                "units": "Date and time",
+                "data_description": "Timestamp of the interaction associated with the assessment.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "category",
+                "units": "-",
+                "data_description": "Type of assessment performed (cognitive or performance).",
+                "data_type": "string"
+              },
+              {
+                "name": "domain",
+                "units": "-",
+                "data_description": "Cognitive or functional domain assessed.",
+                "data_type": "string"
+              },
+              {
+                "name": "assessment",
+                "units": "-",
+                "data_description": "Assessment result or score.",
+                "data_type": "number"
+              }
+            ]
           }
         }
       },

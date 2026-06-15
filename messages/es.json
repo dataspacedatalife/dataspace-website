@@ -837,7 +837,6 @@
           "📍 Salón de actos del CHUS (Hospital Clínico Universitario de Santiago de Compostela).",
           "📅 17 de junio de 2026",
           "🕤 09:30h – 13:00h"
-
         ],
         "extra": "Invitación e inscripción"
       },
@@ -885,54 +884,54 @@
         "extra": "Acceso e inscripción"
       },
       "formacionGestionCoordinacionComunicacion": {
-  "header": "Gestión, Coordinación y Comunicación",
-  "excerpt": "Sesión para comprender el papel de la gestión, la coordinación y la comunicación dentro de OneHealth DataSpace y su importancia para garantizar la colaboración, la gobernanza y el uso eficiente de los datos en el ecosistema One Health.",
-  "description": [
-    "Objetivo de la sesión:",
-    "Comprender el papel de la gestión, la coordinación y la comunicación dentro de OneHealth DataSpace.",
-    "OneHealth DataSpace es una plataforma integrada para el ciclo de vida completo del dato One Health: compartir, almacenar, procesar, analizar y entregar resultados.",
-    "A diferencia de un espacio de datos convencional, integra capacidades avanzadas del CESGA en HPC, Big Data, Cloud, IA, GPU y computación cuántica para transformar datos existentes en soluciones reales.",
-    "¿Para qué?",
-    "▸ Desarrollar una comprensión común sobre la gestión, coordinación y comunicación externa dentro del ecosistema OneHealth DataSpace.",
-    "▸ Promover la alineación entre equipos técnicos y funcionales.",
-    "▸ Mejorar la eficiencia en la ejecución de proyectos y el uso de los datos.",
-    "¿Cuáles son los principios básicos de la gestión, coordinación y comunicación en el ámbito del OneHealth DataSpace?",
-    "▸ Se basan en una gobernanza clara.",
-    "▸ Promueven la interoperabilidad de los datos.",
-    "▸ Garantizan el cumplimiento de los requisitos de seguridad y privacidad.",
-    "▸ Favorecen la coordinación entre los ámbitos de salud humana, salud animal y medio ambiente.",
-    "▸ Impulsan una comunicación clara y continua entre los distintos actores.",
-    "¿Para qué sirve y por qué es necesaria?",
-    "▸ La coordinación asegura coherencia en los objetivos y procesos.",
-    "▸ La gestión permite organizar y gobernar el intercambio seguro y eficiente de datos.",
-    "▸ La comunicación facilita la colaboración continua y la toma de decisiones informadas.",
-    "▸ Resulta clave para detectar riesgos, responder a amenazas sanitarias y generar conocimiento compartido.",
-    "¿Qué se abordará en la sesión?",
-    "▸ Principios básicos de gestión, coordinación y comunicación en entornos de datos.",
-    "▸ Roles y responsabilidades dentro del modelo de gobernanza del ecosistema.",
-    "▸ La comunicación como servicio transversal del proyecto.",
-    "▸ Estrategias y operativas de comunicación.",
-    "▸ El relato, la visibilidad y la captación de clientes.",
-    "¿Cómo y cuándo se aplica?",
-    "▸ De forma continua durante todo el ciclo de vida de OneHealth DataSpace.",
-    "▸ Desde su diseño hasta su evolución.",
-    "▸ Garantizando una alineación constante entre los distintos actores.",
-    "¿Quién debe cursarlo?",
-    "▸ Cualquier usuario o usuaria que interactúe en los espacios de datos o con las herramientas del ecosistema OneHealth.",
-    "▸ Personas interesadas en conocer esta solución.",
-    "📅 Fecha: 12 de junio de 2026",
-    "🕚 Hora: 11:00",
-    "📍 Modalidad: Online",
-    "🎓 Instructoras:",
-    "▸ Helena Fernández, Directora de la PMO del proyecto OneHealth DataSpace.",
-    "▸ Laura Losada, Coordinadora de Promoción y Formación del proyecto OneHealth DataSpace.",
-    "📺 El vídeo de la sesión estará disponible posteriormente en el canal de YouTube del CESGA (@CesgaTV).",
-    "🔗 Próximos cursos: https://dataspace.cesga.es/es/events",
-    "⚠️ La inscripción es obligatoria para conectarse a la sesión y recibir el certificado de participación.",
-    "⚠️ Se recomienda utilizar Mozilla Firefox."
-  ],
-  "extra": "Acceso e inscripción"
-}
+        "header": "Gestión, Coordinación y Comunicación",
+        "excerpt": "Sesión para comprender el papel de la gestión, la coordinación y la comunicación dentro de OneHealth DataSpace y su importancia para garantizar la colaboración, la gobernanza y el uso eficiente de los datos en el ecosistema One Health.",
+        "description": [
+          "Objetivo de la sesión:",
+          "Comprender el papel de la gestión, la coordinación y la comunicación dentro de OneHealth DataSpace.",
+          "OneHealth DataSpace es una plataforma integrada para el ciclo de vida completo del dato One Health: compartir, almacenar, procesar, analizar y entregar resultados.",
+          "A diferencia de un espacio de datos convencional, integra capacidades avanzadas del CESGA en HPC, Big Data, Cloud, IA, GPU y computación cuántica para transformar datos existentes en soluciones reales.",
+          "¿Para qué?",
+          "▸ Desarrollar una comprensión común sobre la gestión, coordinación y comunicación externa dentro del ecosistema OneHealth DataSpace.",
+          "▸ Promover la alineación entre equipos técnicos y funcionales.",
+          "▸ Mejorar la eficiencia en la ejecución de proyectos y el uso de los datos.",
+          "¿Cuáles son los principios básicos de la gestión, coordinación y comunicación en el ámbito del OneHealth DataSpace?",
+          "▸ Se basan en una gobernanza clara.",
+          "▸ Promueven la interoperabilidad de los datos.",
+          "▸ Garantizan el cumplimiento de los requisitos de seguridad y privacidad.",
+          "▸ Favorecen la coordinación entre los ámbitos de salud humana, salud animal y medio ambiente.",
+          "▸ Impulsan una comunicación clara y continua entre los distintos actores.",
+          "¿Para qué sirve y por qué es necesaria?",
+          "▸ La coordinación asegura coherencia en los objetivos y procesos.",
+          "▸ La gestión permite organizar y gobernar el intercambio seguro y eficiente de datos.",
+          "▸ La comunicación facilita la colaboración continua y la toma de decisiones informadas.",
+          "▸ Resulta clave para detectar riesgos, responder a amenazas sanitarias y generar conocimiento compartido.",
+          "¿Qué se abordará en la sesión?",
+          "▸ Principios básicos de gestión, coordinación y comunicación en entornos de datos.",
+          "▸ Roles y responsabilidades dentro del modelo de gobernanza del ecosistema.",
+          "▸ La comunicación como servicio transversal del proyecto.",
+          "▸ Estrategias y operativas de comunicación.",
+          "▸ El relato, la visibilidad y la captación de clientes.",
+          "¿Cómo y cuándo se aplica?",
+          "▸ De forma continua durante todo el ciclo de vida de OneHealth DataSpace.",
+          "▸ Desde su diseño hasta su evolución.",
+          "▸ Garantizando una alineación constante entre los distintos actores.",
+          "¿Quién debe cursarlo?",
+          "▸ Cualquier usuario o usuaria que interactúe en los espacios de datos o con las herramientas del ecosistema OneHealth.",
+          "▸ Personas interesadas en conocer esta solución.",
+          "📅 Fecha: 12 de junio de 2026",
+          "🕚 Hora: 11:00",
+          "📍 Modalidad: Online",
+          "🎓 Instructoras:",
+          "▸ Helena Fernández, Directora de la PMO del proyecto OneHealth DataSpace.",
+          "▸ Laura Losada, Coordinadora de Promoción y Formación del proyecto OneHealth DataSpace.",
+          "📺 El vídeo de la sesión estará disponible posteriormente en el canal de YouTube del CESGA (@CesgaTV).",
+          "🔗 Próximos cursos: https://dataspace.cesga.es/es/events",
+          "⚠️ La inscripción es obligatoria para conectarse a la sesión y recibir el certificado de participación.",
+          "⚠️ Se recomienda utilizar Mozilla Firefox."
+        ],
+        "extra": "Acceso e inscripción"
+      }
     }
   },
   "catalog": {
@@ -1504,27 +1503,292 @@
         }
       },
       "celiaspace": {
-        "name": "Datos de conversaciones con el asistente de personas mayores Serenia",
+        "name": "Datos de conversaciones con el asistente para personas mayores Serenia",
         "dataset_name": "serenia_senior_conversations",
         "use_case": "CeliaSpace",
         "provider": "Universidad de Vigo",
-        "description": "Conversaciones que contienen interacciones entre usuarios mayores y la asistente Serenia orientada al acompañamiento, entretenimiento y cuidado de este colectivo.",
-        "volumen": "10 usuarios, 1.000 interacciones cada usuario",
-        "n_ficheros": "2",
+        "description": "Conjunto de datos que contiene conversaciones e interacciones entre personas mayores y el asistente Serenia, orientado al acompañamiento, entretenimiento y cuidado de este colectivo.",
+        "volumen": "67 usuarios, 21.608 interacciones y 2.526 evaluaciones",
+        "n_ficheros": "3",
         "subsets": {
-          "serenia": {
-            "name": "Conversaciones",
-            "description": "Conversaciones entre usuarios mayores y la asistente Serenia.",
+          "users": {
+            "name": "Información de usuarios",
+            "description": "Este fichero contiene información sobre 67 usuarios.",
             "metadata": {
               "data_type": "Empírico",
-              "data_standard": "HL7 FHIR",
+              "data_standard": "",
               "date_added": "",
               "file_format": "CSV",
               "license": "Propietaria (restringida bajo contrato)",
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
-            "variables": []
+            "variables": [
+              {
+                "name": "user_id",
+                "units": "-",
+                "data_description": "Identificador anonimizado del usuario.",
+                "data_type": "number"
+              },
+              {
+                "name": "birth_year",
+                "units": "Año",
+                "data_description": "Año de nacimiento del usuario.",
+                "data_type": "number"
+              },
+              {
+                "name": "gender",
+                "units": "-",
+                "data_description": "Género del usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "country",
+                "units": "-",
+                "data_description": "Código de país del usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "language",
+                "units": "-",
+                "data_description": "Idioma configurado en el sistema.",
+                "data_type": "string"
+              },
+              {
+                "name": "location",
+                "units": "-",
+                "data_description": "Ubicación anonimizada del usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "zipcode",
+                "units": "-",
+                "data_description": "Código postal anonimizado del usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "education_level",
+                "units": "-",
+                "data_description": "Nivel educativo máximo alcanzado.",
+                "data_type": "string"
+              },
+              {
+                "name": "tech_familiarity",
+                "units": "-",
+                "data_description": "Nivel de familiaridad con la tecnología.",
+                "data_type": "string"
+              },
+              {
+                "name": "cognitive_impairment",
+                "units": "-",
+                "data_description": "Nivel de deterioro cognitivo.",
+                "data_type": "string"
+              },
+              {
+                "name": "hearing_impairment",
+                "units": "-",
+                "data_description": "Nivel de discapacidad auditiva.",
+                "data_type": "string"
+              },
+              {
+                "name": "movement_impairment",
+                "units": "-",
+                "data_description": "Nivel de discapacidad motora.",
+                "data_type": "string"
+              },
+              {
+                "name": "visual_impairment",
+                "units": "-",
+                "data_description": "Nivel de discapacidad visual.",
+                "data_type": "string"
+              },
+              {
+                "name": "medication_intake",
+                "units": "-",
+                "data_description": "Frecuencia de consumo continuado de medicación.",
+                "data_type": "string"
+              },
+              {
+                "name": "care_dependent",
+                "units": "-",
+                "data_description": "Indica si el usuario es dependiente de cuidados.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "has_children",
+                "units": "-",
+                "data_description": "Indica si el usuario tiene hijos.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "has_grandchildren",
+                "units": "-",
+                "data_description": "Indica si el usuario tiene nietos.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "has_siblings",
+                "units": "-",
+                "data_description": "Indica si el usuario tiene hermanos.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "marital_status",
+                "units": "-",
+                "data_description": "Estado civil del usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "job",
+                "units": "-",
+                "data_description": "Profesión o actividad laboral principal.",
+                "data_type": "string"
+              },
+              {
+                "name": "years_active",
+                "units": "Años",
+                "data_description": "Años de actividad laboral.",
+                "data_type": "number"
+              }
+            ]
+          },
+          "interactions": {
+            "name": "Interacciones con Serenia",
+            "description": "Este fichero contiene información sobre 21.608 interacciones procedentes de conversaciones de 67 usuarios con un asistente de IA (relacionadas mediante user_id).",
+            "metadata": {
+              "data_type": "Empírico",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV",
+              "license": "Propietaria (restringida bajo contrato)",
+              "temporal_resolution": "Interacción",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "user_id",
+                "units": "-",
+                "data_description": "Identificador anonimizado del usuario.",
+                "data_type": "number"
+              },
+              {
+                "name": "session_uuid",
+                "units": "-",
+                "data_description": "Identificador único de la sesión.",
+                "data_type": "string"
+              },
+              {
+                "name": "session_start",
+                "units": "Timestamp",
+                "data_description": "Instante de inicio de la sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "session_end",
+                "units": "Timestamp",
+                "data_description": "Instante de finalización de la sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "interaction_timestamp",
+                "units": "Fecha y hora",
+                "data_description": "Momento en que se registró la interacción.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "category",
+                "units": "-",
+                "data_description": "Categoría de respuesta utilizada para generar la interacción.",
+                "data_type": "string"
+              },
+              {
+                "name": "intent",
+                "units": "-",
+                "data_description": "Intención detectada en la interacción.",
+                "data_type": "string"
+              },
+              {
+                "name": "input_mode",
+                "units": "-",
+                "data_description": "Modo de entrada utilizado por el usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "input_text",
+                "units": "-",
+                "data_description": "Texto introducido o transcrito por el usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "output_mode",
+                "units": "-",
+                "data_description": "Modo de salida utilizado por Serenia.",
+                "data_type": "string"
+              },
+              {
+                "name": "messages",
+                "units": "-",
+                "data_description": "Mensajes generados por Serenia durante la interacción.",
+                "data_type": "string"
+              }
+            ]
+          },
+          "assessments": {
+            "name": "Evaluaciones cognitivas y de rendimiento",
+            "description": "Este fichero contiene información sobre 2.526 evaluaciones realizadas por los 67 usuarios a lo largo de las 21.608 interacciones. Pueden relacionarse mediante user_id, session_uuid e interaction_timestamp.",
+            "metadata": {
+              "data_type": "Empírico",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV",
+              "license": "Propietaria (restringida bajo contrato)",
+              "temporal_resolution": "Evento",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "user_id",
+                "units": "-",
+                "data_description": "Identificador anonimizado del usuario.",
+                "data_type": "number"
+              },
+              {
+                "name": "session_uuid",
+                "units": "-",
+                "data_description": "Identificador único de la sesión.",
+                "data_type": "string"
+              },
+              {
+                "name": "session_start",
+                "units": "Timestamp",
+                "data_description": "Instante de inicio de la sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "interaction_timestamp",
+                "units": "Fecha y hora",
+                "data_description": "Momento de la interacción asociada a la evaluación.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "category",
+                "units": "-",
+                "data_description": "Tipo de evaluación realizada (cognitiva o de rendimiento).",
+                "data_type": "string"
+              },
+              {
+                "name": "domain",
+                "units": "-",
+                "data_description": "Dominio cognitivo o funcional evaluado.",
+                "data_type": "string"
+              },
+              {
+                "name": "assessment",
+                "units": "-",
+                "data_description": "Resultado o puntuación obtenida en la evaluación.",
+                "data_type": "number"
+              }
+            ]
           }
         }
       },
