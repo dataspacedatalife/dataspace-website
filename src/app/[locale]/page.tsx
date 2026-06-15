@@ -77,14 +77,14 @@ function OneHealthLanding() {
 
               <div className="flex flex-wrap gap-4 mt-10">
                 <a
-                  href="#"
+                  href="https://dashboard.dataspace.cesga.es/"
                   className="px-8 py-4 rounded-lg text-white font-semibold bg-[#009AB8] shadow-lg hover:scale-105 transition"
                 >
                   Qué ofrecemos
                 </a>
 
                 <a
-                  href="#"
+                  href="/about"
                   className="px-8 py-4 rounded-md border border-[#009AB8] text-[#009AB8] bg-white hover:bg-slate-50 transition"
                 >
                   Saber más
