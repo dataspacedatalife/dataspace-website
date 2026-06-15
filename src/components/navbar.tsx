@@ -74,10 +74,18 @@ function LanguageSelector() {
           <Link
             key={code}
             href="#"
+<<<<<<< HEAD
             className={`${languageItemClass} ${currentLocale === code
                 ? 'font-semibold bg-[#005467]/10 text-[#005467]'
                 : ''
               }`}
+=======
+            className={`${languageItemClass} ${
+              currentLocale === code
+                ? 'font-semibold bg-[#005467]/10 text-[#005467]'
+                : ''
+            }`}
+>>>>>>> 2dbe207 (navbar styles improved)
             onClick={(e) => {
               e.preventDefault();
               switchLanguage(code);
@@ -150,6 +158,14 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     { href: '/team', label: t('el_equipo') },
   ];
 
+<<<<<<< HEAD
+=======
+  const joinLinks = [
+    { href: '/how', label: t('adhesion') },
+    { href: '/kitEdD', label: t('kit') },
+  ];
+
+>>>>>>> 2dbe207 (navbar styles improved)
   const latestLinks = [
     { href: '/events', label: t('eventos') },
     { href: '/blog', label: t('blog') },
@@ -196,10 +212,16 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
         <div className="relative group flex">
           <Link href="/how" className={navItemClass}>
             {t('participa')}
-          
+            <ChevronUp className="ml-0.5 h-4 w-4 rotate-180 transition-transform duration-300 group-hover:rotate-0" />
           </Link>
 
-
+          <div className={dropdownClass}>
+            {joinLinks.map(({ href, label }) => (
+              <Link key={href} href={href} className={dropdownItemClass}>
+                {label}
+              </Link>
+            ))}
+          </div>
         </div>
 
         <div className="relative group flex">
@@ -242,105 +264,17 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     );
   }
 
- function MobileNav() {
-  return (
-    <Disclosure.Panel className="lg:hidden">
-      <div className="mx-4 mt-4 rounded-2xl bg-white/90 backdrop-blur-xl shadow-lg border border-gray-200/60 p-5">
-        <motion.div className="flex flex-col gap-6">
-          <div className="flex flex-col gap-2">
-            <Link
-              href="/about"
-              className="text-base font-semibold text-gray-900 hover:text-[#005467]"
-            >
-              {t('centro_demostrador')}
-            </Link>
-
-            <div className="ml-4 flex flex-col gap-2">
-              {aboutLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-sm text-gray-700 hover:text-[#005467]"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <Link
-            href="/catalog"
-            className="text-base font-semibold text-gray-900 hover:text-[#005467]"
-          >
-            {t('catalogo')}
-          </Link>
-
-          <div className="flex flex-col gap-2">
-            <Link
-              href="/dataspace"
-              className="text-base font-semibold text-gray-900 hover:text-[#005467]"
-            >
-              {t('tecnologias')}
-            </Link>
-
-            <div className="ml-4 flex flex-col gap-2">
-              {techLinks.map(({ href, label, external }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  target={external ? '_blank' : undefined}
-                  className="text-sm text-gray-700 hover:text-[#005467]"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <Link
-            href="/how"
-            className="text-base font-semibold text-gray-900 hover:text-[#005467]"
-          >
-            {t('participa')}
-          </Link>
-
-          <div className="flex flex-col gap-2">
-            <Link
-              href="/how"
-              className="text-base font-semibold text-gray-900 hover:text-[#005467]"
-            >
-              {t('latest')}
-            </Link>
-
-            <div className="ml-4 flex flex-col gap-2">
-              {latestLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-sm text-gray-700 hover:text-[#005467]"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {links.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              className="text-base font-semibold text-gray-900 hover:text-[#005467]"
-            >
-              {label}
-            </Link>
-          ))}
-
-          <MobileLanguageSelector />
-        </motion.div>
-      </div>
-    </Disclosure.Panel>
-  );
-}
+  function MobileNav() {
+    return (
+      <Disclosure.Panel className="lg:hidden">
+        <div className="mx-4 mt-4 rounded-2xl bg-white/90 backdrop-blur-xl shadow-lg border border-gray-200/60 p-5">
+          <motion.div className="flex flex-col gap-6">
+            <MobileLanguageSelector />
+          </motion.div>
+        </div>
+      </Disclosure.Panel>
+    );
+  }
 
   return (
     <Disclosure as="header" className="sticky top-0 z-50 pt-4 sm:pt-6">
