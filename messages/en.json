@@ -906,6 +906,46 @@
           "⚠️ The use of Mozilla Firefox is recommended."
         ],
         "extra": "Access and registration"
+      },
+      "formacionInteroperabilidadSemantica": {
+        "header": "Semantic Interoperability in the OneHealth Data Space",
+        "excerpt": "Session to gain an in-depth understanding of the role of semantic interoperability within OneHealth DataSpace and its importance in ensuring a shared understanding of data across the One Health ecosystem.",
+        "description": [
+          "Session objective:",
+          "To understand in detail the role of semantic interoperability within OneHealth DataSpace.",
+          "OneHealth DataSpace is an integrated platform covering the entire One Health data lifecycle: sharing, storing, processing, analyzing, and delivering results.",
+          "Unlike a conventional data space, it integrates CESGA's advanced capabilities in HPC, Big Data, Cloud, AI, GPU, and Quantum Computing to transform existing data into real-world solutions.",
+          "What is it for?",
+          "▸ To equip participants with the key concepts and tools required to establish a common language within the project.",
+          "▸ To understand how to standardize information so that human, animal, and environmental health data can be integrated, shared, and processed consistently.",
+          "▸ To promote a shared understanding among the different profiles involved in the ecosystem.",
+          "What is semantic interoperability?",
+          "▸ It is the ability of two or more systems to exchange information while ensuring that the exact meaning of the data remains intact and is understood by all parties without ambiguity.",
+          "▸ While technical interoperability enables data to move from one system to another, semantic interoperability ensures that the recipient understands the context of that data exactly as intended by the sender.",
+          "What is it for and why is it necessary?",
+          "▸ It serves as an introduction to the mechanisms implemented in OneHealth DataSpace to provide semantic information about the resources shared within the data space.",
+          "What will be covered in the session?",
+          "▸ Core concepts: Introduction to controlled vocabularies and ontologies.",
+          "▸ Practical application: How these elements are integrated and related to data space architectures.",
+          "▸ Implementation: Definition and use of OneHealth DataSpace-specific data models.",
+          "How and when is it applied?",
+          "▸ The knowledge acquired has direct and continuous application.",
+          "▸ It represents the standard to be followed during data publication (provision) and consumption processes.",
+          "▸ It helps ensure that any resource integrated into the ecosystem complies with the project's semantic requirements.",
+          "Who should attend?",
+          "▸ Any user who interacts with data spaces or the tools within the OneHealth ecosystem.",
+          "▸ Anyone interested in learning about this solution.",
+          "📅 Date: June 19, 2026",
+          "🕚 Time: 11:00",
+          "📍 Format: Online",
+          "🎓 Instructor:",
+          "▸ Diego Reiriz Cores",
+          "📺 The session recording will be available afterwards on the CESGA YouTube channel (@CesgaTV).",
+          "🔗 Upcoming courses: https://dataspace.cesga.es/en/events",
+          "⚠️ Registration is mandatory to join the session and receive the certificate of participation.",
+          "⚠️ Mozilla Firefox is recommended."
+        ],
+        "extra": "Access and registration"
       }
     }
   },

@@ -931,7 +931,48 @@
           "⚠️ Se recomienda utilizar Mozilla Firefox."
         ],
         "extra": "Acceso e inscripción"
-      }
+      },"formacionInteroperabilidadSemantica": {
+"header": "Interoperabilidad Semántica en el espacio de datos OneHealth",
+"excerpt": "Sesión para comprender en detalle el papel de la interoperabilidad semántica dentro de OneHealth DataSpace y su importancia para garantizar un significado común de los datos en todo el ecosistema One Health.",
+"description": [
+"Objetivo de la sesión:",
+"Entender en detalle el papel de la interoperabilidad semántica dentro de OneHealth DataSpace.",
+"OneHealth DataSpace es una plataforma integrada para todo el ciclo de vida del dato One Health: compartir, almacenar, procesar, analizar y entregar resultados.",
+"A diferencia de un espacio de datos convencional, integra capacidades avanzadas del CESGA en HPC, Big Data, Cloud, IA, GPU y computación cuántica para transformar datos existentes en soluciones reales.",
+"¿Para qué sirve?",
+"▸ Capacitar al equipo en los conceptos y herramientas clave que permiten establecer un lenguaje común dentro del proyecto.",
+"▸ Comprender cómo estandarizar la información para que los datos de salud humana, animal y medioambiental puedan integrarse, compartirse y procesarse de forma coherente.",
+"▸ Favorecer una comprensión común entre los distintos perfiles implicados en el ecosistema.",
+"¿Qué es la interoperabilidad semántica?",
+"▸ Es la capacidad de dos o más sistemas para intercambiar información asegurando que el significado exacto de los datos se mantenga intacto y sea comprendido por todos sin ambigüedades.",
+"▸ Mientras que la interoperabilidad técnica permite que el dato viaje de un sistema a otro, la interoperabilidad semántica garantiza que el receptor entienda el contexto de ese dato exactamente igual que el emisor.",
+"¿Para qué sirve y por qué es necesaria?",
+"▸ Sirve como introducción a los mecanismos implantados en OneHealth DataSpace para proporcionar información semántica sobre los recursos compartidos en el espacio de datos.",
+"¿Qué se abordará en la sesión?",
+"▸ Conceptos base: introducción a qué son los vocabularios controlados y las ontologías.",
+"▸ Aplicación práctica: cómo se integran y relacionan estos elementos con la arquitectura de los espacios de datos.",
+"▸ Implementación: definición y uso de los modelos de datos específicos de OneHealth DataSpace.",
+"¿Cómo y cuándo se aplica?",
+"▸ Los conocimientos adquiridos tienen aplicación directa y continua.",
+"▸ Constituyen el estándar a seguir durante los procesos de publicación (provisión) y consumo de datos.",
+"▸ Permiten asegurar que cualquier recurso integrado en el ecosistema cumpla con los requisitos semánticos del proyecto.",
+"¿Quién debería realizarlo?",
+"▸ Cualquier usuario o usuaria que interactúe en los espacios de datos o con las herramientas del ecosistema OneHealth.",
+"▸ Personas interesadas en conocer esta solución.",
+"📅 Fecha: 19 de junio de 2026",
+"🕚 Hora: 11:00",
+"📍 Modalidad: Online",
+"🎓 Instructor:",
+"▸ Diego Reiriz Cores",
+"📺 El vídeo de la sesión estará disponible posteriormente en el canal de YouTube del CESGA (@CesgaTV).",
+"🔗 Próximos cursos: https://dataspace.cesga.es/es/events",
+"⚠️ La inscripción es obligatoria para conectarse a la sesión y recibir el certificado de participación.",
+"⚠️ Se recomienda utilizar Mozilla Firefox."
+],
+"extra": "Acceso e inscripción"
+}
+
+
     }
   },
   "catalog": {

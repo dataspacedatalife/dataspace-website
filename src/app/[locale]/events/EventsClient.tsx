@@ -37,6 +37,8 @@ import gobernanzaDeDatos from '../../../../public/events/gobernanza-de-datos.png
 import eventoFinal from '../../../../public/events/evento-final-onehealth-dataspace-aplazado.png';
 import gobernanzaDeDatosAporte from '../../../../public/events/gobernanza-de-datos-aporte.png';
 import gestionCoordinacionComunicacion from '../../../../public/events/formacion-gestion-coordinacion-comunicacion.png';
+import interoperabilidadSemantica from '../../../../public/events/formacion-interoperabilidad-semantica.png';
+
 const eventsPerPage = 5;
 
 interface Event {
@@ -142,7 +144,7 @@ const events = [
     organizer: 'BAIDATA',
     featured: false,
   },
-  { //new!
+  { 
     key: 'conectorGestionActivos',
     date: '2026-03-23',
     image: conectorGestionActivos,
@@ -227,6 +229,15 @@ const events = [
     key: 'formacionGestionCoordinacionComunicacion',
     date: '2026-06-12',
     image: gestionCoordinacionComunicacion,
+    cesgalink:
+      'https://www.cesga.es/formacion-onehealth-dataspace/',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: false,
+  },
+  {
+    key: 'formacionInteroperabilidadSemantica',
+    date: '2026-06-19',
+    image: interoperabilidadSemantica,
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
