@@ -97,10 +97,7 @@ function OneHealthLanding() {
               <div className="relative w-full max-w-[650px] flex items-center justify-center">
                 <div
                   className="absolute inset-0 blur-3xl opacity-30"
-                  style={{
-                    background:
-                      'radial-gradient(circle at center, #00B7D4 0%, transparent 70%)',
-                  }}
+              
                 />
 
                 <img
