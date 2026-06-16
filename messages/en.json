@@ -33,8 +33,8 @@
   },
   "about": {
     "metadata": {
-      "title": "Demostrador",
-      "description": "Explicación de que es el demostrador"
+      "title": "OneHealth DataSpace",
+      "description": "What is the OneHealth DataSpace project?"
     },
     "graphic": {
       "human": "Human health",
@@ -42,18 +42,18 @@
       "environmental": "Environmental health"
     },
     "header": {
-      "title": "What is the Demonstrator?",
+      "title": "OneHealth DataSpace",
       "lead": "It is a platform that allows sharing and accessing health data in a secure, ethical, governed and interoperable manner, respecting data sovereignty",
-      "imageAlt": "Demonstrator Environment"
+      "imageAlt": "OneHealth"
     },
     "objective": {
-      "title": "Demonstrator Objective",
-      "text1": "The demonstrator aims to illustrate how multiple organizations in the biotechnology and health sectors can exchange data safely and following controlled protocols.",
+      "title": "Objective",
+      "text1": "It aims to illustrate how multiple organizations in the biotechnology and health sectors can exchange data safely and following controlled protocols.",
       "text2": "The system ensures regulatory compliance, data sovereignty, and interoperability between different actors, from hospitals and research centers to private companies."
     },
     "motivation": {
       "title": "Motivation",
-      "text": "Challenges in human, animal, and environmental health are interconnected and require a joint data-driven vision to address them. This demonstrator provides a platform to integrate and analyze multisectoral information, facilitating informed decisions and evidence-based public policies."
+      "text": "Challenges in human, animal, and environmental health are interconnected and require a joint data-driven vision to address them. OneHealth DataSpace provides a platform to integrate and analyze multisectoral information, facilitating informed decisions and evidence-based public policies."
     },
     "impact": {
       "title": "Project Impact",

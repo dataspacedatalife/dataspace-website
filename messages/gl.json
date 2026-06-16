@@ -33,8 +33,8 @@
   },
   "about": {
     "metadata": {
-      "title": "Demostrador",
-      "description": "Explicación do que é o demostrador"
+      "title": "Que é o proxecto OneHealth DataSpace?",
+      "description": "Explicación do que é o proxecto OneHealth DataSpace"
     },
     "graphic": {
       "human": "Saúde humana",
@@ -42,18 +42,18 @@
       "environmental": "Saúde ambiental"
     },
     "header": {
-      "title": "Que é o demostrador?",
+      "title": "OneHealth DataSpace",
       "lead": "Trátase dunha plataforma que permite compartir e acceder a datos do sector saúde de forma segura, ética, gobernada e interoperable, respectando a soberanía do dato",
-      "imageAlt": "Contorno do demostrador"
+      "imageAlt": "OneHealth"
     },
     "objective": {
-      "title": "Obxectivo do demostrador",
-      "text1": "O centro demostrador ten como obxectivo ilustrar como múltiples organizacións relacionadas co ámbito OneHealth poden intercambiar datos de forma segura e controlada.",
+      "title": "Obxectivo",
+      "text1": "Ten como obxectivo ilustrar como múltiples organizacións relacionadas co ámbito OneHealth poden intercambiar datos de forma segura e controlada.",
       "text2": "O sistema garante o cumprimento normativo, a soberanía do dato e a interoperabilidade entre diferentes actores, desde hospitais e centros de investigación ata empresas privadas."
     },
     "motivation": {
       "title": "Motivación",
-      "text": "Os retos na saúde humana, animal e ambiental están interconectados e requiren unha visión conxunta baseada en datos que permitan afrontalos. Este demostrador ofrece unha plataforma para integrar e analizar información multisectorial, facilitando decisións informadas e políticas públicas baseadas en evidencia."
+      "text": "Os retos na saúde humana, animal e ambiental están interconectados e requiren unha visión conxunta baseada en datos que permitan afrontalos. OneHealth DataSpace ofrece unha plataforma para integrar e analizar información multisectorial, facilitando decisións informadas e políticas públicas baseadas en evidencia."
     },
     "impact": {
       "title": "Impacto do proxecto",
