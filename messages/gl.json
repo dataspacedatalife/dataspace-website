@@ -959,7 +959,7 @@
         "name": "AIDataMed — AI-powered Synthetic Medical Data for Research and Innovation",
         "dataset_name": "data_synthetic_patients_[specialty]_[size]_v[MAJOR].[MINOR]",
         "use_case": "Grupo IDARA, IIS Galicia Sur (IISGS)",
-        "provider": "Grupo IDARA, IIS Galicia Sur (IISGS)",
+        "provider": "Grupo IDARA, IIS Galicia Sur",
         "description": "AIDataMed diseña, desarrolla y valida una plataforma para la generación de datos clínicos sintéticos de alta calidad mediante modelos de inteligencia artificial. El objetivo es ofrecer datos realistas y estadísticamente equivalentes a los reales que puedan usarse libremente en investigación,.",
         "volumen": "50 GB",
         "n_ficheros": "105 - 300",
@@ -1203,7 +1203,7 @@
         "descripcion_ampliada": "AIDataMed diseña, desarrolla y valida una plataforma para la generación de datos clínicos sintéticos de alta calidad mediante modelos de inteligencia artificial. El objetivo es ofrecer datos realistas y estadísticamente equivalentes a los reales que puedan usarse libremente en investigación, desarrollo de algoritmos clínicos y benchmarking, eliminando las barreras éticas y legales del uso de datos reales de pacientes. Las cohortes sintéticas se modelan longitudinalmente sobre el esquema OMOP-CDM v5.4 y se generan con HMASynthesizer y GaussianCopula, a partir de pacientes semilla y datasets académicos públicos (Synthea™, GiBleed/Eunomia de OHDSI, Mayo PBC). Los datasets cubren patologías digestivas: hepatitis B crónica (HBV), colangitis biliar primaria (PBC), enfermedad de Crohn y colitis ulcerosa.\n\nEl uso de datos clínicos reales en investigación tropieza con barreras técnicas, éticas y legales (RGPD, autorizaciones éticas, anonimización, heterogeneidad de fuentes) que limitan su disponibilidad y reutilización. AIDataMed responde a la necesidad de generar datos sintéticos de calidad clínica que preserven las propiedades estadísticas de los reales sin comprometer la privacidad de los pacientes."
       },
       "brilliant": {
-        "name": "Brilliant — Plataforma de diagnóstico automático a partir de imagen médica (DICOM) con IA",
+        "name": "Brilliant — Observatorio de Sarcopenia",
         "dataset_name": "MRI_BRILLIANT",
         "use_case": "Grupo de Investigación Cardiovascular, IIS Galicia Sur",
         "provider": "Grupo de Investigación Cardiovascular, IIS Galicia Sur (IISGS)",
@@ -1380,7 +1380,7 @@
         "descripcion_ampliada": "O proxecto GIFT (Gastroenterology Interface with FAIR treatment) busca dar resposta aos desafíos actuais de xestión da información na atención sanitaria, pretendendo crear alianzas entre profesionais e mellorar a seguridade dos pacientes. Para iso identificarase, categorizarase e verificarase información desestruturada sobre patoloxías dixestivas e os seus correspondentes procesos asistenciais para a posterior creación dun espazo de datos accesible a través dunha API (Application Programming Interface) de intelixencia artificial (IA) xerativa previamente alimentada cos mencionados datos.\n\nEsta API funcionará como ponte entre o espazo de datos e os clientes, que serán, inicialmente, sistemas de saúde públicos ou privados ou empresas tecnolóxicas que dean servizo aos anteriores. A API proveerá eses datos a través dun asistente de IA de axuda á toma de decisións en gastroenteroloxía. Desta forma búscase ofrecer respostas orientadas, rápidas e verificadas sobre estas patoloxías dunha forma transgresora á vez que sinxela, onde a IA cobra un papel clave como punto de unión entre o espazo de datos e o usuario final, que serán inicialmente profesionais da medicina.\n\nEn GIFT, tal e como o seu propio nome indica, terán un peso esencial os principios FAIR, facendo que estes datos sobre práctica clínica sexan atopables, accesibles, interoperables e reutilizables. Estes datos estarán, ademais, validados por médicos gastroenterólogos e investigadores pertencentes ao Grupo de Hepatoloxía e Enfermidades Inflamatorias Intestinais do IIS Galicia Sur. A incorporación dun asistente de intelixencia artificial conversacional senta as bases dun novo modelo que aspira a ser referente e pioneiro. Un sistema de apoio á toma de decisións que permite aos profesionais facer uso da intelixencia artificial para o beneficio último do paciente, fomentando diagnósticos máis rápidos e eficaces."
       },
       "biomexplore": {
-        "name": "BiomeXplore —  Observatorio del índice poblacional de bienestar de microbiota intestinal (IPbMI)",
+        "name": "BiomeXplore — Observatorio del índice poblacional de bienestar de microbiota intestinal (IPbMI)",
         "dataset_name": "dataset_biomexplore",
         "use_case": "Grupo de Investigación en Microbiología e Infectología, IIS Galicia Sur",
         "provider": "Grupo de Investigación en Microbiología e Infectología, IIS Galicia Sur (IISGS)",
@@ -1407,7 +1407,7 @@
         "descripcion_ampliada": "De forma innovadora, a los datos del índice de bienestar de la microbiota intestinal se añadirán capas adicionales de datos del exposoma. El proyecto considera la aplicación de IA para procesar un volumen masivo de información de datos de MI y de exposiciones ambientales. Estas técnicas han demostrado ser útiles para el procesamiento de ambos tipos de datos, pero es importante destacar que estas técnicas de IA tendrán que ser evaluadas en esta aplicación en concreto. \n\nEsta visualización agregada a nivel poblacional del IPbMI permitirá identificar zonas de actuación sanitaria preventiva desde una perspectiva One Health, sin pretender extraer conclusiones a nivel individual. Se podría realizar un diagnóstico precoz y apoyar la toma de decisiones en el ámbito de la salud según la distribución geográfica de dicho índice en Galicia.\n\nTambién apoyaría la localización de actuaciones comerciales prioritarias (pre/probióticos, complementos nutricionales, actividad física, alimentación, etc). Volver a calcular el índice en una población tras una intervención concreta permitiría evaluar el impacto en salud de dicha intervención."
       },
       "salusbench": {
-        "name": "Salusbench — Minería de procesos e análise avanzada para optimizar a xestión hospitalaria",
+        "name": "Salusbench — Minería de procesos y análisis avanzado para optimizar la gestión hospitalaria",
         "dataset_name": "data_proceso_id_hospital_id",
         "use_case": "SALUSBENCH",
         "provider": "InverBis Analytics",
@@ -1501,7 +1501,7 @@
         "descripcion_ampliada": "SALUSBENCH permite a hospitais e centros asistenciais identificar marxes de mellora mediante a comparación de indicadores anonimizados sobre fluxos de pacientes, cumprimento de protocolos e eficiencia operativa. O sistema facilitará a minería de procesos e a análise avanzada para optimizar a xestión hospitalaria sen comprometer a privacidade nin a reputación das entidades participantes."
       },
       "celiaspace": {
-        "name": "CeliaSpace - Datos de asistentes conversacionales para la evaluación de la salud",
+        "name": "CeliaSpace — Datos de asistentes conversacionales para la evaluación de la salud",
         "dataset_name": "serenia_senior_conversations",
         "use_case": "atlanTTic Research Center, Universidade de Vigo",
         "provider": "Grupo de Tecnoloxías da Información, atlanTTic Research Center, UVigo",
@@ -1745,9 +1745,9 @@
         "descripcion_ampliada": "A partir de investigaciones en el ámbito de NLP del Grupo de Tecnoloxías da Información del centro de investigación atlanTTic de la Universidade de Vigo, se desarrolló un asistente IA diseñado específicamente para el colectivo de personas mayores, cubriendo necesidades de acompañamiento, estimulación cognitiva, entretenimiento e información de interés para el usuario. Actualmente dicho asistente ha evolucionado y se ha creado una spin-off llamada Serenia Solutions que cuenta con una plataforma llamada Serenia (Asistente IA + Panel de Control) y que pretende potenciar la parte de monitorización y evaluación de salud.\n\nDurante los pilotos iniciales llevados a cabo por atlanTTic se generaron miles de conversaciones y también evaluaciones cognitivas y de desempeño realizadas durante las sesiones. Estos datos, debidamente pseudoanonimizados y tratados conforme al RGPD, constituyen el activo principal aportado a OneHealth DataSpace.\n\nLa participación en OHDS permite tanto publicar estos datos de forma estructurada y accesible para otros participantes del espacio de datos, como acceder a datos y algoritmos de terceros. En el caso de uso CeliaSpace, Serenia Solutions utiliza este conjunto de datos de la Universidade de Vigo para mejorar sus algoritmos de detección de salud cognitiva. Desde el punto de vista de la Universidade de Vigo, aparte de ser proveedora de datos de conversaciones, también consume datos de OHDS de la entidad i4Life sobre monitorización domiciliaria para personas mayores con el fin de investigar relaciones entre interacciones conversacionales y medidas de sensores mediante técnicas de clusterización."
       },
       "datiacare": {
-        "name": "Datiacare — Plataforma de coidado intelixente de persoas maiores baseada en compartición de datos",
+        "name": "Datiacare — Plataforma de cuidado inteligente de personas mayores basada en compartición de datos",
         "dataset_name": "datiacare_home_monitoring",
-        "use_case": "i4life innovación y desarrollos SL (con Seniordomo)",
+        "use_case": "i4life innovación y desarrollos S. L. (con Seniordomo)",
         "provider": "i4life",
         "description": "Datiacare pretende facilitar o coidado de persoas maiores mediante a compartición de datos nun espazo común, permitindo a xeración de alertas e o desenvolvemento de algoritmos intelixentes.",
         "volumen": "200.000 rexistros por ano e por usuario",
@@ -1947,7 +1947,7 @@
         "descripcion_ampliada": "Facilitar o coidado de persoas maiores mediante a compartición de datos nun espazo común, permitindo a xeración de alertas e o desenvolvemento de algoritmos intelixentes. Optimizar a autonomía dos maiores e mellorar a eficiencia dos servizos asistenciais.\n\nO caso de uso explora a capacidade dos espazos de datos para intercambiar información sobre o estado de saúde e actividade de persoas maiores. Os datos recóllense desde dispositivos IoT domésticos e wearables, combinándoos con información clínica e hábitos de vida. O intercambio de datos xestionarase mediante conectores seguros, permitindo a integración de múltiples fontes para monitorización en tempo real. Os actores involucrados inclúen residencias de maiores, hospitais, empresas de teleasistencia e entidades gobernamentais. O caso de uso pode estenderse a persoas con TEA, Alzheimer e ELA.\n\nA tarefa de coidar resulta moi estresante e implica gran responsabilidade. O proxecto aborda a necesidade de mellorar o coidado das persoas maiores mediante ferramentas intelixentes baseadas en compartición de datos, reducindo a carga dos coidadores e favorecendo unha atención máis segura e preventiva."
       },
       "pounds": {
-        "name": "POUNDs - Simulaciones numéricas con WRF para el impacto de turbinas eólicas marinas en el campo de viento regional y la producción energética",
+        "name": "POUNDs — Simulaciones numéricas con WRF para el impacto de turbinas eólicas marinas en el campo de viento regional y la producción energética",
         "dataset_name": "-",
         "use_case": "CESGA",
         "provider": "CESGA",
@@ -1963,17 +1963,17 @@
         "name": "COVILED — Datos de calidad del aire en interiores",
         "dataset_name": "-",
         "use_case": "Wireless Galicia S.L.",
-        "provider": "Wireless Galicia S.L.",
+        "provider": "Wireless Galicia S. L.",
         "description": "Wireless Galicia publica en OneHealth DataSpace un dataset de variables de calidad del aire en interiores procedente de su plataforma COVILED, con mediciones de CO₂, presión atmosférica, temperatura, humedad relativa, partículas en suspensión (PM2.5 y PM10), compuestos orgánicos volátiles y otros parámetros ambientales con información temporal asociada.",
         "descripcion_ampliada": "Wireless Galicia S.L. es una empresa de Vigo especializada en soluciones IoT y conectividad. Con su incorporación a OneHealth DataSpace en nivel avanzado, publica un dataset de calidad del aire en espacios interiores derivado de su plataforma COVILED. Los datos se recogen mediante sensores IoT instalados en edificios y se publican en formato estructurado, acompañados de un JSON Schema que describe la estructura del dataset y un archivo LEEME.md con información técnica. Este tipo de datos tiene aplicación directa en salud ambiental, eficiencia energética y diseño de espacios saludables.\n\nLa calidad del aire interior es un factor determinante para la salud de las personas, especialmente en entornos de trabajo, centros educativos o instalaciones sanitarias. La disponibilidad de datos estructurados y estandarizados de monitorización ambiental en interiores es escasa en los ecosistemas de datos de salud, pese a su relevancia para la investigación en salud ambiental y el desarrollo de edificios inteligentes y saludables.",
         "volumen": "-",
         "n_ficheros": "-",
         "subsets": {},
         "datos_descripcion": "Tipo de datos: Dataset de variables de calidade do aire en interiores. Parámetros: concentración de CO₂, presión atmosférica, temperatura, humidade relativa, partículas en suspensión (PM2.5 e PM10), compostos orgánicos volátiles (VOC) e outros parámetros ambientais, con información temporal asociada. O asset inclúe un ficheiro JSON Schema coa descrición da estrutura do dataset e un arquivo LEEME.md. ID do asset publicado en OneHealth DataSpace: coviled-202600317b. Fonte dos datos: Sensores IoT da plataforma COVILED de Wireless Galicia, instalados en espazos interiores. Uso previsto dos datos: Investigación en saúde ambiental e impacto da calidade do aire interior na saúde; desenvolvemento de sistemas de monitorización e alerta en edificios intelixentes; análise de benestar en ámbitos laborais, educativos e sanitarios.\n\nDataset de calidade do aire interior dispoñible en OneHealth DataSpace, con cobertura dos principais parámetros de benestar ambiental en espazos pechados. Recurso para a investigación en saúde ambiental e o desenvolvemento de solucións de edificios saudables e intelixentes.",
-        "entidad_promotora": "Wireless Galicia S.L."
+        "entidad_promotora": "Wireless Galicia S. L."
       },
       "olamur": {
-        "name": "OLAMUR - Simulaciones numéricas con WRF para el impacto de turbinas eólicas marinas en las condiciones oceánicas y el ecosistema marino",
+        "name": "OLAMUR — Simulaciones numéricas con WRF para el impacto de turbinas eólicas marinas en las condiciones oceánicas y el ecosistema marino",
         "dataset_name": "-",
         "use_case": "CESGA",
         "provider": "CESGA",
@@ -1986,7 +1986,7 @@
         "entidad_promotora": "CESGA"
       },
       "climaticseriesai": {
-        "name": "ClimaticSeriesAI - Relleno de series climáticas incompletas mediante IA y clasificación de brisas",
+        "name": "ClimaticSeriesAI — Relleno de series climáticas incompletas mediante IA y clasificación de brisas",
         "dataset_name": "-",
         "use_case": "Climatoc-Lab, CIDE (CSIC-UV-GVA)",
         "provider": "Climatoc-Lab, CIDE (CSIC-UV-GVA)",
@@ -1999,7 +1999,7 @@
         "entidad_promotora": "Climatoc-Lab, CIDE (CSIC-UV-GVA)"
       },
       "agentes_contraste_rmi": {
-        "name": "Modelización de propiedades de novos axentes de contraste para RMI",
+        "name": "Modelización de propiedades de nuevos agentes de contraste para RMI",
         "dataset_name": "-",
         "use_case": "Grupo QUIMAOR (Química Macroccíclica y Organometálica, USC-1581)",
         "provider": "Grupo QUIMAOR, USC",
@@ -2025,7 +2025,7 @@
         "entidad_promotora": "Grupo BIO-HPC, UCAM"
       },
       "peptide_binder_design": {
-        "name": "Peptide Binder Design - Structure Conditioned Peptide Binder Design",
+        "name": "Peptide Binder Design — Structure Conditioned Peptide Binder Design",
         "dataset_name": "-",
         "use_case": "DE LA FUENTE LAB",
         "provider": "De la Fuente Lab",
@@ -2038,7 +2038,7 @@
         "entidad_promotora": "De la Fuente Lab"
       },
       "woah_disease": {
-        "name": "WOAH-disease - Clasificación de enfermedades animales",
+        "name": "WOAH-disease — Clasificación de enfermedades animales",
         "dataset_name": "-",
         "use_case": "CONSUVET",
         "provider": "CONSUVET",
@@ -2051,7 +2051,7 @@
         "entidad_promotora": "CONSUVET"
       },
       "multimodal_protein_llm": {
-        "name": "Multimodal Protein LLM — Adestramento de LLM multimodal para estrutura e función de proteínas",
+        "name": "Multimodal Protein LLM — Entrenamiento de LLM multimodal para estructura y función de proteínas",
         "dataset_name": "-",
         "use_case": "DE LA FUENTE LAB",
         "provider": "De la Fuente Lab",
@@ -2067,17 +2067,17 @@
         "name": "1MillionHCE — Historias clínicas electrónicas sintéticas",
         "dataset_name": "-",
         "use_case": "Next & Health Consulting S.L.",
-        "provider": "Next & Health Consulting S.L.",
+        "provider": "Next & Health Consulting S. L.",
         "description": "Next & Health Consulting publica en OneHealth DataSpace una muestra de 1.000 historias clínicas electrónicas sintéticas y longitudinales, distribuidas en cuatro archivos CSV con datos de pacientes, encuentros clínicos, diagnósticos y resúmenes IPS (International Patient Summary). El dataset forma parte de un proyecto más amplio orientado a alcanzar el millón de registros.",
         "descripcion_ampliada": "Next & Health Consulting S.L. es una consultora especializada en salud digital con sede en Vélez-Málaga. Con su incorporación a OneHealth DataSpace en nivel avanzado, publica un paquete integral de historias clínicas electrónicas sintéticas longitudinales diseñado para su uso en investigación, desarrollo de herramientas de IA médica y validación de pipelines de interoperabilidad. El dataset sigue estándares de interoperabilidad sanitaria (IPS) y está distribuido en cuatro archivos CSV diferenciados. Los datos son completamente sintéticos, generados para preservar la privacidad y eliminar las barreras legales y éticas del uso de datos clínicos reales.\n\nLa falta de grandes volúmenes de datos clínicos longitudinales accesibles y reutilizables limita el desarrollo de herramientas de inteligencia artificial en salud y la validación de sistemas de interoperabilidad. Los datos sintéticos de alta calidad que respetan estándares como el IPS ofrecen una alternativa viable para cubrir esta necesidad en el ecosistema de datos de salud.",
         "volumen": "-",
         "n_ficheros": "-",
         "subsets": {},
         "datos_descripcion": "Tipo de datos: Mostra de 1.000 historias clínicas electrónicas sintéticas lonxitudinais. Distribuída en catro arquivos CSV: patients (datos de pacientes), encounters (encontros clínicos), diagnoses (diagnósticos) e ips_summaries (resumos IPS — International Patient Summary). O paquete inclúe metadatos técnicos en JSON-LD, licenza e README. ID do asset publicado en OneHealth DataSpace: 1millionhce-sample-1000. Fonte dos datos: Xeración sintética por Next & Health Consulting seguindo estándares de interoperabilidade sanitaria (IPS). Uso previsto dos datos: Desenvolvemento e validación de ferramentas de IA médica; adestramento de modelos clínicos; validación de pipelines de interoperabilidade sanitaria; investigación en saúde dixital sen restricións de privacidade.\n\nMostra de 1.000 historias clínicas electrónicas sintéticas lonxitudinais dispoñible en OneHealth DataSpace, con cobertura dos principais elementos do IPS. Recurso para o desenvolvemento de ferramentas de IA médica e a validación de sistemas de interoperabilidade, escalable ao millón de rexistros.",
-        "entidad_promotora": "Next & Health Consulting S.L."
+        "entidad_promotora": "Next & Health Consulting S. L."
       },
       "compound_drought_heat_lattin": {
-        "name": "Compound Drought-Heat / LATTIN - Análisis lagrangiano de eventos compuestos de sequía y ola de calor con elevado impacto social en la región mediterránea",
+        "name": "Compound Drought-Heat / LATTIN — Análisis lagrangiano de eventos compuestos de sequía y ola de calor con elevado impacto social en la región mediterránea",
         "dataset_name": "-",
         "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
         "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
@@ -2090,7 +2090,7 @@
         "entidad_promotora": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo"
       },
       "wrf_brisasmarinas": {
-        "name": "WRF-BrisasMarinas - Simulaciones numéricas de alta resolución de la dinámica de brisas marinas mediante el modelo WRF",
+        "name": "WRF-BrisasMarinas — Simulaciones numéricas de alta resolución de la dinámica de brisas marinas mediante el modelo WRF",
         "dataset_name": "-",
         "use_case": "CLIMATOC-LAB, CIDE (CSIC-UV-GVA)",
         "provider": "CLIMATOC-LAB, CIDE (CSIC-UV-GVA)",
@@ -2103,17 +2103,17 @@
         "entidad_promotora": "CLIMATOC-LAB, CIDE (CSIC-UV-GVA)"
       },
       "wheydata": {
-        "name": "WHEYDATA - Compartición de datos de orixinación e xestión controlada de soro lácteo procedente de queixerías artesás",
+        "name": "WHEYDATA — Compartición de datos de originación y gestión controlada de suero lácteo procedente de queserías artesanas",
         "dataset_name": "-",
-        "use_case": "Agrolinera Astur SL",
-        "provider": "Agrolinera Astur SL",
+        "use_case": "Agrolinera Astur S. L.",
+        "provider": "Agrolinera Astur S. L.",
         "description": "Agrolinera publica en OneHealth DataSpace datos sobre a xestión do soro lácteo recollido en queixerías artesás de Cabrales mediante un sistema IoT de contedores intelixentes (wheytainer/wheyboxes). Cada mes compártense volumes recollidos, número de queixerías participantes e datos sobre orixe.",
         "descripcion_ampliada": "Agrolinera publica en OneHealth DataSpace datos sobre a xestión do soro lácteo recollido en queixerías artesás de Cabrales mediante un sistema IoT de contedores intelixentes (wheytainer/wheyboxes). Cada mes compártense volumes recollidos, número de queixerías participantes e datos sobre orixe, tratamento e destino, publicados de forma agregada e anonimizada. O piloto cobre 11 queixerías e 280 transaccións (abril'25 – marzo'26).\n\nEn zonas rurais de montaña, xestionar o soro lácteo segue sendo un reto loxístico e ambiental. O proxecto permite coñecer, de forma agregada, canto soro se xestiona correctamente e que potencial de valorización existe no territorio.",
         "volumen": "-",
         "n_ficheros": "-",
         "subsets": {},
         "datos_descripcion": "Tipo de datos: Dataset agregado mensual de orixinación e xestión controlada de soro lácteo de queixerías artesás de Cabrales. Inclúe zona de orixinación, volumes de recollida, número de transaccións, queixerías participantes e destino de valorización. Formato CSV (descargas_suero_mensual.csv). ID do asset publicado en OneHealth DataSpace: dataset-descargas-suero-mensual. Licenza: CC BY 4.0. Cobertura temporal: abril 2025 – febreiro 2026. Cobertura xeográfica: Cabrales, Asturias. Fonte dos datos: Sistema IoT de contedores intelixentes (wheytainer/wheyboxes) operados por Agrolinera en queixerías artesás de Cabrales desde abril de 2025. Uso previsto dos datos: Supervisión da xestión ambiental en zonas sensibles; deseño de proxectos de valorización; evidencia de boas prácticas e trazabilidade para queixerías.\n\nImpulso da economía circular rural. Trazabilidade para queixerías artesás. Modelo replicable noutros territorios lactoganadeiros.\n\nDataset de xestión de soro lácteo dispoñible en OneHealth DataSpace. Modelo de compartición replicable noutros territorios.",
-        "entidad_promotora": "Agrolinera Astur SL"
+        "entidad_promotora": "Agrolinera Astur S. L."
       },
       "meteogalicia": {
         "name": "Contribución del histórico de ejecución de modelos atmosféricos y de dinámica marina al espacio de datos OneHealth",
@@ -3279,7 +3279,7 @@
         "entidad_promotora": "MeteoGalicia"
       },
       "heat_stress_lattin": {
-        "name": "Heat Stress LATTIN - Análisis lagrangiano de transporte de humedad y de calor en eventos de elevado impacto social por estrés térmico",
+        "name": "Heat Stress LATTIN — Análisis lagrangiano de transporte de humedad y de calor en eventos de elevado impacto social por estrés térmico",
         "dataset_name": "-",
         "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
         "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
@@ -3292,7 +3292,7 @@
         "entidad_promotora": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo"
       },
       "microbioma_16s_citius": {
-        "name": "AIRA16S - Inventario automatizado de proxectos de secuenciación do xene 16S rRNA humano en bases de datos públicas",
+        "name": "AIRA16S — Inventario automatizado de proyectos de secuenciación del gen 16S rRNA humano en bases de datos públicas",
         "dataset_name": "-",
         "use_case": "Grupo de trabajo en microbioma del CiTIUS — Universidade de Santiago de Compostela",
         "provider": "Grupo de trabajo en microbioma del CiTIUS — Universidade de Santiago de Compostela",
@@ -3308,69 +3308,69 @@
         "name": "VAIRA — Datos de estimulación físico-cognitiva",
         "dataset_name": "-",
         "use_case": "Insati Innovation S.L.",
-        "provider": "Insati Innovation S.L.",
+        "provider": "Insati Innovation S. L.",
         "description": "Insati Innovation publica en OneHealth DataSpace un dataset derivado de la ejecución de actividades de estimulación físico-cognitiva de su plataforma VAIRA. Los datos se comparten en formato JSON, acompañados de JSON Schemas que describen los diferentes esquemas de datos, facilitando su integración y reutilización.",
         "descripcion_ampliada": "Insati Innovation S.L. desarrolla VAIRA, una plataforma tecnológica orientada a la estimulación físico-cognitiva. Con su incorporación a OneHealth DataSpace como proveedor de datos en nivel avanzado, Insati pone a disposición del ecosistema un dataset estructurado derivado de la ejecución de actividades de estimulación registradas por la plataforma. Los datos se publican en formato JSON, junto con un fichero Markdown que describe los diferentes esquemas y JSON Schemas con información técnica adicional, facilitando su integración por parte de investigadores y desarrolladores.\n\nLa escasez de datos estructurados y compartibles sobre estimulación físico-cognitiva dificulta la investigación en este ámbito, especialmente para aplicaciones dirigidas a personas mayores o en rehabilitación. VAIRA ofrece la oportunidad de valorizar los datos generados por la plataforma como recurso abierto para el ecosistema de datos de salud.",
         "volumen": "-",
         "n_ficheros": "-",
         "subsets": {},
         "datos_descripcion": "Tipo de datos: Dataset derivado de actividades de estimulación físico-cognitiva rexistradas pola plataforma VAIRA. Formato JSON. O asset inclúe un ficheiro Markdown coa descrición dos distintos esquemas de datos e JSON Schemas con información técnica adicional. ID do asset publicado en OneHealth DataSpace: vaira-20260317. Fonte dos datos: Plataforma VAIRA de Insati Innovation. Rexistros de actividades de estimulación físico-cognitiva. Uso previsto dos datos: Investigación en estimulación cognitiva e física; desenvolvemento de ferramentas de análise do benestar e a capacidade funcional; integración con outros datasets do espazo OneHealth para análise do envellecemento activo e a rehabilitación.\n\nDataset estruturado de actividades de estimulación físico-cognitiva dispoñible en OneHealth DataSpace. Recurso para investigadores e desenvolvedores no ámbito da tecnoloxía asistencial e o envellecemento activo.",
-        "entidad_promotora": "Insati Innovation S.L."
+        "entidad_promotora": "Insati Innovation S. L."
       },
       "aid_g": {
         "name": "AID-G — Avatares, Inteligencia Artificial y Gobernanza Europea de Datos: Innovación Sostenible para la Tercera Edad",
         "dataset_name": "-",
         "use_case": "COGNITUS BIOTECH S.L.",
-        "provider": "COGNITUS BIOTECH S.L.",
+        "provider": "COGNITUS BIOTECH S. L.",
         "description": "El caso de uso se centra en la publicación de un dataset CSV con métricas agregadas y anonimizadas del funcionamiento de la plataforma de experiencias conversacionales Avatar Silver. El objetivo es que otros participantes de OneHealth DataSpace puedan consumir dichos datos para validar casos de uso.",
         "descripcion_ampliada": "El caso de uso se centra en la publicación de un dataset CSV con métricas agregadas y anonimizadas del funcionamiento de la plataforma de experiencias conversacionales Avatar Silver. El objetivo es que otros participantes de OneHealth DataSpace puedan consumir dichos datos para validar casos de uso de acompañamiento digital y perfeccionar proyectos de IA orientados al bienestar de las personas mayores.\n\nEl proyecto AID-G aborda la soledad no deseada en personas mayores mediante un avatar conversacional hiperrealista con acompañamiento y supervisión proactiva, ejecutado en una tableta simplificada para evitar la ansiedad tecnológica.",
         "volumen": "-",
         "n_ficheros": "4",
         "subsets": {},
         "datos_descripcion": "Tipo de datos: dataset-interacciones-Avatar-Silver e dataset-registros-Avatar-Silver. Métricas agregadas e anonimizadas de sesións. Sen datos persoais. ~5 KB, 4 ficheiros CSV. Fonte dos datos: Rexistros de instantes de inicio de conversas con cada avatar na plataforma Avatar Silver, pseudoanonimizados. Uso previsto dos datos: Análise e validación de casos de uso de acompañamento dixital; perfeccionamento de proxectos de IA para asistencia a persoas maiores.\n\nMitigación da soidade non desexada e prevención do Alzheimer mediante IA conversacional. Mellora da calidade de vida e autonomía de persoas maiores.\n\nDataset público de interaccións Avatar Silver dispoñible en OneHealth DataSpace. Demostración en directo da plataforma no acto final do proxecto.",
-        "entidad_promotora": "COGNITUS BIOTECH S.L."
+        "entidad_promotora": "COGNITUS BIOTECH S. L."
       },
       "matlabid": {
         "name": "MatLabID — Publicación del catálogo de material de laboratorio de ICIGA DATALAB",
         "dataset_name": "-",
-        "use_case": "ICIGA DATALAB SLU",
-        "provider": "ICIGA DATALAB SLU",
+        "use_case": "ICIGA DATALAB S. L. U.",
+        "provider": "ICIGA DATALAB S. L. U.",
         "description": "Este caso de uso consiste en la publicación de un producto de datos basado en un dataset en formato CSV derivado del catálogo interno de productos de laboratorio que distribuye ICIGA DATALAB SLU. El catálogo incluye características técnicas y metadatos de clasificación de artículos de material de laboratorio (equipos, consumibles y reactivos) utilizados por entidades del sector sanitario, veterinario y medioambiental. No incluye datos personales.",
         "descripcion_ampliada": "Este caso de uso consiste en la publicación de un producto de datos basado en un dataset en formato CSV derivado del catálogo interno de productos de laboratorio que distribuye ICIGA DATALAB SLU. El catálogo incluye características técnicas y metadatos de clasificación de artículos de material de laboratorio (equipos, consumibles y reactivos) utilizados por entidades del sector sanitario, veterinario y medioambiental. No incluye datos personales.\n\nFalta de reutilización de activos internos y ausencia de un catálogo estructurado de material de laboratorio accesible de forma abierta en el ecosistema de datos de salud. ICIGA DATALAB identifica la oportunidad de valorizar su catálogo interno convirtiéndolo en un producto de datos reutilizable para investigadores, clínicas, hospitales y entidades del sector OneHealth.",
         "volumen": "1,5 MB",
         "n_ficheros": "-",
         "subsets": {},
         "datos_descripcion": "Tipo de datos: Dataset CSV de artigos de material de laboratorio. Inclúe referencia, descrición, marca, unidades por lote, códigos arancelarios e EAN, clasificados por liña e familia de produto. ID do asset publicado en OneHealth DataSpace: dataset-material-laboratorio-ICIGA. URL de descarga: https://api.iciga-datalab.com/dataset_material_laboratorio_ICIGA.zip. Licenza: CC BY-SA 4.0. Versión: 1.0.0. Volume: ~1,5 MB. Fonte dos datos: Catálogo interno completo de produtos distribuídos e ofertados por ICIGA Datalab, curado e estruturado para a súa publicación como dato aberto. Uso previsto dos datos: Consulta e reutilización do catálogo por entidades do espazo de datos OneHealth; integración con sistemas de xestión de laboratorio; apoio á trazabilidade de subministros no sector sanitario.\n\nCatálogo estruturado de material de laboratorio dispoñible no espazo de datos, reutilizable por farmacias, clínicas, hospitais, laboratorios veterinarios e centros de investigación medioambiental. Facilita a interoperabilidade e trazabilidade na cadea de subministro de material de laboratorio do sector OneHealth.\n\nDataset do catálogo de material de laboratorio dispoñible no espazo de datos OneHealth DataSpace baixo licenza aberta.",
-        "entidad_promotora": "ICIGA DATALAB SLU"
+        "entidad_promotora": "ICIGA DATALAB S. L. U."
       },
       "otto_365": {
         "name": "Datos verídicos y en tiempo real de actividad en centros de día sanitarios",
         "dataset_name": "-",
-        "use_case": "OTTO SOFTWARE SL",
-        "provider": "OTTO SOFTWARE SL",
+        "use_case": "OTTO SOFTWARE S. L.",
+        "provider": "OTTO SOFTWARE S. L.",
         "description": "El caso de uso consiste en la obtención y compartición de datos verídicos y en tiempo real sobre la actividad diaria en centros de día sanitarios, sin interferir en el trabajo cotidiano de atención a las personas mayores. Los datos se registran a través de un ERP especializado para centros de día,.",
         "descripcion_ampliada": "El caso de uso consiste en la obtención y compartición de datos verídicos y en tiempo real sobre la actividad diaria en centros de día sanitarios, sin interferir en el trabajo cotidiano de atención a las personas mayores. Los datos se registran a través de un ERP especializado para centros de día, capturando información de tipo sanitario, asistencial, funcional, de actividades y terapias. El objetivo es mejorar la calidad del dato en este sector, donde actualmente la información disponible no es representativa ni válida para análisis.\n\nLa distorsión y mala calidad del dato en los centros de día sanitarios. La información existente no es representativa ni válida para análisis estadístico o de inteligencia artificial, ya que los registros se realizan de forma manual y diferida, lo que introduce errores e inconsistencias que limitan su utilidad para la mejora asistencial y la investigación.",
         "volumen": "4 GB",
         "n_ficheros": "-",
         "subsets": {},
         "datos_descripcion": "Tipo de datos: Dataset CSV de tarefas realizadas en centros de día. Inclúe tipoloxía e período de execución de cada tarefa, referencias organizativas do centro, profesionais que interveñen e información anonimizada dos usuarios. Cada rexistro dispón de identificadores únicos para trazabilidade de tarefas e a súa asociación con centros, traballadores e usuarios. ID do asset publicado en OneHealth DataSpace: day-centers-tasks. Información adicional de actividade diaria: caídas, miccións, uso de absorbentes, alimentación, hixiene, actividades e terapias. Volume: 1-4 GB segundo tamaño do centro. Fonte dos datos: ERP especializado OTTO 365, rexistros en tempo real do proceso asistencial en centros de día sanitarios. Uso previsto dos datos: Análise de patróns asistenciais; desenvolvemento de ferramentas de IA para a mellora da atención en centros de día; investigación en saúde e calidade asistencial en persoas maiores.\n\nDatos verídicos e en tempo real sobre actividade asistencial en centros de día dispoñibles no espazo de datos. Mellora da calidade do dato no sector de atención a persoas maiores. Base para o desenvolvemento de ferramentas de IA aplicadas á atención sociosanitaria.\n\nDataset de actividade asistencial en tempo real de centros de día dispoñible en OneHealth DataSpace. Mellora demostrable da calidade do dato no sector.",
-        "entidad_promotora": "OTTO SOFTWARE SL"
+        "entidad_promotora": "OTTO SOFTWARE S. L."
       },
       "microbiotooldb": {
         "name": "MicroBioToolDB — Publicación de la base de datos curada de MicroBioTool",
         "dataset_name": "-",
         "use_case": "MERCANTIA DESARROLLOS ALIMENTARIOS S.L.",
-        "provider": "MERCANTIA DESARROLLOS ALIMENTARIOS S.L.",
+        "provider": "MERCANTIA DESARROLLOS ALIMENTARIOS S. L.",
         "description": "Mercantia Desarrollos Alimentarios provee una versión curada de la base de datos utilizada por MicroBioTool, con el objetivo de convertir un activo científico-técnico propio en un recurso reutilizable dentro del ecosistema OneHealth DataSpace. MicroBioTool es una herramienta web para el análisis.",
         "descripcion_ampliada": "Mercantia Desarrollos Alimentarios provee una versión curada de la base de datos utilizada por MicroBioTool, con el objetivo de convertir un activo científico-técnico propio en un recurso reutilizable dentro del ecosistema OneHealth DataSpace. MicroBioTool es una herramienta web para el análisis del microbioma intestinal humano. La base de datos curada, derivada del Human Gut Microbiome Atlas, se publica en formato SQL para su uso por investigadores y desarrolladores en el ámbito de la salud digestiva y la nutrición personalizada.\n\nFalta de acceso estructurado a bases de datos curadas de microbioma intestinal humano para su uso en investigación y desarrollo de herramientas de salud digestiva. Mercantia dispone de un activo técnico propio (la BD de MicroBioTool) cuya valorización como dato abierto puede contribuir al ecosistema de datos OneHealth.",
         "volumen": "-",
         "n_ficheros": "-",
         "subsets": {},
         "datos_descripcion": "Tipo de datos: Copia curada da base de datos (formato SQL) do microbioma intestinal humano utilizada por MicroBioTool. Consta de 38 táboas con abundancia taxonómica e de especies, análise estatístico diferencial (LEfSe), relación con fenotipos do hospedeiro, interaccións (co-ocorrencia) e información de proxectos e mostras. Derivada do Human Gut Microbiome Atlas (HGMA). ID do asset publicado en OneHealth DataSpace: dataset-microbiotool-db. URL de descarga: https://api.microbiotool.com/dataset_microbiotool_db.zip. Licenza: CC BY-SA 4.0. Idioma dos metadatos: inglés. Fonte dos datos: Base de datos interna de MicroBioTool, derivada do Human Gut Microbiome Atlas (Almeida et al., 2021, Nature Biotechnology). Datos de orixe científica consolidada. Uso previsto dos datos: Investigación en microbioma intestinal humano; desenvolvemento de ferramentas de análise de microbiota; aplicacións de nutrición personalizada e saúde dixestiva; integración con outros datasets do espazo OneHealth.\n\nBase de datos curada de microbioma intestinal humano dispoñible no espazo de datos, accesible para investigadores e desenvolvedores de ferramentas de saúde dixestiva e nutrición personalizada. Modelo replicable de valorización de activos técnicos empresariais como datos abertos.\n\nBase de datos curada do microbioma intestinal humano (MicroBioToolDB) dispoñible en OneHealth DataSpace. Activo técnico de Mercantia valorizado como recurso aberto para a comunidade investigadora.",
-        "entidad_promotora": "MERCANTIA DESARROLLOS ALIMENTARIOS S.L."
+        "entidad_promotora": "MERCANTIA DESARROLLOS ALIMENTARIOS S. L."
       },
       "dl_meteodownscaling": {
-        "name": "PDL-MeteoDownscaling - Predicción espacio-temporal de alta resolución para variables meteorológicas mediante Deep Learning",
+        "name": "PDL-MeteoDownscaling — Predicción espacio-temporal de alta resolución para variables meteorológicas mediante Deep Learning",
         "dataset_name": "-",
         "use_case": "CIDE (CSIC-UV-GVA)",
         "provider": "CIDE (CSIC-UV-GVA)",
@@ -3398,18 +3398,18 @@
       "tophealthtech": {
         "name": "Datos clínicos de pacientes diabéticos",
         "dataset_name": "-",
-        "use_case": "Top Health Tech SL",
-        "provider": "Top Health Tech SL",
+        "use_case": "Top Health Tech S. L.",
+        "provider": "Top Health Tech S. L.",
         "description": "Top Health Tech publica en OneHealth DataSpace un dataset estructurado sobre pacientes diabéticos, recopilado en la sociedad iraquí a partir de registros clínicos de dos hospitales especializados en diabetes y endocrinología. Los datos, organizados en base de datos estructurada, están orientados al desarrollo de herramientas de IA enfocadas en diabetes.",
         "descripcion_ampliada": "Top Health Tech SL es una empresa de Barcelona especializada en inteligencia artificial aplicada a la salud, con plataforma relacionada con el ecosistema Topdoctors. Con su incorporación a OneHealth DataSpace en nivel avanzado, publica un dataset de pacientes diabéticos obtenido de registros clínicos reales del Medical City Hospital y del Specialized Center for Endocrinology and Diabetes (Al-Kindy Teaching Hospital, Iraq). Los datos han sido extraídos directamente de expedientes médicos y organizados en una base de datos estructurada, con el propósito específico de construir un dataset para el entrenamiento y validación de modelos de IA orientados a la diabetes.\n\nLa diabetes es una de las enfermedades crónicas con mayor prevalencia global. Disponer de datasets clínicos estructurados y accesibles para el desarrollo y la validación de herramientas de IA es una necesidad reconocida en el sector. Este caso aporta datos reales de poblaciones infrarrepresentadas en los grandes datasets de salud occidentales.",
         "volumen": "-",
         "n_ficheros": "-",
         "subsets": {},
         "datos_descripcion": "Tipo de datos: Dataset estruturado de pacientes diabéticos procedente de rexistros clínicos do Medical City Hospital e do Specialized Center for Endocrinology and Diabetes - Al-Kindy Teaching Hospital (Iraq). Os datos inclúen información clínica organizada en base de datos estruturada con enfoque en diabetes. ID do asset publicado en OneHealth DataSpace: Datos Topdoctors Diabetes. Distribución dispoñible polos métodos HttpData-PULL e HttpData-PUSH. Fonte dos datos: Expedientes médicos de dous centros hospitalarios especializados en endocrinoloxía e diabetes en Iraq. Uso previsto dos datos: Adestramento e validación de modelos de IA para o diagnóstico e seguimento da diabetes; investigación clínica en endocrinoloxía; desenvolvemento de ferramentas de apoio á decisión clínica.\n\nDataset clínico de pacientes diabéticos dispoñible en OneHealth DataSpace para o desenvolvemento de ferramentas de IA médica. Contribución de datos de poboacións infrarrepresentadas nos grandes repositorios de saúde, ampliando a diversidade e representatividade do ecosistema de datos.",
-        "entidad_promotora": "Top Health Tech SL"
+        "entidad_promotora": "Top Health Tech S. L."
       },
       "base_climatologica_eventos_hidrologicos_extremos": {
-        "name": "Ampliación da base de datos global de contribucións enerxéticas para a análise de eventos compostos de seca e onda de calor",
+        "name": "Ampliación de la base de datos global de contribuciones energéticas para el análisis de eventos compuestos de sequía y ola de calor",
         "dataset_name": "-",
         "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
         "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
@@ -3422,7 +3422,7 @@
         "entidad_promotora": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo"
       },
       "simbios_amp_membrana": {
-        "name": "AMP-Membrana - Simulación molecular multiescala y aprendizaje automático para el estudio de péptidos antimicrobianos en modelos de membrana asociados a inflamación crónica",
+        "name": "AMP-Membrana — Simulación molecular multiescala y aprendizaje automático para el estudio de péptidos antimicrobianos en modelos de membrana asociados a inflamación crónica",
         "dataset_name": "-",
         "use_case": "Grupo SIMBIOS (CiQUS) — Universidad de Santiago de Compostela",
         "provider": "Grupo SIMBIOS (CiQUS, USC)",
@@ -3448,7 +3448,7 @@
         "entidad_promotora": "Imatia Innovation"
       },
       "farmaciavax": {
-        "name": "FarmaciaVAX — Intercambio de datos sobre campañas de vacinación en farmacias",
+        "name": "FarmaciaVAX — Intercambio de datos sobre campañas de vacunación en farmacias",
         "dataset_name": "-",
         "use_case": "CESGA",
         "provider": "CESGA",
@@ -3461,7 +3461,7 @@
         "entidad_promotora": "CESGA"
       },
       "grheco_xen_iahpc_biomedica": {
-        "name": "Casos de uso GrHeCo-Xen: IA/HPC Biomédica - Evaluación comparativa de modelos fundacionales open source en medicina; cribado virtual sobre EGFR; y benchmark de aceleración GPU para detección de núcleos con StarDist.",
+        "name": "IA/HPC Biomédica — Evaluación comparativa de modelos fundacionales open source en medicina; cribado virtual sobre EGFR; y benchmark de aceleración GPU para detección de núcleos con StarDist.",
         "dataset_name": "-",
         "use_case": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)",
         "provider": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)",
@@ -3474,7 +3474,7 @@
         "entidad_promotora": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)"
       },
       "gene_regulatory_control_mpnst": {
-        "name": "Reanálise xenómica integral de tumores malignos da vaíña do nervio periférico (MPNST)",
+        "name": "Reanálisis genómico integral de tumores malignos de la vaina del nervio periférico (MPNST)",
         "dataset_name": "-",
         "use_case": "CiMUS, Universidade de Santiago de Compostela",
         "provider": "Gene Regulatory Control, CiMUS (USC)",
@@ -3500,20 +3500,20 @@
         "entidad_promotora": "MÁS MÉTODO Consultoría"
       },
       "cd_ligand_ml": {
-        "name": "CD-Ligand ML - Modelización molecular e IA aplicada a interacciones entre ligandos bioactivos y sistemas encapsuladores funcionales",
+        "name": "CD-Ligand ML — Modelización molecular e IA aplicada a interacciones entre ligandos bioactivos y sistemas encapsuladores funcionales",
         "dataset_name": "-",
         "use_case": "MD.USE Innovations S.L.",
-        "provider": "MD.USE Innovations S.L.",
+        "provider": "MD.USE Innovations S. L.",
         "description": "El caso aborda el uso de modelización molecular, simulación computacional y técnicas de aprendizaje automático para estudiar interacciones entre ligandos bioactivos y sistemas encapsuladores o excipientes funcionales de interés en salud. El objetivo es generar conocimiento estructurado sobre afinidad, estabilidad y mecanismos de interacción, con vistas a apoyar el diseño racional de formulaciones, sistemas de vehiculización y estrategias de optimización molecular.",
         "descripcion_ampliada": "MD.USE Innovations plantea el uso de recursos de computación avanzada para desarrollar campañas de modelización y simulación molecular orientadas al estudio de complejos entre compuestos bioactivos y sistemas encapsuladores funcionales. El caso combina aproximaciones de biofísica computacional y análisis de datos para caracterizar propiedades relevantes como estabilidad del complejo, patrones de interacción, comportamiento conformacional y descriptores físico-químicos asociados.\n\nLa información disponible en el catálogo tiene carácter descriptivo y no implica necesariamente la publicación abierta de datos brutos, trayectorias completas, parámetros internos, scripts, metodologías detalladas ni otros elementos sujetos a confidencialidad o propiedad intelectual.\n\nEl caso se sitúa en la intersección entre biofísica molecular, química computacional e inteligencia artificial aplicada al desarrollo de soluciones en salud, incluyendo formulación, encapsulación molecular, vehiculización de compuestos bioactivos y apoyo al diseño racional de productos o candidatos terapéuticos.",
         "volumen": "-",
         "n_ficheros": "-",
         "subsets": {},
         "datos_descripcion": "Contemplase o rexistro de metadatos descritivos, resultados derivados e, cando proceda, conxuntos de datos agregados ou anonimizados relacionados con simulacións moleculares de sistemas ligando-encapsulador. O acceso aos datos estará suxeito ás condicións de gobernanza, confidencialidade, licenza e autorización que se definan para o caso de uso. Non se prevé a posta a disposición pública da totalidade dos datos computacionais xerados.",
-        "entidad_promotora": "MD.USE Innovations S.L."
+        "entidad_promotora": "MD.USE Innovations S. L."
       },
       "ccmm_ieo": {
-        "name": "Datos oceanográficos multidisciplinares e resultados de modelos numéricos do ecosistema mariño",
+        "name": "Datos oceanográficos multidisciplinares y resultados de modelos numéricos del ecosistema marino",
         "dataset_name": "-",
         "use_case": "Instituto Español de Oceanografía (IEO-CSIC) / COAC",
         "provider": "Instituto Español de Oceanografía (IEO-CSIC)",
@@ -4024,7 +4024,7 @@
         "entidad_promotora": "Instituto Español de Oceanografía (IEO-CSIC)"
       },
       "depourense": {
-        "name": "Datos de teleasistencia",
+        "name": "Publicación de datos de teleasistencia",
         "dataset_name": "-",
         "use_case": "Diputación Provincial de Ourense",
         "provider": "Deputación Provincial de Ourense",
