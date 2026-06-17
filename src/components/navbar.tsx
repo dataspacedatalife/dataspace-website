@@ -118,7 +118,6 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
   const aboutLinks = [
     { href: '/about', label: t('saber_mas') },
     { href: '/what', label: t('que_es_un_espacio') },
-     { href: '/use-cases', label: t('casos_de_uso') },
     { href: '/team', label: t('el_equipo') },
   ];
 

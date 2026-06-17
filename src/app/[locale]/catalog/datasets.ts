@@ -21,7 +21,7 @@ import LogoCiMUS from '../../../../public/use-cases/logoCIMUS.png';
 import LogoIIM from '../../../../public/use-cases/iim.png';
 import LogoClimatocLab from '../../../../public/use-cases/climatoclab.png';
 import LogoMeteogalicia from '../../../../public/use-cases/meteogalicia.png';
-import LogoNextHealth from '../../../../public/use-cases/nexthealth.png';
+import LogoNextHealth from '../../../../public/use-cases/nexthealth.webp';
 import LogoTopHealthTech from '../../../../public/use-cases/tophealthtech.png';
 import LogoWirelessGalicia from '../../../../public/use-cases/wireless_galicia.png';
 import LogoInsati from '../../../../public/use-cases/insati.png';
@@ -29,7 +29,12 @@ import LogoMasMetodo from '../../../../public/use-cases/masmetodo.png';
 import LogoGeneCoLab from '../../../../public/use-cases/genecolab.png';
 import LogoDeLaFuenteLab from '../../../../public/use-cases/delafuentelab.png';
 import LogoUSC from '../../../../public/use-cases/usc.png';
+import LogoCESGA from '../../../../public/use-cases/cesga.png';
+import LogoBioHPC from '../../../../public/use-cases/biohpc.png';
+import LogoMercantia from '../../../../public/use-cases/mercantia.png';
 import { type StaticImageData } from 'next/image';
+
+const LogoDepoOurense = '/use-cases/depoourense.svg';
 
 export type HealthCategory = 'human' | 'animal' | 'environmental';
 
@@ -78,7 +83,7 @@ export const useCasesData = [
   },
   {
     id: 'farmaciavax',
-    imagen: LogoIISGS,
+    imagen: LogoCESGA,
     link: 'https://www.cesga.es/',
     categories: ['human'] as HealthCategory[],
   },
@@ -90,7 +95,7 @@ export const useCasesData = [
   },
   {
     id: 'anemoi_ai_downscaling_canarias',
-    imagen: LogoIISGS,
+    imagen: LogoCESGA,
     link: 'https://www.cesga.es/',
     categories: ['environmental'] as HealthCategory[],
   },
@@ -102,7 +107,7 @@ export const useCasesData = [
   },
   {
     id: 'bio_hpc_from_billions_to_leads',
-    imagen: LogoIISGS,
+    imagen: LogoBioHPC,
     link: 'https://bio-hpc.eu/',
     categories: ['human'] as HealthCategory[],
   },
@@ -174,7 +179,7 @@ export const useCasesData = [
   },
   {
     id: 'olamur',
-    imagen: LogoIISGS,
+    imagen: LogoCESGA,
     link: 'https://www.cesga.es/',
     categories: ['environmental'] as HealthCategory[],
   },
@@ -186,7 +191,7 @@ export const useCasesData = [
   },
   {
     id: 'pounds',
-    imagen: LogoIISGS,
+    imagen: LogoCESGA,
     link: 'https://www.cesga.es/',
     categories: ['environmental'] as HealthCategory[],
   },
@@ -222,7 +227,7 @@ export const useCasesData = [
   },
   {
     id: 'depourense',
-    imagen: LogoIISGS,
+    imagen: LogoDepoOurense,
     link: 'https://www.depourense.gal/es',
     categories: ['human'] as HealthCategory[],
   },
@@ -246,13 +251,13 @@ export const useCasesData = [
   },
   {
     id: 'microbiotooldb',
-    imagen: LogoMicroBioTool,
+    imagen: LogoMercantia,
     link: 'https://mercantia.es/',
     categories: ['human'] as HealthCategory[],
   },
   {
     id: 'nexthealth',
-    imagen: LogoIISGS,
+    imagen: LogoNextHealth,
     link: 'https://nexthealth.es/',
     categories: ['human'] as HealthCategory[],
   },
@@ -264,7 +269,7 @@ export const useCasesData = [
   },
   {
     id: 'tophealthtech',
-    imagen: LogoIISGS,
+    imagen: LogoTopHealthTech,
     link: 'https://www.tophealthtech.ai/',
     categories: ['human'] as HealthCategory[],
   },
@@ -282,7 +287,7 @@ export const useCasesData = [
   },
   {
     id: 'wirelessgalicia_coviled',
-    imagen: LogoIISGS,
+    imagen: LogoWirelessGalicia,
     link: 'https://www.wirelessgalicia.com/',
     categories: ['environmental'] as HealthCategory[],
   },
@@ -294,7 +299,7 @@ export const useCasesData = [
   },
 ] as const satisfies {
   readonly id: string;
-  readonly imagen: StaticImageData;
+  readonly imagen: StaticImageData | string;
   readonly link: string;
   readonly categories: readonly HealthCategory[];
 }[];
