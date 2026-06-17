@@ -959,8 +959,8 @@
       "aidatamed_synthetic_patients": {
         "name": "AIDataMed — AI-powered Synthetic Medical Data for Research and Innovation",
         "dataset_name": "data_synthetic_patients_[specialty]_[size]_v[MAJOR].[MINOR]",
-        "use_case": "Grupo IDARA, IIS Galicia Sur (IISGS)",
-        "provider": "Grupo IDARA, IIS Galicia Sur",
+        "use_case": "IDARA Group, IIS Galicia Sur",
+        "provider": "IDARA Group, IIS Galicia Sur",
         "description": "AIDataMed designs, develops and validates a platform for generating high-quality synthetic clinical data using artificial intelligence models. The goal is to provide realistic data that is statistically equivalent to real data and can be freely used in research.",
         "volumen": "50 GB",
         "n_ficheros": "105 - 300",
@@ -1204,10 +1204,10 @@
         "descripcion_ampliada": "AIDataMed designs, develops and validates a platform for generating high-quality synthetic clinical data using artificial intelligence models. The goal is to provide realistic data that is statistically equivalent to real data and can be freely used in research, development of clinical algorithms and benchmarking, eliminating the ethical and legal barriers of using real patient data. Synthetic cohorts are modeled longitudinally on the OMOP-CDM v5.4 schema and generated with HMASynthesizer and GaussianCopula, from seed patients and public academic datasets (Synthea™, GiBleed/Eunomia from OHDSI, Mayo PBC). The datasets cover digestive pathologies: chronic hepatitis B (HBV), primary biliary cholangitis (PBC), Crohn's disease and ulcerative colitis.\n\nThe use of real clinical data in research runs into technical, ethical and legal barriers (GDPR, ethical authorizations, anonymization, source heterogeneity) that limit its availability and reuse. AIDataMed responds to the need to generate synthetic data of clinical quality that preserves the statistical properties of real data without compromising patient privacy."
       },
       "brilliant": {
-        "name": "Brilliant — Observatorio de Sarcopenia",
+        "name": "Brilliant — Sarcopenia Observatory",
         "dataset_name": "MRI_BRILLIANT",
-        "use_case": "Grupo de Investigación Cardiovascular, IIS Galicia Sur",
-        "provider": "Grupo de Investigación Cardiovascular, IIS Galicia Sur (IISGS)",
+        "use_case": "Cardiovascular Research Group, IIS Galicia Sur",
+        "provider": "Cardiovascular Research Group, IIS Galicia Sur (IISGS)",
         "description": "Develop a system that enables the automated upload, analysis and diagnosis of medical studies from synthetic data to address sarcopenia.",
         "volumen": "1 TB",
         "n_ficheros": "10,000 files",
@@ -1247,8 +1247,8 @@
       "gift_conversations": {
         "name": "GIFT — Gastroenterology Interface with Fair Treatment",
         "dataset_name": "data_gift_conversations_[start_date]_[end_date]",
-        "use_case": "Grupo IDARA, IIS Galicia Sur (IISGS)",
-        "provider": "Grupo IDARA, IIS Galicia Sur (IISGS)",
+        "use_case": "IDARA Group, IIS Galicia Sur",
+        "provider": "IDARA Group, IIS Galicia Sur (IISGS)",
         "description": "The GIFT project (Gastroenterology Interface with FAIR treatment) seeks to address current information management challenges in healthcare, aiming to create alliances among professionals and improve patient safety.",
         "volumen": "5 GB",
         "n_ficheros": "500",
@@ -1381,10 +1381,10 @@
         "descripcion_ampliada": "The GIFT project (Gastroenterology Interface with FAIR treatment) seeks to address current information management challenges in healthcare, aiming to create alliances among professionals and improve patient safety. To this end, unstructured information on digestive pathologies and their corresponding care processes will be identified, categorized, and verified, for the subsequent creation of a data space accessible through a generative artificial intelligence (AI) API (Application Programming Interface) pre-loaded with the aforementioned data.\n\nThis API will function as a bridge between the data space and clients, which will initially be public or private health systems or technology companies that serve them. The API will provide this data through an AI assistant that supports clinical decision-making in gastroenterology. In this way, the aim is to offer targeted, rapid, and verified answers on these pathologies in a disruptive yet simple manner, where AI plays a key role as the link between the data space and the end user, who will initially be medical professionals.\n\nIn GIFT, as its name suggests, the FAIR principles will play an essential role, making this clinical practice data findable, accessible, interoperable, and reusable. This data will also be validated by gastroenterologist physicians and researchers from the Hepatology and Inflammatory Bowel Disease Group at IIS Galicia Sur. The incorporation of a conversational artificial intelligence assistant lays the groundwork for a new model that aspires to be a benchmark and pioneer. A decision support system that allows professionals to use artificial intelligence for the ultimate benefit of the patient, promoting faster and more effective diagnoses."
       },
       "biomexplore": {
-        "name": "BiomeXplore — Observatorio del índice poblacional de bienestar de microbiota intestinal (IPbMI)",
+        "name": "BiomeXplore — Observatory of the Population Index of Intestinal Microbiota Wellness (IPbMI)",
         "dataset_name": "dataset_biomexplore",
-        "use_case": "Grupo de Investigación en Microbiología e Infectología, IIS Galicia Sur",
-        "provider": "Grupo de Investigación en Microbiología e Infectología, IIS Galicia Sur (IISGS)",
+        "use_case": "Research Group in Microbiology and Infectiology, IIS Galicia Sur",
+        "provider": "Research Group in Microbiology and Infectiology, IIS Galicia Sur (IISGS)",
         "description": "The BiomeXplore project is based on the development of an observatory for a new microbiota well-being index, the IpbMI, calculated from a gut microbiota prediction adapted to a specific population and visualized in an aggregated form.",
         "volumen": "250 - 1000 TB",
         "n_ficheros": "100000",
@@ -1408,7 +1408,7 @@
         "descripcion_ampliada": "In an innovative way, additional layers of exposome data will be added to the gut microbiota well-being index data. The project considers the application of AI to process a massive volume of gut microbiota data and environmental exposure data. These techniques have proven useful for processing both types of data, but it is important to highlight that these AI techniques will need to be evaluated in this specific application.\n\nThis aggregated population-level visualization of the IPbMI will allow identifying areas for preventive healthcare action from a One Health perspective, without aiming to draw individual-level conclusions. Early diagnosis could be performed and decision-making in the health domain could be supported according to the geographic distribution of this index in Galicia.\n\nIt would also support the identification of priority commercial interventions (pre/probiotics, nutritional supplements, physical activity, nutrition, etc.). Recalculating the index in a population after a specific intervention would allow assessing the health impact of that intervention."
       },
       "salusbench": {
-        "name": "Salusbench — Minería de procesos y análisis avanzado para optimizar la gestión hospitalaria",
+        "name": "Salusbench — Process Mining and Advanced Analytics to Optimize Hospital Management",
         "dataset_name": "data_proceso_id_hospital_id",
         "use_case": "SALUSBENCH",
         "provider": "InverBis Analytics",
@@ -1502,10 +1502,10 @@
         "descripcion_ampliada": "SALUSBENCH enables hospitals and care centers to identify areas for improvement by comparing anonymized indicators on patient flows, protocol compliance, and operational efficiency. The system will facilitate process mining and advanced analysis to optimize hospital management without compromising the privacy or reputation of the participating entities."
       },
       "celiaspace": {
-        "name": "CeliaSpace — Datos de asistentes conversacionales para la evaluación de la salud",
+        "name": "CeliaSpace — Conversational Assistant Data for Health Assessment",
         "dataset_name": "serenia_senior_conversations",
-        "use_case": "atlanTTic Research Center, Universidade de Vigo",
-        "provider": "Grupo de Tecnoloxías da Información, atlanTTic Research Center, UVigo",
+        "use_case": "Information Technologies Group, atlanTTic Research Center, UVigo",
+        "provider": "Information Technologies Group, atlanTTic Research Center, UVigo",
         "description": "CeliaSpace consists of a use case for exploiting anonymized data from dialogues generated between elderly people and an AI assistant, with the goal of training models that enable automated health assessments from conversations. In OneHealth DataSpace, data from interactions between users and the assistant are published, including cognitive and performance evaluations conducted during the conversations.",
         "volumen": "67 users, 21,608 interactions and 2,526 assessments",
         "n_ficheros": "3",
@@ -1746,9 +1746,9 @@
         "descripcion_ampliada": "Based on NLP research by the Information Technologies Group at the atlanTTic research center of the Universidade de Vigo, an AI assistant was developed specifically for elderly people, covering companionship needs, cognitive stimulation, entertainment and information of interest to the user. This assistant has since evolved and a spin-off called Serenia Solutions has been created, featuring a platform called Serenia (AI Assistant + Control Panel) that aims to enhance health monitoring and assessment capabilities.\n\nDuring the initial pilots carried out by atlanTTic, thousands of conversations were generated as well as cognitive and performance evaluations conducted during the sessions. This data, properly pseudonymized and processed in accordance with GDPR, constitutes the main asset contributed to OneHealth DataSpace.\n\nParticipation in OHDS enables both the structured and accessible publication of this data for other participants in the data space, as well as access to data and algorithms from third parties. In the CeliaSpace use case, Serenia Solutions uses this dataset from the Universidade de Vigo to improve its cognitive health detection algorithms. From the Universidade de Vigo's perspective, beyond being a provider of conversation data, it also consumes OHDS data from i4Life on home monitoring for elderly people in order to research relationships between conversational interactions and sensor measurements using clustering techniques."
       },
       "datiacare": {
-        "name": "Datiacare — Plataforma de cuidado inteligente de personas mayores basada en compartición de datos",
+        "name": "Datiacare — Intelligent Elderly Care Platform Based on Data Sharing",
         "dataset_name": "datiacare_home_monitoring",
-        "use_case": "i4life innovación y desarrollos S. L. (con Seniordomo)",
+        "use_case": "i4life innovación y desarrollos S. L.",
         "provider": "i4life",
         "description": "Datiacare aims to facilitate the care of elderly people through data sharing in a common space, enabling the generation of alerts and the development of intelligent algorithms.",
         "volumen": "200,000 records per year per user",
@@ -1948,7 +1948,7 @@
         "descripcion_ampliada": "Facilitate the care of elderly people through data sharing in a common space, enabling the generation of alerts and the development of intelligent algorithms. Optimize the autonomy of the elderly and improve the efficiency of care services.\n\nThe use case explores the capacity of data spaces to exchange information on the health status and activity of elderly people. Data is collected from domestic IoT devices and wearables, combining it with clinical information and lifestyle habits. Data exchange will be managed through secure connectors, enabling the integration of multiple sources for real-time monitoring. The actors involved include care homes, hospitals, telecare companies, and governmental entities. The use case can be extended to people with ASD, Alzheimer's, and ALS.\n\nThe task of caregiving is highly stressful and involves great responsibility. The project addresses the need to improve the care of elderly people through intelligent tools based on data sharing, reducing the burden on caregivers and promoting safer and more preventive care."
       },
       "pounds": {
-        "name": "POUNDs — Simulaciones numéricas con WRF para el impacto de turbinas eólicas marinas en el campo de viento regional y la producción energética",
+        "name": "POUNDs — WRF Numerical Simulations for the Impact of Offshore Wind Turbines on the Regional Wind Field and Energy Production",
         "dataset_name": "-",
         "use_case": "CESGA",
         "provider": "CESGA",
@@ -1961,7 +1961,7 @@
         "entidad_promotora": "CESGA"
       },
       "wirelessgalicia_coviled": {
-        "name": "COVILED — Datos de calidad del aire en interiores",
+        "name": "COVILED — Indoor Air Quality Data",
         "dataset_name": "-",
         "use_case": "Wireless Galicia S.L.",
         "provider": "Wireless Galicia S. L.",
@@ -1974,7 +1974,7 @@
         "entidad_promotora": "Wireless Galicia S. L."
       },
       "olamur": {
-        "name": "OLAMUR — Simulaciones numéricas con WRF para el impacto de turbinas eólicas marinas en las condiciones oceánicas y el ecosistema marino",
+        "name": "OLAMUR — WRF Numerical Simulations for the Impact of Offshore Wind Turbines on Ocean Conditions and the Marine Ecosystem",
         "dataset_name": "-",
         "use_case": "CESGA",
         "provider": "CESGA",
@@ -1987,9 +1987,9 @@
         "entidad_promotora": "CESGA"
       },
       "climaticseriesai": {
-        "name": "ClimaticSeriesAI — Relleno de series climáticas incompletas mediante IA y clasificación de brisas",
+        "name": "ClimaticSeriesAI — Gap-Filling of Incomplete Climate Series Using AI and Sea Breeze Classification",
         "dataset_name": "-",
-        "use_case": "Climatoc-Lab, CIDE (CSIC-UV-GVA)",
+        "use_case": "Climatoc-Lab Group, CIDE (CSIC-UV-GVA)",
         "provider": "Climatoc-Lab, CIDE (CSIC-UV-GVA)",
         "description": "Development of AI models focused on the infilling of incomplete wind series and on the automatic identification of breezes. The aim is to complete climate series with gaps and generate a high-resolution spatiotemporal breeze dataset.",
         "descripcion_ampliada": "Development of AI models focused on the infilling of incomplete wind series and on the automatic identification of breezes. The aim is to complete climate series with gaps and generate a high-resolution spatiotemporal breeze dataset.\n\nWind climate series present temporal gaps that hinder trend analysis and the study of the impact of climate change on breeze regimes.",
@@ -2000,10 +2000,10 @@
         "entidad_promotora": "Climatoc-Lab, CIDE (CSIC-UV-GVA)"
       },
       "agentes_contraste_rmi": {
-        "name": "Modelización de propiedades de nuevos agentes de contraste para RMI",
+        "name": "Modeling Properties of New Contrast Agents for MRI",
         "dataset_name": "-",
-        "use_case": "Grupo QUIMAOR (Química Macroccíclica y Organometálica, USC-1581)",
-        "provider": "Grupo QUIMAOR, USC",
+        "use_case": "QUIMAOR Group, USC",
+        "provider": "QUIMAOR Group, USC",
         "description": "Calculation of fundamental parameters in the characterization of new contrast agents for MRI (Magnetic Resonance Imaging).",
         "descripcion_ampliada": "The use case aims to exploit the computational resources available within the OneHealth DataSpace project for the calculation of fundamental parameters in the characterization of new contrast agents for MRI, in collaboration with the CAs4MI group at UDC.\n\nThe procedure requires a methodological benchmark with Gaussian followed by the calculation of A and G tensors with ORCA to compute the characterization parameters of new metallic complexes that are candidates for MRI contrast agents (EPR A and G tensors).",
         "volumen": "-",
@@ -2013,10 +2013,10 @@
         "entidad_promotora": "Grupo QUIMAOR, USC"
       },
       "bio_hpc_from_billions_to_leads": {
-        "name": "From Billions to Leads — Cribado virtual ultra-masivo basado en consenso para el descubrimiento de agentes anticancerígenos (Wee1, DDR1 y hsEH)",
+        "name": "From Billions to Leads — Consensus-Based Ultra-Massive Virtual Screening for the Discovery of Anticancer Agents (Wee1, DDR1 and hsEH)",
         "dataset_name": "-",
-        "use_case": "Universidad Católica de Murcia (UCAM) — Grupo BIO-HPC",
-        "provider": "Grupo BIO-HPC, UCAM",
+        "use_case": "BIO-HPC Group, Universidad Católica de Murcia",
+        "provider": "BIO-HPC Group, UCAM",
         "description": "The use case applies a multi-cycle virtual screening pipeline (structure, ligand, ML and LLMs) with consensus re-ranking fed by experimental feedback, on three clinically relevant targets: Wee1, DDR1 and hsEH (cancer and inflammation).",
         "descripcion_ampliada": "The use case applies a multi-cycle virtual screening pipeline (structure, ligand, ML and LLMs) with consensus re-ranking fed by experimental feedback, on three clinically relevant targets: Wee1, DDR1 and hsEH (cancer and inflammation).\n\nThe discovery of new anticancer agents requires exploring chemical libraries of billions of compounds, which is unfeasible without scalable computational tools and reliably shared data.",
         "volumen": "-",
@@ -2028,7 +2028,7 @@
       "peptide_binder_design": {
         "name": "Peptide Binder Design — Structure Conditioned Peptide Binder Design",
         "dataset_name": "-",
-        "use_case": "DE LA FUENTE LAB",
+        "use_case": "De la Fuente Lab",
         "provider": "De la Fuente Lab",
         "description": "This use case uses GPU resources to perform binder peptide design conditioned on three-dimensional structures of target proteins. Generative and structure prediction models are used to sample, predict, rank and refine candidate peptides.",
         "descripcion_ampliada": "This use case uses GPU resources to perform binder peptide design conditioned on three-dimensional structures of target proteins. Generative and structure prediction models are used to sample, predict, rank and refine candidate peptides.\n\nNeed to systematically design binder peptides conditioned on the 3D structure of target proteins, leveraging GPU resources for large-scale campaigns.",
@@ -2039,7 +2039,7 @@
         "entidad_promotora": "De la Fuente Lab"
       },
       "woah_disease": {
-        "name": "WOAH-disease — Clasificación de enfermedades animales",
+        "name": "WOAH-disease — Animal Disease Classification",
         "dataset_name": "-",
         "use_case": "CONSUVET",
         "provider": "CONSUVET",
@@ -2052,9 +2052,9 @@
         "entidad_promotora": "CONSUVET"
       },
       "multimodal_protein_llm": {
-        "name": "Multimodal Protein LLM — Entrenamiento de LLM multimodal para estructura y función de proteínas",
+        "name": "Multimodal Protein LLM — Multimodal LLM Training for Protein Structure and Function",
         "dataset_name": "-",
-        "use_case": "DE LA FUENTE LAB",
+        "use_case": "De la Fuente Lab",
         "provider": "De la Fuente Lab",
         "description": "This use case employs GPU resources for training a multimodal LLM on protein structures. Conditioned on protein structure tokens, the LLM is trained to predict the protein's function or the structure tokens of its binders.",
         "descripcion_ampliada": "This use case employs GPU resources for training a multimodal LLM on protein structures. Conditioned on protein structure tokens, the LLM is trained to predict the protein's function or the structure tokens of its binders. The final LLM will be able to explain a protein's function in natural language from its structure.",
@@ -2065,7 +2065,7 @@
         "entidad_promotora": "De la Fuente Lab"
       },
       "nexthealth": {
-        "name": "1MillionHCE — Historias clínicas electrónicas sintéticas",
+        "name": "1MillionHCE — Synthetic Electronic Health Records",
         "dataset_name": "-",
         "use_case": "Next & Health Consulting S.L.",
         "provider": "Next & Health Consulting S. L.",
@@ -2078,7 +2078,7 @@
         "entidad_promotora": "Next & Health Consulting S. L."
       },
       "compound_drought_heat_lattin": {
-        "name": "Compound Drought-Heat / LATTIN — Análisis lagrangiano de eventos compuestos de sequía y ola de calor con elevado impacto social en la región mediterránea",
+        "name": "Compound Drought-Heat / LATTIN — Lagrangian Analysis of Compound Drought and Heatwave Events with High Social Impact in the Mediterranean Region",
         "dataset_name": "-",
         "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
         "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
@@ -2091,9 +2091,9 @@
         "entidad_promotora": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo"
       },
       "wrf_brisasmarinas": {
-        "name": "WRF-BrisasMarinas — Simulaciones numéricas de alta resolución de la dinámica de brisas marinas mediante el modelo WRF",
+        "name": "WRF-BrisasMarinas — High-Resolution Numerical Simulations of Sea Breeze Dynamics Using the WRF Model",
         "dataset_name": "-",
-        "use_case": "CLIMATOC-LAB, CIDE (CSIC-UV-GVA)",
+        "use_case": "Climatoc-Lab Group, CIDE (CSIC-UV-GVA)",
         "provider": "CLIMATOC-LAB, CIDE (CSIC-UV-GVA)",
         "description": "The project evaluates the impact of heat waves on sea breeze circulation in the western Mediterranean. 40 historical compound events will be simulated with the WRF model using nested domains (9 km, 3 km and 1 km), with high spatial, temporal (hourly outputs) and vertical resolution.",
         "descripcion_ampliada": "The project evaluates the impact of heat waves on sea breeze circulation in the western Mediterranean. 40 historical compound events will be simulated with the WRF model using nested domains (9 km, 3 km and 1 km), with high spatial, temporal (hourly outputs) and vertical resolution (128 ETA levels).\n\nNeed to quantitatively evaluate how heat waves modify sea breeze circulation in the western Mediterranean, which requires high-resolution simulations that are unfeasible without HPC.",
@@ -2104,7 +2104,7 @@
         "entidad_promotora": "CLIMATOC-LAB, CIDE (CSIC-UV-GVA)"
       },
       "wheydata": {
-        "name": "WHEYDATA — Compartición de datos de originación y gestión controlada de suero lácteo procedente de queserías artesanas",
+        "name": "WHEYDATA — Data Sharing for the Sourcing and Controlled Management of Dairy Whey from Artisan Cheese Dairies",
         "dataset_name": "-",
         "use_case": "Agrolinera Astur S. L.",
         "provider": "Agrolinera Astur S. L.",
@@ -2117,7 +2117,7 @@
         "entidad_promotora": "Agrolinera Astur S. L."
       },
       "meteogalicia": {
-        "name": "Contribución del histórico de ejecución de modelos atmosféricos y de dinámica marina al espacio de datos OneHealth",
+        "name": "Contribution of the Historical Record of Atmospheric and Marine Dynamics Model Runs to the OneHealth Data Space",
         "dataset_name": "-",
         "use_case": "MeteoGalicia — Dirección Xeral de Enerxías Renovables e Cambio Climático",
         "provider": "MeteoGalicia",
@@ -3280,7 +3280,7 @@
         "entidad_promotora": "MeteoGalicia"
       },
       "heat_stress_lattin": {
-        "name": "Heat Stress LATTIN — Análisis lagrangiano de transporte de humedad y de calor en eventos de elevado impacto social por estrés térmico",
+        "name": "Heat Stress LATTIN — Lagrangian Analysis of Moisture and Heat Transport in High Social Impact Events Due to Thermal Stress",
         "dataset_name": "-",
         "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
         "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
@@ -3293,10 +3293,10 @@
         "entidad_promotora": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo"
       },
       "microbioma_16s_citius": {
-        "name": "AIRA16S — Inventario automatizado de proyectos de secuenciación del gen 16S rRNA humano en bases de datos públicas",
+        "name": "AIRA16S — Automated Inventory of Human 16S rRNA Gene Sequencing Projects in Public Databases",
         "dataset_name": "-",
-        "use_case": "Grupo de trabajo en microbioma del CiTIUS — Universidade de Santiago de Compostela",
-        "provider": "Grupo de trabajo en microbioma del CiTIUS — Universidade de Santiago de Compostela",
+        "use_case": "Microbiome Working Group, CiTIUS, USC",
+        "provider": "Microbiome Working Group of CiTIUS — Universidade de Santiago de Compostela",
         "description": "Development of an automated pipeline that retrieves, processes, and validates human 16S rRNA gene sequencing projects from multiple public sources (SRA, BioProject, PubMed, Europe PMC), enriching their metadata with information on anatomical site, hypervariable region, associated scientific publication, and quality metrics.",
         "descripcion_ampliada": "Sequencing projects for the 16S rRNA marker gene deposited in public repositories such as the NCBI Sequence Read Archive (SRA) lack structured and homogeneous metadata, hindering their systematic retrieval and reuse in human microbiome studies.\n\nThis use case proposes the development of an automated pipeline that retrieves, processes, and validates these projects from multiple public sources (SRA, BioProject, PubMed, Europe PMC), enriching their metadata with information on anatomical site, sequenced hypervariable region, associated scientific publication, and quality metrics. The result is a structured and annotated 16S gene database integrated into the data space, queryable using relevant biomedical criteria and periodically updatable.",
         "volumen": "-",
@@ -3306,7 +3306,7 @@
         "entidad_promotora": "Grupo de trabajo en microbioma del CiTIUS — Universidade de Santiago de Compostela"
       },
       "insati_vaira": {
-        "name": "VAIRA — Datos de estimulación físico-cognitiva",
+        "name": "VAIRA — Physical-Cognitive Stimulation Data",
         "dataset_name": "-",
         "use_case": "Insati Innovation S.L.",
         "provider": "Insati Innovation S. L.",
@@ -3319,7 +3319,7 @@
         "entidad_promotora": "Insati Innovation S. L."
       },
       "aid_g": {
-        "name": "AID-G — Avatares, Inteligencia Artificial y Gobernanza Europea de Datos: Innovación Sostenible para la Tercera Edad",
+        "name": "AID-G — Avatars, Artificial Intelligence and European Data Governance: Sustainable Innovation for the Elderly",
         "dataset_name": "-",
         "use_case": "COGNITUS BIOTECH S.L.",
         "provider": "COGNITUS BIOTECH S. L.",
@@ -3332,7 +3332,7 @@
         "entidad_promotora": "COGNITUS BIOTECH S. L."
       },
       "matlabid": {
-        "name": "MatLabID — Publicación del catálogo de material de laboratorio de ICIGA DATALAB",
+        "name": "MatLabID — Publication of the ICIGA DATALAB Laboratory Materials Catalogue",
         "dataset_name": "-",
         "use_case": "ICIGA DATALAB S. L. U.",
         "provider": "ICIGA DATALAB S. L. U.",
@@ -3345,7 +3345,7 @@
         "entidad_promotora": "ICIGA DATALAB S. L. U."
       },
       "otto_365": {
-        "name": "Datos verídicos y en tiempo real de actividad en centros de día sanitarios",
+        "name": "Real-Time and Verified Activity Data from Day Health Centers",
         "dataset_name": "-",
         "use_case": "OTTO SOFTWARE S. L.",
         "provider": "OTTO SOFTWARE S. L.",
@@ -3358,7 +3358,7 @@
         "entidad_promotora": "OTTO SOFTWARE S. L."
       },
       "microbiotooldb": {
-        "name": "MicroBioToolDB — Publicación de la base de datos curada de MicroBioTool",
+        "name": "MicroBioToolDB — Publication of the Curated MicroBioTool Database",
         "dataset_name": "-",
         "use_case": "MERCANTIA DESARROLLOS ALIMENTARIOS S.L.",
         "provider": "MERCANTIA DESARROLLOS ALIMENTARIOS S. L.",
@@ -3371,7 +3371,7 @@
         "entidad_promotora": "MERCANTIA DESARROLLOS ALIMENTARIOS S. L."
       },
       "dl_meteodownscaling": {
-        "name": "PDL-MeteoDownscaling — Predicción espacio-temporal de alta resolución para variables meteorológicas mediante Deep Learning",
+        "name": "PDL-MeteoDownscaling — High-Resolution Spatio-Temporal Forecasting of Meteorological Variables Using Deep Learning",
         "dataset_name": "-",
         "use_case": "CIDE (CSIC-UV-GVA)",
         "provider": "CIDE (CSIC-UV-GVA)",
@@ -3384,7 +3384,7 @@
         "entidad_promotora": "CIDE (CSIC-UV-GVA)"
       },
       "anemoi_ai_downscaling_canarias": {
-        "name": "Downscaling meteorológico con inteligencia artificial para la caracterización del recurso eólico en Canarias",
+        "name": "Meteorological Downscaling with Artificial Intelligence for Wind Resource Characterization in the Canary Islands",
         "dataset_name": "-",
         "use_case": "CESGA",
         "provider": "CESGA",
@@ -3397,7 +3397,7 @@
         "entidad_promotora": "CESGA"
       },
       "tophealthtech": {
-        "name": "Datos clínicos de pacientes diabéticos",
+        "name": "Clinical Data of Diabetic Patients",
         "dataset_name": "-",
         "use_case": "Top Health Tech S. L.",
         "provider": "Top Health Tech S. L.",
@@ -3410,7 +3410,7 @@
         "entidad_promotora": "Top Health Tech S. L."
       },
       "base_climatologica_eventos_hidrologicos_extremos": {
-        "name": "Ampliación de la base de datos global de contribuciones energéticas para el análisis de eventos compuestos de sequía y ola de calor",
+        "name": "Extension of the Global Database of Energy Contributions for the Analysis of Compound Drought and Heatwave Events",
         "dataset_name": "-",
         "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
         "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
@@ -3423,10 +3423,10 @@
         "entidad_promotora": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo"
       },
       "simbios_amp_membrana": {
-        "name": "AMP-Membrana — Simulación molecular multiescala y aprendizaje automático para el estudio de péptidos antimicrobianos en modelos de membrana asociados a inflamación crónica",
+        "name": "AMP-Membrana — Multiscale Molecular Simulation and Machine Learning for the Study of Antimicrobial Peptides in Membrane Models Associated with Chronic Inflammation",
         "dataset_name": "-",
-        "use_case": "Grupo SIMBIOS (CiQUS) — Universidad de Santiago de Compostela",
-        "provider": "Grupo SIMBIOS (CiQUS, USC)",
+        "use_case": "SIMBIOS Group, CiQUS, USC",
+        "provider": "SIMBIOS Group (CiQUS, USC)",
         "description": "The case addresses the generation and exploitation of multiscale molecular simulation data to study the interaction of antimicrobial peptides with biological membrane models relevant to chronic inflammation processes (infection, cancer, aging).",
         "descripcion_ampliada": "The case addresses the generation and exploitation of multiscale molecular simulation data to study the interaction of antimicrobial peptides with biological membrane models relevant to chronic inflammation processes (infection, cancer, aging). An atomistic and coarse-grained approach is used to capture both molecular detail and collective phenomena.\n\nNeed to generate and exploit large multiscale molecular simulation datasets to study the selectivity of antimicrobial peptides in chronic inflammation contexts.",
         "volumen": "-",
@@ -3436,7 +3436,7 @@
         "entidad_promotora": "Grupo SIMBIOS (CiQUS, USC)"
       },
       "databench": {
-        "name": "DataBench — Análisis y consolidación de datos procedentes de múltiples fuentes",
+        "name": "DataBench — Analysis and Consolidation of Data from Multiple Sources",
         "dataset_name": "-",
         "use_case": "Imatia Innovation",
         "provider": "Imatia Innovation",
@@ -3449,7 +3449,7 @@
         "entidad_promotora": "Imatia Innovation"
       },
       "farmaciavax": {
-        "name": "FarmaciaVAX — Intercambio de datos sobre campañas de vacunación en farmacias",
+        "name": "FarmaciaVAX — Data Exchange on Vaccination Campaigns in Pharmacies",
         "dataset_name": "-",
         "use_case": "CESGA",
         "provider": "CESGA",
@@ -3462,10 +3462,10 @@
         "entidad_promotora": "CESGA"
       },
       "grheco_xen_iahpc_biomedica": {
-        "name": "IA/HPC Biomédica — Evaluación comparativa de modelos fundacionales open source en medicina; cribado virtual sobre EGFR; y benchmark de aceleración GPU para detección de núcleos con StarDist.",
+        "name": "AI/HPC Biomedical — Comparative Evaluation of Open Source Foundation Models in Medicine; Virtual Screening on EGFR; and GPU Acceleration Benchmark for Nucleus Detection with StarDist.",
         "dataset_name": "-",
-        "use_case": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)",
-        "provider": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)",
+        "use_case": "Computational Hematology and Genomics Group (GrHeCo-Xen), IDIS",
+        "provider": "Computational Hematology and Genomics Group (GrHeCo-Xen)",
         "description": "Three complementary lines are integrated: (1) evaluation of open source foundation models for medicine through biomedical question-answering benchmarks; (2) large-scale virtual screening against EGFR combining molecular docking and GPU-accelerated molecular dynamics; (3) GPU acceleration of StarDist 2D.",
         "descripcion_ampliada": "Three complementary lines are integrated: (1) evaluation of open source foundation models for medicine through biomedical question-answering benchmarks; (2) large-scale virtual screening against EGFR combining molecular docking and GPU-accelerated molecular dynamics; (3) GPU acceleration of StarDist 2D for nucleus detection in H&amp;E WSI images from digital pathology, with CPU vs. GPU comparison.\n\nThe group needs to dimension HPC/AI infrastructure for real biomedical workloads, while avoiding exposure of clinical data, proprietary models or strategic know-how. Bottlenecks: robust evaluation of on-premise medical LLMs; thousands of concurrent docking calculations; and nucleus detection in WSI images (up to 51 hours per sample on CPU).",
         "volumen": "-",
@@ -3475,9 +3475,9 @@
         "entidad_promotora": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)"
       },
       "gene_regulatory_control_mpnst": {
-        "name": "Reanálisis genómico integral de tumores malignos de la vaina del nervio periférico (MPNST)",
+        "name": "Comprehensive Genomic Reanalysis of Malignant Peripheral Nerve Sheath Tumors (MPNST)",
         "dataset_name": "-",
-        "use_case": "CiMUS, Universidade de Santiago de Compostela",
+        "use_case": "GeneControl Group, CiMUS, USC",
         "provider": "Gene Regulatory Control, CiMUS (USC)",
         "description": "A comprehensive reanalysis is proposed of the genomic data from the GeM consortium (Genomics of MPNST), including germline and tumor whole-genome sequencing (WGS) and transcriptomics (RNA-seq) from MPNST samples.",
         "descripcion_ampliada": "A comprehensive reanalysis is proposed of the genomic data from the GeM consortium (Genomics of MPNST), including germline and tumor whole-genome sequencing (WGS) and transcriptomics (RNA-seq) from MPNST samples. The ~25.5 TB of data will be downloaded from the European Genome-phenome Archive (EGA) and reprocessed using updated pipelines.",
@@ -3488,9 +3488,9 @@
         "entidad_promotora": "Gene Regulatory Control, CiMUS (USC)"
       },
       "masmetodo": {
-        "name": "Clustering territorial de Zonas Básicas de Salud",
+        "name": "Territorial Clustering of Basic Health Zones",
         "dataset_name": "dataset_zbs_clustering_bronze_v1",
-        "use_case": "\"MÁS MÉTODO Consultoría ^[DATA·IA]\"",
+        "use_case": "MÁS MÉTODO Consultoría",
         "provider": "MÁS MÉTODO Consultoría",
         "description": "MÁS MÉTODO Consultoría applies data science and AI to territorial health management, integrating care activity, demographics, geography and climatology to build comparable profiles of Basic Health Zones and support planning, prioritization and prevention decisions.",
         "descripcion_ampliada": "MÁS MÉTODO Consultoría is a consultancy specialized in the application of data science and artificial intelligence to the health sector. Its use case integrates data on care activity, population, aging, health network, territory and climatology to build multivariate profiles of Basic Health Zones (ZBS) and enable their comparison between units with similar characteristics.\n\nThe underlying problem is that health activity in fragmented or highly geographically dispersed territories cannot be evaluated with homogeneous criteria. In contexts such as Galicia, where the A Coruña–Santiago–Vigo axis concentrates population and services while inland areas show greater aging and dispersion, isolated indicators are insufficient to support territorial planning of primary care. MÁS MÉTODO's solution allows detecting anomalies relative to each ZBS's comparable peer group, identifying demographic or climatic vulnerabilities, and designing differentiated responses including telemedicine, pilots for dispersed or aging territories, and improvement or expansion of zones with Ordinary Home Care (ADO).\n\nThe incorporation of climatological variables enables the introduction of an applied bioclimatology approach, anticipating how phenomena such as extreme heat, cold, humidity or adverse episodes may increase care pressure in certain territorial profiles. The use case does not replace expert health validation, but rather provides a traceable and explainable analytical basis to support planning and prevention decisions.",
@@ -3501,7 +3501,7 @@
         "entidad_promotora": "MÁS MÉTODO Consultoría"
       },
       "cd_ligand_ml": {
-        "name": "CD-Ligand ML — Modelización molecular e IA aplicada a interacciones entre ligandos bioactivos y sistemas encapsuladores funcionales",
+        "name": "CD-Ligand ML — Molecular Modeling and AI Applied to Interactions Between Bioactive Ligands and Functional Encapsulating Systems",
         "dataset_name": "-",
         "use_case": "MD.USE Innovations S.L.",
         "provider": "MD.USE Innovations S. L.",
@@ -3514,9 +3514,9 @@
         "entidad_promotora": "MD.USE Innovations S. L."
       },
       "ccmm_ieo": {
-        "name": "Datos oceanográficos multidisciplinares y resultados de modelos numéricos del ecosistema marino",
+        "name": "Multidisciplinary Oceanographic Data and Numerical Model Results of the Marine Ecosystem",
         "dataset_name": "-",
-        "use_case": "Instituto Español de Oceanografía (IEO-CSIC) / COAC",
+        "use_case": "Instituto Español de Oceanografía (IEO-CSIC)",
         "provider": "Instituto Español de Oceanografía (IEO-CSIC)",
         "description": "IEO-CSIC proposes to contribute to the data space through multidisciplinary oceanographic data and numerical model results of the marine ecosystem. The entity has standard data and service catalogs.",
         "descripcion_ampliada": "IEO-CSIC proposes to contribute to the data space through multidisciplinary oceanographic data and numerical model results of the marine ecosystem. The entity has standard data and service catalogs.",
@@ -4025,9 +4025,9 @@
         "entidad_promotora": "Instituto Español de Oceanografía (IEO-CSIC)"
       },
       "depourense": {
-        "name": "Publicación de datos de teleasistencia",
+        "name": "Publication of Telecare Data",
         "dataset_name": "-",
-        "use_case": "Diputación Provincial de Ourense",
+        "use_case": "Deputación Provincial de Ourense",
         "provider": "Deputación Provincial de Ourense",
         "description": "The Diputación Provincial de Ourense publishes in OneHealth DataSpace four datasets from its home telecare service, with anonymized or pseudonymized information on follow-ups, device malfunctions, beneficiary characteristics and emergency events.",
         "descripcion_ampliada": "La Diputación Provincial de Ourense gestiona un servicio de teleasistencia domiciliaria dirigido a personas mayores y dependientes. Con su incorporación a OneHealth DataSpace como proveedor de datos en nivel avanzado, pone a disposición del ecosistema cuatro datasets derivados del funcionamiento operativo del servicio, cubriendo los aspectos principales de la atención: contactos de seguimiento, incidencias técnicas en los dispositivos, perfil operativo de los beneficiarios y eventos de emergencia. Los datos se publican de forma seudoanonimizada, preservando la privacidad de las personas usuarias.\n\nLa disponibilidad de datos reales y estructurados del sector de la teleasistencia pública es escasa. La Diputación de Ourense identifica una oportunidad de contribuir al ecosistema de datos de salud y dependencia con información que puede ser útil para la mejora de servicios similares, la investigación en atención a la dependencia y el desarrollo de herramientas de análisis del bienestar de personas mayores.",
@@ -4038,7 +4038,7 @@
         "entidad_promotora": "Deputación Provincial de Ourense"
       },
       "ccvet": {
-        "name": "CcVet — Informatización de casos clínicos veterinarios para espacios de datos",
+        "name": "CcVet — Digitization of Veterinary Clinical Cases for Data Spaces",
         "dataset_name": "-",
         "use_case": "CONSUVET",
         "provider": "CONSUVET",
@@ -4051,7 +4051,7 @@
         "entidad_promotora": "CONSUVET"
       },
       "two": {
-        "name": "Integración de datos ambientales y agronómicos en OneHealth DataSpace",
+        "name": "Integration of Environmental and Agronomic Data in the OneHealth DataSpace",
         "dataset_name": "-",
         "use_case": "TRUEWORLD",
         "provider": "TRUEWORLD",
