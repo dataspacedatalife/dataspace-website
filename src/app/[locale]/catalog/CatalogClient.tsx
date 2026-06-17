@@ -2,7 +2,6 @@
 
 import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
-import { CheckIcon, ClipboardIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import { useTranslations, useMessages } from 'next-intl';
 import React, { useState } from 'react';
@@ -13,9 +12,15 @@ import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
 import { useSearchState } from '@/hooks/useSearchState';
-import { useCasesData } from './datasets';
+import { useCasesData, type HealthCategory } from './datasets';
 
 type DatasetKey = (typeof useCasesData)[number]['id'];
+
+const CATEGORY_STYLES: Record<HealthCategory, string> = {
+  human: 'bg-blue-100 text-blue-800',
+  animal: 'bg-green-100 text-green-800',
+  environmental: 'bg-teal-100 text-teal-800',
+};
 
 // Funciones para paginación
 const datasetsPerPage = 4;
@@ -116,15 +121,24 @@ function DatasetList({
                   <p className="mt-3 text-sm text-gray-500 max-w-3xl">
                     {t(`catalog.datasets.${dataset.id}.description`)}
                   </p>
+                  {/* Badges de categoría */}
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {dataset.categories.map((cat) => (
+                      <span
+                        key={cat}
+                        className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${CATEGORY_STYLES[cat]}`}
+                      >
+                        {t(`catalog.categories.${cat}`)}
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
-                {/* Columna de botones, responsive */}
-                <div className="flex flex-col gap-2 sm:w-65 w-full">
+                {/* Columna de botón, centrado verticalmente */}
+                <div className="flex items-center justify-center sm:w-48 w-full">
                   <Button className="w-full" onClick={() => onOpen(dataset.id)}>
                     {t('catalog.viewDetails')}
                   </Button>
-
-                  <CopyEmailButton email={dataset.email} />
                 </div>
               </div>
             </div>
@@ -132,6 +146,80 @@ function DatasetList({
         })}
       </div>
     </Container>
+  );
+}
+
+// ── Rich-text helpers ──────────────────────────────────────────────────────
+
+const DATA_SECTION_LABELS = [
+  'Tipo de datos',
+  'Fuente de los datos',
+  'Uso previsto de los datos',
+];
+const DATA_SECTION_REGEX = new RegExp(
+  `(${DATA_SECTION_LABELS.map(l => l.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')}):`,
+  'g',
+);
+
+function renderListContent(text: string) {
+  const trimmed = text.trim().replace(/\.$/, '');
+  const items = trimmed.split(';').map(s => s.trim()).filter(Boolean);
+  if (items.length > 1) {
+    return (
+      <ul className="list-disc list-inside space-y-1 mt-1">
+        {items.map((item, i) => <li key={i}>{item.replace(/\.$/, '')}</li>)}
+      </ul>
+    );
+  }
+  return <span>{text.trim()}</span>;
+}
+
+function DatosDescripcionRenderer({ text }: { text: string }) {
+  const paragraphs = text.split('\n\n');
+  return (
+    <div className="space-y-4">
+      {paragraphs.map((para, pIdx) => {
+        const hasSections = DATA_SECTION_LABELS.some(l => para.includes(`${l}:`));
+        if (hasSections) {
+          const parts = para.split(DATA_SECTION_REGEX);
+          const sections: Array<{ label: string; content: string }> = [];
+          for (let i = 1; i < parts.length; i += 2) {
+            sections.push({ label: parts[i], content: (parts[i + 1] ?? '').trim() });
+          }
+          return (
+            <dl key={pIdx} className="space-y-3">
+              {sections.map(({ label, content }) => (
+                <div key={label}>
+                  <dt className="font-semibold text-gray-800">{label}</dt>
+                  <dd className="text-gray-600 mt-0.5 ml-0">{renderListContent(content)}</dd>
+                </div>
+              ))}
+            </dl>
+          );
+        }
+        // Non-structured paragraph — could be a bullet list if lines start with items
+        const lines = para.split('\n').filter(Boolean);
+        if (lines.length > 1) {
+          return (
+            <ul key={pIdx} className="list-disc list-inside space-y-1 text-gray-600">
+              {lines.map((line, i) => <li key={i}>{line.replace(/^[-–•]\s*/, '')}</li>)}
+            </ul>
+          );
+        }
+        return <p key={pIdx} className="text-gray-600 leading-relaxed">{para}</p>;
+      })}
+    </div>
+  );
+}
+
+function DescripcionAmpliadaRenderer({ text }: { text: string }) {
+  const paragraphs = text.split('\n\n');
+  return (
+    <div className="space-y-3 mb-6">
+      {paragraphs.map((para, i) => (
+        <p key={i} className="text-gray-600 leading-relaxed">{para}</p>
+      ))}
+    </div>
   );
 }
 
@@ -147,14 +235,12 @@ function DatasetModal({
   const baseKey = `catalog.datasets.${datasetKey}` as const;
 
   const name = t(`${baseKey}.name`);
-  const dataset_name = t(`${baseKey}.dataset_name`);
   const use_case = t(`${baseKey}.use_case`);
   const provider = t(`${baseKey}.provider`);
   const description = t(`${baseKey}.description`);
   const volumen = t(`${baseKey}.volumen`);
   const n_ficheros = t(`${baseKey}.n_ficheros`);
-  const dataset_name_txt = t('catalog.dataset_name');
-  const provider_txt = t('catalog.provider');
+  const entidad_promotora_txt = t('catalog.entidad_promotora');
   const volume_txt = t('catalog.volume');
   const number_of_files_txt = t('catalog.number_of_files');
   const data_type_txt = t('catalog.data_type');
@@ -163,9 +249,15 @@ function DatasetModal({
   const data_license_txt = t('catalog.license');
 
   const messages = useMessages();
-  const subsetEntries = Object.entries(
-    messages.catalog.datasets[datasetKey].subsets,
-  );
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const datasetMessages = messages.catalog.datasets[datasetKey] as any;
+  const descripcionAmpliada = datasetMessages.descripcion_ampliada as string | undefined;
+  const datosDescripcion = datasetMessages.datos_descripcion as string | undefined;
+  const subsetEntries = Object.entries(datasetMessages.subsets);
+
+  const entityLabel = use_case;
+  const datasetMeta = useCasesData.find((d) => d.id === datasetKey);
+  const categories = datasetMeta?.categories ?? [];
 
   const [openSubsets, setOpenSubsets] = useState<Record<string, boolean>>(() =>
     subsetEntries.reduce((acc, [key]) => {
@@ -187,16 +279,29 @@ function DatasetModal({
             {name}
           </DialogTitle>
 
-          <div className="flex items-center gap-3 mb-2 mt-2">
-            <p className="text-md text-gray-500 font-medium">{dataset_name_txt}:</p>
-            <p className="text-md font-medium">{dataset_name}</p>
+          <div className="flex items-center gap-2 mt-2">
+            <span className="text-sm text-gray-500 font-medium">{entidad_promotora_txt}:</span>
+            <span className="text-sm font-medium text-gray-700">{entityLabel}</span>
           </div>
-          <div className="flex items-center gap-3 mb-6">
-            <p className="text-md text-gray-500 font-medium">{provider_txt}:</p>
-            <p className="text-md font-medium">{use_case} - </p>
-            <p className="text-md font-medium">{provider}</p>
-          </div>
-          <p className="text-gray-600 leading-relaxed mb-6">{description}</p>
+
+          {categories.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-3 mb-6">
+              {categories.map((cat) => (
+                <span
+                  key={cat}
+                  className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${CATEGORY_STYLES[cat]}`}
+                >
+                  {t(`catalog.categories.${cat}`)}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {descripcionAmpliada ? (
+            <DescripcionAmpliadaRenderer text={descripcionAmpliada} />
+          ) : (
+            <p className="text-gray-600 leading-relaxed mb-6">{description}</p>
+          )}
 
           <div className="flex flex-wrap gap-4 mb-6">
             <div className="bg-white border border-gray-200 rounded-md px-4 py-2 shadow-sm">
@@ -210,8 +315,9 @@ function DatasetModal({
           </div>
 
           {subsetEntries.map(([subsetKey, subsetValue]) => {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const { name: subsetName, description: subsetDescription, metadata, variables } =
-              subsetValue;
+              subsetValue as any;
             const isOpen = openSubsets[subsetKey] ?? true;
 
             return (
@@ -282,6 +388,13 @@ function DatasetModal({
               </div>
             );
           })}
+          {datosDescripcion && subsetEntries.length === 0 && (
+            <div className="rounded-2xl border border-gray-200 shadow-sm bg-gray-50 mb-6 p-5">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('catalog.data_description')}</h3>
+              <DatosDescripcionRenderer text={datosDescripcion} />
+            </div>
+          )}
+
           <div className="mt-6 flex justify-end">
             <Button onClick={onClose} className="px-4 py-2">
               {t('catalog.close')}
@@ -293,36 +406,6 @@ function DatasetModal({
   );
 }
 
-// Botón de copiar email
-function CopyEmailButton({ email }: { email: string }) {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1500);
-  };
-
-  return (
-    <Button
-      variant="secondary"
-      className="w-full flex items-center justify-center gap-2 text-xs py-1.5"
-      onClick={handleCopy}
-    >
-      {copied ? (
-        <>
-          <CheckIcon className="w-4 h-4 text-green-600" />
-          ¡Copiado!
-        </>
-      ) : (
-        <>
-          <ClipboardIcon className="w-4 h-4 text-gray-600" />
-          {email}
-        </>
-      )}
-    </Button>
-  );
-}
 
 // Paginación
 function Pagination({
