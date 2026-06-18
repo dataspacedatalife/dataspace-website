@@ -81,13 +81,7 @@ function Hero() {
                 </p>
 
                 <div className="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
-                  <Button
-                    href="https://dashboard.dataspace.cesga.es"
-                    target="_blank"
-                    className="px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-white font-semibold bg-[#009AB8] shadow-lg hover:scale-105 transition"
-                  >
-                    {t('testDemo')}
-                  </Button>
+                  
 
                   <a
                     href="/about"
@@ -96,6 +90,13 @@ function Hero() {
                   >
                     {t('learnMore')}
                   </a>
+                  <Button
+                    href="https://dashboard.dataspace.cesga.es"
+                    target="_blank"
+                    className="px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-white font-semibold bg-[#009AB8] shadow-lg hover:scale-105 transition"
+                  >
+                    {t('testDemo')}
+                  </Button>
                 </div>
 
               </div>
