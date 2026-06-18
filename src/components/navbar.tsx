@@ -74,18 +74,11 @@ function LanguageSelector() {
           <Link
             key={code}
             href="#"
-<<<<<<< HEAD
-            className={`${languageItemClass} ${currentLocale === code
-                ? 'font-semibold bg-[#005467]/10 text-[#005467]'
-                : ''
-              }`}
-=======
             className={`${languageItemClass} ${
               currentLocale === code
                 ? 'font-semibold bg-[#005467]/10 text-[#005467]'
                 : ''
             }`}
->>>>>>> 2dbe207 (navbar styles improved)
             onClick={(e) => {
               e.preventDefault();
               switchLanguage(code);
@@ -158,14 +151,11 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     { href: '/team', label: t('el_equipo') },
   ];
 
-<<<<<<< HEAD
-=======
   const joinLinks = [
     { href: '/how', label: t('adhesion') },
     { href: '/kitEdD', label: t('kit') },
   ];
 
->>>>>>> 2dbe207 (navbar styles improved)
   const latestLinks = [
     { href: '/events', label: t('eventos') },
     { href: '/blog', label: t('blog') },
