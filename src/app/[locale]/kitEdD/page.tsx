@@ -6,6 +6,7 @@ import { getTranslations } from 'next-intl/server';
 import React, { Suspense } from 'react';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
+import { Button } from '@/components/button';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
@@ -90,30 +91,29 @@ async function Header() {
       <Lead className="mt-6">{t('lead')}</Lead>
 
       <div className="mx-auto mt-8 flex w-full max-w-3xl flex-col items-center gap-3 sm:flex-row sm:justify-center">
-        <a
+        <Button
           href={t('ctaPrimary.href')}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border border-gray-200 bg-white/80 px-5 py-3 text-sm font-semibold shadow-sm hover:bg-white"
         >
           {t('ctaPrimary.label')}
-        </a>
-        <a
+        </Button>
+
+        <Button
           href={t('ctaSecondary.href')}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border border-gray-200 bg-white/80 px-5 py-3 text-sm font-semibold shadow-sm hover:bg-white"
         >
           {t('ctaSecondary.label')}
-        </a>
-        <a
+        </Button>
+
+        <Button
           href={t('cta3.href')}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border border-gray-200 bg-white/80 px-5 py-3 text-sm font-semibold shadow-sm hover:bg-white"
         >
           {t('cta3.label')}
-        </a>
+        </Button>
       </div>
     </Container>
   );
@@ -136,9 +136,8 @@ function Section({ title, items, icon: Icon, centered = false }: SectionProps) {
       <h3 className="text-3xl font-semibold text-gray-900">{title}</h3>
       <hr className="mx-auto mt-6 w-24 border-t border-gray-200" />
       <ul
-        className={`mt-10 ${centered ? 'w-full max-w-md' : 'mx-auto max-w-2xl'} ${
-          isSingleItem ? '' : 'space-y-4 text-left'
-        }`}
+        className={`mt-10 ${centered ? 'w-full max-w-md' : 'mx-auto max-w-2xl'} ${isSingleItem ? '' : 'space-y-4 text-left'
+          }`}
       >
         {items.map((item) => (
           <li
@@ -339,18 +338,19 @@ const Kit = () => {
           <h3 className="text-3xl font-semibold text-gray-900">
             {t('interest.title')}
           </h3>
+
           <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
             {t('interest.description')}
           </p>
+
           <div className="mt-8">
-            <a
+            <Button
               href={t('interest.formLink')}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-2xl border border-emerald-200 bg-emerald-600 px-6 py-3 text-white font-semibold shadow-md hover:bg-emerald-700 transition"
             >
               {t('interest.button')}
-            </a>
+            </Button>
           </div>
         </section>
 

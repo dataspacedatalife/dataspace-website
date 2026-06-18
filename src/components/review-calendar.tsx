@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { Button } from '@/components/button';
 
 const FIRST_REVIEW_DATE = new Date(2025, 10, 21);
+
 // Skip specific review days (use YYYY-MM-DD strings to avoid timezone surprises)
 const SKIP_REVIEW_DAYS = new Set([
   '2026-01-02', // Friday 2 January 2026
@@ -44,7 +45,7 @@ export function ReviewCalendar() {
 
   const isReviewDay = (day: number) => {
     const date = new Date(year, monthIndex, day);
-    // ✅ skip specific date(s)
+
     if (SKIP_REVIEW_DAYS.has(toYMD(date))) return false;
 
     const diff = date.getTime() - FIRST_REVIEW_DATE.getTime();
@@ -58,7 +59,7 @@ export function ReviewCalendar() {
       <div className="flex items-center justify-between mb-4">
         <Button
           onClick={() => setCurrentMonth(new Date(year, monthIndex - 1, 1))}
-          className="p-2 rounded-xl border hover:bg-gray-100 transition"
+          className="p-2 rounded-xl border border-gray-200 text-gray-700 transition-all duration-200 hover:bg-gray-600 hover:text-white hover:scale-110 hover:shadow-md"
         >
           <ChevronLeft className="w-5 h-5" />
         </Button>
@@ -69,7 +70,7 @@ export function ReviewCalendar() {
 
         <Button
           onClick={() => setCurrentMonth(new Date(year, monthIndex + 1, 1))}
-          className="p-2 rounded-xl border hover:bg-gray-100 transition"
+          className="p-2 rounded-xl border border-gray-200 text-gray-700 transition-all duration-200 hover:bg-gray-600 hover:text-white hover:scale-110 hover:shadow-md"
         >
           <ChevronRight className="w-5 h-5" />
         </Button>
@@ -100,9 +101,9 @@ export function ReviewCalendar() {
               className={clsx(
                 'h-10 flex items-center justify-center rounded-xl border text-gray-700',
                 review
-                  ? 'bg-emerald-600 text-white font-semibold border-emerald-700 shadow'
+                  ? 'bg-[#009AB8] text-white font-semibold border-[#007F99] shadow'
                   : 'border-gray-200',
-                isToday && 'ring-2 ring-emerald-500',
+                isToday && 'ring-2 ring-[#009AB8]',
               )}
             >
               {day}
@@ -111,7 +112,9 @@ export function ReviewCalendar() {
         })}
       </div>
 
-      <p className="mt-3 text-sm text-gray-500 italic">{t('footer')}</p>
+      <p className="mt-3 text-sm text-gray-500 italic">
+        {t('footer')}
+      </p>
     </div>
   );
 }

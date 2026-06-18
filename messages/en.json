@@ -213,7 +213,7 @@
     "reviewCycle": {
       "title": "Review cycle",
       "description": "Applications are evaluated every two weeks during our review meeting. Only the ones submitted up to the day before (inclusive) will be considered.",
-      "footer": "*Days in green correspond to review meetings.",
+      "footer": "*Days in blue correspond to review meetings.",
       "weekdays": [
         "Mon",
         "Tue",
@@ -4238,7 +4238,7 @@
       "description": "Frequently asked questions from users"
     },
     "title": "Frequently Asked Questions",
-    "description": "Below we show the most frequently asked questions by users, which can be consulted in more detail at the following link: ",
+    "description": "Below, we present the most frequently asked questions from users, which can be explored in greater detail in the user manual",
     "link": "User Manual",
     "section1": "About the data space",
     "section2": "Roles and participation",

@@ -239,7 +239,7 @@
     "reviewCycle": {
       "title": "Ciclo de revisións",
       "description": "As solicitudes avalíanse cada dúas semanas na reunión de revisión. Só se teñen en conta aquelas recibidas ata o día anterior á reunión inclusive.",
-      "footer": "*Os días en verde corresponden ás reunións de revisión.",
+      "footer": "*Os días en azul corresponden ás reunións de revisión.",
       "weekdays": [
         "Lun",
         "Mar",
@@ -4235,7 +4235,7 @@
       "description": "Preguntas máis frecuentes dos usuarios"
     },
     "title": "Preguntas frecuentes",
-    "description": "A continuación, mostramos as preguntas máis frecuentes realizadas polos usuarios que poden consultarse de maneira máis detallada no seguinte enlace: ",
+    "description": "A continuación, mostramos as preguntas máis frecuentes realizadas polos usuarios que poden consultarse de maneira máis detallada no manual de usuario",
     "link": "Manual de usuario",
     "section1": "Sobre o espazo de datos",
     "section2": "Roles e participación",
