@@ -919,6 +919,30 @@
           "⚠️ Recoméndase utilizar Mozilla Firefox."
         ],
         "extra": "Acceso e inscrición"
+      },
+      "miniencuentros": {
+        "header": "Mini Encontros OneHealth DataSpace – Santiago de Compostela",
+        "excerpt": "Encontro presencial para coñecer as capacidades de OneHealth DataSpace, identificar necesidades de investigación e explorar oportunidades de colaboración baixo o enfoque One Health.",
+        "description": [
+          "Os teus datos. O teu control. Coñecemento que transforma a saúde global.",
+          "O vindeiro 23 de xuño, OneHealth DataSpace celebrará no CHUS (Hospital Clínico Universitario de Santiago de Compostela) o primeiro dos Mini Encontros OneHealth DataSpace.",
+          "Desde o Centro de Supercomputación de Galicia (CESGA), convidámoste a coñecer as posibilidades que ofrece OneHealth DataSpace e a súa futura evolución cara á 1HealthAI Factory, así como aquelas capacidades que poderían ser de interese para o teu grupo de investigación.",
+          "Que propoñemos?",
+          "Un encontro dunha hora pensado para coñecernos, analizar as necesidades de cada proxecto e construír solucións xuntos.",
+          "Comezaremos presentando en que consiste OneHealth DataSpace e as súas posibilidades.",
+          "A maior parte do tempo estará dedicada a conversar: que retos ten o teu grupo?, como podemos axudarvos desde o CESGA e desde OneHealth DataSpace?",
+          "A quen vai dirixido?",
+          "▸ Grupos de investigación no ámbito da saúde humana.",
+          "▸ Grupos de investigación en saúde animal e medioambiental.",
+          "▸ Equipos interesados en impulsar as súas investigacións baixo o enfoque One Health.",
+          "Máis que datos. Convertimos os datos en coñecemento accionable.",
+          "OneHealth DataSpace ofrece ás entidades participantes un ciclo completo de traballo sobre os datos: integración, intercambio, procesamento avanzado, análise, execución de modelos e almacenamento de resultados, sen perder en ningún momento o control sobre eles.",
+          "📍 Sala Anfiteatro do CHUS (Hospital Clínico Universitario de Santiago de Compostela)",
+          "📅 23 de xuño de 2026",
+          "🕧 12:30",
+          "⚠️ Aforo limitado."
+        ],
+        "extra": "Inscrición previa"
       }
     }
   },

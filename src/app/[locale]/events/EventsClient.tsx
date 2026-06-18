@@ -38,6 +38,7 @@ import eventoFinal from '../../../../public/events/evento-final-onehealth-datasp
 import gobernanzaDeDatosAporte from '../../../../public/events/gobernanza-de-datos-aporte.png';
 import gestionCoordinacionComunicacion from '../../../../public/events/formacion-gestion-coordinacion-comunicacion.png';
 import interoperabilidadSemantica from '../../../../public/events/formacion-interoperabilidad-semantica.png';
+import miniencuentros from '../../../../public/events/mini-encuentros-onehealth-dataspace.png';
 
 const eventsPerPage = 5;
 
@@ -243,6 +244,15 @@ const events = [
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
   },
+  {
+    key: 'miniencuentros',
+    date: '2026-06-23',
+    image: miniencuentros,
+    cesgalink:
+      'https://www.cesga.es/mini-encuentro-onehealth-dataspace/',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: true,
+  }
    
 ] as const satisfies Event[];
 
