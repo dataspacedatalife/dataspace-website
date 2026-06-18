@@ -72,25 +72,26 @@ function OneHealthLanding() {
               <p className="mt-8 text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
                 Facilitamos a las entidades participantes compartir,
                 procesar, almacenar y analizar datos de salud humana,
-                animal y medioambiental —manteniendo el control sobre ellos—
-                transformándolos en conocimiento para mejorar la salud global.
+                animal y medioambiental, manteniendo el control sobre ellos y
+                transformándolos en conocimiento para mejorar la salud global
               </p>
 
               <div className="flex flex-wrap gap-4 mt-10">
-               <a
-  href="https://dashboard.dataspace.cesga.es/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-8 py-4 rounded-lg text-white font-semibold bg-[#009AB8] shadow-lg hover:scale-105 transition"
->
-  Qué ofrecemos
-</a>
                 <a
                   href="/about"
                   className="px-8 py-4 rounded-md border border-[#009AB8] text-[#009AB8] bg-white hover:bg-slate-50 transition"
                 >
                   Saber más
                 </a>
+               <a
+                  href="https://dashboard.dataspace.cesga.es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 rounded-lg text-white font-semibold bg-[#009AB8] shadow-lg hover:scale-105 transition"
+                >
+                  Acceder
+                </a>
+                
               </div>
             </div>
 
@@ -121,30 +122,16 @@ function OneHealthLanding() {
               fontSize: 'clamp(3rem, 6vw, 4rem)',
             }}
           >
-            Servicios
+            Más que datos
           </h2>
 
           <p className="mt-4 text-slate-600 text-lg max-w-4xl mx-auto">
-            Un ciclo de vida operativo completo para datos
+            Un ciclo de vida operativo completo para los datos
           </p>
         </section>
 
         <Services />
 
-        <section className="max-w-7xl mx-auto px-6 py-24 flex items-center justify-center min-h-[320px] text-center">
-          <h2
-            className="gradient-text"
-            style={{
-              fontFamily: "'Barlow Condensed', sans-serif",
-              fontSize: 'clamp(4rem, 10vw, 6rem)',
-              fontWeight: 500,
-              margin: 0,
-              lineHeight: 1,
-            }}
-          >
-            Más que datos
-          </h2>
-        </section>
 
         <Footer />
       </main>
