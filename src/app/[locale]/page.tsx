@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
+import { Button } from '@/components/button';
 import { GradientBackground } from '@/components/gradient';
 
 export const metadata: Metadata = {
@@ -80,20 +81,20 @@ function Hero() {
                 </p>
 
                 <div className="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
-                  <a
-                    href="/about"
-                    className="px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-white font-semibold bg-[#009AB8] shadow-lg hover:scale-105 transition"
-                  >
-                    {t('learnMore')}
-                  </a>
-
-                  <a
+                  <Button
                     href="https://dashboard.dataspace.cesga.es"
                     target="_blank"
+                    className="px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-white font-semibold bg-[#009AB8] shadow-lg hover:scale-105 transition"
+                  >
+                    {t('testDemo')}
+                  </Button>
+
+                  <a
+                    href="/about"
                     rel="noopener noreferrer"
                     className="px-6 sm:px-8 py-3 sm:py-4 rounded-md border border-[#009AB8] text-[#009AB8] bg-white hover:bg-slate-50 transition"
                   >
-                    {t('testDemo')}
+                    {t('learnMore')}
                   </a>
                 </div>
 

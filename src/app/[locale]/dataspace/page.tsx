@@ -56,7 +56,7 @@ async function Header() {
         <Button
           href="https://xdatashare.srv.cesga.es"
           target="_blank"
-          className="bg-emerald-100 hover:bg-emerald-600 text-white text-lg px-8 py-4 rounded-full shadow-lg transition-transform hover:scale-105"
+       
         >
           {t('access.button')}
         </Button>

@@ -18,6 +18,7 @@ import { Link } from '@/components/link';
 import { Navbar } from '@/components/navbar';
 import { ReviewCalendar } from '@/components/review-calendar';
 import { Heading, Lead, Subheading } from '@/components/text';
+import { Button } from '@/components/button';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('how');
@@ -29,21 +30,25 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function Header() {
   const t = useTranslations('how.header');
+
   return (
     <Container className="mt-24">
       <Heading as="h1" className="text-center">
         {t('title')}
       </Heading>
-      <Lead className="mt-6 text-center">{t('lead')}</Lead>
+
+      <Lead className="mt-6 text-center">
+        {t('lead')}
+      </Lead>
+
       <div className="mx-auto mt-8 flex w-full max-w-3xl flex-col items-center gap-3 sm:flex-row sm:justify-center">
-        <a
+        <Button
           href={t('guideButton.href')}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border border-gray-200 bg-white/80 px-5 py-3 text-sm font-semibold shadow-sm hover:bg-white"
         >
           {t('guideButton.label')}
-        </a>
+        </Button>
       </div>
     </Container>
   );
@@ -69,24 +74,21 @@ function Section({
 
   return (
     <div
-      className={`mt-20 text-center ${
-        centered ? 'mx-auto flex flex-col items-center' : ''
-      }`}
+      className={`mt-20 text-center ${centered ? 'mx-auto flex flex-col items-center' : ''
+        }`}
     >
       <Subheading className="text-3xl md:text-4xl">{title}</Subheading>
       <hr className="mx-auto mt-6 w-24 border-t border-gray-200" />
 
       <ul
-        className={`mt-10 ${
-          centered ? 'w-full max-w-md' : 'mx-auto max-w-2xl'
-        } ${isSingleItem ? '' : 'space-y-4 text-left'}`}
+        className={`mt-10 ${centered ? 'w-full max-w-md' : 'mx-auto max-w-2xl'
+          } ${isSingleItem ? '' : 'space-y-4 text-left'}`}
       >
         {items.map((item) => (
           <li
             key={item}
-            className={`flex items-start gap-3 ${
-              centered ? 'justify-center' : ''
-            }`}
+            className={`flex items-start gap-3 ${centered ? 'justify-center' : ''
+              }`}
           >
             {isSingleItem ? (
               <div className="w-full rounded-2xl border border-gray-200 bg-white/80 shadow-sm p-6 text-center">
@@ -296,6 +298,7 @@ function How() {
           <Subheading className="text-3xl md:text-4xl font-semibold mb-6 text-center text-gray-900">
             {t('howToJoin.title')}
           </Subheading>
+
           <hr className="mx-auto mt-6 mb-10 w-24 border-t border-gray-200" />
 
           {/* Grid responsive side-by-side */}
@@ -305,18 +308,20 @@ function How() {
               <h3 className="text-center text-2xl font-semibold text-gray-900 mb-4">
                 {t('howToJoin.subtitle')}
               </h3>
+
               <p className="text-center text-gray-700 text-lg md:text-xl leading-relaxed mb-8">
                 {t('howToJoin.description')}
               </p>
 
-              <a
-                href={t('howToJoin.formLink')}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-center inline-block rounded-2xl border border-emerald-200 bg-emerald-600 px-8 py-4 text-white font-semibold shadow-md hover:bg-emerald-700 transition"
-              >
-                {t('howToJoin.formButton')}
-              </a>
+              <div className="flex justify-center">
+                <Button
+                  href={t('howToJoin.formLink')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t('howToJoin.formButton')}
+                </Button>
+              </div>
             </div>
 
             {/* DERECHA: Ciclo revisiones + Calendario */}
