@@ -74,11 +74,10 @@ function LanguageSelector() {
           <Link
             key={code}
             href="#"
-            className={`${languageItemClass} ${
-              currentLocale === code
+            className={`${languageItemClass} ${currentLocale === code
                 ? 'font-semibold bg-[#005467]/10 text-[#005467]'
                 : ''
-            }`}
+              }`}
             onClick={(e) => {
               e.preventDefault();
               switchLanguage(code);
@@ -114,9 +113,8 @@ function MobileLanguageSelector() {
           <Link
             key={code}
             href="#"
-            className={`text-sm text-gray-800 transition-colors duration-200 hover:text-[#005467] hover:underline ${
-              currentLocale === code ? 'font-semibold' : ''
-            }`}
+            className={`text-sm text-gray-800 transition-colors duration-200 hover:text-[#005467] hover:underline ${currentLocale === code ? 'font-semibold' : ''
+              }`}
             onClick={(e) => {
               e.preventDefault();
               switchLanguage(code);
@@ -152,11 +150,6 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     { href: '/team', label: t('el_equipo') },
   ];
 
-  const joinLinks = [
-    { href: '/how', label: t('adhesion') },
-    { href: '/kitEdD', label: t('kit') },
-  ];
-
   const latestLinks = [
     { href: '/events', label: t('eventos') },
     { href: '/blog', label: t('blog') },
@@ -184,6 +177,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           {t('catalogo')}
         </Link>
 
+
         <div className="relative group flex">
           <Link href="/dataspace" className={navItemClass}>
             {t('tecnologias')}
@@ -202,16 +196,10 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
         <div className="relative group flex">
           <Link href="/how" className={navItemClass}>
             {t('participa')}
-            <ChevronUp className="ml-0.5 h-4 w-4 rotate-180 transition-transform duration-300 group-hover:rotate-0" />
+          
           </Link>
 
-          <div className={dropdownClass}>
-            {joinLinks.map(({ href, label }) => (
-              <Link key={href} href={href} className={dropdownItemClass}>
-                {label}
-              </Link>
-            ))}
-          </div>
+
         </div>
 
         <div className="relative group flex">
