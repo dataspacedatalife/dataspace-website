@@ -81,15 +81,12 @@ function Hero() {
                 </p>
 
                 <div className="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
-                  
-
-                  <a
+                   <Button
                     href="/about"
-                    rel="noopener noreferrer"
-                    className="px-6 sm:px-8 py-3 sm:py-4 rounded-md border border-[#009AB8] text-[#009AB8] bg-white hover:bg-slate-50 transition"
+                    className="px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-white font-semibold bg-[#009AB8] shadow-lg hover:scale-105 transition"
                   >
                     {t('learnMore')}
-                  </a>
+                  </Button>
                   <Button
                     href="https://dashboard.dataspace.cesga.es"
                     target="_blank"
