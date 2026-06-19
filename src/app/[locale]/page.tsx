@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
@@ -22,6 +22,17 @@ export const metadata: Metadata = {
 /* ================= LANDING ================= */
 
 function OneHealthLanding() {
+  const locale = useLocale();
+
+  const graphByLocale: Record<string, string> = {
+    es: '/demostrador/grafica4_web_es.png',
+    en: '/demostrador/grafica4_web_eng.png',
+    gl: '/demostrador/grafica4_web_gal.png',
+  };
+
+  const graphSrc =
+    graphByLocale[locale] || '/demostrador/grafica4_web_660px.png';
+
   return (
     <>
       <style>{`
@@ -53,8 +64,7 @@ function OneHealthLanding() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
             <div>
-              <h1
-                className="hidden sm:block gradient-text"
+              <h1 className="hidden sm:block gradient-text"
                 style={{
                   fontFamily: "'Barlow Condensed', sans-serif",
                   fontSize: 'clamp(4rem, 10vw, 6rem)',
@@ -71,8 +81,7 @@ function OneHealthLanding() {
               <p className="mt-8 text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
                 Facilitamos a las entidades participantes compartir,
                 procesar, almacenar y analizar datos de salud humana,
-                animal y medioambiental, manteniendo el control sobre ellos y
-                transformándolos en conocimiento para mejorar la salud global
+                animal y medioambiental.
               </p>
 
               <div className="flex flex-wrap gap-4 mt-10">
@@ -82,7 +91,8 @@ function OneHealthLanding() {
                 >
                   Saber más
                 </a>
-               <a
+
+                <a
                   href="https://dashboard.dataspace.cesga.es/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -90,22 +100,18 @@ function OneHealthLanding() {
                 >
                   Acceder
                 </a>
-                
               </div>
             </div>
 
             <div className="flex justify-center">
               <div className="relative w-full max-w-[650px] flex items-center justify-center">
-                <div
-                  className="absolute inset-0 blur-3xl opacity-30"
-              
-                />
 
                 <img
-                  src="/demostrador/grafica4_web_660px.png"
+                  src={graphSrc}
                   alt="OneHealth DataSpace"
                   className="relative z-10 w-full max-w-[450px] h-auto object-contain"
                 />
+
               </div>
             </div>
 
@@ -130,7 +136,6 @@ function OneHealthLanding() {
         </section>
 
         <Services />
-
 
         <Footer />
       </main>
