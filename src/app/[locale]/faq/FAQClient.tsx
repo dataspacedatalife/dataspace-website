@@ -69,11 +69,11 @@ export default function FAQClient() {
                   i !== faqs.length - 1 ? 'border-b border-gray-200' : ''
                 }`}
               >
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-2xl font-bold text-[#009AB8]">
                   {item.q}
                 </h3>
 
-                <p className="mt-3 whitespace-pre-line leading-relaxed text-gray-600">
+                <p className="mt-3 text-xl text-gray-600 leading-relaxed whitespace-pre-line">
                   {item.a}
                 </p>
               </div>
