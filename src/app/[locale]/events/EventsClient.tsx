@@ -215,7 +215,7 @@ const events = [
     cesgalink:
       'https://dataspacedatalife.github.io/onehealth-dataspace-evento-final/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
-    featured: true,
+    featured: false,
   },
   {
     key: 'gobernanzaDeDatosAporte',
