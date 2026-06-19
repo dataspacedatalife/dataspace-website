@@ -1,5 +1,6 @@
 'use client';
 
+import { useLocale } from 'next-intl';
 import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 import { Calendar, Pointer, X, ZoomIn } from 'lucide-react';
@@ -30,25 +31,52 @@ import tallerKitSaludCRED from '../../../../public/events/tallerKitSaludCRED.png
 import KitDatosCREDImg2 from '../../../../public/events/tallerPracticokitCRED.jpg';
 import conectorGestionActivos from '../../../../public/events/conectorGestionActivos.png';
 import formacionDesarrolloExtensiones from '../../../../public/events/formacion-avanzada-sobre-desarrollo-de-extensiones-para-casos-de-uso.png';
-import evolucionEspacioDatos from  '../../../../public/events/evolucion-espacio-datos.png';
-import usoPracticoImage from  '../../../../public/events/uso-practico.png';
+import evolucionEspacioDatos from '../../../../public/events/evolucion-espacio-datos.png';
+import usoPracticoImage from '../../../../public/events/uso-practico.png';
 import evolucionEspacioDatosHPCBigDataCloud from '../../../../public/events/evolucion-espacio-datos-hpc-bigdata-cloud.png';
 import gobernanzaDeDatos from '../../../../public/events/gobernanza-de-datos.png';
 import eventoFinal from '../../../../public/events/evento-final-onehealth-dataspace-aplazado.png';
 import gobernanzaDeDatosAporte from '../../../../public/events/gobernanza-de-datos-aporte.png';
 import gestionCoordinacionComunicacion from '../../../../public/events/formacion-gestion-coordinacion-comunicacion.png';
 import interoperabilidadSemantica from '../../../../public/events/formacion-interoperabilidad-semantica.png';
-import miniencuentros from '../../../../public/events/mini-encuentros-onehealth-dataspace.png';
+import miniencuentrosES from '../../../../public/events/mini-encuentros-onehealth-dataspace.png';
+import miniencuentrosENG from '../../../../public/events/mini-encuentros-onehealth-dataspace-ENG.png';
+import miniencuentrosGL from '../../../../public/events/mini-encuentros-onehealth-dataspace-GL.png';
 
 const eventsPerPage = 5;
 
 interface Event {
   key: keyof AppConfig['Messages']['events']['events'];
   date: string;
-  image: StaticImageData;
+  image:
+  | StaticImageData
+  | Partial<{
+    es: StaticImageData;
+    en: StaticImageData;
+    gl: StaticImageData;
+  }>;
   organizer: string;
   cesgalink?: string;
   featured: boolean;
+}
+
+function getLocalizedImage(
+  image: Event['image'],
+  locale: string,
+): StaticImageData {
+  if (
+    typeof image === 'object' &&
+    !('src' in image)
+  ) {
+    return (
+      image[locale as keyof typeof image] ??
+      image.es ??
+      image.en ??
+      image.gl!
+    );
+  }
+
+  return image;
 }
 
 // Hardcoded events
@@ -145,15 +173,15 @@ const events = [
     organizer: 'BAIDATA',
     featured: false,
   },
-  { 
+  {
     key: 'conectorGestionActivos',
     date: '2026-03-23',
     image: conectorGestionActivos,
     cesgalink:
       'https://forms.cloud.microsoft/e/jzZ1aarLKP',
     organizer: 'Centro demostrador de espacio de datos multisectorial One Health & Centro de Supercomputación de Galicia (CESGA)',
-    featured: false, 
-  }, 
+    featured: false,
+  },
   {
     key: 'kitDatosSaludCRED',
     date: '2025-12-16',
@@ -163,7 +191,7 @@ const events = [
     organizer: 'Centro de Referencia de Espacios de Datos (CRED)',
     featured: false,
   },
-   {
+  {
     key: 'formacionDesarrolloExtensiones',
     date: '2026-04-29',
     image: formacionDesarrolloExtensiones,
@@ -199,7 +227,7 @@ const events = [
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: false,
   },
-   {
+  {
     key: 'gobernanzaDeDatos',
     date: '2026-05-29',
     image: gobernanzaDeDatos,
@@ -208,7 +236,7 @@ const events = [
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: false,
   },
-   {
+  {
     key: 'eventoFinal',
     date: '2026-06-17',
     image: eventoFinal,
@@ -247,13 +275,17 @@ const events = [
   {
     key: 'miniencuentros',
     date: '2026-06-23',
-    image: miniencuentros,
+    image: {
+      es: miniencuentrosES,
+      en: miniencuentrosENG,
+      gl: miniencuentrosGL
+    },
     cesgalink:
       'https://www.cesga.es/mini-encuentro-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
   }
-   
+
 ] as const satisfies Event[];
 
 // Obtener eventos pasados paginados
@@ -273,6 +305,7 @@ function getPastEventsCount() {
 
 // Componentes
 function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {
+  const locale = useLocale();
   const t = useTranslations('events');
   const formatDate = useDateFormatter();
 
@@ -294,7 +327,7 @@ function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {
             >
               {event.image && (
                 <Image
-                  src={event.image}
+                  src={getLocalizedImage(event.image, locale)}
                   alt={t(`events.${event.key}.header`)}
                   // className="object-contain w-full h-full opacity-80"
                   className="w-[400px] h-[300px] object-cover rounded-t-3xl"
@@ -341,6 +374,7 @@ function PastEvents({
   onOpen: (event: Event) => void;
   ref?: React.Ref<HTMLDivElement>;
 }) {
+  const locale = useLocale();
   const t = useTranslations('events');
   const formatDate = useDateFormatter();
   const pastEvents = getPastEvents(page);
@@ -363,7 +397,7 @@ function PastEvents({
             <div className="w-[300px] h-[200px] shrink-0">
               {event.image && (
                 <Image
-                  src={event.image}
+                  src={getLocalizedImage(event.image, locale)}
                   alt={t(`events.${event.key}.header`)}
                   width={300}
                   height={200}
@@ -459,6 +493,7 @@ function Pagination({
 }
 
 function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
+  const locale = useLocale();
   const t = useTranslations('events');
   const formatDate = useDateFormatter();
   const [isImageOpen, setIsImageOpen] = useState(false);
@@ -496,7 +531,7 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
             onClick={() => setIsImageOpen(true)}
           >
             <Image
-              src={event.image}
+              src={getLocalizedImage(event.image, locale)}
               alt={t(`events.${event.key}.header`)}
               fill
               className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -554,7 +589,7 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
             </Button>
 
             <Image
-              src={event.image}
+              src={getLocalizedImage(event.image, locale)}
               alt={t(`events.${event.key}.header`)}
               width={1200}
               height={800}
