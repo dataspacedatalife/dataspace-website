@@ -72,11 +72,11 @@ export default function FAQClient() {
                     : ''
                   }`}
               >
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-2xl font-bold text-[#009AB8]">
                   {item.q}
                 </h3>
 
-                <p className="mt-3 text-gray-600 leading-relaxed whitespace-pre-line">
+                <p className="mt-3 text-xl text-gray-600 leading-relaxed whitespace-pre-line">
                   {item.a}
                 </p>
               </div>

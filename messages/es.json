@@ -4230,71 +4230,51 @@
     "copyright": "OneHealth Dataspace",
     "funding_note": "El OneHealth DataSpace del CESGA es un proyecto del Centro de Supercomputación de Galicia (CESGA) financiado por el Ministerio de Transformación Digital y Función Pública en el marco del Plan de Recuperación, Transformación y Resiliencia, a través del Mecanismo de Recuperación y Resiliencia (MRR) -\"Demostrador Multisectorial DATAlife. Nº registro TSI-100120-2024-12\"-. Financiado por la Unión Europea – NextGenerationEU."
   },
-"faq": {
-  "metadata": {
-    "title": "FAQ",
-    "description": "Preguntas más frecuentes por los usuarios"
-  },
-  "title": "Preguntas frecuentes",
-  "description": "Preguntas frecuentes sobre OneHealth DataSpace. Para más información, consulta nuestro Manual de usuario",
-  "link": "Manual de usuario",
-
-  "question1": "¿Qué es OneHealth DataSpace?",
-  "answer1": "OneHealth DataSpace es un espacio de datos federado que permite a organizaciones compartir, acceder y utilizar datos y servicios relacionados con la salud humana, animal y medioambiental de forma segura, interoperable y bajo control soberano.\n\nSu objetivo es transformar datos distribuidos en conocimiento útil para impulsar la investigación, la innovación, la toma de decisiones basada en evidencia y el desarrollo de soluciones de inteligencia artificial dentro del ecosistema One Health.",
-
-  "question2": "¿Qué es un espacio de datos?",
-  "answer2": "Un espacio de datos es un entorno de colaboración que permite intercambiar y reutilizar datos entre múltiples organizaciones mediante reglas comunes de gobernanza, seguridad, interoperabilidad y confianza.\n\nA diferencia de los modelos tradicionales, un espacio de datos no requiere centralizar la información. Cada organización mantiene el control sobre sus propios datos y decide quién puede acceder a ellos, para qué finalidad y bajo qué condiciones.",
-
-  "question3": "¿Qué significa adherirse a OneHealth DataSpace?",
-  "answer3": "Adherirse significa incorporarse al ecosistema para compartir datos, consumir datos, ofrecer servicios o utilizar servicios digitales dentro de un marco común de gobernanza.\n\nLa adhesión combina una parte administrativa y una integración técnica, permitiendo participar en casos de uso, proyectos colaborativos y futuros desarrollos vinculados al ecosistema One Health y a la futura 1HealthAI Factory.",
-
-  "question4": "¿Quién puede participar?",
-  "answer4": "Pueden participar organizaciones públicas y privadas que trabajen con datos o servicios relacionados con la salud, la investigación o la innovación.\n\n• Hospitales y centros sanitarios.\n• Universidades y grupos de investigación.\n• Centros tecnológicos.\n• Empresas y startups.\n• Administraciones públicas.\n• Organizaciones participantes en iniciativas nacionales y europeas de compartición de datos.",
-
-  "question5": "¿Pierdo la propiedad de mis datos al participar?",
-  "answer5": "No.\n\nUno de los principios fundamentales de OneHealth DataSpace es la soberanía del dato. Cada organización mantiene la propiedad, el control y la capacidad de decisión sobre sus activos digitales.\n\nEl participante decide:\n• Qué datos compartir.\n• Con quién compartirlos.\n• Durante cuánto tiempo.\n• Para qué finalidad.\n• Bajo qué condiciones de uso.\n\nLa participación en el espacio de datos no implica la cesión obligatoria de información.",
-
-  "question6": "¿Dónde se almacenan mis datos?",
-  "answer6": "Los datos permanecen en la infraestructura del propietario o en los servicios tecnológicos que este decida utilizar.\n\nOneHealth DataSpace utiliza una arquitectura federada. Esto significa que el espacio de datos facilita el descubrimiento, acceso e intercambio de información sin necesidad de trasladar permanentemente los datos a una plataforma centralizada.",
-
-  "question7": "¿Qué roles existen dentro del espacio de datos?",
-  "answer7": "Una organización puede participar con uno o varios roles simultáneamente.\n\nProveedor de datos: comparte datasets o productos de datos con otros participantes.\n\nConsumidor de datos: solicita acceso y utiliza información publicada por otras organizaciones.\n\nProveedor de servicios: ofrece herramientas, capacidades analíticas o servicios digitales al ecosistema.\n\nConsumidor de servicios: utiliza servicios ofrecidos por otros participantes.\n\nEsta flexibilidad permite que cada organización participe según sus necesidades y objetivos.",
-
-  "question8": "¿Qué es un asset?",
-  "answer8": "Un asset es la unidad básica que se publica dentro del espacio de datos.\n\nPuede tratarse de:\n• Un conjunto de datos.\n• Un servicio digital.\n• Un producto de datos.\n• Un recurso compartible.\n\nUn asset incorpora información descriptiva, documentación, condiciones de uso, metadatos y políticas de acceso que permiten su descubrimiento y reutilización por otros participantes.",
-
-  "question9": "¿Qué es un conector y para qué sirve?",
-  "answer9": "Un conector es el componente tecnológico que permite conectar los sistemas de una organización con el espacio de datos.\n\nSu función principal es gestionar el intercambio seguro de información, aplicar políticas de acceso y garantizar la interoperabilidad entre participantes.\n\nEl conector no almacena los datos; simplemente facilita la conexión entre organizaciones manteniendo el control en origen.",
-
-  "question10": "¿Cómo se controla el acceso a los datos?",
-  "answer10": "El acceso se controla mediante políticas definidas por el proveedor de los datos y mediante acuerdos de uso que establecen las condiciones de acceso.\n\nEstas políticas pueden especificar:\n• Quién puede acceder.\n• Qué información puede utilizar.\n• Con qué finalidad.\n• Durante cuánto tiempo.\n• Bajo qué restricciones.\n\nEste modelo garantiza seguridad, trazabilidad y cumplimiento normativo.",
-
-  "question11": "¿Qué es la gobernanza en un espacio de datos?",
-  "answer11": "La gobernanza es el conjunto de reglas, procesos y responsabilidades que permiten que el espacio de datos funcione de forma segura, transparente y confiable.\n\nLa gobernanza define:\n• Cómo se incorporan nuevos participantes.\n• Cómo se gestionan conflictos o incidencias.\n• Qué normas regulan el uso de los datos.\n• Cómo se audita el cumplimiento.\n• Qué métricas permiten medir el impacto del ecosistema.\n\nUna buena gobernanza es la base de la confianza entre participantes.",
-
-  "question12": "¿Qué normativas deben cumplirse?",
-  "answer12": "Las organizaciones participantes deben cumplir las normativas aplicables en materia de:\n• Protección de datos personales (RGPD).\n• Seguridad de la información.\n• Ética en el uso de datos.\n• Gobernanza y políticas del espacio de datos.\n\nAdemás, los activos publicados deben cumplir criterios mínimos de calidad, documentación y coherencia.",
-
-  "question13": "¿Existe trazabilidad y auditoría?",
-  "answer13": "Sí.\n\nOneHealth DataSpace incorpora mecanismos de observabilidad, trazabilidad y auditoría que permiten registrar quién accede a los datos, cuándo accede, con qué finalidad y bajo qué condiciones.\n\nEsto facilita el cumplimiento normativo, la transparencia y la generación de confianza entre organizaciones.",
-
-  "question14": "¿Cómo accedo a datos de otros participantes?",
-  "answer14": "Los datos y servicios disponibles se publican en un catálogo común donde los participantes pueden:\n1. Descubrir datasets y servicios.\n2. Consultar su documentación.\n3. Revisar las condiciones de acceso.\n4. Solicitar autorización.\n5. Utilizar los recursos una vez aprobada la solicitud.\n\nTodo el proceso queda gobernado por las políticas definidas por cada proveedor.",
-
-  "question15": "¿Qué beneficios aporta participar en OneHealth DataSpace?",
-  "answer15": "Participar en OneHealth DataSpace permite:\n• Acceder a datos y servicios de alto valor.\n• Colaborar con hospitales, universidades, empresas y administraciones.\n• Incrementar la visibilidad y reutilización de los datos.\n• Integrarse en ecosistemas europeos de datos.\n• Preparar proyectos de inteligencia artificial sobre bases de datos gobernadas y confiables.\n• Conectar con la futura infraestructura 1HealthAI Factory impulsada por CESGA.",
-
-  "question16": "¿Cómo se relaciona OneHealth DataSpace con la inteligencia artificial?",
-  "answer16": "Los modelos de inteligencia artificial necesitan datos de calidad, gobernados, interoperables y trazables.\n\nOneHealth DataSpace proporciona precisamente esa infraestructura de datos, permitiendo que organizaciones compartan información de forma segura para desarrollar soluciones de IA, análisis avanzado y modelos predictivos en el ámbito One Health.",
-
-  "question17": "¿Qué es la 1HealthAI Factory?",
-  "answer17": "La 1HealthAI Factory será la infraestructura de inteligencia artificial especializada en salud humana, animal y medioambiental impulsada por CESGA.\n\nMientras que OneHealth DataSpace proporciona la capa de intercambio, gobernanza y compartición de datos, la AI Factory aportará capacidades avanzadas de entrenamiento de modelos, supercomputación, innovación y servicios de inteligencia artificial.\n\nJuntas conformarán un ecosistema integrado de datos e IA para la salud global.",
-
-  "question18": "¿Qué ocurrirá cuando finalice el proyecto actual?",
-  "answer18": "OneHealth DataSpace ha sido concebido como una infraestructura estratégica con vocación de continuidad.\n\nLa evolución hacia la 1HealthAI Factory permitirá consolidar las capacidades desarrolladas, incorporar nuevos participantes, ampliar los servicios disponibles y garantizar la sostenibilidad tecnológica y organizativa del ecosistema a largo plazo.\n\nEsto convierte al espacio de datos en una iniciativa preparada para evolucionar más allá de los periodos iniciales de financiación.",
-
-  "question19": "¿Cómo puedo empezar si nunca he participado en un espacio de datos?",
-  "answer19": "La mejor forma de comenzar es:\n1. Definir un caso de uso concreto.\n2. Identificar un dataset o servicio inicial.\n3. Solicitar la adhesión al ecosistema.\n4. Desplegar el conector.\n5. Publicar un primer asset.\n6. Validar el proceso con el equipo técnico de CESGA.\n\nEste enfoque permite incorporarse progresivamente al ecosistema y empezar a generar valor desde las primeras fases de participación."
-}
-
+  "faq": {
+    "metadata": {
+      "title": "FAQ",
+      "description": "Preguntas más frecuentes por los usuarios"
+    },
+    "title": "Preguntas frecuentes",
+    "description": "Preguntas frecuentes sobre OneHealth DataSpace. Para más información, consulta nuestro Manual de usuario",
+    "link": "Manual de usuario",
+    "question1": "¿Qué es OneHealth DataSpace?",
+    "answer1": "OneHealth DataSpace es un espacio de datos federado que permite a organizaciones compartir, acceder y utilizar datos y servicios relacionados con la salud humana, animal y medioambiental de forma segura, interoperable y bajo control soberano.\n\nSu objetivo es transformar datos distribuidos en conocimiento útil para impulsar la investigación, la innovación, la toma de decisiones basada en evidencia y el desarrollo de soluciones de inteligencia artificial dentro del ecosistema One Health.",
+    "question2": "¿Qué es un espacio de datos?",
+    "answer2": "Un espacio de datos es un entorno de colaboración que permite intercambiar y reutilizar datos entre múltiples organizaciones mediante reglas comunes de gobernanza, seguridad, interoperabilidad y confianza.\n\nA diferencia de los modelos tradicionales, un espacio de datos no requiere centralizar la información. Cada organización mantiene el control sobre sus propios datos y decide quién puede acceder a ellos, para qué finalidad y bajo qué condiciones.",
+    "question3": "¿Qué significa adherirse a OneHealth DataSpace?",
+    "answer3": "Adherirse significa incorporarse al ecosistema para compartir datos, consumir datos, ofrecer servicios o utilizar servicios digitales dentro de un marco común de gobernanza.\n\nLa adhesión combina una parte administrativa y una integración técnica, permitiendo participar en casos de uso, proyectos colaborativos y futuros desarrollos vinculados al ecosistema One Health y a la futura 1HealthAI Factory.",
+    "question4": "¿Quién puede participar?",
+    "answer4": "Pueden participar organizaciones públicas y privadas que trabajen con datos o servicios relacionados con la salud, la investigación o la innovación.\n\n• Hospitales y centros sanitarios.\n• Universidades y grupos de investigación.\n• Centros tecnológicos.\n• Empresas y startups.\n• Administraciones públicas.\n• Organizaciones participantes en iniciativas nacionales y europeas de compartición de datos.",
+    "question5": "¿Pierdo la propiedad de mis datos al participar?",
+    "answer5": "No.\n\nUno de los principios fundamentales de OneHealth DataSpace es la soberanía del dato. Cada organización mantiene la propiedad, el control y la capacidad de decisión sobre sus activos digitales.\n\nEl participante decide:\n• Qué datos compartir.\n• Con quién compartirlos.\n• Durante cuánto tiempo.\n• Para qué finalidad.\n• Bajo qué condiciones de uso.\n\nLa participación en el espacio de datos no implica la cesión obligatoria de información.",
+    "question6": "¿Dónde se almacenan mis datos?",
+    "answer6": "Los datos permanecen en la infraestructura del propietario o en los servicios tecnológicos que este decida utilizar.\n\nOneHealth DataSpace utiliza una arquitectura federada. Esto significa que el espacio de datos facilita el descubrimiento, acceso e intercambio de información sin necesidad de trasladar permanentemente los datos a una plataforma centralizada.",
+    "question7": "¿Qué roles existen dentro del espacio de datos?",
+    "answer7": "Una organización puede participar con uno o varios roles simultáneamente.\n\nProveedor de datos: comparte datasets o productos de datos con otros participantes.\n\nConsumidor de datos: solicita acceso y utiliza información publicada por otras organizaciones.\n\nProveedor de servicios: ofrece herramientas, capacidades analíticas o servicios digitales al ecosistema.\n\nConsumidor de servicios: utiliza servicios ofrecidos por otros participantes.\n\nEsta flexibilidad permite que cada organización participe según sus necesidades y objetivos.",
+    "question8": "¿Qué es un asset?",
+    "answer8": "Un asset es la unidad básica que se publica dentro del espacio de datos.\n\nPuede tratarse de:\n• Un conjunto de datos.\n• Un servicio digital.\n• Un producto de datos.\n• Un recurso compartible.\n\nUn asset incorpora información descriptiva, documentación, condiciones de uso, metadatos y políticas de acceso que permiten su descubrimiento y reutilización por otros participantes.",
+    "question9": "¿Qué es un conector y para qué sirve?",
+    "answer9": "Un conector es el componente tecnológico que permite conectar los sistemas de una organización con el espacio de datos.\n\nSu función principal es gestionar el intercambio seguro de información, aplicar políticas de acceso y garantizar la interoperabilidad entre participantes.\n\nEl conector no almacena los datos; simplemente facilita la conexión entre organizaciones manteniendo el control en origen.",
+    "question10": "¿Cómo se controla el acceso a los datos?",
+    "answer10": "El acceso se controla mediante políticas definidas por el proveedor de los datos y mediante acuerdos de uso que establecen las condiciones de acceso.\n\nEstas políticas pueden especificar:\n• Quién puede acceder.\n• Qué información puede utilizar.\n• Con qué finalidad.\n• Durante cuánto tiempo.\n• Bajo qué restricciones.\n\nEste modelo garantiza seguridad, trazabilidad y cumplimiento normativo.",
+    "question11": "¿Qué es la gobernanza en un espacio de datos?",
+    "answer11": "La gobernanza es el conjunto de reglas, procesos y responsabilidades que permiten que el espacio de datos funcione de forma segura, transparente y confiable.\n\nLa gobernanza define:\n• Cómo se incorporan nuevos participantes.\n• Cómo se gestionan conflictos o incidencias.\n• Qué normas regulan el uso de los datos.\n• Cómo se audita el cumplimiento.\n• Qué métricas permiten medir el impacto del ecosistema.\n\nUna buena gobernanza es la base de la confianza entre participantes.",
+    "question12": "¿Qué normativas deben cumplirse?",
+    "answer12": "Las organizaciones participantes deben cumplir las normativas aplicables en materia de:\n• Protección de datos personales (RGPD).\n• Seguridad de la información.\n• Ética en el uso de datos.\n• Gobernanza y políticas del espacio de datos.\n\nAdemás, los activos publicados deben cumplir criterios mínimos de calidad, documentación y coherencia.",
+    "question13": "¿Existe trazabilidad y auditoría?",
+    "answer13": "Sí.\n\nOneHealth DataSpace incorpora mecanismos de observabilidad, trazabilidad y auditoría que permiten registrar quién accede a los datos, cuándo accede, con qué finalidad y bajo qué condiciones.\n\nEsto facilita el cumplimiento normativo, la transparencia y la generación de confianza entre organizaciones.",
+    "question14": "¿Cómo accedo a datos de otros participantes?",
+    "answer14": "Los datos y servicios disponibles se publican en un catálogo común donde los participantes pueden:\n1. Descubrir datasets y servicios.\n2. Consultar su documentación.\n3. Revisar las condiciones de acceso.\n4. Solicitar autorización.\n5. Utilizar los recursos una vez aprobada la solicitud.\n\nTodo el proceso queda gobernado por las políticas definidas por cada proveedor.",
+    "question15": "¿Qué beneficios aporta participar en OneHealth DataSpace?",
+    "answer15": "Participar en OneHealth DataSpace permite:\n• Acceder a datos y servicios de alto valor.\n• Colaborar con hospitales, universidades, empresas y administraciones.\n• Incrementar la visibilidad y reutilización de los datos.\n• Integrarse en ecosistemas europeos de datos.\n• Preparar proyectos de inteligencia artificial sobre bases de datos gobernadas y confiables.\n• Conectar con la futura infraestructura 1HealthAI Factory impulsada por CESGA.",
+    "question16": "¿Cómo se relaciona OneHealth DataSpace con la inteligencia artificial?",
+    "answer16": "Los modelos de inteligencia artificial necesitan datos de calidad, gobernados, interoperables y trazables.\n\nOneHealth DataSpace proporciona precisamente esa infraestructura de datos, permitiendo que organizaciones compartan información de forma segura para desarrollar soluciones de IA, análisis avanzado y modelos predictivos en el ámbito One Health.",
+    "question17": "¿Qué es la 1HealthAI Factory?",
+    "answer17": "La 1HealthAI Factory será la infraestructura de inteligencia artificial especializada en salud humana, animal y medioambiental impulsada por CESGA.\n\nMientras que OneHealth DataSpace proporciona la capa de intercambio, gobernanza y compartición de datos, la AI Factory aportará capacidades avanzadas de entrenamiento de modelos, supercomputación, innovación y servicios de inteligencia artificial.\n\nJuntas conformarán un ecosistema integrado de datos e IA para la salud global.",
+    "question18": "¿Qué ocurrirá cuando finalice el proyecto actual?",
+    "answer18": "OneHealth DataSpace ha sido concebido como una infraestructura estratégica con vocación de continuidad.\n\nLa evolución hacia la 1HealthAI Factory permitirá consolidar las capacidades desarrolladas, incorporar nuevos participantes, ampliar los servicios disponibles y garantizar la sostenibilidad tecnológica y organizativa del ecosistema a largo plazo.\n\nEsto convierte al espacio de datos en una iniciativa preparada para evolucionar más allá de los periodos iniciales de financiación.",
+    "question19": "¿Cómo puedo empezar si nunca he participado en un espacio de datos?",
+    "answer19": "La mejor forma de comenzar es:\n1. Definir un caso de uso concreto.\n2. Identificar un dataset o servicio inicial.\n3. Solicitar la adhesión al ecosistema.\n4. Desplegar el conector.\n5. Publicar un primer asset.\n6. Validar el proceso con el equipo técnico de CESGA.\n\nEste enfoque permite incorporarse progresivamente al ecosistema y empezar a generar valor desde las primeras fases de participación."
+  }
 }
