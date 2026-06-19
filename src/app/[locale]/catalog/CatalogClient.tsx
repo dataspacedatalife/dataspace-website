@@ -24,18 +24,27 @@ const CATEGORY_STYLES: Record<HealthCategory, string> = {
 
 // Funciones para paginación
 const datasetsPerPage = 4;
-function getDatasets(page: number) {
+function getFilteredDatasets(category: HealthCategory | 'all') {
+  if (category === 'all') return useCasesData;
+  return useCasesData.filter((d) => d.categories.includes(category));
+}
+
+function getDatasets(page: number, category: HealthCategory | 'all') {
+  const filtered = getFilteredDatasets(category);
   const start = (page - 1) * datasetsPerPage;
   const end = page * datasetsPerPage;
-  return useCasesData.slice(start, end);
+  return filtered.slice(start, end);
 }
-function getDatasetsCount() {
-  return useCasesData.length;
+
+function getDatasetsCount(category: HealthCategory | 'all') {
+  const filtered = getFilteredDatasets(category);
+  return filtered.length;
 }
 
 // Componente principal del catálogo
 export function CatalogoDeDatos() {
   const [selectedDataset, setSelectedDataset] = useState<DatasetKey | null>(null);
+  const [categoryFilter, setCategoryFilter] = useState<HealthCategory | 'all'>('all');
   const [page, setPage] = usePage();
   const t = useTranslations();
 
@@ -51,8 +60,38 @@ export function CatalogoDeDatos() {
       </Container>
 
       <Container className="mt-16 pb-24">
-        <DatasetList page={page} onOpen={setSelectedDataset} />
-        <Pagination currentPage={page} setPage={setPage} />
+        <div className="flex gap-2 flex-wrap mb-8">
+  <button
+    onClick={() => setCategoryFilter('all')}
+    className={`px-3 py-1 rounded-full text-xs border ${
+      categoryFilter === 'all'
+        ? 'bg-gray-900 text-white'
+        : 'bg-white text-gray-700'
+    }`}
+  >
+    {t('catalog.categories.all')}
+  </button>
+
+  {(['human', 'animal', 'environmental'] as HealthCategory[]).map((cat) => (
+    <button
+      key={cat}
+      onClick={() => setCategoryFilter(cat)}
+      className={`px-3 py-1 rounded-full text-xs border ${
+        categoryFilter === cat
+          ? CATEGORY_STYLES[cat]
+          : 'bg-white text-gray-700'
+      }`}
+    >
+      {t(`catalog.categories.${cat}`)}
+    </button>
+  ))}
+</div>
+        <DatasetList
+  page={page}
+  categoryFilter={categoryFilter}
+  onOpen={setSelectedDataset}
+/>
+       <Pagination currentPage={page} setPage={setPage} categoryFilter={categoryFilter} />
       </Container>
 
       <Footer />
@@ -79,12 +118,14 @@ const usePage = () => {
 // Lista de datasets
 function DatasetList({
   page,
+  categoryFilter,
   onOpen,
 }: {
   page: number;
+  categoryFilter: HealthCategory | 'all';
   onOpen: (datasetKey: DatasetKey) => void;
 }) {
-  const list = getDatasets(page);
+  const list = getDatasets(page, categoryFilter);
   const t = useTranslations();
 
   return (
@@ -411,12 +452,14 @@ function DatasetModal({
 function Pagination({
   currentPage,
   setPage,
+  categoryFilter,
 }: {
   currentPage: number;
   setPage: (p: number) => void;
+  categoryFilter: HealthCategory | 'all';
 }) {
   const t = useTranslations();
-  const total = getDatasetsCount();
+const total = getDatasetsCount(categoryFilter);
   const pageCount = Math.ceil(total / datasetsPerPage);
   if (pageCount < 2) return null;
 
