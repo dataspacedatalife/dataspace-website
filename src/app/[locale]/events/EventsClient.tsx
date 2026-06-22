@@ -30,15 +30,33 @@ import tallergradiantConectoresImg from '../../../../public/events/tallergradian
 import tallerKitSaludCRED from '../../../../public/events/tallerKitSaludCRED.png';
 import KitDatosCREDImg2 from '../../../../public/events/tallerPracticokitCRED.jpg';
 import conectorGestionActivos from '../../../../public/events/conectorGestionActivos.png';
-import formacionDesarrolloExtensiones from '../../../../public/events/formacion-avanzada-sobre-desarrollo-de-extensiones-para-casos-de-uso.png';
-import evolucionEspacioDatos from '../../../../public/events/evolucion-espacio-datos.png';
-import usoPracticoImage from '../../../../public/events/uso-practico.png';
-import evolucionEspacioDatosHPCBigDataCloud from '../../../../public/events/evolucion-espacio-datos-hpc-bigdata-cloud.png';
-import gobernanzaDeDatos from '../../../../public/events/gobernanza-de-datos.png';
-import eventoFinal from '../../../../public/events/evento-final-onehealth-dataspace-aplazado.png';
-import gobernanzaDeDatosAporte from '../../../../public/events/gobernanza-de-datos-aporte.png';
-import gestionCoordinacionComunicacion from '../../../../public/events/formacion-gestion-coordinacion-comunicacion.png';
-import interoperabilidadSemantica from '../../../../public/events/formacion-interoperabilidad-semantica.png';
+import formacionDesarrolloExtensionesES from '../../../../public/events/formacion-avanzada-sobre-desarrollo-de-extensiones-para-casos-de-uso.png';
+import formacionDesarrolloExtensionesENG from '../../../../public/events/formacion-avanzada-sobre-desarrollo-de-extensiones-para-casos-de-uso-ENG.png';
+import formacionDesarrolloExtensionesGL from '../../../../public/events/formacion-avanzada-sobre-desarrollo-de-extensiones-para-casos-de-uso-GL.png';
+import evolucionEspacioDatosES from '../../../../public/events/evolucion-espacio-datos.png';
+import evolucionEspacioDatosENG from '../../../../public/events/evolucion-espacio-datos-ENG.png';
+import evolucionEspacioDatosGL from '../../../../public/events/evolucion-espacio-datos-GL.png';
+import usoPracticoES from '../../../../public/events/uso-practico.png';
+import usoPracticoENG from '../../../../public/events/uso-practico-ENG.png';
+import usoPracticoGL from '../../../../public/events/uso-practico-GL.png';
+import evolucionEspacioDatosHPCBigDataCloudES from '../../../../public/events/evolucion-espacio-datos-hpc-bigdata-cloud.png';
+import evolucionEspacioDatosHPCBigDataCloudENG from '../../../../public/events/evolucion-espacio-datos-hpc-bigdata-cloud-ENG.png';
+import evolucionEspacioDatosHPCBigDataCloudGL from '../../../../public/events/evolucion-espacio-datos-hpc-bigdata-cloud-GL.png';
+import gobernanzaDeDatosES from '../../../../public/events/gobernanza-de-datos.png';
+import gobernanzaDeDatosENG from '../../../../public/events/gobernanza-de-datos-ENG.png';
+import gobernanzaDeDatosGL from '../../../../public/events/gobernanza-de-datos-GL.png';
+import eventoFinalES from '../../../../public/events/evento-final-onehealth-dataspace-aplazado.png';
+import eventoFinalENG from '../../../../public/events/evento-final-onehealth-dataspace-aplazado-ENG.png';
+import eventoFinalGL from '../../../../public/events/evento-final-onehealth-dataspace-aplazado-GL.png';
+import gobernanzaDeDatosAporteES from '../../../../public/events/gobernanza-de-datos-aporte.png';
+import gobernanzaDeDatosAporteENG from '../../../../public/events/gobernanza-de-datos-aporte-ENG.png';
+import gobernanzaDeDatosAporteGL from '../../../../public/events/gobernanza-de-datos-aporte-GL.png';
+import gestionCoordinacionComunicacionES from '../../../../public/events/formacion-gestion-coordinacion-comunicacion.png';
+import gestionCoordinacionComunicacionENG from '../../../../public/events/formacion-gestion-coordinacion-comunicacion-ENG.png';
+import gestionCoordinacionComunicacionGL from '../../../../public/events/formacion-gestion-coordinacion-comunicacion-GL.png';
+import interoperabilidadSemanticaES from '../../../../public/events/formacion-interoperabilidad-semantica.png';
+import interoperabilidadSemanticaENG from '../../../../public/events/formacion-interoperabilidad-semantica-ENG.png';
+import interoperabilidadSemanticaGL from '../../../../public/events/formacion-interoperabilidad-semantica-GL.png';
 import miniencuentrosES from '../../../../public/events/mini-encuentros-onehealth-dataspace.png';
 import miniencuentrosENG from '../../../../public/events/mini-encuentros-onehealth-dataspace-ENG.png';
 import miniencuentrosGL from '../../../../public/events/mini-encuentros-onehealth-dataspace-GL.png';
@@ -80,7 +98,7 @@ function getLocalizedImage(
 }
 
 // Hardcoded events
-const events = [
+const events: Event[]  = [
   {
     key: 'tallersqs',
     date: '2025-10-09',
@@ -194,7 +212,11 @@ const events = [
   {
     key: 'formacionDesarrolloExtensiones',
     date: '2026-04-29',
-    image: formacionDesarrolloExtensiones,
+    image: {
+      es: formacionDesarrolloExtensionesES,
+      en: formacionDesarrolloExtensionesENG,
+      gl: formacionDesarrolloExtensionesGL
+    },
     cesgalink:
       'https://aula.cesga.es/main/auth/inscription.php?c=EDDOHDS00129042026&',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
@@ -203,7 +225,11 @@ const events = [
   {
     key: 'evolucionEspacioDatos',
     date: '2026-05-08',
-    image: evolucionEspacioDatos,
+    image: {
+      es: evolucionEspacioDatosES,
+      en: evolucionEspacioDatosENG,
+      gl: evolucionEspacioDatosGL
+    },
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
@@ -212,7 +238,11 @@ const events = [
   {
     key: 'usoPractico',
     date: '2026-05-15',
-    image: usoPracticoImage,
+    image: {
+      es: usoPracticoES,
+      en: usoPracticoENG,
+      gl: usoPracticoGL
+    },
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
@@ -221,7 +251,11 @@ const events = [
   {
     key: 'evolucionEspacioDatosHPCBigDataCloud',
     date: '2026-05-22',
-    image: evolucionEspacioDatosHPCBigDataCloud,
+     image: {
+      es: evolucionEspacioDatosHPCBigDataCloudES,
+      en: evolucionEspacioDatosHPCBigDataCloudENG,
+      gl: evolucionEspacioDatosHPCBigDataCloudGL
+    },
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
@@ -230,7 +264,11 @@ const events = [
   {
     key: 'gobernanzaDeDatos',
     date: '2026-05-29',
-    image: gobernanzaDeDatos,
+     image: {
+      es: gobernanzaDeDatosES,
+      en: gobernanzaDeDatosENG,
+      gl: gobernanzaDeDatosAporteGL
+    },
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
@@ -239,7 +277,11 @@ const events = [
   {
     key: 'eventoFinal',
     date: '2026-06-17',
-    image: eventoFinal,
+     image: {
+      es: eventoFinalES,
+      en: eventoFinalENG,
+      gl: eventoFinalGL
+    },
     cesgalink:
       'https://dataspacedatalife.github.io/onehealth-dataspace-evento-final/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
@@ -248,7 +290,11 @@ const events = [
   {
     key: 'gobernanzaDeDatosAporte',
     date: '2026-06-05',
-    image: gobernanzaDeDatosAporte,
+     image: {
+      es: gobernanzaDeDatosAporteES,
+      en: gobernanzaDeDatosAporteENG,
+      gl: gobernanzaDeDatosAporteGL
+    },
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
@@ -257,7 +303,11 @@ const events = [
   {
     key: 'formacionGestionCoordinacionComunicacion',
     date: '2026-06-12',
-    image: gestionCoordinacionComunicacion,
+    image: {
+      es: gestionCoordinacionComunicacionES,
+      en: gestionCoordinacionComunicacionENG,
+      gl: gestionCoordinacionComunicacionGL
+    },
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
@@ -266,7 +316,11 @@ const events = [
   {
     key: 'formacionInteroperabilidadSemantica',
     date: '2026-06-19',
-    image: interoperabilidadSemantica,
+     image: {
+      es: interoperabilidadSemanticaES,
+      en: interoperabilidadSemanticaENG,
+      gl: interoperabilidadSemanticaGL
+    },
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
@@ -286,7 +340,7 @@ const events = [
     featured: true,
   }
 
-] as const satisfies Event[];
+] satisfies Event[];
 
 // Obtener eventos pasados paginados
 function getPastEvents(page: number) {
