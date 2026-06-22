@@ -34,13 +34,15 @@ export default async function RootLayout({ params, children }: LayoutProps) {
       <head>
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap"
         />
       </head>
 
       <body
         className="bg-[#f5fcfe] text-gray-950 antialiased"
-        style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+        style={{
+          fontFamily: "'Barlow', 'Barlow Condensed', sans-serif",
+        }}
       >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
