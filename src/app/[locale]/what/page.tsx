@@ -23,7 +23,6 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-/* TIPADO SEGURO */
 type Principle = {
   key: 'sovereignty' | 'interoperability' | 'governance' | 'trust' | 'value';
   icon: ElementType;
@@ -41,7 +40,6 @@ async function Header() {
     { key: 'value', icon: Globe },
   ];
 
-  /* 🔥 FIX CLAVE: acceso correcto a nested translations */
   const getPrinciple = (key: Principle['key']) => ({
     title: t(`principles.${key}.title`),
     description: t(`principles.${key}.description`),
@@ -83,46 +81,43 @@ async function Header() {
         </p>
       </section>
 
-      {/* PRINCIPIOS */}
+      {/* PRINCIPIOS EN UNA SOLA FILA (DESKTOP) */}
       <section className="mt-16 mb-20">
         <h2 className="text-3xl font-medium tracking-tight text-center mb-12">
           {t('principles.title')}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-items-center">
-          {principles.map((item, index) => {
+        <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch">
+          {principles.map((item) => {
             const Icon = item.icon;
             const principle = getPrinciple(item.key);
-
-            const isLast = index === principles.length - 1;
 
             return (
               <div
                 key={item.key}
-                className={`
-                  flex flex-col items-center
+                className="
+                  flex-1
                   bg-white
                   border border-[#009AB8]/15
                   rounded-2xl
-                  p-8
+                  p-5
                   shadow-sm
                   text-center
                   hover:shadow-lg
                   hover:-translate-y-1
                   transition-all duration-300
-                  ${isLast ? 'md:col-span-2' : ''}
-                `}
+                "
               >
-                <div className="w-full max-w-sm flex flex-col items-center">
-                  <div className="w-16 h-16 mb-6 rounded-full bg-[#e6f7fa] flex items-center justify-center">
-                    <Icon className="w-8 h-8 text-[#009AB8]" />
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 mb-3 rounded-full bg-[#e6f7fa] flex items-center justify-center">
+                    <Icon className="w-6 h-6 text-[#009AB8]" />
                   </div>
 
-                  <h3 className="text-xl font-semibold mb-3 text-slate-800">
+                  <h3 className="text-base font-semibold mb-1 text-slate-800">
                     {principle.title}
                   </h3>
 
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-gray-600 text-xs leading-snug">
                     {principle.description}
                   </p>
                 </div>
