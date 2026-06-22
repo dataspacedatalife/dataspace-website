@@ -380,44 +380,51 @@
   "what": {
     "metadata": {
       "title": "Espacio de datos",
-      "description": "Explicación de que es un espacio de datos"
+      "description": "Explicación de qué es un espacio de datos"
     },
+
     "header": {
       "title": "¿Qué es un espacio de datos?",
-      "lead": "Un espacio de datos es un marco estructurado que permite el intercambio, acceso, gestión y uso de datos entre múltiples entidades de manera segura, interoperable y conforme a normativas"
+      "lead": "Un espacio de datos es un entorno de colaboración donde diferentes organizaciones pueden compartir información de forma segura, voluntaria y gobernada para generar valor conjunto a partir de los datos."
     },
-    "objective": {
-      "title": "Objetivo",
-      "text": "El objetivo es facilitar la colaboración basada en datos, respetando principios como la soberanía del dato, la privacidad y la ética. Los espacios de datos combinan tecnologías como infraestructuras de intercambio, estándares comunes y control de acceso, junto con acuerdos legales y organizativos, para permitir un uso compartido y responsable."
+
+    "definition": {
+      "title": "Definición",
+      "text": "Un espacio de datos es un entorno digital que permite a múltiples organizaciones compartir y gestionar datos de forma segura, respetando la soberanía de cada participante y garantizando el control sobre la información."
     },
-    "motivation": {
-      "title": "Motivación",
-      "text": "Los grandes retos sociales, económicos y ambientales suelen estar interconectados y requieren una visión conjunta basada en datos que permitan afrontarlos. Los espacios de datos proporcionan un marco para integrar y analizar información de distintos sectores, lo que facilita la colaboración entre actores, la toma de decisiones informadas y el desarrollo de políticas y servicios basados en evidencia."
+
+    "importance": {
+      "title": "¿Por qué es clave para la innovación basada en datos?",
+      "paragraph1": "A diferencia de los modelos tradicionales de intercambio de información, los espacios de datos permiten que cada participante conserve la soberanía sobre sus activos digitales, decidiendo quién puede acceder a ellos, con qué propósito y bajo qué condiciones.",
+      "paragraph2": "Los espacios de datos eliminan silos de información, fomentan la confianza entre organizaciones y permiten desarrollar nuevos servicios, investigaciones y modelos de inteligencia artificial sin que las entidades adheridas pierdan el control sobre los datos."
     },
-    "features": {
-      "security": {
-        "title": "Seguridad",
-        "description": "Protección integral de los datos mediante cifrado y autenticación."
-      },
-      "interoperability": {
-        "title": "Interoperabilidad",
-        "description": "Integración entre plataformas y sistemas mediante estándares abiertos."
-      },
-      "privacy": {
-        "title": "Privacidad",
-        "description": "Acceso a datos basado en consentimiento y políticas transparentes."
-      },
-      "governance": {
-        "title": "Gobernanza",
-        "description": "Normas claras sobre cómo se accede, usa y comparte la información."
-      },
-      "collaboration": {
-        "title": "Colaboración",
-        "description": "Cooperación entre sectores públicos, privados y ciudadanos."
-      },
+
+    "principles": {
+      "title": "Principios fundamentales",
+
       "sovereignty": {
         "title": "Soberanía del dato",
-        "description": "Cada organización mantiene control sobre sus propios datos."
+        "description": "Cada participante mantiene el control sobre sus datos y decide cómo se utilizan."
+      },
+
+      "interoperability": {
+        "title": "Interoperabilidad",
+        "description": "Los datos pueden compartirse entre sistemas y organizaciones diferentes mediante estándares comunes."
+      },
+
+      "governance": {
+        "title": "Gobernanza federada",
+        "description": "Las reglas de uso son transparentes, auditables y consensuadas entre los participantes."
+      },
+
+      "trust": {
+        "title": "Confianza y trazabilidad",
+        "description": "Todas las operaciones quedan registradas y pueden ser verificadas en cualquier momento."
+      },
+
+      "value": {
+        "title": "Generación de valor compartido",
+        "description": "Los participantes colaboran para crear conocimiento, innovación y nuevos servicios."
       }
     }
   },

@@ -4,7 +4,6 @@ import {
   Landmark,
   Network,
   ShieldCheck,
-  Users,
 } from 'lucide-react';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
@@ -13,60 +12,44 @@ import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
+import type { ElementType } from 'react';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('what.metadata');
+
   return {
     title: t('title'),
     description: t('description'),
   };
 }
 
+/* TIPADO SEGURO */
+type Principle = {
+  key: 'sovereignty' | 'interoperability' | 'governance' | 'trust' | 'value';
+  icon: ElementType;
+};
+
 async function Header() {
   const t = await getTranslations('what');
   const tHeader = await getTranslations('what.header');
 
-  const features = [
-    {
-      icon: <ShieldCheck className="text-[#009AB8] w-16 h-16 mb-6" />,
-      title: t('features.security.title'),
-      description: t('features.security.description'),
-      color: 'bg-cyan-50',
-    },
-    {
-      icon: <Network className="text-[#009AB8] w-16 h-16 mb-6" />,
-      title: t('features.interoperability.title'),
-      description: t('features.interoperability.description'),
-      color: 'bg-sky-50',
-    },
-    {
-      icon: <FileLock className="text-[#009AB8] w-16 h-16 mb-6" />,
-      title: t('features.privacy.title'),
-      description: t('features.privacy.description'),
-      color: 'bg-teal-50',
-    },
-    {
-      icon: <Landmark className="text-[#009AB8] w-16 h-16 mb-6" />,
-      title: t('features.governance.title'),
-      description: t('features.governance.description'),
-      color: 'bg-cyan-100',
-    },
-    {
-      icon: <Users className="text-[#009AB8] w-16 h-16 mb-6" />,
-      title: t('features.collaboration.title'),
-      description: t('features.collaboration.description'),
-      color: 'bg-sky-100',
-    },
-    {
-      icon: <Globe className="text-[#009AB8] w-16 h-16 mb-6" />,
-      title: t('features.sovereignty.title'),
-      description: t('features.sovereignty.description'),
-      color: 'bg-teal-100',
-    },
+  const principles: Principle[] = [
+    { key: 'sovereignty', icon: ShieldCheck },
+    { key: 'interoperability', icon: Network },
+    { key: 'governance', icon: Landmark },
+    { key: 'trust', icon: FileLock },
+    { key: 'value', icon: Globe },
   ];
+
+  /* 🔥 FIX CLAVE: acceso correcto a nested translations */
+  const getPrinciple = (key: Principle['key']) => ({
+    title: t(`principles.${key}.title`),
+    description: t(`principles.${key}.description`),
+  });
 
   return (
     <Container className="mt-16">
+      {/* HEADER */}
       <Heading as="h1" className="text-center font-heading text-[#009AB8]">
         {tHeader('title')}
       </Heading>
@@ -75,62 +58,78 @@ async function Header() {
         {tHeader('lead')}
       </Lead>
 
-      <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12 items-start">
-        <div className="mt-10 lg:mt-0">
-          <h2 className="text-3xl font-medium tracking-tight">
-            {t('objective.title')}
-          </h2>
-          <p className="mt-6 text-lg/7 text-gray-600">
-            {t('objective.text')}
-          </p>
-        </div>
-
-        <div className="mt-10 lg:mt-0">
-          <h2 className="text-3xl font-medium tracking-tight">
-            {t('motivation.title')}
-          </h2>
-          <p className="mt-6 text-lg/7 text-gray-600">
-            {t('motivation.text')}
-          </p>
-        </div>
+      {/* DEFINICIÓN */}
+      <section className="mt-16">
+        <h2 className="text-3xl font-medium tracking-tight">
+          {t('definition.title')}
+        </h2>
+        <p className="mt-6 text-lg leading-7 text-gray-600">
+          {t('definition.text')}
+        </p>
       </section>
-      <section className="mt-20 mb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-        {features.map((feature) => {
-          const Icon = feature.icon.type;
 
-          return (
-            <div
-              key={feature.title}
-              className="
-          flex flex-col items-center
-          bg-white
-          border border-[#009AB8]/15
-          rounded-2xl
-          p-8
-          shadow-sm
-          text-center
-          hover:shadow-lg
-          hover:-translate-y-1
-          transition-all duration-300
-        "
-            >
-              {/* ICONO */}
-              <div className="w-16 h-16 mb-6 rounded-full bg-[#e6f7fa] flex items-center justify-center">
-                <Icon className="w-8 h-8 text-[#009AB8]" />
+      {/* IMPORTANCIA */}
+      <section className="mt-12">
+        <h2 className="text-3xl font-medium tracking-tight">
+          {t('importance.title')}
+        </h2>
+
+        <p className="mt-6 text-lg leading-7 text-gray-600">
+          {t('importance.paragraph1')}
+        </p>
+
+        <p className="mt-6 text-lg leading-7 text-gray-600">
+          {t('importance.paragraph2')}
+        </p>
+      </section>
+
+      {/* PRINCIPIOS */}
+      <section className="mt-16 mb-20">
+        <h2 className="text-3xl font-medium tracking-tight text-center mb-12">
+          {t('principles.title')}
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-items-center">
+          {principles.map((item, index) => {
+            const Icon = item.icon;
+            const principle = getPrinciple(item.key);
+
+            const isLast = index === principles.length - 1;
+
+            return (
+              <div
+                key={item.key}
+                className={`
+                  flex flex-col items-center
+                  bg-white
+                  border border-[#009AB8]/15
+                  rounded-2xl
+                  p-8
+                  shadow-sm
+                  text-center
+                  hover:shadow-lg
+                  hover:-translate-y-1
+                  transition-all duration-300
+                  ${isLast ? 'md:col-span-2' : ''}
+                `}
+              >
+                <div className="w-full max-w-sm flex flex-col items-center">
+                  <div className="w-16 h-16 mb-6 rounded-full bg-[#e6f7fa] flex items-center justify-center">
+                    <Icon className="w-8 h-8 text-[#009AB8]" />
+                  </div>
+
+                  <h3 className="text-xl font-semibold mb-3 text-slate-800">
+                    {principle.title}
+                  </h3>
+
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {principle.description}
+                  </p>
+                </div>
               </div>
-
-              {/* TÍTULO */}
-              <h3 className="text-xl font-semibold mb-3 text-slate-800">
-                {feature.title}
-              </h3>
-
-              {/* TEXTO */}
-              <p className="text-gray-600 text-sm leading-relaxed">
-                {feature.description}
-              </p>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </section>
     </Container>
   );
