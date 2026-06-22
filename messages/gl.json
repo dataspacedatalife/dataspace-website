@@ -378,50 +378,57 @@
       }
     }
   },
-  "what": {
-    "metadata": {
-      "title": "Espazo de datos",
-      "description": "Explicación de que é un espazo de datos"
-    },
-    "header": {
-      "title": "Que é un espazo de datos?",
-      "lead": "Un espazo de datos é un marco estruturado que permite o intercambio, acceso, xestión e uso de datos entre múltiples entidades de maneira segura, interoperable e conforme á normativa"
-    },
-    "objective": {
-      "title": "Obxectivo",
-      "text": "O obxectivo é facilitar a colaboración baseada en datos, respectando principios como a soberanía dos datos, a privacidade e a ética. Os espazos de datos combinan tecnoloxías como infraestruturas de intercambio, estándares comúns e control de acceso, xunto con acordos legais e organizativos, para permitir un uso compartido e responsable."
-    },
-    "motivation": {
-      "title": "Motivación",
-      "text": "Os grandes retos sociais, económicos e ambientais adoitan estar interconectados e requiren unha visión conxunta baseada en datos que permita afrontalos. Os espazos de datos proporcionan un marco para integrar e analizar información de distintos sectores, o que facilita a colaboración entre actores, a toma de decisións informadas e o desenvolvemento de políticas e servizos baseados en evidencias."
-    },
-    "features": {
-      "security": {
-        "title": "Seguridade",
-        "description": "Protección integral dos datos mediante cifrado e autenticación."
-      },
-      "interoperability": {
-        "title": "Interoperabilidade",
-        "description": "Integración entre plataformas e sistemas mediante estándares abertos."
-      },
-      "privacy": {
-        "title": "Privacidade",
-        "description": "Acceso a datos baseado no consentimento e en políticas transparentes."
-      },
-      "governance": {
-        "title": "Gobernanza",
-        "description": "Normas claras sobre como se accede, usa e comparte a información."
-      },
-      "collaboration": {
-        "title": "Colaboración",
-        "description": "Cooperación entre sectores públicos, privados e cidadáns."
-      },
-      "sovereignty": {
-        "title": "Soberanía dos datos",
-        "description": "Cada organización mantén o control sobre os seus propios datos."
-      }
-    }
+ "what": {
+  "metadata": {
+    "title": "Espazo de datos",
+    "description": "Explicación de que é un espazo de datos"
   },
+
+  "header": {
+    "title": "Que é un espazo de datos?",
+    "lead": "Un espazo de datos é un contorno de colaboración no que diferentes organizacións poden compartir información de forma segura, voluntaria e gobernada para xerar valor conxunto a partir dos datos."
+  },
+
+  "definition": {
+    "title": "Definición",
+    "text": "Un espazo de datos é un contorno dixital que permite a múltiples organizacións compartir e xestionar datos de forma segura, respectando a soberanía de cada participante e garantindo o control sobre a información."
+  },
+
+  "importance": {
+    "title": "Por que é clave para a innovación baseada en datos?",
+    "paragraph1": "A diferenza dos modelos tradicionais de intercambio de información, os espazos de datos permiten que cada participante manteña a soberanía sobre os seus activos dixitais, decidindo quen pode acceder a eles, con que propósito e baixo que condicións.",
+    "paragraph2": "Os espazos de datos eliminan silos de información, fomentan a confianza entre organizacións e permiten desenvolver novos servizos, investigacións e modelos de intelixencia artificial sen que as entidades adheridas perdan o control sobre os datos."
+  },
+
+  "principles": {
+    "title": "Principios fundamentais",
+
+    "sovereignty": {
+      "title": "Soberanía do dato",
+      "description": "Cada participante mantén o control sobre os seus datos e decide como se empregan."
+    },
+
+    "interoperability": {
+      "title": "Interoperabilidade",
+      "description": "Os datos poden compartirse entre sistemas e organizacións diferentes mediante estándares comúns."
+    },
+
+    "governance": {
+      "title": "Gobernanza federada",
+      "description": "As regras de uso son transparentes, auditables e consensuadas entre os participantes."
+    },
+
+    "trust": {
+      "title": "Confianza e trazabilidade",
+      "description": "Todas as operacións quedan rexistradas e poden ser verificadas en calquera momento."
+    },
+
+    "value": {
+      "title": "Xeración de valor compartido",
+      "description": "Os participantes colaboran para crear coñecemento, innovación e novos servizos."
+    }
+  }
+},
   "events": {
     "metadata": {
       "title": "Eventos",

@@ -378,50 +378,57 @@
       }
     }
   },
-  "what": {
-    "metadata": {
-      "title": "Data Space",
-      "description": "Explanation of what a data space is"
-    },
-    "header": {
-      "title": "What is a data space?",
-      "lead": "A data space is a structured framework that allows the exchange, access, management and use of data between multiple entities in a secure, interoperable and compliant manner"
-    },
-    "objective": {
-      "title": "Objective",
-      "text": "The objective is to facilitate data-based collaboration, respecting principles such as data sovereignty, privacy and ethics. Data spaces combine technologies such as exchange infrastructures, common standards and access control, together with legal and organizational agreements, to allow for shared and responsible use."
-    },
-    "motivation": {
-      "title": "Motivation",
-      "text": "The great social, economic and environmental challenges are often interconnected and require a joint vision, based on data, to tackle them. Data spaces provide a framework to integrate and analyze information from different sectors, which facilitates collaboration between actors, informed decision-making and the development of evidence-based policies and services."
-    },
-    "features": {
-      "security": {
-        "title": "Security",
-        "description": "Comprehensive data protection through encryption and authentication."
-      },
-      "interoperability": {
-        "title": "Interoperability",
-        "description": "Integration between platforms and systems through open standards."
-      },
-      "privacy": {
-        "title": "Privacy",
-        "description": "Data access based on consent and transparent policies."
-      },
-      "governance": {
-        "title": "Governance",
-        "description": "Clear rules on how information is accessed, used and shared."
-      },
-      "collaboration": {
-        "title": "Collaboration",
-        "description": "Cooperation between public, private and citizen sectors."
-      },
-      "sovereignty": {
-        "title": "Data sovereignty",
-        "description": "Each organization maintains control over its own data."
-      }
-    }
+ "what": {
+  "metadata": {
+    "title": "Data Space",
+    "description": "Explanation of what a data space is"
   },
+
+  "header": {
+    "title": "What is a data space?",
+    "lead": "A data space is a collaborative environment where different organizations can securely, voluntarily, and in a governed way share information to generate shared value from data."
+  },
+
+  "definition": {
+    "title": "Definition",
+    "text": "A data space is a digital environment that enables multiple organizations to securely share and manage data, respecting each participant's sovereignty and ensuring control over information."
+  },
+
+  "importance": {
+    "title": "Why is it key for data-driven innovation?",
+    "paragraph1": "Unlike traditional models of information exchange, data spaces allow each participant to retain sovereignty over their digital assets, deciding who can access them, for what purpose, and under what conditions.",
+    "paragraph2": "Data spaces eliminate information silos, foster trust between organizations, and enable the development of new services, research, and artificial intelligence models without participating entities losing control over their data."
+  },
+
+  "principles": {
+    "title": "Core principles",
+
+    "sovereignty": {
+      "title": "Data sovereignty",
+      "description": "Each participant retains control over their data and decides how it is used."
+    },
+
+    "interoperability": {
+      "title": "Interoperability",
+      "description": "Data can be shared between different systems and organizations using common standards."
+    },
+
+    "governance": {
+      "title": "Federated governance",
+      "description": "Usage rules are transparent, auditable, and agreed upon by participants."
+    },
+
+    "trust": {
+      "title": "Trust and traceability",
+      "description": "All operations are recorded and can be verified at any time."
+    },
+
+    "value": {
+      "title": "Shared value creation",
+      "description": "Participants collaborate to create knowledge, innovation, and new services."
+    }
+  }
+},
   "events": {
     "metadata": {
       "title": "Events",
