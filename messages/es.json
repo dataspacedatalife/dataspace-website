@@ -270,12 +270,11 @@
       "description": "Impulsando la innovación desde el CESGA. Nuestra misión es acelerar la transformación digital de los sectores de la biotecnología, agroalimentación, forestal-mar-industrial y salud"
     },
     "header": {
-      "title": "Impulsando la innovación desde el CESGA",
-      "mission": "Nuestra misión",
-      "missionText1": "En CESGA, nuestra misión es acelerar la transformación digital de los sectores de la biotecnología, agroalimentación, forestal-mar-industrial y salud. A través del demostrador multisectorial, proporcionamos soluciones basadas en inteligencia artificial, big data y computación de alto rendimiento.",
-      "missionText2": "Este proyecto busca explotar, mediante casos reales, tecnologías emergentes que puedan mejorar la competitividad de las empresas gallegas, apostando por una Galicia conectada, sostenible y líder en innovación.",
-      "imageAlt": "Supercomputador Finisterrae"
-    },
+  "title": "Impulsamos la innovación",
+  "missionText1": "OneHealth DataSpace está impulsado por un equipo multidisciplinar del Centro de Supercomputación de Galicia (CESGA) especializado en espacios de datos, inteligencia artificial, ciencia de datos, supercomputación, interoperabilidad y gobernanza digital.",
+  "missionText2": "Desde CESGA trabajamos para facilitar la compartición segura de datos entre organizaciones, impulsando la investigación, la innovación y el desarrollo de soluciones basadas en datos e inteligencia artificial bajo el enfoque One Health. Nuestro compromiso es construir una infraestructura sostenible, alineada con la estrategia europea del dato y preparada para evolucionar junto a la futura 1HealthAI Factory.",
+  "imageAlt": "Supercomputador Finisterrae"
+},
     "team": {
       "title": "El equipo",
       "members": {

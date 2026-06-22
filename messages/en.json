@@ -270,11 +270,10 @@
       "description": "Driving innovation from CESGA. Our mission is to accelerate the digital transformation of the biotechnology, agrifood, forestry-sea-industrial and health sectors."
     },
     "header": {
-      "title": "Driving innovation from CESGA",
-      "mission": "Our mission",
-      "missionText1": "At CESGA, our mission is to accelerate the digital transformation of the biotechnology, agrifood, forestry-sea-industrial and health sectors. Through the multisectoral demonstrator, we provide solutions based on artificial intelligence, big data and high-performance computing.",
-      "missionText2": "This project seeks to exploit, through real cases, emerging technologies that can improve the competitiveness of Galician companies, betting on a connected, sustainable and leading Galicia in innovation.",
-      "imageAlt": "Finisterrae Supercomputer"
+      "title": "Driving innovation",
+      "missionText1": "OneHealth DataSpace is driven by a multidisciplinary team from the Galicia Supercomputing Center (CESGA) specialized in data spaces, artificial intelligence, data science, high-performance computing, interoperability, and digital governance.",
+      "missionText2": "At CESGA, we work to enable secure data sharing between organizations, fostering research, innovation, and the development of data- and AI-driven solutions under the One Health approach. Our commitment is to build a sustainable infrastructure aligned with the European data strategy and prepared to evolve alongside the future 1HealthAI Factory.",
+      "imageAlt": "Finisterrae supercomputer"
     },
     "team": {
       "title": "The team",
@@ -377,57 +376,48 @@
       }
     }
   },
- "what": {
-  "metadata": {
-    "title": "Data Space",
-    "description": "Explanation of what a data space is"
-  },
-
-  "header": {
-    "title": "What is a data space?",
-    "lead": "A data space is a collaborative environment where different organizations can securely, voluntarily, and in a governed way share information to generate shared value from data."
-  },
-
-  "definition": {
-    "title": "Definition",
-    "text": "A data space is a digital environment that enables multiple organizations to securely share and manage data, respecting each participant's sovereignty and ensuring control over information."
-  },
-
-  "importance": {
-    "title": "Why is it key for data-driven innovation?",
-    "paragraph1": "Unlike traditional models of information exchange, data spaces allow each participant to retain sovereignty over their digital assets, deciding who can access them, for what purpose, and under what conditions.",
-    "paragraph2": "Data spaces eliminate information silos, foster trust between organizations, and enable the development of new services, research, and artificial intelligence models without participating entities losing control over their data."
-  },
-
-  "principles": {
-    "title": "Core principles",
-
-    "sovereignty": {
-      "title": "Data sovereignty",
-      "description": "Each participant retains control over their data and decides how it is used."
+  "what": {
+    "metadata": {
+      "title": "Data Space",
+      "description": "Explanation of what a data space is"
     },
-
-    "interoperability": {
-      "title": "Interoperability",
-      "description": "Data can be shared between different systems and organizations using common standards."
+    "header": {
+      "title": "What is a data space?",
+      "lead": "A data space is a collaborative environment where different organizations can securely, voluntarily, and in a governed way share information to generate shared value from data."
     },
-
-    "governance": {
-      "title": "Federated governance",
-      "description": "Usage rules are transparent, auditable, and agreed upon by participants."
+    "definition": {
+      "title": "Definition",
+      "text": "A data space is a digital environment that enables multiple organizations to securely share and manage data, respecting each participant's sovereignty and ensuring control over information."
     },
-
-    "trust": {
-      "title": "Trust and traceability",
-      "description": "All operations are recorded and can be verified at any time."
+    "importance": {
+      "title": "Why is it key for data-driven innovation?",
+      "paragraph1": "Unlike traditional models of information exchange, data spaces allow each participant to retain sovereignty over their digital assets, deciding who can access them, for what purpose, and under what conditions.",
+      "paragraph2": "Data spaces eliminate information silos, foster trust between organizations, and enable the development of new services, research, and artificial intelligence models without participating entities losing control over their data."
     },
-
-    "value": {
-      "title": "Shared value creation",
-      "description": "Participants collaborate to create knowledge, innovation, and new services."
+    "principles": {
+      "title": "Core principles",
+      "sovereignty": {
+        "title": "Data sovereignty",
+        "description": "Each participant retains control over their data and decides how it is used."
+      },
+      "interoperability": {
+        "title": "Interoperability",
+        "description": "Data can be shared between different systems and organizations using common standards."
+      },
+      "governance": {
+        "title": "Federated governance",
+        "description": "Usage rules are transparent, auditable, and agreed upon by participants."
+      },
+      "trust": {
+        "title": "Trust and traceability",
+        "description": "All operations are recorded and can be verified at any time."
+      },
+      "value": {
+        "title": "Shared value creation",
+        "description": "Participants collaborate to create knowledge, innovation, and new services."
+      }
     }
-  }
-},
+  },
   "events": {
     "metadata": {
       "title": "Events",
@@ -4534,64 +4524,48 @@
   "faq": {
     "metadata": {
       "title": "FAQ",
-      "description": "Frequently asked questions from users"
+      "description": "Frequently asked questions by users"
     },
     "title": "Frequently Asked Questions",
-    "description": "Below, we present the most frequently asked questions from users, which can be explored in greater detail in the user manual",
+    "description": "Frequently asked questions about OneHealth DataSpace. For more information, please consult our User Manual",
     "link": "User Manual",
-    "section1": "About the data space",
-    "section2": "Roles and participation",
-    "section3": "Joining process",
-    "section4": "Technical part (connectors and data)",
-    "section5": "Security and governance",
-    "section6": "Usage and operation",
-    "section7": "Common issues",
-    "section8": "Getting started recommendations",
-    "question1": "What is the DATAlife Data Space?",
-    "answer1": "It is a secure environment where organizations can share, access, and use data or services while always maintaining control over them.",
-    "question2": "What does it mean to “join” the data space?",
-    "answer2": "It means becoming part of the ecosystem to:\n• Share data\n• Consume data\n• Offer or use services\nAlways under rules of security, privacy, and control.",
-    "question3": "Do I lose ownership of my data by participating?",
-    "answer3": "No. You decide:\n• What data to share\n• With whom\n• Under what conditions\nThere is never mandatory data transfer.",
+    "question1": "What is OneHealth DataSpace?",
+    "answer1": "OneHealth DataSpace is a federated data space that enables organizations to securely share, access, and use data and services related to human, animal, and environmental health in an interoperable and sovereign manner.\n\nIts objective is to transform distributed data into valuable knowledge to drive research, innovation, evidence-based decision-making, and the development of artificial intelligence solutions within the One Health ecosystem.",
+    "question2": "What is a data space?",
+    "answer2": "A data space is a collaborative environment that enables the exchange and reuse of data among multiple organizations through common governance, security, interoperability, and trust rules.\n\nUnlike traditional models, a data space does not require information to be centralized. Each organization retains control over its own data and decides who can access it, for what purpose, and under what conditions.",
+    "question3": "What does it mean to join OneHealth DataSpace?",
+    "answer3": "Joining means becoming part of the ecosystem to share data, consume data, provide services, or use digital services within a common governance framework.\n\nMembership combines an administrative process and technical integration, enabling participation in use cases, collaborative projects, and future developments linked to the One Health ecosystem and the future 1HealthAI Factory.",
     "question4": "Who can participate?",
-    "answer4": "• Hospitals and healthcare centers\n• Universities and research centers\n• Public administrations\n• Companies, startups, and technology centers.",
-    "question5": "What roles exist within the data space?",
-    "answer5": "You can participate as:\n• Data provider\n• Data consumer\n• Service provider\n• Service consumer\nThe same entity can have multiple roles at the same time.",
-    "question6": "What is the most common role to start with?",
-    "answer6": "The most common is Data Provider, sharing a dataset for validation or use by other participants.",
-    "question7": "How do I join the data space?",
-    "answer7": "The process has two phases:\n• Administrative request: complete the interest form and validation by CESGA.\n• Technical integration: deploy the connector and publish data or services.",
-    "question8": "How long does the process take?",
-    "answer8": "Request evaluation: up to 2 weeks.\nTechnical integration: depends on the user (hours or days).",
-    "question9": "Do I need to sign any agreement?",
-    "answer9": "Yes, in some cases a joining contract is formalized before technical integration.",
-    "question10": "What is a connector?",
-    "answer10": "It is a tool that allows you to connect your systems with the data space.\nImportant:\n• It does not store data\n• It only manages access and exchange.",
-    "question11": "Do I need my own infrastructure?",
-    "answer11": "Yes. You need:\n• Server (local or cloud)\n• Minimum resources (RAM, CPU)\n• Internet connection.",
-    "question12": "Where is my data stored?",
-    "answer12": "On your own infrastructure or external services (e.g., cloud).\nThe connector only points to them via a URL.",
-    "question13": "What is an asset?",
-    "answer13": "It is a package of data or service that you share in the data space.\nIncludes:\n• Data\n• Metadata\n• License\n• Documentation.",
-    "question14": "How is access to data controlled?",
-    "answer14": "Through:\n• Usage contracts\n• Policies defined by the provider\nYou decide who can access and how.",
-    "question15": "What regulations must I comply with?",
-    "answer15": "• Data protection (GDPR)\n• Security\n• Ethics and governance of the space.",
-    "question16": "Is there supervision or auditing?",
-    "answer16": "Yes. The system may include:\n• Quality verification\n• Audits\n• Compliance monitoring.",
-    "question17": "How do I access data from other participants?",
-    "answer17": "Through the data space catalog, where you can:\n• Search datasets\n• Request access\n• Accept conditions.",
-    "question18": "What benefits do I get by participating?",
-    "answer18": "• Access to data and services\n• Collaboration with other entities\n• Visibility of your data\n• Integration with European ecosystems.",
-    "question19": "I don't see data in the catalog, what's happening?",
-    "answer19": "It may be due to:\n• Connection issues\n• Incorrect connector configuration.",
-    "question20": "What happens if my dataset does not meet requirements?",
-    "answer20": "It will not be validated.\nIt must meet:\n• Quality\n• Documentation\n• Consistency with what is declared.",
-    "question21": "Can I modify or remove my data?",
-    "answer21": "Yes. You maintain full control at all times.",
-    "question22": "How do I start if I am a beginner?",
-    "answer22": "• Define a simple use case\n• Prepare a small dataset\n• Deploy the connector\n• Publish a first asset\n• Validate with CESGA.",
-    "question23": "What should be avoided?",
-    "answer23": "• Not documenting the data\n• Using inaccessible URLs\n• Reconfiguring the connector without control\n• Not defining usage conditions."
+    "answer4": "Public and private organizations working with health-related data, research, or innovation can participate.\n\n• Hospitals and healthcare centers.\n• Universities and research groups.\n• Technology centers.\n• Companies and startups.\n• Public administrations.\n• Organizations involved in national and European data-sharing initiatives.",
+    "question5": "Do I lose ownership of my data by participating?",
+    "answer5": "No.\n\nOne of the fundamental principles of OneHealth DataSpace is data sovereignty. Each organization retains ownership, control, and decision-making authority over its digital assets.\n\nParticipants decide:\n• Which data to share.\n• With whom to share it.\n• For how long.\n• For what purpose.\n• Under which usage conditions.\n\nParticipation in the data space does not imply mandatory transfer of information.",
+    "question6": "Where is my data stored?",
+    "answer6": "Data remains within the owner's infrastructure or in the technological services chosen by the owner.\n\nOneHealth DataSpace uses a federated architecture. This means that the data space facilitates the discovery, access, and exchange of information without requiring data to be permanently transferred to a centralized platform.",
+    "question7": "What roles exist within the data space?",
+    "answer7": "An organization may participate with one or more roles simultaneously.\n\nData Provider: shares datasets or data products with other participants.\n\nData Consumer: requests access to and uses information published by other organizations.\n\nService Provider: offers tools, analytical capabilities, or digital services to the ecosystem.\n\nService Consumer: uses services offered by other participants.\n\nThis flexibility allows each organization to participate according to its needs and objectives.",
+    "question8": "What is an asset?",
+    "answer8": "An asset is the basic unit published within the data space.\n\nIt may consist of:\n• A dataset.\n• A digital service.\n• A data product.\n• A shareable resource.\n\nAn asset includes descriptive information, documentation, terms of use, metadata, and access policies that enable its discovery and reuse by other participants.",
+    "question9": "What is a connector and what is it used for?",
+    "answer9": "A connector is the technological component that enables an organization's systems to connect with the data space.\n\nIts main function is to manage the secure exchange of information, enforce access policies, and ensure interoperability between participants.\n\nThe connector does not store data; it simply facilitates connections between organizations while maintaining control at the source.",
+    "question10": "How is access to data controlled?",
+    "answer10": "Access is controlled through policies defined by the data provider and through usage agreements that establish access conditions.\n\nThese policies may specify:\n• Who can access the data.\n• What information can be used.\n• For what purpose.\n• For how long.\n• Under which restrictions.\n\nThis model ensures security, traceability, and regulatory compliance.",
+    "question11": "What is governance in a data space?",
+    "answer11": "Governance is the set of rules, processes, and responsibilities that enable the data space to operate securely, transparently, and reliably.\n\nGovernance defines:\n• How new participants are onboarded.\n• How conflicts or incidents are managed.\n• Which rules govern data usage.\n• How compliance is audited.\n• Which metrics are used to measure the ecosystem's impact.\n\nStrong governance is the foundation of trust among participants.",
+    "question12": "Which regulations must be followed?",
+    "answer12": "Participating organizations must comply with applicable regulations regarding:\n• Personal data protection (GDPR).\n• Information security.\n• Ethics in data usage.\n• Governance and data space policies.\n\nAdditionally, published assets must meet minimum requirements for quality, documentation, and consistency.",
+    "question13": "Is traceability and auditing available?",
+    "answer13": "Yes.\n\nOneHealth DataSpace incorporates observability, traceability, and auditing mechanisms that record who accesses data, when access occurs, for what purpose, and under which conditions.\n\nThis supports regulatory compliance, transparency, and trust among organizations.",
+    "question14": "How can I access data from other participants?",
+    "answer14": "Available data and services are published in a shared catalog where participants can:\n1. Discover datasets and services.\n2. Review their documentation.\n3. Check access conditions.\n4. Request authorization.\n5. Use the resources once access is approved.\n\nThe entire process is governed by the policies defined by each provider.",
+    "question15": "What are the benefits of participating in OneHealth DataSpace?",
+    "answer15": "Participating in OneHealth DataSpace enables organizations to:\n• Access high-value data and services.\n• Collaborate with hospitals, universities, companies, and public administrations.\n• Increase the visibility and reuse of data.\n• Integrate into European data ecosystems.\n• Prepare artificial intelligence projects based on governed and trusted datasets.\n• Connect with the future 1HealthAI Factory infrastructure promoted by CESGA.",
+    "question16": "How is OneHealth DataSpace related to artificial intelligence?",
+    "answer16": "Artificial intelligence models require high-quality, governed, interoperable, and traceable data.\n\nOneHealth DataSpace provides precisely this data infrastructure, enabling organizations to securely share information for the development of AI solutions, advanced analytics, and predictive models within the One Health domain.",
+    "question17": "What is the 1HealthAI Factory?",
+    "answer17": "The 1HealthAI Factory will be an artificial intelligence infrastructure specialized in human, animal, and environmental health, promoted by CESGA.\n\nWhile OneHealth DataSpace provides the layer for data exchange, governance, and sharing, the AI Factory will contribute advanced capabilities for model training, supercomputing, innovation, and AI services.\n\nTogether, they will form an integrated data and AI ecosystem for global health.",
+    "question18": "What will happen when the current project ends?",
+    "answer18": "OneHealth DataSpace has been conceived as a strategic infrastructure with a long-term vision.\n\nIts evolution towards the 1HealthAI Factory will consolidate the developed capabilities, incorporate new participants, expand available services, and ensure the technological and organizational sustainability of the ecosystem over time.\n\nThis makes the data space an initiative designed to evolve beyond its initial funding periods.",
+    "question19": "How can I get started if I have never participated in a data space before?",
+    "answer19": "The best way to get started is to:\n1. Define a specific use case.\n2. Identify an initial dataset or service.\n3. Apply to join the ecosystem.\n4. Deploy the connector.\n5. Publish a first asset.\n6. Validate the process with the CESGA technical team.\n\nThis approach allows organizations to progressively join the ecosystem and begin creating value from the earliest stages of participation."
   }
 }
