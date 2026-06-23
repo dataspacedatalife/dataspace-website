@@ -39,23 +39,33 @@ async function Header() {
           </h2>
 
           <p className="mt-6 text-lg/7 text-gray-700">
-            {t('about.paragraph1')}
+            {t.rich('about.paragraph1', {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
           </p>
 
           <p className="mt-4 text-lg/7 text-gray-700">
-            {t('about.paragraph2')}
+            {t.rich('about.paragraph2', {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
           </p>
 
           <p className="mt-4 text-lg/7 text-gray-700">
-            {t('about.paragraph3.part1')}
-            <strong>{t('about.paragraph3.bold')}</strong>
-            {t('about.paragraph3.part2')}
+            {t.rich('about.paragraph3', {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
           </p>
 
           <p className="mt-4 text-lg/7 text-gray-700">
-            {t('about.paragraph4.part1')}
-            <strong>{t('about.paragraph4.bold')}</strong>
-            {t('about.paragraph4.part2')}
+            {t.rich('about.paragraph4', {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </p>
+
+          <p className="mt-4 text-lg/7 text-gray-700">
+            {t.rich('about.paragraph5', {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
           </p>
         </div>
 
@@ -85,15 +95,21 @@ async function Header() {
           </h2>
 
           <p className="mt-6 text-lg/7 text-gray-700">
-            {t('oneHealth.paragraph1')}
+            {t.rich('oneHealth.paragraph1', {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
           </p>
 
           <p className="mt-4 text-lg/7 text-gray-700">
-            {t('oneHealth.paragraph2')}
+            {t.rich('oneHealth.paragraph2', {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
           </p>
 
           <p className="mt-4 text-lg/7 text-gray-700">
-            {t('oneHealth.paragraph3')}
+            {t.rich('oneHealth.paragraph3', {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
           </p>
         </div>
 
@@ -106,7 +122,7 @@ async function Header() {
 
             <div className="relative overflow-hidden">
               <Image
-                src="/demostrador/grafica-onehealth-600px.png"
+                src={t('oneHealth.image')}
                 alt={t('header.title')}
                 width={900}
                 height={700}
@@ -125,19 +141,27 @@ async function Header() {
         <hr className="mt-6 mb-6 border-t border-gray-200" />
 
         <p className="mt-6 text-md/7 text-gray-700">
-          {t('funding.call')}
+          {t.rich('funding.call', {
+            strong: (chunks) => <strong>{chunks}</strong>,
+          })}
         </p>
 
         <p className="mt-4 text-gray-700">
-          {t('funding.grant')}
+          {t.rich('funding.grant', {
+            strong: (chunks) => <strong>{chunks}</strong>,
+          })}
         </p>
 
         <p className="mt-4 mb-4 text-md/7 text-gray-700">
-          {t('funding.program')}
+          {t.rich('funding.program', {
+            strong: (chunks) => <strong>{chunks}</strong>,
+          })}
         </p>
 
         <p className="mb-4 whitespace-pre-line text-gray-700">
-          {t('funding.details')}
+          {t.rich('funding.details', {
+            strong: (chunks) => <strong>{chunks}</strong>,
+          })}
         </p>
 
         <Button href={t('funding.linkUrl')} target="_blank">
