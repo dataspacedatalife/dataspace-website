@@ -61,6 +61,10 @@ import miniencuentrosES from '../../../../public/events/mini-encuentros-onehealt
 import miniencuentrosENG from '../../../../public/events/mini-encuentros-onehealth-dataspace-ENG.png';
 import miniencuentrosGL from '../../../../public/events/mini-encuentros-onehealth-dataspace-GL.png';
 
+import delDatoAlResultadoES from '../../../../public/events/formacion-del-dato-al-resultado.png';
+import delDatoAlResultadoENG from '../../../../public/events/formacion-del-dato-al-resultado-ENG.png';
+import delDatoAlResultadoGL from '../../../../public/events/formacion-del-dato-al-resultado-GL.png';
+
 const eventsPerPage = 5;
 
 interface Event {
@@ -324,7 +328,7 @@ const events: Event[]  = [
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
-    featured: true,
+    featured: false,
   },
   {
     key: 'miniencuentros',
@@ -338,7 +342,21 @@ const events: Event[]  = [
       'https://www.cesga.es/mini-encuentro-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
+  },
+  {
+    key: 'formacionDelDatoAlResultado',
+    date: '2026-06-26',
+    image: {
+      es: delDatoAlResultadoES,
+      en: delDatoAlResultadoENG,
+      gl: delDatoAlResultadoGL
+    },
+    cesgalink:
+      'https://www.cesga.es/formacion-onehealth-dataspace/',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: true,
   }
+
 
 ] satisfies Event[];
 

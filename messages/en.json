@@ -921,33 +921,80 @@
         ],
         "extra": "Access and registration"
       },
-
-"miniencuentros": {
-  "header": "OneHealth DataSpace Mini Meetings – Santiago de Compostela",
-  "excerpt": "In-person meeting to discover the capabilities of OneHealth DataSpace, identify research needs, and explore collaboration opportunities under the One Health approach.",
-  "description": [
-    "Your data. Your control. Knowledge that transforms global health.",
-    "On June 23, OneHealth DataSpace will hold the first OneHealth DataSpace Mini Meetings at CHUS (Santiago de Compostela University Clinical Hospital).",
-    "From the Galicia Supercomputing Center (CESGA), we invite you to discover the possibilities offered by OneHealth DataSpace and its future evolution towards the 1HealthAI Factory, as well as the capabilities that may be of interest to your research group.",
-    "What do we propose?",
-    "A one-hour meeting designed to get to know each other, analyze the needs of each project, and build solutions together.",
-    "We will begin by presenting what OneHealth DataSpace is and the opportunities it offers.",
-    "Most of the time will be devoted to discussion: what challenges does your group face? How can CESGA and OneHealth DataSpace help you?",
-    "Who is it for?",
-    "▸ Research groups in the field of human health.",
-    "▸ Research groups focused on animal and environmental health.",
-    "▸ Teams interested in advancing their research under the One Health approach.",
-    "More than data. We turn data into actionable knowledge.",
-    "OneHealth DataSpace provides participating organizations with a complete data lifecycle: integration, sharing, advanced processing, analysis, model execution, and results storage, while maintaining full control over their data at all times.",
-    "📍 CHUS Amphitheater Hall (Santiago de Compostela University Clinical Hospital)",
-    "📅 June 23, 2026",
-    "🕧 12:30 PM",
-    "⚠️ Limited capacity."
-  ],
-  "extra": "Pre-registration"
-}
-
-
+      "miniencuentros": {
+        "header": "OneHealth DataSpace Mini Meetings – Santiago de Compostela",
+        "excerpt": "In-person meeting to discover the capabilities of OneHealth DataSpace, identify research needs, and explore collaboration opportunities under the One Health approach.",
+        "description": [
+          "Your data. Your control. Knowledge that transforms global health.",
+          "On June 23, OneHealth DataSpace will hold the first OneHealth DataSpace Mini Meetings at CHUS (Santiago de Compostela University Clinical Hospital).",
+          "From the Galicia Supercomputing Center (CESGA), we invite you to discover the possibilities offered by OneHealth DataSpace and its future evolution towards the 1HealthAI Factory, as well as the capabilities that may be of interest to your research group.",
+          "What do we propose?",
+          "A one-hour meeting designed to get to know each other, analyze the needs of each project, and build solutions together.",
+          "We will begin by presenting what OneHealth DataSpace is and the opportunities it offers.",
+          "Most of the time will be devoted to discussion: what challenges does your group face? How can CESGA and OneHealth DataSpace help you?",
+          "Who is it for?",
+          "▸ Research groups in the field of human health.",
+          "▸ Research groups focused on animal and environmental health.",
+          "▸ Teams interested in advancing their research under the One Health approach.",
+          "More than data. We turn data into actionable knowledge.",
+          "OneHealth DataSpace provides participating organizations with a complete data lifecycle: integration, sharing, advanced processing, analysis, model execution, and results storage, while maintaining full control over their data at all times.",
+          "📍 CHUS Amphitheater Hall (Santiago de Compostela University Clinical Hospital)",
+          "📅 June 23, 2026",
+          "🕧 12:30 PM",
+          "⚠️ Limited capacity."
+        ],
+        "extra": "Pre-registration"
+      },
+      "formacionDelDatoAlResultado": {
+        "header": "How to Join and Participate in OneHealth DataSpace: From Data to Results",
+        "excerpt": "Training session to understand the complete journey of joining OneHealth DataSpace, from onboarding to leveraging the ecosystem’s advanced processing, analytics, and artificial intelligence capabilities.",
+        "description": [
+          "Session Objective",
+          "To understand the complete process an organization follows to join the OneHealth DataSpace ecosystem, from identifying its needs to effectively using the tools and services available on the platform.",
+          "OneHealth DataSpace is an integrated platform covering the entire One Health data lifecycle: sharing, storing, processing, analyzing, and delivering results.",
+          "Unlike a conventional data space, it integrates CESGA’s advanced capabilities in HPC, Big Data, Cloud, AI, GPUs, and quantum computing to transform existing data into real-world solutions.",
+          "What is it for?",
+          "▸ Understanding the onboarding process within the OneHealth DataSpace ecosystem.",
+          "▸ Learning about the tools and services available to participating organizations.",
+          "▸ Exploring collaboration opportunities and the creation of use cases within the data space.",
+          "What will be covered during the session?",
+          "▸ Data space onboarding process.",
+          "▸ Completion of the participation application form.",
+          "▸ Initial meeting to analyze needs and opportunities.",
+          "▸ Formalization of participation through a participation agreement.",
+          "▸ Technical requirements and connector installation process.",
+          "▸ Integration and negotiation for data exchange with other participants.",
+          "▸ Services and capabilities available to participating organizations.",
+          "▸ Use cases and practical demonstration of ecosystem tools.",
+          "▸ Example of a complete participation lifecycle within OneHealth DataSpace.",
+          "What are the benefits of participating in OneHealth DataSpace?",
+          "▸ Sharing and consuming data securely, interoperably, and under a governed framework.",
+          "▸ Accessing advanced processing, analytics, and artificial intelligence services.",
+          "▸ Leveraging CESGA’s high-performance computing capabilities.",
+          "▸ Accelerating the development of collaborative projects and use cases.",
+          "How and when can it be applied?",
+          "▸ The knowledge acquired can be applied from the very first interaction with the project.",
+          "▸ It facilitates the onboarding of new organizations into the ecosystem.",
+          "▸ It promotes the development of collaborative initiatives within OneHealth DataSpace.",
+          "Who is it intended for?",
+          "Target audience:",
+          "▸ Companies, technology centers, universities, and public organizations.",
+          "▸ Healthcare entities and organizations linked to the One Health domain.",
+          "▸ Researchers, professionals, and anyone interested in learning about participation opportunities within OneHealth DataSpace.",
+          "📅 Date: June 26, 2026",
+          "🕚 Time: 11:00",
+          "📍 Format: Online",
+          "🎓 Instructors:",
+          "▸ Marta Castiñeira",
+          "▸ Ledicia Díaz",
+          "▸ Miguel Carmena",
+          "📺 The session recording will be available afterwards on CESGA’s YouTube channel (@CesgaTV).",
+          "🔗 Upcoming courses: https://dataspace.cesga.es/en/events",
+          "⚠️ Registration is mandatory to attend the session and receive the certificate of participation.",
+          "⚠️ The use of Mozilla Firefox is recommended."
+        ],
+        "extra": "Access and Registration"
+      }
     }
   },
   "catalog": {

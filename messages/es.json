@@ -943,7 +943,57 @@
           "⚠️ Aforo limitado."
         ],
         "extra": "Inscripción previa"
-      }
+      },
+      "formacionDelDatoAlResultado": {
+  "header": "Cómo adherirse y participar en OneHealth DataSpace: del Dato al Resultado",
+  "excerpt": "Sesión formativa para conocer el recorrido completo de incorporación a OneHealth DataSpace, desde la adhesión hasta el aprovechamiento de las capacidades avanzadas de procesamiento, análisis e inteligencia artificial del ecosistema.",
+  "description": [
+    "Objetivo de la sesión",
+    "Conocer el recorrido completo que debe seguir una entidad para incorporarse al ecosistema OneHealth DataSpace, desde la identificación de sus necesidades hasta el uso efectivo de las herramientas y servicios disponibles en la plataforma.",
+    "OneHealth DataSpace es una plataforma integrada para todo el ciclo de vida del dato One Health: compartir, almacenar, procesar, analizar y entregar resultados.",
+    "A diferencia de un espacio de datos convencional, integra capacidades avanzadas del CESGA en HPC, Big Data, Cloud, IA, GPU y computación cuántica para transformar datos existentes en soluciones reales.",
+    "¿Para qué sirve?",
+    "▸ Comprender el proceso de incorporación al ecosistema OneHealth DataSpace.",
+    "▸ Conocer las herramientas y servicios disponibles para las entidades participantes.",
+    "▸ Mostrar las oportunidades de colaboración y creación de casos de uso dentro del espacio de datos.",
+    "¿Qué se abordará en la sesión?",
+    "▸ Proceso de adhesión al espacio de datos.",
+    "▸ Cumplimentación del formulario de adhesión.",
+    "▸ Reunión inicial de análisis de necesidades y oportunidades.",
+    "▸ Formalización de la incorporación mediante acuerdo de participación.",
+    "▸ Requisitos técnicos y proceso de instalación de conectores.",
+    "▸ Integración y negociación para el intercambio de datos con otros participantes.",
+    "▸ Servicios y capacidades disponibles para las entidades adheridas.",
+    "▸ Casos de uso y demostración práctica de herramientas del ecosistema.",
+    "▸ Ejemplo de ciclo completo de participación dentro de OneHealth DataSpace.",
+    "¿Qué ventajas ofrece participar en OneHealth DataSpace?",
+    "▸ Compartir y consumir datos de forma segura, interoperable y gobernada.",
+    "▸ Acceder a servicios avanzados de procesamiento, análisis e inteligencia artificial.",
+    "▸ Aprovechar las capacidades de computación de altas prestaciones proporcionadas por el CESGA.",
+    "▸ Impulsar la puesta en marcha de proyectos y casos de uso colaborativos.",
+    "¿Cómo y cuándo se aplica?",
+    "▸ Los conocimientos adquiridos pueden aplicarse desde el primer contacto con el proyecto.",
+    "▸ Facilitan la incorporación de nuevas entidades al ecosistema.",
+    "▸ Favorecen el desarrollo de iniciativas colaborativas dentro de OneHealth DataSpace.",
+    "¿A quién va dirigido?",
+    "Dirigido a:",
+    "▸ Empresas, centros tecnológicos, universidades y organismos públicos.",
+    "▸ Entidades sanitarias y organizaciones vinculadas al ámbito One Health.",
+    "▸ Investigadores, profesionales y cualquier persona interesada en conocer las posibilidades de participación en OneHealth DataSpace.",
+    "📅 Fecha: 26 de junio de 2026",
+    "🕚 Hora: 11:00",
+    "📍 Modalidad: Online",
+    "🎓 Instructores:",
+    "▸ Marta Castiñeira",
+    "▸ Ledicia Díaz",
+    "▸ Miguel Carmena",
+    "📺 El vídeo de la sesión estará disponible posteriormente en el canal de YouTube del CESGA (@CesgaTV).",
+    "🔗 Próximos cursos: https://dataspace.cesga.es/es/events",
+    "⚠️ La inscripción es obligatoria para conectarse a la sesión y recibir el certificado de participación.",
+    "⚠️ Se recomienda utilizar Mozilla Firefox."
+  ],
+  "extra": "Acceso e inscripción"
+}
     }
   },
   "catalog": {
