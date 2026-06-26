@@ -1879,196 +1879,9 @@
               }
             ]
           },
-          "celiaspace_senior_conversations": {
-            "name": "celiaspace_senior_conversations",
-            "description": "Conjunto de datos extraídos de conversaciones entre personas mayores y un asistente IA orientado al acompañamiento, entretenimiento y cuidado de este colectivo. Incluye información de usuarios, interacciones con el asistente y evaluaciones cognitivas y de desempeño. Volumen actual: 67 usuarios, 21.608 interacciones y 2.526 evaluaciones.",
-            "metadata": {
-              "data_type": "Empírico",
-              "data_standard": "-",
-              "date_added": "",
-              "file_format": "CSV",
-              "license": "Por definir (RGPD aplicable)",
-              "temporal_resolution": "",
-              "temporal_coverage": ""
-            },
-            "variables": [
-              {
-                "name": "perfil_usuario",
-                "units": "-",
-                "data_description": "Información demográfica y de perfil del usuario, pseudoanonimizada en origen.",
-                "data_type": "CSV"
-              },
-              {
-                "name": "interacciones",
-                "units": "-",
-                "data_description": "Registro de 21.608 interacciones entre usuarios y el asistente IA.",
-                "data_type": "CSV"
-              },
-              {
-                "name": "evaluaciones",
-                "units": "-",
-                "data_description": "2.526 evaluaciones cognitivas y de desempeño realizadas durante las sesiones.",
-                "data_type": "CSV"
-              }
-            ]
-          }
-        },
-        "entidad_promotora": "Grupo de Tecnoloxías da Información, atlanTTic Research Center, UVigo",
-        "descripcion_ampliada": "Based on NLP research by the Information Technologies Group at the atlanTTic research center of the Universidade de Vigo, an AI assistant was developed specifically for elderly people, covering companionship needs, cognitive stimulation, entertainment and information of interest to the user. This assistant has since evolved and a spin-off called Serenia Solutions has been created, featuring a platform called Serenia (AI Assistant + Control Panel) that aims to enhance health monitoring and assessment capabilities.\n\nDuring the initial pilots carried out by atlanTTic, thousands of conversations were generated as well as cognitive and performance evaluations conducted during the sessions. This data, properly pseudonymized and processed in accordance with GDPR, constitutes the main asset contributed to OneHealth DataSpace.\n\nParticipation in OHDS enables both the structured and accessible publication of this data for other participants in the data space, as well as access to data and algorithms from third parties. In the CeliaSpace use case, Serenia Solutions uses this dataset from the Universidade de Vigo to improve its cognitive health detection algorithms. From the Universidade de Vigo's perspective, beyond being a provider of conversation data, it also consumes OHDS data from i4Life on home monitoring for elderly people in order to research relationships between conversational interactions and sensor measurements using clustering techniques."
-      },
-      "datiacare": {
-        "name": "Datiacare — Intelligent Elderly Care Platform Based on Data Sharing",
-        "dataset_name": "datiacare_home_monitoring",
-        "use_case": "i4life innovación y desarrollos S. L.",
-        "provider": "i4life",
-        "description": "Datiacare aims to facilitate the care of elderly people through data sharing in a common space, enabling the generation of alerts and the development of intelligent algorithms.",
-        "volumen": "200,000 records per year per user",
-        "n_ficheros": "50 - 300",
-        "subsets": {
-          "iot": {
-            "name": "IoT related measurements",
-            "description": "Data from the home automation devices that make up the monitoring platform",
-            "metadata": {
-              "data_type": "Mixed (empirical + synthetic)",
-              "data_standard": "",
-              "date_added": "",
-              "file_format": "CSV",
-              "license": "Proprietary (restricted under contract)",
-              "temporal_resolution": "",
-              "temporal_coverage": ""
-            },
-            "variables": [
-              {
-                "name": "user_id",
-                "units": "-",
-                "data_description": "Anonymized user identifier.",
-                "data_type": "number"
-              },
-              {
-                "name": "birth_year",
-                "units": "Year",
-                "data_description": "User year of birth.",
-                "data_type": "number"
-              },
-              {
-                "name": "gender",
-                "units": "-",
-                "data_description": "User gender.",
-                "data_type": "string"
-              },
-              {
-                "name": "country",
-                "units": "-",
-                "data_description": "User country code.",
-                "data_type": "string"
-              },
-              {
-                "name": "language",
-                "units": "-",
-                "data_description": "System language configured for the user.",
-                "data_type": "string"
-              },
-              {
-                "name": "location",
-                "units": "-",
-                "data_description": "Anonymized user location.",
-                "data_type": "string"
-              },
-              {
-                "name": "zipcode",
-                "units": "-",
-                "data_description": "Anonymized user postal code.",
-                "data_type": "string"
-              },
-              {
-                "name": "education_level",
-                "units": "-",
-                "data_description": "Highest education level attained by the user.",
-                "data_type": "string"
-              },
-              {
-                "name": "tech_familiarity",
-                "units": "-",
-                "data_description": "User familiarity with technology.",
-                "data_type": "string"
-              },
-              {
-                "name": "cognitive_impairment",
-                "units": "-",
-                "data_description": "Level of cognitive impairment.",
-                "data_type": "string"
-              },
-              {
-                "name": "hearing_impairment",
-                "units": "-",
-                "data_description": "Level of hearing impairment.",
-                "data_type": "string"
-              },
-              {
-                "name": "movement_impairment",
-                "units": "-",
-                "data_description": "Level of movement impairment.",
-                "data_type": "string"
-              },
-              {
-                "name": "visual_impairment",
-                "units": "-",
-                "data_description": "Level of visual impairment.",
-                "data_type": "string"
-              },
-              {
-                "name": "medication_intake",
-                "units": "-",
-                "data_description": "Frequency of continuous medication intake.",
-                "data_type": "string"
-              },
-              {
-                "name": "care_dependent",
-                "units": "-",
-                "data_description": "Indicates whether the user is care dependent.",
-                "data_type": "boolean"
-              },
-              {
-                "name": "has_children",
-                "units": "-",
-                "data_description": "Indicates whether the user has children.",
-                "data_type": "boolean"
-              },
-              {
-                "name": "has_grandchildren",
-                "units": "-",
-                "data_description": "Indicates whether the user has grandchildren.",
-                "data_type": "boolean"
-              },
-              {
-                "name": "has_siblings",
-                "units": "-",
-                "data_description": "Indicates whether the user has siblings.",
-                "data_type": "boolean"
-              },
-              {
-                "name": "marital_status",
-                "units": "-",
-                "data_description": "User marital status.",
-                "data_type": "string"
-              },
-              {
-                "name": "job",
-                "units": "-",
-                "data_description": "Main profession or occupation.",
-                "data_type": "string"
-              },
-              {
-                "name": "years_active",
-                "units": "Years",
-                "data_description": "Years of work activity.",
-                "data_type": "number"
-              }
-            ]
-          },
-          "assessments": {
-            "name": "Cognitive and Performance Assessments",
-            "description": "This file contains information about 2,526 assessments from the 67 users throughout the 21,608 interactions. They can be related by user_id, session_uuid and interaction_timestamp.",
+          "interactions": {
+            "name": "Conversation Interactions",
+            "description": "This file contains information about 21,608 interactions from conversations from the 67 users with an AI assistant.",
             "metadata": {
               "data_type": "Empirical",
               "data_standard": "",
@@ -2088,38 +1901,62 @@
               {
                 "name": "session_uuid",
                 "units": "-",
-                "data_description": "Unique session identifier.",
+                "data_description": "UUID v1 session identifier.",
                 "data_type": "string"
               },
               {
                 "name": "session_start",
                 "units": "Timestamp",
-                "data_description": "Session start timestamp.",
+                "data_description": "13-digit Unix epoch timestamp indicating milliseconds passed since session start.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "session_end",
+                "units": "Timestamp",
+                "data_description": "13-digit Unix epoch timestamp indicating milliseconds passed since session end.",
                 "data_type": "datetime"
               },
               {
                 "name": "interaction_timestamp",
                 "units": "Date and time",
-                "data_description": "Timestamp of the interaction associated with the assessment.",
+                "data_description": "Timestamp captured when the interaction is stored after backend processing.",
                 "data_type": "datetime"
               },
               {
                 "name": "category",
                 "units": "-",
-                "data_description": "Type of assessment performed (cognitive or performance).",
+                "data_description": "Response category: local, from the database, or generated by generative AI.",
                 "data_type": "string"
               },
               {
-                "name": "domain",
+                "name": "intent",
                 "units": "-",
-                "data_description": "Cognitive or functional domain assessed.",
+                "data_description": "Detected intent.",
                 "data_type": "string"
               },
               {
-                "name": "assessment",
+                "name": "input_mode",
                 "units": "-",
-                "data_description": "Assessment result or score.",
-                "data_type": "number"
+                "data_description": "User input mode. Options: [button-click, event, speech-to-text, text].",
+                "data_type": "string"
+              },
+              {
+                "name": "input_text",
+                "units": "-",
+                "data_description": "User input text (written text or transcription in case of voice).",
+                "data_type": "string"
+              },
+              {
+                "name": "output_mode",
+                "units": "-",
+                "data_description": "Assistant output mode. Options: [read, text-to-speech].",
+                "data_type": "string"
+              },
+              {
+                "name": "messages",
+                "units": "-",
+                "data_description": "Messages sent by the assistant in a single interaction.",
+                "data_type": "string"
               }
             ]
           },

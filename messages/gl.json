@@ -1873,9 +1873,9 @@
               }
             ]
           },
-          "celiaspace_senior_conversations": {
-            "name": "celiaspace_senior_conversations",
-            "description": "Conjunto de datos extraídos de conversaciones entre personas mayores y un asistente IA orientado al acompañamiento, entretenimiento y cuidado de este colectivo. Incluye información de usuarios, interacciones con el asistente y evaluaciones cognitivas y de desempeño. Volumen actual: 67 usuarios, 21.608 interacciones y 2.526 evaluaciones.",
+          "interactions": {
+            "name": "Interaccións das conversacións",
+            "description": "Este ficheiro contén información sobre 21.608 interaccións de conversacións dos 67 usuarios cun asistente IA.",
             "metadata": {
               "data_type": "Empírico",
               "data_standard": "-",
@@ -1887,22 +1887,70 @@
             },
             "variables": [
               {
-                "name": "perfil_usuario",
+                "name": "user_id",
                 "units": "-",
-                "data_description": "Información demográfica y de perfil del usuario, pseudoanonimizada en origen.",
-                "data_type": "CSV"
+                "data_description": "Identificador anonimizado do usuario.",
+                "data_type": "number"
               },
               {
-                "name": "interacciones",
+                "name": "session_uuid",
                 "units": "-",
-                "data_description": "Registro de 21.608 interacciones entre usuarios y el asistente IA.",
-                "data_type": "CSV"
+                "data_description": "Identificador UUID v1 da sesión.",
+                "data_type": "string"
               },
               {
-                "name": "evaluaciones",
+                "name": "session_start",
+                "units": "Timestamp",
+                "data_description": "Timestamp Unix de 13 díxitos que indica o inicio da sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "session_end",
+                "units": "Timestamp",
+                "data_description": "Timestamp Unix de 13 díxitos que indica o fin da sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "interaction_timestamp",
+                "units": "Data e hora",
+                "data_description": "Timestamp rexistrado cando a interacción se almacena tras o procesamento.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "category",
                 "units": "-",
-                "data_description": "2.526 evaluaciones cognitivas y de desempeño realizadas durante las sesiones.",
-                "data_type": "CSV"
+                "data_description": "Categoría de resposta: local, de base de datos ou xerada por IA xenerativa.",
+                "data_type": "string"
+              },
+              {
+                "name": "intent",
+                "units": "-",
+                "data_description": "Intención detectada na interacción.",
+                "data_type": "string"
+              },
+              {
+                "name": "input_mode",
+                "units": "-",
+                "data_description": "Modo de entrada do usuario. Opcións: [button-click, event, speech-to-text, text].",
+                "data_type": "string"
+              },
+              {
+                "name": "input_text",
+                "units": "-",
+                "data_description": "Texto de entrada do usuario (escrito ou transcrición no caso de voz).",
+                "data_type": "string"
+              },
+              {
+                "name": "output_mode",
+                "units": "-",
+                "data_description": "Modo de saída do asistente. Opcións: [read, text-to-speech].",
+                "data_type": "string"
+              },
+              {
+                "name": "messages",
+                "units": "-",
+                "data_description": "Mensaxes enviadas polo asistente nunha única interacción.",
+                "data_type": "string"
               }
             ]
           }
