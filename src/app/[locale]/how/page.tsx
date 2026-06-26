@@ -277,7 +277,7 @@ function How() {
                             target="_blank"
                             rel="noreferrer"
                             className="text-emerald-600 underline hover:text-emerald-800 transition"
-                            href="https://forms.office.com/r/mGvvF5qe4k"
+                            href={t('how.formLink')}
                           >
                             {chunks}
                           </Link>
