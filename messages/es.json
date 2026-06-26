@@ -945,55 +945,55 @@
         "extra": "Inscripción previa"
       },
       "formacionDelDatoAlResultado": {
-  "header": "Cómo adherirse y participar en OneHealth DataSpace: del Dato al Resultado",
-  "excerpt": "Sesión formativa para conocer el recorrido completo de incorporación a OneHealth DataSpace, desde la adhesión hasta el aprovechamiento de las capacidades avanzadas de procesamiento, análisis e inteligencia artificial del ecosistema.",
-  "description": [
-    "Objetivo de la sesión",
-    "Conocer el recorrido completo que debe seguir una entidad para incorporarse al ecosistema OneHealth DataSpace, desde la identificación de sus necesidades hasta el uso efectivo de las herramientas y servicios disponibles en la plataforma.",
-    "OneHealth DataSpace es una plataforma integrada para todo el ciclo de vida del dato One Health: compartir, almacenar, procesar, analizar y entregar resultados.",
-    "A diferencia de un espacio de datos convencional, integra capacidades avanzadas del CESGA en HPC, Big Data, Cloud, IA, GPU y computación cuántica para transformar datos existentes en soluciones reales.",
-    "¿Para qué sirve?",
-    "▸ Comprender el proceso de incorporación al ecosistema OneHealth DataSpace.",
-    "▸ Conocer las herramientas y servicios disponibles para las entidades participantes.",
-    "▸ Mostrar las oportunidades de colaboración y creación de casos de uso dentro del espacio de datos.",
-    "¿Qué se abordará en la sesión?",
-    "▸ Proceso de adhesión al espacio de datos.",
-    "▸ Cumplimentación del formulario de adhesión.",
-    "▸ Reunión inicial de análisis de necesidades y oportunidades.",
-    "▸ Formalización de la incorporación mediante acuerdo de participación.",
-    "▸ Requisitos técnicos y proceso de instalación de conectores.",
-    "▸ Integración y negociación para el intercambio de datos con otros participantes.",
-    "▸ Servicios y capacidades disponibles para las entidades adheridas.",
-    "▸ Casos de uso y demostración práctica de herramientas del ecosistema.",
-    "▸ Ejemplo de ciclo completo de participación dentro de OneHealth DataSpace.",
-    "¿Qué ventajas ofrece participar en OneHealth DataSpace?",
-    "▸ Compartir y consumir datos de forma segura, interoperable y gobernada.",
-    "▸ Acceder a servicios avanzados de procesamiento, análisis e inteligencia artificial.",
-    "▸ Aprovechar las capacidades de computación de altas prestaciones proporcionadas por el CESGA.",
-    "▸ Impulsar la puesta en marcha de proyectos y casos de uso colaborativos.",
-    "¿Cómo y cuándo se aplica?",
-    "▸ Los conocimientos adquiridos pueden aplicarse desde el primer contacto con el proyecto.",
-    "▸ Facilitan la incorporación de nuevas entidades al ecosistema.",
-    "▸ Favorecen el desarrollo de iniciativas colaborativas dentro de OneHealth DataSpace.",
-    "¿A quién va dirigido?",
-    "Dirigido a:",
-    "▸ Empresas, centros tecnológicos, universidades y organismos públicos.",
-    "▸ Entidades sanitarias y organizaciones vinculadas al ámbito One Health.",
-    "▸ Investigadores, profesionales y cualquier persona interesada en conocer las posibilidades de participación en OneHealth DataSpace.",
-    "📅 Fecha: 26 de junio de 2026",
-    "🕚 Hora: 11:00",
-    "📍 Modalidad: Online",
-    "🎓 Instructores:",
-    "▸ Marta Castiñeira",
-    "▸ Ledicia Díaz",
-    "▸ Miguel Carmena",
-    "📺 El vídeo de la sesión estará disponible posteriormente en el canal de YouTube del CESGA (@CesgaTV).",
-    "🔗 Próximos cursos: https://dataspace.cesga.es/es/events",
-    "⚠️ La inscripción es obligatoria para conectarse a la sesión y recibir el certificado de participación.",
-    "⚠️ Se recomienda utilizar Mozilla Firefox."
-  ],
-  "extra": "Acceso e inscripción"
-}
+        "header": "Cómo adherirse y participar en OneHealth DataSpace: del Dato al Resultado",
+        "excerpt": "Sesión formativa para conocer el recorrido completo de incorporación a OneHealth DataSpace, desde la adhesión hasta el aprovechamiento de las capacidades avanzadas de procesamiento, análisis e inteligencia artificial del ecosistema.",
+        "description": [
+          "Objetivo de la sesión",
+          "Conocer el recorrido completo que debe seguir una entidad para incorporarse al ecosistema OneHealth DataSpace, desde la identificación de sus necesidades hasta el uso efectivo de las herramientas y servicios disponibles en la plataforma.",
+          "OneHealth DataSpace es una plataforma integrada para todo el ciclo de vida del dato One Health: compartir, almacenar, procesar, analizar y entregar resultados.",
+          "A diferencia de un espacio de datos convencional, integra capacidades avanzadas del CESGA en HPC, Big Data, Cloud, IA, GPU y computación cuántica para transformar datos existentes en soluciones reales.",
+          "¿Para qué sirve?",
+          "▸ Comprender el proceso de incorporación al ecosistema OneHealth DataSpace.",
+          "▸ Conocer las herramientas y servicios disponibles para las entidades participantes.",
+          "▸ Mostrar las oportunidades de colaboración y creación de casos de uso dentro del espacio de datos.",
+          "¿Qué se abordará en la sesión?",
+          "▸ Proceso de adhesión al espacio de datos.",
+          "▸ Cumplimentación del formulario de adhesión.",
+          "▸ Reunión inicial de análisis de necesidades y oportunidades.",
+          "▸ Formalización de la incorporación mediante acuerdo de participación.",
+          "▸ Requisitos técnicos y proceso de instalación de conectores.",
+          "▸ Integración y negociación para el intercambio de datos con otros participantes.",
+          "▸ Servicios y capacidades disponibles para las entidades adheridas.",
+          "▸ Casos de uso y demostración práctica de herramientas del ecosistema.",
+          "▸ Ejemplo de ciclo completo de participación dentro de OneHealth DataSpace.",
+          "¿Qué ventajas ofrece participar en OneHealth DataSpace?",
+          "▸ Compartir y consumir datos de forma segura, interoperable y gobernada.",
+          "▸ Acceder a servicios avanzados de procesamiento, análisis e inteligencia artificial.",
+          "▸ Aprovechar las capacidades de computación de altas prestaciones proporcionadas por el CESGA.",
+          "▸ Impulsar la puesta en marcha de proyectos y casos de uso colaborativos.",
+          "¿Cómo y cuándo se aplica?",
+          "▸ Los conocimientos adquiridos pueden aplicarse desde el primer contacto con el proyecto.",
+          "▸ Facilitan la incorporación de nuevas entidades al ecosistema.",
+          "▸ Favorecen el desarrollo de iniciativas colaborativas dentro de OneHealth DataSpace.",
+          "¿A quién va dirigido?",
+          "Dirigido a:",
+          "▸ Empresas, centros tecnológicos, universidades y organismos públicos.",
+          "▸ Entidades sanitarias y organizaciones vinculadas al ámbito One Health.",
+          "▸ Investigadores, profesionales y cualquier persona interesada en conocer las posibilidades de participación en OneHealth DataSpace.",
+          "📅 Fecha: 26 de junio de 2026",
+          "🕚 Hora: 11:00",
+          "📍 Modalidad: Online",
+          "🎓 Instructores:",
+          "▸ Marta Castiñeira",
+          "▸ Ledicia Díaz",
+          "▸ Miguel Carmena",
+          "📺 El vídeo de la sesión estará disponible posteriormente en el canal de YouTube del CESGA (@CesgaTV).",
+          "🔗 Próximos cursos: https://dataspace.cesga.es/es/events",
+          "⚠️ La inscripción es obligatoria para conectarse a la sesión y recibir el certificado de participación.",
+          "⚠️ Se recomienda utilizar Mozilla Firefox."
+        ],
+        "extra": "Acceso e inscripción"
+      }
     }
   },
   "catalog": {
@@ -1724,6 +1724,87 @@
               }
             ]
           },
+          "interactions": {
+            "name": "Interacciones con el asistente IA",
+            "description": "Este fichero contiene información sobre 21.608 interacciones de conversaciones de los 67 usuarios con un asistente IA.",
+            "metadata": {
+              "data_type": "Empírico",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV",
+              "license": "Propietaria (restringida bajo contrato)",
+              "temporal_resolution": "Evento",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "user_id",
+                "units": "-",
+                "data_description": "Identificador anonimizado del usuario.",
+                "data_type": "number"
+              },
+              {
+                "name": "session_uuid",
+                "units": "-",
+                "data_description": "Identificador UUID v1 de la sesión.",
+                "data_type": "string"
+              },
+              {
+                "name": "session_start",
+                "units": "Timestamp",
+                "data_description": "Timestamp Unix de 13 dígitos que indica el inicio de la sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "session_end",
+                "units": "Timestamp",
+                "data_description": "Timestamp Unix de 13 dígitos que indica el fin de la sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "interaction_timestamp",
+                "units": "Fecha y hora",
+                "data_description": "Timestamp registrado cuando la interacción se almacena tras el procesamiento.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "category",
+                "units": "-",
+                "data_description": "Categoría de respuesta: local, de base de datos o generada por IA generativa.",
+                "data_type": "string"
+              },
+              {
+                "name": "intent",
+                "units": "-",
+                "data_description": "Intención detectada en la interacción.",
+                "data_type": "string"
+              },
+              {
+                "name": "input_mode",
+                "units": "-",
+                "data_description": "Modo de entrada del usuario. Opciones: [button-click, event, speech-to-text, text].",
+                "data_type": "string"
+              },
+              {
+                "name": "input_text",
+                "units": "-",
+                "data_description": "Texto de entrada del usuario (escrito o transcripción en caso de voz).",
+                "data_type": "string"
+              },
+              {
+                "name": "output_mode",
+                "units": "-",
+                "data_description": "Modo de salida del asistente. Opciones: [read, text-to-speech].",
+                "data_type": "string"
+              },
+              {
+                "name": "messages",
+                "units": "-",
+                "data_description": "Mensajes enviados por el asistente en una única interacción.",
+                "data_type": "string"
+              }
+            ]
+          },
           "assessments": {
             "name": "Evaluaciones cognitivas y de rendimiento",
             "description": "Este fichero contiene información sobre 2.526 evaluaciones realizadas por los 67 usuarios a lo largo de las 21.608 interacciones. Pueden relacionarse mediante user_id, session_uuid e interaction_timestamp.",
@@ -1778,39 +1859,6 @@
                 "units": "-",
                 "data_description": "Resultado o puntuación obtenida en la evaluación.",
                 "data_type": "number"
-              }
-            ]
-          },
-          "celiaspace_senior_conversations": {
-            "name": "celiaspace_senior_conversations",
-            "description": "Conjunto de datos extraídos de conversaciones entre personas mayores y un asistente IA orientado al acompañamiento, entretenimiento y cuidado de este colectivo. Incluye información de usuarios, interacciones con el asistente y evaluaciones cognitivas y de desempeño. Volumen actual: 67 usuarios, 21.608 interacciones y 2.526 evaluaciones.",
-            "metadata": {
-              "data_type": "Empírico",
-              "data_standard": "-",
-              "date_added": "",
-              "file_format": "CSV",
-              "license": "Por definir (RGPD aplicable)",
-              "temporal_resolution": "",
-              "temporal_coverage": ""
-            },
-            "variables": [
-              {
-                "name": "perfil_usuario",
-                "units": "-",
-                "data_description": "Información demográfica y de perfil del usuario, pseudoanonimizada en origen.",
-                "data_type": "CSV"
-              },
-              {
-                "name": "interacciones",
-                "units": "-",
-                "data_description": "Registro de 21.608 interacciones entre usuarios y el asistente IA.",
-                "data_type": "CSV"
-              },
-              {
-                "name": "evaluaciones",
-                "units": "-",
-                "data_description": "2.526 evaluaciones cognitivas y de desempeño realizadas durante las sesiones.",
-                "data_type": "CSV"
               }
             ]
           }
