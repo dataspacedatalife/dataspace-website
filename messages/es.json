@@ -1724,8 +1724,65 @@
               }
             ]
           },
+          "assessments": {
+            "name": "Evaluaciones cognitivas y de rendimiento",
+            "description": "Este fichero contiene información sobre 2.526 evaluaciones realizadas por los 67 usuarios a lo largo de las 21.608 interacciones. Pueden relacionarse mediante user_id, session_uuid e interaction_timestamp.",
+            "metadata": {
+              "data_type": "Empírico",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV",
+              "license": "Propietaria (restringida bajo contrato)",
+              "temporal_resolution": "Evento",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "user_id",
+                "units": "-",
+                "data_description": "Identificador anonimizado del usuario.",
+                "data_type": "number"
+              },
+              {
+                "name": "session_uuid",
+                "units": "-",
+                "data_description": "Identificador único de la sesión.",
+                "data_type": "string"
+              },
+              {
+                "name": "session_start",
+                "units": "Timestamp",
+                "data_description": "Instante de inicio de la sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "interaction_timestamp",
+                "units": "Fecha y hora",
+                "data_description": "Momento de la interacción asociada a la evaluación.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "category",
+                "units": "-",
+                "data_description": "Tipo de evaluación realizada (cognitiva o de rendimiento).",
+                "data_type": "string"
+              },
+              {
+                "name": "domain",
+                "units": "-",
+                "data_description": "Dominio cognitivo o funcional evaluado.",
+                "data_type": "string"
+              },
+              {
+                "name": "assessment",
+                "units": "-",
+                "data_description": "Resultado o puntuación obtenida en la evaluación.",
+                "data_type": "number"
+              }
+            ]
+          },
           "interactions": {
-            "name": "Interacciones con el asistente IA",
+            "name": "Interacciones de las conversaciones",
             "description": "Este fichero contiene información sobre 21.608 interacciones de conversaciones de los 67 usuarios con un asistente IA.",
             "metadata": {
               "data_type": "Empírico",
@@ -1802,63 +1859,6 @@
                 "units": "-",
                 "data_description": "Mensajes enviados por el asistente en una única interacción.",
                 "data_type": "string"
-              }
-            ]
-          },
-          "assessments": {
-            "name": "Evaluaciones cognitivas y de rendimiento",
-            "description": "Este fichero contiene información sobre 2.526 evaluaciones realizadas por los 67 usuarios a lo largo de las 21.608 interacciones. Pueden relacionarse mediante user_id, session_uuid e interaction_timestamp.",
-            "metadata": {
-              "data_type": "Empírico",
-              "data_standard": "",
-              "date_added": "",
-              "file_format": "CSV",
-              "license": "Propietaria (restringida bajo contrato)",
-              "temporal_resolution": "Evento",
-              "temporal_coverage": ""
-            },
-            "variables": [
-              {
-                "name": "user_id",
-                "units": "-",
-                "data_description": "Identificador anonimizado del usuario.",
-                "data_type": "number"
-              },
-              {
-                "name": "session_uuid",
-                "units": "-",
-                "data_description": "Identificador único de la sesión.",
-                "data_type": "string"
-              },
-              {
-                "name": "session_start",
-                "units": "Timestamp",
-                "data_description": "Instante de inicio de la sesión.",
-                "data_type": "datetime"
-              },
-              {
-                "name": "interaction_timestamp",
-                "units": "Fecha y hora",
-                "data_description": "Momento de la interacción asociada a la evaluación.",
-                "data_type": "datetime"
-              },
-              {
-                "name": "category",
-                "units": "-",
-                "data_description": "Tipo de evaluación realizada (cognitiva o de rendimiento).",
-                "data_type": "string"
-              },
-              {
-                "name": "domain",
-                "units": "-",
-                "data_description": "Dominio cognitivo o funcional evaluado.",
-                "data_type": "string"
-              },
-              {
-                "name": "assessment",
-                "units": "-",
-                "data_description": "Resultado o puntuación obtenida en la evaluación.",
-                "data_type": "number"
               }
             ]
           }

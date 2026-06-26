@@ -1725,8 +1725,65 @@
               }
             ]
           },
+          "assessments": {
+            "name": "Cognitive and Performance Assessments",
+            "description": "This file contains information about 2,526 assessments from the 67 users throughout the 21,608 interactions. They can be related by user_id, session_uuid and interaction_timestamp.",
+            "metadata": {
+              "data_type": "Empirical",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV",
+              "license": "Proprietary (restricted under contract)",
+              "temporal_resolution": "Event",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "user_id",
+                "units": "-",
+                "data_description": "Anonymized user identifier.",
+                "data_type": "number"
+              },
+              {
+                "name": "session_uuid",
+                "units": "-",
+                "data_description": "Unique session identifier.",
+                "data_type": "string"
+              },
+              {
+                "name": "session_start",
+                "units": "Timestamp",
+                "data_description": "Session start timestamp.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "interaction_timestamp",
+                "units": "Date and time",
+                "data_description": "Timestamp of the interaction associated with the assessment.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "category",
+                "units": "-",
+                "data_description": "Type of assessment performed (cognitive or performance).",
+                "data_type": "string"
+              },
+              {
+                "name": "domain",
+                "units": "-",
+                "data_description": "Cognitive or functional domain assessed.",
+                "data_type": "string"
+              },
+              {
+                "name": "assessment",
+                "units": "-",
+                "data_description": "Assessment result or score.",
+                "data_type": "number"
+              }
+            ]
+          },
           "interactions": {
-            "name": "Interactions with the AI assistant",
+            "name": "Conversation Interactions",
             "description": "This file contains information about 21,608 interactions from conversations from the 67 users with an AI assistant.",
             "metadata": {
               "data_type": "Empirical",
@@ -1803,63 +1860,6 @@
                 "units": "-",
                 "data_description": "Messages sent by the assistant in a single interaction.",
                 "data_type": "string"
-              }
-            ]
-          },
-          "assessments": {
-            "name": "Cognitive and Performance Assessments",
-            "description": "This file contains information about 2,526 assessments from the 67 users throughout the 21,608 interactions. They can be related by user_id, session_uuid and interaction_timestamp.",
-            "metadata": {
-              "data_type": "Empirical",
-              "data_standard": "",
-              "date_added": "",
-              "file_format": "CSV",
-              "license": "Proprietary (restricted under contract)",
-              "temporal_resolution": "Event",
-              "temporal_coverage": ""
-            },
-            "variables": [
-              {
-                "name": "user_id",
-                "units": "-",
-                "data_description": "Anonymized user identifier.",
-                "data_type": "number"
-              },
-              {
-                "name": "session_uuid",
-                "units": "-",
-                "data_description": "Unique session identifier.",
-                "data_type": "string"
-              },
-              {
-                "name": "session_start",
-                "units": "Timestamp",
-                "data_description": "Session start timestamp.",
-                "data_type": "datetime"
-              },
-              {
-                "name": "interaction_timestamp",
-                "units": "Date and time",
-                "data_description": "Timestamp of the interaction associated with the assessment.",
-                "data_type": "datetime"
-              },
-              {
-                "name": "category",
-                "units": "-",
-                "data_description": "Type of assessment performed (cognitive or performance).",
-                "data_type": "string"
-              },
-              {
-                "name": "domain",
-                "units": "-",
-                "data_description": "Cognitive or functional domain assessed.",
-                "data_type": "string"
-              },
-              {
-                "name": "assessment",
-                "units": "-",
-                "data_description": "Assessment result or score.",
-                "data_type": "number"
               }
             ]
           }
