@@ -277,7 +277,7 @@ function How() {
                             target="_blank"
                             rel="noreferrer"
                             className="text-emerald-600 underline hover:text-emerald-800 transition"
-                            href={t('formLink')}
+                            href={t('howToJoin.formLink')}
                           >
                             {chunks}
                           </Link>
