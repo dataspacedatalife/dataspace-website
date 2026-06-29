@@ -48,9 +48,9 @@ import gobernanzaDeDatosGL from '../../../../public/events/gobernanza-de-datos-G
 import eventoFinalES from '../../../../public/events/evento-final-onehealth-dataspace-aplazado.png';
 import eventoFinalENG from '../../../../public/events/evento-final-onehealth-dataspace-aplazado-ENG.png';
 import eventoFinalGL from '../../../../public/events/evento-final-onehealth-dataspace-aplazado-GL.png';
-import gobernanzaDeDatosAporteES from '../../../../public/events/gobernanza-de-datos-aporte.png';
-import gobernanzaDeDatosAporteENG from '../../../../public/events/gobernanza-de-datos-aporte-ENG.png';
-import gobernanzaDeDatosAporteGL from '../../../../public/events/gobernanza-de-datos-aporte-GL.png';
+import modeloDeNegocioES from '../../../../public/events/modelo-de-negocio.png';
+import modeloDeNegocioENG from '../../../../public/events/modelo-de-negocio-ENG.png';
+import modeloDeNegocioGL from '../../../../public/events/modelo-de-negocio-GL.png';
 import gestionCoordinacionComunicacionES from '../../../../public/events/formacion-gestion-coordinacion-comunicacion.png';
 import gestionCoordinacionComunicacionENG from '../../../../public/events/formacion-gestion-coordinacion-comunicacion-ENG.png';
 import gestionCoordinacionComunicacionGL from '../../../../public/events/formacion-gestion-coordinacion-comunicacion-GL.png';
@@ -271,7 +271,7 @@ const events: Event[]  = [
      image: {
       es: gobernanzaDeDatosES,
       en: gobernanzaDeDatosENG,
-      gl: gobernanzaDeDatosAporteGL
+      gl: gobernanzaDeDatosGL
     },
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
@@ -292,12 +292,12 @@ const events: Event[]  = [
     featured: false,
   },
   {
-    key: 'gobernanzaDeDatosAporte',
+    key: 'modeloNegocio',
     date: '2026-06-05',
      image: {
-      es: gobernanzaDeDatosAporteES,
-      en: gobernanzaDeDatosAporteENG,
-      gl: gobernanzaDeDatosAporteGL
+      es: modeloDeNegocioES,
+      en: modeloDeNegocioENG,
+      gl: modeloDeNegocioGL
     },
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',

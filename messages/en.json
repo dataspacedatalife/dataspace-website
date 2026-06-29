@@ -789,8 +789,8 @@
         ],
         "extra": "Invitation and registration"
       },
-      "gobernanzaDeDatosAporte": {
-        "header": "Data Governance. Contribution to the Data Space",
+      "modeloNegocio": {
+        "header": "Business Model in OneHealth DataSpace",
         "excerpt": "Session to understand the business model of OneHealth DataSpace, the value it provides to its participants, and the mechanisms that ensure its sustainability and growth as a data, computing, and innovation infrastructure within the CESGA ecosystem.",
         "description": [
           "Session objective:",

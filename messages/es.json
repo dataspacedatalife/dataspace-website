@@ -788,8 +788,8 @@
         ],
         "extra": "Invitación e inscripción"
       },
-      "gobernanzaDeDatosAporte": {
-        "header": "Gobernanza de Datos. Aporte al Espacio de Datos",
+      "modeloNegocio": {
+        "header": "Modelo de Negocio en OneHealth DataSpace",
         "excerpt": "Sesión para comprender el modelo de negocio de OneHealth DataSpace, el valor que aporta a sus participantes y los mecanismos que garantizan su sostenibilidad y crecimiento como infraestructura de datos, computación e innovación en el ecosistema CESGA.",
         "description": [
           "Objetivo de la sesión:",
