@@ -133,7 +133,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
 
   const links = [
     {
-      href: 'https://www.youtube.com/playlist?list=PLvAJrckik_UPT2zDxHGaO5jOd27q1hBIz',
+      href: '/training',
       label: t('training'),
     },
   ];

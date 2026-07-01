@@ -18,7 +18,7 @@
     "tecnologias": "Máis que datos",
     "dashboard": "Dashboard",
     "xdatashare": "Espazo de Datos (MVD)",
-        "share": "Comparte",
+    "share": "Comparte",
     "analyze":"Analiza",
     "compute": "Computa",
     "deliver": "Expón",
@@ -79,6 +79,33 @@
       "linkText": "Ver seguimento da execución",
       "linkUrl": "https://planderecuperacion.gob.es/"
     }
+  },
+  "training":{
+    "metadata": {
+        "title": "Formación",
+        "description": "Vídeos das diferentes formacións"
+      },
+       "videos": {
+        "title": "Explora o MVD en acción",
+        "workshop23marchTitle": "Obradoiro práctico do 23 de marzo",
+        "workshop23marchUrl1": "https://www.youtube.com/embed/z72j1-uQCVo?si=3lLfks_4DLuDf46g&start=2",
+        "workshop23marchCaption1": "PARTE 1: Formación para realizar a configuración necesaria para o lanzamento do conector.",
+        "workshop23marchUrl2": "https://www.youtube.com/embed/yshUdWjAsw8?si=G9SbUUgK6TOh4Y8h",
+        "workshop23marchCaption2": "PARTE 2: Formación para realizar a configuración necesaria para o lanzamento do conector.",
+        "workshop23marchUrl3": "https://www.youtube.com/embed/CRtcBkdf0Wg?si=H0ojdgeV_Li_iV48",
+        "workshop23marchCaption3": "PARTE 3: Capturas para a declaración de evidencias.",
+        "workshopsTitle": "Obradoiros",
+        "tutorialsTitle": "Titoriais",
+        "workshop1Caption": "Obradoiro práctico sobre o funcionamento dun espazo de datos no caso de uso FarmaciaVAX co MVD do espazo de datos.",
+        "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
+        "workshop2Caption": "Obradoiro de espazo de datos sobre conectores EDC.",
+        "workshop2Url": "https://www.youtube.com/embed/WGBCGCz8vHc?si=vZ15mIvRVN_N9C5L",
+        "workshop3Caption": "Obradoiro do espazo de datos FarmaciaVAX coa plataforma D-Spacer de SQS",
+        "workshop3Url": "https://www.youtube.com/embed/50Ahpz-1VPI?si=xibL743aZEnhWinB",
+        "tutorial1Caption": "Titorial paso a paso sobre a subida e visualización de assets utilizando o MVD do espazo de datos.",
+        "tutorial1Url": "https://www.youtube.com/embed/2bZ2O_1Hkr4?si=oOdRF3eBMPX7Ocai"
+      }
+    
   },
   "technologies": {
     "xdatashare": {
