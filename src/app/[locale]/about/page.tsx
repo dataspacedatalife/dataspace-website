@@ -61,33 +61,31 @@ async function Header() {
               strong: (chunks) => <strong>{chunks}</strong>,
             })}
           </p>
-
-          <p className="mt-4 text-lg/7 text-gray-700">
-            {t.rich('about.paragraph5', {
-              strong: (chunks) => <strong>{chunks}</strong>,
-            })}
-          </p>
         </div>
 
-        {/* BENEFITS */}
-        <div>
-          <h2 className="text-3xl font-medium tracking-tight">
-            {t('benefits.title')}
-          </h2>
+       
+           {/* IMAGE */}
+        <div className="flex justify-center">
+          <div className="relative w-full max-w-lg">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="h-80 w-80 rounded-full bg-[#009AB8]/20 blur-3xl" />
+            </div>
 
-          <ul className="mt-6 space-y-4 text-lg/7 text-gray-700">
-            <li>{t('benefits.item1')}</li>
-            <li>{t('benefits.item2')}</li>
-            <li>{t('benefits.item3')}</li>
-            <li>{t('benefits.item4')}</li>
-            <li>{t('benefits.item5')}</li>
-            <li>{t('benefits.item6')}</li>
-          </ul>
+            <div className="relative overflow-hidden">
+              <Image
+                src={t('oneHealth.image')}
+                alt={t('header.title')}
+                width={900}
+                height={700}
+                priority
+                className="h-auto w-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* ONE HEALTH + IMAGE */}
-      <section className="mb-20 grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      <section className="mb-20 space-y-20">
         {/* ONE HEALTH */}
         <div>
           <h2 className="text-3xl font-medium tracking-tight">
@@ -113,25 +111,22 @@ async function Header() {
           </p>
         </div>
 
-        {/* IMAGE */}
-        <div className="flex justify-center">
-          <div className="relative w-full max-w-lg">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="h-80 w-80 rounded-full bg-[#009AB8]/20 blur-3xl" />
-            </div>
+ {/* BENEFITS */}
+        <div>
+          <h2 className="text-3xl font-medium tracking-tight">
+            {t('benefits.title')}
+          </h2>
 
-            <div className="relative overflow-hidden">
-              <Image
-                src={t('oneHealth.image')}
-                alt={t('header.title')}
-                width={900}
-                height={700}
-                priority
-                className="h-auto w-full object-cover"
-              />
-            </div>
-          </div>
+          <ul className="mt-6 space-y-4 text-lg/7 text-gray-700">
+            <li>{t('benefits.item1')}</li>
+            <li>{t('benefits.item2')}</li>
+            <li>{t('benefits.item3')}</li>
+            <li>{t('benefits.item4')}</li>
+            <li>{t('benefits.item5')}</li>
+            <li>{t('benefits.item6')}</li>
+          </ul>
         </div>
+     
       </section>
 
       {/* FUNDING */}

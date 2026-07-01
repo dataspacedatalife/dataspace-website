@@ -51,11 +51,10 @@
       "paragraph1": "OneHealth DataSpace is a multisectoral data space powered by CESGA designed to facilitate collaboration between organizations working in <strong>human health, animal health, and environmental health.</strong>",
       "paragraph2": "Its mission is to turn data into useful knowledge to improve global health through secure data-sharing technologies, artificial intelligence, advanced analytics, and high-performance computing.",
       "paragraph3": "Participating entities <strong>retain control over their data</strong> while collaborating on research, innovation, and artificial intelligence projects within an ecosystem based on the One Health approach.",
-      "paragraph4": "More than a data exchange platform, OneHealth DataSpace forms the foundation of the future European AI ecosystem in global health driven by CESGA through the <strong>1HealthAI Factory</strong> initiative.",
-      "paragraph5": "OneHealth DataSpace is part of the European data spaces strategy and constitutes the information-sharing infrastructure, paving the way for the future 1HealthAI Factory at CESGA."
+      "paragraph4": "More than a data exchange platform, OneHealth DataSpace forms the foundation of the future European AI ecosystem in global health driven by CESGA through the <strong>1HealthAI Factory</strong> initiative."
     },
     "benefits": {
-      "title": "Benefits",
+      "title": "Benefits of the OneHealth DataSpace",
       "item1": "• Share data without losing control.",
       "item2": "• Break down information silos.",
       "item3": "• Enable interoperability between organizations.",
@@ -419,7 +418,11 @@
     },
     "header": {
       "title": "What is a data space?",
-      "lead": "A data space is a digital environment that enables multiple organizations to securely share and manage data, respecting each participant's sovereignty and ensuring control over information."
+      "lead": "A data space is a collaborative environment where different organizations can securely, voluntarily, and in a governed way share information to generate shared value from data."
+    },
+    "definition": {
+      "title": "Definition",
+      "text": "A data space is a digital environment that enables multiple organizations to securely share and manage data, respecting each participant's sovereignty and ensuring control over information."
     },
     "importance": {
       "title": "Why is it key for data-driven innovation?",
