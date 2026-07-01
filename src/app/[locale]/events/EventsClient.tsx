@@ -341,7 +341,7 @@ const events: Event[]  = [
     cesgalink:
       'https://www.cesga.es/mini-encuentro-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
-    featured: true,
+    featured: false,
   },
   {
     key: 'formacionDelDatoAlResultado',
@@ -354,9 +354,20 @@ const events: Event[]  = [
     cesgalink:
       'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: false,
+  },
+  {
+    key: 'miniEncuentroLugo',
+    date: '2026-07-09',
+    image: {
+      es: miniencuentrosES,
+      en: miniencuentrosENG,
+      gl: miniencuentrosGL
+    },
+    cesgalink: 'https://forms.gle/Bkge4BXstVzEUopw5',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
   }
-
 
 ] satisfies Event[];
 
