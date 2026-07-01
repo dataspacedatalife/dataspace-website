@@ -79,6 +79,32 @@
       "linkText": "View implementation progress",
       "linkUrl": "https://planderecuperacion.gob.es/"
     }
+  },   "training":{
+    "metadata": {
+        "title": "Training",
+        "description": "Videos from the Different Training Sessions"
+      },
+      "videos": {
+        "title": "Explore the MVD in action",
+        "workshop23marchTitle": "Practical workshop – March 23",
+        "workshop23marchUrl1": "https://www.youtube.com/embed/z72j1-uQCVo?si=3lLfks_4DLuDf46g&start=2",
+        "workshop23marchCaption1": "PART 1: Training to carry out the necessary configuration for connector deployment.",
+        "workshop23marchUrl2": "https://www.youtube.com/embed/yshUdWjAsw8?si=G9SbUUgK6TOh4Y8h",
+        "workshop23marchCaption2": "PART 2: Training to carry out the necessary configuration for connector deployment.",
+        "workshop23marchUrl3": "https://www.youtube.com/embed/CRtcBkdf0Wg?si=H0ojdgeV_Li_iV48",
+        "workshop23marchCaption3": "PART 3: Evidence declaration screenshots.",
+        "workshopsTitle": "Workshops",
+        "tutorialsTitle": "Tutorials",
+        "workshop1Caption": "Practical workshop on how a data space operates in the FarmaciaVAX use case with the Data Space MVD.",
+        "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
+        "workshop2Caption": "Data space workshop on EDC Connectors.",
+        "workshop2Url": "https://www.youtube.com/embed/WGBCGCz8vHc?si=vZ15mIvRVN_N9C5L",
+        "workshop3Caption": "PharmacyVAX data space workshop with the SQS D-Spacer platform",
+        "workshop3Url": "https://www.youtube.com/embed/50Ahpz-1VPI?si=xibL743aZEnhWinB",
+        "tutorial1Caption": "Step-by-step tutorial on uploading and visualizing assets using the Data Space MVD.",
+        "tutorial1Url": "https://www.youtube.com/embed/2bZ2O_1Hkr4?si=oOdRF3eBMPX7Ocai"
+      }
+    
   },
   "technologies": {
     "xdatashare": {
