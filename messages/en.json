@@ -419,11 +419,7 @@
     },
     "header": {
       "title": "What is a data space?",
-      "lead": "A data space is a collaborative environment where different organizations can securely, voluntarily, and in a governed way share information to generate shared value from data."
-    },
-    "definition": {
-      "title": "Definition",
-      "text": "A data space is a digital environment that enables multiple organizations to securely share and manage data, respecting each participant's sovereignty and ensuring control over information."
+      "lead": "A data space is a digital environment that enables multiple organizations to securely share and manage data, respecting each participant's sovereignty and ensuring control over information."
     },
     "importance": {
       "title": "Why is it key for data-driven innovation?",

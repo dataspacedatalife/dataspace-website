@@ -56,19 +56,10 @@ async function Header() {
         {tHeader('lead')}
       </Lead>
 
-      {/* DEFINICIÓN */}
-      <section className="mt-16">
-        <h2 className="text-3xl font-medium tracking-tight">
-          {t('definition.title')}
-        </h2>
-        <p className="mt-6 text-lg leading-7 text-gray-600">
-          {t('definition.text')}
-        </p>
-      </section>
 
       {/* IMPORTANCIA */}
       <section className="mt-12">
-        <h2 className="text-3xl font-medium tracking-tight">
+        <h2 className="mb-12 text-3xl font-medium tracking-tight text-[#009AB8]">
           {t('importance.title')}
         </h2>
 
@@ -83,7 +74,7 @@ async function Header() {
 
       {/* PRINCIPIOS EN UNA SOLA FILA (DESKTOP) */}
       <section className="mt-16 mb-20">
-        <h2 className="text-3xl font-medium tracking-tight text-center mb-12">
+        <h2 className="mb-12 text-3xl font-medium tracking-tight text-[#009AB8]">
           {t('principles.title')}
         </h2>
 

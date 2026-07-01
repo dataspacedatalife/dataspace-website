@@ -420,11 +420,7 @@
     },
     "header": {
       "title": "¿Qué es un espacio de datos?",
-      "lead": "Un espacio de datos es un entorno de colaboración donde diferentes organizaciones pueden compartir información de forma segura, voluntaria y gobernada para generar valor conjunto a partir de los datos."
-    },
-    "definition": {
-      "title": "Definición",
-      "text": "Un espacio de datos es un entorno digital que permite a múltiples organizaciones compartir y gestionar datos de forma segura, respetando la soberanía de cada participante y garantizando el control sobre la información."
+      "lead": "Un espacio de datos es un entorno digital que permite a múltiples organizaciones compartir y gestionar datos de forma segura, respetando la soberanía de cada participante y garantizando el control sobre la información."
     },
     "importance": {
       "title": "¿Por qué es clave para la innovación basada en datos?",
