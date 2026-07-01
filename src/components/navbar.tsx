@@ -139,7 +139,12 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
   ];
 
   const techLinks = [
-    { href: '/dataspace', label: t('xdatashare') },
+    { href: 'https://dashboard.dataspace.cesga.es/', label: t('dashboard'), external: true },
+    { href: 'https://dl-cesga.srv.cesga.es/', label: t('share'), external: true },
+    { href: 'https://hpc.dataspace.cesga.es/', label: t('compute'), external: true },
+    { href: 'https://bigdata.dataspace.cesga.es/', label: t('analyze'), external: true },
+    { href: 'https://storage.dataspace.cesga.es/', label: t('store'), external: true },
+    { href: 'https://cloud.dataspace.cesga.es/', label: t('deliver'), external: true },
     { href: 'https://dspacer-cesga.es/portal', label: t('dspacer'), external: true },
     
   ];
