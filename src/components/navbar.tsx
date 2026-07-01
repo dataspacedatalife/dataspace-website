@@ -74,11 +74,10 @@ function LanguageSelector() {
           <Link
             key={code}
             href="#"
-            className={`${languageItemClass} ${
-              currentLocale === code
-                ? 'font-semibold bg-[#005467]/10 text-[#005467]'
-                : ''
-            }`}
+            className={`${languageItemClass} ${currentLocale === code
+              ? 'font-semibold bg-[#005467]/10 text-[#005467]'
+              : ''
+              }`}
             onClick={(e) => {
               e.preventDefault();
               switchLanguage(code);
@@ -178,6 +177,15 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             ))}
           </div>
         </div>
+        <div className="relative group flex">
+          <Link href="/how" className={navItemClass}>
+            {t('participa')}
+
+          </Link>
+
+
+        </div>
+
 
         <Link href="/catalog" className={navItemClass}>
           {t('catalogo')}
@@ -199,6 +207,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="relative group flex">
           <Link href="/how" className={navItemClass}>
             {t('participa')}
@@ -213,6 +222,13 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             ))}
           </div>
         </div>
+=======
+        {links.map(({ href, label }) => (
+          <Link key={href} href={href} className={navItemClass}>
+            {label}
+          </Link>
+        ))}
+>>>>>>> 07f7acf (navbar new structure and mobile adaption added)
 
         <div className="relative group flex">
           <Link href="/how" className={navItemClass}>
@@ -229,11 +245,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           </div>
         </div>
 
-        {links.map(({ href, label }) => (
-          <Link key={href} href={href} className={navItemClass}>
-            {label}
-          </Link>
-        ))}
+
 
         <LanguageSelector />
       </nav>
@@ -254,17 +266,127 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     );
   }
 
-  function MobileNav() {
-    return (
-      <Disclosure.Panel className="lg:hidden">
-        <div className="mx-4 mt-4 rounded-2xl bg-white/90 backdrop-blur-xl shadow-lg border border-gray-200/60 p-5">
-          <motion.div className="flex flex-col gap-6">
-            <MobileLanguageSelector />
-          </motion.div>
-        </div>
-      </Disclosure.Panel>
-    );
-  }
+function MobileNav() {
+  return (
+    <Disclosure.Panel className="lg:hidden">
+      <div className="mx-4 mt-4 rounded-2xl bg-white/90 backdrop-blur-xl shadow-lg border border-gray-200/60 p-5">
+        <motion.div
+          initial={{ opacity: 0, y: -12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.25 }}
+          className="flex flex-col gap-2"
+        >
+
+          <Disclosure>
+            {({ open }) => (
+              <>
+                <Disclosure.Button className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left font-medium text-gray-900 hover:bg-[#005467]/10">
+                  {t('centro_demostrador')}
+                  <ChevronUp
+                    className={`h-5 w-5 transition-transform ${
+                      open ? '' : 'rotate-180'
+                    }`}
+                  />
+                </Disclosure.Button>
+
+                <Disclosure.Panel className="ml-4 flex flex-col pb-2">
+                  {aboutLinks.map(({ href, label }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      className="rounded-lg px-3 py-2 text-gray-700 hover:bg-[#005467]/10 hover:text-[#005467]"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </Disclosure.Panel>
+              </>
+            )}
+          </Disclosure>
+
+          <Link
+            href="/how"
+            className="rounded-xl px-3 py-3 font-medium text-gray-900 hover:bg-[#005467]/10"
+          >
+            {t('participa')}
+          </Link>
+
+    
+          <Link
+            href="/catalog"
+            className="rounded-xl px-3 py-3 font-medium text-gray-900 hover:bg-[#005467]/10"
+          >
+            {t('catalogo')}
+          </Link>
+          <Disclosure>
+            {({ open }) => (
+              <>
+                <Disclosure.Button className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left font-medium text-gray-900 hover:bg-[#005467]/10">
+                  {t('tecnologias')}
+                  <ChevronUp
+                    className={`h-5 w-5 transition-transform ${
+                      open ? '' : 'rotate-180'
+                    }`}
+                  />
+                </Disclosure.Button>
+
+                <Disclosure.Panel className="ml-4 flex flex-col pb-2">
+                  {techLinks.map(({ href, label, external }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      target={external ? '_blank' : undefined}
+                      className="rounded-lg px-3 py-2 text-gray-700 hover:bg-[#005467]/10 hover:text-[#005467]"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </Disclosure.Panel>
+              </>
+            )}
+          </Disclosure>
+          {links.map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className="rounded-xl px-3 py-3 font-medium text-gray-900 hover:bg-[#005467]/10"
+            >
+              {label}
+            </Link>
+          ))}
+
+          <Disclosure>
+            {({ open }) => (
+              <>
+                <Disclosure.Button className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left font-medium text-gray-900 hover:bg-[#005467]/10">
+                  {t('latest')}
+                  <ChevronUp
+                    className={`h-5 w-5 transition-transform ${
+                      open ? '' : 'rotate-180'
+                    }`}
+                  />
+                </Disclosure.Button>
+
+                <Disclosure.Panel className="ml-4 flex flex-col pb-2">
+                  {latestLinks.map(({ href, label }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      className="rounded-lg px-3 py-2 text-gray-700 hover:bg-[#005467]/10 hover:text-[#005467]"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </Disclosure.Panel>
+              </>
+            )}
+          </Disclosure>
+          <MobileLanguageSelector />
+        </motion.div>
+      </div>
+    </Disclosure.Panel>
+  );
+}
 
   return (
     <Disclosure as="header" className="sticky top-0 z-50 pt-4 sm:pt-6">
