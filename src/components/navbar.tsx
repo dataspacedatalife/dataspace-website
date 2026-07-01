@@ -199,7 +199,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
 
 
         <div className="relative group flex">
-          <Link href="/dataspace" className={navItemClass}>
+          <Link href="https://dashboard.dataspace.cesga.es/" className={navItemClass} target="_blank">
             {t('tecnologias')}
             <ChevronUp className="ml-0.5 h-4 w-4 rotate-180 transition-transform duration-300 group-hover:rotate-0" />
           </Link>
