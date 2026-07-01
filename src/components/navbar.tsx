@@ -141,13 +141,14 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
   const techLinks = [
     { href: '/dataspace', label: t('xdatashare') },
     { href: 'https://dspacer-cesga.es/portal', label: t('dspacer'), external: true },
-    { href: '/faq', label: t('preguntas_frecuentes') },
+    
   ];
 
   const aboutLinks = [
     { href: '/about', label: t('saber_mas') },
     { href: '/what', label: t('que_es_un_espacio') },
     { href: '/team', label: t('el_equipo') },
+    { href: '/faq', label: t('preguntas_frecuentes') },
   ];
 
   const latestLinks = [
