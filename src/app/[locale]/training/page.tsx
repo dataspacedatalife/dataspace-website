@@ -5,16 +5,51 @@ import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
+import { getLocale } from "next-intl/server";
+import { headers } from "next/headers";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations('training');
+  const locale = await getLocale();
+  const t = await getTranslations("training");
+
+  const headersList = await headers();
+
+  const protocol =
+    headersList.get("x-forwarded-proto") ??
+    (process.env.NODE_ENV === "development" ? "http" : "https");
+
+  const host =
+    headersList.get("x-forwarded-host") ??
+    headersList.get("host");
+
+  const baseUrl = `${protocol}://${host}`;
+  const image = `${baseUrl}/training/training-${locale}.png`;
 
   return {
-    title: t('metadata.title'),
-    description: t('metadata.description'),
+    title: t("metadata.title"),
+    description: t("metadata.description"),
+    openGraph: {
+      title: t("metadata.title"),
+      description: t("metadata.description"),
+      type: "website",
+      url: `${baseUrl}/${locale}/training`,
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: t("metadata.title"),
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("metadata.title"),
+      description: t("metadata.description"),
+      images: [image],
+    },
   };
 }
-
 function VideoEmbed({ title, url }: { title: string; url: string }) {
   return (
     <section className="mt-4">
@@ -40,12 +75,17 @@ async function Header() {
   return (
     <Container className="mt-16">
       <Heading as="h1" className="text-center">
-        {t('metadata.title')}
+        {t('intro.title')}
       </Heading>
 
-      <Lead className="mt-6 text-center">
-        {t('metadata.description')}
-      </Lead>
+      <div className="mx-auto mt-8 max-w-3xl">
+        <p className="text-gray-600">{t('intro.paragraph1')}</p>
+        <p className="mt-4 text-gray-600">{t('intro.paragraph2')}</p>
+        <h3 className="mt-8 text-lg font-semibold text-gray-800">
+          {t('intro.supportTitle')}
+        </h3>
+        <p className="mt-2 text-gray-600">{t('intro.supportParagraph')}</p>
+      </div>
 
       <div className="mt-20 mb-24">
 
@@ -115,7 +155,7 @@ async function Header() {
 
         {/* Tutoriales */}
         <div>
-          <h3 className="mb-2 text-center text-2xl font-semibold text-[#009AB8]">
+          <h3 className="mb-2 text-center text-2xl font-semibold text-[#009AB8]"    >
             {t('videos.tutorialsTitle')}
           </h3>
 
