@@ -19,10 +19,10 @@
     "dashboard": "Dashboard",
     "xdatashare": "Data Space (MVD)",
     "share": "Share",
-    "analyze":"Analyze",
+    "analyze": "Analyze",
     "compute": "Compute",
     "deliver": "Deliver",
-    "store":"Store",
+    "store": "Store",
     "dspacer": "Farmacia VAX",
     "preguntas_frecuentes": "FAQ",
     "casos_de_uso": "Use cases",
@@ -64,7 +64,7 @@
     },
     "oneHealth": {
       "title": "The One Health approach",
-      "image":"/demostrador/grafica-onehealth-600px.png",
+      "image": "/demostrador/grafica-onehealth-600px.png",
       "paragraph1": "The One Health concept recognizes that human, animal, and environmental health are interconnected.",
       "paragraph2": "Therefore, today’s major challenges — pandemics, antimicrobial resistance, zoonotic diseases, food security, and environmental impact — require knowledge and data sharing across multiple disciplines.",
       "paragraph3": "OneHealth DataSpace provides the necessary infrastructure to enable this in a secure and scalable way."
@@ -78,32 +78,39 @@
       "linkText": "View implementation progress",
       "linkUrl": "https://planderecuperacion.gob.es/"
     }
-  },   "training":{
+  },
+  "training": {
     "metadata": {
-        "title": "Training",
-        "description": "Videos from the Different Training Sessions"
-      },
-      "videos": {
-        "title": "Explore the MVD in action",
-        "workshop23marchTitle": "Practical workshop – March 23",
-        "workshop23marchUrl1": "https://www.youtube.com/embed/z72j1-uQCVo?si=3lLfks_4DLuDf46g&start=2",
-        "workshop23marchCaption1": "PART 1: Training to carry out the necessary configuration for connector deployment.",
-        "workshop23marchUrl2": "https://www.youtube.com/embed/yshUdWjAsw8?si=G9SbUUgK6TOh4Y8h",
-        "workshop23marchCaption2": "PART 2: Training to carry out the necessary configuration for connector deployment.",
-        "workshop23marchUrl3": "https://www.youtube.com/embed/CRtcBkdf0Wg?si=H0ojdgeV_Li_iV48",
-        "workshop23marchCaption3": "PART 3: Evidence declaration screenshots.",
-        "workshopsTitle": "Workshops",
-        "tutorialsTitle": "Tutorials",
-        "workshop1Caption": "Practical workshop on how a data space operates in the FarmaciaVAX use case with the Data Space MVD.",
-        "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
-        "workshop2Caption": "Data space workshop on EDC Connectors.",
-        "workshop2Url": "https://www.youtube.com/embed/WGBCGCz8vHc?si=vZ15mIvRVN_N9C5L",
-        "workshop3Caption": "PharmacyVAX data space workshop with the SQS D-Spacer platform",
-        "workshop3Url": "https://www.youtube.com/embed/50Ahpz-1VPI?si=xibL743aZEnhWinB",
-        "tutorial1Caption": "Step-by-step tutorial on uploading and visualizing assets using the Data Space MVD.",
-        "tutorial1Url": "https://www.youtube.com/embed/2bZ2O_1Hkr4?si=oOdRF3eBMPX7Ocai"
-      }
-    
+      "title": "OneHealth DataSpace: Training in Data Spaces and the One Health Approach",
+      "description": "Courses and workshops to learn what data spaces are and how to apply the One Health approach to data. Train with OneHealth DataSpace."
+    },
+    "intro": {
+      "title": "Training in Data Spaces and One Health",
+      "paragraph1": "At OneHealth DataSpace we run courses and workshops to learn what data spaces are, how they work, and how the One Health approach —the integration of human, animal, and environmental health— applies to data sharing and management.",
+      "paragraph2": "Our training offer is aimed both at those approaching these technologies for the first time and at professionals from human or animal health, the environment, research, or digital transformation. We combine foundational sessions on new technologies, data governance, and innovation with hands-on workshops.",
+      "supportTitle": "Support for partner organizations",
+      "supportParagraph": "Partner organizations in the project also have access to specific tutorials that answer practical questions about using the platform, from the first steps to its advanced features, and that showcase the results that can be achieved with the OneHealth DataSpace ecosystem."
+    },
+    "videos": {
+      "title": "Explore the MVD in action",
+      "workshop23marchTitle": "Practical workshop – March 23",
+      "workshop23marchUrl1": "https://www.youtube.com/embed/z72j1-uQCVo?si=3lLfks_4DLuDf46g&start=2",
+      "workshop23marchCaption1": "PART 1: Training to carry out the necessary configuration for connector deployment.",
+      "workshop23marchUrl2": "https://www.youtube.com/embed/yshUdWjAsw8?si=G9SbUUgK6TOh4Y8h",
+      "workshop23marchCaption2": "PART 2: Training to carry out the necessary configuration for connector deployment.",
+      "workshop23marchUrl3": "https://www.youtube.com/embed/CRtcBkdf0Wg?si=H0ojdgeV_Li_iV48",
+      "workshop23marchCaption3": "PART 3: Evidence declaration screenshots.",
+      "workshopsTitle": "Workshops",
+      "tutorialsTitle": "Tutorials",
+      "workshop1Caption": "Practical workshop on how a data space operates in the FarmaciaVAX use case with the Data Space MVD.",
+      "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
+      "workshop2Caption": "Data space workshop on EDC Connectors.",
+      "workshop2Url": "https://www.youtube.com/embed/WGBCGCz8vHc?si=vZ15mIvRVN_N9C5L",
+      "workshop3Caption": "PharmacyVAX data space workshop with the SQS D-Spacer platform",
+      "workshop3Url": "https://www.youtube.com/embed/50Ahpz-1VPI?si=xibL743aZEnhWinB",
+      "tutorial1Caption": "Step-by-step tutorial on uploading and visualizing assets using the Data Space MVD.",
+      "tutorial1Url": "https://www.youtube.com/embed/2bZ2O_1Hkr4?si=oOdRF3eBMPX7Ocai"
+    }
   },
   "technologies": {
     "xdatashare": {
