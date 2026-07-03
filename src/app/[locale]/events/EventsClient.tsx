@@ -357,6 +357,18 @@ const events: Event[]  = [
     featured: false,
   },
   {
+    key: 'miniEncuentroACoruna',
+    date: '2026-07-08',
+    image: {
+      es: miniencuentrosES,
+      en: miniencuentrosENG,
+      gl: miniencuentrosGL
+    },
+    cesgalink: 'https://forms.gle/99TSpeTRX54h3SFB8',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: true,
+  },
+  {
     key: 'miniEncuentroLugo',
     date: '2026-07-09',
     image: {
@@ -368,6 +380,7 @@ const events: Event[]  = [
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
   }
+  
 
 ] satisfies Event[];
 

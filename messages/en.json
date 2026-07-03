@@ -1016,6 +1016,29 @@
           "⚠️ Limited capacity."
         ],
         "extra": "Pre-registration"
+      },
+      "miniEncuentroACoruna": {
+        "header": "OneHealth DataSpace Mini Meetings – A Coruña",
+        "excerpt": "In-person meeting at Classroom 1, Hospital Materno Infantil (INIBIC, A Coruña) to discover the capabilities of OneHealth DataSpace, identify research needs, and explore collaboration opportunities under the One Health approach.",
+        "description": [
+          "Next Wednesday, July 8, at 12 PM, OneHealth DataSpace will hold one of its Mini Meetings at Classroom 1, first floor of the Hospital Materno Infantil, at the A Coruña Biomedical Research Institute (INIBIC).",
+          "From the Galicia Supercomputing Center (CESGA), we invite you to this meeting to discover the possibilities offered by OneHealth DataSpace and its future evolution towards the 1HealthAI Factory, as well as the capabilities that may be of interest to your research group.",
+          "What do we propose?",
+          "A one-hour meeting designed to get to know each other, analyze the needs of each project, and build solutions together.",
+          "We will begin by presenting what OneHealth DataSpace is and the opportunities it offers.",
+          "Most of the time will be devoted to discussion: what challenges does your group face? How can CESGA and OneHealth DataSpace help you?",
+          "Who is it for?",
+          "▸ Research groups in the field of human health.",
+          "▸ Research groups focused on animal and environmental health.",
+          "▸ Teams interested in advancing their research under the One Health approach.",
+          "More than data. We turn data into actionable knowledge.",
+          "OneHealth DataSpace provides participating organizations with a complete One Health data lifecycle (an approach that integrates human, animal, and environmental health as a single health): integration, sharing, advanced processing, analysis, model execution, and results storage, while maintaining full control over their data at all times.",
+          "📍 A Coruña Biomedical Research Institute (INIBIC). Hospital Materno Infantil. Classroom 1, 1st floor.",
+          "📅 Wednesday, July 8, 2026",
+          "🕛 12 PM – 1 PM",
+          "⚠️ Limited capacity."
+        ],
+        "extra": "Pre-registration"
       }
     }
   },
