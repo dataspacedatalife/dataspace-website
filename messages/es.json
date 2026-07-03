@@ -87,9 +87,8 @@
       "intro": {
         "title": "Formación en espacios de datos y One Health",
         "paragraph1": "En OneHealth DataSpace impartimos cursos y talleres para aprender qué son los espacios de datos, cómo funcionan y cómo se aplica el enfoque One Health —la integración de la salud humana, animal y ambiental— al intercambio y manejo de datos.",
-        "paragraph2": "Nuestra oferta formativa se dirige tanto a quienes se acercan por primera vez a estas tecnologías como a perfiles del ámbito de la salud humana o animal, el medio ambiente, la investigación o la transformación digital. Combinamos sesiones de fundamentos sobre nuevas tecnologías, gobernanza del dato e innovación con talleres prácticos.",
-        "supportTitle": "Apoyo a las entidades socias",
-        "supportParagraph": "Las entidades socias del proyecto cuentan además con tutoriales específicos que resuelven dudas prácticas sobre el manejo de la plataforma, desde los primeros pasos hasta sus funcionalidades avanzadas, y muestran los resultados que se pueden alcanzar con el ecosistema OneHealth DataSpace."
+        "paragraph2": "Nuestra oferta formativa se dirige tanto a quienes se acercan por primera vez a estas tecnologías como a perfiles del ámbito One Health.",
+        "paragraph3": "Las entidades socias del proyecto cuentan además con tutoriales específicos que resuelven dudas prácticas sobre el manejo de la plataforma, desde los primeros pasos hasta sus funcionalidades avanzadas, y muestran los resultados que se pueden alcanzar con el ecosistema OneHealth DataSpace"
       },
       "videos": {
         "title": "Explora el MVD en acción",

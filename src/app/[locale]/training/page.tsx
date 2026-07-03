@@ -81,10 +81,8 @@ async function Header() {
       <div className="mx-auto mt-8 max-w-3xl">
         <p className="text-gray-600">{t('intro.paragraph1')}</p>
         <p className="mt-4 text-gray-600">{t('intro.paragraph2')}</p>
-        <h3 className="mt-8 text-lg font-semibold text-gray-800">
-          {t('intro.supportTitle')}
-        </h3>
-        <p className="mt-2 text-gray-600">{t('intro.supportParagraph')}</p>
+        <p className="mt-4 text-gray-600">{t('intro.paragraph3')}</p>
+    
       </div>
 
       <div className="mt-20 mb-24">
