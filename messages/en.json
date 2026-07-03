@@ -87,9 +87,8 @@
     "intro": {
       "title": "Training in Data Spaces and One Health",
       "paragraph1": "At OneHealth DataSpace we run courses and workshops to learn what data spaces are, how they work, and how the One Health approach —the integration of human, animal, and environmental health— applies to data sharing and management.",
-      "paragraph2": "Our training offer is aimed both at those approaching these technologies for the first time and at professionals from human or animal health, the environment, research, or digital transformation. We combine foundational sessions on new technologies, data governance, and innovation with hands-on workshops.",
-      "supportTitle": "Support for partner organizations",
-      "supportParagraph": "Partner organizations in the project also have access to specific tutorials that answer practical questions about using the platform, from the first steps to its advanced features, and that showcase the results that can be achieved with the OneHealth DataSpace ecosystem."
+      "paragraph2": "Our training offering is aimed both at those who are approaching these technologies for the first time and at professionals working in the One Health field.",
+      "paragraph3": "The project partners also provide dedicated tutorials that address practical questions about using the platform, from the first steps to its advanced features, and showcase the results that can be achieved with the OneHealth DataSpace ecosystem."
     },
     "videos": {
       "title": "Explore the MVD in action",
