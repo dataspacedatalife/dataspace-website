@@ -42,13 +42,7 @@ function Header() {
       </Lead>
 
       <div className="mx-auto mt-8 flex w-full max-w-3xl flex-col items-center gap-3 sm:flex-row sm:justify-center">
-        <Button
-          href={t('guideButton.href')}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t('guideButton.label')}
-        </Button>
+        <Button href="#how-to-join">{t('guideButton.label')}</Button>
       </div>
     </Container>
   );
@@ -293,7 +287,7 @@ function How() {
         ))}
       </Container>
 
-      <Container className="mt-16 mb-24 relative z-10">
+      <Container id="how-to-join" className="mt-16 mb-24 relative z-10 scroll-mt-24">
         <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-3xl p-10 md:p-16 shadow-lg">
           <Subheading className="text-3xl md:text-4xl font-semibold mb-6 text-center text-gray-900">
             {t('howToJoin.title')}
