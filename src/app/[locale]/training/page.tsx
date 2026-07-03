@@ -86,41 +86,10 @@ async function Header() {
       </div>
 
       <div className="mt-20 mb-24">
-
-        {/* Workshop 23 de marzo */}
-        <div className="mb-12">
-          <h3 className="mb-2 text-center text-2xl font-semibold text-[#009AB8]">
-            {t('videos.workshop23marchTitle')}
-          </h3>
-
-          <hr className="mx-auto mb-8 w-16 border-t border-gray-300" />
-
-          <div className="grid grid-cols-1 gap-6 justify-items-center md:grid-cols-3">
-            <div className="w-full max-w-sm">
-              <VideoEmbed
-                title={t('videos.workshop23marchCaption1')}
-                url={t('videos.workshop23marchUrl1')}
-              />
-            </div>
-
-            <div className="w-full max-w-sm">
-              <VideoEmbed
-                title={t('videos.workshop23marchCaption2')}
-                url={t('videos.workshop23marchUrl2')}
-              />
-            </div>
-
-            <div className="w-full max-w-sm">
-              <VideoEmbed
-                title={t('videos.workshop23marchCaption3')}
-                url={t('videos.workshop23marchUrl3')}
-              />
-            </div>
-          </div>
-        </div>
+        
 
         {/* Talleres */}
-        <div className="mb-12">
+        <div className="mb-2">
           <h3 className="mb-2 text-center text-2xl font-semibold text-[#009AB8]">
             {t('videos.workshopsTitle')}
           </h3>
@@ -146,6 +115,31 @@ async function Header() {
               <VideoEmbed
                 title={t('videos.workshop3Caption')}
                 url={t('videos.workshop3Url')}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="mb-12 mt-6">
+
+          <div className="grid grid-cols-1 gap-6 justify-items-center md:grid-cols-3">
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.workshop23marchCaption1')}
+                url={t('videos.workshop23marchUrl1')}
+              />
+            </div>
+
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.workshop23marchCaption2')}
+                url={t('videos.workshop23marchUrl2')}
+              />
+            </div>
+
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.workshop23marchCaption3')}
+                url={t('videos.workshop23marchUrl3')}
               />
             </div>
           </div>
