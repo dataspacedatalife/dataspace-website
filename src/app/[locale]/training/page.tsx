@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
+import { Link } from '@/components/link';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
 import { getLocale } from "next-intl/server";
@@ -82,7 +83,16 @@ async function Header() {
         <p className="text-gray-600">{t('intro.paragraph1')}</p>
         <p className="mt-4 text-gray-600">{t('intro.paragraph2')}</p>
         <p className="mt-4 text-gray-600">{t('intro.paragraph3')}</p>
-    
+
+      </div>
+
+      <div className="mt-10 text-center">
+        <Link
+          href="/events"
+          className="inline-flex items-center px-8 py-4 rounded-lg text-white font-semibold bg-[#009AB8] shadow-lg hover:scale-105 transition"
+        >
+          {t('cta.text')}
+        </Link>
       </div>
 
       <div className="mt-20 mb-24">
