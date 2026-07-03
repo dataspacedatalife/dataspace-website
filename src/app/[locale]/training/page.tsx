@@ -98,10 +98,10 @@ async function Header() {
       <div className="mt-20 mb-24">
         
 
-        {/* Talleres */}
+        {/* Talleres y tutoriales*/}
         <div className="mb-2">
           <h3 className="mb-2 text-center text-2xl font-semibold text-[#009AB8]">
-            {t('videos.workshopsTitle')}
+            {t('videos.tutorialsTitle')}
           </h3>
 
           <hr className="mx-auto mb-6 w-16 border-t border-gray-300" />
@@ -109,22 +109,22 @@ async function Header() {
           <div className="grid grid-cols-1 gap-6 justify-items-center md:grid-cols-3">
             <div className="w-full max-w-sm">
               <VideoEmbed
-                title={t('videos.workshop1Caption')}
-                url={t('videos.workshop1Url')}
+                title={t('videos.tutorialCaption1')}
+                url={t('videos.tutorialUrl1')}
               />
             </div>
 
             <div className="w-full max-w-sm">
               <VideoEmbed
-                title={t('videos.workshop2Caption')}
-                url={t('videos.workshop2Url')}
+                title={t('videos.tutorialCaption2')}
+                url={t('videos.tutorialUrl2')}
               />
             </div>
 
             <div className="w-full max-w-sm">
               <VideoEmbed
-                title={t('videos.workshop3Caption')}
-                url={t('videos.workshop3Url')}
+                title={t('videos.tutorialCaption3')}
+                url={t('videos.tutorialUrl3')}
               />
             </div>
           </div>
@@ -134,44 +134,93 @@ async function Header() {
           <div className="grid grid-cols-1 gap-6 justify-items-center md:grid-cols-3">
             <div className="w-full max-w-sm">
               <VideoEmbed
-                title={t('videos.workshop23marchCaption1')}
-                url={t('videos.workshop23marchUrl1')}
+                title={t('videos.tutorialCaption4')}
+                url={t('videos.tutorialUrl4')}
               />
             </div>
 
             <div className="w-full max-w-sm">
               <VideoEmbed
-                title={t('videos.workshop23marchCaption2')}
-                url={t('videos.workshop23marchUrl2')}
+                title={t('videos.tutorialCaption5')}
+                url={t('videos.tutorialUrl5')}
               />
             </div>
 
             <div className="w-full max-w-sm">
               <VideoEmbed
-                title={t('videos.workshop23marchCaption3')}
-                url={t('videos.workshop23marchUrl3')}
+                title={t('videos.tutorialCaption6')}
+                url={t('videos.tutorialUrl6')}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="mb-12">
+
+          <div className="grid grid-cols-1 gap-6 justify-items-center md:grid-cols-3">
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.tutorialCaption7')}
+                url={t('videos.tutorialUrl7')}
               />
             </div>
           </div>
         </div>
 
-        {/* Tutoriales */}
-        <div>
-          <h3 className="mb-2 text-center text-2xl font-semibold text-[#009AB8]"    >
-            {t('videos.tutorialsTitle')}
+        {/* Cursos */}
+        <div className="mb-2">
+          <h3 className="mb-2 text-center text-2xl font-semibold text-[#009AB8]">
+            {t('videos.coursesTitle')}
           </h3>
 
-          <hr className="mx-auto mb-8 w-16 border-t border-gray-300" />
+          <hr className="mx-auto mb-6 w-16 border-t border-gray-300" />
 
-          <div className="flex justify-center">
+          <div className="grid grid-cols-1 gap-6 justify-items-center md:grid-cols-3">
             <div className="w-full max-w-sm">
               <VideoEmbed
-                title={t('videos.tutorial1Caption')}
-                url={t('videos.tutorial1Url')}
+                title={t('videos.courseCaption1')}
+                url={t('videos.courseUrl1')}
+              />
+            </div>
+
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.courseCaption2')}
+                url={t('videos.courseUrl2')}
+              />
+            </div>
+
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.courseCaption3')}
+                url={t('videos.courseUrl3')}
               />
             </div>
           </div>
         </div>
+        
+          <div className="grid grid-cols-1 gap-6 justify-items-center md:grid-cols-3">
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.courseCaption4')}
+                url={t('videos.courseUrl4')}
+              />
+            </div>
+
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.courseCaption5')}
+                url={t('videos.courseUrl5')}
+              />
+            </div>
+
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.courseCaption6')}
+                url={t('videos.courseUrl6')}
+              />
+            </div>
+          </div>
+        
       </div>
     </Container>
   );
