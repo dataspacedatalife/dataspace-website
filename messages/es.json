@@ -19,10 +19,10 @@
     "dashboard": "Dashboard",
     "xdatashare": "Espacio de Datos (MVD)",
     "share": "Comparte",
-    "analyze":"Analiza",
+    "analyze": "Analiza",
     "compute": "Computa",
     "deliver": "Expón",
-    "store":"Almacena",
+    "store": "Almacena",
     "dspacer": "Farmacia VAX",
     "preguntas_frecuentes": "Preguntas frecuentes",
     "casos_de_uso": "Casos de Uso",
@@ -79,41 +79,51 @@
       "linkUrl": "https://planderecuperacion.gob.es/"
     }
   },
-    "training":{
+  "training": {
     "metadata": {
-        "title": "OneHealth DataSpace: formación en datos y enfoque One Health",
-        "description": "Cursos y talleres para aprender qué son los espacios de datos y cómo aplicar el enfoque One Health a los datos. Fórmate con OneHealth DataSpace."
-      },
-      "intro": {
-        "title": "Formación en espacios de datos y One Health",
-        "paragraph1": "En OneHealth DataSpace impartimos cursos y talleres para aprender qué son los espacios de datos, cómo funcionan y cómo se aplica el enfoque One Health —la integración de la salud humana, animal y ambiental— al intercambio y manejo de datos.",
-        "paragraph2": "Nuestra oferta formativa se dirige tanto a quienes se acercan por primera vez a estas tecnologías como a perfiles del ámbito One Health.",
-        "paragraph3": "Las entidades socias del proyecto cuentan además con tutoriales específicos que resuelven dudas prácticas sobre el manejo de la plataforma, desde los primeros pasos hasta sus funcionalidades avanzadas, y muestran los resultados que se pueden alcanzar con el ecosistema OneHealth DataSpace"
-      },
-      "cta": {
-        "text": "👉 Consulta nuestros eventos formativos y reserva tu plaza"
-      },
-      "videos": {
-        "title": "Explora el MVD en acción",
-        "workshop23marchTitle": "Taller práctico del 23 de marzo",
-        "workshop23marchUrl1": "https://www.youtube.com/embed/z72j1-uQCVo?si=3lLfks_4DLuDf46g&start=2",
-        "workshop23marchCaption1": "PARTE 1: Formación para realizar la configuración necesaria para el lanzamiento del conector.",
-        "workshop23marchUrl2": "https://www.youtube.com/embed/yshUdWjAsw8?si=G9SbUUgK6TOh4Y8h",
-        "workshop23marchCaption2": "PARTE 2: Formación para realizar la configuración necesaria para el lanzamiento del conector.",
-        "workshop23marchUrl3": "https://www.youtube.com/embed/CRtcBkdf0Wg?si=H0ojdgeV_Li_iV48",
-        "workshop23marchCaption3": "PARTE 3: Capturas para la declaración de evidencias.",
-        "workshopsTitle": "Talleres",
-        "tutorialsTitle": "Tutoriales",
-        "workshop1Caption": "Taller práctico sobre el funcionamiento de un espacio de datos en el caso de uso FarmaciaVAX con el MVD del Espacio de Datos.",
-        "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
-        "workshop2Caption": "Taller de espacio de datos sobre Conectores EDC.",
-        "workshop2Url": "https://www.youtube.com/embed/WGBCGCz8vHc?si=vZ15mIvRVN_N9C5L",
-        "workshop3Caption": "Taller de espacio de datos FarmaciaVAX con la plataforma D-Spacer de SQS",
-        "workshop3Url": "https://www.youtube.com/embed/50Ahpz-1VPI?si=xibL743aZEnhWinB",
-        "tutorial1Caption": "Tutorial paso a paso sobre la subida y visualización de assets utilizando el MVD del Espacio de Datos.",
-        "tutorial1Url": "https://www.youtube.com/embed/2bZ2O_1Hkr4?si=oOdRF3eBMPX7Ocai"
-      }
-    
+      "title": "OneHealth DataSpace: formación en datos y enfoque One Health",
+      "description": "Cursos y talleres para aprender qué son los espacios de datos y cómo aplicar el enfoque One Health a los datos. Fórmate con OneHealth DataSpace."
+    },
+    "intro": {
+      "title": "Formación en espacios de datos y One Health",
+      "paragraph1": "En OneHealth DataSpace impartimos cursos y talleres para aprender qué son los espacios de datos, cómo funcionan y cómo se aplica el enfoque One Health —la integración de la salud humana, animal y ambiental— al intercambio y manejo de datos.",
+      "paragraph2": "Nuestra oferta formativa se dirige tanto a quienes se acercan por primera vez a estas tecnologías como a perfiles del ámbito One Health.",
+      "paragraph3": "Las entidades socias del proyecto cuentan además con tutoriales específicos que resuelven dudas prácticas sobre el manejo de la plataforma, desde los primeros pasos hasta sus funcionalidades avanzadas, y muestran los resultados que se pueden alcanzar con el ecosistema OneHealth DataSpace"
+    },
+    "cta": {
+      "text": "👉 Consulta nuestros eventos formativos y reserva tu plaza"
+    },
+    "videos": {
+      "title": "Explora el MVD en acción",
+      "tutorialsTitle": "Talleres y tutoriales",
+      "coursesTitle": "Cursos",
+      "courseCaption1": "Modelo de Negocio en OneHealth DataSpace",
+      "courseUrl1": "https://www.youtube.com/embed/VF9GnYHOzAU",
+      "courseCaption2": "Gobernanza de Datos",
+      "courseUrl2": "https://www.youtube.com/embed/O3WisG2cmqQ",
+      "courseCaption3": "Evolución del espacio de datos OneHealth DataSpace: integración con HPC, Big Data y Evolución Cloud",
+      "courseUrl3": "https://www.youtube.com/embed/HTaVG_vaw-s",
+      "courseCaption4": "Uso práctico de AnonymiX, Clever y Portal del Participante",
+      "courseUrl4": "https://www.youtube.com/embed/Tt8Rt5-UmGw",
+      "courseCaption5": "Evolución del espacio de datos: integración sistemas de ficheros HPC",
+      "courseUrl5": "https://www.youtube.com/embed/XEC_5QG38sk",
+      "courseCaption6": "Introducción al Conector del Espacio de Datos",
+      "courseUrl6": "https://www.youtube.com/embed/Yn8FVg8ctr8",
+      "tutorialCaption1": "Tutorial EDD One Health (1/3) | Primeros pasos. Configuración previa.",
+      "tutorialUrl1": "https://www.youtube.com/embed/z72j1-uQCVo",
+      "tutorialCaption2": "Tutorial EDD One Health (2/3) | Subida de assets y creación de contrato para compartir con DSGA",
+      "tutorialUrl2": "https://www.youtube.com/embed/yshUdWjAsw8",
+      "tutorialCaption3": "Tutorial EDD OneHealth (3/3) | Capturas para la declaración de evidencias",
+      "tutorialUrl3": "https://www.youtube.com/embed/CRtcBkdf0Wg",
+      "tutorialCaption4": "Taller de espacio de datos sobre Conectores EDC",
+      "tutorialUrl4": "https://www.youtube.com/embed/WGBCGCz8vHc",
+      "tutorialCaption5": "Taller Espacio de Datos FarmaciaVAX con XDataShare",
+      "tutorialUrl5": "https://www.youtube.com/embed/u7zTyU795n8",
+      "tutorialCaption6": "Taller de espacio de datos FarmaciaVAX con la plataforma D-Spacer de SQS",
+      "tutorialUrl6": "https://www.youtube.com/embed/50Ahpz-1VPI",
+      "tutorialCaption7": "Tutorial | Subida y visualización de assets",
+      "tutorialUrl7": "https://www.youtube.com/embed/2bZ2O_1Hkr4"
+    }
   },
   "technologies": {
     "xdatashare": {
