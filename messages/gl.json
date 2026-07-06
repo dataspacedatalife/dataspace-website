@@ -13,7 +13,8 @@
       "compute": "Procesamento avanzado de datos e HPC",
       "analyze": "Transformar datos en coñecemento útil",
       "store": "Xestión segura de grandes volumes de datos",
-      "deliver": "Publicar servizos e resultados de datos"
+      "deliver": "Publicar servizos e resultados de datos",
+      "cta": "Ir ao servizo"
     }
   },
   "Navbar": {
