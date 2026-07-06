@@ -213,28 +213,11 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           </div>
         </div>
 
-<<<<<<< HEAD
-        <div className="relative group flex">
-          <Link href="/how" className={navItemClass}>
-            {t('participa')}
-            <ChevronUp className="ml-0.5 h-4 w-4 rotate-180 transition-transform duration-300 group-hover:rotate-0" />
-          </Link>
-
-          <div className={dropdownClass}>
-            {joinLinks.map(({ href, label }) => (
-              <Link key={href} href={href} className={dropdownItemClass}>
-                {label}
-              </Link>
-            ))}
-          </div>
-        </div>
-=======
         {links.map(({ href, label }) => (
           <Link key={href} href={href} className={navItemClass}>
             {label}
           </Link>
         ))}
->>>>>>> 07f7acf (navbar new structure and mobile adaption added)
 
         <div className="relative group flex">
           <Link href="/how" className={navItemClass}>
