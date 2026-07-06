@@ -98,7 +98,6 @@ function Section({
         ))}
       </ul>
 
-      {/* 👇 botón opcional */}
       {button && (
         <div className="mt-10">
           <a
@@ -261,7 +260,7 @@ function How() {
                             target="_blank"
                             rel="noreferrer"
                             className="text-emerald-600 underline hover:text-emerald-800 transition"
-                            href="https://xdatashare.srv.cesga.es/assets/static/files/Guia-del-participante.pdf"
+                            href="https://xdatashare.srv.cesga.es/static/files/Guia-del-participante.pdf"
                           >
                             {chunks}
                           </Link>
