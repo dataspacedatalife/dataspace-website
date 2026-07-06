@@ -21,9 +21,10 @@ export const metadata: Metadata = {
 };
 
 /* ================= LANDING ================= */
-
 function OneHealthLanding() {
   const locale = useLocale();
+  const t = useTranslations('home.hero');
+  const tServices = useTranslations('home.services');
 
   const graphByLocale: Record<string, string> = {
     es: '/demostrador/grafica4_web_es.png',
@@ -59,13 +60,12 @@ function OneHealthLanding() {
       `}</style>
 
       <main className="min-h-screen bg-gradient-to-br from-slate-50 via-cyan-50 to-teal-50">
-
         {/* HERO */}
         <section className="max-w-7xl mx-auto px-6 min-h-[calc(100vh-95px)] flex items-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
             <div>
-              <h1 className="hidden sm:block gradient-text"
+              <h1
+                className="hidden sm:block gradient-text"
                 style={{
                   fontFamily: "'Barlow Condensed', sans-serif",
                   fontSize: 'clamp(4rem, 10vw, 6rem)',
@@ -80,9 +80,7 @@ function OneHealthLanding() {
               </h1>
 
               <p className="mt-8 text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
-                Facilitamos a las entidades participantes compartir,
-                procesar, almacenar y analizar datos de salud humana,
-                animal y medioambiental.
+                {t('subtitle')}
               </p>
 
               <div className="flex flex-wrap gap-4 mt-10">
@@ -90,7 +88,7 @@ function OneHealthLanding() {
                   href="/about"
                   className="px-8 py-4 rounded-md border border-[#009AB8] text-[#009AB8] bg-white hover:bg-slate-50 transition"
                 >
-                  Saber más
+                  {t('learnMore')}
                 </a>
 
                 <a
@@ -99,23 +97,20 @@ function OneHealthLanding() {
                   rel="noopener noreferrer"
                   className="px-8 py-4 rounded-lg text-white font-semibold bg-[#009AB8] shadow-lg hover:scale-105 transition"
                 >
-                  Acceder
+                  {t('access')}
                 </a>
               </div>
             </div>
 
             <div className="flex justify-center">
               <div className="relative w-full max-w-[650px] flex items-center justify-center">
-
                 <img
                   src={graphSrc}
                   alt="OneHealth DataSpace"
                   className="relative z-10 w-full max-w-[450px] h-auto object-contain"
                 />
-
               </div>
             </div>
-
           </div>
         </section>
 
@@ -128,11 +123,11 @@ function OneHealthLanding() {
               fontSize: 'clamp(3rem, 6vw, 4rem)',
             }}
           >
-            Más que datos
+            {tServices('title')}
           </h2>
 
           <p className="mt-4 text-slate-600 text-lg max-w-4xl mx-auto">
-            Un ciclo de vida operativo completo para los datos
+            {tServices('subtitle')}
           </p>
         </section>
 
@@ -144,38 +139,38 @@ function OneHealthLanding() {
   );
 }
 
-/* ================= SERVICES ================= */
-
 function Services() {
+  const t = useTranslations();
+
   const services = [
     {
       icon: Share2,
-      title: 'Compartir',
-      text: 'Compartir datos de forma segura entre entidades',
+      title: t('Navbar.share'),
+      text: t('home.services.share'),
       href: 'https://dl-cesga.srv.cesga.es',
     },
     {
       icon: Cpu,
-      title: 'Computar',
-      text: 'Procesamiento avanzado de datos y HPC',
+      title: t('Navbar.compute'),
+      text: t('home.services.compute'),
       href: 'https://hpc.dataspace.cesga.es',
     },
     {
       icon: Search,
-      title: 'Analizar',
-      text: 'Transformar datos en conocimiento útil',
+      title: t('Navbar.analyze'),
+      text: t('home.services.analyze'),
       href: 'https://bigdata.dataspace.cesga.es/',
     },
     {
       icon: Database,
-      title: 'Almacenar',
-      text: 'Gestión segura de grandes volúmenes de datos',
+      title: t('Navbar.store'),
+      text: t('home.services.store'),
       href: 'https://storage.dataspace.cesga.es',
     },
     {
       icon: CloudUpload,
-      title: 'Exponer',
-      text: 'Publicar servicios y resultados de datos',
+      title: t('Navbar.deliver'),
+      text: t('home.services.deliver'),
       href: 'https://cloud.dataspace.cesga.es',
     },
   ];
@@ -184,7 +179,8 @@ function Services() {
     <section
       className="relative py-24 overflow-hidden"
       style={{
-        background: 'linear-gradient(to right, #3fd7c0 0%, #00a8b8 50%, #006b8f 100%)',
+        background:
+          'linear-gradient(to right, #3fd7c0 0%, #00a8b8 50%, #006b8f 100%)',
       }}
     >
       <Container>

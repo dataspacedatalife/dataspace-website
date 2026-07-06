@@ -2,9 +2,18 @@
   "home": {
     "hero": {
       "title": "One Health Data Space Demonstrator Center",
-      "subtitle": "We enable participating organizations to share, process, store, and analyze human, animal, and environmental health data, while maintaining full control over it and transforming it into knowledge to improve global health.",
+      "subtitle": "We enable participating organizations to share, process, store, and analyze human, animal, and environmental health data.",
       "learnMore": "Learn more",
-      "testDemo": "Access"
+      "access": "Access"
+    },
+    "services": {
+      "title": "More than data",
+      "subtitle": "A complete operational lifecycle for data",
+      "share": "Securely share data between entities",
+      "compute": "Advanced data processing and HPC",
+      "analyze": "Turn data into useful knowledge",
+      "store": "Secure management of large volumes of data",
+      "deliver": "Publish services and data results"
     }
   },
   "Navbar": {

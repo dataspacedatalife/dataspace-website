@@ -2,9 +2,18 @@
   "home": {
     "hero": {
       "title": "Espazo de datos multisectorial One Health",
-      "subtitle": "Facilitamos ás entidades participantes compartir, procesar, almacenar e analizar datos de saúde humana, animal e ambiental, mantendo o control sobre eles e transformándoos en coñecemento para mellorar a saúde global.",
+      "subtitle": "Facilitamos ás entidades participantes compartir, procesar, almacenar e analizar datos de saúde humana, animal e ambiental.",
       "learnMore": "Saber máis",
-      "testDemo": "Acceder"
+      "access": "Acceder"
+    },
+    "services": {
+      "title": "Máis que datos",
+      "subtitle": "Un ciclo de vida operativo completo para os datos",
+      "share": "Compartir datos de forma segura entre entidades",
+      "compute": "Procesamento avanzado de datos e HPC",
+      "analyze": "Transformar datos en coñecemento útil",
+      "store": "Xestión segura de grandes volumes de datos",
+      "deliver": "Publicar servizos e resultados de datos"
     }
   },
   "Navbar": {
