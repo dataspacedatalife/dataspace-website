@@ -6,7 +6,7 @@ import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
-import { Heading, Lead, Subheading } from '@/components/text';
+import { Heading, Lead } from '@/components/text';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('about.metadata');
@@ -131,7 +131,7 @@ async function Header() {
 
       {/* FUNDING */}
       <div className="mt-12 mb-16 pt-6">
-        <Subheading>{t('funding.title')}</Subheading>
+        <h2 className="text-3xl font-medium tracking-tight">{t('funding.title')}</h2>
 
         <hr className="mt-6 mb-6 border-t border-gray-200" />
 

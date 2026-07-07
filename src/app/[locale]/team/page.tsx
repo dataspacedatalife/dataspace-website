@@ -5,7 +5,7 @@ import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
-import { Heading, Subheading } from '@/components/text';
+import { Heading } from '@/components/text';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('team.metadata');
@@ -107,9 +107,9 @@ async function Team() {
 
   return (
     <Container className="my-24">
-      <Subheading as="h3" className="text-center">
+      <h2 className="text-3xl font-medium tracking-tight text-center">
         {t('title')}
-      </Subheading>
+      </h2>
 
       <hr className="mt-6 border-t border-gray-200" />
 
