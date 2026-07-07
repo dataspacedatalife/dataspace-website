@@ -1016,6 +1016,30 @@
         ],
         "extra": "Inscripción previa"
       },
+      "encuentroPresentacionResultados": {
+        "header": "OneHealth DataSpace – Encuentro de Presentación de Resultados",
+        "excerpt": "Encuentro en el CIMUS (Santiago de Compostela) para presentar los principales resultados de OneHealth DataSpace, sus casos de uso y las oportunidades de futuro que abre esta iniciativa, antesala de la 1HealthAI Factory.",
+        "description": [
+          "El próximo miércoles 22 de julio, el CESGA celebra en el CIMUS (Centro Singular de Investigación en Medicina Molecular y Enfermedades Crónicas) de Santiago de Compostela el Encuentro de Presentación de Resultados del proyecto OneHealth DataSpace.",
+          "Durante la jornada se presentarán los principales resultados del proyecto, algunos de sus casos de uso y las oportunidades de futuro que abre esta iniciativa, antesala de la futura 1HealthAI Factory. Además, se dará a conocer el Espacio Nacional de Datos de Salud y el Espacio Europeo de Datos de Salud.",
+          "A lo largo de estos dos años de trayectoria, OneHealth DataSpace ha impulsado la compartición y explotación segura de datos bajo el enfoque One Health, conectando entidades de los ámbitos de la salud humana, animal y medioambiental, ya sean universidades, centros de investigación o empresas, mediante capacidades avanzadas de HPC, Big Data, Cloud e Inteligencia Artificial.",
+          "Programa provisional",
+          "11:00h. Apertura institucional",
+          "▸ Carmen Cotelo Queijo, Directora de GAIN.",
+          "▸ Mabel Loza, Directora Científica del CIMUS.",
+          "▸ Ignacio López Cabido, Gerente del CESGA.",
+          "11:15h. Presentación del Espacio Nacional de Datos de Salud (ENDS)",
+          "▸ Manuel Brocos, Dirección General del Dato (SEDIA).",
+          "11:35h. Presentación del European Health Data Space (EHDS)",
+          "12:00h. Presentación de Resultados de OneHealth DataSpace",
+          "13:00h. Casos de uso de OneHealth DataSpace",
+          "13:30h. OneHealth DataSpace como punto de partida hacia la 1HealthAI Factory",
+          "📍 Salón de Actos del Centro Singular de Investigación en Medicina Molecular y Enfermedades Crónicas (CIMUS), Santiago de Compostela.",
+          "📅 Miércoles 22 de julio de 2026",
+          "🕚 11:00h – 13:30h"
+        ],
+        "extra": "Inscripción"
+      },
       "miniEncuentroACoruna": {
         "header": "Mini Encuentros OneHealth DataSpace – A Coruña",
         "excerpt": "Encuentro en el Aula 1 del Hospital Materno Infantil (INIBIC, A Coruña) para conocer las capacidades de OneHealth DataSpace, identificar necesidades de investigación y explorar oportunidades de colaboración bajo el enfoque One Health.",
