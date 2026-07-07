@@ -65,6 +65,10 @@ import delDatoAlResultadoES from '../../../../public/events/formacion-del-dato-a
 import delDatoAlResultadoENG from '../../../../public/events/formacion-del-dato-al-resultado-ENG.png';
 import delDatoAlResultadoGL from '../../../../public/events/formacion-del-dato-al-resultado-GL.png';
 
+import presentacionResultadosES from '../../../../public/events/cartela_web_es_1200x630.png';
+import presentacionResultadosENG from '../../../../public/events/cartela_web_en_1200x630.png';
+import presentacionResultadosGL from '../../../../public/events/cartela_web_gl_1200x630.png';
+
 const eventsPerPage = 5;
 
 interface Event {
@@ -379,8 +383,19 @@ const events: Event[]  = [
     cesgalink: 'https://forms.gle/Bkge4BXstVzEUopw5',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
+  },
+  {
+    key: 'encuentroPresentacionResultados',
+    date: '2026-07-22',
+    image: {
+      es: presentacionResultadosES,
+      en: presentacionResultadosENG,
+      gl: presentacionResultadosGL
+    },
+    cesgalink: 'https://forms.gle/U8nRPdvcBquNe19v6',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: true,
   }
-  
 
 ] satisfies Event[];
 
