@@ -91,14 +91,14 @@ export function OneHealthLanding() {
                 DataSpace
               </h1>
 
-              <p className="mt-8 text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
+              <p className="mt-8 text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl whitespace-pre-line">
                 {t('subtitle')}
               </p>
 
               <div className="flex flex-wrap gap-4 mt-10">
                 <a
                   href="/about"
-                  className="px-8 py-4 rounded-md border border-[#009AB8] text-[#009AB8] bg-white hover:bg-slate-50 transition"
+                  className="px-8 py-4 rounded-md border-2 border-[#009AB8] text-[#009AB8] font-semibold bg-white hover:bg-slate-50 transition"
                 >
                   {t('learnMore')}
                 </a>
