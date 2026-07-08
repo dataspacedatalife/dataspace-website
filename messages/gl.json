@@ -2,20 +2,30 @@
   "home": {
     "hero": {
       "title": "Espazo de datos multisectorial One Health",
-      "subtitle": "Facilitamos ás entidades participantes compartir, procesar, almacenar e analizar datos de saúde humana, animal e ambiental, mantendo o control sobre eles e transformándoos en coñecemento para mellorar a saúde global.",
+      "subtitle": "Un espazo de datos que che permite compartir, procesar, almacenar, analizar e publicar os teus datos mantendo un control total sobre eles.\nDeseñado para datos de saúde humana, animal e ambiental.",
       "learnMore": "Saber máis",
-      "testDemo": "Acceder"
+      "access": "Acceder"
+    },
+    "services": {
+      "title": "Máis que datos",
+      "subtitle": "Todo o que podes facer en OneHealth DataSpace",
+      "share": "Compartir datos de forma segura entre entidades",
+      "compute": "Procesamento avanzado de datos e HPC",
+      "analyze": "Transformar datos en coñecemento útil",
+      "store": "Xestión segura de grandes volumes de datos",
+      "deliver": "Publicar servizos e resultados de datos",
+      "cta": "Ir ao servizo"
     }
   },
   "Navbar": {
     "home": "Inicio",
     "centro_demostrador": "Proxecto",
-    "saber_mas": "OneHealth DataSpace",
+    "saber_mas": "Que é OneHealth DataSpace?",
     "que_es_un_espacio": "Que é un espazo de datos?",
     "participa": "Únete",
     "adhesion": "Adherirse",
     "kit": "Kit Espazos de Datos",
-    "tecnologias": "Máis que datos",
+    "tecnologias": "Servizos",
     "dashboard": "Dashboard",
     "xdatashare": "Espazo de Datos (MVD)",
     "share": "Comparte",
@@ -70,7 +80,7 @@
       "paragraph3": "OneHealth DataSpace proporciona a infraestrutura necesaria para facelo de forma segura e escalable."
     },
     "funding": {
-      "title": "ONEHEALTH DATASPACE é un proxecto",
+      "title": "OneHealth DataSpace é un proxecto",
       "call": "Financiado pola Unión Europea – NextGenerationEU.",
       "grant": "A través da convocatoria do Ministerio para a Transformación Dixital e da Función Pública: Demostradores e Casos de uso de Espazos de Datos. “Espazos de Datos Sectoriais 2023 para a creación de demostradores e casos de uso de espazos de compartición de datos.”",
       "program": "O programa “Espazos de datos sectoriais” forma parte do investimento 1 do compoñente 12 do Plan de Recuperación, Transformación e Resiliencia, financiado a través do Mecanismo de Recuperación e Resiliencia (MRR).",
@@ -155,7 +165,7 @@
         "workshop23marchUrl1": "https://www.youtube.com/embed/z72j1-uQCVo?si=3lLfks_4DLuDf46g&start=2",
         "workshop23marchCaption1": "PARTE 1: Formación para realizar a configuración necesaria para o lanzamento do conector.",
         "workshop23marchUrl2": "https://www.youtube.com/embed/yshUdWjAsw8?si=G9SbUUgK6TOh4Y8h",
-        "workshop23marchCaption2": "PARTE 2: Formación para realizar a configuración necesaria para o lanzamento do conector.",
+        "workshop23marchCaption2": "PARTE 2: Subida do asset e creación dun contrato para compartir coa DSGA.",
         "workshop23marchUrl3": "https://www.youtube.com/embed/CRtcBkdf0Wg?si=H0ojdgeV_Li_iV48",
         "workshop23marchCaption3": "PARTE 3: Capturas para a declaración de evidencias.",
         "workshopsTitle": "Obradoiros",
@@ -183,8 +193,7 @@
       "title": "Participa no espazo de datos",
       "lead": "Comparte, consume ou desenvolve servizos baseados en datos nun contorno confiable que garante soberanía, privacidade e interoperabilidade",
       "guideButton": {
-        "label": "Consulta a nosa guía do participante",
-        "href": "/adhesion/Guía del participante - adhesión EdD DATAlife CESGA.pdf"
+        "label": "Únete"
       }
     },
     "overview": {
@@ -230,7 +239,7 @@
       "subtitle": "Estou interesado en adherirme",
       "description": "Se xa estás informado e desexas facernos saber o teu interese en participar no Espazo de Datos, completa o seguinte formulario. Se tes dúbidas, contacta con onehealth@cesga.es",
       "formButton": "Cubre o formulario de mostra de interese se estás interesado en adherirte",
-      "formLink": "https://forms.office.com/r/mGvvF5qe4k"
+      "formLink": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=R5ZY0bQ3n0O0XEaqtYBirpuP0cRaTKVPru3-n4Kp6ABUMUw3TEU0SUZBTk5VMDNIUlY5N0xSWTI1OC4u&route=shorturl"
     },
     "process": {
       "title": "Proceso de adhesión",
@@ -293,7 +302,7 @@
     "reviewCycle": {
       "title": "Ciclo de revisións",
       "description": "As solicitudes avalíanse cada dúas semanas na reunión de revisión. Só se teñen en conta aquelas recibidas ata o día anterior á reunión inclusive.",
-      "footer": "*Os días en verde corresponden ás reunións de revisión.",
+      "footer": "*Os días en azul corresponden ás reunións de revisión.",
       "weekdays": [
         "Lun",
         "Mar",
@@ -835,8 +844,8 @@
         ],
         "extra": "Convite e inscrición"
       },
-      "gobernanzaDeDatosAporte": {
-        "header": "Gobernanza de Datos. Achega ao Espazo de Datos",
+      "modeloNegocio": {
+        "header": "Modelo de Negocio en OneHealth DataSpace",
         "excerpt": "Sesión para comprender o modelo de negocio de OneHealth DataSpace, o valor que achega aos seus participantes e os mecanismos que garanten a súa sustentabilidade e crecemento como infraestrutura de datos, computación e innovación dentro do ecosistema CESGA.",
         "description": [
           "Obxectivo da sesión:",
@@ -966,6 +975,150 @@
           "⚠️ Recoméndase utilizar Mozilla Firefox."
         ],
         "extra": "Acceso e inscrición"
+      },
+       "miniencuentros": {
+        "header": "Mini Encontros OneHealth DataSpace – Santiago de Compostela",
+        "excerpt": "Encontro presencial para coñecer as capacidades de OneHealth DataSpace, identificar necesidades de investigación e explorar oportunidades de colaboración baixo o enfoque One Health.",
+        "description": [
+          "Os teus datos. O teu control. Coñecemento que transforma a saúde global.",
+          "O vindeiro 23 de xuño, OneHealth DataSpace celebrará no CHUS (Hospital Clínico Universitario de Santiago de Compostela) o primeiro dos Mini Encontros OneHealth DataSpace.",
+          "Desde o Centro de Supercomputación de Galicia (CESGA), convidámoste a coñecer as posibilidades que ofrece OneHealth DataSpace e a súa futura evolución cara á 1HealthAI Factory, así como aquelas capacidades que poderían ser de interese para o teu grupo de investigación.",
+          "Que propoñemos?",
+          "Un encontro dunha hora pensado para coñecernos, analizar as necesidades de cada proxecto e construír solucións xuntos.",
+          "Comezaremos presentando en que consiste OneHealth DataSpace e as súas posibilidades.",
+          "A maior parte do tempo estará dedicada a conversar: que retos ten o teu grupo?, como podemos axudarvos desde o CESGA e desde OneHealth DataSpace?",
+          "A quen vai dirixido?",
+          "▸ Grupos de investigación no ámbito da saúde humana.",
+          "▸ Grupos de investigación en saúde animal e medioambiental.",
+          "▸ Equipos interesados en impulsar as súas investigacións baixo o enfoque One Health.",
+          "Máis que datos. Convertimos os datos en coñecemento accionable.",
+          "OneHealth DataSpace ofrece ás entidades participantes un ciclo completo de traballo sobre os datos: integración, intercambio, procesamento avanzado, análise, execución de modelos e almacenamento de resultados, sen perder en ningún momento o control sobre eles.",
+          "📍 Sala Anfiteatro do CHUS (Hospital Clínico Universitario de Santiago de Compostela)",
+          "📅 23 de xuño de 2026",
+          "🕧 12:30",
+          "⚠️ Aforo limitado."
+        ],
+        "extra": "Inscrición previa"
+      },
+      "formacionDelDatoAlResultado": {
+        "header": "Como adherirse e participar en OneHealth DataSpace: do Dato ao Resultado",
+        "excerpt": "Sesión formativa para coñecer o percorrido completo de incorporación a OneHealth DataSpace, desde a adhesión ata o aproveitamento das capacidades avanzadas de procesamento, análise e intelixencia artificial do ecosistema.",
+        "description": [
+          "Obxectivo da sesión",
+          "Coñecer o percorrido completo que debe seguir unha entidade para incorporarse ao ecosistema OneHealth DataSpace, desde a identificación das súas necesidades ata o uso efectivo das ferramentas e servizos dispoñibles na plataforma.",
+          "OneHealth DataSpace é unha plataforma integrada para todo o ciclo de vida do dato One Health: compartir, almacenar, procesar, analizar e entregar resultados.",
+          "A diferenza dun espazo de datos convencional, integra as capacidades avanzadas do CESGA en HPC, Big Data, Cloud, IA, GPU e computación cuántica para transformar datos existentes en solucións reais.",
+          "Para que serve?",
+          "▸ Comprender o proceso de incorporación ao ecosistema OneHealth DataSpace.",
+          "▸ Coñecer as ferramentas e servizos dispoñibles para as entidades participantes.",
+          "▸ Mostrar as oportunidades de colaboración e creación de casos de uso dentro do espazo de datos.",
+          "Que se abordará na sesión?",
+          "▸ Proceso de adhesión ao espazo de datos.",
+          "▸ Cumprimentación do formulario de adhesión.",
+          "▸ Reunión inicial de análise de necesidades e oportunidades.",
+          "▸ Formalización da incorporación mediante acordo de participación.",
+          "▸ Requisitos técnicos e proceso de instalación de conectores.",
+          "▸ Integración e negociación para o intercambio de datos con outros participantes.",
+          "▸ Servizos e capacidades dispoñibles para as entidades adheridas.",
+          "▸ Casos de uso e demostración práctica de ferramentas do ecosistema.",
+          "▸ Exemplo dun ciclo completo de participación dentro de OneHealth DataSpace.",
+          "Que vantaxes ofrece participar en OneHealth DataSpace?",
+          "▸ Compartir e consumir datos de forma segura, interoperable e gobernada.",
+          "▸ Acceder a servizos avanzados de procesamento, análise e intelixencia artificial.",
+          "▸ Aproveitar as capacidades de computación de altas prestacións proporcionadas polo CESGA.",
+          "▸ Impulsar a posta en marcha de proxectos e casos de uso colaborativos.",
+          "Como e cando se aplica?",
+          "▸ Os coñecementos adquiridos poden aplicarse desde o primeiro contacto co proxecto.",
+          "▸ Facilitan a incorporación de novas entidades ao ecosistema.",
+          "▸ Favorecen o desenvolvemento de iniciativas colaborativas dentro de OneHealth DataSpace.",
+          "A quen vai dirixido?",
+          "Dirixido a:",
+          "▸ Empresas, centros tecnolóxicos, universidades e organismos públicos.",
+          "▸ Entidades sanitarias e organizacións vinculadas ao ámbito One Health.",
+          "▸ Investigadores, profesionais e calquera persoa interesada en coñecer as posibilidades de participación en OneHealth DataSpace.",
+          "📅 Data: 26 de xuño de 2026",
+          "🕚 Hora: 11:00",
+          "📍 Modalidade: En liña",
+          "🎓 Instrutores:",
+          "▸ Marta Castiñeira",
+          "▸ Ledicia Díaz",
+          "▸ Miguel Carmena",
+          "📺 O vídeo da sesión estará dispoñible posteriormente na canle de YouTube do CESGA (@CesgaTV).",
+          "🔗 Próximos cursos: https://dataspace.cesga.es/gl/events",
+          "⚠️ A inscrición é obrigatoria para conectarse á sesión e recibir o certificado de participación.",
+          "⚠️ Recoméndase utilizar Mozilla Firefox."
+        ],
+        "extra": "Acceso e inscrición"
+      },
+      "miniEncuentroLugo": {
+        "header": "Mini Encontros OneHealth DataSpace – Lugo",
+        "excerpt": "Encontro pechado no iTERRA para coñecer as capacidades de OneHealth DataSpace, identificar necesidades de investigación e explorar oportunidades de colaboración baixo o enfoque One Health.",
+        "description": [
+          "O vindeiro xoves 9 de xullo, OneHealth DataSpace celebrará, de 12 a 13h, un dos seus Mini Encontros no Instituto de Investigación en Saúde Global e Desenvolvemento Sostible (iTERRA).",
+          "Desde o Centro de Supercomputación de Galicia (CESGA), convidámoste a este encontro para coñecer as posibilidades que ofrece OneHealth DataSpace e a súa futura evolución cara á 1HealthAI Factory, así como aquelas capacidades que poderían ser de interese para o teu grupo de investigación.",
+          "Que propoñemos?",
+          "Un encontro dunha hora pensado para coñecernos, analizar as necesidades de cada proxecto e construír solucións xuntos.",
+          "Comezaremos presentando en que consiste OneHealth DataSpace e as súas posibilidades.",
+          "A maior parte do tempo estará dedicada a conversar: que retos ten o teu grupo?, como podemos axudarvos desde o CESGA e desde OneHealth DataSpace?",
+          "A quen vai dirixido?",
+          "▸ Grupos de investigación no ámbito da saúde humana.",
+          "▸ Grupos de investigación en saúde animal e medioambiental.",
+          "▸ Equipos interesados en impulsar as súas investigacións baixo o enfoque One Health.",
+          "Máis que datos. Convertimos os datos en coñecemento accionable.",
+          "OneHealth DataSpace ofrece ás entidades participantes un ciclo completo de traballo sobre os datos: integración, intercambio, procesamento avanzado, análise, execución de modelos e almacenamento de resultados, sen perder en ningún momento o control sobre eles.",
+          "📍 Instituto de Investigación en Saúde Global e Desenvolvemento Sostible (iTERRA)",
+          "📅 Xoves 9 de xullo de 2026",
+          "🕛 De 12 a 13h",
+          "⚠️ Aforo limitado."
+        ],
+        "extra": "Inscrición previa"
+      },
+      "encuentroPresentacionResultados": {
+        "header": "OneHealth DataSpace – Encontro de Presentación de Resultados",
+        "excerpt": "Encontro no CIMUS (Santiago de Compostela) para presentar os principais resultados de OneHealth DataSpace, os seus casos de uso e as oportunidades de futuro que abre esta iniciativa, antesala da 1HealthAI Factory.",
+        "description": [
+          "O vindeiro mércores 22 de xullo, o CESGA celebra no CIMUS (Centro Singular de Investigación en Medicina Molecular e Enfermidades Crónicas) de Santiago de Compostela o Encontro de Presentación de Resultados do proxecto OneHealth DataSpace.",
+          "Durante a xornada presentaranse os principais resultados do proxecto, algúns dos seus casos de uso e as oportunidades de futuro que abre esta iniciativa, antesala da futura 1HealthAI Factory. Ademais, darase a coñecer o Espazo Nacional de Datos de Saúde e o Espazo Europeo de Datos de Saúde.",
+          "Ao longo destes dous anos de traxectoria, OneHealth DataSpace impulsou a compartición e explotación segura de datos baixo o enfoque One Health, conectando entidades dos ámbitos da saúde humana, animal e medioambiental, xa sexan universidades, centros de investigación ou empresas, mediante capacidades avanzadas de HPC, Big Data, Cloud e Intelixencia Artificial.",
+          "Programa provisional",
+          "11:00h. Apertura institucional",
+          "▸ Carmen Cotelo Queijo, Directora de GAIN.",
+          "▸ Mabel Loza, Directora Científica do CIMUS.",
+          "▸ Ignacio López Cabido, Xerente do CESGA.",
+          "11:15h. Presentación do Espazo Nacional de Datos de Saúde (ENDS)",
+          "▸ Manuel Brocos, Dirección Xeral do Dato (SEDIA).",
+          "11:35h. Presentación do European Health Data Space (EHDS)",
+          "12:00h. Presentación de Resultados de OneHealth DataSpace",
+          "13:00h. Casos de uso de OneHealth DataSpace",
+          "13:30h. OneHealth DataSpace como punto de partida cara á 1HealthAI Factory",
+          "📍 Salón de Actos do Centro Singular de Investigación en Medicina Molecular e Enfermidades Crónicas (CIMUS), Santiago de Compostela.",
+          "📅 Mércores 22 de xullo de 2026",
+          "🕚 11:00h – 13:30h"
+        ],
+        "extra": "Inscrición"
+      },
+      "miniEncuentroACoruna": {
+        "header": "Mini Encontros OneHealth DataSpace – A Coruña",
+        "excerpt": "Encontro na Aula 1 do Hospital Materno Infantil (INIBIC, A Coruña) para coñecer as capacidades de OneHealth DataSpace, identificar necesidades de investigación e explorar oportunidades de colaboración baixo o enfoque One Health.",
+        "description": [
+          "O vindeiro mércores 8 de xullo, ás 12h, OneHealth DataSpace celebrará na Aula 1, primeira planta do Hospital Materno Infantil, no Instituto de Investigación Biomédica da Coruña (INIBIC), un dos seus Mini Encontros.",
+          "Desde o Centro de Supercomputación de Galicia (CESGA), convidámoste a este encontro para coñecer as posibilidades que ofrece OneHealth DataSpace e a súa futura evolución cara á 1HealthAI Factory, así como aquelas capacidades que poderían ser de interese para o teu grupo de investigación.",
+          "Que propoñemos?",
+          "Un encontro dunha hora pensado para coñecernos, analizar as necesidades de cada proxecto e construír solucións xuntos.",
+          "Comezaremos presentando en que consiste OneHealth DataSpace e as súas posibilidades.",
+          "A maior parte do tempo estará dedicada a conversar: que retos ten o teu grupo?, como podemos axudarvos desde o CESGA e desde OneHealth DataSpace?",
+          "A quen vai dirixido?",
+          "▸ Grupos de investigación no ámbito da saúde humana.",
+          "▸ Grupos de investigación en saúde animal e medioambiental.",
+          "▸ Equipos interesados en impulsar as súas investigacións baixo o enfoque One Health.",
+          "Máis que datos. Convertimos os datos en coñecemento accionable.",
+          "OneHealth DataSpace ofrece ás entidades participantes un ciclo completo de traballo sobre os datos One Health (enfoque que integra a saúde humana, animal e medioambiental como unha soa saúde): integración, intercambio, procesamento avanzado, análise, execución de modelos e almacenamento de resultados, sen perder en ningún momento o control sobre eles.",
+          "📍 Instituto de Investigación Biomédica da Coruña (INIBIC). Hospital Materno Infantil. Aula 1, 1ª planta.",
+          "📅 Mércores 8 de xullo de 2026",
+          "🕛 De 12 a 13h",
+          "⚠️ Aforo limitado."
+        ],
+        "extra": "Inscrición previa"
       }
     }
   },
@@ -1754,9 +1907,9 @@
               }
             ]
           },
-          "celiaspace_senior_conversations": {
-            "name": "celiaspace_senior_conversations",
-            "description": "Conjunto de datos extraídos de conversaciones entre personas mayores y un asistente IA orientado al acompañamiento, entretenimiento y cuidado de este colectivo. Incluye información de usuarios, interacciones con el asistente y evaluaciones cognitivas y de desempeño. Volumen actual: 67 usuarios, 21.608 interacciones y 2.526 evaluaciones.",
+          "interactions": {
+            "name": "Interaccións das conversacións",
+            "description": "Este ficheiro contén información sobre 21.608 interaccións de conversacións dos 67 usuarios cun asistente IA.",
             "metadata": {
               "data_type": "Empírico",
               "data_standard": "-",
@@ -1768,22 +1921,70 @@
             },
             "variables": [
               {
-                "name": "perfil_usuario",
+                "name": "user_id",
                 "units": "-",
-                "data_description": "Información demográfica y de perfil del usuario, pseudoanonimizada en origen.",
-                "data_type": "CSV"
+                "data_description": "Identificador anonimizado do usuario.",
+                "data_type": "number"
               },
               {
-                "name": "interacciones",
+                "name": "session_uuid",
                 "units": "-",
-                "data_description": "Registro de 21.608 interacciones entre usuarios y el asistente IA.",
-                "data_type": "CSV"
+                "data_description": "Identificador UUID v1 da sesión.",
+                "data_type": "string"
               },
               {
-                "name": "evaluaciones",
+                "name": "session_start",
+                "units": "Timestamp",
+                "data_description": "Timestamp Unix de 13 díxitos que indica o inicio da sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "session_end",
+                "units": "Timestamp",
+                "data_description": "Timestamp Unix de 13 díxitos que indica o fin da sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "interaction_timestamp",
+                "units": "Data e hora",
+                "data_description": "Timestamp rexistrado cando a interacción se almacena tras o procesamento.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "category",
                 "units": "-",
-                "data_description": "2.526 evaluaciones cognitivas y de desempeño realizadas durante las sesiones.",
-                "data_type": "CSV"
+                "data_description": "Categoría de resposta: local, de base de datos ou xerada por IA xenerativa.",
+                "data_type": "string"
+              },
+              {
+                "name": "intent",
+                "units": "-",
+                "data_description": "Intención detectada na interacción.",
+                "data_type": "string"
+              },
+              {
+                "name": "input_mode",
+                "units": "-",
+                "data_description": "Modo de entrada do usuario. Opcións: [button-click, event, speech-to-text, text].",
+                "data_type": "string"
+              },
+              {
+                "name": "input_text",
+                "units": "-",
+                "data_description": "Texto de entrada do usuario (escrito ou transcrición no caso de voz).",
+                "data_type": "string"
+              },
+              {
+                "name": "output_mode",
+                "units": "-",
+                "data_description": "Modo de saída do asistente. Opcións: [read, text-to-speech].",
+                "data_type": "string"
+              },
+              {
+                "name": "messages",
+                "units": "-",
+                "data_description": "Mensaxes enviadas polo asistente nunha única interacción.",
+                "data_type": "string"
               }
             ]
           }
@@ -4113,7 +4314,7 @@
     "data_description": "Descrición dos datos",
     "entidad_promotora": "Entidade promotora",
     "categories": {
-      "all": "Todos",
+      "all": "OneHealth",
       "human": "Saúde humana",
       "animal": "Saúde animal",
       "environmental": "Saúde medioambiental"
@@ -4124,7 +4325,7 @@
       "title": "Blog",
       "description": "Mantente informado sobre todas as novas"
     },
-    "title": "Novidades do centro demostrador",
+    "title": "Novas",
     "subtitle": "Novas",
     "lead": "Mantente ao tanto dos últimos avances e descubre como estamos impulsando a compartición de datos segura, interoperable e multisectorial",
     "learnMore": "Máis información",
@@ -4211,7 +4412,7 @@
       "title": "Estás interesado en solicitar o Kit?",
       "description": "Cubre este formulario como mostra de interese e contactarémoste o antes posible.",
       "button": "Cubrir formulario de interese",
-      "formLink": "https://forms.office.com/r/mGvvF5qe4k"
+      "formLink": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=R5ZY0bQ3n0O0XEaqtYBirpuP0cRaTKVPru3-n4Kp6ABUMUw3TEU0SUZBTk5VMDNIUlY5N0xSWTI1OC4u&route=shorturl"
     },
     "visual": {
       "video": {

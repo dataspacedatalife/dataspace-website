@@ -31,7 +31,6 @@ export default function FAQClient() {
     { q: t('question17'), a: t('answer17') },
     { q: t('question18'), a: t('answer18') },
     { q: t('question19'), a: t('answer19') },
-
   ];
 
   return (
@@ -54,7 +53,7 @@ export default function FAQClient() {
             href="https://xdatashare.srv.cesga.es/static/files/Manual_de_Usuario-MVD.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 rounded-lg text-white font-semibold bg-[#009AB8] shadow-lg hover:scale-105 transition"
+            className="inline-flex items-center rounded-lg bg-[#009AB8] px-8 py-4 font-semibold text-white shadow-lg transition hover:scale-105"
           >
             {t('link')}
           </a>
@@ -67,10 +66,9 @@ export default function FAQClient() {
             {faqs.map((item, i) => (
               <div
                 key={i}
-                className={`pb-6 ${i !== faqs.length - 1
-                    ? 'border-b border-gray-200'
-                    : ''
-                  }`}
+                className={`pb-6 ${
+                  i !== faqs.length - 1 ? 'border-b border-gray-200' : ''
+                }`}
               >
                 <h3 className="text-2xl font-bold text-[#009AB8]">
                   {item.q}

@@ -139,21 +139,25 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
   ];
 
   const techLinks = [
-    { href: 'https://dashboard.dataspace.cesga.es/', label: t('dashboard'), external: true },
     { href: 'https://dl-cesga.srv.cesga.es/', label: t('share'), external: true },
     { href: 'https://hpc.dataspace.cesga.es/', label: t('compute'), external: true },
     { href: 'https://bigdata.dataspace.cesga.es/', label: t('analyze'), external: true },
     { href: 'https://storage.dataspace.cesga.es/', label: t('store'), external: true },
     { href: 'https://cloud.dataspace.cesga.es/', label: t('deliver'), external: true },
-    { href: 'https://dspacer-cesga.es/portal', label: t('dspacer'), external: true },
     
   ];
 
   const aboutLinks = [
     { href: '/about', label: t('saber_mas') },
     { href: '/what', label: t('que_es_un_espacio') },
+     { href: 'https://dspacer-cesga.es/portal', label: t('dspacer'), external: true },
     { href: '/team', label: t('el_equipo') },
     { href: '/faq', label: t('preguntas_frecuentes') },
+  ];
+
+  const joinLinks = [
+    { href: '/how', label: t('adhesion') },
+    { href: '/kitEdD', label: t('kit') },
   ];
 
   const latestLinks = [
@@ -215,7 +219,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
         ))}
 
         <div className="relative group flex">
-          <Link href="/how" className={navItemClass}>
+          <Link href="/events" className={navItemClass}>
             {t('latest')}
             <ChevronUp className="ml-0.5 h-4 w-4 rotate-180 transition-transform duration-300 group-hover:rotate-0" />
           </Link>
