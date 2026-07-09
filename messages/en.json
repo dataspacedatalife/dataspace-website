@@ -2,9 +2,12 @@
   "home": {
     "hero": {
       "title": "One Health Data Space Demonstrator Center",
-      "subtitle": "A data space that enables you to share, process, store, analyze, and publish your data while maintaining full control over it.\nDesigned for human, animal, and environmental health data.",
+      "subtitle": "A platform that enables you to share, process, store, analyze, and publish your data while maintaining full control over it.",
       "learnMore": "Learn more",
-      "access": "Access"
+      "access": "Access",
+      "graphTagline": "Secure. Trusted. Interoperable.",
+      "graphControl": "You stay in control of your data",
+      "governance": "Governance & trust"
     },
     "services": {
       "title": "More than data",
@@ -14,7 +17,27 @@
       "analyze": "Turn data into useful knowledge",
       "store": "Secure management of large volumes of data",
       "deliver": "Publish services and data results",
-      "cta": "Go to service"
+      "cta": "Go to service",
+      "next": "Next",
+      "join": "Join us",
+      "stepLabel": "Service",
+      "whatLabel": "What it is",
+      "exampleLabel": "Example",
+      "shareWhat": "A service for exchanging datasets between organisations in a sovereign way: each entity decides who accesses its data, for what purposes and under which conditions.",
+      "shareExample": "A hospital shares anonymised clinical data with a veterinary research group to study antibiotic resistance.",
+      "computeWhat": "Access to CESGA supercomputing to run intensive workloads: simulations, AI model training or genomic processing.",
+      "computeExample": "A team trains an outbreak-prediction model combining environmental and health data on the HPC cluster.",
+      "analyzeWhat": "Big Data and analytics tools to explore the data space and turn it into indicators, visualisations and actionable knowledge.",
+      "analyzeExample": "Cross-referencing water-quality data with zoonosis cases to detect risk patterns in a region.",
+      "storeWhat": "Secure, scalable storage for large data volumes, with access control and traceability throughout the whole lifecycle.",
+      "storeExample": "A university deposits years of historical environmental sensor series for reuse in new projects.",
+      "deliverWhat": "Cloud infrastructure to publish results as services: APIs, dashboards or applications accessible to other participants.",
+      "deliverExample": "A centre publishes an epidemiological dashboard that other entities consult in real time."
+    },
+    "outro": {
+      "title": "More than data",
+      "text": "Health, research and business entities are already building use cases on OneHealth DataSpace.",
+      "cta": "Explore the catalogue"
     }
   },
   "Navbar": {
@@ -981,7 +1004,7 @@
         ],
         "extra": "Access and registration"
       },
-       "miniencuentros": {
+      "miniencuentros": {
         "header": "OneHealth DataSpace Mini Meetings – Santiago de Compostela",
         "excerpt": "In-person meeting to discover the capabilities of OneHealth DataSpace, identify research needs, and explore collaboration opportunities under the One Health approach.",
         "description": [
@@ -1125,7 +1148,6 @@
         ],
         "extra": "Pre-registration"
       }
-
     }
   },
   "catalog": {
@@ -1910,87 +1932,6 @@
                 "units": "-",
                 "data_description": "Assessment result or score.",
                 "data_type": "number"
-              }
-            ]
-          },
-          "interactions": {
-            "name": "Conversation Interactions",
-            "description": "This file contains information about 21,608 interactions from conversations from the 67 users with an AI assistant.",
-            "metadata": {
-              "data_type": "Empirical",
-              "data_standard": "",
-              "date_added": "",
-              "file_format": "CSV",
-              "license": "Proprietary (restricted under contract)",
-              "temporal_resolution": "Event",
-              "temporal_coverage": ""
-            },
-            "variables": [
-              {
-                "name": "user_id",
-                "units": "-",
-                "data_description": "Anonymized user identifier.",
-                "data_type": "number"
-              },
-              {
-                "name": "session_uuid",
-                "units": "-",
-                "data_description": "UUID v1 session identifier.",
-                "data_type": "string"
-              },
-              {
-                "name": "session_start",
-                "units": "Timestamp",
-                "data_description": "13-digit Unix epoch timestamp indicating milliseconds passed since session start.",
-                "data_type": "datetime"
-              },
-              {
-                "name": "session_end",
-                "units": "Timestamp",
-                "data_description": "13-digit Unix epoch timestamp indicating milliseconds passed since session end.",
-                "data_type": "datetime"
-              },
-              {
-                "name": "interaction_timestamp",
-                "units": "Date and time",
-                "data_description": "Timestamp captured when the interaction is stored after backend processing.",
-                "data_type": "datetime"
-              },
-              {
-                "name": "category",
-                "units": "-",
-                "data_description": "Response category: local, from the database, or generated by generative AI.",
-                "data_type": "string"
-              },
-              {
-                "name": "intent",
-                "units": "-",
-                "data_description": "Detected intent.",
-                "data_type": "string"
-              },
-              {
-                "name": "input_mode",
-                "units": "-",
-                "data_description": "User input mode. Options: [button-click, event, speech-to-text, text].",
-                "data_type": "string"
-              },
-              {
-                "name": "input_text",
-                "units": "-",
-                "data_description": "User input text (written text or transcription in case of voice).",
-                "data_type": "string"
-              },
-              {
-                "name": "output_mode",
-                "units": "-",
-                "data_description": "Assistant output mode. Options: [read, text-to-speech].",
-                "data_type": "string"
-              },
-              {
-                "name": "messages",
-                "units": "-",
-                "data_description": "Messages sent by the assistant in a single interaction.",
-                "data_type": "string"
               }
             ]
           },
