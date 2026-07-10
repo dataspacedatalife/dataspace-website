@@ -62,7 +62,10 @@ export function CatalogoDeDatos() {
       <Container className="mt-16 pb-24">
         <div className="flex gap-2 flex-wrap mb-8">
   <button
-    onClick={() => setCategoryFilter('all')}
+    onClick={() => {
+      setCategoryFilter('all');
+      setPage(1);
+    }}
     className={`px-3 py-1 rounded-full text-xs border ${
       categoryFilter === 'all'
         ? 'bg-gray-900 text-white'
@@ -75,7 +78,10 @@ export function CatalogoDeDatos() {
   {(['human', 'animal', 'environmental'] as HealthCategory[]).map((cat) => (
     <button
       key={cat}
-      onClick={() => setCategoryFilter(cat)}
+      onClick={() => {
+        setCategoryFilter(cat);
+        setPage(1);
+      }}
       className={`px-3 py-1 rounded-full text-xs border ${
         categoryFilter === cat
           ? CATEGORY_STYLES[cat]
@@ -140,11 +146,13 @@ function DatasetList({
             >
               {/* Imagen */}
               {dataset.imagen && (
-                <div className="flex-shrink-0 w-24 h-24 sm:w-32 sm:h-32 mr-6 mb-4 sm:mb-0">
+                <div className="relative flex-shrink-0 w-24 h-24 sm:w-32 sm:h-32 mr-6 mb-4 sm:mb-0">
                   <Image
                     src={dataset.imagen}
                     alt={t(`catalog.datasets.${dataset.id}.name`)}
-                    className="object-contain w-full h-full rounded-lg"
+                    fill
+                    sizes="(min-width: 640px) 8rem, 6rem"
+                    className="object-contain rounded-lg"
                   />
                 </div>
               )}
