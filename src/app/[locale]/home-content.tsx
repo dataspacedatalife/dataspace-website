@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
@@ -287,18 +287,7 @@ function arcPath(a1: number, a2: number, r: number) {
 function DataSpaceWheel() {
   const t = useTranslations('home.hero');
   const services = useServicesData();
-  const [active, setActive] = useState(0);
-  const [hovering, setHovering] = useState(false);
-
-  // rotación automática del nodo activo (se pausa al pasar el ratón)
-  useEffect(() => {
-    if (hovering) return;
-    const id = setInterval(
-      () => setActive((a) => (a + 1) % services.length),
-      3500,
-    );
-    return () => clearInterval(id);
-  }, [hovering, services.length]);
+  const [active, setActive] = useState<number | null>(null);
 
   // clic en nodo → scroll al servicio correspondiente
   function goToService(i: number) {
@@ -322,11 +311,7 @@ function DataSpaceWheel() {
   const GAP = 20; // grados de hueco alrededor de cada nodo
 
   return (
-    <div
-      className="w-full max-w-[max(460px,min(580px,calc(100vh_-_240px)))] select-none pt-5"
-      onMouseEnter={() => setHovering(true)}
-      onMouseLeave={() => setHovering(false)}
-    >
+    <div className="w-full max-w-[max(460px,min(580px,calc(100vh_-_240px)))] select-none pt-5">
       <style>{`
         @keyframes dashFlow { to { stroke-dashoffset: -24; } }
         .flow-arc { animation: dashFlow 2.4s linear infinite; }
@@ -397,22 +382,58 @@ function DataSpaceWheel() {
           {t('governance')}
         </span>
 
-        {/* centro: OneHealth DataSpace */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-[52%] rounded-full border border-[#009AB8]/25 bg-gradient-to-b from-white to-cyan-50 shadow-xl shadow-cyan-900/10 flex flex-col items-center justify-center text-center px-6">
-          <p
-            className="gradient-text font-semibold leading-none"
-            style={{ fontFamily: HEADING, fontSize: 'clamp(1.5rem, 4vw, 2rem)' }}
-          >
-            OneHealth
-            <br />
-            DataSpace
-          </p>
-          <p className="mt-2 text-[11px] sm:text-xs font-bold text-slate-700">
-            {t('graphTagline')}
-          </p>
-          <p className="mt-1 text-[10px] sm:text-[11px] text-slate-500">
-            {t('graphControl')}
-          </p>
+        {/* centro: OneHealth DataSpace / info del servicio activo */}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-[52%] rounded-full border border-[#009AB8]/25 bg-gradient-to-b from-white to-cyan-50 shadow-xl shadow-cyan-900/10 flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+          <AnimatePresence mode="wait">
+            {active === null ? (
+              <motion.div
+                key="brand"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25 }}
+              >
+                <p
+                  className="gradient-text font-semibold leading-none"
+                  style={{
+                    fontFamily: HEADING,
+                    fontSize: 'clamp(1.5rem, 4vw, 2rem)',
+                  }}
+                >
+                  OneHealth
+                  <br />
+                  DataSpace
+                </p>
+                <p className="mt-2 text-[11px] sm:text-xs font-bold text-slate-700">
+                  {t('graphTagline')}
+                </p>
+                <p className="mt-1 text-[10px] sm:text-[11px] text-slate-500">
+                  {t('graphControl')}
+                </p>
+              </motion.div>
+            ) : (
+              <motion.div
+                key={active}
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -6 }}
+                transition={{ duration: 0.25 }}
+              >
+                <p
+                  className="font-semibold text-[#006b8f] leading-tight"
+                  style={{
+                    fontFamily: HEADING,
+                    fontSize: 'clamp(1.1rem, 2.6vw, 1.5rem)',
+                  }}
+                >
+                  {services[active].title}
+                </p>
+                <p className="mt-2 text-[11px] sm:text-xs text-slate-600 leading-relaxed">
+                  {services[active].text}
+                </p>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         {/* nodos de servicio */}
@@ -428,7 +449,9 @@ function DataSpaceWheel() {
               aria-label={s.title}
               onClick={() => goToService(i)}
               onMouseEnter={() => setActive(i)}
+              onMouseLeave={() => setActive(null)}
               onFocus={() => setActive(i)}
+              onBlur={() => setActive(null)}
               className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-1.5 cursor-pointer group"
               style={{ left: `${pos.x}%`, top: `${pos.y}%` }}
             >
@@ -454,25 +477,6 @@ function DataSpaceWheel() {
             </button>
           );
         })}
-      </div>
-
-      {/* leyenda del nodo activo */}
-      <div className="mt-5 h-12 text-center">
-        <AnimatePresence mode="wait">
-          <motion.p
-            key={active}
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.3 }}
-            className="text-sm text-slate-600 max-w-sm mx-auto"
-          >
-            <span className="font-semibold text-[#009AB8]">
-              {services[active].title}:
-            </span>{' '}
-            {services[active].text}
-          </motion.p>
-        </AnimatePresence>
       </div>
     </div>
   );
