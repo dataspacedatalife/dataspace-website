@@ -383,8 +383,8 @@ function DataSpaceWheel() {
         </span>
 
         {/* centro: OneHealth DataSpace / info del servicio activo */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-[52%] rounded-full border border-[#009AB8]/25 bg-gradient-to-b from-white to-cyan-50 shadow-xl shadow-cyan-900/10 flex flex-col items-center justify-center text-center px-6 overflow-hidden">
-          <AnimatePresence mode="wait">
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-[52%] rounded-full border border-[#009AB8]/25 bg-gradient-to-b from-white to-cyan-50 shadow-xl shadow-cyan-900/10 overflow-hidden">
+          <AnimatePresence>
             {active === null ? (
               <motion.div
                 key="brand"
@@ -392,6 +392,7 @@ function DataSpaceWheel() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.25 }}
+                className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
               >
                 <p
                   className="gradient-text font-semibold leading-none"
@@ -418,6 +419,7 @@ function DataSpaceWheel() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -6 }}
                 transition={{ duration: 0.25 }}
+                className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
               >
                 <p
                   className="font-semibold text-[#006b8f] leading-tight"
@@ -449,24 +451,25 @@ function DataSpaceWheel() {
               aria-label={s.title}
               onClick={() => goToService(i)}
               onMouseEnter={() => setActive(i)}
-              onMouseLeave={() => setActive(null)}
               onFocus={() => setActive(i)}
-              onBlur={() => setActive(null)}
               className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-1.5 cursor-pointer group"
               style={{ left: `${pos.x}%`, top: `${pos.y}%` }}
             >
               <span
-                className="flex items-center justify-center size-14 sm:size-16 rounded-full text-white shadow-lg transition-all duration-300 group-hover:scale-110"
-                style={{
-                  background: isActive
-                    ? 'linear-gradient(135deg, #00a8b8 0%, #006b8f 100%)'
-                    : '#009AB8',
-                  boxShadow: isActive
-                    ? '0 0 0 6px rgba(0,154,184,0.18), 0 10px 20px rgba(0,85,110,0.25)'
-                    : undefined,
-                }}
+                className="relative flex items-center justify-center size-14 sm:size-16 rounded-full text-white shadow-lg transition-transform duration-300 group-hover:scale-110"
+                style={{ background: '#009AB8' }}
               >
-                <Icon size={26} strokeWidth={1.6} />
+                <span
+                  className="absolute inset-0 rounded-full transition-opacity duration-300"
+                  style={{
+                    opacity: isActive ? 1 : 0,
+                    background:
+                      'linear-gradient(135deg, #00a8b8 0%, #006b8f 100%)',
+                    boxShadow:
+                      '0 0 0 6px rgba(0,154,184,0.18), 0 10px 20px rgba(0,85,110,0.25)',
+                  }}
+                />
+                <Icon size={26} strokeWidth={1.6} className="relative" />
               </span>
               <span
                 className="rounded-full bg-white/90 backdrop-blur px-2.5 py-0.5 text-[11px] sm:text-xs font-semibold transition-colors"
