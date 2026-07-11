@@ -3,6 +3,14 @@
 @theme {
   --font-sans: Roboto, system-ui, sans-serif;
   --font-heading: "Barlow Condensed", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-brand-200: #d6f8f1;
+  --color-brand-300: #3fd7c0;
+  --color-brand-400: #00b7d4;
+  --color-brand-500: #009ab8;
+  --color-brand-600: #007e9e;
+  --color-brand-700: #006b8f;
 
   --radius-4xl: 2rem;
 
@@ -17,5 +25,122 @@
   }
   100% {
     transform: translateX(var(--move-x-to));
+  }
+}
+
+/* ===== Home page ===== */
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    #3fd7c0 0%,
+    #00b7d4 35%,
+    #009ab8 65%,
+    #006b8f 100%
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 14s ease infinite;
+}
+
+.tech-dots-light {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.12) 1px,
+    transparent 1px
+  );
+  background-size: 30px 30px;
+}
+
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marqueeScroll 45s linear infinite;
+}
+
+.marquee-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+.marquee-mask:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* wheel: comet tracer orbiting the node ring */
+@keyframes cometOrbit {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+.comet-arc {
+  animation: cometOrbit 14s linear infinite;
+  filter: drop-shadow(0 0 1.2px rgba(0, 183, 212, 0.8));
+}
+
+/* wheel: governance ring dots crawling counter-clockwise */
+@keyframes dashDrift {
+  to {
+    stroke-dashoffset: 40;
+  }
+}
+
+.governance-ring {
+  animation: dashDrift 60s linear infinite;
+}
+
+/* hero: aurora blobs drifting */
+@keyframes auroraDrift {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(3%, 4%) scale(1.06);
+  }
+}
+
+.aurora-blob {
+  animation: auroraDrift 36s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gradient-text,
+  .marquee-track,
+  .comet-arc,
+  .governance-ring,
+  .aurora-blob {
+    animation: none;
   }
 }
