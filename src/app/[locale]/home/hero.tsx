@@ -108,9 +108,6 @@ export function Hero() {
         aria-label={t('learnMore')}
         className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-brand-700/70 hover:text-brand-700 transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700 rounded-full"
       >
-        <span className="text-[10px] tracking-[0.3em] uppercase font-mono">
-          Scroll
-        </span>
         <span className="flex items-start justify-center h-9 w-6 rounded-full border border-brand-500/30 pt-1.5">
           <motion.span
             animate={reduceMotion ? undefined : { y: [0, 5, 0] }}
