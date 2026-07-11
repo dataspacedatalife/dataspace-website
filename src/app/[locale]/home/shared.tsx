@@ -27,16 +27,16 @@ export const BRAND_GRADIENT =
 export const MONO = "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace";
 export const HEADING = "'Barlow Condensed', sans-serif";
 
-/* orden narrativo del ciclo de vida: entra → se procesa → se convierte
-   en conocimiento → vuelve como servicios */
+/* orden del ciclo de vida del dato: compartir (y obtener datos de otros) →
+   analizar (big data) → computar (HPC e IA) → exponer (cloud) */
 export function useServicesData(): ServiceItem[] {
   const t = useTranslations();
   const tS = useTranslations('home.services');
 
   const base = [
     { key: 'share', icon: Share2, href: 'https://dl-cesga.srv.cesga.es' },
-    { key: 'compute', icon: Cpu, href: 'https://hpc.dataspace.cesga.es' },
     { key: 'analyze', icon: Search, href: 'https://bigdata.dataspace.cesga.es/' },
+    { key: 'compute', icon: Cpu, href: 'https://hpc.dataspace.cesga.es' },
     { key: 'deliver', icon: CloudUpload, href: 'https://cloud.dataspace.cesga.es' },
   ] as const;
 

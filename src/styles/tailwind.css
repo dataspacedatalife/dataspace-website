@@ -98,9 +98,21 @@
   animation-play-state: paused;
 }
 
+/* wheel: dashes flowing clockwise around the lifecycle ring */
+@keyframes cycleFlow {
+  to {
+    stroke-dashoffset: -6;
+  }
+}
+
+.cycle-flow {
+  animation: cycleFlow 2.4s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .gradient-text,
-  .marquee-track {
+  .marquee-track,
+  .cycle-flow {
     animation: none;
   }
 }

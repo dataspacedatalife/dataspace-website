@@ -62,14 +62,10 @@ export function DataSpaceWheel() {
       ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  // nodos: arriba → derecha → abajo → izquierda (sentido horario, orden 01→04)
-  const angles = [-90, 0, 90, 180];
+  // posiciones del ciclo en sentido horario, según el orden del array
+  // [share, analyze, compute, deliver]: abajo → izquierda → arriba → derecha
+  const angles = [90, 180, -90, 0];
   const NODE_R = 38;
-
-  // "paquete de datos" que recorre el ciclo: cabeza brillante + estela
-  const cometHead = polar(50, 50, NODE_R, -90);
-  const cometTail = polar(50, 50, NODE_R, -90 - 70);
-  const cometPath = `M ${cometTail.x} ${cometTail.y} A ${NODE_R} ${NODE_R} 0 0 1 ${cometHead.x} ${cometHead.y}`;
 
   return (
     <motion.div
@@ -114,18 +110,6 @@ export function DataSpaceWheel() {
               <stop offset="0%" stopColor="#3fd7c0" />
               <stop offset="100%" stopColor="#006b8f" />
             </linearGradient>
-            {/* estela del paquete: opaca en la cabeza, se desvanece en la cola */}
-            <linearGradient
-              id="cometTrail"
-              gradientUnits="userSpaceOnUse"
-              x1={cometTail.x}
-              y1={cometTail.y}
-              x2={cometHead.x}
-              y2={cometHead.y}
-            >
-              <stop offset="0%" stopColor="#3fd7c0" stopOpacity="0" />
-              <stop offset="100%" stopColor="#3fd7c0" stopOpacity="0.9" />
-            </linearGradient>
           </defs>
 
           {/* límite tenue del envoltorio de confianza (sin trazo duro) */}
@@ -139,39 +123,32 @@ export function DataSpaceWheel() {
             strokeWidth="0.5"
           />
 
-          {/* pista base del flujo entre servicios */}
+          {/* pista base del ciclo entre servicios */}
           <circle
             cx="50"
             cy="50"
             r={NODE_R}
             fill="none"
             stroke="url(#ringGrad)"
-            strokeOpacity="0.1"
+            strokeOpacity="0.12"
             strokeWidth="0.5"
           />
 
-          {/* paquete de datos recorriendo el ciclo */}
-          <motion.g
-            style={{ transformOrigin: '50px 50px' }}
-            initial={{ rotate: 0 }}
-            animate={reduceMotion ? { rotate: 0 } : { rotate: 360 }}
-            transition={{ duration: 18, ease: 'linear', repeat: Infinity }}
-          >
-            <path
-              d={cometPath}
-              fill="none"
-              stroke="url(#cometTrail)"
-              strokeWidth="1.1"
-              strokeLinecap="round"
-            />
-            <circle
-              cx={cometHead.x}
-              cy={cometHead.y}
-              r="1.8"
-              fill="#5fe6d0"
-              style={{ filter: 'drop-shadow(0 0 1.6px rgba(0,183,212,0.9))' }}
-            />
-          </motion.g>
+          {/* anillo de flujo animado: el dato circulando por el ciclo
+              (sentido horario: compartir → analizar → computar → exponer) */}
+          <circle
+            className="cycle-flow"
+            cx="50"
+            cy="50"
+            r={NODE_R}
+            fill="none"
+            pathLength={100}
+            stroke="url(#ringGrad)"
+            strokeOpacity="0.75"
+            strokeWidth="1"
+            strokeDasharray="2 4"
+            strokeLinecap="round"
+          />
         </svg>
 
         {/* etiqueta de gobernanza sobre el aura */}
