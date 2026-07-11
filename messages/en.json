@@ -1,10 +1,10 @@
 {
   "home": {
     "hero": {
-      "title": "One Health Data Space Demonstrator Center",
-      "subtitle": "More than a data space: share your data with full control — and process, analyze and publish it on the same platform. The whole data lifecycle, in one place.",
+      "title": "Share, analyze and deliver data — in one trusted space",
+      "subtitle": "OneHealth DataSpace is more than a data space: process, analyze and publish your data on the same platform, with full control over the whole lifecycle.",
       "learnMore": "Learn more",
-      "access": "Access",
+      "access": "Access the platform",
       "graphTagline": "The whole data lifecycle. One platform.",
       "graphControl": "You stay in control of your data",
       "governance": "Governance & trust"

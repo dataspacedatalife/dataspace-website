@@ -4,23 +4,30 @@ import { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import {
   motion,
+  animate,
   AnimatePresence,
   useInView,
+  useMotionValue,
   useReducedMotion,
 } from 'motion/react';
 import { ArrowDown } from 'lucide-react';
 import { polar, useServicesData } from './shared';
 
-const CYCLE_MS = 8000;
+/* una vuelta completa del paquete de datos: 4 tramos de 7 s */
+const ORBIT_MS = 28000;
 
-/* paquete de datos que orbita el anillo: cabeza brillante + estela que se
-   atenúa por detrás (offsets angulares negativos = van a la zaga) */
+/* el paquete arranca 40° antes de "comparte" para que la tarjeta de marca
+   se lea unos segundos antes de la primera activación */
+const START_ANGLE = 50;
+
+/* paquete de datos que orbita el anillo: cabeza brillante + estela corta y
+   compacta que se atenúa por detrás (offsets angulares negativos) */
 const DATA_PACKET = [
   { d: 0, r: 2.6, op: 1, head: true },
-  { d: -13, r: 2, op: 0.55, head: false },
-  { d: -26, r: 1.5, op: 0.32, head: false },
-  { d: -40, r: 1.1, op: 0.18, head: false },
-  { d: -55, r: 0.8, op: 0.1, head: false },
+  { d: -5, r: 2, op: 0.55, head: false },
+  { d: -11, r: 1.5, op: 0.32, head: false },
+  { d: -18, r: 1.1, op: 0.18, head: false },
+  { d: -26, r: 0.8, op: 0.1, head: false },
 ];
 
 /* ============ HERO: RUEDA INTERACTIVA DEL DATASPACE ============ */
@@ -30,31 +37,66 @@ export function DataSpaceWheel() {
   const reduceMotion = useReducedMotion();
 
   const containerRef = useRef<HTMLDivElement>(null);
+  const packetRef = useRef<SVGGElement>(null);
   const inView = useInView(containerRef, { amount: 0.4 });
 
   const [active, setActive] = useState<number | null>(null);
   const [hovering, setHovering] = useState(false);
-  const [started, setStarted] = useState(false);
+  const [focused, setFocused] = useState(false);
 
-  // arranque del ciclo automático: solo tras entrar en pantalla,
-  // con margen para leer primero la tarjeta de marca
+  /* un único reloj para el paquete y el resaltado: el ángulo de órbita */
+  const angle = useMotionValue(START_ANGLE);
+  const animRef = useRef<ReturnType<typeof animate> | null>(null);
+  const lastSegRef = useRef(3); // tramo previo a la primera llegada
+  const idleRef = useRef(true); // tarjeta de marca hasta la próxima llegada
+
+  /* el paquete gira y, al llegar a un nodo, ese servicio se activa y se
+     mantiene mientras recorre su tramo de salida */
   useEffect(() => {
-    if (!inView || started) return;
-    const id = setTimeout(() => setStarted(true), 2500);
-    return () => clearTimeout(id);
-  }, [inView, started]);
+    return angle.on('change', (a) => {
+      const el = packetRef.current;
+      if (el) el.style.transform = `rotate(${a}deg)`;
 
-  const cycling = started && inView && !hovering && !reduceMotion;
+      // tramos de 90°: comparte [90,180) · analiza [180,270) ·
+      // computa [270,360) · expón [0,90)
+      const seg = Math.floor((((a % 360) - 90 + 360) % 360) / 90);
+      if (seg !== lastSegRef.current) {
+        lastSegRef.current = seg;
+        idleRef.current = false;
+        setActive(seg);
+      }
+    });
+  }, [angle]);
 
   useEffect(() => {
-    if (!cycling) return;
-    const id = setInterval(() => {
-      setActive((a) =>
-        a === null ? 0 : a === services.length - 1 ? null : a + 1,
-      );
-    }, CYCLE_MS);
-    return () => clearInterval(id);
-  }, [cycling, services.length]);
+    if (!inView || reduceMotion) return;
+    const controls = animate(angle, angle.get() + 360, {
+      duration: ORBIT_MS / 1000,
+      ease: 'linear',
+      repeat: Infinity,
+      repeatType: 'loop',
+    });
+    animRef.current = controls;
+    return () => {
+      controls.stop();
+      animRef.current = null;
+    };
+  }, [inView, reduceMotion, angle]);
+
+  /* ratón o foco de teclado sobre la rueda: la órbita espera */
+  const interacting = hovering || focused;
+  useEffect(() => {
+    const controls = animRef.current;
+    if (!controls) return;
+    if (interacting) controls.pause();
+    else controls.play();
+  }, [interacting]);
+
+  /* al salir, vuelve la tarjeta de marca hasta la siguiente llegada */
+  function rest() {
+    setActive(null);
+    idleRef.current = true;
+  }
 
   // clic en nodo → scroll al servicio correspondiente
   function goToService(i: number) {
@@ -77,6 +119,10 @@ export function DataSpaceWheel() {
   const angles = [90, 180, -90, 0];
   const NODE_R = 38;
 
+  /* la etiqueta de gobernanza vive en la diagonal superior derecha del aura,
+     entre computa y expón, donde no hay nodos */
+  const govPos = polar(50, 50, 47, -55);
+
   return (
     <motion.div
       ref={containerRef}
@@ -88,7 +134,14 @@ export function DataSpaceWheel() {
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => {
         setHovering(false);
-        setActive(null);
+        rest();
+      }}
+      onFocusCapture={() => setFocused(true)}
+      onBlurCapture={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node | null)) {
+          setFocused(false);
+          rest();
+        }
       }}
       className="w-full max-w-[max(460px,min(580px,calc(100vh_-_240px)))] select-none pt-5"
     >
@@ -157,10 +210,11 @@ export function DataSpaceWheel() {
 
           {/* paquete de datos circulando por el ciclo entre servicios
               (sentido horario: compartir → analizar → computar → exponer).
-              La cabeza brillante lleva una estela que se desvanece detrás. */}
+              Su llegada a cada nodo es la que activa ese servicio. */}
           <g
-            className="data-orbit"
+            ref={packetRef}
             style={{
+              transform: `rotate(${START_ANGLE}deg)`,
               transformBox: 'view-box',
               transformOrigin: '50px 50px',
             }}
@@ -183,7 +237,10 @@ export function DataSpaceWheel() {
         </svg>
 
         {/* etiqueta de gobernanza sobre el aura */}
-        <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full border border-brand-500/30 bg-white/90 backdrop-blur px-3 py-1 text-[10px] tracking-[0.2em] uppercase text-brand-700 whitespace-nowrap font-mono">
+        <span
+          className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full border border-brand-500/30 bg-white/90 backdrop-blur px-2 sm:px-3 py-1 text-[8px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-700 whitespace-nowrap font-mono"
+          style={{ left: `${govPos.x}%`, top: `${govPos.y}%` }}
+        >
           {t('governance')}
         </span>
 
@@ -218,13 +275,15 @@ export function DataSpaceWheel() {
                 </p>
               </motion.div>
             ) : (
-              <motion.div
+              <motion.button
                 key={active}
+                type="button"
+                onClick={() => goToService(active)}
                 initial={{ opacity: 0, y: 8, scale: 0.97 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -8, scale: 0.97 }}
                 transition={{ type: 'spring', stiffness: 260, damping: 26 }}
-                className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
+                className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-brand-700 rounded-full"
               >
                 {(() => {
                   const ActiveIcon = services[active].icon;
@@ -254,7 +313,7 @@ export function DataSpaceWheel() {
                   className="mt-2 text-brand-500/70"
                   aria-hidden="true"
                 />
-              </motion.div>
+              </motion.button>
             )}
           </AnimatePresence>
         </div>
@@ -273,7 +332,6 @@ export function DataSpaceWheel() {
               onClick={() => goToService(i)}
               onMouseEnter={() => setActive(i)}
               onFocus={() => setActive(i)}
-              onBlur={() => setActive(null)}
               initial={{ opacity: 0, scale: 0.6 }}
               animate={{ opacity: 1, scale: 1 }}
               whileHover={{ scale: 1.07 }}
@@ -287,7 +345,7 @@ export function DataSpaceWheel() {
               className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-1.5 cursor-pointer group rounded-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-700"
               style={{ left: `${pos.x}%`, top: `${pos.y}%` }}
             >
-              <span className="relative flex items-center justify-center size-14 sm:size-16">
+              <span className="relative flex items-center justify-center size-12 sm:size-16">
                 {/* halo difuso */}
                 <span
                   className="absolute -inset-1.5 rounded-full bg-brand-400/20 blur-md transition-opacity duration-300"
@@ -327,7 +385,7 @@ export function DataSpaceWheel() {
                 />
               </span>
               <span
-                className="rounded-full bg-white/85 backdrop-blur-md px-2.5 py-0.5 text-[11px] sm:text-xs font-semibold transition-all"
+                className="rounded-full bg-white/85 backdrop-blur-md px-2.5 py-0.5 text-[10px] sm:text-xs font-semibold transition-all"
                 style={{
                   color: isActive ? '#006b8f' : '#009ab8',
                   // el anillo se refuerza al activarse
@@ -343,21 +401,25 @@ export function DataSpaceWheel() {
         })}
       </div>
 
-      {/* indicador de posición en el ciclo (sin barrido, en calma) */}
-      <div
-        className="mt-7 flex items-center justify-center gap-2"
-        aria-hidden="true"
-      >
+      {/* indicador de posición en el ciclo, también seleccionable */}
+      <div className="mt-5 flex items-center justify-center gap-1">
         {services.map((s, i) => (
-          <span
+          <button
             key={s.key}
-            className="h-1.5 rounded-full transition-all duration-500 ease-out"
-            style={{
-              width: i === active ? '1.5rem' : '0.375rem',
-              backgroundColor:
-                i === active ? '#009ab8' : 'rgba(0,154,184,0.22)',
-            }}
-          />
+            type="button"
+            aria-label={s.title}
+            onClick={() => setActive(i)}
+            className="py-2 px-0.5 cursor-pointer rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700"
+          >
+            <span
+              className="block h-1.5 rounded-full transition-all duration-500 ease-out"
+              style={{
+                width: i === active ? '1.5rem' : '0.375rem',
+                backgroundColor:
+                  i === active ? '#009ab8' : 'rgba(0,154,184,0.22)',
+              }}
+            />
+          </button>
         ))}
       </div>
     </motion.div>

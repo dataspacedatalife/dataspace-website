@@ -1,10 +1,10 @@
 {
   "home": {
     "hero": {
-      "title": "Espacio de datos multisectorial One Health",
-      "subtitle": "Más que un espacio de datos: comparte tus datos con control total, y además procésalos, analízalos y publícalos en la misma plataforma. Todo el ciclo de vida del dato, en un solo lugar.",
+      "title": "Comparte, analiza y publica datos — en un mismo espacio de confianza",
+      "subtitle": "OneHealth DataSpace es más que un espacio de datos: procesa, analiza y publica tus datos en la misma plataforma, con control total durante todo el ciclo de vida.",
       "learnMore": "Saber más",
-      "access": "Acceder",
+      "access": "Accede a la plataforma",
       "graphTagline": "Todo el ciclo de vida del dato. Una plataforma.",
       "graphControl": "Tú mantienes el control de tus datos",
       "governance": "Gobernanza y confianza"
@@ -21,7 +21,7 @@
     },
     "services": {
       "title": "Más que datos",
-      "subtitle": "Todo lo que puedes hacer en OneHealth DataSpace",
+      "subtitle": "Un ciclo de vida operativo completo para el dato",
       "share": "Compartir datos de forma segura entre entidades",
       "compute": "Procesamiento avanzado de datos y HPC",
       "analyze": "Transformar datos en conocimiento útil",

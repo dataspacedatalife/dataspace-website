@@ -35,44 +35,29 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="relative max-w-7xl mx-auto px-6 py-10 min-h-[calc(100vh-95px)] flex items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
+      <div className="relative max-w-7xl mx-auto px-6 py-8 min-h-[calc(100vh-95px)] flex items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center w-full">
           <motion.div variants={container} initial="hidden" animate="show">
             <motion.h1
               variants={item}
               className="gradient-text font-heading"
               style={{
-                fontSize: 'clamp(3.25rem, 10vw, 6rem)',
+                fontSize: 'clamp(2.125rem, 5.5vw, 4.25rem)',
                 fontWeight: 500,
-                lineHeight: 1.05,
+                lineHeight: 1.08,
               }}
             >
-              OneHealth
-              <br />
-              DataSpace
+              {t('title')}
             </motion.h1>
 
             <motion.p
               variants={item}
-              className="mt-8 text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl whitespace-pre-line"
+              className="mt-6 md:mt-8 text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl whitespace-pre-line"
             >
               {t('subtitle')}
             </motion.p>
 
             <motion.div variants={item} className="flex flex-wrap gap-4 mt-10">
-              {/* Saber más → puente "por qué somos diferentes" */}
-              <button
-                type="button"
-                onClick={() => scrollToId('por-que')}
-                className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl border border-brand-500/40 text-brand-700 font-semibold bg-white/80 backdrop-blur ring-1 ring-inset ring-white/60 shadow-sm hover:border-brand-500 hover:bg-white transition cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700"
-              >
-                {t('learnMore')}
-                <ChevronDown
-                  size={18}
-                  className="transition-transform group-hover:translate-y-0.5"
-                />
-              </button>
-
               <a
                 href="https://dashboard.dataspace.cesga.es/"
                 target="_blank"
@@ -87,6 +72,19 @@ export function Hero() {
                 {t('access')}
                 <ArrowUpRight size={18} />
               </a>
+
+              {/* Saber más → puente "por qué somos diferentes" */}
+              <button
+                type="button"
+                onClick={() => scrollToId('por-que')}
+                className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl border border-brand-500/40 text-brand-700 font-semibold bg-white/80 backdrop-blur ring-1 ring-inset ring-white/60 shadow-sm hover:border-brand-500 hover:bg-white transition cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700"
+              >
+                {t('learnMore')}
+                <ChevronDown
+                  size={18}
+                  className="transition-transform group-hover:translate-y-0.5"
+                />
+              </button>
             </motion.div>
           </motion.div>
 
