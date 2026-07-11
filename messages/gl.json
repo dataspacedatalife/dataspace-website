@@ -2,12 +2,22 @@
   "home": {
     "hero": {
       "title": "Espazo de datos multisectorial One Health",
-      "subtitle": "Unha plataforma que che permite compartir, procesar, almacenar, analizar e publicar os teus datos mantendo un control total sobre eles.",
+      "subtitle": "Máis ca un espazo de datos: comparte os teus datos con control total, e ademais procésaos, analízaos e publícaos na mesma plataforma. Todo o ciclo de vida do dato, nun só lugar.",
       "learnMore": "Saber máis",
       "access": "Acceder",
-      "graphTagline": "Seguro. Fiable. Interoperable.",
+      "graphTagline": "Todo o ciclo de vida do dato. Unha plataforma.",
       "graphControl": "Ti mantés o control dos teus datos",
       "governance": "Gobernanza e confianza"
+    },
+    "bridge": {
+      "kicker": "Por que somos diferentes",
+      "title": "Un espazo de datos tradicional queda en compartir",
+      "titleHighlight": "OneHealth DataSpace cobre a viaxe completa",
+      "text": "Compartir de forma soberana é só o primeiro paso. Aquí, a mesma plataforma ofréceche ademais a capacidade de cálculo, a analítica e os servizos de publicación que precisas para converter os datos compartidos en resultados, sen saír do espazo de confianza.",
+      "traditionalLabel": "Un espazo de datos tradicional remata aquí",
+      "oursLabel": "Aquí, continúa",
+      "cta": "Percorre a viaxe",
+      "ctaSecondary": "Que é un espazo de datos?"
     },
     "services": {
       "title": "Máis que datos",
@@ -20,7 +30,7 @@
       "cta": "Ir ao servizo",
       "next": "Seguinte",
       "join": "Únete",
-      "stepLabel": "Servizo",
+      "stepLabel": "Etapa",
       "whatLabel": "Que é",
       "exampleLabel": "Exemplo",
       "shareWhat": "Un servizo para intercambiar conxuntos de datos entre organizacións de forma soberana: cada entidade decide quen accede aos seus datos, con que fins e baixo que condicións.",
@@ -35,8 +45,9 @@
       "deliverExample": "Un centro publica un cadro de mando epidemiolóxico que outras entidades consultan en tempo real."
     },
     "outro": {
-      "title": "Máis que datos",
+      "title": "A viaxe xa está en marcha",
       "text": "Entidades de saúde humana, animal e ambiental xa están a desenvolver casos de uso sobre OneHealth DataSpace.",
+      "join": "Únete ao espazo de datos",
       "cta": "Explora o catálogo"
     }
   },

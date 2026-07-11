@@ -2,12 +2,22 @@
   "home": {
     "hero": {
       "title": "One Health Data Space Demonstrator Center",
-      "subtitle": "A platform that enables you to share, process, store, analyze, and publish your data while maintaining full control over it.",
+      "subtitle": "More than a data space: share your data with full control — and process, analyze and publish it on the same platform. The whole data lifecycle, in one place.",
       "learnMore": "Learn more",
       "access": "Access",
-      "graphTagline": "Secure. Trusted. Interoperable.",
+      "graphTagline": "The whole data lifecycle. One platform.",
       "graphControl": "You stay in control of your data",
       "governance": "Governance & trust"
+    },
+    "bridge": {
+      "kicker": "Why we are different",
+      "title": "A traditional data space stops at sharing",
+      "titleHighlight": "OneHealth DataSpace covers the whole journey",
+      "text": "Sovereign sharing is only the first step. Here, the same platform also gives you the computing power, the analytics and the publishing services you need to turn shared data into results — without ever leaving the trusted space.",
+      "traditionalLabel": "A traditional data space ends here",
+      "oursLabel": "Here, it keeps going",
+      "cta": "Follow the journey",
+      "ctaSecondary": "What is a data space?"
     },
     "services": {
       "title": "More than data",
@@ -20,7 +30,7 @@
       "cta": "Go to service",
       "next": "Next",
       "join": "Join us",
-      "stepLabel": "Service",
+      "stepLabel": "Stage",
       "whatLabel": "What it is",
       "exampleLabel": "Example",
       "shareWhat": "A service for exchanging datasets between organisations in a sovereign way: each entity decides who accesses its data, for what purposes and under which conditions.",
@@ -35,8 +45,9 @@
       "deliverExample": "A centre publishes an epidemiological dashboard that other entities consult in real time."
     },
     "outro": {
-      "title": "More than data",
+      "title": "The journey is already underway",
       "text": "Health, research and business entities are already building use cases on OneHealth DataSpace.",
+      "join": "Join the data space",
       "cta": "Explore the catalogue"
     }
   },
