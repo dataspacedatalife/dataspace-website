@@ -121,26 +121,11 @@
   animation: dashDrift 60s linear infinite;
 }
 
-/* hero: aurora blobs drifting */
-@keyframes auroraDrift {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  100% {
-    transform: translate(3%, 4%) scale(1.06);
-  }
-}
-
-.aurora-blob {
-  animation: auroraDrift 36s ease-in-out infinite alternate;
-}
-
 @media (prefers-reduced-motion: reduce) {
   .gradient-text,
   .marquee-track,
   .comet-arc,
-  .governance-ring,
-  .aurora-blob {
+  .governance-ring {
     animation: none;
   }
 }

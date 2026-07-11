@@ -5,8 +5,6 @@ import { motion, useReducedMotion, type Variants } from 'motion/react';
 import { ArrowUpRight, ChevronDown } from 'lucide-react';
 import { DataSpaceWheel } from './wheel';
 
-const NOISE_URI = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`;
-
 export function scrollToId(id: string) {
   document
     .getElementById(id)
@@ -37,34 +35,12 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden">
-      {/* fondo aurora + grano */}
-      <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
-        <div className="aurora-blob absolute -top-32 -left-24 size-[34rem] rounded-full bg-brand-300/25 blur-3xl" />
-        <div
-          className="aurora-blob absolute top-1/3 -right-32 size-[40rem] rounded-full bg-brand-400/20 blur-3xl"
-          style={{ animationDelay: '-18s' }}
-        />
-        <div className="absolute -bottom-40 -left-20 size-[30rem] rounded-full bg-brand-700/10 blur-3xl" />
-        <div
-          className="absolute inset-0 opacity-[0.035] mix-blend-overlay"
-          style={{ backgroundImage: NOISE_URI }}
-        />
-      </div>
-
       <div className="relative max-w-7xl mx-auto px-6 py-10 min-h-[calc(100vh-95px)] flex items-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
           <motion.div variants={container} initial="hidden" animate="show">
-            <motion.p
-              variants={item}
-              className="inline-flex items-center gap-2 rounded-full border border-brand-500/25 bg-white/70 backdrop-blur px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-brand-700 font-mono"
-            >
-              <span className="size-1.5 rounded-full bg-brand-300 animate-pulse" />
-              {t('title')}
-            </motion.p>
-
             <motion.h1
               variants={item}
-              className="gradient-text font-heading mt-6"
+              className="gradient-text font-heading"
               style={{
                 fontSize: 'clamp(3.25rem, 10vw, 6rem)',
                 fontWeight: 500,
