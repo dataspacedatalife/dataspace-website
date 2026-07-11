@@ -13,6 +13,16 @@ import { polar, useServicesData } from './shared';
 
 const CYCLE_MS = 8000;
 
+/* paquete de datos que orbita el anillo: cabeza brillante + estela que se
+   atenúa por detrás (offsets angulares negativos = van a la zaga) */
+const DATA_PACKET = [
+  { d: 0, r: 2.6, op: 1, head: true },
+  { d: -13, r: 2, op: 0.55, head: false },
+  { d: -26, r: 1.5, op: 0.32, head: false },
+  { d: -40, r: 1.1, op: 0.18, head: false },
+  { d: -55, r: 0.8, op: 0.1, head: false },
+];
+
 /* ============ HERO: RUEDA INTERACTIVA DEL DATASPACE ============ */
 export function DataSpaceWheel() {
   const t = useTranslations('home.hero');
@@ -123,32 +133,53 @@ export function DataSpaceWheel() {
             strokeWidth="0.5"
           />
 
-          {/* pista base del ciclo entre servicios */}
-          <circle
-            cx="50"
-            cy="50"
-            r={NODE_R}
-            fill="none"
-            stroke="url(#ringGrad)"
-            strokeOpacity="0.12"
-            strokeWidth="0.5"
-          />
+          {/* halo suave del paquete de datos en movimiento */}
+          <filter id="dataGlow" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="1.6" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
 
-          {/* anillo de flujo animado: el dato circulando por el ciclo
-              (sentido horario: compartir → analizar → computar → exponer) */}
+          {/* pista base del ciclo entre servicios: el camino del dato */}
           <circle
-            className="cycle-flow"
             cx="50"
             cy="50"
             r={NODE_R}
             fill="none"
-            pathLength={100}
             stroke="url(#ringGrad)"
-            strokeOpacity="0.75"
-            strokeWidth="1"
-            strokeDasharray="2 4"
+            strokeOpacity="0.16"
+            strokeWidth="0.6"
+            strokeDasharray="1 3"
             strokeLinecap="round"
           />
+
+          {/* paquete de datos circulando por el ciclo entre servicios
+              (sentido horario: compartir → analizar → computar → exponer).
+              La cabeza brillante lleva una estela que se desvanece detrás. */}
+          <g
+            className="data-orbit"
+            style={{
+              transformBox: 'view-box',
+              transformOrigin: '50px 50px',
+            }}
+          >
+            {DATA_PACKET.map(({ d, r, op, head }, k) => {
+              const p = polar(50, 50, NODE_R, d);
+              return (
+                <circle
+                  key={k}
+                  cx={p.x}
+                  cy={p.y}
+                  r={r}
+                  fill={head ? '#5ff0d8' : '#00b7d4'}
+                  fillOpacity={op}
+                  filter={head ? 'url(#dataGlow)' : undefined}
+                />
+              );
+            })}
+          </g>
         </svg>
 
         {/* etiqueta de gobernanza sobre el aura */}

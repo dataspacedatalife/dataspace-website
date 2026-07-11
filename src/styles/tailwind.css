@@ -98,21 +98,22 @@
   animation-play-state: paused;
 }
 
-/* wheel: dashes flowing clockwise around the lifecycle ring */
-@keyframes cycleFlow {
+/* wheel: a data packet orbiting the lifecycle ring, showing data flowing
+   clockwise between services (share → analyze → compute → deliver) */
+@keyframes dataOrbit {
   to {
-    stroke-dashoffset: -6;
+    transform: rotate(360deg);
   }
 }
 
-.cycle-flow {
-  animation: cycleFlow 2.4s linear infinite;
+.data-orbit {
+  animation: dataOrbit 12s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .gradient-text,
   .marquee-track,
-  .cycle-flow {
+  .data-orbit {
     animation: none;
   }
 }
