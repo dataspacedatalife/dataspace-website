@@ -98,34 +98,9 @@
   animation-play-state: paused;
 }
 
-/* wheel: comet tracer orbiting the node ring */
-@keyframes cometOrbit {
-  to {
-    stroke-dashoffset: -100;
-  }
-}
-
-.comet-arc {
-  animation: cometOrbit 14s linear infinite;
-  filter: drop-shadow(0 0 1.2px rgba(0, 183, 212, 0.8));
-}
-
-/* wheel: governance ring dots crawling counter-clockwise */
-@keyframes dashDrift {
-  to {
-    stroke-dashoffset: 40;
-  }
-}
-
-.governance-ring {
-  animation: dashDrift 60s linear infinite;
-}
-
 @media (prefers-reduced-motion: reduce) {
   .gradient-text,
-  .marquee-track,
-  .comet-arc,
-  .governance-ring {
+  .marquee-track {
     animation: none;
   }
 }

@@ -11,7 +11,7 @@ import {
 import { ArrowDown } from 'lucide-react';
 import { polar, useServicesData } from './shared';
 
-const CYCLE_MS = 4000;
+const CYCLE_MS = 8000;
 
 /* ============ HERO: RUEDA INTERACTIVA DEL DATASPACE ============ */
 export function DataSpaceWheel() {
@@ -66,6 +66,11 @@ export function DataSpaceWheel() {
   const angles = [-90, 0, 90, 180];
   const NODE_R = 38;
 
+  // "paquete de datos" que recorre el ciclo: cabeza brillante + estela
+  const cometHead = polar(50, 50, NODE_R, -90);
+  const cometTail = polar(50, 50, NODE_R, -90 - 70);
+  const cometPath = `M ${cometTail.x} ${cometTail.y} A ${NODE_R} ${NODE_R} 0 0 1 ${cometHead.x} ${cometHead.y}`;
+
   return (
     <motion.div
       ref={containerRef}
@@ -82,6 +87,15 @@ export function DataSpaceWheel() {
       className="w-full max-w-[max(460px,min(580px,calc(100vh_-_240px)))] select-none pt-5"
     >
       <div className="relative aspect-square w-full">
+        {/* envoltorio de gobernanza y confianza: un aura que rodea todo */}
+        <div
+          className="absolute inset-0 rounded-full pointer-events-none"
+          style={{
+            background:
+              'radial-gradient(circle at 50% 50%, transparent 60%, rgba(0,154,184,0.09) 73%, rgba(63,215,192,0.07) 82%, transparent 93%)',
+          }}
+        />
+
         {/* anillos y flujo (SVG de fondo) */}
         <svg
           viewBox="0 0 100 100"
@@ -100,79 +114,68 @@ export function DataSpaceWheel() {
               <stop offset="0%" stopColor="#3fd7c0" />
               <stop offset="100%" stopColor="#006b8f" />
             </linearGradient>
+            {/* estela del paquete: opaca en la cabeza, se desvanece en la cola */}
             <linearGradient
-              id="cometGrad"
+              id="cometTrail"
               gradientUnits="userSpaceOnUse"
-              x1="0"
-              y1="0"
-              x2="100"
-              y2="100"
+              x1={cometTail.x}
+              y1={cometTail.y}
+              x2={cometHead.x}
+              y2={cometHead.y}
             >
-              <stop offset="0%" stopColor="#3fd7c0" />
-              <stop offset="100%" stopColor="#00b7d4" />
+              <stop offset="0%" stopColor="#3fd7c0" stopOpacity="0" />
+              <stop offset="100%" stopColor="#3fd7c0" stopOpacity="0.9" />
             </linearGradient>
           </defs>
 
-          {/* anillo exterior punteado: gobernanza */}
+          {/* límite tenue del envoltorio de confianza (sin trazo duro) */}
           <circle
-            className="governance-ring"
             cx="50"
             cy="50"
             r="47"
             fill="none"
             stroke="url(#ringGrad)"
-            strokeOpacity="0.45"
-            strokeWidth="0.8"
-            strokeDasharray="1.5 2.5"
+            strokeOpacity="0.14"
+            strokeWidth="0.5"
           />
 
-          {/* pista base del flujo */}
+          {/* pista base del flujo entre servicios */}
           <circle
             cx="50"
             cy="50"
             r={NODE_R}
             fill="none"
             stroke="url(#ringGrad)"
-            strokeOpacity="0.15"
-            strokeWidth="0.6"
+            strokeOpacity="0.1"
+            strokeWidth="0.5"
           />
 
-          {/* cometa orbitando: el dato en movimiento */}
-          <circle
-            className="comet-arc"
-            cx="50"
-            cy="50"
-            r={NODE_R}
-            fill="none"
-            pathLength={100}
-            stroke="url(#cometGrad)"
-            strokeWidth="1"
-            strokeDasharray="30 70"
-            strokeLinecap="round"
-          />
-
-          {/* progreso del ciclo automático alrededor del centro */}
-          {cycling && (
-            <motion.circle
-              key={String(active)}
-              cx="50"
-              cy="50"
-              r="27.5"
+          {/* paquete de datos recorriendo el ciclo */}
+          <motion.g
+            style={{ transformOrigin: '50px 50px' }}
+            initial={{ rotate: 0 }}
+            animate={reduceMotion ? { rotate: 0 } : { rotate: 360 }}
+            transition={{ duration: 18, ease: 'linear', repeat: Infinity }}
+          >
+            <path
+              d={cometPath}
               fill="none"
-              stroke="#00b7d4"
-              strokeOpacity="0.55"
-              strokeWidth="0.6"
+              stroke="url(#cometTrail)"
+              strokeWidth="1.1"
               strokeLinecap="round"
-              initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ duration: CYCLE_MS / 1000, ease: 'linear' }}
-              style={{ rotate: -90, transformOrigin: '50px 50px' }}
             />
-          )}
+            <circle
+              cx={cometHead.x}
+              cy={cometHead.y}
+              r="1.8"
+              fill="#5fe6d0"
+              style={{ filter: 'drop-shadow(0 0 1.6px rgba(0,183,212,0.9))' }}
+            />
+          </motion.g>
         </svg>
 
-        {/* etiqueta de gobernanza sobre el anillo */}
-        <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full border border-brand-500/40 bg-white px-3 py-1 text-[10px] tracking-[0.2em] uppercase text-brand-700 whitespace-nowrap font-mono">
+        {/* etiqueta de gobernanza sobre el aura */}
+        <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full border border-brand-500/30 bg-white/90 backdrop-blur px-3 py-1 text-[10px] tracking-[0.2em] uppercase text-brand-700 whitespace-nowrap font-mono">
           {t('governance')}
         </span>
 
@@ -330,6 +333,24 @@ export function DataSpaceWheel() {
             </motion.button>
           );
         })}
+      </div>
+
+      {/* indicador de posición en el ciclo (sin barrido, en calma) */}
+      <div
+        className="mt-7 flex items-center justify-center gap-2"
+        aria-hidden="true"
+      >
+        {services.map((s, i) => (
+          <span
+            key={s.key}
+            className="h-1.5 rounded-full transition-all duration-500 ease-out"
+            style={{
+              width: i === active ? '1.5rem' : '0.375rem',
+              backgroundColor:
+                i === active ? '#009ab8' : 'rgba(0,154,184,0.22)',
+            }}
+          />
+        ))}
       </div>
     </motion.div>
   );
