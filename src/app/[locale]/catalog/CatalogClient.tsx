@@ -9,7 +9,7 @@ import {
 } from '@heroicons/react/16/solid';
 import Image from 'next/image';
 import { useMessages, useTranslations } from 'next-intl';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Button } from '@/components/button';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
@@ -91,6 +91,13 @@ export function CatalogoDeDatos() {
     );
   };
 
+  // Al paginar, volver al inicio de la lista (los botones quedan al pie de la página)
+  const listTopRef = useRef<HTMLDivElement>(null);
+  const goToPage = (p: number) => {
+    setPage(p);
+    listTopRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   // Escribir en el buscador no debe generar entradas de historial por tecla
   const changeQuery = (value: string) => {
     updateSearchParams({ q: value || null, page: null }, 'replace');
@@ -108,7 +115,10 @@ export function CatalogoDeDatos() {
       </Container>
 
       <Container className="mt-16 pb-24">
-        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div
+          ref={listTopRef}
+          className="mb-8 flex scroll-mt-4 flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+        >
           <div className="flex flex-wrap gap-2">
             <button
               type="button"
@@ -172,7 +182,7 @@ export function CatalogoDeDatos() {
         <Pagination
           currentPage={currentPage}
           pageCount={pageCount}
-          setPage={setPage}
+          setPage={goToPage}
         />
       </Container>
 

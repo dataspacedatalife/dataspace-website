@@ -3,7 +3,7 @@
 Pending improvements for `/[locale]/catalog`, grouped by page section.
 Already done: text search, locale-aware section labels, restored Spanish content,
 hidden empty metadata boxes, modal X button, accessible filter pills,
-back/forward history sync.
+back/forward history sync, scroll to top of list on page change.
 
 ## Filters & search
 
@@ -26,8 +26,6 @@ back/forward history sync.
 
 ## Pagination
 
-- [ ] Scroll back to the top of the list when the page changes — clicking
-      "Siguiente" currently leaves the viewport at the footer.
 - [ ] Consider numbered page buttons (1 … 11) in addition to prev/next now
       that history entries work.
 
