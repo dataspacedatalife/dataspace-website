@@ -16,7 +16,7 @@ import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
-import { useSearchState } from '@/hooks/useSearchState';
+import { updateSearchParams, useSearchState } from '@/hooks/useSearchState';
 import { type HealthCategory, useCasesData } from './datasets';
 
 type DatasetKey = (typeof useCasesData)[number]['id'];
@@ -59,9 +59,9 @@ export function CatalogoDeDatos() {
   const [selectedDataset, setSelectedDataset] = useState<DatasetKey | null>(
     null,
   );
-  const [categoryFilter, setCategoryFilter] = useCategory();
+  const categoryFilter = useCategory();
   const [page, setPage] = usePage();
-  const [query, setQuery] = useSearchState('q', '');
+  const [query] = useSearchState('q', '');
   const t = useTranslations();
   const messages = useMessages();
 
@@ -83,14 +83,17 @@ export function CatalogoDeDatos() {
     currentPage * datasetsPerPage,
   );
 
+  // Cambio de filtro: una única entrada en el historial (categoría + reset de página)
   const selectCategory = (cat: HealthCategory | 'all') => {
-    setCategoryFilter(cat);
-    setPage(1);
+    updateSearchParams(
+      { category: cat === 'all' ? null : cat, page: null },
+      'push',
+    );
   };
 
+  // Escribir en el buscador no debe generar entradas de historial por tecla
   const changeQuery = (value: string) => {
-    setQuery(value);
-    setPage(1);
+    updateSearchParams({ q: value || null, page: null }, 'replace');
   };
 
   return (
@@ -186,24 +189,23 @@ export function CatalogoDeDatos() {
 }
 
 // Hook para manejar la página de la paginación
+// Los cambios de página crean entradas de historial para que atrás/adelante funcionen
 const usePage = () => {
   const [pageStr, setPageStr] = useSearchState('page', '1');
   const parsed = Number.parseInt(pageStr ?? '1', 10);
   const page = Number.isNaN(parsed) || parsed < 1 ? 1 : parsed;
-  return [page, (p: number) => setPageStr(p.toString())] as const;
+  return [
+    page,
+    (p: number) => setPageStr(p <= 1 ? '' : p.toString(), 'push'),
+  ] as const;
 };
 
-// Hook para manejar el filtro de categoría en la URL
-const useCategory = () => {
-  const [raw, setRaw] = useSearchState('category', 'all');
-  const category: HealthCategory | 'all' = CATEGORY_VALUES.includes(
-    raw as HealthCategory,
-  )
+// Hook para leer el filtro de categoría de la URL (se escribe vía selectCategory)
+const useCategory = (): HealthCategory | 'all' => {
+  const [raw] = useSearchState('category', 'all');
+  return CATEGORY_VALUES.includes(raw as HealthCategory)
     ? (raw as HealthCategory)
     : 'all';
-  const setCategory = (cat: HealthCategory | 'all') =>
-    setRaw(cat === 'all' ? '' : cat);
-  return [category, setCategory] as const;
 };
 
 // ------------------ Subcomponentes ------------------
