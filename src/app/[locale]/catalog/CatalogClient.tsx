@@ -16,6 +16,8 @@ import { useCasesData, type HealthCategory } from './datasets';
 
 type DatasetKey = (typeof useCasesData)[number]['id'];
 
+const CATEGORY_VALUES = ['human', 'animal', 'environmental'] as const;
+
 const CATEGORY_STYLES: Record<HealthCategory, string> = {
   human: 'bg-blue-100 text-blue-800',
   animal: 'bg-green-100 text-green-800',
@@ -44,9 +46,20 @@ function getDatasetsCount(category: HealthCategory | 'all') {
 // Componente principal del catálogo
 export function CatalogoDeDatos() {
   const [selectedDataset, setSelectedDataset] = useState<DatasetKey | null>(null);
-  const [categoryFilter, setCategoryFilter] = useState<HealthCategory | 'all'>('all');
+  const [categoryFilter, setCategoryFilter] = useCategory();
   const [page, setPage] = usePage();
   const t = useTranslations();
+
+  const pageCount = Math.max(
+    1,
+    Math.ceil(getDatasetsCount(categoryFilter) / datasetsPerPage),
+  );
+  const currentPage = Math.min(page, pageCount);
+
+  const selectCategory = (cat: HealthCategory | 'all') => {
+    setCategoryFilter(cat);
+    setPage(1);
+  };
 
   return (
     <main className="overflow-hidden">
@@ -60,44 +73,42 @@ export function CatalogoDeDatos() {
       </Container>
 
       <Container className="mt-16 pb-24">
-        <div className="flex gap-2 flex-wrap mb-8">
-  <button
-    onClick={() => {
-      setCategoryFilter('all');
-      setPage(1);
-    }}
-    className={`px-3 py-1 rounded-full text-xs border ${
-      categoryFilter === 'all'
-        ? 'bg-gray-900 text-white'
-        : 'bg-white text-gray-700'
-    }`}
-  >
-    {t('catalog.categories.all')}
-  </button>
+        <div className="mb-8 flex flex-wrap gap-2">
+          <button
+            onClick={() => selectCategory('all')}
+            className={`cursor-pointer rounded-full border px-4 py-1.5 text-sm ${
+              categoryFilter === 'all'
+                ? 'bg-gray-900 text-white'
+                : 'bg-white text-gray-700'
+            }`}
+          >
+            {t('catalog.categories.all')}
+          </button>
 
-  {(['human', 'animal', 'environmental'] as HealthCategory[]).map((cat) => (
-    <button
-      key={cat}
-      onClick={() => {
-        setCategoryFilter(cat);
-        setPage(1);
-      }}
-      className={`px-3 py-1 rounded-full text-xs border ${
-        categoryFilter === cat
-          ? CATEGORY_STYLES[cat]
-          : 'bg-white text-gray-700'
-      }`}
-    >
-      {t(`catalog.categories.${cat}`)}
-    </button>
-  ))}
-</div>
+          {CATEGORY_VALUES.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => selectCategory(cat)}
+              className={`cursor-pointer rounded-full border px-4 py-1.5 text-sm ${
+                categoryFilter === cat
+                  ? CATEGORY_STYLES[cat]
+                  : 'bg-white text-gray-700'
+              }`}
+            >
+              {t(`catalog.categories.${cat}`)}
+            </button>
+          ))}
+        </div>
         <DatasetList
-  page={page}
-  categoryFilter={categoryFilter}
-  onOpen={setSelectedDataset}
-/>
-       <Pagination currentPage={page} setPage={setPage} categoryFilter={categoryFilter} />
+          page={currentPage}
+          categoryFilter={categoryFilter}
+          onOpen={setSelectedDataset}
+        />
+        <Pagination
+          currentPage={currentPage}
+          pageCount={pageCount}
+          setPage={setPage}
+        />
       </Container>
 
       <Footer />
@@ -115,8 +126,22 @@ export function CatalogoDeDatos() {
 // Hook para manejar la página de la paginación
 const usePage = () => {
   const [pageStr, setPageStr] = useSearchState('page', '1');
-  const page = Number.parseInt(pageStr ?? '1') ?? 1;
+  const parsed = Number.parseInt(pageStr ?? '1', 10);
+  const page = Number.isNaN(parsed) || parsed < 1 ? 1 : parsed;
   return [page, (p: number) => setPageStr(p.toString())] as const;
+};
+
+// Hook para manejar el filtro de categoría en la URL
+const useCategory = () => {
+  const [raw, setRaw] = useSearchState('category', 'all');
+  const category: HealthCategory | 'all' = CATEGORY_VALUES.includes(
+    raw as HealthCategory,
+  )
+    ? (raw as HealthCategory)
+    : 'all';
+  const setCategory = (cat: HealthCategory | 'all') =>
+    setRaw(cat === 'all' ? '' : cat);
+  return [category, setCategory] as const;
 };
 
 // ------------------ Subcomponentes ------------------
@@ -138,7 +163,6 @@ function DatasetList({
     <Container>
       <div className="space-y-8">
         {list.map((dataset) => {
-          const baseKey = `catalog.datasets.${dataset.id}` as const;
           return (
             <div
               key={dataset.id}
@@ -285,7 +309,6 @@ function DatasetModal({
 
   const name = t(`${baseKey}.name`);
   const use_case = t(`${baseKey}.use_case`);
-  const provider = t(`${baseKey}.provider`);
   const description = t(`${baseKey}.description`);
   const volumen = t(`${baseKey}.volumen`);
   const n_ficheros = t(`${baseKey}.n_ficheros`);
@@ -298,13 +321,14 @@ function DatasetModal({
   const data_license_txt = t('catalog.license');
 
   const messages = useMessages();
+  // Acceso defensivo: una traducción ausente no debe romper la página
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const datasetMessages = messages.catalog.datasets[datasetKey] as any;
+  const datasetMessages = ((messages as any).catalog?.datasets?.[datasetKey] ?? {}) as any;
   const descripcionAmpliada = datasetMessages.descripcion_ampliada as string | undefined;
   const datosDescripcion = datasetMessages.datos_descripcion as string | undefined;
-  const subsetEntries = Object.entries(datasetMessages.subsets);
+  const subsetEntries = Object.entries(datasetMessages.subsets ?? {});
 
-  const entityLabel = use_case;
+  const entityLabel = (datasetMessages.entidad_promotora as string | undefined) ?? use_case;
   const datasetMeta = useCasesData.find((d) => d.id === datasetKey);
   const categories = datasetMeta?.categories ?? [];
 
@@ -365,7 +389,7 @@ function DatasetModal({
 
           {subsetEntries.map(([subsetKey, subsetValue]) => {
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            const { name: subsetName, description: subsetDescription, metadata, variables } =
+            const { name: subsetName, description: subsetDescription, metadata = {}, variables = [] } =
               subsetValue as any;
             const isOpen = openSubsets[subsetKey] ?? true;
 
@@ -374,18 +398,19 @@ function DatasetModal({
                 key={subsetKey}
                 className="rounded-2xl border border-gray-200 shadow-sm bg-gray-50 mb-6"
               >
-                <div
-                  className="flex justify-between items-center p-5 cursor-pointer"
+                <button
+                  type="button"
+                  className="flex w-full cursor-pointer items-center justify-between p-5 text-left"
                   onClick={() => toggleSubset(subsetKey)}
+                  aria-expanded={isOpen}
                 >
                   <h3 className="text-xl font-semibold text-gray-900">{subsetName}</h3>
-                  <span
-                    className="text-gray-500 transform transition-transform duration-200"
-                    style={{ transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)' }}
-                  >
-                    ▶
-                  </span>
-                </div>
+                  <ChevronRightIcon
+                    className={`size-5 shrink-0 text-gray-500 transition-transform duration-200 ${
+                      isOpen ? 'rotate-90' : ''
+                    }`}
+                  />
+                </button>
 
                 {isOpen && (
                   <div className="px-5 pb-5 space-y-4">
@@ -459,23 +484,24 @@ function DatasetModal({
 // Paginación
 function Pagination({
   currentPage,
+  pageCount,
   setPage,
-  categoryFilter,
 }: {
   currentPage: number;
+  pageCount: number;
   setPage: (p: number) => void;
-  categoryFilter: HealthCategory | 'all';
 }) {
   const t = useTranslations();
-const total = getDatasetsCount(categoryFilter);
-  const pageCount = Math.ceil(total / datasetsPerPage);
   if (pageCount < 2) return null;
 
   return (
-    <div className="mt-10 flex justify-center gap-2">
+    <div className="mt-10 flex items-center justify-center gap-4">
       <Button disabled={currentPage === 1} onClick={() => setPage(currentPage - 1)}>
         <ChevronLeftIcon className="size-4" /> {t('catalog.previous')}
       </Button>
+      <span className="text-sm font-medium text-gray-600 tabular-nums">
+        {currentPage} / {pageCount}
+      </span>
       <Button disabled={currentPage === pageCount} onClick={() => setPage(currentPage + 1)}>
         {t('catalog.next')} <ChevronRightIcon className="size-4" />
       </Button>
