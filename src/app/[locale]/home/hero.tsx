@@ -42,9 +42,9 @@ export function Hero() {
               variants={item}
               className="gradient-text font-heading"
               style={{
-                fontSize: 'clamp(2.125rem, 5.5vw, 4.25rem)',
+                fontSize: 'clamp(3rem, 7.5vw, 5.75rem)',
                 fontWeight: 500,
-                lineHeight: 1.08,
+                lineHeight: 1.05,
               }}
             >
               {t('title')}
