@@ -27,7 +27,10 @@ export function ParticipantsOutro() {
   const tOutro = useTranslations('home.outro');
 
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section
+      id="participantes"
+      className="relative py-24 overflow-hidden scroll-mt-24"
+    >
       <Container>
         <div className="text-center">
           <h2

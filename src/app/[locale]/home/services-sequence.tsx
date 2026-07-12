@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { motion, type Variants } from 'motion/react';
-import { ArrowRight, ArrowDown, ArrowUpRight } from 'lucide-react';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/container';
 import { SERVICES_GRADIENT, ServiceImage, type ServiceItem } from './shared';
 
@@ -123,13 +123,21 @@ export function ServicesSequence({ services }: { services: ServiceItem[] }) {
                       className="mt-6 flex flex-wrap items-center gap-4"
                     >
                       {isLast ? (
-                        <Link
-                          href="/how"
-                          className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white text-brand-700 font-semibold shadow-lg active:scale-[0.98] transition"
+                        <button
+                          type="button"
+                          onClick={() =>
+                            document
+                              .getElementById('participantes')
+                              ?.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start',
+                              })
+                          }
+                          className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white text-brand-700 font-semibold shadow-lg active:scale-[0.98] transition cursor-pointer"
                         >
-                          {tServices('join')}
-                          <ArrowRight size={18} />
-                        </Link>
+                          {tServices('participants')}
+                          <ArrowDown size={18} />
+                        </button>
                       ) : (
                         <button
                           type="button"

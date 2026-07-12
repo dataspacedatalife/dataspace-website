@@ -235,15 +235,27 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
                     variants={contentItem}
                     className="mt-8 flex flex-wrap items-center gap-5"
                   >
-                    {/* CTA principal: siguiente servicio o Únete */}
+                    {/* CTA principal: siguiente servicio o continuar
+                        hacia quién participa */}
                     {isLast ? (
-                      <Link
-                        href="/how"
-                        className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white text-brand-700 font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      <button
+                        type="button"
+                        onClick={() =>
+                          document
+                            .getElementById('participantes')
+                            ?.scrollIntoView({
+                              behavior: 'smooth',
+                              block: 'start',
+                            })
+                        }
+                        className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white text-brand-700 font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
-                        {tServices('join')}
-                        <ArrowRight size={18} />
-                      </Link>
+                        {tServices('participants')}
+                        <ArrowRight
+                          size={18}
+                          className="transition-transform group-hover:translate-x-0.5"
+                        />
+                      </button>
                     ) : (
                       <button
                         type="button"
