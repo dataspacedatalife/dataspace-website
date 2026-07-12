@@ -4360,7 +4360,15 @@
       "human": "Human health",
       "animal": "Animal health",
       "environmental": "Environmental health"
-    }
+    },
+    "data_section_labels": {
+      "data_type": "Data type",
+      "data_source": "Data source",
+      "intended_use": "Intended use of the data"
+    },
+    "search_placeholder": "Search the catalog…",
+    "search_clear": "Clear search",
+    "no_results": "No datasets match your search."
   },
   "blog": {
     "metadata": {

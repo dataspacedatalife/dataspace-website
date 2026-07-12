@@ -1758,9 +1758,275 @@
               "temporal_resolution": "",
               "temporal_coverage": ""
             },
-            "variables": []
+            "variables": [
+              {
+                "name": "user_id",
+                "units": "-",
+                "data_description": "Identificador anonimizado del usuario.",
+                "data_type": "number"
+              },
+              {
+                "name": "birth_year",
+                "units": "Año",
+                "data_description": "Año de nacimiento del usuario.",
+                "data_type": "number"
+              },
+              {
+                "name": "gender",
+                "units": "-",
+                "data_description": "Género del usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "country",
+                "units": "-",
+                "data_description": "Código de país del usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "language",
+                "units": "-",
+                "data_description": "Idioma configurado en el sistema.",
+                "data_type": "string"
+              },
+              {
+                "name": "location",
+                "units": "-",
+                "data_description": "Localización anonimizada del usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "zipcode",
+                "units": "-",
+                "data_description": "Código postal anonimizado del usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "education_level",
+                "units": "-",
+                "data_description": "Nivel educativo máximo alcanzado.",
+                "data_type": "string"
+              },
+              {
+                "name": "tech_familiarity",
+                "units": "-",
+                "data_description": "Nivel de familiaridad con la tecnología.",
+                "data_type": "string"
+              },
+              {
+                "name": "cognitive_impairment",
+                "units": "-",
+                "data_description": "Nivel de deterioro cognitivo.",
+                "data_type": "string"
+              },
+              {
+                "name": "hearing_impairment",
+                "units": "-",
+                "data_description": "Nivel de discapacidad auditiva.",
+                "data_type": "string"
+              },
+              {
+                "name": "movement_impairment",
+                "units": "-",
+                "data_description": "Nivel de discapacidad motora.",
+                "data_type": "string"
+              },
+              {
+                "name": "visual_impairment",
+                "units": "-",
+                "data_description": "Nivel de discapacidad visual.",
+                "data_type": "string"
+              },
+              {
+                "name": "medication_intake",
+                "units": "-",
+                "data_description": "Frecuencia de consumo continuado de medicación.",
+                "data_type": "string"
+              },
+              {
+                "name": "care_dependent",
+                "units": "-",
+                "data_description": "Indica si el usuario es dependiente de cuidados.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "has_children",
+                "units": "-",
+                "data_description": "Indica si el usuario tiene hijos.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "has_grandchildren",
+                "units": "-",
+                "data_description": "Indica si el usuario tiene nietos.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "has_siblings",
+                "units": "-",
+                "data_description": "Indica si el usuario tiene hermanos.",
+                "data_type": "boolean"
+              },
+              {
+                "name": "marital_status",
+                "units": "-",
+                "data_description": "Estado civil del usuario.",
+                "data_type": "string"
+              },
+              {
+                "name": "job",
+                "units": "-",
+                "data_description": "Profesión u ocupación principal.",
+                "data_type": "string"
+              },
+              {
+                "name": "years_active",
+                "units": "Años",
+                "data_description": "Años de actividad laboral.",
+                "data_type": "number"
+              }
+            ]
+          },
+          "assessments": {
+            "name": "Evaluaciones cognitivas y de rendimiento",
+            "description": "Este fichero contiene información sobre 2.526 evaluaciones realizadas por los 67 usuarios a lo largo de las 21.608 interacciones. Pueden relacionarse mediante user_id, session_uuid e interaction_timestamp.",
+            "metadata": {
+              "data_type": "Empírico",
+              "data_standard": "",
+              "date_added": "",
+              "file_format": "CSV",
+              "license": "Propietaria (restringida bajo contrato)",
+              "temporal_resolution": "Evento",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "user_id",
+                "units": "-",
+                "data_description": "Identificador anonimizado del usuario.",
+                "data_type": "number"
+              },
+              {
+                "name": "session_uuid",
+                "units": "-",
+                "data_description": "Identificador único de la sesión.",
+                "data_type": "string"
+              },
+              {
+                "name": "session_start",
+                "units": "Timestamp",
+                "data_description": "Instante de inicio de la sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "interaction_timestamp",
+                "units": "Fecha y hora",
+                "data_description": "Momento de la interacción asociada a la evaluación.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "category",
+                "units": "-",
+                "data_description": "Tipo de evaluación realizada (cognitiva o de rendimiento).",
+                "data_type": "string"
+              },
+              {
+                "name": "domain",
+                "units": "-",
+                "data_description": "Dominio cognitivo o funcional evaluado.",
+                "data_type": "string"
+              },
+              {
+                "name": "assessment",
+                "units": "-",
+                "data_description": "Resultado o puntuación obtenida en la evaluación.",
+                "data_type": "number"
+              }
+            ]
+          },
+          "interactions": {
+            "name": "Interacciones de las conversaciones",
+            "description": "Este fichero contiene información sobre 21.608 interacciones de conversaciones de los 67 usuarios con un asistente IA.",
+            "metadata": {
+              "data_type": "Empírico",
+              "data_standard": "-",
+              "date_added": "",
+              "file_format": "CSV",
+              "license": "Por definir (RGPD aplicable)",
+              "temporal_resolution": "",
+              "temporal_coverage": ""
+            },
+            "variables": [
+              {
+                "name": "user_id",
+                "units": "-",
+                "data_description": "Identificador anonimizado del usuario.",
+                "data_type": "number"
+              },
+              {
+                "name": "session_uuid",
+                "units": "-",
+                "data_description": "Identificador UUID v1 de la sesión.",
+                "data_type": "string"
+              },
+              {
+                "name": "session_start",
+                "units": "Timestamp",
+                "data_description": "Timestamp Unix de 13 dígitos que indica el inicio de la sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "session_end",
+                "units": "Timestamp",
+                "data_description": "Timestamp Unix de 13 dígitos que indica el fin de la sesión.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "interaction_timestamp",
+                "units": "Fecha y hora",
+                "data_description": "Timestamp registrado cuando la interacción se almacena tras el procesamiento.",
+                "data_type": "datetime"
+              },
+              {
+                "name": "category",
+                "units": "-",
+                "data_description": "Categoría de respuesta: local, de base de datos o generada por IA generativa.",
+                "data_type": "string"
+              },
+              {
+                "name": "intent",
+                "units": "-",
+                "data_description": "Intención detectada en la interacción.",
+                "data_type": "string"
+              },
+              {
+                "name": "input_mode",
+                "units": "-",
+                "data_description": "Modo de entrada del usuario. Opciones: [button-click, event, speech-to-text, text].",
+                "data_type": "string"
+              },
+              {
+                "name": "input_text",
+                "units": "-",
+                "data_description": "Texto de entrada del usuario (escrito o transcripción en el caso de voz).",
+                "data_type": "string"
+              },
+              {
+                "name": "output_mode",
+                "units": "-",
+                "data_description": "Modo de salida del asistente. Opciones: [read, text-to-speech].",
+                "data_type": "string"
+              },
+              {
+                "name": "messages",
+                "units": "-",
+                "data_description": "Mensajes enviados por el asistente en una única interacción.",
+                "data_type": "string"
+              }
+            ]
           }
-        }
+        },
+        "descripcion_ampliada": "A partir de investigaciones en el ámbito del NLP del Grupo de Tecnologías de la Información del centro de investigación atlanTTic de la Universidade de Vigo, se desarrolló un asistente IA diseñado específicamente para el colectivo de personas mayores, cubriendo necesidades de acompañamiento, estimulación cognitiva, entretenimiento e información de interés para el usuario. Actualmente dicho asistente ha evolucionado y se ha creado una spin-off llamada Serenia Solutions que cuenta con una plataforma llamada Serenia (Asistente IA + Panel de Control) y que pretende potenciar la parte de monitorización y evaluación de salud.\n\nDurante los pilotos iniciales llevados a cabo por atlanTTic se generaron miles de conversaciones y también evaluaciones cognitivas y de desempeño realizadas durante las sesiones. Estos datos, debidamente pseudoanonimizados y tratados conforme al RGPD, constituyen el activo principal aportado a OneHealth DataSpace.\n\nLa participación en OHDS permite tanto publicar estos datos de forma estructurada y accesible para otros participantes del espacio de datos, como acceder a datos y algoritmos de terceros. En el caso de uso CeliaSpace, Serenia Solutions utiliza este conjunto de datos de la Universidade de Vigo para mejorar sus algoritmos de detección de salud cognitiva. Desde el punto de vista de la Universidade de Vigo, además de ser proveedora de datos de conversaciones, también consume datos de OHDS de la entidad i4Life sobre monitorización domiciliaria para personas mayores con el fin de investigar relaciones entre interacciones conversacionales y medidas de sensores mediante técnicas de clusterización."
       },
       "datiacare": {
         "name": "Datiacare — Plataforma de cuidado inteligente de personas mayores basada en compartición de datos",
@@ -1961,7 +2227,8 @@
               }
             ]
           }
-        }
+        },
+        "descripcion_ampliada": "Facilitar el cuidado de personas mayores mediante la compartición de datos en un espacio común, permitiendo la generación de alertas y el desarrollo de algoritmos inteligentes. Optimizar la autonomía de los mayores y mejorar la eficiencia de los servicios asistenciales.\n\nEl caso de uso explora la capacidad de los espacios de datos para intercambiar información sobre el estado de salud y actividad de personas mayores. Los datos se recogen desde dispositivos IoT domésticos y wearables, combinándolos con información clínica y hábitos de vida. El intercambio de datos se gestionará mediante conectores seguros, permitiendo la integración de múltiples fuentes para monitorización en tiempo real. Los actores involucrados incluyen residencias de mayores, hospitales, empresas de teleasistencia y entidades gubernamentales. El caso de uso puede extenderse a personas con TEA, Alzheimer y ELA.\n\nLa tarea de cuidar resulta muy estresante e implica una gran responsabilidad. El proyecto aborda la necesidad de mejorar el cuidado de las personas mayores mediante herramientas inteligentes basadas en la compartición de datos, reduciendo la carga de los cuidadores y favoreciendo una atención más segura y preventiva."
       },
       "pounds": {
         "name": "POUNDs — Simulaciones numéricas con WRF para el impacto de turbinas eólicas marinas en el campo de viento regional y la producción energética",
@@ -4087,7 +4354,15 @@
       "human": "Salud humana",
       "animal": "Salud animal",
       "environmental": "Salud medioambiental"
-    }
+    },
+    "data_section_labels": {
+      "data_type": "Tipo de datos",
+      "data_source": "Fuente de los datos",
+      "intended_use": "Uso previsto de los datos"
+    },
+    "search_placeholder": "Buscar en el catálogo…",
+    "search_clear": "Borrar búsqueda",
+    "no_results": "No se han encontrado conjuntos de datos que coincidan con la búsqueda."
   },
   "blog": {
     "metadata": {

@@ -4355,7 +4355,15 @@
       "human": "Saúde humana",
       "animal": "Saúde animal",
       "environmental": "Saúde medioambiental"
-    }
+    },
+    "data_section_labels": {
+      "data_type": "Tipo de datos",
+      "data_source": "Fonte dos datos",
+      "intended_use": "Uso previsto dos datos"
+    },
+    "search_placeholder": "Buscar no catálogo…",
+    "search_clear": "Borrar busca",
+    "no_results": "Non se atoparon conxuntos de datos que coincidan coa busca."
   },
   "blog": {
     "metadata": {
