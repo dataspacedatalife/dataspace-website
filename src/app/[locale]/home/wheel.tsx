@@ -11,7 +11,7 @@ import {
   useReducedMotion,
 } from 'motion/react';
 import { ArrowDown } from 'lucide-react';
-import { polar, useServicesData } from './shared';
+import { MONO, polar, useServicesData } from './shared';
 
 /* una vuelta completa del paquete de datos: 4 tramos de 7 s */
 const ORBIT_MS = 28000;
@@ -119,10 +119,6 @@ export function DataSpaceWheel() {
   const angles = [90, 180, -90, 0];
   const NODE_R = 38;
 
-  /* la etiqueta de gobernanza vive en la diagonal superior derecha del aura,
-     entre computa y expón, donde no hay nodos */
-  const govPos = polar(50, 50, 47, -55);
-
   return (
     <motion.div
       ref={containerRef}
@@ -158,7 +154,7 @@ export function DataSpaceWheel() {
         {/* anillos y flujo (SVG de fondo) */}
         <svg
           viewBox="0 0 100 100"
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full h-full overflow-visible"
           aria-hidden="true"
         >
           <defs>
@@ -185,6 +181,43 @@ export function DataSpaceWheel() {
             strokeOpacity="0.14"
             strokeWidth="0.5"
           />
+
+          {/* la etiqueta de gobernanza abraza el aura por su arco inferior,
+              bajo el nodo de comparte, reforzando la idea de envoltorio.
+              Dos radios: la etiqueta de comparte no escala con el SVG y en
+              pantallas pequeñas invade un arco más cerrado */}
+          <path
+            id="govArcSm"
+            d="M 7.87 85.35 A 55 55 0 0 0 92.13 85.35"
+            fill="none"
+          />
+          <path
+            id="govArc"
+            d="M 10.17 83.42 A 52 52 0 0 0 89.83 83.42"
+            fill="none"
+          />
+          <text
+            className="sm:hidden"
+            fill="#006b8f"
+            fontSize="2.4"
+            letterSpacing="0.5"
+            style={{ fontFamily: MONO, textTransform: 'uppercase' }}
+          >
+            <textPath href="#govArcSm" startOffset="50%" textAnchor="middle">
+              {t('governance')}
+            </textPath>
+          </text>
+          <text
+            className="hidden sm:block"
+            fill="#006b8f"
+            fontSize="2"
+            letterSpacing="0.5"
+            style={{ fontFamily: MONO, textTransform: 'uppercase' }}
+          >
+            <textPath href="#govArc" startOffset="50%" textAnchor="middle">
+              {t('governance')}
+            </textPath>
+          </text>
 
           {/* halo suave del paquete de datos en movimiento */}
           <filter id="dataGlow" x="-100%" y="-100%" width="300%" height="300%">
@@ -236,13 +269,8 @@ export function DataSpaceWheel() {
           </g>
         </svg>
 
-        {/* etiqueta de gobernanza sobre el aura */}
-        <span
-          className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full border border-brand-500/30 bg-white/90 backdrop-blur px-2 sm:px-3 py-1 text-[8px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-700 whitespace-nowrap font-mono"
-          style={{ left: `${govPos.x}%`, top: `${govPos.y}%` }}
-        >
-          {t('governance')}
-        </span>
+        {/* la etiqueta curvada vive en un SVG decorativo: versión accesible */}
+        <span className="sr-only">{t('governance')}</span>
 
         {/* halo ambiental tras el centro */}
         <div className="absolute inset-[10%] rounded-full bg-[radial-gradient(closest-side,rgba(0,183,212,0.16),transparent_70%)] pointer-events-none" />
@@ -399,28 +427,6 @@ export function DataSpaceWheel() {
             </motion.button>
           );
         })}
-      </div>
-
-      {/* indicador de posición en el ciclo, también seleccionable */}
-      <div className="mt-5 flex items-center justify-center gap-1">
-        {services.map((s, i) => (
-          <button
-            key={s.key}
-            type="button"
-            aria-label={s.title}
-            onClick={() => setActive(i)}
-            className="py-2 px-0.5 cursor-pointer rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700"
-          >
-            <span
-              className="block h-1.5 rounded-full transition-all duration-500 ease-out"
-              style={{
-                width: i === active ? '1.5rem' : '0.375rem',
-                backgroundColor:
-                  i === active ? '#009ab8' : 'rgba(0,154,184,0.22)',
-              }}
-            />
-          </button>
-        ))}
       </div>
     </motion.div>
   );
