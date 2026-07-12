@@ -1,5 +1,8 @@
 {
   "home": {
+    "metadata": {
+      "description": "Share, analyze and deliver data — in one trusted space"
+    },
     "hero": {
       "title": "More than data",
       "subtitle": "OneHealth DataSpace is more than a data space: process, analyze and publish your data on the same platform, with full control over the whole lifecycle.",

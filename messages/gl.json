@@ -1,5 +1,8 @@
 {
   "home": {
+    "metadata": {
+      "description": "Comparte, analiza e publica datos — nun mesmo espazo de confianza"
+    },
     "hero": {
       "title": "Máis que datos",
       "subtitle": "OneHealth DataSpace é máis ca un espazo de datos: procesa, analiza e publica os teus datos na mesma plataforma, con control total durante todo o ciclo de vida.",
