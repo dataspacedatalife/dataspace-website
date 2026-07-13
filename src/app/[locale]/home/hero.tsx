@@ -35,7 +35,7 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="relative max-w-7xl mx-auto px-6 py-8 min-h-[calc(100vh-95px)] flex items-center">
+      <div className="relative max-w-7xl mx-auto px-6 py-10 lg:py-8 lg:min-h-[calc(100vh-95px)] flex items-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center w-full">
           <motion.div variants={container} initial="hidden" animate="show">
             <motion.h1
@@ -92,7 +92,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="flex justify-center"
+            className="hidden lg:flex justify-center"
           >
             <DataSpaceWheel />
           </motion.div>

@@ -29,7 +29,7 @@ export function OneHealthLanding() {
       <LifecycleBridge />
 
       {/* ancla de scroll hacia los servicios */}
-      <div id="servicios" className="scroll-mt-24" />
+      <div id="servicios" className="scroll-mt-6 lg:scroll-mt-24" />
 
       <Services />
 
