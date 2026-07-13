@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "title": "Únete",
+    "description": "Como unirse ao espazo de datos: quen pode participar, pasos de adhesión, compromisos e beneficios"
+  },
+  "header": {
+    "title": "Participa no espazo de datos",
+    "lead": "Comparte, consume ou desenvolve servizos baseados en datos nun contorno confiable que garante soberanía, privacidade e interoperabilidade",
+    "guideButton": {
+      "label": "Únete"
+    }
+  },
+  "overview": {
+    "title": "O noso enfoque"
+  },
+  "who": {
+    "title": "Quen pode participar?",
+    "items": [
+      "Hospitais, centros de investigación e universidades",
+      "Administracións e entidades públicas",
+      "Empresas, startups e centros tecnolóxicos",
+      "Colaboracións nacionais e europeas"
+    ]
+  },
+  "roles": {
+    "title": "Tipos de participación",
+    "items": [
+      "Provedores de datos que achegan datos ao ecosistema.",
+      "Provedores de servizos que ofrecen ferramentas ou capacidades.",
+      "Consumidores de datos que usan datos segundo as condicións do provedor.",
+      "Consumidores de servizos que utilizan servizos segundo as condicións do provedor."
+    ]
+  },
+  "benefits": {
+    "title": "Beneficios",
+    "items": [
+      "Integración con actores e espazos de datos europeos",
+      "Dispoñibilidade de servizos comúns: catálogos, anonimización, análise",
+      "Oportunidade de establecer novas colaboracións e alianzas"
+    ]
+  },
+  "commitments": {
+    "title": "Compromisos",
+    "items": [
+      "Cumprir o marco de gobernanza e as regras de acceso e uso",
+      "Garantir a calidade e trazabilidade dos datos",
+      "Respectar a normativa de privacidade, seguridade e ética",
+      "Informar de incidencias ou disputas polos canles habilitados"
+    ]
+  },
+  "howToJoin": {
+    "title": "Inicia o proceso de adhesión",
+    "subtitle": "Estou interesado en adherirme",
+    "description": "Se xa estás informado e desexas facernos saber o teu interese en participar no Espazo de Datos, completa o seguinte formulario. Se tes dúbidas, contacta con onehealth@cesga.es",
+    "formButton": "Cubre o formulario de mostra de interese se estás interesado en adherirte",
+    "formLink": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=R5ZY0bQ3n0O0XEaqtYBirpuP0cRaTKVPru3-n4Kp6ABUMUw3TEU0SUZBTk5VMDNIUlY5N0xSWTI1OC4u&route=shorturl"
+  },
+  "process": {
+    "title": "Proceso de adhesión",
+    "step": "Paso",
+    "phases": [
+      {
+        "title": "Fase de solicitude e adhesión",
+        "items": [
+          {
+            "title": "Infórmate",
+            "description": "Descarga a <a>Guía do Participante</a> para coñecer en detalle como funciona o Espazo de Datos, os requisitos técnicos e legais, e todos os beneficios de unirte. Estamos aquí para acompañarte e apoiarte en cada paso do proceso."
+          },
+          {
+            "title": "Solicita a túa adhesión",
+            "description": "Enche o <aForm>formulario de mostra de interese</aForm> e o noso equipo revisará a túa solicitude e contactará contigo para os seguintes pasos."
+          }
+        ]
+      },
+      {
+        "title": "Fase de integración no espazo de datos",
+        "items": [
+          {
+            "title": "Integración técnica",
+            "description": "Conecta os teus sistemas e prepara os teus datos para cumprir coas políticas de interoperabilidade, calidade e seguridade do Espazo de Datos. Estamos ao teu lado para axudarche durante todo o proceso."
+          },
+          {
+            "title": "Participa e medra dentro do ecosistema",
+            "description": "Unha vez formes parte, poderás intercambiar datos, sumarte a casos de uso e colaborar con outros participantes. Seguiremos acompañándote en cada etapa."
+          }
+        ]
+      }
+    ]
+  },
+  "process2": {
+    "title": "Proceso de adhesión",
+    "step": "Paso",
+    "items": [
+      {
+        "title": "Infórmate",
+        "description": "Descarga a Guía do Participante para coñecer o funcionamento do Espazo de Datos, os requisitos técnicos e legais, e os beneficios de unirte."
+      },
+      {
+        "title": "Solicita a túa adhesión",
+        "description": "Enche o formulario de mostra de interese, e o noso equipo revisará a túa solicitude no correspondente ciclo de avaliación e contactará contigo para os seguintes pasos."
+      },
+      {
+        "title": "Rexístrate no EdD",
+        "description": "Blabla."
+      },
+      {
+        "title": "Integración técnica",
+        "description": "Conecta os teus sistemas e prepara os teus datos para que cumpran coas políticas de interoperabilidade, calidade e seguridade do Centro demostrador de espazo de datos multisectorial One Health."
+      },
+      {
+        "title": "Participa e medra",
+        "description": "Unha vez dentro, poderás intercambiar datos, participar en casos de uso e colaborar con outros membros do ecosistema."
+      }
+    ]
+  },
+  "reviewCycle": {
+    "title": "Ciclo de revisións",
+    "description": "As solicitudes avalíanse cada dúas semanas na reunión de revisión. Só se teñen en conta aquelas recibidas ata o día anterior á reunión inclusive.",
+    "footer": "*Os días en azul corresponden ás reunións de revisión.",
+    "weekdays": ["Lun", "Mar", "Mér", "Xov", "Ven", "Sáb", "Dom"],
+    "months": [
+      "xaneiro",
+      "febreiro",
+      "marzo",
+      "abril",
+      "maio",
+      "xuño",
+      "xullo",
+      "agosto",
+      "setembro",
+      "outubro",
+      "novembro",
+      "decembro"
+    ]
+  }
+}

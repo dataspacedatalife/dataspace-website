@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "title": "Que é OneHealth DataSpace?",
+    "description": "Espazo de datos multisectorial One Health impulsado por CESGA"
+  },
+  "header": {
+    "title": "Que é OneHealth DataSpace?",
+    "lead": "OneHealth DataSpace é o espazo de datos multisectorial impulsado por CESGA para facilitar a colaboración entre organizacións que traballan en saúde humana, saúde animal e saúde ambiental."
+  },
+  "about": {
+    "title": "Que é OneHealth DataSpace?",
+    "paragraph1": "OneHealth DataSpace é o espazo de datos multisectorial impulsado por CESGA para facilitar a colaboración entre organizacións que traballan en <strong>saúde humana, saúde animal e saúde ambiental.</strong>",
+    "paragraph2": "A súa misión é converter os datos en coñecemento útil para mellorar a saúde global mediante tecnoloxías de compartición segura de datos, intelixencia artificial, análise avanzada e computación de altas prestacións.",
+    "paragraph3": "As entidades participantes <strong>mantén o control sobre os seus datos</strong> mentres colaboran en proxectos de investigación, innovación e intelixencia artificial dentro dun ecosistema baseado no enfoque One Health.",
+    "paragraph4": "Máis que unha plataforma de intercambio de datos, OneHealth DataSpace constitúe a base do futuro ecosistema europeo de IA en saúde global impulsado por CESGA a través da iniciativa <strong>1HealthAI Factory.</strong>"
+  },
+  "benefits": {
+    "title": "Beneficios do OneHealth DataSpace",
+    "item1": "• Comparte datos sen perder o control.",
+    "item2": "• Elimina silos de información.",
+    "item3": "• Facilita a interoperabilidade entre organizacións.",
+    "item4": "• Xera valor a partir dos datos de forma segura.",
+    "item5": "• Accede a capacidades avanzadas de IA e supercomputación.",
+    "item6": "• Participa nunha infraestrutura europea sostible a longo prazo."
+  },
+  "oneHealth": {
+    "title": "O enfoque One Health",
+    "image": "/demostrador/grafica-onehealth-600px-GL.png",
+    "paragraph1": "O concepto One Health recoñece que a saúde humana, animal e ambiental están interconectadas.",
+    "paragraph2": "Por iso, os grandes retos actuais —pandemias, resistencia antimicrobiana, zoonoses, seguridade alimentaria ou impacto ambiental— requiren compartir coñecemento e datos entre múltiples disciplinas.",
+    "paragraph3": "OneHealth DataSpace proporciona a infraestrutura necesaria para facelo de forma segura e escalable."
+  },
+  "funding": {
+    "title": "OneHealth DataSpace é un proxecto",
+    "call": "Financiado pola Unión Europea – NextGenerationEU.",
+    "grant": "A través da convocatoria do Ministerio para a Transformación Dixital e da Función Pública: Demostradores e Casos de uso de Espazos de Datos. “Espazos de Datos Sectoriais 2023 para a creación de demostradores e casos de uso de espazos de compartición de datos.”",
+    "program": "O programa “Espazos de datos sectoriais” forma parte do investimento 1 do compoñente 12 do Plan de Recuperación, Transformación e Resiliencia, financiado a través do Mecanismo de Recuperación e Resiliencia (MRR).",
+    "details": "Número de expediente: TSI-100120-2024-12\nPeríodo: 13-12-2024 – 30-06-2026. Aplazado ao 31 de agosto de 2026.\nFinanciado por: Ministerio para a Transformación Dixital e da Función Pública\nImporte total: 3.077.058 €",
+    "linkText": "Ver seguimento da execución",
+    "linkUrl": "https://planderecuperacion.gob.es/"
+  }
+}

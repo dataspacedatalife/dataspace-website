@@ -1,0 +1,49 @@
+{
+  "xdatashare": {
+    "metadata": {
+      "title": "MVD",
+      "description": "Explicación do que é o MVD"
+    },
+    "header": {
+      "title": "Espazo de datos (versión MVD)",
+      "lead": "Este MVD é a primeira versión operativa do espazo de datos que reúne as capacidades esenciais para poñer en marcha un espazo de datos federado de forma segura e escalable.",
+      "imageAlt": "Diagrama do MVD"
+    },
+    "whatIs": {
+      "title": "Que é o MVD?",
+      "text1": "O MVD é a primeira versión operativa do espazo de datos que reúne o conxunto mínimo de capacidades necesarias para poñer en marcha a federación: identidade e acceso, descubrimento de datos, gobernanza básica, trazabilidade e conectividade.",
+      "text2": "Serve para aprender rápido, medir impacto e axustar o deseño antes do escalado."
+    },
+    "features": {
+      "title": "Que inclúe esta fase?",
+      "iam": "Xestión de identidade e acceso federado (IAM): autenticación e autorización por políticas e roles.",
+      "governance": "Acordos e gobernanza: modelos de Data Sharing Agreement e políticas de uso.",
+      "connectors": "Conectores EDC para integración e contorno sandbox.",
+      "observability": "Observabilidade: rexistro de accesos, auditoría e trazabilidade dos consentimentos.",
+      "support": "Soporte a casos de uso piloto, segundo demanda."
+    },
+    "videos": {
+      "title": "Explora o MVD en acción",
+      "workshop23marchTitle": "Obradoiro práctico do 23 de marzo",
+      "workshop23marchUrl1": "https://www.youtube.com/embed/z72j1-uQCVo?si=3lLfks_4DLuDf46g&start=2",
+      "workshop23marchCaption1": "PARTE 1: Formación para realizar a configuración necesaria para o lanzamento do conector.",
+      "workshop23marchUrl2": "https://www.youtube.com/embed/yshUdWjAsw8?si=G9SbUUgK6TOh4Y8h",
+      "workshop23marchCaption2": "PARTE 2: Subida do asset e creación dun contrato para compartir coa DSGA.",
+      "workshop23marchUrl3": "https://www.youtube.com/embed/CRtcBkdf0Wg?si=H0ojdgeV_Li_iV48",
+      "workshop23marchCaption3": "PARTE 3: Capturas para a declaración de evidencias.",
+      "workshopsTitle": "Obradoiros",
+      "tutorialsTitle": "Titoriais",
+      "workshop1Caption": "Obradoiro práctico sobre o funcionamento dun espazo de datos no caso de uso FarmaciaVAX co MVD do espazo de datos.",
+      "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
+      "workshop2Caption": "Obradoiro de espazo de datos sobre conectores EDC.",
+      "workshop2Url": "https://www.youtube.com/embed/WGBCGCz8vHc?si=vZ15mIvRVN_N9C5L",
+      "workshop3Caption": "Obradoiro do espazo de datos FarmaciaVAX coa plataforma D-Spacer de SQS",
+      "workshop3Url": "https://www.youtube.com/embed/50Ahpz-1VPI?si=xibL743aZEnhWinB",
+      "tutorial1Caption": "Titorial paso a paso sobre a subida e visualización de assets utilizando o MVD do espazo de datos.",
+      "tutorial1Url": "https://www.youtube.com/embed/2bZ2O_1Hkr4?si=oOdRF3eBMPX7Ocai"
+    },
+    "access": {
+      "button": "Acceder"
+    }
+  }
+}

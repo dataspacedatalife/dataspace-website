@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "title": "Join",
+    "description": "How to join the data space: who can participate, steps to join, commitments and benefits"
+  },
+  "header": {
+    "title": "Participate in the data space",
+    "lead": "Share, consume or develop data-based services in a trusted environment that guarantees sovereignty, privacy and interoperability",
+    "guideButton": {
+      "label": "Join"
+    }
+  },
+  "overview": {
+    "title": "Our approach"
+  },
+  "who": {
+    "title": "Who can participate?",
+    "items": [
+      "Hospitals, research centers and universities",
+      "Public administrations and entities",
+      "Companies, startups and technology centers",
+      "National and European collaborations"
+    ]
+  },
+  "roles": {
+    "title": "Types of Participation",
+    "items": [
+      "Data providers who contribute data to the ecosystem.",
+      "Service providers who offer tools or capabilities.",
+      "Data consumers who use data according to the provider’s conditions.",
+      "Service consumers who use services according to the provider’s conditions."
+    ]
+  },
+  "benefits": {
+    "title": "Benefits",
+    "items": [
+      "Integration with European actors and data spaces",
+      "Provision of common services: catalogs, anonymization, analysis",
+      "Opportunity to establish new collaborations and alliances"
+    ]
+  },
+  "commitments": {
+    "title": "Commitments",
+    "items": [
+      "Comply with the governance framework and the rules of access and use",
+      "Guarantee data quality and traceability",
+      "Respect privacy, security and ethics regulations",
+      "Report incidents or disputes through the enabled channels"
+    ]
+  },
+  "howToJoin": {
+    "title": "Start the membership process",
+    "subtitle": "I am interested in joining",
+    "description": "If you’re already informed and would like to express your interest in joining the Data Space, please fill out the following form. If you have any questions, contact us at onehealth@cesga.es.",
+    "formButton": "Fill out the expression of interest form if you’re interested in joining",
+    "formLink": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=R5ZY0bQ3n0O0XEaqtYBirpuP0cRaTKVPru3-n4Kp6ABUMUw3TEU0SUZBTk5VMDNIUlY5N0xSWTI1OC4u&route=shorturl"
+  },
+  "process": {
+    "title": "Onboarding Process",
+    "step": "Step",
+    "phases": [
+      {
+        "title": "Application and Onboarding Phase",
+        "items": [
+          {
+            "title": "Get informed",
+            "description": "Download the <a>Participant Guide</a> to learn in detail how the Data Space works, the technical and legal requirements, and all the benefits of joining. We are here to guide and support you through every step of the process."
+          },
+          {
+            "title": "Submit your application",
+            "description": "Fill out the <aForm>expression of interest form</aForm>, and our team will review your request and contact you for the next steps."
+          }
+        ]
+      },
+      {
+        "title": "Data Space Integration Phase",
+        "items": [
+          {
+            "title": "Technical integration",
+            "description": "Connect your systems and prepare your data to comply with the interoperability, quality, and security policies of the Data Space. We will be by your side to assist you throughout the process."
+          },
+          {
+            "title": "Participate and grow within the ecosystem",
+            "description": "Once you are part of it, you will be able to exchange data, join use cases, and collaborate with other participants. We will continue to support you at every stage."
+          }
+        ]
+      }
+    ]
+  },
+  "reviewCycle": {
+    "title": "Review cycle",
+    "description": "Applications are evaluated every two weeks during our review meeting. Only the ones submitted up to the day before (inclusive) will be considered.",
+    "footer": "*Days in blue correspond to review meetings.",
+    "weekdays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "months": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]
+  },
+  "process2": {
+    "title": "Proceso de adhesión",
+    "step": "Paso",
+    "items": [
+      {
+        "title": "Get informed",
+        "description": "Download the Participant Guide to learn about how the Data Space works, the technical and legal requirements, and the benefits of joining."
+      },
+      {
+        "title": "Apply to join",
+        "description": "Fill in the expression of interest form, and our team will review your application in the corresponding evaluation cycle and contact you regarding the next steps."
+      },
+      {
+        "title": "Register in the EdD",
+        "description": "Blabla."
+      },
+      {
+        "title": "Technical integration",
+        "description": "Connect your systems and prepare your data to comply with the interoperability, quality, and security policies of the One Health multisectoral data space demonstrator centre."
+      },
+      {
+        "title": "Participate and grow",
+        "description": "Once on board, you will be able to exchange data, participate in use cases, and collaborate with other members of the ecosystem."
+      }
+    ]
+  }
+}

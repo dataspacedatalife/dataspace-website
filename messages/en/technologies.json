@@ -1,0 +1,49 @@
+{
+  "xdatashare": {
+    "metadata": {
+      "title": "MVD",
+      "description": "Explanation of what the MVD is"
+    },
+    "header": {
+      "title": "Data Space (MVD version)",
+      "lead": "The MVD brings together the essential capabilities to launch a federated data space in a secure and scalable way.",
+      "imageAlt": "MVD diagram"
+    },
+    "whatIs": {
+      "title": "What is the MVD?",
+      "text1": "The MVD is the first operational version of the Data Space that brings together the minimum set of capabilities needed to launch the federation: identity and access, data discovery, basic governance, traceability, and connectivity.",
+      "text2": "It serves to learn quickly, measure impact, and adjust the design before scaling up."
+    },
+    "features": {
+      "title": "What does this phase include?",
+      "iam": "Federated identity and access management (IAM): authentication and authorization based on policies and roles.",
+      "governance": "Agreements and governance: Data Sharing Agreement templates and usage policies.",
+      "connectors": "EDC connectors for integration and sandbox environment.",
+      "observability": "Observability: access logging, auditing, and consent traceability.",
+      "support": "Support for pilot use cases, on demand."
+    },
+    "videos": {
+      "title": "Explore the MVD in action",
+      "workshop23marchTitle": "Practical workshop – March 23",
+      "workshop23marchUrl1": "https://www.youtube.com/embed/z72j1-uQCVo?si=3lLfks_4DLuDf46g&start=2",
+      "workshop23marchCaption1": "PART 1: Training to carry out the necessary configuration for connector deployment.",
+      "workshop23marchUrl2": "https://www.youtube.com/embed/yshUdWjAsw8?si=G9SbUUgK6TOh4Y8h",
+      "workshop23marchCaption2": "PART 2: Uploading the asset and creating a contract to share with the DSGA.",
+      "workshop23marchUrl3": "https://www.youtube.com/embed/CRtcBkdf0Wg?si=H0ojdgeV_Li_iV48",
+      "workshop23marchCaption3": "PART 3: Evidence declaration screenshots.",
+      "workshopsTitle": "Workshops",
+      "tutorialsTitle": "Tutorials",
+      "workshop1Caption": "Practical workshop on how a data space operates in the FarmaciaVAX use case with the Data Space MVD.",
+      "workshop1Url": "https://www.youtube.com/embed/u7zTyU795n8?si=ls1phI8z_6OktOEY",
+      "workshop2Caption": "Data space workshop on EDC Connectors.",
+      "workshop2Url": "https://www.youtube.com/embed/WGBCGCz8vHc?si=vZ15mIvRVN_N9C5L",
+      "workshop3Caption": "PharmacyVAX data space workshop with the SQS D-Spacer platform",
+      "workshop3Url": "https://www.youtube.com/embed/50Ahpz-1VPI?si=xibL743aZEnhWinB",
+      "tutorial1Caption": "Step-by-step tutorial on uploading and visualizing assets using the Data Space MVD.",
+      "tutorial1Url": "https://www.youtube.com/embed/2bZ2O_1Hkr4?si=oOdRF3eBMPX7Ocai"
+    },
+    "access": {
+      "button": "ACCESS"
+    }
+  }
+}

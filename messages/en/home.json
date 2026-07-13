@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "description": "Share, analyze and deliver data — in one trusted space"
+  },
+  "hero": {
+    "title": "More than data",
+    "subtitle": "OneHealth DataSpace goes beyond data sharing.\nAnalyze, process, and publish your data on the same platform, with full control throughout its lifecycle.",
+    "learnMore": "Learn more",
+    "access": "Access the platform",
+    "graphTagline": "The whole data lifecycle. One platform.",
+    "graphControl": "You stay in control of your data",
+    "governance": "Governance & trust"
+  },
+  "bridge": {
+    "kicker": "Why we are different",
+    "title": "A traditional data space stops at sharing",
+    "titleHighlight": "OneHealth DataSpace covers the whole journey",
+    "text": "Sovereign sharing is only the first step. Here, the same platform also gives you the computing power, the analytics and the publishing services you need to turn shared data into results — without ever leaving the trusted space.",
+    "traditionalLabel": "A traditional data space ends here",
+    "oursLabel": "Here, it keeps going",
+    "cta": "Follow the journey",
+    "ctaSecondary": "What is a data space?"
+  },
+  "services": {
+    "title": "More than data",
+    "subtitle": "A complete operational lifecycle for data",
+    "share": "Securely share data between entities",
+    "compute": "Advanced data processing and HPC",
+    "analyze": "Turn data into useful knowledge",
+    "store": "Secure management of large volumes of data",
+    "deliver": "Publish services and data results",
+    "cta": "Go to service",
+    "next": "Next",
+    "participants": "See who's taking part",
+    "stepLabel": "Stage",
+    "whatLabel": "What it is",
+    "exampleLabel": "Example",
+    "shareWhat": "A service for exchanging datasets between organisations in a sovereign way: each entity decides who accesses its data, for what purposes and under which conditions.",
+    "shareExample": "A hospital shares anonymised clinical data with a veterinary research group to study antibiotic resistance.",
+    "computeWhat": "Access to CESGA supercomputing to run intensive workloads: simulations, AI model training or genomic processing.",
+    "computeExample": "A team trains an outbreak-prediction model combining environmental and health data on the HPC cluster.",
+    "analyzeWhat": "Big Data and analytics tools to explore the data space and turn it into indicators, visualisations and actionable knowledge.",
+    "analyzeExample": "Cross-referencing water-quality data with zoonosis cases to detect risk patterns in a region.",
+    "storeWhat": "Secure, scalable storage for large data volumes, with access control and traceability throughout the whole lifecycle.",
+    "storeExample": "A university deposits years of historical environmental sensor series for reuse in new projects.",
+    "deliverWhat": "Cloud infrastructure to publish results as services: APIs, dashboards or applications accessible to other participants.",
+    "deliverExample": "A centre publishes an epidemiological dashboard that other entities consult in real time."
+  },
+  "outro": {
+    "title": "The journey is already underway",
+    "text": "Health, research and business entities are already building use cases on OneHealth DataSpace.",
+    "join": "Join the data space",
+    "cta": "Explore the catalogue"
+  }
+}
