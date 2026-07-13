@@ -65,9 +65,9 @@ import delDatoAlResultadoES from '../../../../public/events/formacion-del-dato-a
 import delDatoAlResultadoENG from '../../../../public/events/formacion-del-dato-al-resultado-ENG.png';
 import delDatoAlResultadoGL from '../../../../public/events/formacion-del-dato-al-resultado-GL.png';
 
-import presentacionResultadosES from '../../../../public/events/cartela_web_es_1200x630.png';
-import presentacionResultadosENG from '../../../../public/events/cartela_web_en_1200x630.png';
-import presentacionResultadosGL from '../../../../public/events/cartela_web_gl_1200x630.png';
+import presentacionResultadosES from '../../../../public/events/cartela_centrada_1820x1080_es.png';
+import presentacionResultadosENG from '../../../../public/events/cartela_centrada_1820x1080_en.png';
+import presentacionResultadosGL from '../../../../public/events/cartela_centrada_1820x1080_gl.png';
 
 const eventsPerPage = 5;
 
@@ -370,7 +370,7 @@ const events: Event[]  = [
     },
     cesgalink: 'https://forms.gle/99TSpeTRX54h3SFB8',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
-    featured: true,
+    featured: false,
   },
   {
     key: 'miniEncuentroLugo',
@@ -382,7 +382,7 @@ const events: Event[]  = [
     },
     cesgalink: 'https://forms.gle/Bkge4BXstVzEUopw5',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
-    featured: true,
+    featured: false,
   },
   {
     key: 'encuentroPresentacionResultados',
