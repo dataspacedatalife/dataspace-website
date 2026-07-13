@@ -395,6 +395,18 @@ const events: Event[]  = [
     cesgalink: 'https://forms.gle/U8nRPdvcBquNe19v6',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
+  },
+  {
+    key: 'encuentroPresentacionResultados',
+    date: '2026-07-22',
+    image: {
+      es: presentacionResultadosES,
+      en: presentacionResultadosENG,
+      gl: presentacionResultadosGL
+    },
+    cesgalink: 'https://forms.gle/U8nRPdvcBquNe19v6',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: true,
   }
 
 ] satisfies Event[];

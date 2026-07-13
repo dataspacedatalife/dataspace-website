@@ -4,7 +4,6 @@ import {
   Landmark,
   Network,
   ShieldCheck,
-  Users,
 } from 'lucide-react';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
@@ -13,95 +12,110 @@ import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
 import { Heading, Lead } from '@/components/text';
+import type { ElementType } from 'react';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('what.metadata');
+
   return {
     title: t('title'),
     description: t('description'),
   };
 }
 
+type Principle = {
+  key: 'sovereignty' | 'interoperability' | 'governance' | 'trust' | 'value';
+  icon: ElementType;
+};
+
 async function Header() {
   const t = await getTranslations('what');
   const tHeader = await getTranslations('what.header');
 
-  const features = [
-    {
-      icon: <ShieldCheck className="text-blue-600 w-16 h-16 mb-6" />,
-      title: t('features.security.title'),
-      description: t('features.security.description'),
-      color: 'bg-blue-50',
-    },
-    {
-      icon: <Network className="text-green-600 w-16 h-16 mb-6" />,
-      title: t('features.interoperability.title'),
-      description: t('features.interoperability.description'),
-      color: 'bg-green-50',
-    },
-    {
-      icon: <FileLock className="text-purple-600 w-16 h-16 mb-6" />,
-      title: t('features.privacy.title'),
-      description: t('features.privacy.description'),
-      color: 'bg-purple-50',
-    },
-    {
-      icon: <Landmark className="text-yellow-600 w-16 h-16 mb-6" />,
-      title: t('features.governance.title'),
-      description: t('features.governance.description'),
-      color: 'bg-yellow-50',
-    },
-    {
-      icon: <Users className="text-pink-600 w-16 h-16 mb-6" />,
-      title: t('features.collaboration.title'),
-      description: t('features.collaboration.description'),
-      color: 'bg-pink-50',
-    },
-    {
-      icon: <Globe className="text-teal-600 w-16 h-16 mb-6" />,
-      title: t('features.sovereignty.title'),
-      description: t('features.sovereignty.description'),
-      color: 'bg-teal-50',
-    },
+  const principles: Principle[] = [
+    { key: 'sovereignty', icon: ShieldCheck },
+    { key: 'interoperability', icon: Network },
+    { key: 'governance', icon: Landmark },
+    { key: 'trust', icon: FileLock },
+    { key: 'value', icon: Globe },
   ];
+
+  const getPrinciple = (key: Principle['key']) => ({
+    title: t(`principles.${key}.title`),
+    description: t(`principles.${key}.description`),
+  });
 
   return (
     <Container className="mt-16">
+      {/* HEADER */}
       <Heading as="h1" className="text-center font-heading text-[#009AB8]">
         {tHeader('title')}
       </Heading>
-      <Lead className="mt-10 text-center">{tHeader('lead')}</Lead>
 
-      <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12 items-start">
-        <div className="mt-10 lg:mt-0">
-          <h2 className="text-3xl font-medium tracking-tight">
-            {t('objective.title')}
-          </h2>
-          <p className="mt-6 text-lg/7 text-gray-600">{t('objective.text')}</p>
-        </div>
+      <Lead className="mt-10 text-center">
+        {tHeader('lead')}
+      </Lead>
 
-        <div className="mt-10 lg:mt-0">
-          <h2 className="text-3xl font-medium tracking-tight">
-            {t('motivation.title')}
-          </h2>
-          <p className="mt-6 text-lg/7 text-gray-600">{t('motivation.text')}</p>
-        </div>
+
+      {/* IMPORTANCIA */}
+      <section className="mt-12">
+        <h2 className="mb-12 text-3xl font-medium tracking-tight text-[#009AB8]">
+          {t('importance.title')}
+        </h2>
+
+        <p className="mt-6 text-lg leading-7 text-gray-600">
+          {t('importance.paragraph1')}
+        </p>
+
+        <p className="mt-6 text-lg leading-7 text-gray-600">
+          {t('importance.paragraph2')}
+        </p>
       </section>
 
+      {/* PRINCIPIOS EN UNA SOLA FILA (DESKTOP) */}
+      <section className="mt-16 mb-20">
+        <h2 className="mb-12 text-3xl font-medium tracking-tight text-[#009AB8]">
+          {t('principles.title')}
+        </h2>
 
-      <section className="mt-20 mb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-        {features.map((feature) => (
-          <div
-            key={feature.title}
-            className={`flex flex-col items-center ${feature.color} rounded-2xl p-8 shadow-md text-center`}
-          >
-            {feature.icon}
-            <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              {feature.description}
-            </p>
-          </div>
-        ))}
+        <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch">
+          {principles.map((item) => {
+            const Icon = item.icon;
+            const principle = getPrinciple(item.key);
+
+            return (
+              <div
+                key={item.key}
+                className="
+                  flex-1
+                  bg-white
+                  border border-[#009AB8]/15
+                  rounded-2xl
+                  p-5
+                  shadow-sm
+                  text-center
+                  hover:shadow-lg
+                  hover:-translate-y-1
+                  transition-all duration-300
+                "
+              >
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 mb-3 rounded-full bg-[#e6f7fa] flex items-center justify-center">
+                    <Icon className="w-6 h-6 text-[#009AB8]" />
+                  </div>
+
+                  <h3 className="text-base font-semibold mb-1 text-slate-800">
+                    {principle.title}
+                  </h3>
+
+                  <p className="text-gray-600 text-xs leading-snug">
+                    {principle.description}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </Container>
   );
@@ -111,10 +125,13 @@ export default function What() {
   return (
     <main className="overflow-hidden">
       <GradientBackground />
+
       <Container>
         <Navbar />
       </Container>
+
       <Header />
+
       <Footer />
     </main>
   );

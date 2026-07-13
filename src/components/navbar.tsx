@@ -75,8 +75,8 @@ function LanguageSelector() {
             key={code}
             href="#"
             className={`${languageItemClass} ${currentLocale === code
-                ? 'font-semibold bg-[#005467]/10 text-[#005467]'
-                : ''
+              ? 'font-semibold bg-[#005467]/10 text-[#005467]'
+              : ''
               }`}
             onClick={(e) => {
               e.preventDefault();
@@ -133,21 +133,31 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
 
   const links = [
     {
-      href: 'https://www.youtube.com/playlist?list=PLvAJrckik_UPT2zDxHGaO5jOd27q1hBIz',
+      href: '/training',
       label: t('training'),
     },
   ];
 
   const techLinks = [
-    { href: '/dataspace', label: t('xdatashare') },
-    { href: 'https://dspacer-cesga.es/portal', label: t('dspacer'), external: true },
-    { href: '/faq', label: t('preguntas_frecuentes') },
+    { href: 'https://dl-cesga.srv.cesga.es/', label: t('share'), external: true },
+    { href: 'https://hpc.dataspace.cesga.es/', label: t('compute'), external: true },
+    { href: 'https://bigdata.dataspace.cesga.es/', label: t('analyze'), external: true },
+    { href: 'https://storage.dataspace.cesga.es/', label: t('store'), external: true },
+    { href: 'https://cloud.dataspace.cesga.es/', label: t('deliver'), external: true },
+    
   ];
 
   const aboutLinks = [
     { href: '/about', label: t('saber_mas') },
     { href: '/what', label: t('que_es_un_espacio') },
+     { href: 'https://dspacer-cesga.es/portal', label: t('dspacer'), external: true },
     { href: '/team', label: t('el_equipo') },
+    { href: '/faq', label: t('preguntas_frecuentes') },
+  ];
+
+  const joinLinks = [
+    { href: '/how', label: t('adhesion') },
+    { href: '/kitEdD', label: t('kit') },
   ];
 
   const latestLinks = [
@@ -172,6 +182,15 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             ))}
           </div>
         </div>
+        <div className="relative group flex">
+          <Link href="/how" className={navItemClass}>
+            {t('participa')}
+
+          </Link>
+
+
+        </div>
+
 
         <Link href="/catalog" className={navItemClass}>
           {t('catalogo')}
@@ -179,7 +198,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
 
 
         <div className="relative group flex">
-          <Link href="/dataspace" className={navItemClass}>
+          <Link href="https://dashboard.dataspace.cesga.es/" className={navItemClass} target="_blank">
             {t('tecnologias')}
             <ChevronUp className="ml-0.5 h-4 w-4 rotate-180 transition-transform duration-300 group-hover:rotate-0" />
           </Link>
@@ -193,17 +212,14 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           </div>
         </div>
 
-        <div className="relative group flex">
-          <Link href="/how" className={navItemClass}>
-            {t('participa')}
-          
+        {links.map(({ href, label }) => (
+          <Link key={href} href={href} className={navItemClass}>
+            {label}
           </Link>
-
-
-        </div>
+        ))}
 
         <div className="relative group flex">
-          <Link href="/how" className={navItemClass}>
+          <Link href="/events" className={navItemClass}>
             {t('latest')}
             <ChevronUp className="ml-0.5 h-4 w-4 rotate-180 transition-transform duration-300 group-hover:rotate-0" />
           </Link>
@@ -217,11 +233,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           </div>
         </div>
 
-        {links.map(({ href, label }) => (
-          <Link key={href} href={href} className={navItemClass}>
-            {label}
-          </Link>
-        ))}
+
 
         <LanguageSelector />
       </nav>
@@ -242,99 +254,121 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     );
   }
 
- function MobileNav() {
+function MobileNav() {
   return (
     <Disclosure.Panel className="lg:hidden">
       <div className="mx-4 mt-4 rounded-2xl bg-white/90 backdrop-blur-xl shadow-lg border border-gray-200/60 p-5">
-        <motion.div className="flex flex-col gap-6">
-          <div className="flex flex-col gap-2">
-            <Link
-              href="/about"
-              className="text-base font-semibold text-gray-900 hover:text-[#005467]"
-            >
-              {t('centro_demostrador')}
-            </Link>
+        <motion.div
+          initial={{ opacity: 0, y: -12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.25 }}
+          className="flex flex-col gap-2"
+        >
 
-            <div className="ml-4 flex flex-col gap-2">
-              {aboutLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-sm text-gray-700 hover:text-[#005467]"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
+          <Disclosure>
+            {({ open }) => (
+              <>
+                <Disclosure.Button className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left font-medium text-gray-900 hover:bg-[#005467]/10">
+                  {t('centro_demostrador')}
+                  <ChevronUp
+                    className={`h-5 w-5 transition-transform ${
+                      open ? '' : 'rotate-180'
+                    }`}
+                  />
+                </Disclosure.Button>
 
-          <Link
-            href="/catalog"
-            className="text-base font-semibold text-gray-900 hover:text-[#005467]"
-          >
-            {t('catalogo')}
-          </Link>
-
-          <div className="flex flex-col gap-2">
-            <Link
-              href="/dataspace"
-              className="text-base font-semibold text-gray-900 hover:text-[#005467]"
-            >
-              {t('tecnologias')}
-            </Link>
-
-            <div className="ml-4 flex flex-col gap-2">
-              {techLinks.map(({ href, label, external }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  target={external ? '_blank' : undefined}
-                  className="text-sm text-gray-700 hover:text-[#005467]"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
+                <Disclosure.Panel className="ml-4 flex flex-col pb-2">
+                  {aboutLinks.map(({ href, label }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      className="rounded-lg px-3 py-2 text-gray-700 hover:bg-[#005467]/10 hover:text-[#005467]"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </Disclosure.Panel>
+              </>
+            )}
+          </Disclosure>
 
           <Link
             href="/how"
-            className="text-base font-semibold text-gray-900 hover:text-[#005467]"
+            className="rounded-xl px-3 py-3 font-medium text-gray-900 hover:bg-[#005467]/10"
           >
             {t('participa')}
           </Link>
 
-          <div className="flex flex-col gap-2">
-            <Link
-              href="/how"
-              className="text-base font-semibold text-gray-900 hover:text-[#005467]"
-            >
-              {t('latest')}
-            </Link>
+    
+          <Link
+            href="/catalog"
+            className="rounded-xl px-3 py-3 font-medium text-gray-900 hover:bg-[#005467]/10"
+          >
+            {t('catalogo')}
+          </Link>
+          <Disclosure>
+            {({ open }) => (
+              <>
+                <Disclosure.Button className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left font-medium text-gray-900 hover:bg-[#005467]/10">
+                  {t('tecnologias')}
+                  <ChevronUp
+                    className={`h-5 w-5 transition-transform ${
+                      open ? '' : 'rotate-180'
+                    }`}
+                  />
+                </Disclosure.Button>
 
-            <div className="ml-4 flex flex-col gap-2">
-              {latestLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-sm text-gray-700 hover:text-[#005467]"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
+                <Disclosure.Panel className="ml-4 flex flex-col pb-2">
+                  {techLinks.map(({ href, label, external }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      target={external ? '_blank' : undefined}
+                      className="rounded-lg px-3 py-2 text-gray-700 hover:bg-[#005467]/10 hover:text-[#005467]"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </Disclosure.Panel>
+              </>
+            )}
+          </Disclosure>
           {links.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
-              className="text-base font-semibold text-gray-900 hover:text-[#005467]"
+              className="rounded-xl px-3 py-3 font-medium text-gray-900 hover:bg-[#005467]/10"
             >
               {label}
             </Link>
           ))}
 
+          <Disclosure>
+            {({ open }) => (
+              <>
+                <Disclosure.Button className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left font-medium text-gray-900 hover:bg-[#005467]/10">
+                  {t('latest')}
+                  <ChevronUp
+                    className={`h-5 w-5 transition-transform ${
+                      open ? '' : 'rotate-180'
+                    }`}
+                  />
+                </Disclosure.Button>
+
+                <Disclosure.Panel className="ml-4 flex flex-col pb-2">
+                  {latestLinks.map(({ href, label }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      className="rounded-lg px-3 py-2 text-gray-700 hover:bg-[#005467]/10 hover:text-[#005467]"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </Disclosure.Panel>
+              </>
+            )}
+          </Disclosure>
           <MobileLanguageSelector />
         </motion.div>
       </div>

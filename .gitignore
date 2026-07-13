@@ -39,3 +39,5 @@ next-env.d.ts
 
 #encuestas
 /data
+# playwright mcp session artifacts
+.playwright-mcp/

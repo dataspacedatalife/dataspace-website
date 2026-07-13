@@ -30,21 +30,20 @@ export default async function RootLayout({ params, children }: LayoutProps) {
   setRequestLocale(locale);
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
-        {/* Fuentes */}
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap"
         />
       </head>
 
-      {/* Fondo verde muy claro aplicado globalmente */}
-      <body className="bg-[#f5fcfe] text-gray-950 antialiased">
+      <body
+        className="bg-[#f5fcfe] text-gray-950 antialiased"
+        style={{
+          fontFamily: "'Barlow', 'Barlow Condensed', sans-serif",
+        }}
+      >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

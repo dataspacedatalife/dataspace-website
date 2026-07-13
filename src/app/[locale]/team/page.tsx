@@ -5,7 +5,7 @@ import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
 import { GradientBackground } from '@/components/gradient';
 import { Navbar } from '@/components/navbar';
-import { Heading, Subheading } from '@/components/text';
+import { Heading } from '@/components/text';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('team.metadata');
@@ -27,15 +27,12 @@ async function Header() {
 
       <section className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
         <div className="mx-auto max-w-xl lg:mx-0">
-          <h2 className="text-2xl font-medium tracking-tight">
-            {t('mission')}
-          </h2>
 
-          <p className="mt-6 text-sm/6 text-gray-600">
+          <p className="mt-6 text-xl text-gray-600">
             {t('missionText1')}
           </p>
 
-          <p className="mt-8 text-sm/6 text-gray-600">
+          <p className="mt-8 text-xl text-gray-600">
             {t('missionText2')}
           </p>
         </div>
@@ -110,9 +107,9 @@ async function Team() {
 
   return (
     <Container className="my-24">
-      <Subheading as="h3" className="text-center">
+      <h2 className="text-3xl font-medium tracking-tight text-center">
         {t('title')}
-      </Subheading>
+      </h2>
 
       <hr className="mt-6 border-t border-gray-200" />
 

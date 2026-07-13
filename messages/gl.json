@@ -1,23 +1,76 @@
 {
   "home": {
+    "metadata": {
+      "description": "Comparte, analiza e publica datos — nun mesmo espazo de confianza"
+    },
     "hero": {
-      "title": "Espazo de datos multisectorial One Health",
-      "subtitle": "Facilitamos ás entidades participantes compartir, procesar, almacenar e analizar datos de saúde humana, animal e ambiental, mantendo o control sobre eles e transformándoos en coñecemento para mellorar a saúde global.",
+      "title": "Máis que datos",
+      "subtitle": "OneHealth DataSpace vai máis alá de compartir datos.\nAnaliza, procesa e publica os teus datos na mesma plataforma, con control total durante todo o seu ciclo de vida.",
       "learnMore": "Saber máis",
-      "testDemo": "Acceder"
+      "access": "Accede á plataforma",
+      "graphTagline": "Todo o ciclo de vida do dato. Unha plataforma.",
+      "graphControl": "Ti mantés o control dos teus datos",
+      "governance": "Gobernanza e confianza"
+    },
+    "bridge": {
+      "kicker": "Por que somos diferentes",
+      "title": "Un espazo de datos tradicional queda en compartir",
+      "titleHighlight": "OneHealth DataSpace cobre a viaxe completa",
+      "text": "Compartir de forma soberana é só o primeiro paso. Aquí, a mesma plataforma ofréceche ademais a capacidade de cálculo, a analítica e os servizos de publicación que precisas para converter os datos compartidos en resultados, sen saír do espazo de confianza.",
+      "traditionalLabel": "Un espazo de datos tradicional remata aquí",
+      "oursLabel": "Aquí, continúa",
+      "cta": "Percorre a viaxe",
+      "ctaSecondary": "Que é un espazo de datos?"
+    },
+    "services": {
+      "title": "Máis que datos",
+      "subtitle": "Un ciclo de vida operativo completo para o dato",
+      "share": "Compartir datos de forma segura entre entidades",
+      "compute": "Procesamento avanzado de datos e HPC",
+      "analyze": "Transformar datos en coñecemento útil",
+      "store": "Xestión segura de grandes volumes de datos",
+      "deliver": "Publicar servizos e resultados de datos",
+      "cta": "Ir ao servizo",
+      "next": "Seguinte",
+      "participants": "Descubre quen participa",
+      "stepLabel": "Etapa",
+      "whatLabel": "Que é",
+      "exampleLabel": "Exemplo",
+      "shareWhat": "Un servizo para intercambiar conxuntos de datos entre organizacións de forma soberana: cada entidade decide quen accede aos seus datos, con que fins e baixo que condicións.",
+      "shareExample": "Un hospital comparte datos clínicos anonimizados cun grupo de investigación veterinaria para estudar a resistencia aos antibióticos.",
+      "computeWhat": "Acceso á supercomputación do CESGA para executar cargas de traballo intensivas: simulacións, adestramento de modelos de IA ou procesamento xenómico.",
+      "computeExample": "Un equipo adestra un modelo de predición de gromos combinando datos ambientais e sanitarios no clúster HPC.",
+      "analyzeWhat": "Ferramentas de Big Data e analítica para explorar os datos do espazo e convertelos en indicadores, visualizacións e coñecemento accionable.",
+      "analyzeExample": "Cruzamento de datos de calidade da auga e casos de zoonose para detectar patróns de risco nunha comarca.",
+      "storeWhat": "Almacenamento seguro e escalable para grandes volumes de datos, con control de acceso e trazabilidade durante todo o seu ciclo de vida.",
+      "storeExample": "Unha universidade deposita anos de series históricas de sensores ambientais para a súa reutilización en novos proxectos.",
+      "deliverWhat": "Infraestrutura cloud para publicar resultados como servizos: APIs, cadros de mando ou aplicacións accesibles para outros participantes.",
+      "deliverExample": "Un centro publica un cadro de mando epidemiolóxico que outras entidades consultan en tempo real."
+    },
+    "outro": {
+      "title": "A viaxe xa está en marcha",
+      "text": "Entidades de saúde humana, animal e ambiental xa están a desenvolver casos de uso sobre OneHealth DataSpace.",
+      "join": "Únete ao espazo de datos",
+      "cta": "Explora o catálogo"
     }
   },
   "Navbar": {
     "home": "Inicio",
     "centro_demostrador": "Proxecto",
-    "saber_mas": "Saber máis",
+    "saber_mas": "Que é OneHealth DataSpace?",
     "que_es_un_espacio": "Que é un espazo de datos?",
     "participa": "Únete",
     "adhesion": "Adherirse",
     "kit": "Kit Espazos de Datos",
-    "tecnologias": "Tecnoloxías",
+    "tecnologias": "Servizos",
+    "dashboard": "Dashboard",
     "xdatashare": "Espazo de Datos (MVD)",
-    "dspacer": "Piloto FarmaciaVAX",
+    "share": "Comparte",
+    "analyze": "Analiza",
+    "compute": "Computa",
+    "deliver": "Expón",
+    "store": "Almacena",
+    "dspacer": "Farmacia VAX",
     "preguntas_frecuentes": "Preguntas frecuentes",
     "casos_de_uso": "Casos de Uso",
     "catalogo": "Catálogo",
@@ -33,42 +86,90 @@
   },
   "about": {
     "metadata": {
-      "title": "Que é o proxecto OneHealth DataSpace?",
-      "description": "Explicación do que é o proxecto OneHealth DataSpace"
-    },
-    "graphic": {
-      "human": "Saúde humana",
-      "animal": "Saúde animal",
-      "environmental": "Saúde ambiental"
+      "title": "Que é OneHealth DataSpace?",
+      "description": "Espazo de datos multisectorial One Health impulsado por CESGA"
     },
     "header": {
-      "title": "OneHealth DataSpace",
-      "lead": "Trátase dunha plataforma que permite compartir e acceder a datos do sector saúde de forma segura, ética, gobernada e interoperable, respectando a soberanía do dato",
-      "imageAlt": "OneHealth"
+      "title": "Que é OneHealth DataSpace?",
+      "lead": "OneHealth DataSpace é o espazo de datos multisectorial impulsado por CESGA para facilitar a colaboración entre organizacións que traballan en saúde humana, saúde animal e saúde ambiental."
     },
-    "objective": {
-      "title": "Obxectivo",
-      "text1": "Ten como obxectivo ilustrar como múltiples organizacións relacionadas co ámbito OneHealth poden intercambiar datos de forma segura e controlada.",
-      "text2": "O sistema garante o cumprimento normativo, a soberanía do dato e a interoperabilidade entre diferentes actores, desde hospitais e centros de investigación ata empresas privadas."
+    "about": {
+      "title": "Que é OneHealth DataSpace?",
+      "paragraph1": "OneHealth DataSpace é o espazo de datos multisectorial impulsado por CESGA para facilitar a colaboración entre organizacións que traballan en <strong>saúde humana, saúde animal e saúde ambiental.</strong>",
+      "paragraph2": "A súa misión é converter os datos en coñecemento útil para mellorar a saúde global mediante tecnoloxías de compartición segura de datos, intelixencia artificial, análise avanzada e computación de altas prestacións.",
+      "paragraph3": "As entidades participantes <strong>mantén o control sobre os seus datos</strong> mentres colaboran en proxectos de investigación, innovación e intelixencia artificial dentro dun ecosistema baseado no enfoque One Health.",
+      "paragraph4": "Máis que unha plataforma de intercambio de datos, OneHealth DataSpace constitúe a base do futuro ecosistema europeo de IA en saúde global impulsado por CESGA a través da iniciativa <strong>1HealthAI Factory.</strong>"
     },
-    "motivation": {
-      "title": "Motivación",
-      "text": "Os retos na saúde humana, animal e ambiental están interconectados e requiren unha visión conxunta baseada en datos que permitan afrontalos. OneHealth DataSpace ofrece unha plataforma para integrar e analizar información multisectorial, facilitando decisións informadas e políticas públicas baseadas en evidencia."
+    "benefits": {
+      "title": "Beneficios do OneHealth DataSpace",
+      "item1": "• Comparte datos sen perder o control.",
+      "item2": "• Elimina silos de información.",
+      "item3": "• Facilita a interoperabilidade entre organizacións.",
+      "item4": "• Xera valor a partir dos datos de forma segura.",
+      "item5": "• Accede a capacidades avanzadas de IA e supercomputación.",
+      "item6": "• Participa nunha infraestrutura europea sostible a longo prazo."
     },
-    "impact": {
-      "title": "Impacto do proxecto",
-      "useCases": "Casos de uso",
-      "sectors": "Sectores implicados",
-      "organizations": "Organizacións participantes"
+    "oneHealth": {
+      "title": "O enfoque One Health",
+      "image": "/demostrador/grafica-onehealth-600px-GL.png",
+      "paragraph1": "O concepto One Health recoñece que a saúde humana, animal e ambiental están interconectadas.",
+      "paragraph2": "Por iso, os grandes retos actuais —pandemias, resistencia antimicrobiana, zoonoses, seguridade alimentaria ou impacto ambiental— requiren compartir coñecemento e datos entre múltiples disciplinas.",
+      "paragraph3": "OneHealth DataSpace proporciona a infraestrutura necesaria para facelo de forma segura e escalable."
     },
     "funding": {
-      "title": "Información sobre financiamento",
-      "call": "Convocatoria do Ministerio para a Transformación Dixital e da Función Pública: Demostradores e casos de uso de espazos de datos.",
-      "grant": "Convocatoria de axudas: “Espazos de datos sectoriais 2023 para a creación de demostradores e casos de uso de espazos de compartición de datos.”",
+      "title": "OneHealth DataSpace é un proxecto",
+      "call": "Financiado pola Unión Europea – NextGenerationEU.",
+      "grant": "A través da convocatoria do Ministerio para a Transformación Dixital e da Función Pública: Demostradores e Casos de uso de Espazos de Datos. “Espazos de Datos Sectoriais 2023 para a creación de demostradores e casos de uso de espazos de compartición de datos.”",
       "program": "O programa “Espazos de datos sectoriais” forma parte do investimento 1 do compoñente 12 do Plan de Recuperación, Transformación e Resiliencia, financiado a través do Mecanismo de Recuperación e Resiliencia (MRR).",
-      "details": "Número de expediente: TSI-100120-2024-12\nPeríodo: 13-12-2024 – 30-06-2026\nFinanciado por: Ministerio para a Transformación Dixital e da Función Pública\nImporte total: 3.077.058 €",
+      "details": "Número de expediente: TSI-100120-2024-12\nPeríodo: 13-12-2024 – 30-06-2026. Aplazado ao 31 de agosto de 2026.\nFinanciado por: Ministerio para a Transformación Dixital e da Función Pública\nImporte total: 3.077.058 €",
       "linkText": "Ver seguimento da execución",
-      "linkUrl": "https://www.cesga.es/ejecucion-fondos-nextgenerationeu-mrr-prtr/#tabla7"
+      "linkUrl": "https://planderecuperacion.gob.es/"
+    }
+  },
+  "training": {
+    "metadata": {
+      "title": "OneHealth DataSpace: formación en espazos de datos e enfoque One Health",
+      "description": "Cursos e obradoiros para aprender que son os espazos de datos e como aplicar o enfoque One Health aos datos. Fórmate con OneHealth DataSpace."
+    },
+    "intro": {
+      "title": "Formación en espazos de datos e One Health",
+      "paragraph1": "En OneHealth DataSpace impartimos cursos e obradoiros para aprender que son os espazos de datos, como funcionan e como se aplica o enfoque One Health —a integración da saúde humana, animal e ambiental— ao intercambio e manexo de datos.",
+      "paragraph2": "A nosa oferta formativa está dirixida tanto a quen se achega por primeira vez a estas tecnoloxías como a perfís do ámbito One Health.",
+      "paragraph3": "As entidades socias do proxecto contan ademais con titoriais específicos que resolven dúbidas prácticas sobre o uso da plataforma, desde os primeiros pasos ata as súas funcionalidades avanzadas, e amosan os resultados que se poden acadar co ecosistema OneHealth DataSpace."
+    },
+    "cta": {
+      "text": "👉 Consulta os nosos eventos formativos e reserva a túa praza"
+    },
+    "videos": {
+      "title": "Explora o MVD en acción",
+      "tutorialsTitle": "Obradoiros e titoriais",
+      "coursesTitle": "Cursos",
+      "courseCaption1": "Modelo de Negocio en OneHealth DataSpace",
+      "courseUrl1": "https://www.youtube.com/embed/VF9GnYHOzAU",
+      "courseCaption2": "Gobernanza de Datos",
+      "courseUrl2": "https://www.youtube.com/embed/O3WisG2cmqQ",
+      "courseCaption3": "Evolución do espazo de datos OneHealth DataSpace: integración con HPC, Big Data e evolución Cloud",
+      "courseUrl3": "https://www.youtube.com/embed/HTaVG_vaw-s",
+      "courseCaption4": "Uso práctico de AnonymiX, Clever e Portal do Participante",
+      "courseUrl4": "https://www.youtube.com/embed/Tt8Rt5-UmGw",
+      "courseCaption5": "Evolución do espazo de datos: integración de sistemas de ficheiros HPC",
+      "courseUrl5": "https://www.youtube.com/embed/XEC_5QG38sk",
+      "courseCaption6": "Introdución ao Conector do Espazo de Datos",
+      "courseUrl6": "https://www.youtube.com/embed/Yn8FVg8ctr8",
+      "tutorialCaption1": "Titorial EDD One Health (1/3) | Primeiros pasos. Configuración previa.",
+      "tutorialUrl1": "https://www.youtube.com/embed/z72j1-uQCVo",
+      "tutorialCaption2": "Titorial EDD One Health (2/3) | Subida de assets e creación de contrato para compartir con DSGA",
+      "tutorialUrl2": "https://www.youtube.com/embed/yshUdWjAsw8",
+      "tutorialCaption3": "Titorial EDD OneHealth (3/3) | Capturas para a declaración de evidencias",
+      "tutorialUrl3": "https://www.youtube.com/embed/CRtcBkdf0Wg",
+      "tutorialCaption4": "Obradoiro de espazo de datos sobre conectores EDC",
+      "tutorialUrl4": "https://www.youtube.com/embed/WGBCGCz8vHc",
+      "tutorialCaption5": "Obradoiro do espazo de datos FarmaciaVAX con XDataShare",
+      "tutorialUrl5": "https://www.youtube.com/embed/u7zTyU795n8",
+      "tutorialCaption6": "Obradoiro do espazo de datos FarmaciaVAX coa plataforma D-Spacer de SQS",
+      "tutorialUrl6": "https://www.youtube.com/embed/50Ahpz-1VPI",
+      "tutorialCaption7": "Titorial | Subida e visualización de assets",
+      "tutorialUrl7": "https://www.youtube.com/embed/2bZ2O_1Hkr4"
     }
   },
   "technologies": {
@@ -270,10 +371,9 @@
       "description": "Impulsando a innovación desde o CESGA. A nosa misión é acelerar a transformación dixital dos sectores da biotecnoloxía, agroalimentario, forestal-mar-industrial e saúde"
     },
     "header": {
-      "title": "Impulsando a innovación desde o CESGA",
-      "mission": "A nosa misión",
-      "missionText1": "No CESGA, a nosa misión é acelerar a transformación dixital dos sectores da biotecnoloxía, agroalimentario, forestal-mar-industrial e saúde. A través do demostrador multisectorial, proporcionamos solucións baseadas en intelixencia artificial, big data e computación de altas prestacións.",
-      "missionText2": "Este proxecto busca explotar, mediante casos reais, tecnoloxías emerxentes que poidan mellorar a competitividade das empresas galegas, apostando por unha Galicia conectada, sostible e líder en innovación.",
+      "title": "Impulsamos a innovación",
+      "missionText1": "OneHealth DataSpace está impulsado por un equipo multidisciplinar do Centro de Supercomputación de Galicia (CESGA) especializado en espazos de datos, intelixencia artificial, ciencia de datos, supercomputación, interoperabilidade e gobernanza dixital.",
+      "missionText2": "Desde o CESGA traballamos para facilitar a compartición segura de datos entre organizacións, impulsando a investigación, a innovación e o desenvolvemento de solucións baseadas en datos e intelixencia artificial baixo o enfoque One Health. O noso compromiso é construír unha infraestrutura sostible, aliñada coa estratexia europea do dato e preparada para evolucionar xunto á futura 1HealthAI Factory.",
       "imageAlt": "Supercomputador Finisterrae"
     },
     "team": {
@@ -384,40 +484,34 @@
     },
     "header": {
       "title": "Que é un espazo de datos?",
-      "lead": "Un espazo de datos é un marco estruturado que permite o intercambio, acceso, xestión e uso de datos entre múltiples entidades de maneira segura, interoperable e conforme á normativa"
+      "lead": "Un espazo de datos é un contorno dixital que permite a múltiples organizacións compartir e xestionar datos de forma segura, respectando a soberanía de cada participante e garantindo o control sobre a información."
     },
-    "objective": {
-      "title": "Obxectivo",
-      "text": "O obxectivo é facilitar a colaboración baseada en datos, respectando principios como a soberanía dos datos, a privacidade e a ética. Os espazos de datos combinan tecnoloxías como infraestruturas de intercambio, estándares comúns e control de acceso, xunto con acordos legais e organizativos, para permitir un uso compartido e responsable."
+    "importance": {
+      "title": "Por que é clave para a innovación baseada en datos?",
+      "paragraph1": "A diferenza dos modelos tradicionais de intercambio de información, os espazos de datos permiten que cada participante manteña a soberanía sobre os seus activos dixitais, decidindo quen pode acceder a eles, con que propósito e baixo que condicións.",
+      "paragraph2": "Os espazos de datos eliminan silos de información, fomentan a confianza entre organizacións e permiten desenvolver novos servizos, investigacións e modelos de intelixencia artificial sen que as entidades adheridas perdan o control sobre os datos."
     },
-    "motivation": {
-      "title": "Motivación",
-      "text": "Os grandes retos sociais, económicos e ambientais adoitan estar interconectados e requiren unha visión conxunta baseada en datos que permita afrontalos. Os espazos de datos proporcionan un marco para integrar e analizar información de distintos sectores, o que facilita a colaboración entre actores, a toma de decisións informadas e o desenvolvemento de políticas e servizos baseados en evidencias."
-    },
-    "features": {
-      "security": {
-        "title": "Seguridade",
-        "description": "Protección integral dos datos mediante cifrado e autenticación."
+    "principles": {
+      "title": "Principios fundamentais",
+      "sovereignty": {
+        "title": "Soberanía do dato",
+        "description": "Cada participante mantén o control sobre os seus datos e decide como se empregan."
       },
       "interoperability": {
         "title": "Interoperabilidade",
-        "description": "Integración entre plataformas e sistemas mediante estándares abertos."
-      },
-      "privacy": {
-        "title": "Privacidade",
-        "description": "Acceso a datos baseado no consentimento e en políticas transparentes."
+        "description": "Os datos poden compartirse entre sistemas e organizacións diferentes mediante estándares comúns."
       },
       "governance": {
-        "title": "Gobernanza",
-        "description": "Normas claras sobre como se accede, usa e comparte a información."
+        "title": "Gobernanza federada",
+        "description": "As regras de uso son transparentes, auditables e consensuadas entre os participantes."
       },
-      "collaboration": {
-        "title": "Colaboración",
-        "description": "Cooperación entre sectores públicos, privados e cidadáns."
+      "trust": {
+        "title": "Confianza e trazabilidade",
+        "description": "Todas as operacións quedan rexistradas e poden ser verificadas en calquera momento."
       },
-      "sovereignty": {
-        "title": "Soberanía dos datos",
-        "description": "Cada organización mantén o control sobre os seus propios datos."
+      "value": {
+        "title": "Xeración de valor compartido",
+        "description": "Os participantes colaboran para crear coñecemento, innovación e novos servizos."
       }
     }
   },
@@ -1067,7 +1161,7 @@
   },
   "catalog": {
     "title": "Catálogo",
-    "subtitle": "Explora os casos de uso propostos en OneHealth DataSpace e os conxuntos de datos relacionados",
+    "subtitle": "Explora os casos de uso propostos e os conxuntos de datos relacionados",
     "viewDetails": "Ver detalles",
     "contact": "Contactar",
     "close": "Pechar",
@@ -1855,11 +1949,11 @@
             "description": "Este ficheiro contén información sobre 21.608 interaccións de conversacións dos 67 usuarios cun asistente IA.",
             "metadata": {
               "data_type": "Empírico",
-              "data_standard": "",
+              "data_standard": "-",
               "date_added": "",
               "file_format": "CSV",
-              "license": "Propietaria (restrinxida baixo contrato)",
-              "temporal_resolution": "Evento",
+              "license": "Por definir (RGPD aplicable)",
+              "temporal_resolution": "",
               "temporal_coverage": ""
             },
             "variables": [
@@ -4257,17 +4351,26 @@
     "data_description": "Descrición dos datos",
     "entidad_promotora": "Entidade promotora",
     "categories": {
+      "all": "OneHealth",
       "human": "Saúde humana",
       "animal": "Saúde animal",
       "environmental": "Saúde medioambiental"
-    }
+    },
+    "data_section_labels": {
+      "data_type": "Tipo de datos",
+      "data_source": "Fonte dos datos",
+      "intended_use": "Uso previsto dos datos"
+    },
+    "search_placeholder": "Buscar no catálogo…",
+    "search_clear": "Borrar busca",
+    "no_results": "Non se atoparon conxuntos de datos que coincidan coa busca."
   },
   "blog": {
     "metadata": {
       "title": "Blog",
       "description": "Mantente informado sobre todas as novas"
     },
-    "title": "Novidades do centro demostrador",
+    "title": "Novas",
     "subtitle": "Novas",
     "lead": "Mantente ao tanto dos últimos avances e descubre como estamos impulsando a compartición de datos segura, interoperable e multisectorial",
     "learnMore": "Máis información",
@@ -4426,61 +4529,45 @@
       "description": "Preguntas máis frecuentes dos usuarios"
     },
     "title": "Preguntas frecuentes",
-    "description": "A continuación, mostramos as preguntas máis frecuentes realizadas polos usuarios que poden consultarse de maneira máis detallada no manual de usuario",
-    "link": "Manual de usuario",
-    "section1": "Sobre o espazo de datos",
-    "section2": "Roles e participación",
-    "section3": "Proceso de adhesión",
-    "section4": "Parte técnica (conectores e datos)",
-    "section5": "Seguridade e gobernanza",
-    "section6": "Uso e funcionamento",
-    "section7": "Problemas comúns",
-    "section8": "Recomendacións para comezar",
-    "question1": "Que é o Espazo de Datos?",
-    "answer1": "É un entorno seguro onde as organizacións poden compartir, acceder e utilizar datos ou servizos mantendo sempre o control sobre eles.",
-    "question2": "Que significa “adherirse” ao espazo de datos?",
-    "answer2": "Significa incorporarse ao ecosistema para:\n• Compartir datos\n• Consumir datos\n• Ofrecer ou usar servizos\nSempre baixo regras de seguridade, privacidade e control.",
-    "question3": "Perdo a propiedade dos meus datos ao participar?",
-    "answer3": "Non. Ti decides:\n• Que datos compartes\n• Con quen\n• En que condicións\nNunca hai cesión obrigatoria de datos.",
+    "description": "Preguntas frecuentes sobre OneHealth DataSpace. Para máis información, consulta o noso Manual de Usuario",
+    "link": "Manual de Usuario",
+    "question1": "Que é OneHealth DataSpace?",
+    "answer1": "OneHealth DataSpace é un espazo de datos federado que permite ás organizacións compartir, acceder e utilizar datos e servizos relacionados coa saúde humana, animal e ambiental de forma segura, interoperable e baixo control soberano.\n\nO seu obxectivo é transformar datos distribuídos en coñecemento útil para impulsar a investigación, a innovación, a toma de decisións baseada en evidencias e o desenvolvemento de solucións de intelixencia artificial dentro do ecosistema One Health.",
+    "question2": "Que é un espazo de datos?",
+    "answer2": "Un espazo de datos é un contorno de colaboración que permite intercambiar e reutilizar datos entre múltiples organizacións mediante regras comúns de gobernanza, seguridade, interoperabilidade e confianza.\n\nA diferenza dos modelos tradicionais, un espazo de datos non require centralizar a información. Cada organización mantén o control sobre os seus propios datos e decide quen pode acceder a eles, para que finalidade e baixo que condicións.",
+    "question3": "Que significa adherirse a OneHealth DataSpace?",
+    "answer3": "Adherirse significa incorporarse ao ecosistema para compartir datos, consumir datos, ofrecer servizos ou utilizar servizos dixitais dentro dun marco común de gobernanza.\n\nA adhesión combina unha parte administrativa e unha integración técnica, permitindo participar en casos de uso, proxectos colaborativos e futuros desenvolvementos vinculados ao ecosistema One Health e á futura 1HealthAI Factory.",
     "question4": "Quen pode participar?",
-    "answer4": "• Hospitais e centros sanitarios\n• Universidades e centros de investigación\n• Administracións públicas\n• Empresas, startups e centros tecnolóxicos.",
-    "question5": "Que roles existen dentro do espazo de datos?",
-    "answer5": "Podes participar como:\n• Provedor de datos\n• Consumidor de datos\n• Provedor de servizos\n• Consumidor de servizos\nUnha mesma entidade pode ter varios roles á vez.",
-    "question6": "Cal é o rol máis habitual para comezar?",
-    "answer6": "O máis común é Provedor de datos, compartindo un dataset para validación ou uso por outros participantes.",
-    "question7": "Como me adhiero ao espazo de datos?",
-    "answer7": "O proceso ten dúas fases:\n• Solicitude administrativa: completar formulario de interese e validación por CESGA.\n• Integración técnica: despregar o conector e publicar datos ou servizos.",
-    "question8": "Canto tarda o proceso?",
-    "answer8": "Avaliación da solicitude: ata 2 semanas.\nIntegración técnica: depende do usuario (horas ou días).",
-    "question9": "Necesito asinar algún acordo?",
-    "answer9": "Si, nalgúns casos formalízase un contrato de adhesión antes da integración técnica.",
-    "question10": "Que é un conector?",
-    "answer10": "É unha ferramenta que permite conectar os teus sistemas co espazo de datos.\nImportante:\n• Non almacena datos\n• Só xestiona acceso e intercambio.",
-    "question11": "Necesito infraestrutura propia?",
-    "answer11": "Si. Necesitas:\n• Servidor (local ou cloud)\n• Recursos mínimos (RAM, CPU)\n• Conexión a internet.",
-    "question12": "Onde se almacenan os meus datos?",
-    "answer12": "Na túa propia infraestrutura ou en servizos externos (por exemplo, nube).\nO conector só apunta a eles mediante unha URL.",
-    "question13": "Que é un asset?",
-    "answer13": "É un paquete de datos ou servizo que compartes no espazo de datos.\nInclúe:\n• Datos\n• Metadatos\n• Licenza\n• Documentación.",
-    "question14": "Como se controla o acceso aos datos?",
-    "answer14": "Mediante:\n• Contratos de uso\n• Políticas definidas polo provedor\nTi decides quen accede e como.",
-    "question15": "Que normativas debo cumprir?",
-    "answer15": "• Protección de datos (RGPD)\n• Seguridade\n• Ética e gobernanza do espazo.",
-    "question16": "Hai supervisión ou auditoría?",
-    "answer16": "Si. O sistema pode incluír:\n• Verificación de calidade\n• Auditorías\n• Supervisión de cumprimento.",
-    "question17": "Como accedo a datos doutros participantes?",
-    "answer17": "A través do catálogo do espazo de datos, onde podes:\n• Buscar datasets\n• Solicitar acceso\n• Aceptar condicións.",
-    "question18": "Que beneficios obteño ao participar?",
-    "answer18": "• Acceso a datos e servizos\n• Colaboración con outras entidades\n• Visibilidade dos teus datos\n• Integración con ecosistemas europeos.",
-    "question19": "Non vexo datos no catálogo, que pasa?",
-    "answer19": "Pode deberse a:\n• Problemas de conexión\n• Configuración incorrecta do conector.",
-    "question20": "Que ocorre se o meu dataset non cumpre requisitos?",
-    "answer20": "Non será validado.\nDebe cumprir:\n• Calidade\n• Documentación\n• Coherencia co declarado.",
-    "question21": "Podo modificar ou retirar os meus datos?",
-    "answer21": "Si. Mantés o control total en todo momento.",
-    "question22": "Como comezo se son principiante?",
-    "answer22": "• Define un caso de uso sinxelo\n• Prepara un dataset pequeno\n• Despregua o conector\n• Publica un primeiro asset\n• Valida con CESGA.",
-    "question23": "Que se debe evitar?",
-    "answer23": "• Non documentar os datos\n• Usar URLs inaccesibles\n• Reconfigurar o conector sen control\n• Non definir condicións de uso."
+    "answer4": "Poden participar organizacións públicas e privadas que traballen con datos ou servizos relacionados coa saúde, a investigación ou a innovación.\n\n• Hospitais e centros sanitarios.\n• Universidades e grupos de investigación.\n• Centros tecnolóxicos.\n• Empresas e startups.\n• Administracións públicas.\n• Organizacións participantes en iniciativas nacionais e europeas de compartición de datos.",
+    "question5": "Perdo a propiedade dos meus datos ao participar?",
+    "answer5": "Non.\n\nUn dos principios fundamentais de OneHealth DataSpace é a soberanía do dato. Cada organización mantén a propiedade, o control e a capacidade de decisión sobre os seus activos dixitais.\n\nO participante decide:\n• Que datos compartir.\n• Con quen compartilos.\n• Durante canto tempo.\n• Para que finalidade.\n• Baixo que condicións de uso.\n\nA participación no espazo de datos non implica a cesión obrigatoria de información.",
+    "question6": "Onde se almacenan os meus datos?",
+    "answer6": "Os datos permanecen na infraestrutura do propietario ou nos servizos tecnolóxicos que este decida utilizar.\n\nOneHealth DataSpace emprega unha arquitectura federada. Isto significa que o espazo de datos facilita o descubrimento, acceso e intercambio de información sen necesidade de trasladar permanentemente os datos a unha plataforma centralizada.",
+    "question7": "Que roles existen dentro do espazo de datos?",
+    "answer7": "Unha organización pode participar cun ou varios roles simultaneamente.\n\nProvedor de datos: comparte conxuntos de datos ou produtos de datos con outros participantes.\n\nConsumidor de datos: solicita acceso e utiliza información publicada por outras organizacións.\n\nProvedor de servizos: ofrece ferramentas, capacidades analíticas ou servizos dixitais ao ecosistema.\n\nConsumidor de servizos: utiliza servizos ofrecidos por outros participantes.\n\nEsta flexibilidade permite que cada organización participe segundo as súas necesidades e obxectivos.",
+    "question8": "Que é un asset?",
+    "answer8": "Un asset é a unidade básica que se publica dentro do espazo de datos.\n\nPode tratarse de:\n• Un conxunto de datos.\n• Un servizo dixital.\n• Un produto de datos.\n• Un recurso compartible.\n\nUn asset incorpora información descritiva, documentación, condicións de uso, metadatos e políticas de acceso que permiten o seu descubrimento e reutilización por outros participantes.",
+    "question9": "Que é un conector e para que serve?",
+    "answer9": "Un conector é o compoñente tecnolóxico que permite conectar os sistemas dunha organización co espazo de datos.\n\nA súa función principal é xestionar o intercambio seguro de información, aplicar políticas de acceso e garantir a interoperabilidade entre participantes.\n\nO conector non almacena os datos; simplemente facilita a conexión entre organizacións mantendo o control na orixe.",
+    "question10": "Como se controla o acceso aos datos?",
+    "answer10": "O acceso contrólase mediante políticas definidas polo provedor dos datos e mediante acordos de uso que establecen as condicións de acceso.\n\nEstas políticas poden especificar:\n• Quen pode acceder.\n• Que información pode utilizar.\n• Con que finalidade.\n• Durante canto tempo.\n• Baixo que restricións.\n\nEste modelo garante seguridade, trazabilidade e cumprimento normativo.",
+    "question11": "Que é a gobernanza nun espazo de datos?",
+    "answer11": "A gobernanza é o conxunto de regras, procesos e responsabilidades que permiten que o espazo de datos funcione de forma segura, transparente e fiable.\n\nA gobernanza define:\n• Como se incorporan novos participantes.\n• Como se xestionan conflitos ou incidencias.\n• Que normas regulan o uso dos datos.\n• Como se audita o cumprimento.\n• Que métricas permiten medir o impacto do ecosistema.\n\nUnha boa gobernanza é a base da confianza entre participantes.",
+    "question12": "Que normativas deben cumprirse?",
+    "answer12": "As organizacións participantes deben cumprir as normativas aplicables en materia de:\n• Protección de datos persoais (RXPD).\n• Seguridade da información.\n• Ética no uso dos datos.\n• Gobernanza e políticas do espazo de datos.\n\nAdemais, os activos publicados deben cumprir criterios mínimos de calidade, documentación e coherencia.",
+    "question13": "Existe trazabilidade e auditoría?",
+    "answer13": "Si.\n\nOneHealth DataSpace incorpora mecanismos de observabilidade, trazabilidade e auditoría que permiten rexistrar quen accede aos datos, cando accede, con que finalidade e baixo que condicións.\n\nIsto facilita o cumprimento normativo, a transparencia e a xeración de confianza entre organizacións.",
+    "question14": "Como accedo aos datos doutros participantes?",
+    "answer14": "Os datos e servizos dispoñibles publícanse nun catálogo común onde os participantes poden:\n1. Descubrir conxuntos de datos e servizos.\n2. Consultar a súa documentación.\n3. Revisar as condicións de acceso.\n4. Solicitar autorización.\n5. Utilizar os recursos unha vez aprobada a solicitude.\n\nTodo o proceso queda gobernado polas políticas definidas por cada provedor.",
+    "question15": "Que beneficios achega participar en OneHealth DataSpace?",
+    "answer15": "Participar en OneHealth DataSpace permite:\n• Acceder a datos e servizos de alto valor.\n• Colaborar con hospitais, universidades, empresas e administracións.\n• Incrementar a visibilidade e reutilización dos datos.\n• Integrarse en ecosistemas europeos de datos.\n• Preparar proxectos de intelixencia artificial sobre bases de datos gobernadas e fiables.\n• Conectar coa futura infraestrutura 1HealthAI Factory impulsada por CESGA.",
+    "question16": "Como se relaciona OneHealth DataSpace coa intelixencia artificial?",
+    "answer16": "Os modelos de intelixencia artificial necesitan datos de calidade, gobernados, interoperables e trazables.\n\nOneHealth DataSpace proporciona precisamente esa infraestrutura de datos, permitindo que as organizacións compartan información de forma segura para desenvolver solucións de IA, análise avanzada e modelos preditivos no ámbito One Health.",
+    "question17": "Que é a 1HealthAI Factory?",
+    "answer17": "A 1HealthAI Factory será a infraestrutura de intelixencia artificial especializada en saúde humana, animal e ambiental impulsada por CESGA.\n\nMentres que OneHealth DataSpace proporciona a capa de intercambio, gobernanza e compartición de datos, a AI Factory achegará capacidades avanzadas de adestramento de modelos, supercomputación, innovación e servizos de intelixencia artificial.\n\nXuntas conformarán un ecosistema integrado de datos e IA para a saúde global.",
+    "question18": "Que ocorrerá cando remate o proxecto actual?",
+    "answer18": "OneHealth DataSpace foi concibido como unha infraestrutura estratéxica con vocación de continuidade.\n\nA evolución cara á 1HealthAI Factory permitirá consolidar as capacidades desenvolvidas, incorporar novos participantes, ampliar os servizos dispoñibles e garantir a sustentabilidade tecnolóxica e organizativa do ecosistema a longo prazo.\n\nIsto converte o espazo de datos nunha iniciativa preparada para evolucionar máis aló dos períodos iniciais de financiamento.",
+    "question19": "Como podo comezar se nunca participei nun espazo de datos?",
+    "answer19": "A mellor forma de comezar é:\n1. Definir un caso de uso concreto.\n2. Identificar un conxunto de datos ou servizo inicial.\n3. Solicitar a adhesión ao ecosistema.\n4. Despregar o conector.\n5. Publicar un primeiro asset.\n6. Validar o proceso co equipo técnico de CESGA.\n\nEste enfoque permite incorporarse progresivamente ao ecosistema e comezar a xerar valor desde as primeiras fases de participación."
   }
 }
