@@ -57,7 +57,7 @@ export function ServicesSequence({ services }: { services: ServiceItem[] }) {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.2 }}
-                className="scroll-mt-24"
+                className="scroll-mt-6"
               >
                 <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md shadow-lg shadow-black/10">
                   {/* foto */}

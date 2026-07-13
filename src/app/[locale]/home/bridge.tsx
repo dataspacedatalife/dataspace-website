@@ -27,7 +27,10 @@ export function LifecycleBridge() {
   };
 
   return (
-    <section id="por-que" className="relative py-24 scroll-mt-24">
+    <section
+      id="por-que"
+      className="relative py-16 lg:py-24 scroll-mt-6 lg:scroll-mt-24"
+    >
       <Container>
         <motion.div
           variants={container}

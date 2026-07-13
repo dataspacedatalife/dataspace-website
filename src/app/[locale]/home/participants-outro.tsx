@@ -29,7 +29,7 @@ export function ParticipantsOutro() {
   return (
     <section
       id="participantes"
-      className="relative py-24 overflow-hidden scroll-mt-24"
+      className="relative py-24 overflow-hidden scroll-mt-6 lg:scroll-mt-24"
     >
       <Container>
         <div className="text-center">
