@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "title": "Data Spaces Kit",
+    "description": "Apply for the Data Spaces Kit grants and connect to the sectoral space through the Demonstrator Center."
+  },
+  "header": {
+    "title": "Data Spaces Kit",
+    "lead": "Are you a company, healthcare institution, or a node in the digital health ecosystem? Apply for the Data Spaces Kit grant and connect to our sectoral data space from the Demonstrator Center.",
+    "ctaPrimary": {
+      "label": "See Order TDF/758/2025 (BOE)",
+      "href": "https://www.boe.es/eli/es/o/2025/07/11/tdf758"
+    },
+    "ctaSecondary": {
+      "label": "Visit the official CRED website",
+      "href": "https://cred.digital.gob.es/kit-de-espacios-de-datos"
+    },
+    "cta3": {
+      "label": "Check our guide",
+      "href": "/kit/guia_solicitud_KIT_CESGA.pdf"
+    }
+  },
+  "what": {
+    "title": "What is it and why?",
+    "description": "The Data Spaces Kit is national funding aimed at incentivizing data sharing in Data Spaces for participating entities to cover to achieve this sharing. In this way, it boosts sectoral competitiveness and economic activity, proposing new business models.",
+    "imageAlt": "Data Spaces Kit cover"
+  },
+  "who": {
+    "title": "Who can apply?",
+    "items": [
+      "Public or private entities with legal personality and economic activity in the EU.",
+      "Spanish Public Administrations.",
+      "Public research organizations, associations, foundations, etc."
+    ]
+  },
+  "benefits": {
+    "title": "What does it cover?",
+    "items": [
+      "Identification of opportunities and a business plan based on data sharing.",
+      "Management of legal and regulatory conditions and requirements.",
+      "Data preparation and creation of data products.",
+      "Technical adaptation: infrastructure, software, and connectors to integrate into the data space."
+    ]
+  },
+  "conditions": {
+    "title": "Key conditions",
+    "items": [
+      "Effective registration as a participant or advanced provider.",
+      "Be up to date with obligations and comply with de minimis limits.",
+      "Companies with ≥ 6 months of activity and tax registration.",
+      "Not eligible: self-employed workers, temporary joint ventures (UTEs), civil partnerships, or joint ownership communities.",
+      "Each beneficiary entity, identified by its tax ID (CIF), may receive only one grant."
+    ]
+  },
+  "steps": {
+    "title": "Application steps",
+    "items": [
+      "Find a data space to connect to.",
+      "Contact the promoter of the chosen data space and formalize an Adhesion Contract.",
+      "Assess whether you can integrate into a data space with or without external help (is it necessary to hire a systems integrator?).",
+      "Make the connection to the chosen data space.",
+      "Execute and pay: carry out the adaptation activities (legal, technical, data) before applying for the grant and keep all invoices and proofs of expenditure."
+    ]
+  },
+  "interest": {
+    "title": "Interested in applying for the Kit?",
+    "description": "Fill out this form to express your interest and we’ll contact as soon as possible.",
+    "button": "Fill out interest form",
+    "formLink": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=R5ZY0bQ3n0O0XEaqtYBirpuP0cRaTKVPru3-n4Kp6ABUMUw3TEU0SUZBTk5VMDNIUlY5N0xSWTI1OC4u&route=shorturl"
+  },
+  "visual": {
+    "video": {
+      "title": "Watch the latest CRED webinar on the Kit",
+      "url": "https://www.youtube.com/embed/L5V9ISX40-g?si=pQP2iYRyd9n6WEhp"
+    },
+    "metrics": {
+      "title": "Maximum amounts",
+      "sections": {
+        "participante": {
+          "title": "Maximum amounts",
+          "items": [
+            {
+              "label": "Public and private entities",
+              "value": "Up to €15,000"
+            },
+            {
+              "label": "Public Administrations",
+              "value": "Up to €25,000"
+            }
+          ]
+        },
+        "proveedor": {
+          "title": "Maximum amounts",
+          "items": [
+            {
+              "label": "Public and private entities",
+              "value": "Up to €30,000"
+            },
+            {
+              "label": "Public Administrations",
+              "value": "Up to €50,000"
+            }
+          ]
+        }
+      }
+    },
+    "cards": {
+      "title": "Participation modes and maximum amounts",
+      "items": [
+        {
+          "title": "Participant",
+          "text": "Prepare your data, sign an adhesion contract with the chosen data space, and register in it.",
+          "icon": "Users"
+        },
+        {
+          "title": "Advanced provider",
+          "text": "Additionally, publish a dataset in the catalog of the selected data space.",
+          "icon": "Globe"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "title": "Equipo",
+    "description": "Impulsando a innovación desde o CESGA. A nosa misión é acelerar a transformación dixital dos sectores da biotecnoloxía, agroalimentario, forestal-mar-industrial e saúde"
+  },
+  "header": {
+    "title": "Impulsamos a innovación",
+    "missionText1": "OneHealth DataSpace está impulsado por un equipo multidisciplinar do Centro de Supercomputación de Galicia (CESGA) especializado en espazos de datos, intelixencia artificial, ciencia de datos, supercomputación, interoperabilidade e gobernanza dixital.",
+    "missionText2": "Desde o CESGA traballamos para facilitar a compartición segura de datos entre organizacións, impulsando a investigación, a innovación e o desenvolvemento de solucións baseadas en datos e intelixencia artificial baixo o enfoque One Health. O noso compromiso é construír unha infraestrutura sostible, aliñada coa estratexia europea do dato e preparada para evolucionar xunto á futura 1HealthAI Factory.",
+    "imageAlt": "Supercomputador Finisterrae"
+  },
+  "team": {
+    "title": "O equipo",
+    "members": {
+      "jcacheiro": {
+        "name": "Javier Cacheiro",
+        "description": "Director científico de OneHealth DataSpace",
+        "img": "jcacheiro.webp"
+      },
+      "hfernandez": {
+        "name": "Helena Fernández",
+        "description": "Directora da PMO",
+        "img": "hfernandez.webp"
+      },
+      "asantolino": {
+        "name": "Alejo Santolino",
+        "description": "Coordinador do marco legal de datos e análise de negocio",
+        "img": "asantolino.webp"
+      },
+      "pferreiro": {
+        "name": "Pedro Ferreiro",
+        "description": "Técnico de proxecto",
+        "img": "pferreiro.webp"
+      },
+      "mcastineira": {
+        "name": "Marta Castiñeira",
+        "description": "Técnica investigadora en simulación computacional",
+        "img": "mcastineira.webp"
+      },
+      "ldiaz": {
+        "name": "Ledicia Díaz",
+        "description": "Técnica investigadora en aprendizaxe automática e ciencia de datos",
+        "img": "ldiaz.webp"
+      },
+      "lvazquez": {
+        "name": "Lara Vázquez",
+        "description": "Técnica investigadora en intelixencia artificial",
+        "img": "lvazquez.webp"
+      },
+      "mcarmena": {
+        "name": "Miguel Carmena",
+        "description": "Técnico investigador en química computacional",
+        "img": "mcarmena.webp"
+      },
+      "llosada": {
+        "name": "Laura Losada",
+        "description": "Coordinadora de promoción e formación",
+        "img": "onehealth_nophoto.png"
+      },
+      "isequeiros": {
+        "name": "Iago Xosé Sequeiros",
+        "description": "Técnico de promoción",
+        "img": "isequeiros.webp"
+      },
+      "acalvo": {
+        "name": "Arturo José Calvo",
+        "description": "Técnico de formación",
+        "img": "acalvo.webp"
+      },
+      "cgrela": {
+        "name": "Cecilia Grela",
+        "description": "Técnica en integración e xestión de datos para a innovación",
+        "img": "cgrela.webp"
+      },
+      "tpaz": {
+        "name": "Tania Paz",
+        "description": "Técnica especialista en administración",
+        "img": "onehealth_nophoto.png"
+      },
+      "mcurty": {
+        "name": "Martín Curty",
+        "description": "Técnico en enxeñaría de datos e integración en contornas cloud",
+        "img": "mcurty.webp"
+      },
+      "boliveira": {
+        "name": "Brais Oliveira",
+        "description": "Técnico administrador de plataforma",
+        "img": "boliveira.webp"
+      },
+      "dmartinez": {
+        "name": "David Martínez",
+        "description": "Técnico administrador de plataforma",
+        "img": "dmartinez.webp"
+      },
+      "rdiaz": {
+        "name": "Roi Díaz",
+        "description": "Técnico administrador de plataforma",
+        "img": "rdiaz.webp"
+      },
+      "dramos": {
+        "name": "Diana Ramos",
+        "description": "Técnica especialista en deseño e produción de contidos",
+        "img": "dramos.webp"
+      },
+      "lprados": {
+        "name": "Luis Prados",
+        "description": "Técnico especialista en deseño e produción de contidos",
+        "img": "lprados.webp"
+      }
+    }
+  }
+}

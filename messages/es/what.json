@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "title": "Espacio de datos",
+    "description": "Explicación de qué es un espacio de datos"
+  },
+  "header": {
+    "title": "¿Qué es un espacio de datos?",
+    "lead": "Un espacio de datos es un entorno digital que permite a múltiples organizaciones compartir y gestionar datos de forma segura, respetando la soberanía de cada participante y garantizando el control sobre la información."
+  },
+  "importance": {
+    "title": "¿Por qué es clave para la innovación basada en datos?",
+    "paragraph1": "A diferencia de los modelos tradicionales de intercambio de información, los espacios de datos permiten que cada participante conserve la soberanía sobre sus activos digitales, decidiendo quién puede acceder a ellos, con qué propósito y bajo qué condiciones.",
+    "paragraph2": "Los espacios de datos eliminan silos de información, fomentan la confianza entre organizaciones y permiten desarrollar nuevos servicios, investigaciones y modelos de inteligencia artificial sin que las entidades adheridas pierdan el control sobre los datos."
+  },
+  "principles": {
+    "title": "Principios fundamentales",
+    "sovereignty": {
+      "title": "Soberanía del dato",
+      "description": "Cada participante mantiene el control sobre sus datos y decide cómo se utilizan."
+    },
+    "interoperability": {
+      "title": "Interoperabilidad",
+      "description": "Los datos pueden compartirse entre sistemas y organizaciones diferentes mediante estándares comunes."
+    },
+    "governance": {
+      "title": "Gobernanza federada",
+      "description": "Las reglas de uso son transparentes, auditables y consensuadas entre los participantes."
+    },
+    "trust": {
+      "title": "Confianza y trazabilidad",
+      "description": "Todas las operaciones quedan registradas y pueden ser verificadas en cualquier momento."
+    },
+    "value": {
+      "title": "Generación de valor compartido",
+      "description": "Los participantes colaboran para crear conocimiento, innovación y nuevos servicios."
+    }
+  }
+}

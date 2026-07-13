@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "title": "Blog",
+    "description": "Stay informed about all the news"
+  },
+  "title": "News",
+  "subtitle": "News",
+  "lead": "Stay updated with the latest developments and learn how we are enabling secure, interoperable and multi-sectoral data sharing",
+  "learnMore": "Read more",
+  "noPosts": "No news found.",
+  "previous": "Previous",
+  "next": "Next",
+  "posts": {
+    "post-1": {
+      "title": "How to use our new feature",
+      "date": "2025-09-12",
+      "excerpt": "Learn how to take advantage of our latest release."
+    },
+    "post-2": {
+      "title": "Company updates",
+      "date": "2025-10-10",
+      "excerpt": "Exciting things are happening at Radiant."
+    }
+  }
+}

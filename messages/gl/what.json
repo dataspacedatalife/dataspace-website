@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "title": "Espazo de datos",
+    "description": "Explicación de que é un espazo de datos"
+  },
+  "header": {
+    "title": "Que é un espazo de datos?",
+    "lead": "Un espazo de datos é un contorno dixital que permite a múltiples organizacións compartir e xestionar datos de forma segura, respectando a soberanía de cada participante e garantindo o control sobre a información."
+  },
+  "importance": {
+    "title": "Por que é clave para a innovación baseada en datos?",
+    "paragraph1": "A diferenza dos modelos tradicionais de intercambio de información, os espazos de datos permiten que cada participante manteña a soberanía sobre os seus activos dixitais, decidindo quen pode acceder a eles, con que propósito e baixo que condicións.",
+    "paragraph2": "Os espazos de datos eliminan silos de información, fomentan a confianza entre organizacións e permiten desenvolver novos servizos, investigacións e modelos de intelixencia artificial sen que as entidades adheridas perdan o control sobre os datos."
+  },
+  "principles": {
+    "title": "Principios fundamentais",
+    "sovereignty": {
+      "title": "Soberanía do dato",
+      "description": "Cada participante mantén o control sobre os seus datos e decide como se empregan."
+    },
+    "interoperability": {
+      "title": "Interoperabilidade",
+      "description": "Os datos poden compartirse entre sistemas e organizacións diferentes mediante estándares comúns."
+    },
+    "governance": {
+      "title": "Gobernanza federada",
+      "description": "As regras de uso son transparentes, auditables e consensuadas entre os participantes."
+    },
+    "trust": {
+      "title": "Confianza e trazabilidade",
+      "description": "Todas as operacións quedan rexistradas e poden ser verificadas en calquera momento."
+    },
+    "value": {
+      "title": "Xeración de valor compartido",
+      "description": "Os participantes colaboran para crear coñecemento, innovación e novos servizos."
+    }
+  }
+}

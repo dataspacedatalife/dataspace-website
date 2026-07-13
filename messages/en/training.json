@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "OneHealth DataSpace: Training in Data Spaces and the One Health Approach",
+    "description": "Courses and workshops to learn what data spaces are and how to apply the One Health approach to data. Train with OneHealth DataSpace."
+  },
+  "intro": {
+    "title": "Training in Data Spaces and One Health",
+    "paragraph1": "At OneHealth DataSpace we run courses and workshops to learn what data spaces are, how they work, and how the One Health approach —the integration of human, animal, and environmental health— applies to data sharing and management.",
+    "paragraph2": "Our training offering is aimed both at those who are approaching these technologies for the first time and at professionals working in the One Health field.",
+    "paragraph3": "The project partners also provide dedicated tutorials that address practical questions about using the platform, from the first steps to its advanced features, and showcase the results that can be achieved with the OneHealth DataSpace ecosystem."
+  },
+  "cta": {
+    "text": "👉 Check out our training events and reserve your spot"
+  },
+  "videos": {
+    "title": "Explore the MVP in Action",
+    "tutorialsTitle": "Workshops and Tutorials",
+    "coursesTitle": "Courses",
+    "courseCaption1": "Business Model in OneHealth DataSpace",
+    "courseUrl1": "https://www.youtube.com/embed/VF9GnYHOzAU",
+    "courseCaption2": "Data Governance",
+    "courseUrl2": "https://www.youtube.com/embed/O3WisG2cmqQ",
+    "courseCaption3": "Evolution of the OneHealth DataSpace Data Space: Integration with HPC, Big Data and Cloud Evolution",
+    "courseUrl3": "https://www.youtube.com/embed/HTaVG_vaw-s",
+    "courseCaption4": "Practical Use of AnonymiX, Clever and the Participant Portal",
+    "courseUrl4": "https://www.youtube.com/embed/Tt8Rt5-UmGw",
+    "courseCaption5": "Data Space Evolution: Integration of HPC File Systems",
+    "courseUrl5": "https://www.youtube.com/embed/XEC_5QG38sk",
+    "courseCaption6": "Introduction to the Data Space Connector",
+    "courseUrl6": "https://www.youtube.com/embed/Yn8FVg8ctr8",
+    "tutorialCaption1": "One Health DDS Tutorial (1/3) | Getting Started. Initial Setup.",
+    "tutorialUrl1": "https://www.youtube.com/embed/z72j1-uQCVo",
+    "tutorialCaption2": "One Health DDS Tutorial (2/3) | Uploading Assets and Creating a Contract to Share with DSGA",
+    "tutorialUrl2": "https://www.youtube.com/embed/yshUdWjAsw8",
+    "tutorialCaption3": "OneHealth DDS Tutorial (3/3) | Screenshots for Evidence Submission",
+    "tutorialUrl3": "https://www.youtube.com/embed/CRtcBkdf0Wg",
+    "tutorialCaption4": "Data Space Workshop on EDC Connectors",
+    "tutorialUrl4": "https://www.youtube.com/embed/WGBCGCz8vHc",
+    "tutorialCaption5": "FarmaciaVAX Data Space Workshop with XDataShare",
+    "tutorialUrl5": "https://www.youtube.com/embed/u7zTyU795n8",
+    "tutorialCaption6": "FarmaciaVAX Data Space Workshop with the SQS D-Spacer Platform",
+    "tutorialUrl6": "https://www.youtube.com/embed/50Ahpz-1VPI",
+    "tutorialCaption7": "Tutorial | Uploading and Viewing Assets",
+    "tutorialUrl7": "https://www.youtube.com/embed/2bZ2O_1Hkr4"
+  }
+}

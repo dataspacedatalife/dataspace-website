@@ -1,5 +1,5 @@
 import { defineRouting } from 'next-intl/routing';
-import type messages from '../../messages/en.json';
+import type { Messages } from './messages';
 
 export const routing = defineRouting({
   // A list of all locales that are supported
@@ -12,6 +12,6 @@ export const routing = defineRouting({
 declare module 'next-intl' {
   interface AppConfig {
     Locale: (typeof routing.locales)[number];
-    Messages: typeof messages;
+    Messages: Messages;
   }
 }

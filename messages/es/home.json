@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "description": "Comparte, analiza y publica datos — en un mismo espacio de confianza"
+  },
+  "hero": {
+    "title": "Más que datos",
+    "subtitle": "OneHealth DataSpace va más allá de compartir datos.\nAnaliza, procesa y publica tus datos en la misma plataforma, con control total durante todo su ciclo de vida.",
+    "learnMore": "Saber más",
+    "access": "Accede a la plataforma",
+    "graphTagline": "Todo el ciclo de vida del dato. Una plataforma.",
+    "graphControl": "Tú mantienes el control de tus datos",
+    "governance": "Gobernanza y confianza"
+  },
+  "bridge": {
+    "kicker": "Por qué somos diferentes",
+    "title": "Un espacio de datos tradicional se queda en compartir",
+    "titleHighlight": "OneHealth DataSpace cubre el viaje completo",
+    "text": "Compartir de forma soberana es solo el primer paso. Aquí, la misma plataforma te ofrece además la capacidad de cálculo, la analítica y los servicios de publicación que necesitas para convertir los datos compartidos en resultados, sin salir del espacio de confianza.",
+    "traditionalLabel": "Un espacio de datos tradicional termina aquí",
+    "oursLabel": "Aquí, continúa",
+    "cta": "Recorre el viaje",
+    "ctaSecondary": "¿Qué es un espacio de datos?"
+  },
+  "services": {
+    "title": "Más que datos",
+    "subtitle": "Un ciclo de vida operativo completo para el dato",
+    "share": "Compartir datos de forma segura entre entidades",
+    "compute": "Procesamiento avanzado de datos y HPC",
+    "analyze": "Transformar datos en conocimiento útil",
+    "store": "Gestión segura de grandes volúmenes de datos",
+    "deliver": "Publicar servicios y resultados de datos",
+    "cta": "Ir al servicio",
+    "next": "Siguiente",
+    "participants": "Descubre quién participa",
+    "stepLabel": "Etapa",
+    "whatLabel": "Qué es",
+    "exampleLabel": "Ejemplo",
+    "shareWhat": "Un servicio para intercambiar conjuntos de datos entre organizaciones de forma soberana: cada entidad decide quién accede a sus datos, con qué fines y bajo qué condiciones.",
+    "shareExample": "Un hospital comparte datos clínicos anonimizados con un grupo de investigación veterinaria para estudiar la resistencia a antibióticos.",
+    "computeWhat": "Acceso a la supercomputación del CESGA para ejecutar cargas de trabajo intensivas: simulaciones, entrenamiento de modelos de IA o procesamiento genómico.",
+    "computeExample": "Un equipo entrena un modelo de predicción de brotes combinando datos ambientales y sanitarios en el clúster HPC.",
+    "analyzeWhat": "Herramientas de Big Data y analítica para explorar los datos del espacio y convertirlos en indicadores, visualizaciones y conocimiento accionable.",
+    "analyzeExample": "Cruce de datos de calidad del agua y casos de zoonosis para detectar patrones de riesgo en una comarca.",
+    "storeWhat": "Almacenamiento seguro y escalable para grandes volúmenes de datos, con control de acceso y trazabilidad durante todo su ciclo de vida.",
+    "storeExample": "Una universidad deposita años de series históricas de sensores ambientales para su reutilización en nuevos proyectos.",
+    "deliverWhat": "Infraestructura cloud para publicar resultados como servicios: APIs, cuadros de mando o aplicaciones accesibles para otros participantes.",
+    "deliverExample": "Un centro publica un cuadro de mando epidemiológico que otras entidades consultan en tiempo real."
+  },
+  "outro": {
+    "title": "El viaje ya está en marcha",
+    "text": "Entidades de salud, investigación y empresa ya están construyendo casos de uso sobre OneHealth DataSpace.",
+    "join": "Únete al espacio de datos",
+    "cta": "Explora el catálogo"
+  }
+}
