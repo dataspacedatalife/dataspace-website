@@ -13,11 +13,11 @@
   },
   "bridge": {
     "kicker": "Por qué somos diferentes",
-    "title": "Un espacio de datos tradicional se queda en compartir",
+    "title": "Un espacio de datos convencional se queda en compartir",
     "titleHighlight": "OneHealth DataSpace cubre el viaje completo",
     "text": "Compartir de forma soberana es solo el primer paso. Aquí, la misma plataforma te ofrece además la capacidad de cálculo, la analítica y los servicios de publicación que necesitas para convertir los datos compartidos en resultados, sin salir del espacio de confianza.",
-    "traditionalLabel": "Un espacio de datos tradicional termina aquí",
-    "oursLabel": "Aquí, continúa",
+    "traditionalLabel": "Un espacio de datos convencional termina aquí",
+    "oursLabel": "Nosotros continuamos con el resto de servicios que necesitas",
     "cta": "Recorre el viaje",
     "ctaSecondary": "¿Qué es un espacio de datos?"
   },
