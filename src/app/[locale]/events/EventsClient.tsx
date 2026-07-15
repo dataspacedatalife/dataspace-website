@@ -568,7 +568,7 @@ function Pagination({
   if (pageCount < 2) return null;
 
   return (
-    <div className="mt-6 flex justify-center mx-auto gap-2">
+    <div className="mt-6 flex items-center justify-center mx-auto gap-2">
       <Button
         disabled={!hasPrevious}
         onClick={() => {
@@ -584,6 +584,9 @@ function Pagination({
         <ChevronLeftIcon className="size-4" />
         {t(`previous`)}
       </Button>
+      <span className="text-sm font-medium text-gray-600 tabular-nums">
+        {page} / {pageCount}
+      </span>
       <Button
         disabled={!hasNext}
         onClick={() => {
