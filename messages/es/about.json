@@ -31,12 +31,12 @@
     "paragraph3": "OneHealth DataSpace proporciona la infraestructura necesaria para hacerlo de forma segura y escalable."
   },
   "funding": {
-    "title": "Información sobre financiación",
-    "call": "Convocatoria Ministerio para la Transformación Digital y de la Función Pública: Demostradores y Casos de uso de Espacios de Dato.",
-    "grant": "Convocatoria de ayudas: “Espacios de Datos Sectoriales 2023 para la creación de demostradores y casos de uso de espacios de compartición de datos.”",
-    "program": "El programa “Espacios de datos sectoriales” forma parte del inversión 1 del componente 12 del Plan de Recuperación, Transformación y Resiliencia, financiado a través del Mecanismo de Recuperación y Resiliencia (MRR).",
-    "details": "Número de expediente: TSI-100120-2024-12\nPeríodo: 13-12-2024 – 30-06-2026\nFinanciado por: Ministerio para la Transformación Digital y de la Función Pública\nImporte total: 3.077.058 €",
-    "linkText": "Ver seguimiento de la ejecución",
-    "linkUrl": "https://planderecuperacion.gob.es/"
-  }
+  "title": "OneHealth DataSpace es un proyecto",
+  "call": "Financiado por la Unión Europea – NextGenerationEU.",
+  "grant": "A través de la convocatoria del Ministerio para la Transformación Digital y de la Función Pública: Demostradores y Casos de Uso de Espacios de Datos. “Espacios de Datos Sectoriales 2023 para la creación de demostradores y casos de uso de espacios de compartición de datos”.",
+  "program": "El programa “Espacios de Datos Sectoriales” forma parte de la inversión 1 del componente 12 del Plan de Recuperación, Transformación y Resiliencia, financiado a través del Mecanismo de Recuperación y Resiliencia (MRR).",
+  "details": "Número de expediente: TSI-100120-2024-12\nPeríodo: 13-12-2024 – 30-06-2026. Aplazado al 31 de agosto de 2026.\nFinanciado por: Ministerio para la Transformación Digital y de la Función Pública\nImporte total: 3.077.058 €",
+  "linkText": "Ver seguimiento de la ejecución",
+  "linkUrl": "https://planderecuperacion.gob.es/"
+}
 }
