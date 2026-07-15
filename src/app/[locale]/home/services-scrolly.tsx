@@ -288,7 +288,6 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
                 >
                   <ServiceImage
                     service={activeService}
-                    kenBurns
                     className="aspect-[4/5] w-full max-w-[560px] mx-auto max-h-[78vh]"
                   />
                 </motion.div>
