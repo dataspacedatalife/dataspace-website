@@ -24,10 +24,6 @@ export const SERVICES_GRADIENT =
 export const BRAND_GRADIENT =
   'linear-gradient(135deg, #3fd7c0 0%, #00b7d4 35%, #009ab8 65%, #006b8f 100%)';
 
-/* subrayado azul oscuro para la explicación de cada servicio */
-export const DARK_BLUE_UNDERLINE =
-  'linear-gradient(90deg, #012a3a 0%, #006b8f 100%)';
-
 export const MONO = "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace";
 export const HEADING = "'Barlow Condensed', sans-serif";
 

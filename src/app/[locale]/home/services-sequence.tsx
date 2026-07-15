@@ -5,12 +5,7 @@ import Link from 'next/link';
 import { motion, type Variants } from 'motion/react';
 import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/container';
-import {
-  SERVICES_GRADIENT,
-  DARK_BLUE_UNDERLINE,
-  ServiceImage,
-  type ServiceItem,
-} from './shared';
+import { SERVICES_GRADIENT, ServiceImage, type ServiceItem } from './shared';
 
 const cardContainer: Variants = {
   hidden: { opacity: 0, y: 32 },
@@ -104,10 +99,7 @@ export function ServicesSequence({ services }: { services: ServiceItem[] }) {
                       <p className="mt-5 text-[11px] tracking-[0.25em] uppercase text-brand-200 font-mono">
                         {tServices('whatLabel')}
                       </p>
-                      <p
-                        className="mt-1.5 pb-2 text-white/90 leading-relaxed border-b-2"
-                        style={{ borderImage: `${DARK_BLUE_UNDERLINE} 1` }}
-                      >
+                      <p className="mt-1.5 text-white/90 leading-relaxed">
                         {item.what}
                       </p>
                     </motion.div>

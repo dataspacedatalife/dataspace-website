@@ -15,12 +15,7 @@ import {
 } from 'motion/react';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/container';
-import {
-  SERVICES_GRADIENT,
-  DARK_BLUE_UNDERLINE,
-  ServiceImage,
-  type ServiceItem,
-} from './shared';
+import { SERVICES_GRADIENT, ServiceImage, type ServiceItem } from './shared';
 
 /* segmento de progreso que se rellena de forma continua con el scroll */
 function ProgressSegment({
@@ -198,10 +193,7 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
                     <p className="text-[11px] tracking-[0.25em] uppercase text-brand-200 font-mono">
                       {tServices('whatLabel')}
                     </p>
-                    <p
-                      className="mt-2 pb-2 text-white/90 leading-relaxed max-w-lg border-b-2"
-                      style={{ borderImage: `${DARK_BLUE_UNDERLINE} 1` }}
-                    >
+                    <p className="mt-2 text-white/90 leading-relaxed max-w-lg">
                       {activeService.what}
                     </p>
                   </motion.div>
