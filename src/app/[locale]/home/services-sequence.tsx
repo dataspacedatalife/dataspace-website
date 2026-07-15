@@ -63,7 +63,6 @@ export function ServicesSequence({ services }: { services: ServiceItem[] }) {
                   {/* foto */}
                   <ServiceImage
                     service={item}
-                    chip
                     className="aspect-[4/3] w-full rounded-none border-0 ring-0"
                   />
 
@@ -83,7 +82,7 @@ export function ServicesSequence({ services }: { services: ServiceItem[] }) {
                       variants={cardItem}
                       className="mt-4 flex items-center gap-3"
                     >
-                      <div className="inline-flex items-center justify-center size-11 rounded-lg border border-white/20 bg-white/10 shrink-0">
+                      <div className="inline-flex items-center justify-center size-11 rounded-lg bg-[#006b8f]/70 shrink-0">
                         <Icon
                           size={22}
                           className="text-white"
@@ -108,7 +107,7 @@ export function ServicesSequence({ services }: { services: ServiceItem[] }) {
                     {/* Ejemplo */}
                     <motion.div
                       variants={cardItem}
-                      className="mt-4 rounded-xl border border-white/15 bg-white/[0.07] p-4 border-l-2 border-l-brand-200"
+                      className="mt-4 rounded-xl bg-[#006b8f]/70 p-4"
                     >
                       <p className="text-[11px] tracking-[0.25em] uppercase text-white/55 font-mono">
                         {tServices('exampleLabel')}

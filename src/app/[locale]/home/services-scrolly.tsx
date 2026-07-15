@@ -50,14 +50,6 @@ function ProgressSegment({
   );
 }
 
-/* posiciones del foco de luz de fondo, una por etapa */
-const HIGHLIGHT_POS = [
-  { top: '6%', left: '4%' },
-  { top: '10%', left: '68%' },
-  { top: '62%', left: '8%' },
-  { top: '58%', left: '70%' },
-];
-
 /* ============ DESKTOP: SCROLLYTELLING ENCADENADO ============ */
 export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
   const tServices = useTranslations('home.services');
@@ -137,18 +129,6 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
         {/* textura técnica */}
         <div className="tech-dots-light absolute inset-0 pointer-events-none" />
 
-        {/* foco de luz que se desplaza con cada etapa */}
-        <motion.div
-          aria-hidden="true"
-          className="absolute size-[60vmin] rounded-full bg-white/10 blur-3xl pointer-events-none"
-          animate={HIGHLIGHT_POS[active]}
-          transition={
-            reduceMotion
-              ? { duration: 0 }
-              : { type: 'spring', stiffness: 60, damping: 20 }
-          }
-        />
-
         {/* progreso segmentado superior */}
         <div className="absolute top-0 left-0 right-0 flex gap-1.5 px-6 pt-4">
           {services.map((s, i) => (
@@ -191,7 +171,7 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
                     variants={contentItem}
                     className="flex items-center gap-4"
                   >
-                    <div className="inline-flex items-center justify-center size-14 rounded-xl border border-white/20 bg-white/10 backdrop-blur-md shrink-0">
+                    <div className="inline-flex items-center justify-center size-14 rounded-xl bg-[#006b8f]/70 backdrop-blur-sm shrink-0">
                       <Icon size={28} className="text-white" strokeWidth={1.5} />
                     </div>
                     <div className="overflow-hidden">
@@ -221,7 +201,7 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
                   {/* Ejemplo */}
                   <motion.div
                     variants={contentItem}
-                    className="mt-5 max-w-lg rounded-xl border border-white/15 bg-white/[0.07] backdrop-blur-sm p-4 border-l-2 border-l-brand-200"
+                    className="mt-5 max-w-lg rounded-xl bg-[#006b8f]/70 backdrop-blur-sm p-4"
                   >
                     <p className="text-[11px] tracking-[0.25em] uppercase text-white/55 font-mono">
                       {tServices('exampleLabel')}
@@ -300,8 +280,6 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
                 >
                   <ServiceImage
                     service={activeService}
-                    kenBurns
-                    chip
                     className="aspect-[4/5] w-full max-w-[560px] mx-auto max-h-[78vh]"
                   />
                 </motion.div>

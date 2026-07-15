@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { motion, useReducedMotion } from 'motion/react';
+import { motion } from 'motion/react';
 import type { LucideIcon } from 'lucide-react';
 import { Share2, Cpu, Search, CloudUpload } from 'lucide-react';
 
@@ -61,30 +61,21 @@ export function polar(cx: number, cy: number, r: number, angleDeg: number) {
 export function ServiceImage({
   service,
   className = '',
-  kenBurns = false,
   chip = false,
 }: {
   service: ServiceItem;
   className?: string;
-  kenBurns?: boolean;
   chip?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
-  const reduceMotion = useReducedMotion();
   const Icon = service.icon;
-  const animateIn = kenBurns && !reduceMotion;
 
   return (
     <div
       className={`relative overflow-hidden rounded-[2rem] border border-white/20 bg-white/10 ring-1 ring-white/25 shadow-xl shadow-black/15 ${className}`}
     >
       {!failed ? (
-        <motion.div
-          className="absolute inset-0"
-          initial={animateIn ? { scale: 1.08 } : false}
-          animate={animateIn ? { scale: 1 } : undefined}
-          transition={{ duration: 6, ease: 'easeOut' }}
-        >
+        <div className="absolute inset-0">
           <Image
             src={service.image}
             alt={service.title}
@@ -93,7 +84,7 @@ export function ServiceImage({
             onError={() => setFailed(true)}
             className="object-cover"
           />
-        </motion.div>
+        </div>
       ) : (
         <div
           className="absolute inset-0 flex items-center justify-center"
