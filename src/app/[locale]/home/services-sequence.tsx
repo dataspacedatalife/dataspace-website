@@ -68,7 +68,6 @@ export function ServicesSequence({ services }: { services: ServiceItem[] }) {
                   {/* foto */}
                   <ServiceImage
                     service={item}
-                    chip
                     className="aspect-[4/3] w-full rounded-none border-0 ring-0"
                   />
 
