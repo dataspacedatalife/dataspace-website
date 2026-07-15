@@ -55,14 +55,6 @@ function ProgressSegment({
   );
 }
 
-/* posiciones del foco de luz de fondo, una por etapa */
-const HIGHLIGHT_POS = [
-  { top: '6%', left: '4%' },
-  { top: '10%', left: '68%' },
-  { top: '62%', left: '8%' },
-  { top: '58%', left: '70%' },
-];
-
 /* ============ DESKTOP: SCROLLYTELLING ENCADENADO ============ */
 export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
   const tServices = useTranslations('home.services');
@@ -141,18 +133,6 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
       >
         {/* textura técnica */}
         <div className="tech-dots-light absolute inset-0 pointer-events-none" />
-
-        {/* foco de luz que se desplaza con cada etapa */}
-        <motion.div
-          aria-hidden="true"
-          className="absolute size-[60vmin] rounded-full bg-white/10 blur-3xl pointer-events-none"
-          animate={HIGHLIGHT_POS[active]}
-          transition={
-            reduceMotion
-              ? { duration: 0 }
-              : { type: 'spring', stiffness: 60, damping: 20 }
-          }
-        />
 
         {/* progreso segmentado superior */}
         <div className="absolute top-0 left-0 right-0 flex gap-1.5 px-6 pt-4">
