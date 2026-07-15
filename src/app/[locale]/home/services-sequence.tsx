@@ -5,7 +5,12 @@ import Link from 'next/link';
 import { motion, type Variants } from 'motion/react';
 import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/container';
-import { SERVICES_GRADIENT, ServiceImage, type ServiceItem } from './shared';
+import {
+  SERVICES_GRADIENT,
+  DARK_BLUE_UNDERLINE,
+  ServiceImage,
+  type ServiceItem,
+} from './shared';
 
 const cardContainer: Variants = {
   hidden: { opacity: 0, y: 32 },
@@ -83,7 +88,7 @@ export function ServicesSequence({ services }: { services: ServiceItem[] }) {
                       variants={cardItem}
                       className="mt-4 flex items-center gap-3"
                     >
-                      <div className="inline-flex items-center justify-center size-11 rounded-lg border border-white/20 bg-white/10 shrink-0">
+                      <div className="inline-flex items-center justify-center size-11 rounded-lg bg-[#006b8f]/70 shrink-0">
                         <Icon
                           size={22}
                           className="text-white"
@@ -100,7 +105,10 @@ export function ServicesSequence({ services }: { services: ServiceItem[] }) {
                       <p className="mt-5 text-[11px] tracking-[0.25em] uppercase text-brand-200 font-mono">
                         {tServices('whatLabel')}
                       </p>
-                      <p className="mt-1.5 text-white/90 leading-relaxed">
+                      <p
+                        className="mt-1.5 pb-2 text-white/90 leading-relaxed border-b-2"
+                        style={{ borderImage: `${DARK_BLUE_UNDERLINE} 1` }}
+                      >
                         {item.what}
                       </p>
                     </motion.div>
@@ -108,7 +116,7 @@ export function ServicesSequence({ services }: { services: ServiceItem[] }) {
                     {/* Ejemplo */}
                     <motion.div
                       variants={cardItem}
-                      className="mt-4 rounded-xl border border-white/15 bg-white/[0.07] p-4 border-l-2 border-l-brand-200"
+                      className="mt-4 rounded-xl bg-[#006b8f]/70 p-4"
                     >
                       <p className="text-[11px] tracking-[0.25em] uppercase text-white/55 font-mono">
                         {tServices('exampleLabel')}

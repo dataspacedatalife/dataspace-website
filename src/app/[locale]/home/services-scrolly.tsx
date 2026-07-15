@@ -15,7 +15,12 @@ import {
 } from 'motion/react';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/container';
-import { SERVICES_GRADIENT, ServiceImage, type ServiceItem } from './shared';
+import {
+  SERVICES_GRADIENT,
+  DARK_BLUE_UNDERLINE,
+  ServiceImage,
+  type ServiceItem,
+} from './shared';
 
 /* segmento de progreso que se rellena de forma continua con el scroll */
 function ProgressSegment({
@@ -191,7 +196,7 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
                     variants={contentItem}
                     className="flex items-center gap-4"
                   >
-                    <div className="inline-flex items-center justify-center size-14 rounded-xl border border-white/20 bg-white/10 backdrop-blur-md shrink-0">
+                    <div className="inline-flex items-center justify-center size-14 rounded-xl bg-[#006b8f]/70 backdrop-blur-sm shrink-0">
                       <Icon size={28} className="text-white" strokeWidth={1.5} />
                     </div>
                     <div className="overflow-hidden">
@@ -213,7 +218,10 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
                     <p className="text-[11px] tracking-[0.25em] uppercase text-brand-200 font-mono">
                       {tServices('whatLabel')}
                     </p>
-                    <p className="mt-2 text-white/90 leading-relaxed max-w-lg">
+                    <p
+                      className="mt-2 pb-2 text-white/90 leading-relaxed max-w-lg border-b-2"
+                      style={{ borderImage: `${DARK_BLUE_UNDERLINE} 1` }}
+                    >
                       {activeService.what}
                     </p>
                   </motion.div>
@@ -221,7 +229,7 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
                   {/* Ejemplo */}
                   <motion.div
                     variants={contentItem}
-                    className="mt-5 max-w-lg rounded-xl border border-white/15 bg-white/[0.07] backdrop-blur-sm p-4 border-l-2 border-l-brand-200"
+                    className="mt-5 max-w-lg rounded-xl bg-[#006b8f]/70 backdrop-blur-sm p-4"
                   >
                     <p className="text-[11px] tracking-[0.25em] uppercase text-white/55 font-mono">
                       {tServices('exampleLabel')}
