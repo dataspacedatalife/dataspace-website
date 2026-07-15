@@ -3,6 +3,7 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 import Image from 'next/image';
 import { type Locale, useTranslations } from 'next-intl';
+import { useEffect, useRef } from 'react';
 import { Button } from '@/components/button';
 import { Container } from '@/components/container';
 import { Footer } from '@/components/footer';
@@ -32,6 +33,21 @@ export function BlogClient({ locale }: BlogClientProps) {
 
   const totalPages = Math.ceil(posts.length / postsPerPage);
 
+  // Al paginar, volver al inicio de la lista de noticias.
+  // Se hace en un efecto (tras el re-render) para que la página ya tenga su
+  // altura definitiva: si se llama a scrollIntoView justo tras setPage, el
+  // scroll se calcula sobre la página anterior (más alta) y al encogerse el
+  // documento el scroll suave queda anclado al final, mostrando el footer.
+  const listTopRef = useRef<HTMLDivElement>(null);
+  const isFirstRender = useRef(true);
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    listTopRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, [page]);
+
   return (
     <main className="overflow-hidden">
       <GradientBackground />
@@ -44,13 +60,10 @@ export function BlogClient({ locale }: BlogClientProps) {
       </Container>
 
       <Container className="mt-16 pb-24">
-        <PastPostsList posts={pastPosts} />
-        <Pagination
-          page={page}
-          totalPages={totalPages}
-          setPage={setPage}
-          t={t}
-        />
+        <div ref={listTopRef} className="scroll-mt-4">
+          <PastPostsList posts={pastPosts} />
+        </div>
+        <Pagination page={page} totalPages={totalPages} setPage={setPage} t={t} />
       </Container>
 
       <Footer />
@@ -121,10 +134,14 @@ function Pagination({
   t: ReturnType<typeof useTranslations>;
 }) {
   return (
-    <div className="mt-6 flex justify-center gap-2">
+    <div className="mt-6 flex items-center justify-center gap-2">
       <Button disabled={page <= 1} onClick={() => setPage(page - 1)}>
         <ChevronLeftIcon className="w-4 h-4" /> {t('previous')}
       </Button>
+
+      <span className="text-sm font-medium text-gray-600 tabular-nums">
+        {page} / {totalPages}
+      </span>
 
       <Button disabled={page >= totalPages} onClick={() => setPage(page + 1)}>
         {t('next')} <ChevronRightIcon className="w-4 h-4" />

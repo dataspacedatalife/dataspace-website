@@ -2,7 +2,11 @@
 
 import { useLocale } from 'next-intl';
 import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  XMarkIcon,
+} from '@heroicons/react/16/solid';
 import { Calendar, Pointer, X, ZoomIn } from 'lucide-react';
 import Image, { type StaticImageData } from 'next/image';
 import { useSearchParams } from 'next/navigation';
@@ -568,7 +572,7 @@ function Pagination({
   if (pageCount < 2) return null;
 
   return (
-    <div className="mt-6 flex justify-center mx-auto gap-2">
+    <div className="mt-6 flex items-center justify-center mx-auto gap-2">
       <Button
         disabled={!hasPrevious}
         onClick={() => {
@@ -584,6 +588,9 @@ function Pagination({
         <ChevronLeftIcon className="size-4" />
         {t(`previous`)}
       </Button>
+      <span className="text-sm font-medium text-gray-600 tabular-nums">
+        {page} / {pageCount}
+      </span>
       <Button
         disabled={!hasNext}
         onClick={() => {
@@ -622,8 +629,17 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
       {/* Modal container */}
       <div className="fixed inset-0 flex items-center justify-center p-4 overflow-y-auto">
         <DialogPanel className="relative max-w-2xl w-full rounded-xl bg-white p-6 shadow-xl max-h-[90vh] overflow-y-auto">
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label={t('close')}
+            className="absolute right-4 top-4 cursor-pointer rounded-full p-1.5 text-gray-400 hover:bg-gray-100 hover:text-gray-600"
+          >
+            <XMarkIcon className="size-5" />
+          </button>
+
           {/* Title */}
-          <DialogTitle className="text-2xl font-extrabold mb-2 text-gray-900">
+          <DialogTitle className="text-2xl font-extrabold mb-2 pr-10 text-gray-900">
             {t(`events.${event.key}.header`)}
           </DialogTitle>
 
@@ -678,7 +694,7 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
 
           {/* Close button */}
           <div className="mt-6 flex justify-end">
-            <Button onClick={onClose}>Cerrar</Button>
+            <Button onClick={onClose}>{t('close')}</Button>
           </div>
         </DialogPanel>
       </div>

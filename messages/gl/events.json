@@ -14,6 +14,7 @@
   "noEvents": "Non se atoparon eventos.",
   "previous": "Anterior",
   "next": "Seguinte",
+  "close": "Pechar",
   "events": {
     "egi2025": {
       "header": "Presentación en EGI/Ibergrid",
