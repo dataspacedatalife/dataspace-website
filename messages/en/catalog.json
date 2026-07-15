@@ -3190,7 +3190,6 @@
   "data_description": "Data description",
   "entidad_promotora": "Promoting entity",
   "categories": {
-    "all": "OneHealth",
     "human": "Human health",
     "animal": "Animal health",
     "environmental": "Environmental health"

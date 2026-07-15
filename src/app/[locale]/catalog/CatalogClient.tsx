@@ -67,7 +67,10 @@ export function CatalogoDeDatos() {
 
   const normalizedQuery = normalizeText((query ?? '').trim());
   const filtered = useCasesData.filter((d) => {
-    if (categoryFilter !== 'all' && !d.categories.includes(categoryFilter)) {
+    if (
+      categoryFilter.length > 0 &&
+      !d.categories.some((c) => categoryFilter.includes(c))
+    ) {
       return false;
     }
     if (!normalizedQuery) return true;
@@ -83,10 +86,14 @@ export function CatalogoDeDatos() {
     currentPage * datasetsPerPage,
   );
 
-  // Cambio de filtro: una única entrada en el historial (categoría + reset de página)
-  const selectCategory = (cat: HealthCategory | 'all') => {
+  // Alterna una categoría en el filtro (varias, una sola, todas o ninguna
+  // seleccionada); una única entrada en el historial (categoría + reset de página)
+  const toggleCategory = (cat: HealthCategory) => {
+    const next = categoryFilter.includes(cat)
+      ? categoryFilter.filter((c) => c !== cat)
+      : [...categoryFilter, cat];
     updateSearchParams(
-      { category: cat === 'all' ? null : cat, page: null },
+      { category: next.length > 0 ? next.join(',') : null, page: null },
       'push',
     );
   };
@@ -120,34 +127,24 @@ export function CatalogoDeDatos() {
           className="mb-8 flex scroll-mt-4 flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
         >
           <div className="flex flex-wrap gap-2">
-            <button
-              type="button"
-              onClick={() => selectCategory('all')}
-              aria-pressed={categoryFilter === 'all'}
-              className={`cursor-pointer rounded-full border px-4 py-1.5 text-sm transition-colors ${
-                categoryFilter === 'all'
-                  ? 'bg-gray-900 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
-              }`}
-            >
-              {t('catalog.categories.all')}
-            </button>
-
-            {CATEGORY_VALUES.map((cat) => (
-              <button
-                type="button"
-                key={cat}
-                onClick={() => selectCategory(cat)}
-                aria-pressed={categoryFilter === cat}
-                className={`cursor-pointer rounded-full border px-4 py-1.5 text-sm transition-colors ${
-                  categoryFilter === cat
-                    ? CATEGORY_STYLES[cat]
-                    : 'bg-white text-gray-700 hover:bg-gray-100'
-                }`}
-              >
-                {t(`catalog.categories.${cat}`)}
-              </button>
-            ))}
+            {CATEGORY_VALUES.map((cat) => {
+              const isSelected = categoryFilter.includes(cat);
+              return (
+                <button
+                  type="button"
+                  key={cat}
+                  onClick={() => toggleCategory(cat)}
+                  aria-pressed={isSelected}
+                  className={`cursor-pointer rounded-full border px-4 py-1.5 text-sm transition-colors ${
+                    isSelected
+                      ? CATEGORY_STYLES[cat]
+                      : 'bg-white text-gray-700 hover:bg-gray-100'
+                  }`}
+                >
+                  {t(`catalog.categories.${cat}`)}
+                </button>
+              );
+            })}
           </div>
 
           <div className="relative w-full sm:w-72">
@@ -210,12 +207,15 @@ const usePage = () => {
   ] as const;
 };
 
-// Hook para leer el filtro de categoría de la URL (se escribe vía selectCategory)
-const useCategory = (): HealthCategory | 'all' => {
-  const [raw] = useSearchState('category', 'all');
-  return CATEGORY_VALUES.includes(raw as HealthCategory)
-    ? (raw as HealthCategory)
-    : 'all';
+// Hook para leer el filtro de categorías de la URL (se escribe vía toggleCategory).
+// Lista vacía = sin filtro, se muestran todos los datasets.
+const useCategory = (): HealthCategory[] => {
+  const [raw] = useSearchState('category', '');
+  return (raw ?? '')
+    .split(',')
+    .filter((c): c is HealthCategory =>
+      CATEGORY_VALUES.includes(c as HealthCategory),
+    );
 };
 
 // ------------------ Subcomponentes ------------------
