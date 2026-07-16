@@ -10,7 +10,6 @@ import {
   useMotionValue,
   useReducedMotion,
 } from 'motion/react';
-import { ArrowDown } from 'lucide-react';
 import { MONO, polar, useServicesData } from './shared';
 
 /* una vuelta completa del paquete de datos: 4 tramos de 7 s */
@@ -336,11 +335,6 @@ export function DataSpaceWheel() {
                 <p className="mt-2 text-[11px] sm:text-xs text-slate-600 leading-relaxed">
                   {services[active].text}
                 </p>
-                <ArrowDown
-                  size={13}
-                  className="mt-2 text-brand-500/70"
-                  aria-hidden="true"
-                />
               </motion.button>
             )}
           </AnimatePresence>
