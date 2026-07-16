@@ -143,7 +143,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     { href: 'https://hpc.dataspace.cesga.es/', label: t('compute'), external: true },
     { href: 'https://bigdata.dataspace.cesga.es/', label: t('analyze'), external: true },
     { href: 'https://storage.dataspace.cesga.es/', label: t('store'), external: true },
-    { href: 'https://cloud.dataspace.cesga.es/', label: t('deliver'), external: true },
+    { href: 'http://cloud.srv.cesga.es/', label: t('deliver'), external: true },
     
   ];
 

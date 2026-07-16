@@ -37,7 +37,7 @@ export function useServicesData(): ServiceItem[] {
     { key: 'share', icon: Share2, href: 'https://dl-cesga.srv.cesga.es' },
     { key: 'analyze', icon: Search, href: 'https://bigdata.dataspace.cesga.es/' },
     { key: 'compute', icon: Cpu, href: 'https://hpc.dataspace.cesga.es' },
-    { key: 'deliver', icon: CloudUpload, href: 'https://cloud.dataspace.cesga.es' },
+    { key: 'deliver', icon: CloudUpload, href: 'http://cloud.srv.cesga.es/' },
   ] as const;
 
   return base.map(({ key, icon, href }) => ({
