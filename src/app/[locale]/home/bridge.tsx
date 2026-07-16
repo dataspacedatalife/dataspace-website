@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { motion, type Variants } from 'motion/react';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 import { Container } from '@/components/container';
 import {
   CTA_GRADIENT,
@@ -151,10 +151,7 @@ export function LifecycleBridge() {
               <CtaGloss />
 
               {t('cta')}
-              <ArrowRight
-                size={18}
-                className="transition-transform group-hover:translate-x-0.5"
-              />
+              <ArrowDown size={18} />
             </button>
             <Link
               href="/what"
