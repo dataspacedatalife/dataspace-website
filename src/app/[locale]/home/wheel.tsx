@@ -10,7 +10,6 @@ import {
   useMotionValue,
   useReducedMotion,
 } from 'motion/react';
-import { ArrowDown } from 'lucide-react';
 import { MONO, polar, useServicesData } from './shared';
 
 /* una vuelta completa del paquete de datos: 4 tramos de 7 s */
@@ -336,11 +335,6 @@ export function DataSpaceWheel() {
                 <p className="mt-2 text-[11px] sm:text-xs text-slate-600 leading-relaxed">
                   {services[active].text}
                 </p>
-                <ArrowDown
-                  size={13}
-                  className="mt-2 text-brand-500/70"
-                  aria-hidden="true"
-                />
               </motion.button>
             )}
           </AnimatePresence>
@@ -379,14 +373,13 @@ export function DataSpaceWheel() {
                   className="absolute -inset-1.5 rounded-full bg-brand-400/20 blur-md transition-opacity duration-300"
                   style={{ opacity: isActive ? 1 : 0 }}
                 />
-                {/* onda expansiva al activarse */}
+                {/* onda expansiva al activarse: un único pulso, sin bucle */}
                 {isActive && (
                   <motion.span
-                    className="absolute inset-0 rounded-full border-2 border-brand-400"
+                    className="absolute inset-0 rounded-full border-2 border-brand-400 pointer-events-none"
                     animate={{ scale: [1, 1.45], opacity: [0.6, 0] }}
                     transition={{
-                      duration: 1.6,
-                      repeat: Infinity,
+                      duration: 0.9,
                       ease: 'easeOut',
                     }}
                   />

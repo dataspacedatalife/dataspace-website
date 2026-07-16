@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion, type Variants } from 'motion/react';
 import { ArrowUpRight, ChevronDown } from 'lucide-react';
 import { DataSpaceWheel } from './wheel';
+import { CTA_GRADIENT, CTA_SHADOW, CtaGloss, CtaPulseRing, useCtaHover } from './shared';
 
 export function scrollToId(id: string) {
   document
@@ -14,6 +15,7 @@ export function scrollToId(id: string) {
 export function Hero() {
   const t = useTranslations('home.hero');
   const reduceMotion = useReducedMotion();
+  const { active: ctaActive, hoverHandlers } = useCtaHover();
 
   const container: Variants = {
     hidden: {},
@@ -62,13 +64,13 @@ export function Hero() {
                 href="https://dashboard.dataspace.cesga.es/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative overflow-hidden inline-flex items-center gap-2 px-8 py-4 rounded-xl text-white font-semibold shadow-[0_10px_30px_rgba(0,140,170,0.35)] hover:shadow-xl hover:-translate-y-0.5 transition bg-gradient-to-r from-[#3fd7c0] via-[#00a8b8] to-[#006b8f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700"
+                {...hoverHandlers}
+                className={`group relative inline-flex items-center gap-2 px-8 py-4 rounded-xl text-white font-semibold ${CTA_SHADOW} hover:shadow-xl hover:-translate-y-0.5 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700`}
+                style={{ background: CTA_GRADIENT }}
               >
-                {/* destello al pasar el ratón */}
-                <span
-                  aria-hidden="true"
-                  className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/25 to-transparent"
-                />
+                <CtaPulseRing active={ctaActive} />
+                <CtaGloss />
+
                 {t('access')}
                 <ArrowUpRight size={18} />
               </a>
@@ -104,17 +106,8 @@ export function Hero() {
         type="button"
         onClick={() => scrollToId('por-que')}
         aria-label={t('learnMore')}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-brand-700/70 hover:text-brand-700 transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700 rounded-full"
-      >
-        <span className="flex items-start justify-center h-9 w-6 rounded-full border border-brand-500/30 pt-1.5">
-          <motion.span
-            animate={reduceMotion ? undefined : { y: [0, 5, 0] }}
-            transition={{ repeat: Infinity, duration: 1.8, ease: 'easeInOut' }}
-          >
-            <ChevronDown size={14} />
-          </motion.span>
-        </span>
-      </button>
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:block size-9 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700 rounded-full"
+      />
     </section>
   );
 }

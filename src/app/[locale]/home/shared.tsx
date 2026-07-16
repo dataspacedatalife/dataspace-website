@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { motion } from 'motion/react';
+import { motion, useReducedMotion } from 'motion/react';
 import type { LucideIcon } from 'lucide-react';
 import { Share2, Cpu, Search, CloudUpload } from 'lucide-react';
 
@@ -37,7 +37,7 @@ export function useServicesData(): ServiceItem[] {
     { key: 'share', icon: Share2, href: 'https://dl-cesga.srv.cesga.es' },
     { key: 'analyze', icon: Search, href: 'https://bigdata.dataspace.cesga.es/' },
     { key: 'compute', icon: Cpu, href: 'https://hpc.dataspace.cesga.es' },
-    { key: 'deliver', icon: CloudUpload, href: 'https://cloud.dataspace.cesga.es' },
+    { key: 'deliver', icon: CloudUpload, href: 'http://cloud.srv.cesga.es/' },
   ] as const;
 
   return base.map(({ key, icon, href }) => ({
@@ -55,6 +55,66 @@ export function useServicesData(): ServiceItem[] {
 export function polar(cx: number, cy: number, r: number, angleDeg: number) {
   const rad = (angleDeg * Math.PI) / 180;
   return { x: cx + r * Math.cos(rad), y: cy + r * Math.sin(rad) };
+}
+
+/* ============ ESTILO COMÚN DE LOS CTA PRINCIPALES ============
+   mismo degradado, brillo y pulso de llegada que los nodos de la rueda */
+export const CTA_GRADIENT =
+  'linear-gradient(160deg, #00b7d4 0%, #009ab8 45%, #007092 100%)';
+
+export const CTA_SHADOW =
+  'shadow-[0_8px_20px_rgba(0,90,120,0.28),inset_0_1px_0_rgba(255,255,255,0.25)]';
+
+/* activa el pulso con hover/foco, igual que la activación de un nodo */
+export function useCtaHover() {
+  const [active, setActive] = useState(false);
+  return {
+    active,
+    hoverHandlers: {
+      onMouseEnter: () => setActive(true),
+      onMouseLeave: () => setActive(false),
+      onFocus: () => setActive(true),
+      onBlur: () => setActive(false),
+    },
+  };
+}
+
+/* anillo que crece el mismo número de píxeles en los 4 lados (no escala,
+   para no desplazarse más en un rectángulo ancho que en uno alto) y
+   pulsa una única vez por activación, con la misma velocidad y tiempo
+   de respuesta que el pulso de los nodos de la rueda */
+export function CtaPulseRing({ active }: { active: boolean }) {
+  const reduceMotion = useReducedMotion();
+  if (!active || reduceMotion) return null;
+  return (
+    <motion.span
+      aria-hidden="true"
+      className="absolute rounded-[14px] border-2 border-brand-400 pointer-events-none"
+      initial={{ top: -4, right: -4, bottom: -4, left: -4 }}
+      animate={{
+        top: -14,
+        right: -14,
+        bottom: -14,
+        left: -14,
+        opacity: [0.7, 0],
+      }}
+      transition={{ duration: 0.9, ease: 'easeOut' }}
+    />
+  );
+}
+
+/* brillo radial superior-izquierdo, igual que en los nodos */
+export function CtaGloss() {
+  return (
+    <span
+      aria-hidden="true"
+      className="absolute inset-0 rounded-xl pointer-events-none"
+      style={{
+        background:
+          'radial-gradient(circle at 30% 25%, rgba(255,255,255,0.35), transparent 55%)',
+      }}
+    />
+  );
 }
 
 /* ============ FOTO DEL SERVICIO (con fallback al icono) ============ */

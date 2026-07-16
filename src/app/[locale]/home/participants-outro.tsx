@@ -4,6 +4,13 @@ import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/container';
+import {
+  CTA_GRADIENT,
+  CTA_SHADOW,
+  CtaGloss,
+  CtaPulseRing,
+  useCtaHover,
+} from './shared';
 
 /* ============ CIERRE: ENTIDADES PARTICIPANTES ============ */
 const OUTRO_LOGOS: { file: string; name: string }[] = [
@@ -25,6 +32,7 @@ const OUTRO_LOGOS: { file: string; name: string }[] = [
 
 export function ParticipantsOutro() {
   const tOutro = useTranslations('home.outro');
+  const { active: ctaActive, hoverHandlers } = useCtaHover();
 
   return (
     <section
@@ -67,11 +75,13 @@ export function ParticipantsOutro() {
       <div className="mt-14 flex flex-wrap justify-center gap-5">
         <Link
           href="/how"
-          className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl text-white font-semibold shadow-lg shadow-cyan-900/20 hover:shadow-xl hover:-translate-y-0.5 transition"
-          style={{
-            background: 'linear-gradient(135deg, #00a8b8 0%, #006b8f 100%)',
-          }}
+          {...hoverHandlers}
+          className={`group relative inline-flex items-center gap-2 px-8 py-4 rounded-xl text-white font-semibold ${CTA_SHADOW} hover:shadow-xl hover:-translate-y-0.5 transition`}
+          style={{ background: CTA_GRADIENT }}
         >
+          <CtaPulseRing active={ctaActive} />
+          <CtaGloss />
+
           {tOutro('join')}
           <ArrowRight
             size={18}
