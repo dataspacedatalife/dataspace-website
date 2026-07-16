@@ -49,7 +49,8 @@ export function LifecycleBridge() {
         >
           <motion.p
             variants={item}
-            className="inline-flex items-center gap-2 rounded-full border border-brand-500/25 bg-white/70 backdrop-blur px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-brand-700 font-mono"
+            className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-white font-mono"
+            style={{ backgroundColor: '#009AB8' }}
           >
             {t('kicker')}
           </motion.p>
