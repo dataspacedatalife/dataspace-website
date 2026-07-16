@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { motion, type Variants } from 'motion/react';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 import { Container } from '@/components/container';
 import {
   CTA_GRADIENT,
@@ -49,7 +49,8 @@ export function LifecycleBridge() {
         >
           <motion.p
             variants={item}
-            className="inline-flex items-center gap-2 rounded-full border border-brand-500/25 bg-white/70 backdrop-blur px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-brand-700 font-mono"
+            className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-white font-mono"
+            style={{ backgroundColor: '#009AB8' }}
           >
             {t('kicker')}
           </motion.p>
@@ -150,10 +151,7 @@ export function LifecycleBridge() {
               <CtaGloss />
 
               {t('cta')}
-              <ArrowRight
-                size={18}
-                className="transition-transform group-hover:translate-x-0.5"
-              />
+              <ArrowDown size={18} />
             </button>
             <Link
               href="/what"
