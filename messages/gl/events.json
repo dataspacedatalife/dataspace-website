@@ -640,6 +640,29 @@
         "⚠️ Aforo limitado."
       ],
       "extra": "Inscrición previa"
+    },
+    "miniEncuentroVigo": {
+      "header": "Mini Encontros OneHealth DataSpace – Vigo",
+      "excerpt": "Encontro na Aula 5-6 (planta 0, zona de docencia) do Hospital Álvaro Cunqueiro (IISGaliciaSur, Vigo) para coñecer as capacidades de OneHealth DataSpace, identificar necesidades de investigación e explorar oportunidades de colaboración baixo o enfoque One Health.",
+      "description": [
+        "O vindeiro mércores 29 de xullo, de 12 a 13h, OneHealth DataSpace celebrará no Instituto de Investigación Sanitaria Galicia Sur (IISGaliciaSur) un dos seus Mini Encontros.",
+        "Desde o Centro de Supercomputación de Galicia (CESGA), convidámoste a este encontro para coñecer as posibilidades que ofrece OneHealth DataSpace e a súa futura evolución cara á 1HealthAI Factory, así como aquelas capacidades que poderían ser de interese para o teu grupo de investigación.",
+        "Que propoñemos?",
+        "Un encontro dunha hora pensado para coñecernos, analizar as necesidades de cada proxecto e construír solucións xuntos.",
+        "Comezaremos presentando en que consiste OneHealth DataSpace e as súas posibilidades.",
+        "A maior parte do tempo estará dedicada a conversar: que retos ten o teu grupo?, como podemos axudarvos desde o CESGA e desde OneHealth DataSpace?",
+        "A quen vai dirixido?",
+        "▸ Grupos de investigación no ámbito da saúde humana.",
+        "▸ Grupos de investigación en saúde animal e medioambiental.",
+        "▸ Equipos interesados en impulsar as súas investigacións baixo o enfoque One Health.",
+        "Máis que datos. Convertimos os datos en coñecemento accionable.",
+        "OneHealth DataSpace ofrece ás entidades participantes un ciclo completo de traballo sobre os datos One Health (enfoque que integra a saúde humana, animal e medioambiental como unha soa saúde): integración, intercambio, procesamento avanzado, análise, execución de modelos e almacenamento de resultados, sen perder en ningún momento o control sobre eles.",
+        "📍 Instituto de Investigación Sanitaria Galicia Sur (IISGaliciaSur). Hospital Álvaro Cunqueiro. Aula 5-6, planta 0, zona de docencia.",
+        "📅 Mércores 29 de xullo de 2026",
+        "🕛 De 12 a 13h",
+        "⚠️ Aforo limitado."
+      ],
+      "extra": "Inscrición previa"
     }
   }
 }

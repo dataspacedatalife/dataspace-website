@@ -399,6 +399,18 @@ const events: Event[]  = [
     cesgalink: 'https://forms.gle/U8nRPdvcBquNe19v6',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
+  },
+  {
+    key: 'miniEncuentroVigo',
+    date: '2026-07-29',
+    image: {
+      es: miniencuentrosES,
+      en: miniencuentrosENG,
+      gl: miniencuentrosGL
+    },
+    cesgalink: 'https://forms.gle/AYKkiuGxJFArv2ZSA',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: true,
   }
 
 ] satisfies Event[];
