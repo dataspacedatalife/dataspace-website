@@ -1,10 +1,10 @@
 'use client';
 
-import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion, type Variants } from 'motion/react';
 import { ArrowUpRight, ChevronDown } from 'lucide-react';
 import { DataSpaceWheel } from './wheel';
+import { CTA_GRADIENT, CTA_SHADOW, CtaGloss, CtaPulseRing, useCtaHover } from './shared';
 
 export function scrollToId(id: string) {
   document
@@ -15,7 +15,7 @@ export function scrollToId(id: string) {
 export function Hero() {
   const t = useTranslations('home.hero');
   const reduceMotion = useReducedMotion();
-  const [ctaActive, setCtaActive] = useState(false);
+  const { active: ctaActive, hoverHandlers } = useCtaHover();
 
   const container: Variants = {
     hidden: {},
@@ -64,46 +64,12 @@ export function Hero() {
                 href="https://dashboard.dataspace.cesga.es/"
                 target="_blank"
                 rel="noopener noreferrer"
-                onMouseEnter={() => setCtaActive(true)}
-                onMouseLeave={() => setCtaActive(false)}
-                onFocus={() => setCtaActive(true)}
-                onBlur={() => setCtaActive(false)}
-                className="group relative inline-flex items-center gap-2 px-8 py-4 rounded-xl text-white font-semibold shadow-[0_8px_20px_rgba(0,90,120,0.28),inset_0_1px_0_rgba(255,255,255,0.25)] hover:shadow-xl hover:-translate-y-0.5 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700"
-                style={{
-                  background:
-                    'linear-gradient(160deg, #00b7d4 0%, #009ab8 45%, #007092 100%)',
-                }}
+                {...hoverHandlers}
+                className={`group relative inline-flex items-center gap-2 px-8 py-4 rounded-xl text-white font-semibold ${CTA_SHADOW} hover:shadow-xl hover:-translate-y-0.5 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700`}
+                style={{ background: CTA_GRADIENT }}
               >
-                {/* pulso al activarse, igual de rápido y con la misma
-                    respuesta que en los nodos de la rueda */}
-                {ctaActive && !reduceMotion && (
-                  <motion.span
-                    aria-hidden="true"
-                    className="absolute rounded-[14px] border-2 border-brand-400 pointer-events-none"
-                    initial={{ top: -4, right: -4, bottom: -4, left: -4 }}
-                    animate={{
-                      top: -14,
-                      right: -14,
-                      bottom: -14,
-                      left: -14,
-                      opacity: [0.7, 0],
-                    }}
-                    transition={{
-                      duration: 0.9,
-                      ease: 'easeOut',
-                    }}
-                  />
-                )}
-
-                {/* brillo radial, igual que en los nodos */}
-                <span
-                  aria-hidden="true"
-                  className="absolute inset-0 rounded-xl pointer-events-none"
-                  style={{
-                    background:
-                      'radial-gradient(circle at 30% 25%, rgba(255,255,255,0.35), transparent 55%)',
-                  }}
-                />
+                <CtaPulseRing active={ctaActive} />
+                <CtaGloss />
 
                 {t('access')}
                 <ArrowUpRight size={18} />

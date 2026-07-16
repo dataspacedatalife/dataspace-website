@@ -5,13 +5,21 @@ import { motion, type Variants } from 'motion/react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/container';
-import { useServicesData } from './shared';
+import {
+  CTA_GRADIENT,
+  CTA_SHADOW,
+  CtaGloss,
+  CtaPulseRing,
+  useCtaHover,
+  useServicesData,
+} from './shared';
 import { scrollToId } from './hero';
 
 /* ============ PUENTE: POR QUÉ SOMOS DIFERENTES ============ */
 export function LifecycleBridge() {
   const t = useTranslations('home.bridge');
   const services = useServicesData();
+  const { active: ctaActive, hoverHandlers } = useCtaHover();
 
   const container: Variants = {
     hidden: {},
@@ -134,8 +142,13 @@ export function LifecycleBridge() {
             <button
               type="button"
               onClick={() => scrollToId('servicios')}
-              className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl text-white font-semibold shadow-lg shadow-cyan-900/20 hover:shadow-xl hover:-translate-y-0.5 transition cursor-pointer bg-gradient-to-r from-[#3fd7c0] via-[#00a8b8] to-[#006b8f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700"
+              {...hoverHandlers}
+              className={`group relative inline-flex items-center gap-2 px-8 py-4 rounded-xl text-white font-semibold ${CTA_SHADOW} hover:shadow-xl hover:-translate-y-0.5 transition cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700`}
+              style={{ background: CTA_GRADIENT }}
             >
+              <CtaPulseRing active={ctaActive} />
+              <CtaGloss />
+
               {t('cta')}
               <ArrowRight
                 size={18}
