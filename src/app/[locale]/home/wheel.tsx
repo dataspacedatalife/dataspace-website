@@ -379,14 +379,13 @@ export function DataSpaceWheel() {
                   className="absolute -inset-1.5 rounded-full bg-brand-400/20 blur-md transition-opacity duration-300"
                   style={{ opacity: isActive ? 1 : 0 }}
                 />
-                {/* onda expansiva al activarse */}
+                {/* onda expansiva al activarse: un único pulso, sin bucle */}
                 {isActive && (
                   <motion.span
-                    className="absolute inset-0 rounded-full border-2 border-brand-400"
+                    className="absolute inset-0 rounded-full border-2 border-brand-400 pointer-events-none"
                     animate={{ scale: [1, 1.45], opacity: [0.6, 0] }}
                     transition={{
-                      duration: 1.6,
-                      repeat: Infinity,
+                      duration: 0.9,
                       ease: 'easeOut',
                     }}
                   />
