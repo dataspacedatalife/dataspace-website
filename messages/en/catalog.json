@@ -3192,7 +3192,7 @@
       "use_case": "De la Fuente Lab",
       "provider": "De la Fuente Lab",
       "description": "Continued pretraining of Evo 2 LoRA models of different sizes with eukaryotic-host and broad-host-range viral genomes.",
-      "descripcion_ampliada": "This use case will carry out the continued pretraining of Evo 2 LoRA models of different sizes using eukaryotic-host and broad-host-range viral genome data. Only the files included in the use case data repository will be used for the first training round.",
+      "descripcion_ampliada": "This use case will carry out the continued pretraining of Evo 2 LoRA models of different sizes using eukaryotic-host and broad-host-range viral genome data.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},

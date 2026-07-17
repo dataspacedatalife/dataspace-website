@@ -3192,7 +3192,7 @@
       "use_case": "De la Fuente Lab",
       "provider": "De la Fuente Lab",
       "description": "Preadestramento continuo de modelos Evo 2 LoRA de diferentes tamaños con xenomas virais de hóspedes eucariotas e de hóspedes diversos.",
-      "descripcion_ampliada": "Este caso de uso realizará o preadestramento continuo de modelos Evo 2 LoRA de diferentes tamaños con datos de xenomas virais de hóspedes eucariotas e de hóspedes diversos. Para a primeira rolda de adestramento utilizaranse unicamente os ficheiros incluídos no repositorio de datos do caso de uso.",
+      "descripcion_ampliada": "Este caso de uso realizará o preadestramento continuo de modelos Evo 2 LoRA de diferentes tamaños con datos de xenomas virais de hóspedes eucariotas e de hóspedes diversos.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
