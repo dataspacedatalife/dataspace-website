@@ -280,43 +280,69 @@
     },
     "brilliant": {
       "name": "Brilliant — Observatorio de Sarcopenia",
-      "dataset_name": "-",
+      "dataset_name": "MRI_BRILLIANT",
       "use_case": "Grupo de Investigación Cardiovascular, IIS Galicia Sur",
-      "provider": "Grupo de Investigación Cardiovascular, IIS Galicia Sur (IISGS)",
+      "provider": "Brilliant — IIS Galicia Sur",
       "description": "Desarrollar un sistema que permita la subida, análisis y diagnóstico automático de estudios médicos a partir de datos sintéticos para abordar la sarcopenia.",
-      "volumen": "1 TB",
-      "n_ficheros": "10.000",
+      "volumen": "100,05 GB",
+      "n_ficheros": "2.000 ficheros",
       "subsets": {
-        "mri_DICOM": {
-          "name": "MRI_BRILLIANT_DICOM",
-          "description": "Datos de imágenes de resonancia magnética lumbar (región L3).",
+        "mri": {
+          "name": "MRI_BRILLIANT",
+          "description": "Datos sintéticos de resonancia magnética lumbar (regiones L3-L4 y L3) con datos demográficos artificiales asociados.",
           "metadata": {
             "data_type": "Sintético",
-            "data_standard": "DICOM",
+            "data_standard": "DICOM / No aplica / Propietario",
             "date_added": "",
-            "file_format": "DICOM",
-            "license": "CC BY 4.0",
+            "file_format": "Zip M / CSV",
+            "license": "CC BY 4.0 (DICOM) / Propietaria, restringida bajo contrato (CSV)",
             "temporal_resolution": "-",
             "temporal_coverage": "-"
           },
-          "variables": []
+          "variables": [
+            {
+              "name": "id",
+              "units": "-",
+              "data_description": "Identificador único de paciente (anonimizado).",
+              "data_type": "string"
+            },
+            {
+              "name": "codigo_postal",
+              "units": "-",
+              "data_description": "Código postal de residencia.",
+              "data_type": "string"
+            }
+          ]
         },
-        "mri_csv": {
-          "name": "MRI_BRILLIANT_CSV",
-          "description": "Datos personales sintéticos asociados a las resonancias magnéticas lumbares (región L3).",
+        "sarcopenia_csv": {
+          "name": "SARCOPENIA_BRILLIANT_CSV",
+          "description": "Datos de índice de sarcopenia derivados del análisis con IA de resonancias magnéticas lumbares (región L3).",
           "metadata": {
             "data_type": "Sintético",
-            "data_standard": "",
+            "data_standard": "No aplica / Propietario",
             "date_added": "",
             "file_format": "CSV",
-            "license": "CC BY 4.0",
+            "license": "Propietaria (restringida bajo contrato)",
             "temporal_resolution": "",
             "temporal_coverage": ""
           },
-          "variables": []
+          "variables": [
+            {
+              "name": "id",
+              "units": "-",
+              "data_description": "Identificador único de paciente (anonimizado).",
+              "data_type": "string"
+            },
+            {
+              "name": "indice_sarcopenia",
+              "units": "-",
+              "data_description": "Índice numérico calculado por el estudio.",
+              "data_type": "float"
+            }
+          ]
         }
       },
-      "descripcion_ampliada": "Sarcopenia es un término clínico que describe la pérdida de masa muscular y fuerza que ocurre naturalmente con el envejecimiento. La detección temprana de la sarcopenia es crucial para mitigar sus riesgos y mejorar la calidad de vida de los afectados. \n\nEl proyecto Brilliant propone un enfoque integral para abordar la sarcopenia, utilizando imágenes de resonancia magnética (RM) lumbar y técnicas de IA para desarrollar herramientas de diagnóstico automáticas. El proyecto propone el uso de técnicas de aprendizaje profundo para procesar este volumen masivo de información de manera automatizada.",
+      "descripcion_ampliada": "Sarcopenia es un término clínico que describe la pérdida de masa muscular y fuerza que ocurre naturalmente con el envejecimiento. La detección temprana de la sarcopenia es crucial para mitigar sus riesgos y mejorar la calidad de vida de los afectados.\n\nEl proyecto Brilliant propone un enfoque integral para abordar la sarcopenia, utilizando imágenes de resonancia magnética (RM) lumbar y técnicas de IA para desarrollar herramientas de diagnóstico automáticas. El proyecto propone el uso de técnicas de aprendizaje profundo para procesar este volumen masivo de información de manera automatizada.",
       "entidad_promotora": "Grupo de Investigación Cardiovascular, IIS Galicia Sur (IISGS)"
     },
     "gift_conversations": {
@@ -452,7 +478,7 @@
           ]
         }
       },
-      "descripcion_ampliada": "El proyecto GIFT (Gastroenterology Interface with FAIR treatment) busca dar respuesta a los desafíos actuales de gestión de la información en la atención sanitaria, pretendiendo crear alianzas entre profesionales y mejorar la seguridad de los pacientes. Para ello se identificará, categorizará y verificará información desestructurada sobre patologías digestivas y sus correspondientes procesos asistenciales para la posterior creación de un espacio de datos accesible a través de una API (Application Programming Interface) de inteligencia artificial (IA) generativa previamente alimentada con los mencionados datos. \n\nEsta API funcionará como puente entre el espacio de datos y los clientes, que serán, inicialmente, sistemas de salud públicos o privados o empresas tecnológicas que den servicio a los anteriores. La API proveerá esos datos a través de un asistente de IA de ayuda a la toma de decisiones en gastroenterología. De esta forma se busca ofrecer respuestas orientadas, rápidas y verificadas sobre estas patologías de una forma transgresora a la vez que sencilla, donde la IA cobra un papel clave como punto de unión entre el espacio de datos y el usuario final, que serán inicialmente profesionales de la medicina. \n\nEn GIFT, tal y como su propio nombre indica, tendrán un peso esencial los principios FAIR, haciendo que estos datos sobre práctica clínica sean encontrables, accesibles, interoperables y reutilizables. Estos datos estarán, además, validados por médicos gastroenterólogos e investigadores pertenecientes al Grupo de Hepatología y Enfermedades Inflamatorias Intestinales del IIS Galicia Sur. La incorporación de un asistente de inteligencia artificial conversacional sienta las bases de un nuevo modelo que aspira a ser referente y pionero. Un sistema de apoyo a la toma de decisiones que permite a los profesionales hacer uso de la inteligencia artificial para el beneficio último del paciente, fomentando diagnósticos más rápidos y eficaces.",
+      "descripcion_ampliada": "El proyecto GIFT (Gastroenterology Interface with FAIR treatment) busca dar respuesta a los desafíos actuales de gestión de la información en la atención sanitaria, pretendiendo crear alianzas entre profesionales y mejorar la seguridad de los pacientes. Para ello se identificará, categorizará y verificará información desestructurada sobre patologías digestivas y sus correspondientes procesos asistenciales para la posterior creación de un espacio de datos accesible a través de una API (Application Programming Interface) de inteligencia artificial (IA) generativa previamente alimentada con los mencionados datos. \n\nEsta API funcionará como puente entre el espacio de datos y los clientes, que serán, inicialmente, sistemas de salud públicos o privados o empresas tecnológicas que den servicio a los anteriores. La API proveerá esos datos a través de un asistente de IA de ayuda a la búsqueda de información verificada en gastroenterología. De esta forma se busca ofrecer respuestas orientadas, rápidas y verificadas sobre estas patologías de una forma transgresora a la vez que sencilla, donde la IA cobra un papel clave como punto de unión entre el espacio de datos y el usuario final, que serán inicialmente profesionales de la medicina. \n\nEn GIFT, tal y como su propio nombre indica, tendrán un peso esencial los principios FAIR, haciendo que estos datos sobre práctica clínica sean encontrables, accesibles, interoperables y reutilizables. Estos datos estarán, además, validados por médicos gastroenterólogos e investigadores pertenecientes al Grupo de Hepatología y Enfermedades Inflamatorias Intestinales del IIS Galicia Sur. La incorporación de un asistente de inteligencia artificial conversacional sienta las bases de un nuevo modelo que aspira a ser referente y pionero. Un sistema de apoyo a la toma de decisiones que permite a los profesionales hacer uso de la inteligencia artificial para el beneficio último del paciente, fomentando diagnósticos más rápidos y eficaces.",
       "entidad_promotora": "Grupo IDARA, IIS Galicia Sur (IISGS)"
     },
     "biomexplore": {

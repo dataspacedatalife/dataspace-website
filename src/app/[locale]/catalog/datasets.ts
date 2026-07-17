@@ -35,6 +35,7 @@ import LogoUvigo from '../../../../public/use-cases/uvigo.png';
 import LogoWirelessGalicia from '../../../../public/use-cases/wireless_galicia.png';
 
 const LogoDepoOurense = '/use-cases/depoourense.svg';
+const LogoGift = '/use-cases/logo-gift.svg';
 const LogoIntecmar = '/use-cases/intecmar.png';
 
 export type HealthCategory = 'human' | 'animal' | 'environmental';
@@ -72,7 +73,7 @@ export const useCasesData = [
   },
   {
     id: 'gift_conversations',
-    imagen: LogoAIDATAMED,
+    imagen: LogoGift,
     link: 'https://www.idara.health/',
     categories: ['human'] as HealthCategory[],
   },

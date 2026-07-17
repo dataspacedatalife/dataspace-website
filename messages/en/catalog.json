@@ -282,38 +282,64 @@
       "name": "Brilliant — Sarcopenia Observatory",
       "dataset_name": "MRI_BRILLIANT",
       "use_case": "Cardiovascular Research Group, IIS Galicia Sur",
-      "provider": "Cardiovascular Research Group, IIS Galicia Sur (IISGS)",
+      "provider": "Brilliant — IIS Galicia Sur",
       "description": "Develop a system that enables the automated upload, analysis and diagnosis of medical studies from synthetic data to address sarcopenia.",
-      "volumen": "1 TB",
-      "n_ficheros": "10,000 files",
+      "volumen": "100.05 GB",
+      "n_ficheros": "2,000 files",
       "subsets": {
-        "mri_DICOM": {
-          "name": "MRI_BRILLIANT_DICOM",
-          "description": "Lumbar magnetic resonance imaging data (L3 region).",
+        "mri": {
+          "name": "MRI_BRILLIANT",
+          "description": "Synthetic lumbar magnetic resonance imaging data (L3-L4 and L3 regions) with associated artificial demographic data.",
           "metadata": {
             "data_type": "Synthetic",
-            "data_standard": "DICOM",
+            "data_standard": "DICOM / Not applicable / Proprietary",
             "date_added": "",
-            "file_format": "DICOM",
-            "license": "CC BY 4.0",
+            "file_format": "Zip M / CSV",
+            "license": "CC BY 4.0 (DICOM) / Proprietary, restricted by contract (CSV)",
             "temporal_resolution": "-",
             "temporal_coverage": "-"
           },
-          "variables": []
+          "variables": [
+            {
+              "name": "id",
+              "units": "-",
+              "data_description": "Unique patient identifier (anonymized).",
+              "data_type": "string"
+            },
+            {
+              "name": "codigo_postal",
+              "units": "-",
+              "data_description": "Postal code of residence.",
+              "data_type": "string"
+            }
+          ]
         },
-        "mri_csv": {
-          "name": "MRI_BRILLIANT_CSV",
-          "description": "Synthetic personal data associated with lumbar MRIs (L3 region).",
+        "sarcopenia_csv": {
+          "name": "SARCOPENIA_BRILLIANT_CSV",
+          "description": "Sarcopenia index data derived from AI analysis of lumbar magnetic resonance imaging (L3 region).",
           "metadata": {
             "data_type": "Synthetic",
-            "data_standard": "",
+            "data_standard": "Not applicable / Proprietary",
             "date_added": "",
             "file_format": "CSV",
-            "license": "CC BY 4.0",
+            "license": "Proprietary (restricted by contract)",
             "temporal_resolution": "",
             "temporal_coverage": ""
           },
-          "variables": []
+          "variables": [
+            {
+              "name": "id",
+              "units": "-",
+              "data_description": "Unique patient identifier (anonymized).",
+              "data_type": "string"
+            },
+            {
+              "name": "indice_sarcopenia",
+              "units": "-",
+              "data_description": "Numerical index calculated by the study.",
+              "data_type": "float"
+            }
+          ]
         }
       },
       "entidad_promotora": "Grupo de Investigación Cardiovascular, IIS Galicia Sur (IISGS)",
@@ -453,7 +479,7 @@
         }
       },
       "entidad_promotora": "Grupo IDARA, IIS Galicia Sur (IISGS)",
-      "descripcion_ampliada": "The GIFT project (Gastroenterology Interface with FAIR treatment) seeks to address current information management challenges in healthcare, aiming to create alliances among professionals and improve patient safety. To this end, unstructured information on digestive pathologies and their corresponding care processes will be identified, categorized, and verified, for the subsequent creation of a data space accessible through a generative artificial intelligence (AI) API (Application Programming Interface) pre-loaded with the aforementioned data.\n\nThis API will function as a bridge between the data space and clients, which will initially be public or private health systems or technology companies that serve them. The API will provide this data through an AI assistant that supports clinical decision-making in gastroenterology. In this way, the aim is to offer targeted, rapid, and verified answers on these pathologies in a disruptive yet simple manner, where AI plays a key role as the link between the data space and the end user, who will initially be medical professionals.\n\nIn GIFT, as its name suggests, the FAIR principles will play an essential role, making this clinical practice data findable, accessible, interoperable, and reusable. This data will also be validated by gastroenterologist physicians and researchers from the Hepatology and Inflammatory Bowel Disease Group at IIS Galicia Sur. The incorporation of a conversational artificial intelligence assistant lays the groundwork for a new model that aspires to be a benchmark and pioneer. A decision support system that allows professionals to use artificial intelligence for the ultimate benefit of the patient, promoting faster and more effective diagnoses."
+      "descripcion_ampliada": "The GIFT project (Gastroenterology Interface with FAIR treatment) seeks to address current information management challenges in healthcare, aiming to create alliances among professionals and improve patient safety. To this end, unstructured information on digestive pathologies and their corresponding care processes will be identified, categorized, and verified, for the subsequent creation of a data space accessible through a generative artificial intelligence (AI) API (Application Programming Interface) pre-loaded with the aforementioned data.\n\nThis API will function as a bridge between the data space and clients, which will initially be public or private health systems or technology companies that serve them. The API will provide this data through an AI assistant that helps search for verified information in gastroenterology. In this way, the aim is to offer targeted, rapid, and verified answers on these pathologies in a disruptive yet simple manner, where AI plays a key role as the link between the data space and the end user, who will initially be medical professionals.\n\nIn GIFT, as its name suggests, the FAIR principles will play an essential role, making this clinical practice data findable, accessible, interoperable, and reusable. This data will also be validated by gastroenterologist physicians and researchers from the Hepatology and Inflammatory Bowel Disease Group at IIS Galicia Sur. The incorporation of a conversational artificial intelligence assistant lays the groundwork for a new model that aspires to be a benchmark and pioneer. A decision support system that allows professionals to use artificial intelligence for the ultimate benefit of the patient, promoting faster and more effective diagnoses."
     },
     "biomexplore": {
       "name": "BiomeXplore — Observatory of the Population Index of Intestinal Microbiota Wellness (IPbMI)",
