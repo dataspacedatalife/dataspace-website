@@ -3185,6 +3185,32 @@
       "subsets": {},
       "datos_descripcion": "Data type: Meteorological and agronomic data from Valldemossa (Balearic Islands). Meteorological parameters: air temperature (max./min.), relative humidity, dew point, wet-bulb temperature, wind speed and direction, maximum gust, thermal sensation, heat index, accumulated and intensity rainfall, solar radiation, evapotranspiration, UV index, heating and cooling degree days. Agronomic parameters: soil temperature, soil moisture, leaf moisture (max., min., and accumulated time). ID of the asset published in OneHealth DataSpace: meteo-dataset-v3. Data source: TRUEWORLD meteorological station and agricultural IoT sensors in Valldemossa, Balearic Islands. Periodic continuous monitoring records. Intended use of the data: Environmental and agronomic monitoring; health and environmental impact analysis; precision agriculture; climate risk management and adaptation to climate change.\n\nEnvironmental and agronomic data available in the OneHealth DataSpace data space, with applications in precision agriculture, environmental monitoring, climate risk management, and analysis of environmental impact on human health.\n\nEnvironmental and agronomic data dataset (meteo-dataset-v3) available in the OneHealth DataSpace data space. Replicable model for integrating IoT sensor data into health data ecosystems.",
       "entidad_promotora": "TRUEWORLD"
+    },
+    "evo2_viral_genomes": {
+      "name": "Evo 2 — Continued pretraining with viral genomes",
+      "dataset_name": "Eukaryotic-host and broad-host-range viral genomes",
+      "use_case": "De la Fuente Lab",
+      "provider": "De la Fuente Lab",
+      "description": "Continued pretraining of Evo 2 LoRA models of different sizes with eukaryotic-host and broad-host-range viral genomes.",
+      "descripcion_ampliada": "This use case will carry out the continued pretraining of Evo 2 LoRA models of different sizes using eukaryotic-host and broad-host-range viral genome data. Only the files included in the use case data repository will be used for the first training round.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Data type: Eukaryotic-host and broad-host-range viral genomes prepared for continued pretraining of Evo 2 with LoRA. Data source: Files included in the use case data repository. Intended use of the data: First training round for Evo 2 LoRA models of different sizes; evaluation of model adaptation to viral genomic sequences.\n\nEvo 2 LoRA models of different sizes fine-tuned with the selected viral genome dataset.",
+      "entidad_promotora": "De la Fuente Lab"
+    },
+    "intecmar_radar_hf": {
+      "name": "Galicia HF Radar — Hourly surface-current data",
+      "dataset_name": "Hourly data from the Galicia HF Radar for the last five days",
+      "use_case": "INTECMAR",
+      "provider": "INTECMAR",
+      "description": "Hourly surface-current data estimated by the Galicia HF Radar Network and processed in near real time on a 6 km resolution grid.",
+      "descripcion_ampliada": "Current velocities estimated by HF radar represent approximately the upper 0.3–2.5 metres of the ocean. Hourly radial measurements from stations in the Galicia HF Radar Network are combined using unweighted least squares to generate near-real-time surface-current maps on a 6 km grid off the Galician coast.\n\nThe dataset provides data for the last five days and supports observation of surface ocean circulation.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Data type: Three-dimensional grid of surface ocean-current velocities, with hourly temporal resolution and 6 km spatial resolution. Distributed as NetCDF 4.3.3 using reference system EPSG:3041. Data source: Radial velocity measurements from the Galicia HF Radar Network, operated by INTECMAR with the participation of Puertos del Estado. Intended use of the data: Visualisation and analysis of surface currents off the Galician coast over the last five days, using the best product available at processing time.\n\nThe source catalogue states that there are no general use limitations, but also indicates that Puertos del Estado must be contacted to request permission to use the data.",
+      "entidad_promotora": "Technological Institute for the Control of the Marine Environment of Galicia (INTECMAR)"
     }
   },
   "data_description": "Data description",

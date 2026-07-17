@@ -3185,6 +3185,32 @@
       "subsets": {},
       "datos_descripcion": "Tipo de datos: Datos meteorológicos y agronómicos de Valldemossa (Islas Baleares). Parámetros meteorológicos: temperatura del aire (máx./mín.), humedad relativa, punto de rocío, temperatura de bulbo húmedo, velocidad y dirección del viento, racha máxima, sensación térmica, índice de calor, lluvia acumulada e intensidad, radiación solar, evapotranspiración, índice UV, grados día de calefacción y refrigeración. Parámetros agronómicos: temperatura del suelo, humedad del suelo, humedad foliar (máx., mín. y tiempo acumulado). ID del asset publicado en OneHealth DataSpace: meteo-dataset-v3. Fuente de los datos: Estación meteorológica y sensores IoT agrícolas de TRUEWORLD en Valldemossa, Islas Baleares. Registros periódicos de monitorización continua. Uso previsto de los datos: Monitorización ambiental y agronómica; análisis de impacto en salud y medioambiente; agricultura de precisión; gestión de riesgos climáticos y adaptación al cambio climático.\n\nDatos ambientales y agronómicos disponibles en el espacio de datos OneHealth DataSpace, con aplicaciones en agricultura de precisión, monitorización medioambiental, gestión de riesgos climáticos y análisis del impacto ambiental en la salud humana.\n\nDataset de datos ambientales y agronómicos (meteo-dataset-v3) disponible en el espacio de datos OneHealth DataSpace. Modelo replicable de integración de datos de sensores IoT en ecosistemas de datos de salud.",
       "entidad_promotora": "TRUEWORLD"
+    },
+    "evo2_viral_genomes": {
+      "name": "Evo 2 — Preentrenamiento continuo con genomas virales",
+      "dataset_name": "Genomas virales de huéspedes eucariotas y de huéspedes diversos",
+      "use_case": "De la Fuente Lab",
+      "provider": "De la Fuente Lab",
+      "description": "Preentrenamiento continuo de modelos Evo 2 LoRA de diferentes tamaños con genomas virales de huéspedes eucariotas y de huéspedes diversos.",
+      "descripcion_ampliada": "Este caso de uso realizará el preentrenamiento continuo de modelos Evo 2 LoRA de diferentes tamaños con datos de genomas virales de huéspedes eucariotas y de huéspedes diversos. Para la primera ronda de entrenamiento se utilizarán únicamente los archivos incluidos en el repositorio de datos del caso de uso.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Tipo de datos: Genomas virales de huéspedes eucariotas y de virus con un rango de huéspedes diverso, preparados para el preentrenamiento continuo de Evo 2 mediante LoRA. Fuente de los datos: Archivos incluidos en el repositorio de datos del caso de uso. Uso previsto de los datos: Primera ronda de entrenamiento de modelos Evo 2 LoRA de distintos tamaños; evaluación del ajuste del modelo a secuencias genómicas virales.\n\nModelos Evo 2 LoRA de diferentes tamaños ajustados con el conjunto de genomas virales seleccionado.",
+      "entidad_promotora": "De la Fuente Lab"
+    },
+    "intecmar_radar_hf": {
+      "name": "Radar HF de Galicia — Datos horarios de corrientes superficiales",
+      "dataset_name": "Datos horarios del Radar HF de Galicia de los últimos cinco días",
+      "use_case": "INTECMAR",
+      "provider": "INTECMAR",
+      "description": "Datos horarios de corrientes superficiales estimadas por la Red de Radar HF de Galicia y procesadas en tiempo casi real sobre una cuadrícula de 6 km de resolución.",
+      "descripcion_ampliada": "Las velocidades de corriente estimadas mediante radar HF representan aproximadamente los 0,3–2,5 metros superiores del océano. Las mediciones radiales horarias de las estaciones de la Red de Radar HF de Galicia se combinan mediante mínimos cuadrados no ponderados para generar, en tiempo casi real, mapas de corrientes superficiales sobre una cuadrícula de 6 km frente a la costa gallega.\n\nEl conjunto ofrece los datos correspondientes a los últimos cinco días y está orientado a la observación de la circulación oceánica superficial.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Tipo de datos: Cuadrícula tridimensional de velocidades de corrientes oceánicas superficiales, con resolución temporal horaria y resolución espacial de 6 km. Formato de distribución NetCDF 4.3.3 y sistema de referencia EPSG:3041. Fuente de los datos: Mediciones de velocidad radial de la Red de Radar HF de Galicia, operada por INTECMAR, con participación de Puertos del Estado. Uso previsto de los datos: Visualización y análisis de las corrientes superficiales de la costa gallega durante los últimos cinco días, a partir del mejor producto disponible en el momento del procesamiento.\n\nEl catálogo de origen indica que no existen limitaciones generales de uso, pero también señala que debe contactarse con Puertos del Estado para solicitar permiso para utilizar los datos.",
+      "entidad_promotora": "Instituto Tecnolóxico para o Control do Medio Mariño de Galicia (INTECMAR)"
     }
   },
   "data_description": "Descripción de los datos",
