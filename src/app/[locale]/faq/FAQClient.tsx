@@ -50,7 +50,7 @@ export default function FAQClient() {
 
         <div className="mt-8 text-center">
           <a
-            href="https://xdatashare.srv.cesga.es/static/files/Manual_de_Usuario-MVD.pdf"
+            href="/faq/Manual_Usuario_MVD_XDataShare_v2.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center rounded-lg bg-[#009AB8] px-8 py-4 font-semibold text-white shadow-lg transition hover:scale-105"
