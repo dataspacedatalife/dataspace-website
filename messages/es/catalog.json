@@ -2610,17 +2610,43 @@
       "datos_descripcion": "Tipo de datos: Dataset de aceptación de la vacunación farmacéutica. Datos asociados a pacientes que reciben vacunación en farmacias (no datos sensibles). Datos sintéticos generados para enriquecer el dataset. Fuente de los datos: Dataset público: https://datadryad.org/dataset/doi:10.5061/dryad.tb084 (72,84 KB, fichero xlsx con múltiples hojas). Datos sintéticos generados a partir del dataset original. Uso previsto de los datos: Demostración del intercambio de datos entre múltiples participantes. Entrenamiento de modelos para generación de datos sintéticos. Análisis de tendencias de vacunación. Referencia de implementación para otros casos de uso. Volumen aproximado: 72,84 KB (dataset original). Con datos sintéticos: hasta varios GB según necesidades. Formato: XLSX (semiestructurado, múltiples hojas). Formato definitivo pendiente de definir.\n\nCorrecto uso de conectores entre los tres participantes simulados. Demostración del funcionamiento del demostrador. Referencia para los demás casos de uso. El deliverable 4.2 documentará el éxito de este caso de uso.",
       "entidad_promotora": "CESGA"
     },
-    "grheco_xen_iahpc_biomedica": {
-      "name": "IA/HPC Biomédica — Evaluación comparativa de modelos fundacionales open source en medicina; cribado virtual sobre EGFR; y benchmark de aceleración GPU para detección de núcleos con StarDist.",
+    "grheco_medical_foundation_models": {
+      "name": "Evaluación de modelos fundacionales open source en medicina",
       "dataset_name": "-",
       "use_case": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen), IDIS",
       "provider": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)",
-      "description": "Se integran tres líneas complementarias: (1) evaluación de modelos fundacionales open source para medicina mediante benchmarks de pregunta-respuesta biomédica; (2) cribado virtual a gran escala frente a EGFR combinando docking molecular y dinámica molecular acelerada por GPU; (3) aceleración GPU de StarDist 2D.",
-      "descripcion_ampliada": "Se integran tres líneas complementarias: (1) evaluación de modelos fundacionales open source para medicina mediante benchmarks de pregunta-respuesta biomédica; (2) cribado virtual a gran escala frente a EGFR combinando docking molecular y dinámica molecular acelerada por GPU; (3) aceleración GPU de StarDist 2D para detección de núcleos en imágenes WSI H&amp;E de patología digital, con comparación CPU vs. GPU.\n\nEl grupo necesita dimensionar infraestructura HPC/IA para cargas biomédicas reales, evitando exponer datos clínicos, modelos propietarios o know-how estratégico. Cuellos de botella: evaluación robusta de LLMs médicos on-premise; miles de cálculos de docking concurrentes; y detección de núcleos en WSI (hasta 51 horas por muestra en CPU).",
+      "description": "Evaluación comparativa de modelos fundacionales open source para medicina mediante benchmarks de pregunta-respuesta biomédica.",
+      "descripcion_ampliada": "El caso de uso evalúa de forma robusta modelos fundacionales médicos open source en un entorno seguro y gobernado. Compara configuraciones HPC/IA mediante métricas objetivas para dimensionar despliegues on-premise sin exponer datos clínicos, modelos propietarios ni conocimiento estratégico.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Tipo de datos: PubMedQA, MedRedQA; estructuras EGFR y ligandos públicos; MoNuSeg 2018, CoNIC 2022, PanNuke; imágenes sintéticas H&E. Resultados de simulación y benchmarking. Fuente de los datos: Benchmarks biomédicos públicos; repositorios públicos de estructuras moleculares (PDB); datasets de histopatología públicos; cómputo generado en la infraestructura del demostrador. Uso previsto de los datos: Validación de casos de uso biomédicos en entorno gobernado; comparar configuraciones HPC/IA con métricas objetivas; justificar necesidades estructurales de cómputo.\n\nMejora de la evaluación de IA médica, priorización de compuestos candidatos y reducción de tiempos de análisis en patología digital. Apoyo a decisiones técnicas para despliegues seguros on-premise.\n\nRecomendaciones técnicas para despliegues seguros on-premise. Listas de candidatos EGFR priorizados. Métricas de aceleración GPU para detección de núcleos. Resultados FAIR reproducibles.",
+      "datos_descripcion": "Tipo de datos: benchmarks públicos de pregunta-respuesta biomédica PubMedQA y MedRedQA, junto con resultados de evaluación y benchmarking generados en la infraestructura del demostrador. Fuente de los datos: benchmarks biomédicos públicos. Uso previsto: validar modelos médicos open source, comparar configuraciones HPC/IA y elaborar recomendaciones técnicas para despliegues seguros on-premise. Resultados FAIR reproducibles.",
+      "entidad_promotora": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)"
+    },
+    "grheco_egfr_virtual_screening": {
+      "name": "Cribado virtual a gran escala sobre EGFR",
+      "dataset_name": "-",
+      "use_case": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen), IDIS",
+      "provider": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)",
+      "description": "Cribado virtual a gran escala frente a EGFR mediante docking molecular y dinámica molecular acelerada por GPU.",
+      "descripcion_ampliada": "El caso de uso aplica computación de alto rendimiento al cribado de miles de ligandos frente a EGFR. Combina cálculos concurrentes de docking molecular con dinámica molecular acelerada por GPU para evaluar y priorizar compuestos candidatos.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Tipo de datos: estructuras públicas de EGFR, ligandos públicos y resultados de simulación molecular. Fuente de los datos: repositorios públicos de estructuras moleculares, incluido PDB, y cómputo generado en la infraestructura del demostrador. Uso previsto: validación de flujos de cribado virtual en un entorno gobernado y priorización de compuestos. Resultado: listas priorizadas de candidatos para EGFR y resultados FAIR reproducibles.",
+      "entidad_promotora": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)"
+    },
+    "grheco_stardist_gpu": {
+      "name": "Aceleración GPU de StarDist para detección de núcleos",
+      "dataset_name": "-",
+      "use_case": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen), IDIS",
+      "provider": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)",
+      "description": "Benchmark de aceleración GPU de StarDist 2D para detectar núcleos en imágenes WSI H&amp;E de patología digital.",
+      "descripcion_ampliada": "El caso de uso compara la ejecución de StarDist 2D en CPU y GPU para reducir los tiempos de detección de núcleos en imágenes WSI H&amp;E. Busca dimensionar la infraestructura necesaria para cargas reales de patología digital, que pueden alcanzar hasta 51 horas por muestra en CPU.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Tipo de datos: datasets públicos de histopatología MoNuSeg 2018, CoNIC 2022 y PanNuke, imágenes H&E sintéticas y resultados de benchmarking. Fuente de los datos: datasets públicos y cómputo generado en la infraestructura del demostrador. Uso previsto: comparar configuraciones CPU/GPU y reducir los tiempos de análisis en patología digital. Resultado: métricas de aceleración GPU para detección de núcleos y resultados FAIR reproducibles.",
       "entidad_promotora": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)"
     },
     "gene_regulatory_control_mpnst": {

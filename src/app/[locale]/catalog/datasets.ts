@@ -150,7 +150,19 @@ export const useCasesData = [
     categories: ['human'] as HealthCategory[],
   },
   {
-    id: 'grheco_xen_iahpc_biomedica',
+    id: 'grheco_medical_foundation_models',
+    imagen: LogoGrHeCo,
+    link: 'https://www.idisantiago.es/',
+    categories: ['human'] as HealthCategory[],
+  },
+  {
+    id: 'grheco_egfr_virtual_screening',
+    imagen: LogoGrHeCo,
+    link: 'https://www.idisantiago.es/',
+    categories: ['human'] as HealthCategory[],
+  },
+  {
+    id: 'grheco_stardist_gpu',
     imagen: LogoGrHeCo,
     link: 'https://www.idisantiago.es/',
     categories: ['human'] as HealthCategory[],
