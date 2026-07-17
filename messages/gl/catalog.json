@@ -292,9 +292,9 @@
           "description": "Datos sintéticos de resonancia magnética lumbar (rexións L3-L4 e L3) con datos demográficos artificiais asociados.",
           "metadata": {
             "data_type": "Sintético",
-            "data_standard": "DICOM / Non aplica / Propietario",
+            "data_standard": "",
             "date_added": "",
-            "file_format": "Zip M / CSV",
+            "file_format": "DICOM / CSV",
             "license": "CC BY 4.0 (DICOM) / Propietaria, restrinxida baixo contrato (CSV)",
             "temporal_resolution": "-",
             "temporal_coverage": "-"
@@ -1277,7 +1277,7 @@
       "subsets": {
         "meteogalicia_cies": {
           "name": "Temperatura superficial de la 'Boia de Cíes'",
-          "description": "Suministrado por MeteoGalicia, comprende datos de temperatura superficial proporcionados por la estación 'Boia de Cíes'. Estos datos representan medidas de temperatura superficial en esta ubicación específica.",
+          "description": "Subministrado por MeteoGalicia, este conxunto contén datos de temperatura superficial proporcionados pola estación 'Boia de Cíes'. Os datos representan medicións de temperatura superficial nesta localización concreta.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -1316,7 +1316,7 @@
         },
         "wrf_1km": {
           "name": "Modelo WRF 1Km de MeteoGalicia",
-          "description": "Proporcionado por MeteoGalicia, abarca datos del modelo WRF (Weather Research and Forecasting) con diferentes resoluciones espaciais (1km, 4km, 5km). Estes datos proporcionan unha representación modelada de diversas variables meteorolóxicas nunha rexión específica.",
+          "description": "Proporcionado por MeteoGalicia, este conxunto abrangue datos do modelo WRF (Weather Research and Forecasting) con diferentes resolucións espaciais (1 km, 4 km e 5 km). Os datos ofrecen unha representación modelada de diversas variables meteorolóxicas nunha rexión específica.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -1655,7 +1655,7 @@
         },
         "meteogalicia_roms": {
           "name": "Modelo ROMS de MeteoGalicia",
-          "description": "Proporciona datos del modelo ROMS con una resolución espacial de 2 km, desarrollado y mantenido por MeteoGalicia. Estos datos ofrecen una representación modelada de diversas variables oceanográficas en una región específica. Estos datos ofrecen información detallada sobre diversas variables oceanográficas modeladas por el sistema ROMS.",
+          "description": "Este conxunto proporciona datos do modelo ROMS, desenvolvido e mantido por MeteoGalicia, cunha resolución espacial de 2 km. Contén información modelada detallada sobre variables oceanográficas nunha rexión específica.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -1669,86 +1669,86 @@
             {
               "name": "lon_rho",
               "units": "-",
-              "data_description": "Longitud geográfica en una malla (rho-point).",
+              "data_description": "Lonxitude xeográfica na malla (punto rho).",
               "data_type": "double"
             },
             {
               "name": "lat_rho",
               "units": "-",
-              "data_description": "Latitud geográfica en una malla (rho-point).",
+              "data_description": "Latitude xeográfica na malla (punto rho).",
               "data_type": "double"
             },
             {
               "name": "mask_rho",
               "units": "-",
-              "data_description": "Máscara que indica si un punto de la malla está en el agua (1) o en tierra (0).",
+              "data_description": "Máscara que indica se un punto da malla está na auga (1) ou en terra (0).",
               "data_type": "double"
             },
             {
               "name": "angle",
               "units": "-",
-              "data_description": "Ángulo de la malla respecto a una referencia.",
+              "data_description": "Ángulo da malla respecto dunha referencia.",
               "data_type": "double"
             },
             {
               "name": "ocean_time",
               "units": "-",
-              "data_description": "Marca de tiempo para las observaciones.",
+              "data_description": "Marca temporal das observacións.",
               "data_type": "date"
             },
             {
               "name": "zeta",
               "units": "-",
-              "data_description": "Elevación de la superficie del mar.",
+              "data_description": "Elevación da superficie do mar.",
               "data_type": "date"
             },
             {
               "name": "u",
               "units": "-",
-              "data_description": "Componentes de velocidad del flujo en la dirección x (u).",
+              "data_description": "Compoñente da velocidade do fluxo na dirección x (u).",
               "data_type": "double"
             },
             {
               "name": "v",
               "units": "-",
-              "data_description": "Componentes de velocidad del flujo en la dirección y (v).",
+              "data_description": "Compoñente da velocidade do fluxo na dirección y (v).",
               "data_type": "double"
             },
             {
               "name": "temp",
               "units": "-",
-              "data_description": "Temperatura del agua en el punto de medición.",
+              "data_description": "Temperatura da auga no punto de medición.",
               "data_type": "double"
             },
             {
               "name": "salt",
               "units": "-",
-              "data_description": "Salinidad del agua en el punto de medición.",
+              "data_description": "Salinidade da auga no punto de medición.",
               "data_type": "double"
             },
             {
               "name": "depth",
               "units": "-",
-              "data_description": "Profundidad del agua en el punto de medición.",
+              "data_description": "Profundidade da auga no punto de medición.",
               "data_type": "double"
             },
             {
               "name": "eta_rho",
               "units": "-",
-              "data_description": "Coordenada de la malla en la dirección vertical (eta).",
+              "data_description": "Coordenada da malla na dirección vertical (eta).",
               "data_type": "int"
             },
             {
               "name": "xi_rho",
               "units": "-",
-              "data_description": "Coordenada de la malla en la dirección horizontal (xi).",
+              "data_description": "Coordenada da malla na dirección horizontal (xi).",
               "data_type": "int"
             }
           ]
         },
         "wrf_4km": {
           "name": "Modelo WRF 4Km de MeteoGalicia",
-          "description": "Proporcionado por MeteoGalicia, abarca datos do modelo WRF (Weather Research and Forecasting) con diferentes resolucións espaciais (1km, 4km, 5km). Estes datos proporcionan unha representación modelada de diversas variables meteorolóxicas nunha rexión específica.",
+          "description": "Proporcionado por MeteoGalicia, este conxunto abrangue datos do modelo WRF (Weather Research and Forecasting) con diferentes resolucións espaciais (1 km, 4 km e 5 km). Os datos ofrecen unha representación modelada de diversas variables meteorolóxicas nunha rexión específica.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2087,7 +2087,7 @@
         },
         "wrf_5km": {
           "name": "Modelo WRF 5Km de MeteoGalicia",
-          "description": "Proporcionado por MeteoGalicia, abarca datos do modelo WRF (Weather Research and Forecasting) con diferentes resolucións espaciais (1km, 4km, 5km). Estes datos proporcionan unha representación modelada de diversas variables meteorolóxicas nunha rexión específica.",
+          "description": "Proporcionado por MeteoGalicia, este conxunto abrangue datos do modelo WRF (Weather Research and Forecasting) con diferentes resolucións espaciais (1 km, 4 km e 5 km). Os datos ofrecen unha representación modelada de diversas variables meteorolóxicas nunha rexión específica.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2700,7 +2700,7 @@
       "subsets": {
         "ieo_roms": {
           "name": "Datos del modelo ROMS de IEO",
-          "description": "Proporcionado por el Instituto Español de Oceanografía (IEO), consiste en datos del modelo ROMS con una resolución espacial de 4 km. Este conxunto de datos ofrece información detallada sobre diversas variables oceanográficas modeladas a través do modelo ROMS. Estes datos proporcionan información modelada sobre parámetros oceanográficos nunha rexión específica.",
+          "description": "Proporcionado polo Instituto Español de Oceanografía (IEO), este conxunto contén datos do modelo ROMS cunha resolución espacial de 4 km. Ofrece información modelada detallada sobre parámetros oceanográficos nunha rexión específica.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2714,68 +2714,68 @@
             {
               "name": "h",
               "units": "-",
-              "data_description": "bathymetry at RHO-points",
+              "data_description": "batimetría nos puntos RHO",
               "data_type": "double"
             },
             {
               "name": "zeta",
               "units": "-",
-              "data_description": "free-surface elevation.",
+              "data_description": "elevación da superficie libre.",
               "data_type": "double"
             },
             {
               "name": "u",
               "units": "-",
-              "data_description": "u-momentum component.",
+              "data_description": "compoñente u do momento.",
               "data_type": "double"
             },
             {
               "name": "v",
               "units": "-",
-              "data_description": "v-momentum component.",
+              "data_description": "compoñente v do momento.",
               "data_type": "double"
             },
             {
               "name": "temp",
               "units": "-",
-              "data_description": "potential temperature.",
+              "data_description": "temperatura potencial.",
               "data_type": "double"
             },
             {
               "name": "salt",
               "units": "-",
-              "data_description": "sea water salinity.",
+              "data_description": "salinidade da auga do mar.",
               "data_type": "double"
             },
             {
               "name": "latitude",
               "units": "-",
-              "data_description": "latitude of RHO-points.",
+              "data_description": "latitude dos puntos RHO.",
               "data_type": "long"
             },
             {
               "name": "longitude",
               "units": "-",
-              "data_description": "longitude of RHO-points.",
+              "data_description": "lonxitude dos puntos RHO.",
               "data_type": "long"
             },
             {
               "name": "depth",
               "units": "-",
-              "data_description": "Vertical distance below the surface.",
+              "data_description": "Distancia vertical baixo a superficie.",
               "data_type": "double"
             },
             {
               "name": "time",
               "units": "-",
-              "data_description": "time since initialization.",
+              "data_description": "tempo transcorrido desde a inicialización.",
               "data_type": "long"
             }
           ]
         },
         "ieo_lura": {
           "name": "Datos de la plataforma móvil Lura",
-          "description": "Proporcionado por el Instituto Español de Oceanografía (IEO), contiene datos de la plataforma móvil Lura. Estos datos ofrecen información detallada sobre diversas variables oceanográficas recopiladas durante las operaciones de la plataforma. Estos datos son cruciales para comprender la dinámica del océano en diferentes ubicaciones y momentos.",
+          "description": "Proporcionado polo Instituto Español de Oceanografía (IEO), este conxunto contén datos recollidos pola plataforma móbil Lura. Ofrece medicións oceanográficas detalladas obtidas durante as operacións da plataforma para analizar a dinámica do océano en diferentes localizacións e momentos.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2825,7 +2825,7 @@
             {
               "name": "turbfltc0",
               "units": "unknown",
-              "data_description": "Medida da turbidez ou nebulosidad da auga causada por un gran número de partículas individuais.",
+              "data_description": "Medida da turbidez da auga causada por un gran número de partículas individuais.",
               "data_type": "string"
             },
             {
@@ -2874,7 +2874,7 @@
         },
         "ieo_navaz": {
           "name": "Datos de la plataforma móvil Navaz",
-          "description": "Proporcionado por el Instituto Español de Oceanografía (IEO), contiene datos de la plataforma móvil Navaz. Estos datos ofrecen información detallada sobre diversas variables oceanográficas recopiladas durante las operaciones de la plataforma. Estos datos son cruciales para comprender la dinámica del océano en diferentes ubicaciones y momentos.",
+          "description": "Proporcionado polo Instituto Español de Oceanografía (IEO), este conxunto contén datos recollidos pola plataforma móbil Navaz. Ofrece medicións oceanográficas detalladas obtidas durante as operacións da plataforma para analizar a dinámica do océano en diferentes localizacións e momentos.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2954,8 +2954,8 @@
           ]
         },
         "ieo_ui": {
-          "name": "Índice de afloramiento costero del IEO.",
-          "description": "Proporcionado por el Instituto Español de Oceanografía (IEO) se centra en el Índice de Afloramiento Costero. Este índice es crucial para comprender y monitorear los fenómenos de afloramiento, que tienen un impacto significativo en la productividad biológica y la biodiversidad marina en las áreas costeras.",
+          "name": "Índice de afloramento costero del IEO.",
+          "description": "Proporcionado polo Instituto Español de Oceanografía (IEO), este conxunto céntrase no Índice de Afloramento Costeiro. O índice permite estudar e monitorizar os fenómenos de afloramento, que teñen un impacto significativo na produtividade biolóxica e na biodiversidade mariña das áreas costeiras.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2969,37 +2969,37 @@
             {
               "name": "fecha",
               "units": "-",
-              "data_description": "Fecha y hora de la observación",
+              "data_description": "Data e hora da observación",
               "data_type": "date"
             },
             {
               "name": "s_ano",
               "units": "-",
-              "data_description": "Año de la observación",
+              "data_description": "Ano da observación",
               "data_type": "int"
             },
             {
               "name": "s_mes",
               "units": "-",
-              "data_description": "Mes de la observación",
+              "data_description": "Mes da observación",
               "data_type": "int"
             },
             {
               "name": "s_dia",
               "units": "-",
-              "data_description": "Día de la observación",
+              "data_description": "Día da observación",
               "data_type": "int"
             },
             {
               "name": "s_hora",
               "units": "-",
-              "data_description": "Hora de la observación",
+              "data_description": "Hora da observación",
               "data_type": "int"
             },
             {
               "name": "s_ne",
               "units": "-",
-              "data_description": "Medición en dirección noreste",
+              "data_description": "Medición en dirección nordés",
               "data_type": "double"
             },
             {
@@ -3011,7 +3011,7 @@
             {
               "name": "s_se",
               "units": "-",
-              "data_description": "Medición en dirección sureste",
+              "data_description": "Medición en dirección sueste",
               "data_type": "double"
             },
             {
@@ -3023,38 +3023,38 @@
             {
               "name": "s_cu",
               "units": "-",
-              "data_description": "Componente u del vector (eje X)",
+              "data_description": "Compoñente u do vector (eixe X)",
               "data_type": "double"
             },
             {
               "name": "s_cv",
               "units": "-",
-              "data_description": "Componente v del vector (eje Y)",
+              "data_description": "Compoñente v do vector (eixe Y)",
               "data_type": "double"
             },
             {
               "name": "s_qy",
               "units": "-",
-              "data_description": "Medición en eje Y",
+              "data_description": "Medición no eixe Y",
               "data_type": "double"
             },
             {
               "name": "s_qx",
               "units": "-",
-              "data_description": "Medición en eje X",
+              "data_description": "Medición no eixe X",
               "data_type": "double"
             },
             {
               "name": "ui",
               "units": "-",
-              "data_description": "Índice de afloramiento",
+              "data_description": "Índice de afloramento",
               "data_type": "double"
             }
           ]
         },
         "ieo_capturas": {
           "name": "Datos de abundancias y distribución de especies.",
-          "description": "Proporcionado por el Instituto Español de Oceanografía (IEO) en colaboración con PESCASOST, comprende datos de abundancias y distribución de especies de las campañas DEMERSALES del IEO. Estos datos proporcionan información sobre la presencia y cantidad de especies en las áreas investigadas durante las campañas.",
+          "description": "Proporcionado polo Instituto Español de Oceanografía (IEO) en colaboración con PESCASOST, este conxunto inclúe datos de abundancia e distribución de especies das campañas DEMERSALES do IEO. Informa sobre a presenza e cantidade de especies nas áreas estudadas durante as campañas.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -3068,7 +3068,7 @@
             {
               "name": "id_observation",
               "units": "-",
-              "data_description": "Identificación de la observación.",
+              "data_description": "Identificación da observación.",
               "data_type": "string"
             },
             {
@@ -3080,43 +3080,43 @@
             {
               "name": "cod_ieem",
               "units": "-",
-              "data_description": "Código IEEM de la observación.",
+              "data_description": "Código IEEM da observación.",
               "data_type": "string"
             },
             {
               "name": "id_spezie",
               "units": "-",
-              "data_description": "Identificación de la especie.",
+              "data_description": "Identificación da especie.",
               "data_type": "string"
             },
             {
               "name": "x3a_code",
               "units": "-",
-              "data_description": "Nombre científico de la especie.",
+              "data_description": "Nome científico da especie.",
               "data_type": "string"
             },
             {
               "name": "scientific_name",
               "units": "-",
-              "data_description": "Nombre FAO en español.",
+              "data_description": "Nome FAO en español.",
               "data_type": "string"
             },
             {
               "name": "spanish_fao_name",
               "units": "-",
-              "data_description": "Nombre FAO en inglés.",
+              "data_description": "Nome FAO en inglés.",
               "data_type": "string"
             },
             {
               "name": "english_fao_name",
               "units": "-",
-              "data_description": "Proyecto relacionado con la observación.",
+              "data_description": "Proxecto relacionado coa observación.",
               "data_type": "string"
             },
             {
               "name": "project",
               "units": "-",
-              "data_description": "Fecha de la observación.",
+              "data_description": "Data da observación.",
               "data_type": "string"
             },
             {
@@ -3140,13 +3140,13 @@
             {
               "name": "weight_kg",
               "units": "-",
-              "data_description": "Peso en kilogramos.",
+              "data_description": "Peso en quilogramos.",
               "data_type": "string"
             },
             {
               "name": "depth",
               "units": "-",
-              "data_description": "Profundidad de la observación.",
+              "data_description": "Profundidade da observación.",
               "data_type": "string"
             },
             {
@@ -3158,32 +3158,32 @@
             {
               "name": "camp",
               "units": "-",
-              "data_description": "Campo relacionado con la observación.",
+              "data_description": "Campo relacionado coa observación.",
               "data_type": "string"
             },
             {
               "name": "long_4326",
               "units": "-",
-              "data_description": "Longitud en sistema de coordenadas 4326.",
+              "data_description": "Lonxitude no sistema de coordenadas 4326.",
               "data_type": "string"
             },
             {
               "name": "lat_4326",
               "units": "-",
-              "data_description": "Latitud en sistema de coordenadas 4326.",
+              "data_description": "Latitude no sistema de coordenadas 4326.",
               "data_type": "string"
             },
             {
               "name": "geom",
               "units": "-",
-              "data_description": "Geometría de la observación en formato string.",
+              "data_description": "Xeometría da observación en formato string.",
               "data_type": "string"
             }
           ]
         },
         "ieo_fitoplancton_flowcam": {
           "name": "Imágenes de fitoplancton con Flowcam",
-          "description": "Este conjunto de datos contiene imágenes de fitoplancton capturadas mediante el sistema FlowCam y procesadas posteriormente utilizando la plataforma Ecotaxa. Las imágenes recopiladas fueron clasificadas, etiquetadas y organizadas a través de Ecotaxa. El objetivo de este dataset es facilitar el estudio de la diversidad y abundancia del fitoplancton, proporcionando una base de datos estandarizada de alta resolución para su análisis ecológico y oceanográfico.",
+          "description": "Este conxunto contén imaxes de fitoplancto capturadas mediante o sistema FlowCam e procesadas posteriormente coa plataforma EcoTaxa. As imaxes foron clasificadas, etiquetadas e organizadas en EcoTaxa para proporcionar un recurso estandarizado de alta resolución destinado á análise ecolóxica e oceanográfica da diversidade e abundancia do fitoplancto.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -3205,7 +3205,7 @@
       "use_case": "Deputación Provincial de Ourense",
       "provider": "Deputación Provincial de Ourense",
       "description": "A Deputación Provincial de Ourense publica en OneHealth DataSpace catro datasets procedentes do seu servizo de teleasistencia domiciliaria, con información anonimizada ou pseudoanonimizada sobre seguimentos, avarías de dispositivos, características de beneficiarios e eventos de emerxencia.",
-      "descripcion_ampliada": "La Diputación Provincial de Ourense gestiona un servicio de teleasistencia domiciliaria dirigido a personas mayores y dependientes. Con su incorporación a OneHealth DataSpace como proveedor de datos en nivel avanzado, pone a disposición del ecosistema cuatro datasets derivados del funcionamiento operativo del servicio, cubriendo los aspectos principales de la atención: contactos de seguimiento, incidencias técnicas en los dispositivos, perfil operativo de los beneficiarios y eventos de emergencia. Los datos se publican de forma seudoanonimizada, preservando la privacidad de las personas usuarias.\n\nLa disponibilidad de datos reales y estructurados del sector de la teleasistencia pública es escasa. La Diputación de Ourense identifica una oportunidad de contribuir al ecosistema de datos de salud y dependencia con información que puede ser útil para la mejora de servicios similares, la investigación en atención a la dependencia y el desarrollo de herramientas de análisis del bienestar de personas mayores.",
+      "descripcion_ampliada": "A Deputación Provincial de Ourense xestiona un servizo de teleasistencia domiciliaria dirixido a persoas maiores e dependentes. Coa súa incorporación a OneHealth DataSpace como provedora de datos de nivel avanzado, pon á disposición do ecosistema catro datasets derivados do funcionamento operativo do servizo. Estes cobren os principais aspectos da atención: contactos de seguimento, incidencias técnicas nos dispositivos, perfil operativo das persoas beneficiarias e eventos de emerxencia. Os datos publícanse de forma pseudoanonimizada para preservar a privacidade das persoas usuarias.\n\nA dispoñibilidade de datos reais e estruturados do sector da teleasistencia pública é escasa. A Deputación de Ourense identifica unha oportunidade para achegar ao ecosistema de datos de saúde e dependencia información útil para mellorar servizos similares, investigar a atención á dependencia e desenvolver ferramentas de análise do benestar das persoas maiores.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
@@ -3239,16 +3239,16 @@
       "entidad_promotora": "TRUEWORLD"
     },
     "evo2_viral_genomes": {
-      "name": "Evo 2 — Preadestramento continuo con xenomas virais",
+      "name": "Evo 2 — Fine-tuning con xenomas virais",
       "dataset_name": "Xenomas virais de hóspedes eucariotas e de hóspedes diversos",
       "use_case": "De la Fuente Lab",
       "provider": "De la Fuente Lab",
-      "description": "Preadestramento continuo de modelos Evo 2 LoRA de diferentes tamaños con xenomas virais de hóspedes eucariotas e de hóspedes diversos.",
-      "descripcion_ampliada": "Este caso de uso realizará o preadestramento continuo de modelos Evo 2 LoRA de diferentes tamaños con datos de xenomas virais de hóspedes eucariotas e de hóspedes diversos.",
+      "description": "Fine-tuning mediante LoRA de modelos Evo 2 de diferentes tamaños con xenomas virais de hóspedes eucariotas e de hóspedes diversos.",
+      "descripcion_ampliada": "Este caso de uso realizará o fine-tuning mediante LoRA de modelos Evo 2 de diferentes tamaños con datos de xenomas virais de hóspedes eucariotas e de hóspedes diversos.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Tipo de datos: Xenomas virais de hóspedes eucariotas e de virus cun rango de hóspedes diverso, preparados para o preadestramento continuo de Evo 2 mediante LoRA. Fonte dos datos: Ficheiros incluídos no repositorio de datos do caso de uso. Uso previsto dos datos: Primeira rolda de adestramento de modelos Evo 2 LoRA de distintos tamaños; avaliación do axuste do modelo a secuencias xenómicas virais.\n\nModelos Evo 2 LoRA de diferentes tamaños axustados co conxunto de xenomas virais seleccionado.",
+      "datos_descripcion": "Tipo de datos: Xenomas virais de hóspedes eucariotas e de virus cun rango de hóspedes diverso, preparados para o fine-tuning de Evo 2 mediante LoRA. Uso previsto dos datos: Fine-tuning de modelos Evo 2 de distintos tamaños e avaliación da súa adaptación a secuencias xenómicas virais.\n\nModelos Evo 2 de diferentes tamaños sometidos a fine-tuning mediante LoRA co conxunto de xenomas virais seleccionado.",
       "entidad_promotora": "De la Fuente Lab"
     },
     "intecmar_radar_hf": {

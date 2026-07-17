@@ -33,7 +33,7 @@
   "datasets": {
     "aidatamed_synthetic_patients": {
       "name": "AIDataMed — AI-powered Synthetic Medical Data for Research and Innovation",
-      "dataset_name": "-",
+      "dataset_name": "data_synthetic_patients_[specialty]_[size]_v[MAJOR].[MINOR]",
       "use_case": "Grupo IDARA, IIS Galicia Sur",
       "provider": "Grupo IDARA, IIS Galicia Sur",
       "description": "AIDataMed diseña, desarrolla y valida una plataforma para la generación de datos clínicos sintéticos de alta calidad mediante modelos de inteligencia artificial. El objetivo es ofrecer datos realistas y estadísticamente equivalentes a los reales que puedan usarse libremente en investigación.",
@@ -292,9 +292,9 @@
           "description": "Datos sintéticos de resonancia magnética lumbar (regiones L3-L4 y L3) con datos demográficos artificiales asociados.",
           "metadata": {
             "data_type": "Sintético",
-            "data_standard": "DICOM / No aplica / Propietario",
+            "data_standard": "",
             "date_added": "",
-            "file_format": "Zip M / CSV",
+            "file_format": "DICOM / CSV",
             "license": "CC BY 4.0 (DICOM) / Propietaria, restringida bajo contrato (CSV)",
             "temporal_resolution": "-",
             "temporal_coverage": "-"
@@ -347,7 +347,7 @@
     },
     "gift_conversations": {
       "name": "GIFT — Gastroenterology Interface with Fair Treatment",
-      "dataset_name": "-",
+      "dataset_name": "data_gift_conversations_[start_date]_[end_date]",
       "use_case": "Grupo IDARA, IIS Galicia Sur",
       "provider": "Grupo IDARA, IIS Galicia Sur (IISGS)",
       "description": "El proyecto GIFT (Gastroenterology Interface with FAIR treatment) busca dar respuesta a los desafíos actuales de gestión de la información en la atención sanitaria, pretendiendo crear alianzas entre profesionales y mejorar la seguridad de los pacientes.",
@@ -604,7 +604,7 @@
     },
     "celiaspace": {
       "name": "CeliaSpace — Datos de asistentes conversacionales para la evaluación de la salud",
-      "dataset_name": "celiaspace_senior_conversations",
+      "dataset_name": "serenia_senior_conversations",
       "use_case": "Grupo de Tecnoloxías da Información, atlanTTic Research Center, UVigo",
       "entidad_promotora": "Grupo de Tecnoloxías da Información, atlanTTic Research Center, UVigo",
       "provider": "Grupo de Tecnoloxías da Información, atlanTTic Research Center, UVigo",
@@ -1309,14 +1309,14 @@
             {
               "name": "DATA",
               "units": "-",
-              "data_description": "tempo (segundos dende a época especificada)",
+              "data_description": "tiempo (segundos desde la época especificada)",
               "data_type": "string"
             }
           ]
         },
         "wrf_1km": {
           "name": "Modelo WRF 1Km de MeteoGalicia",
-          "description": "Proporcionado por MeteoGalicia, abarca datos del modelo WRF (Weather Research and Forecasting) con diferentes resoluciones espaciais (1km, 4km, 5km). Estes datos proporcionan unha representación modelada de diversas variables meteorolóxicas nunha rexión específica.",
+          "description": "Proporcionado por MeteoGalicia, este conjunto abarca datos del modelo WRF (Weather Research and Forecasting) con diferentes resoluciones espaciales (1 km, 4 km y 5 km). Los datos ofrecen una representación modelada de diversas variables meteorológicas en una región específica.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -1336,37 +1336,37 @@
             {
               "name": "lon",
               "units": "-",
-              "data_description": "lonxitude xeográfica (graos leste de Greenwich)",
+              "data_description": "longitud geográfica (grados al este de Greenwich)",
               "data_type": "float"
             },
             {
               "name": "lat",
               "units": "-",
-              "data_description": "latitud xeográfica (graos norte do ecuador)",
+              "data_description": "latitud geográfica (grados al norte del ecuador)",
               "data_type": "float"
             },
             {
               "name": "prec",
               "units": "-",
-              "data_description": "fluxo de precipitación",
+              "data_description": "flujo de precipitación",
               "data_type": "float"
             },
             {
               "name": "conv_prec",
               "units": "-",
-              "data_description": "fluxo de precipitación convectiva",
+              "data_description": "flujo de precipitación convectiva",
               "data_type": "float"
             },
             {
               "name": "snow_prec",
               "units": "-",
-              "data_description": "fluxo de neve",
+              "data_description": "flujo de nieve",
               "data_type": "float"
             },
             {
               "name": "topo",
               "units": "-",
-              "data_description": "altitude da superficie",
+              "data_description": "altitud de la superficie",
               "data_type": "float"
             },
             {
@@ -1378,13 +1378,13 @@
             {
               "name": "wind_gust",
               "units": "-",
-              "data_description": "velocidade do vento de refacho",
+              "data_description": "velocidad de la ráfaga de viento",
               "data_type": "float"
             },
             {
               "name": "pbl_height",
               "units": "-",
-              "data_description": "altura da capa límite",
+              "data_description": "altura de la capa límite",
               "data_type": "float"
             },
             {
@@ -1396,19 +1396,19 @@
             {
               "name": "lwflx",
               "units": "-",
-              "data_description": "fluxo descendente de radianza de onda longa na superficie",
+              "data_description": "flujo descendente de radiación de onda larga en la superficie",
               "data_type": "float"
             },
             {
               "name": "swflx",
               "units": "-",
-              "data_description": "fluxo descendente de radianza de onda curta na superficie",
+              "data_description": "flujo descendente de radiación de onda corta en la superficie",
               "data_type": "float"
             },
             {
               "name": "mslp",
               "units": "-",
-              "data_description": "presión do aire ao nivel medio do mar",
+              "data_description": "presión del aire al nivel medio del mar",
               "data_type": "float"
             },
             {
@@ -1420,19 +1420,19 @@
             {
               "name": "dir",
               "units": "-",
-              "data_description": "dirección do vento",
+              "data_description": "dirección del viento",
               "data_type": "float"
             },
             {
               "name": "u",
               "units": "-",
-              "data_description": "componente leste do vento",
+              "data_description": "componente este del viento",
               "data_type": "float"
             },
             {
               "name": "v",
               "units": "-",
-              "data_description": "componente norte do vento",
+              "data_description": "componente norte del viento",
               "data_type": "float"
             },
             {
@@ -1522,19 +1522,19 @@
             {
               "name": "temp",
               "units": "-",
-              "data_description": "temperatura do aire",
+              "data_description": "temperatura del aire",
               "data_type": "float"
             },
             {
               "name": "sst",
               "units": "-",
-              "data_description": "temperatura da superficie mariña",
+              "data_description": "temperatura de la superficie marina",
               "data_type": "float"
             },
             {
               "name": "rh",
               "units": "-",
-              "data_description": "humidade relativa do aire",
+              "data_description": "humedad relativa del aire",
               "data_type": "float"
             },
             {
@@ -1564,7 +1564,7 @@
             {
               "name": "cape",
               "units": "-",
-              "data_description": "enerxía potencial dispoñible convectiva",
+              "data_description": "energía potencial convectiva disponible",
               "data_type": "float"
             },
             {
@@ -1576,19 +1576,19 @@
             {
               "name": "visibility",
               "units": "-",
-              "data_description": "visibilidade no aire",
+              "data_description": "visibilidad en el aire",
               "data_type": "float"
             },
             {
               "name": "shflx",
               "units": "-",
-              "data_description": "fluxo sensible de calor cara arriba na superficie",
+              "data_description": "flujo ascendente de calor sensible en la superficie",
               "data_type": "float"
             },
             {
               "name": "lhflx",
               "units": "-",
-              "data_description": "fluxo latente de calor cara arriba na superficie",
+              "data_description": "flujo ascendente de calor latente en la superficie",
               "data_type": "float"
             },
             {
@@ -1606,19 +1606,19 @@
             {
               "name": "x",
               "units": "-",
-              "data_description": "coordenada x no espazo de proxección",
+              "data_description": "coordenada x en el espacio de proyección",
               "data_type": "double"
             },
             {
               "name": "y",
               "units": "-",
-              "data_description": "coordenada y no espazo de proxección",
+              "data_description": "coordenada y en el espacio de proyección",
               "data_type": "double"
             },
             {
               "name": "time",
               "units": "-",
-              "data_description": "tempo (segundos dende a época especificada)",
+              "data_description": "tiempo (segundos desde la época especificada)",
               "data_type": "bigint"
             },
             {
@@ -1748,7 +1748,7 @@
         },
         "wrf_4km": {
           "name": "Modelo WRF 4Km de MeteoGalicia",
-          "description": "Proporcionado por MeteoGalicia, abarca datos do modelo WRF (Weather Research and Forecasting) con diferentes resolucións espaciais (1km, 4km, 5km). Estes datos proporcionan unha representación modelada de diversas variables meteorolóxicas nunha rexión específica.",
+          "description": "Proporcionado por MeteoGalicia, este conjunto abarca datos del modelo WRF (Weather Research and Forecasting) con diferentes resoluciones espaciales (1 km, 4 km y 5 km). Los datos ofrecen una representación modelada de diversas variables meteorológicas en una región específica.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -1768,37 +1768,37 @@
             {
               "name": "lon",
               "units": "-",
-              "data_description": "lonxitude xeográfica (graos leste de Greenwich)",
+              "data_description": "longitud geográfica (grados al este de Greenwich)",
               "data_type": "float"
             },
             {
               "name": "lat",
               "units": "-",
-              "data_description": "latitud xeográfica (graos norte do ecuador)",
+              "data_description": "latitud geográfica (grados al norte del ecuador)",
               "data_type": "float"
             },
             {
               "name": "prec",
               "units": "-",
-              "data_description": "fluxo de precipitación",
+              "data_description": "flujo de precipitación",
               "data_type": "float"
             },
             {
               "name": "conv_prec",
               "units": "-",
-              "data_description": "fluxo de precipitación convectiva",
+              "data_description": "flujo de precipitación convectiva",
               "data_type": "float"
             },
             {
               "name": "snow_prec",
               "units": "-",
-              "data_description": "fluxo de neve",
+              "data_description": "flujo de nieve",
               "data_type": "float"
             },
             {
               "name": "topo",
               "units": "-",
-              "data_description": "altitude da superficie",
+              "data_description": "altitud de la superficie",
               "data_type": "float"
             },
             {
@@ -1810,13 +1810,13 @@
             {
               "name": "wind_gust",
               "units": "-",
-              "data_description": "velocidade do vento de refacho",
+              "data_description": "velocidad de la ráfaga de viento",
               "data_type": "float"
             },
             {
               "name": "pbl_height",
               "units": "-",
-              "data_description": "altura da capa límite",
+              "data_description": "altura de la capa límite",
               "data_type": "float"
             },
             {
@@ -1828,19 +1828,19 @@
             {
               "name": "lwflx",
               "units": "-",
-              "data_description": "fluxo descendente de radiación de onda longa na superficie",
+              "data_description": "flujo descendente de radiación de onda larga en la superficie",
               "data_type": "float"
             },
             {
               "name": "swflx",
               "units": "-",
-              "data_description": "fluxo descendente de radiación de onda curta na superficie",
+              "data_description": "flujo descendente de radiación de onda corta en la superficie",
               "data_type": "float"
             },
             {
               "name": "mslp",
               "units": "-",
-              "data_description": "presión atmosférica ao nivel medio do mar",
+              "data_description": "presión atmosférica al nivel medio del mar",
               "data_type": "float"
             },
             {
@@ -1852,19 +1852,19 @@
             {
               "name": "dir",
               "units": "-",
-              "data_description": "dirección desde a que sopra o vento",
+              "data_description": "dirección desde la que sopla el viento",
               "data_type": "float"
             },
             {
               "name": "u",
               "units": "-",
-              "data_description": "compoñente leste do vento",
+              "data_description": "componente este del viento",
               "data_type": "float"
             },
             {
               "name": "v",
               "units": "-",
-              "data_description": "compoñente norte do vento",
+              "data_description": "componente norte del viento",
               "data_type": "float"
             },
             {
@@ -1954,19 +1954,19 @@
             {
               "name": "temp",
               "units": "-",
-              "data_description": "temperatura do aire",
+              "data_description": "temperatura del aire",
               "data_type": "float"
             },
             {
               "name": "sst",
               "units": "-",
-              "data_description": "temperatura da superficie do mar",
+              "data_description": "temperatura de la superficie del mar",
               "data_type": "float"
             },
             {
               "name": "rh",
               "units": "-",
-              "data_description": "humidade relativa",
+              "data_description": "humedad relativa",
               "data_type": "float"
             },
             {
@@ -1996,7 +1996,7 @@
             {
               "name": "cape",
               "units": "-",
-              "data_description": "enerxía potencial dispoñible convectiva",
+              "data_description": "energía potencial convectiva disponible",
               "data_type": "float"
             },
             {
@@ -2008,19 +2008,19 @@
             {
               "name": "visibility",
               "units": "-",
-              "data_description": "visibilidade no aire",
+              "data_description": "visibilidad en el aire",
               "data_type": "float"
             },
             {
               "name": "shflx",
               "units": "-",
-              "data_description": "fluxo de calor sensible cara arriba na superficie",
+              "data_description": "flujo ascendente de calor sensible en la superficie",
               "data_type": "float"
             },
             {
               "name": "lhflx",
               "units": "-",
-              "data_description": "fluxo de calor latente cara arriba na superficie",
+              "data_description": "flujo ascendente de calor latente en la superficie",
               "data_type": "float"
             },
             {
@@ -2038,19 +2038,19 @@
             {
               "name": "x",
               "units": "-",
-              "data_description": "coordenada x no espazo de proxección",
+              "data_description": "coordenada x en el espacio de proyección",
               "data_type": "double"
             },
             {
               "name": "y",
               "units": "-",
-              "data_description": "coordenada y no espazo de proxección",
+              "data_description": "coordenada y en el espacio de proyección",
               "data_type": "double"
             },
             {
               "name": "time",
               "units": "-",
-              "data_description": "tempo (segundos dende a época especificada)",
+              "data_description": "tiempo (segundos desde la época especificada)",
               "data_type": "bigint"
             },
             {
@@ -2087,7 +2087,7 @@
         },
         "wrf_5km": {
           "name": "Modelo WRF 5Km de MeteoGalicia",
-          "description": "Proporcionado por MeteoGalicia, abarca datos do modelo WRF (Weather Research and Forecasting) con diferentes resolucións espaciais (1km, 4km, 5km). Estes datos proporcionan unha representación modelada de diversas variables meteorolóxicas nunha rexión específica.",
+          "description": "Proporcionado por MeteoGalicia, este conjunto abarca datos del modelo WRF (Weather Research and Forecasting) con diferentes resoluciones espaciales (1 km, 4 km y 5 km). Los datos ofrecen una representación modelada de diversas variables meteorológicas en una región específica.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2107,37 +2107,37 @@
             {
               "name": "lon",
               "units": "-",
-              "data_description": "lonxitude xeográfica (graos leste de Greenwich)",
+              "data_description": "longitud geográfica (grados al este de Greenwich)",
               "data_type": "float"
             },
             {
               "name": "lat",
               "units": "-",
-              "data_description": "latitud xeográfica (graos norte do ecuador)",
+              "data_description": "latitud geográfica (grados al norte del ecuador)",
               "data_type": "float"
             },
             {
               "name": "prec",
               "units": "-",
-              "data_description": "fluxo de precipitación",
+              "data_description": "flujo de precipitación",
               "data_type": "float"
             },
             {
               "name": "conv_prec",
               "units": "-",
-              "data_description": "fluxo de precipitación convectiva",
+              "data_description": "flujo de precipitación convectiva",
               "data_type": "float"
             },
             {
               "name": "snow_prec",
               "units": "-",
-              "data_description": "fluxo de neve",
+              "data_description": "flujo de nieve",
               "data_type": "float"
             },
             {
               "name": "topo",
               "units": "-",
-              "data_description": "altitude da superficie",
+              "data_description": "altitud de la superficie",
               "data_type": "float"
             },
             {
@@ -2149,13 +2149,13 @@
             {
               "name": "wind_gust",
               "units": "-",
-              "data_description": "velocidade do vento de refacho",
+              "data_description": "velocidad de la ráfaga de viento",
               "data_type": "float"
             },
             {
               "name": "pbl_height",
               "units": "-",
-              "data_description": "altura da capa límite",
+              "data_description": "altura de la capa límite",
               "data_type": "float"
             },
             {
@@ -2167,19 +2167,19 @@
             {
               "name": "lwflx",
               "units": "-",
-              "data_description": "fluxo descendente de radiación de onda longa na superficie",
+              "data_description": "flujo descendente de radiación de onda larga en la superficie",
               "data_type": "float"
             },
             {
               "name": "swflx",
               "units": "-",
-              "data_description": "fluxo descendente de radiación de onda curta na superficie",
+              "data_description": "flujo descendente de radiación de onda corta en la superficie",
               "data_type": "float"
             },
             {
               "name": "mslp",
               "units": "-",
-              "data_description": "presión atmosférica ao nivel medio do mar",
+              "data_description": "presión atmosférica al nivel medio del mar",
               "data_type": "float"
             },
             {
@@ -2191,19 +2191,19 @@
             {
               "name": "dir",
               "units": "-",
-              "data_description": "dirección desde a que sopra o vento",
+              "data_description": "dirección desde la que sopla el viento",
               "data_type": "float"
             },
             {
               "name": "u",
               "units": "-",
-              "data_description": "compoñente leste do vento",
+              "data_description": "componente este del viento",
               "data_type": "float"
             },
             {
               "name": "v",
               "units": "-",
-              "data_description": "compoñente norte do vento",
+              "data_description": "componente norte del viento",
               "data_type": "float"
             },
             {
@@ -2293,19 +2293,19 @@
             {
               "name": "temp",
               "units": "-",
-              "data_description": "temperatura do aire",
+              "data_description": "temperatura del aire",
               "data_type": "float"
             },
             {
               "name": "sst",
               "units": "-",
-              "data_description": "temperatura da superficie do mar",
+              "data_description": "temperatura de la superficie del mar",
               "data_type": "float"
             },
             {
               "name": "rh",
               "units": "-",
-              "data_description": "humidade relativa",
+              "data_description": "humedad relativa",
               "data_type": "float"
             },
             {
@@ -2335,7 +2335,7 @@
             {
               "name": "cape",
               "units": "-",
-              "data_description": "enerxía potencial dispoñible convectiva",
+              "data_description": "energía potencial convectiva disponible",
               "data_type": "float"
             },
             {
@@ -2347,19 +2347,19 @@
             {
               "name": "visibility",
               "units": "-",
-              "data_description": "visibilidade no aire",
+              "data_description": "visibilidad en el aire",
               "data_type": "float"
             },
             {
               "name": "shflx",
               "units": "-",
-              "data_description": "fluxo de calor sensible cara arriba na superficie",
+              "data_description": "flujo ascendente de calor sensible en la superficie",
               "data_type": "float"
             },
             {
               "name": "lhflx",
               "units": "-",
-              "data_description": "fluxo de calor latente cara arriba na superficie",
+              "data_description": "flujo ascendente de calor latente en la superficie",
               "data_type": "float"
             },
             {
@@ -2377,19 +2377,19 @@
             {
               "name": "x",
               "units": "-",
-              "data_description": "coordenada x no espazo de proxección",
+              "data_description": "coordenada x en el espacio de proyección",
               "data_type": "double"
             },
             {
               "name": "y",
               "units": "-",
-              "data_description": "coordenada y no espazo de proxección",
+              "data_description": "coordenada y en el espacio de proyección",
               "data_type": "double"
             },
             {
               "name": "time",
               "units": "-",
-              "data_description": "tempo (segundos dende a época especificada)",
+              "data_description": "tiempo (segundos desde la época especificada)",
               "data_type": "bigint"
             },
             {
@@ -2700,7 +2700,7 @@
       "subsets": {
         "ieo_roms": {
           "name": "Datos del modelo ROMS de IEO",
-          "description": "Proporcionado por el Instituto Español de Oceanografía (IEO), consiste en datos del modelo ROMS con una resolución espacial de 4 km. Este conxunto de datos ofrece información detallada sobre diversas variables oceanográficas modeladas a través do modelo ROMS. Estes datos proporcionan información modelada sobre parámetros oceanográficos nunha rexión específica.",
+          "description": "Proporcionado por el Instituto Español de Oceanografía (IEO), este conjunto contiene datos del modelo ROMS con una resolución espacial de 4 km. Ofrece información modelada detallada sobre parámetros oceanográficos en una región específica.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2714,61 +2714,61 @@
             {
               "name": "h",
               "units": "-",
-              "data_description": "bathymetry at RHO-points",
+              "data_description": "batimetría en los puntos RHO",
               "data_type": "double"
             },
             {
               "name": "zeta",
               "units": "-",
-              "data_description": "free-surface elevation.",
+              "data_description": "elevación de la superficie libre.",
               "data_type": "double"
             },
             {
               "name": "u",
               "units": "-",
-              "data_description": "u-momentum component.",
+              "data_description": "componente u del momento.",
               "data_type": "double"
             },
             {
               "name": "v",
               "units": "-",
-              "data_description": "v-momentum component.",
+              "data_description": "componente v del momento.",
               "data_type": "double"
             },
             {
               "name": "temp",
               "units": "-",
-              "data_description": "potential temperature.",
+              "data_description": "temperatura potencial.",
               "data_type": "double"
             },
             {
               "name": "salt",
               "units": "-",
-              "data_description": "sea water salinity.",
+              "data_description": "salinidad del agua de mar.",
               "data_type": "double"
             },
             {
               "name": "latitude",
               "units": "-",
-              "data_description": "latitude of RHO-points.",
+              "data_description": "latitud de los puntos RHO.",
               "data_type": "long"
             },
             {
               "name": "longitude",
               "units": "-",
-              "data_description": "longitude of RHO-points.",
+              "data_description": "longitud de los puntos RHO.",
               "data_type": "long"
             },
             {
               "name": "depth",
               "units": "-",
-              "data_description": "Vertical distance below the surface.",
+              "data_description": "Distancia vertical bajo la superficie.",
               "data_type": "double"
             },
             {
               "name": "time",
               "units": "-",
-              "data_description": "time since initialization.",
+              "data_description": "tiempo transcurrido desde la inicialización.",
               "data_type": "long"
             }
           ]
@@ -2789,85 +2789,85 @@
             {
               "name": "longitude",
               "units": "degrees_east",
-              "data_description": "A coordenada lonxitudinal do punto de datos.",
+              "data_description": "La coordenada longitudinal del punto de datos.",
               "data_type": "double"
             },
             {
               "name": "latitude",
               "units": "degrees_north",
-              "data_description": "A coordenada latitudinal do punto de datos.",
+              "data_description": "La coordenada latitudinal del punto de datos.",
               "data_type": "double"
             },
             {
               "name": "t090c",
               "units": "degree_Celsius",
-              "data_description": "Temperatura en graos Celsius, medida polo sensor a 90 cm.",
+              "data_description": "Temperatura en grados Celsius, medida por el sensor a 90 cm.",
               "data_type": "double"
             },
             {
               "name": "sal00",
               "units": "1e-3",
-              "data_description": "Salinidade da auga.",
+              "data_description": "Salinidad del agua.",
               "data_type": "double"
             },
             {
               "name": "flscufa",
               "units": "unknown",
-              "data_description": "Fluorescencia, unha medida da concentración de clorofila ou fitoplancto na auga.",
+              "data_description": "Fluorescencia, una medida de la concentración de clorofila o fitoplancton en el agua.",
               "data_type": "string"
             },
             {
               "name": "cdomfltc0",
               "units": "unknown",
-              "data_description": "Colored Dissolved Organic Matter fluorescence. Indica a presenza de compostos orgánicos na auga.",
+              "data_description": "Fluorescencia de materia orgánica disuelta coloreada, que indica la presencia de compuestos orgánicos en el agua.",
               "data_type": "string"
             },
             {
               "name": "turbfltc0",
               "units": "unknown",
-              "data_description": "Medida da turbidez ou nebulosidad da auga causada por un gran número de partículas individuais.",
+              "data_description": "Medida de la turbidez del agua causada por un gran número de partículas individuales.",
               "data_type": "string"
             },
             {
               "name": "timem",
               "units": "seconds",
-              "data_description": "Tempo en segundos, presumiblemente desde unha época determinada.",
+              "data_description": "Tiempo en segundos, presumiblemente desde una época determinada.",
               "data_type": "double"
             },
             {
               "name": "flag",
               "units": "-",
-              "data_description": "Indicador ou bandeira para control de calidade ou erros.",
+              "data_description": "Indicador o bandera para el control de calidad o errores.",
               "data_type": "int"
             },
             {
               "name": "fecha",
               "units": "-",
-              "data_description": "Data e hora da observación.",
+              "data_description": "Fecha y hora de la observación.",
               "data_type": "timestamp"
             },
             {
               "name": "barco",
               "units": "-",
-              "data_description": "O nome do barco ou buque que recolleu os datos.",
+              "data_description": "Nombre del barco o buque que recogió los datos.",
               "data_type": "string"
             },
             {
               "name": "geom",
               "units": "-",
-              "data_description": "Representación xeométrica ou espacial do punto de datos en formato WKT (EPSG:4326).",
+              "data_description": "Representación geométrica o espacial del punto de datos en formato WKT (EPSG:4326).",
               "data_type": "string"
             },
             {
               "name": "speed",
               "units": "m s-1",
-              "data_description": "A velocidade do buque no momento da recollida de datos.",
+              "data_description": "Velocidad del buque en el momento de la recogida de datos.",
               "data_type": "double"
             },
             {
               "name": "acceleration",
               "units": "m s-2",
-              "data_description": "A aceleración do buque no momento da recollida de datos.",
+              "data_description": "Aceleración del buque en el momento de la recogida de datos.",
               "data_type": "double"
             }
           ]
@@ -2888,25 +2888,25 @@
             {
               "name": "longitude",
               "units": "degrees_east",
-              "data_description": "A coordenada lonxitudinal do punto de datos.",
+              "data_description": "La coordenada longitudinal del punto de datos.",
               "data_type": "double"
             },
             {
               "name": "latitude",
               "units": "degrees_north",
-              "data_description": "A coordenada latitudinal do punto de datos.",
+              "data_description": "La coordenada latitudinal del punto de datos.",
               "data_type": "double"
             },
             {
               "name": "t090c",
               "units": "degree_Celsius",
-              "data_description": "Temperatura en graos Celsius, medida polo sensor a 90 cm.",
+              "data_description": "Temperatura en grados Celsius, medida por el sensor a 90 cm.",
               "data_type": "double"
             },
             {
               "name": "sal00",
               "units": "1e-3",
-              "data_description": "Salinidade da auga.",
+              "data_description": "Salinidad del agua.",
               "data_type": "double"
             },
             {
@@ -2918,37 +2918,37 @@
             {
               "name": "timem",
               "units": "seconds",
-              "data_description": "Tempo en segundos, presumiblemente desde unha época determinada.",
+              "data_description": "Tiempo en segundos, presumiblemente desde una época determinada.",
               "data_type": "double"
             },
             {
               "name": "flag",
               "units": "-",
-              "data_description": "Indicador ou bandeira para control de calidade ou erros.",
+              "data_description": "Indicador o bandera para el control de calidad o errores.",
               "data_type": "int"
             },
             {
               "name": "fecha",
               "units": "-",
-              "data_description": "Data e hora da observación.",
+              "data_description": "Fecha y hora de la observación.",
               "data_type": "timestamp"
             },
             {
               "name": "barco",
               "units": "-",
-              "data_description": "O nome do barco ou buque que recolleu os datos.",
+              "data_description": "Nombre del barco o buque que recogió los datos.",
               "data_type": "string"
             },
             {
               "name": "id",
               "units": "-",
-              "data_description": "Un identificador único para cada punto de medición.",
+              "data_description": "Identificador único de cada punto de medición.",
               "data_type": "int"
             },
             {
               "name": "geom",
               "units": "-",
-              "data_description": "Representación xeométrica ou espacial do punto de datos en formato WKT (EPSG:4326).",
+              "data_description": "Representación geométrica o espacial del punto de datos en formato WKT (EPSG:4326).",
               "data_type": "string"
             }
           ]
@@ -3239,16 +3239,16 @@
       "entidad_promotora": "TRUEWORLD"
     },
     "evo2_viral_genomes": {
-      "name": "Evo 2 — Preentrenamiento continuo con genomas virales",
+      "name": "Evo 2 — Fine-tuning con genomas virales",
       "dataset_name": "Genomas virales de huéspedes eucariotas y de huéspedes diversos",
       "use_case": "De la Fuente Lab",
       "provider": "De la Fuente Lab",
-      "description": "Preentrenamiento continuo de modelos Evo 2 LoRA de diferentes tamaños con genomas virales de huéspedes eucariotas y de huéspedes diversos.",
-      "descripcion_ampliada": "Este caso de uso realizará el preentrenamiento continuo de modelos Evo 2 LoRA de diferentes tamaños con datos de genomas virales de huéspedes eucariotas y de huéspedes diversos.",
+      "description": "Fine-tuning mediante LoRA de modelos Evo 2 de diferentes tamaños con genomas virales de huéspedes eucariotas y de huéspedes diversos.",
+      "descripcion_ampliada": "Este caso de uso realizará el fine-tuning mediante LoRA de modelos Evo 2 de diferentes tamaños con datos de genomas virales de huéspedes eucariotas y de huéspedes diversos.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Tipo de datos: Genomas virales de huéspedes eucariotas y de virus con un rango de huéspedes diverso, preparados para el preentrenamiento continuo de Evo 2 mediante LoRA. Fuente de los datos: Archivos incluidos en el repositorio de datos del caso de uso. Uso previsto de los datos: Primera ronda de entrenamiento de modelos Evo 2 LoRA de distintos tamaños; evaluación del ajuste del modelo a secuencias genómicas virales.\n\nModelos Evo 2 LoRA de diferentes tamaños ajustados con el conjunto de genomas virales seleccionado.",
+      "datos_descripcion": "Tipo de datos: Genomas virales de huéspedes eucariotas y de virus con un rango de huéspedes diverso, preparados para el fine-tuning de Evo 2 mediante LoRA. Uso previsto de los datos: Fine-tuning de modelos Evo 2 de distintos tamaños y evaluación de su adaptación a secuencias genómicas virales.\n\nModelos Evo 2 de diferentes tamaños sometidos a fine-tuning mediante LoRA con el conjunto de genomas virales seleccionado.",
       "entidad_promotora": "De la Fuente Lab"
     },
     "intecmar_radar_hf": {
