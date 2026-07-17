@@ -284,8 +284,8 @@
       "use_case": "Grupo de Investigación Cardiovascular, IIS Galicia Sur",
       "provider": "Brilliant — IIS Galicia Sur",
       "description": "Desenvolver un sistema que permita a subida, análise e diagnóstico automático de estudos médicos a partir de datos sintéticos para abordar a sarcopenia.",
-      "volumen": "100,05 GB",
-      "n_ficheros": "2.000 ficheiros",
+      "volumen": "-",
+      "n_ficheros": "-",
       "subsets": {
         "mri": {
           "name": "MRI_BRILLIANT",
