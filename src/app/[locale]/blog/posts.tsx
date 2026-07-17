@@ -1077,6 +1077,75 @@ export const blogPosts: Record<Locale, Post[]> = {
         },
       ],
     },
+    {
+      key: 'onehealth-dataspace-43-casos-uso-2026',
+      date: '2026-07-17',
+      title:
+        'El Espacio de Datos del CESGA suma ya 43 iniciativas de investigación bajo el enfoque One Health',
+      excerpt:
+        'OneHealth DataSpace, el espacio de datos del CESGA, se consolida como un ecosistema activo, con 36 entidades adheridas que colaboran en un total de 43 casos de uso para alcanzar mejores resultados en favor de la salud global.',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        {
+          type: 'bold',
+          content:
+            'OneHealth DataSpace, el espacio de datos del CESGA, se consolida como un ecosistema activo, con 36 entidades adheridas que colaboran en un total de 43 casos de uso para alcanzar mejores resultados en favor de la salud global.',
+        },
+
+        'OneHealth DataSpace, el espacio de datos del CESGA, continúa creciendo y se afianza como ecosistema de colaboración para mejorar la salud global.',
+
+        'Los 43 casos de uso que participan actualmente en OneHealth DataSpace suponen un salto cualitativo importante si tenemos en cuenta los 7 casos de uso con los que arrancó el proyecto, o las 22 entidades adheridas que registraba el espacio de datos del CESGA en abril de este año.',
+
+        'En pocos meses, OneHealth DataSpace ha pasado de ser un proyecto en fase de consolidación a convertirse en un ecosistema activo y sólido, en el que 36 entidades adheridas comparten conocimientos, los analizan, procesan y almacenan con un fin común: la mejora de la salud global desde un enfoque integrador que toma la salud humana, animal y medioambiental como un todo.',
+
+        'El OneHealth DataSpace ofrece a sus entidades participantes capacidades avanzadas de computación (HPC), análisis con tecnologías Big Data, almacenamiento de alto rendimiento y la exposición de los resultados en aplicaciones y servicios listos para su uso. Todo ello, bajo el enfoque One Health (Una salud) que integra salud humana, animal y medioambiental.',
+
+        { type: 'h2', content: 'Un ecosistema en crecimiento' },
+
+        'Las entidades participantes del OneHealth DataSpace representan perfiles diversos, tanto públicos como privados, vinculados a la investigación, la asistencia sanitaria, la innovación tecnológica y la generación de conocimiento bajo el enfoque One Health.',
+
+        'OneHealth DataSpace proporciona a estas organizaciones una infraestructura digital segura, interoperable y gobernada para compartir y aprovechar datos, integrada con recursos de HPC, Big Data, Cloud e Inteligencia Artificial del Centro de Supercomputación de Galicia (CESGA).',
+
+        { type: 'h2', content: 'El proyecto amplía su actividad hasta el 31 de agosto' },
+
+        'En paralelo a esta nueva fase de crecimiento, el proyecto extiende su actividad hasta el 31 de agosto de 2026, lo que le permitirá continuar incorporando entidades adheridas, consolidar lo avanzado e impulsar nuevas iniciativas, así como reforzar las acciones de difusión, formación y transferencia de conocimiento.',
+
+        'Asimismo, facilitará avanzar en la evolución de OneHealth DataSpace como antesala de la futura 1HealthAI Factory, la infraestructura europea impulsada desde Galicia para la aplicación de la inteligencia artificial al ámbito One Health.',
+
+        {
+          type: 'h2',
+          content:
+            'Mini Encuentros: explicamos cómo responde OneHealth DataSpace a las necesidades del sector',
+        },
+
+        'Como parte de esta nueva etapa, el proyecto del CESGA ha puesto en marcha los Mini Encuentros OneHealth DataSpace, una iniciativa orientada a acercar el espacio de datos a grupos de investigación y entidades interesadas en explorar nuevas oportunidades de colaboración.',
+
+        {
+          type: 'bold',
+          content:
+            'Bajo el lema «Tus datos. Tu control. Conocimiento que transforma la salud global», cada sesión combina una breve presentación del proyecto con un espacio de diálogo orientado a identificar necesidades e impulsar nuevas colaboraciones dentro del ecosistema One Health.',
+        },
+
+        'El primero de estos encuentros se celebró el 23 de junio en la Sala Anfiteatro del IDIS (Instituto de Investigación Sanitaria de Santiago), en el CHUS de Santiago de Compostela. En julio continuó con nuevos encuentros, el 8 de julio en el Instituto de Investigación Biomédica de A Coruña (INIBIC) y el 9 de julio en el Instituto de Investigación en Saúde Global e Desenvolvemento Sostible (iTERRA) de Lugo, y el 29 de julio tendrá lugar la última jornada en el Instituto de Investigación Sanitaria Galicia Sur (IISGaliciaSur) en el Hospital Álvaro Cunqueiro, Vigo.',
+
+        {
+          type: 'h2',
+          content:
+            '22 de julio, Encuentro de Presentación de Resultados de OneHealth DataSpace',
+        },
+
+        'El miércoles 22 de julio OneHealth DataSpace celebra en el CiMUS (Center for Research in Molecular Medicine and Chronic Diseases) de Santiago de Compostela su Encuentro de Presentación de Resultados; una jornada en la que el equipo del proyecto compartirá los principales avances del proyecto y se presentarán algunos de sus casos de uso. Durante la sesión se dará también a conocer el Espacio Nacional de Datos de Salud (ENDS) y el Espacio Europeo de Datos de Salud (EHDS), y se abordarán las oportunidades de futuro que abre esta iniciativa como antesala de la futura 1HealthAI Factory.',
+
+        'El encuentro contará con la participación de representantes institucionales de GAIN, CiMUS y CESGA, con Manuel Brocos, de la Dirección General del Dato (SEDIA), que presentará el Espacio Nacional de Datos de Salud, y con Lucía Escapa Castro, jefa del Gabinete de la Secretaría General de Salud Digital, Información e Innovación del SNS del Ministerio de Sanidad, que presentará el Espacio Europeo de Datos de Salud. La jornada cerrará con una intervención sobre el papel de OneHealth DataSpace como punto de partida hacia la futura 1HealthAI Factory, la única infraestructura europea de inteligencia artificial concebida específicamente bajo el enfoque One Health.',
+
+        {
+          type: 'bold',
+          content: 'Más que datos. Máis ca datos. More than data.',
+        },
+      ],
+    },
   ],
   en: [
     {
@@ -2052,6 +2121,74 @@ export const blogPosts: Record<Locale, Post[]> = {
         {
           type: 'bold',
           content: 'More than data.',
+        },
+      ],
+    },
+    {
+      key: 'onehealth-dataspace-43-casos-uso-2026',
+      date: '2026-07-17',
+      title:
+        "CESGA's Data Space Now Reaches 43 Research Initiatives Under the One Health Approach",
+      excerpt:
+        "OneHealth DataSpace, CESGA's data space, is consolidating as an active ecosystem, with 36 member entities collaborating on a total of 43 use cases to achieve better outcomes for global health.",
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        {
+          type: 'bold',
+          content:
+            "OneHealth DataSpace, CESGA's data space, is consolidating as an active ecosystem, with 36 member entities collaborating on a total of 43 use cases to achieve better outcomes for global health.",
+        },
+
+        "OneHealth DataSpace, CESGA's data space, continues to grow and is establishing itself as a collaborative ecosystem to improve global health.",
+
+        'The 43 use cases currently taking part in OneHealth DataSpace represent a significant qualitative leap compared with the 7 use cases the project started with, or the 22 member entities the CESGA data space had registered last April.',
+
+        "In just a few months, OneHealth DataSpace has gone from being a project in its consolidation phase to becoming an active, solid ecosystem in which 36 member entities share knowledge, analyse it, process it and store it with a common goal: improving global health from an integrative approach that treats human, animal and environmental health as a whole.",
+
+        'OneHealth DataSpace offers its participating entities advanced computing capabilities (HPC), Big Data analytics, high-performance storage and the exposure of results through ready-to-use applications and services, all under the One Health approach that integrates human, animal and environmental health.',
+
+        { type: 'h2', content: 'A Growing Ecosystem' },
+
+        'The organisations taking part in OneHealth DataSpace have diverse profiles, both public and private, linked to research, healthcare, technological innovation and knowledge generation under the One Health approach.',
+
+        'OneHealth DataSpace provides these organisations with a secure, interoperable and governed digital infrastructure for sharing and making the most of data, integrated with HPC, Big Data, Cloud and Artificial Intelligence resources from the Galicia Supercomputing Center (CESGA).',
+
+        { type: 'h2', content: 'The Project Extends Its Activity Until 31 August' },
+
+        "Alongside this new growth phase, the project is extending its activity until 31 August 2026, allowing it to continue onboarding new member entities, consolidate the progress made so far, launch new initiatives, and strengthen outreach, training and knowledge-transfer actions.",
+
+        "This will also make it possible to advance OneHealth DataSpace's evolution as the gateway to the future 1HealthAI Factory, the European infrastructure driven from Galicia for applying artificial intelligence to the One Health domain.",
+
+        {
+          type: 'h2',
+          content:
+            "Mini Meetings: Explaining How OneHealth DataSpace Responds to the Sector's Needs",
+        },
+
+        "As part of this new stage, CESGA's project has launched the OneHealth DataSpace Mini Meetings, an initiative designed to bring the data space closer to research groups and organisations interested in exploring new collaboration opportunities.",
+
+        {
+          type: 'bold',
+          content:
+            'Under the motto "Your data. Your control. Knowledge that transforms global health," each session combines a brief presentation of the project with a space for dialogue aimed at identifying needs and driving new collaborations within the One Health ecosystem.',
+        },
+
+        'The first of these meetings took place on 23 June in the Amphitheatre Hall of IDIS (Health Research Institute of Santiago), at the CHUS in Santiago de Compostela. In July it continued with further meetings, on 8 July at the Biomedical Research Institute of A Coruña (INIBIC) and on 9 July at the Global Health and Sustainable Development Research Institute (iTERRA) in Lugo, and on 29 July the final session will take place at the Galicia Sur Health Research Institute (IIS Galicia Sur) at the Álvaro Cunqueiro Hospital in Vigo.',
+
+        {
+          type: 'h2',
+          content: '22 July: OneHealth DataSpace Results Presentation Meeting',
+        },
+
+        'On Wednesday 22 July, OneHealth DataSpace will hold its Results Presentation Meeting at CiMUS (Center for Research in Molecular Medicine and Chronic Diseases) in Santiago de Compostela; a session in which the project team will share the project\'s main achievements and present some of its use cases. The session will also introduce the National Health Data Space (ENDS) and the European Health Data Space (EHDS), and will address the future opportunities opened up by this initiative as a gateway to the future 1HealthAI Factory.',
+
+        "The meeting will feature institutional representatives from GAIN, CiMUS and CESGA, together with Manuel Brocos, from the General Directorate for Data (SEDIA), who will present the National Health Data Space, and Lucía Escapa Castro, Head of the Cabinet of the General Secretariat for Digital Health, Information and Innovation of Spain's National Health System (Ministry of Health), who will present the European Health Data Space. The session will close with a talk on OneHealth DataSpace's role as a starting point towards the future 1HealthAI Factory, the only European artificial intelligence infrastructure conceived specifically under the One Health approach.",
+
+        {
+          type: 'bold',
+          content: 'Más que datos. Máis ca datos. More than data.',
         },
       ],
     },
@@ -3077,6 +3214,75 @@ export const blogPosts: Record<Locale, Post[]> = {
         {
           type: 'bold',
           content: 'Máis ca datos.',
+        },
+      ],
+    },
+    {
+      key: 'onehealth-dataspace-43-casos-uso-2026',
+      date: '2026-07-17',
+      title:
+        'O Espazo de Datos do CESGA suma xa 43 iniciativas de investigación baixo o enfoque One Health',
+      excerpt:
+        'OneHealth DataSpace, o espazo de datos do CESGA, consolídase como un ecosistema activo, con 36 entidades adheridas que colaboran nun total de 43 casos de uso para acadar mellores resultados en favor da saúde global.',
+      author_name: 'Iago Sequeiros',
+      author_image: Logo,
+      description: [
+        { type: 'h1', content: '' },
+        {
+          type: 'bold',
+          content:
+            'OneHealth DataSpace, o espazo de datos do CESGA, consolídase como un ecosistema activo, con 36 entidades adheridas que colaboran nun total de 43 casos de uso para acadar mellores resultados en favor da saúde global.',
+        },
+
+        'OneHealth DataSpace, o espazo de datos do CESGA, continúa medrando e afiánzase como ecosistema de colaboración para mellorar a saúde global.',
+
+        'Os 43 casos de uso que participan actualmente en OneHealth DataSpace supoñen un salto cualitativo importante se temos en conta os 7 casos de uso cos que arrincou o proxecto, ou as 22 entidades adheridas que rexistraba o espazo de datos do CESGA en abril deste ano.',
+
+        'En poucos meses, OneHealth DataSpace pasou de ser un proxecto en fase de consolidación a converterse nun ecosistema activo e sólido, no que 36 entidades adheridas comparten coñecementos, os analizan, procesan e almacenan cun fin común: a mellora da saúde global desde un enfoque integrador que toma a saúde humana, animal e medioambiental como un todo.',
+
+        'O OneHealth DataSpace ofrece ás súas entidades participantes capacidades avanzadas de computación (HPC), análise con tecnoloxías Big Data, almacenamento de alto rendemento e a exposición dos resultados en aplicacións e servizos listos para o seu uso. Todo isto, baixo o enfoque One Health (Unha soa saúde) que integra saúde humana, animal e medioambiental.',
+
+        { type: 'h2', content: 'Un ecosistema en crecemento' },
+
+        'As entidades participantes do OneHealth DataSpace representan perfís diversos, tanto públicos como privados, vinculados á investigación, a asistencia sanitaria, a innovación tecnolóxica e a xeración de coñecemento baixo o enfoque One Health.',
+
+        'OneHealth DataSpace proporciona a estas organizacións unha infraestrutura dixital segura, interoperable e gobernada para compartir e aproveitar datos, integrada con recursos de HPC, Big Data, Cloud e Intelixencia Artificial do Centro de Supercomputación de Galicia (CESGA).',
+
+        { type: 'h2', content: 'O proxecto amplía a súa actividade ata o 31 de agosto' },
+
+        'En paralelo a esta nova fase de crecemento, o proxecto estende a súa actividade ata o 31 de agosto de 2026, o que lle permitirá continuar incorporando entidades adheridas, consolidar o avanzado e impulsar novas iniciativas, así como reforzar as accións de difusión, formación e transferencia de coñecemento.',
+
+        'Así mesmo, facilitará avanzar na evolución de OneHealth DataSpace como antesala da futura 1HealthAI Factory, a infraestrutura europea impulsada desde Galicia para a aplicación da intelixencia artificial ao ámbito One Health.',
+
+        {
+          type: 'h2',
+          content:
+            'Mini Encontros: explicamos como responde OneHealth DataSpace ás necesidades do sector',
+        },
+
+        'Como parte desta nova etapa, o proxecto do CESGA puxo en marcha os Mini Encontros OneHealth DataSpace, unha iniciativa orientada a achegar o espazo de datos a grupos de investigación e entidades interesadas en explorar novas oportunidades de colaboración.',
+
+        {
+          type: 'bold',
+          content:
+            'Baixo o lema «Os teus datos. O teu control. Coñecemento que transforma a saúde global», cada sesión combina unha breve presentación do proxecto cun espazo de diálogo orientado a identificar necesidades e impulsar novas colaboracións dentro do ecosistema One Health.',
+        },
+
+        'O primeiro destes encontros celebrouse o 23 de xuño na Sala Anfiteatro do IDIS (Instituto de Investigación Sanitaria de Santiago), no CHUS de Santiago de Compostela. En xullo continuou con novos encontros, o 8 de xullo no Instituto de Investigación Biomédica da Coruña (INIBIC) e o 9 de xullo no Instituto de Investigación en Saúde Global e Desenvolvemento Sostible (iTERRA) de Lugo, e o 29 de xullo terá lugar a última xornada no Instituto de Investigación Sanitaria Galicia Sur (IISGaliciaSur) no Hospital Álvaro Cunqueiro, Vigo.',
+
+        {
+          type: 'h2',
+          content:
+            '22 de xullo, Encontro de Presentación de Resultados de OneHealth DataSpace',
+        },
+
+        'O mércores 22 de xullo OneHealth DataSpace celebra no CiMUS (Center for Research in Molecular Medicine and Chronic Diseases) de Santiago de Compostela o seu Encontro de Presentación de Resultados; unha xornada na que o equipo do proxecto compartirá os principais avances do proxecto e presentaranse algúns dos seus casos de uso. Durante a sesión darase tamén a coñecer o Espazo Nacional de Datos de Saúde (ENDS) e o Espazo Europeo de Datos de Saúde (EHDS), e abordaranse as oportunidades de futuro que abre esta iniciativa como antesala da futura 1HealthAI Factory.',
+
+        'O encontro contará coa participación de representantes institucionais de GAIN, CiMUS e CESGA, con Manuel Brocos, da Dirección Xeral do Dato (SEDIA), que presentará o Espazo Nacional de Datos de Saúde, e con Lucía Escapa Castro, xefa do Gabinete da Secretaría Xeral de Saúde Dixital, Información e Innovación do SNS do Ministerio de Sanidade, que presentará o Espazo Europeo de Datos de Saúde. A xornada pechará cunha intervención sobre o papel de OneHealth DataSpace como punto de partida cara á futura 1HealthAI Factory, a única infraestrutura europea de intelixencia artificial concibida especificamente baixo o enfoque One Health.',
+
+        {
+          type: 'bold',
+          content: 'Más que datos. Máis ca datos. More than data.',
         },
       ],
     },
