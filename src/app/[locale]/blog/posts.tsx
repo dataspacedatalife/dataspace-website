@@ -3,7 +3,7 @@ import type { Locale } from 'next-intl';
 import DinamicaCRED from '../../../../public/blog/dinamicaEventoInicialCRED.png';
 import GaiaXPonencia from '../../../../public/blog/GAIAXCumbreDatoPonenciaAlejoSantolino.jpeg';
 import ArchitectureImg from '../../../../public/logo_completo.jpg';
-import Logo from '../../../../public/logos/onehealth_simbolo_blog.png';
+import ISequeirosImg from '../../../../public/team/isequeiros.webp';
 import JCacheiroImg from '../../../../public/team/jcacheiro.webp';
 import LDiazImg from '../../../../public/team/ldiaz.webp';
 import LVazquezImg from '../../../../public/team/lvazquez.webp';
@@ -597,7 +597,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'El Centro Demostrador Multisectorial DATAspace de CESGA celebró una sesión formativa práctica dirigida a resolver dudas y acompañar a empresas e instituciones en su incorporación al Espacio de Datos One Health como paso previo a la solicitud del Kit Espacios de Datos.',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         'El Centro Demostrador Multisectorial DATAspace de CESGA organizó el pasado 23 de marzo una sesión formativa orientada a empresas e instituciones para resolver dudas y facilitar su incorporación al Espacio de Datos One Health como paso previo a la solicitud del Kit Espacios de Datos. ',
 
@@ -718,7 +718,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'El Espacio de Datos OneHealth DataSpace ha avanzado en su proceso de consolidación como iniciativa puntera de innovación en favor de la salud global con la adhesión de más de 10 nuevas entidades en los últimos meses.',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         'El Espacio de Datos OneHealth DataSpace, centrado en el concepto One Health —término en inglés acuñado por la Organización Mundial de la Salud (OMS) para describir la interrelación entre la salud humana, animal y medioambiental—, ha avanzado en su proceso de consolidación como iniciativa puntera de innovación en favor de la salud global con la adhesión de más de 10 nuevas entidades en los últimos meses.',
 
@@ -772,7 +772,7 @@ export const blogPosts: Record<Locale, Post[]> = {
         'El proyecto del Centro de Supercomputación de Galicia comparte en Toledo su experiencia en el desarrollo de un espacio de datos operativo en el ámbito One Health',
       image: GaiaXPonencia,
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         'El proyecto del Centro de Supercomputación de Galicia comparte en Toledo su experiencia en el desarrollo de un espacio de datos operativo en el ámbito One Health',
@@ -835,7 +835,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'El Director Científico del proyecto, Javier Cacheiro, analiza en una entrevista para Faro de Vigo el papel del espacio de datos y la futura infraestructura europea de IA en Galicia',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         'El Director Científico del proyecto, Javier Cacheiro, analiza en una entrevista para Faro de Vigo el papel del espacio de datos y la futura infraestructura europea de IA en Galicia',
@@ -906,7 +906,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'El equipo del Servicio Digestivo del CHUP y su Grupo de Investigación IDARA recogen en Madrid dos galardones en los Premios IA BIC',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
 
@@ -960,7 +960,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'El encuentro final del proyecto reunirá en el CHUS a entidades, investigadores e instituciones para compartir resultados y avances del ecosistema One Health',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         {
@@ -995,7 +995,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'La iniciativa del CESGA combina datos, colaboración y supercomputación para impulsar la investigación y la innovación en salud humana, animal y medioambiental bajo el enfoque One Health.',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         {
@@ -1085,7 +1085,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'OneHealth DataSpace, el espacio de datos del CESGA, se consolida como un ecosistema activo, con 36 entidades adheridas que colaboran en un total de 43 casos de uso para alcanzar mejores resultados en favor de la salud global.',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         {
@@ -1644,7 +1644,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'The CESGA Multisectoral DATAspace Demonstrator Center held a practical training session aimed at answering questions and supporting companies and institutions in joining the One Health Data Space as a preliminary step before requesting the Data Spaces Kit.',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         'On March 23, the CESGA Multisectoral DATAspace Demonstrator Center organized a training session for companies and institutions to answer questions and facilitate their integration into the One Health Data Space as a first step before requesting the Data Spaces Kit.',
 
@@ -1763,7 +1763,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'The OneHealth DataSpace has advanced in its consolidation process as a leading innovation initiative for global health, with the incorporation of more than 10 new entities in recent months.',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         'The OneHealth DataSpace, focused on the One Health concept —a term coined by the World Health Organization (WHO) to describe the interrelationship between human, animal and environmental health— has advanced in its consolidation process as a leading innovation initiative for global health with the incorporation of more than 10 new entities in recent months.',
 
@@ -1817,7 +1817,7 @@ export const blogPosts: Record<Locale, Post[]> = {
         'The Galicia Supercomputing Center project shares in Toledo its experience in developing an operational data space within the One Health domain',
       image: GaiaXPonencia,
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         'The Galicia Supercomputing Center project shares in Toledo its experience in developing an operational data space within the One Health domain.',
@@ -1880,7 +1880,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'The project’s Scientific Director, Javier Cacheiro, discusses in an interview with Faro de Vigo the role of the data space and the future European AI infrastructure in Galicia',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         'The project’s Scientific Director, Javier Cacheiro, discusses in an interview with Faro de Vigo the role of the data space and the future European AI infrastructure in Galicia',
@@ -1951,7 +1951,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'The CHUP Digestive Service team and its IDARA Research Group received two awards in Madrid at the AI BIC Awards',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
 
@@ -2005,7 +2005,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'The final project meeting will bring together institutions, researchers, and organizations at CHUS to share results and progress from the One Health ecosystem',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         {
@@ -2042,7 +2042,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'CESGA’s initiative combines data, collaboration, and supercomputing to drive research and innovation in human, animal, and environmental health under the One Health approach.',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         {
@@ -2132,7 +2132,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         "OneHealth DataSpace, CESGA's data space, is consolidating as an active ecosystem, with 36 member entities collaborating on a total of 43 use cases to achieve better outcomes for global health.",
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         {
@@ -2737,7 +2737,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'O Centro Demostrador Multisectorial DATAspace do CESGA celebrou unha sesión formativa práctica dirixida a resolver dúbidas e acompañar a empresas e institucións na súa incorporación ao Espazo de Datos One Health como paso previo á solicitude do Kit de Espazos de Datos.',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         'O Centro Demostrador Multisectorial DATAspace do CESGA organizou o pasado 23 de marzo unha sesión formativa orientada a empresas e institucións para resolver dúbidas e facilitar a súa incorporación ao Espazo de Datos One Health como primeiro paso antes de solicitar o Kit de Espazos de Datos.',
 
@@ -2856,7 +2856,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'O Espazo de Datos OneHealth DataSpace avanzou no seu proceso de consolidación como iniciativa punteira de innovación en favor da saúde global coa adhesión de máis de 10 novas entidades nos últimos meses.',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         'O Espazo de Datos OneHealth DataSpace, centrado no concepto One Health —termo en inglés acuñado pola Organización Mundial da Saúde (OMS) para describir a interrelación entre a saúde humana, animal e medioambiental—, avanzou no seu proceso de consolidación como iniciativa punteira de innovación en favor da saúde global coa adhesión de máis de 10 novas entidades nos últimos meses.',
 
@@ -2910,7 +2910,7 @@ export const blogPosts: Record<Locale, Post[]> = {
         'O proxecto do Centro de Supercomputación de Galicia comparte en Toledo a súa experiencia no desenvolvemento dun espazo de datos operativo no ámbito One Health',
       image: GaiaXPonencia,
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         'O proxecto do Centro de Supercomputación de Galicia comparte en Toledo a súa experiencia no desenvolvemento dun espazo de datos operativo no ámbito One Health.',
@@ -2973,7 +2973,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'O Director Científico do proxecto, Javier Cacheiro, analiza nunha entrevista para Faro de Vigo o papel do espazo de datos e da futura infraestrutura europea de IA en Galicia',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         'O Director Científico do proxecto, Javier Cacheiro, analiza nunha entrevista para Faro de Vigo o papel do espazo de datos e da futura infraestrutura europea de IA en Galicia',
@@ -3044,7 +3044,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'O equipo do Servizo Dixestivo do CHUP e o seu Grupo de Investigación IDARA recollen en Madrid dous galardóns nos Premios IA BIC',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
 
@@ -3098,7 +3098,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'O encontro final do proxecto reunirá no CHUS a entidades, investigadores e institucións para compartir resultados e avances do ecosistema One Health',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         {
@@ -3135,7 +3135,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'A iniciativa do CESGA combina datos, colaboración e supercomputación para impulsar a investigación e a innovación en saúde humana, animal e ambiental baixo o enfoque One Health.',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         {
@@ -3225,7 +3225,7 @@ export const blogPosts: Record<Locale, Post[]> = {
       excerpt:
         'OneHealth DataSpace, o espazo de datos do CESGA, consolídase como un ecosistema activo, con 36 entidades adheridas que colaboran nun total de 43 casos de uso para acadar mellores resultados en favor da saúde global.',
       author_name: 'Iago Sequeiros',
-      author_image: Logo,
+      author_image: ISequeirosImg,
       description: [
         { type: 'h1', content: '' },
         {
