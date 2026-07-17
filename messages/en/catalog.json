@@ -3263,6 +3263,73 @@
       "subsets": {},
       "datos_descripcion": "Data type: Three-dimensional grid of surface ocean-current velocities, with hourly temporal resolution and 6 km spatial resolution. Distributed as NetCDF 4.3.3 using reference system EPSG:3041. Data source: Radial velocity measurements from the Galicia HF Radar Network, operated by INTECMAR with the participation of Puertos del Estado. Intended use of the data: Visualisation and analysis of surface currents off the Galician coast over the last five days, using the best product available at processing time.\n\nThe source catalogue states that there are no general use limitations, but also indicates that Puertos del Estado must be contacted to request permission to use the data.",
       "entidad_promotora": "Technological Institute for the Control of the Marine Environment of Galicia (INTECMAR)"
+    },
+    "intecmar_upwelling_index": {
+      "name": "Coastal upwelling index for Galicia and northern Portugal",
+      "dataset_name": "intecmar_calculo / intecmar_hfrui",
+      "use_case": "INTECMAR",
+      "provider": "INTECMAR",
+      "description": "Data used to calculate and map the coastal upwelling index along Galicia and northern Portugal.",
+      "descripcion_ampliada": "This use case brings together the data used to calculate the upwelling index and the resulting maps for the coast of Galicia and northern Portugal. The index supports analysis of coastal circulation dynamics and their relationship with biological productivity and marine biodiversity.\n\nThe entry recovers two datasets from the legacy Marine Sciences project: the parameters used in the calculation and the mapped upwelling-index product.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {
+        "upwelling_calculation": {
+          "name": "intecmar_calculo",
+          "description": "Data and processed parameters used to calculate the coastal upwelling index.",
+          "metadata": {
+            "data_type": "Oceanographic",
+            "data_standard": "",
+            "date_added": "18-07-2023",
+            "file_format": "Parquet",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": ""
+          },
+          "variables": [
+            { "name": "time", "units": "-", "data_description": "Observation time.", "data_type": "string" },
+            { "name": "nSites", "units": "-", "data_description": "Total number of sites or stations.", "data_type": "string" },
+            { "name": "nProcParam", "units": "-", "data_description": "Number of processed parameters.", "data_type": "string" },
+            { "name": "latitude", "units": "-", "data_description": "Geographic latitude in degrees north.", "data_type": "string" },
+            { "name": "longitude", "units": "-", "data_description": "Geographic longitude in degrees east.", "data_type": "string" },
+            { "name": "site_code", "units": "-", "data_description": "Site identifier code.", "data_type": "string" },
+            { "name": "site_netCode", "units": "-", "data_description": "Code of the site's network or grouping.", "data_type": "string" },
+            { "name": "site_lat", "units": "-", "data_description": "Site latitude in degrees north.", "data_type": "string" },
+            { "name": "site_lon", "units": "-", "data_description": "Site longitude in degrees east.", "data_type": "string" },
+            { "name": "site_status", "units": "-", "data_description": "Site status.", "data_type": "string" },
+            { "name": "procParams", "units": "-", "data_description": "Processed parameters.", "data_type": "string" },
+            { "name": "water_u", "units": "-", "data_description": "Zonal, east-west, component of sea-current velocity.", "data_type": "string" },
+            { "name": "water_v", "units": "-", "data_description": "Meridional, north-south, component of sea-current velocity.", "data_type": "string" },
+            { "name": "std_u", "units": "-", "data_description": "Standard deviation or uncertainty of water_u.", "data_type": "string" },
+            { "name": "std_v", "units": "-", "data_description": "Standard deviation or uncertainty of water_v.", "data_type": "string" },
+            { "name": "cov", "units": "-", "data_description": "Covariance or measure of variability between water_u and water_v.", "data_type": "string" }
+          ]
+        },
+        "upwelling_maps": {
+          "name": "intecmar_hfrui",
+          "description": "Coastal upwelling-index maps along Galicia and northern Portugal.",
+          "metadata": {
+            "data_type": "Oceanographic",
+            "data_standard": "",
+            "date_added": "19-10-2023",
+            "file_format": "Parquet",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": ""
+          },
+          "variables": [
+            { "name": "TIME", "units": "-", "data_description": "Record or measurement time.", "data_type": "string" },
+            { "name": "DEPTH", "units": "-", "data_description": "Vertical depth below the surface.", "data_type": "string" },
+            { "name": "LATITUDE", "units": "-", "data_description": "Geographic latitude.", "data_type": "string" },
+            { "name": "LONGITUDE", "units": "-", "data_description": "Geographic longitude.", "data_type": "string" },
+            { "name": "DEPH", "units": "-", "data_description": "Auxiliary depth-related parameter retaining the legacy name.", "data_type": "string" },
+            { "name": "crs", "units": "-", "data_description": "Coordinate reference system.", "data_type": "string" },
+            { "name": "UI", "units": "-", "data_description": "Coastal upwelling index.", "data_type": "string" }
+          ]
+        }
+      },
+      "datos_descripcion": "Data type: Station parameters and sea-current velocity components used in the calculation, together with coastal upwelling-index maps. Legacy format: Parquet. Data source: INTECMAR and the legacy Marine Sciences project catalogue. Intended use of the data: Calculation, visualisation and analysis of coastal upwelling in Galicia and northern Portugal.\n\nThe legacy source does not specify volume, number of files, licence, temporal coverage or temporal resolution.",
+      "entidad_promotora": "Technological Institute for the Control of the Marine Environment of Galicia (INTECMAR)"
     }
   },
   "data_description": "Data description",

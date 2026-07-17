@@ -323,6 +323,12 @@ export const useCasesData = [
     link: 'https://xeocatalogo.xunta.gal/xeocatalogo/srv/api/records/GLG_INTECMAR_RADARHF_2011',
     categories: ['environmental'] as HealthCategory[],
   },
+  {
+    id: 'intecmar_upwelling_index',
+    imagen: LogoIntecmar,
+    link: 'https://www.intecmar.gal/',
+    categories: ['environmental'] as HealthCategory[],
+  },
 ] as const satisfies {
   readonly id: string;
   readonly imagen: StaticImageData | string;

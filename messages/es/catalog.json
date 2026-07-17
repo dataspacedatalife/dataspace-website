@@ -3263,6 +3263,73 @@
       "subsets": {},
       "datos_descripcion": "Tipo de datos: Cuadrícula tridimensional de velocidades de corrientes oceánicas superficiales, con resolución temporal horaria y resolución espacial de 6 km. Formato de distribución NetCDF 4.3.3 y sistema de referencia EPSG:3041. Fuente de los datos: Mediciones de velocidad radial de la Red de Radar HF de Galicia, operada por INTECMAR, con participación de Puertos del Estado. Uso previsto de los datos: Visualización y análisis de las corrientes superficiales de la costa gallega durante los últimos cinco días, a partir del mejor producto disponible en el momento del procesamiento.\n\nEl catálogo de origen indica que no existen limitaciones generales de uso, pero también señala que debe contactarse con Puertos del Estado para solicitar permiso para utilizar los datos.",
       "entidad_promotora": "Instituto Tecnolóxico para o Control do Medio Mariño de Galicia (INTECMAR)"
+    },
+    "intecmar_upwelling_index": {
+      "name": "Índice de afloramiento costero de Galicia y norte de Portugal",
+      "dataset_name": "intecmar_calculo / intecmar_hfrui",
+      "use_case": "INTECMAR",
+      "provider": "INTECMAR",
+      "description": "Datos para el cálculo y la representación cartográfica del índice de afloramiento costero a lo largo de Galicia y el norte de Portugal.",
+      "descripcion_ampliada": "Este caso de uso reúne los datos empleados para calcular el índice de afloramiento y los mapas resultantes para la costa de Galicia y el norte de Portugal. El índice permite analizar la dinámica de la circulación costera y su relación con la productividad biológica y la biodiversidad marina.\n\nLa ficha recupera dos conjuntos de datos del proyecto heredado de Ciencias Marinas: los parámetros utilizados durante el cálculo y el producto cartográfico del índice de afloramiento.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {
+        "upwelling_calculation": {
+          "name": "intecmar_calculo",
+          "description": "Datos y parámetros procesados para calcular el índice de afloramiento costero.",
+          "metadata": {
+            "data_type": "Oceanográfico",
+            "data_standard": "",
+            "date_added": "18-07-2023",
+            "file_format": "Parquet",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": ""
+          },
+          "variables": [
+            { "name": "time", "units": "-", "data_description": "Tiempo de la observación.", "data_type": "string" },
+            { "name": "nSites", "units": "-", "data_description": "Número total de sitios o estaciones.", "data_type": "string" },
+            { "name": "nProcParam", "units": "-", "data_description": "Número de parámetros procesados.", "data_type": "string" },
+            { "name": "latitude", "units": "-", "data_description": "Latitud geográfica en grados norte.", "data_type": "string" },
+            { "name": "longitude", "units": "-", "data_description": "Longitud geográfica en grados este.", "data_type": "string" },
+            { "name": "site_code", "units": "-", "data_description": "Código identificador del sitio.", "data_type": "string" },
+            { "name": "site_netCode", "units": "-", "data_description": "Código de la red o agrupación del sitio.", "data_type": "string" },
+            { "name": "site_lat", "units": "-", "data_description": "Latitud del sitio en grados norte.", "data_type": "string" },
+            { "name": "site_lon", "units": "-", "data_description": "Longitud del sitio en grados este.", "data_type": "string" },
+            { "name": "site_status", "units": "-", "data_description": "Estado del sitio.", "data_type": "string" },
+            { "name": "procParams", "units": "-", "data_description": "Parámetros procesados.", "data_type": "string" },
+            { "name": "water_u", "units": "-", "data_description": "Componente zonal, este-oeste, de la velocidad de la corriente marina.", "data_type": "string" },
+            { "name": "water_v", "units": "-", "data_description": "Componente meridional, norte-sur, de la velocidad de la corriente marina.", "data_type": "string" },
+            { "name": "std_u", "units": "-", "data_description": "Desviación estándar o incertidumbre de water_u.", "data_type": "string" },
+            { "name": "std_v", "units": "-", "data_description": "Desviación estándar o incertidumbre de water_v.", "data_type": "string" },
+            { "name": "cov", "units": "-", "data_description": "Covarianza o medida de variabilidad entre water_u y water_v.", "data_type": "string" }
+          ]
+        },
+        "upwelling_maps": {
+          "name": "intecmar_hfrui",
+          "description": "Mapas del índice de afloramiento costero a lo largo de Galicia y el norte de Portugal.",
+          "metadata": {
+            "data_type": "Oceanográfico",
+            "data_standard": "",
+            "date_added": "19-10-2023",
+            "file_format": "Parquet",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": ""
+          },
+          "variables": [
+            { "name": "TIME", "units": "-", "data_description": "Tiempo del registro o medición.", "data_type": "string" },
+            { "name": "DEPTH", "units": "-", "data_description": "Profundidad vertical desde la superficie.", "data_type": "string" },
+            { "name": "LATITUDE", "units": "-", "data_description": "Latitud geográfica.", "data_type": "string" },
+            { "name": "LONGITUDE", "units": "-", "data_description": "Longitud geográfica.", "data_type": "string" },
+            { "name": "DEPH", "units": "-", "data_description": "Parámetro auxiliar relacionado con la profundidad, conservando la denominación heredada.", "data_type": "string" },
+            { "name": "crs", "units": "-", "data_description": "Sistema de referencia de coordenadas.", "data_type": "string" },
+            { "name": "UI", "units": "-", "data_description": "Índice de afloramiento costero.", "data_type": "string" }
+          ]
+        }
+      },
+      "datos_descripcion": "Tipo de datos: Parámetros de estaciones y componentes de velocidad de la corriente utilizados en el cálculo, junto con mapas del índice de afloramiento costero. Formato heredado: Parquet. Fuente de los datos: INTECMAR y catálogo heredado del proyecto de Ciencias Marinas. Uso previsto de los datos: Cálculo, visualización y análisis del afloramiento costero en Galicia y el norte de Portugal.\n\nLa fuente heredada no especifica volumen, número de ficheros, licencia, cobertura temporal ni resolución temporal.",
+      "entidad_promotora": "Instituto Tecnolóxico para o Control do Medio Mariño de Galicia (INTECMAR)"
     }
   },
   "data_description": "Descripción de los datos",
