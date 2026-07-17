@@ -3253,15 +3253,15 @@
     },
     "intecmar_radar_hf": {
       "name": "Radar HF de Galicia — Datos horarios de correntes superficiais",
-      "dataset_name": "Datos horarios do Radar HF de Galicia dos últimos cinco días",
+      "dataset_name": "Datos horarios do Radar HF de Galicia",
       "use_case": "INTECMAR",
       "provider": "INTECMAR",
       "description": "Datos horarios de correntes superficiais estimadas pola Rede de Radar HF de Galicia e procesadas en tempo case real sobre unha cuadrícula de 6 km de resolución.",
-      "descripcion_ampliada": "As velocidades de corrente estimadas mediante radar HF representan aproximadamente os 0,3–2,5 metros superiores do océano. As medicións radiais horarias das estacións da Rede de Radar HF de Galicia combínanse mediante mínimos cadrados non ponderados para xerar, en tempo case real, mapas de correntes superficiais sobre unha cuadrícula de 6 km fronte á costa galega.\n\nO conxunto ofrece os datos correspondentes aos últimos cinco días e está orientado á observación da circulación oceánica superficial.",
+      "descripcion_ampliada": "As velocidades de corrente estimadas mediante radar HF representan aproximadamente os 0,3–2,5 metros superiores do océano. As medicións radiais horarias das estacións da Rede de Radar HF de Galicia combínanse mediante mínimos cadrados non ponderados para xerar, en tempo case real, mapas de correntes superficiais sobre unha cuadrícula de 6 km fronte á costa galega.\n\nO conxunto está orientado á observación da circulación oceánica superficial.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Tipo de datos: Cuadrícula tridimensional de velocidades de correntes oceánicas superficiais, con resolución temporal horaria e resolución espacial de 6 km. Formato de distribución NetCDF 4.3.3 e sistema de referencia EPSG:3041. Fonte dos datos: Medicións de velocidade radial da Rede de Radar HF de Galicia, operada por INTECMAR, coa participación de Puertos del Estado. Uso previsto dos datos: Visualización e análise das correntes superficiais da costa galega durante os últimos cinco días, a partir do mellor produto dispoñible no momento do procesamento.\n\nO catálogo de orixe indica que non existen limitacións xerais de uso, pero tamén sinala que debe contactarse con Puertos del Estado para solicitar permiso para utilizar os datos.",
+      "datos_descripcion": "Tipo de datos: Cuadrícula tridimensional de velocidades de correntes oceánicas superficiais, con resolución temporal horaria e resolución espacial de 6 km. Formato de distribución NetCDF 4.3.3 e sistema de referencia EPSG:3041. Fonte dos datos: Medicións de velocidade radial da Rede de Radar HF de Galicia, operada por INTECMAR, coa participación de Puertos del Estado. Uso previsto dos datos: Visualización e análise das correntes superficiais da costa galega, a partir do mellor produto dispoñible no momento do procesamento.\n\nO catálogo de orixe indica que non existen limitacións xerais de uso, pero tamén sinala que debe contactarse con Puertos del Estado para solicitar permiso para utilizar os datos.",
       "entidad_promotora": "Instituto Tecnolóxico para o Control do Medio Mariño de Galicia (INTECMAR)"
     },
     "intecmar_upwelling_index": {

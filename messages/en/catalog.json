@@ -3253,15 +3253,15 @@
     },
     "intecmar_radar_hf": {
       "name": "Galicia HF Radar — Hourly surface-current data",
-      "dataset_name": "Hourly data from the Galicia HF Radar for the last five days",
+      "dataset_name": "Hourly data from the Galicia HF Radar",
       "use_case": "INTECMAR",
       "provider": "INTECMAR",
       "description": "Hourly surface-current data estimated by the Galicia HF Radar Network and processed in near real time on a 6 km resolution grid.",
-      "descripcion_ampliada": "Current velocities estimated by HF radar represent approximately the upper 0.3–2.5 metres of the ocean. Hourly radial measurements from stations in the Galicia HF Radar Network are combined using unweighted least squares to generate near-real-time surface-current maps on a 6 km grid off the Galician coast.\n\nThe dataset provides data for the last five days and supports observation of surface ocean circulation.",
+      "descripcion_ampliada": "Current velocities estimated by HF radar represent approximately the upper 0.3–2.5 metres of the ocean. Hourly radial measurements from stations in the Galicia HF Radar Network are combined using unweighted least squares to generate near-real-time surface-current maps on a 6 km grid off the Galician coast.\n\nThe dataset supports observation of surface ocean circulation.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Data type: Three-dimensional grid of surface ocean-current velocities, with hourly temporal resolution and 6 km spatial resolution. Distributed as NetCDF 4.3.3 using reference system EPSG:3041. Data source: Radial velocity measurements from the Galicia HF Radar Network, operated by INTECMAR with the participation of Puertos del Estado. Intended use of the data: Visualisation and analysis of surface currents off the Galician coast over the last five days, using the best product available at processing time.\n\nThe source catalogue states that there are no general use limitations, but also indicates that Puertos del Estado must be contacted to request permission to use the data.",
+      "datos_descripcion": "Data type: Three-dimensional grid of surface ocean-current velocities, with hourly temporal resolution and 6 km spatial resolution. Distributed as NetCDF 4.3.3 using reference system EPSG:3041. Data source: Radial velocity measurements from the Galicia HF Radar Network, operated by INTECMAR with the participation of Puertos del Estado. Intended use of the data: Visualisation and analysis of surface currents off the Galician coast, using the best product available at processing time.\n\nThe source catalogue states that there are no general use limitations, but also indicates that Puertos del Estado must be contacted to request permission to use the data.",
       "entidad_promotora": "Technological Institute for the Control of the Marine Environment of Galicia (INTECMAR)"
     },
     "intecmar_upwelling_index": {
