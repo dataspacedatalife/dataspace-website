@@ -3266,6 +3266,34 @@
       "datos_descripcion": "Data type: Particle trajectories generated with OpenDrift and aggregated beach-risk results. Data source: Simulations using oceanographic model data, MeteoGalicia winds and INTECMAR HF Radar currents for reanalysis. Intended use of the data: Drift prediction and analysis, identification of exposed coastal areas and estimation of the risk of particles reaching beaches.\n\nThe shared historical sample contains approximately 10 GB of trajectories and 1 GB of beach-level processed results. The operational service continuously generates new data.",
       "entidad_promotora": "Spanish Institute of Oceanography (IEO-CSIC)"
     },
+    "cetmar_cortegada_hydrophone": {
+      "name": "Cortegada Hydrophone — Underwater noise monitoring",
+      "dataset_name": "hidrofono_cortegada_cetmar",
+      "use_case": "Marine Technology Centre — CETMAR Foundation",
+      "provider": "CETMAR",
+      "description": "Underwater acoustic data recorded by the hydrophone installed at Cortegada to study marine noise and its main sources.",
+      "descripcion_ampliada": "This use case brings together data provided by the Cortegada hydrophone, installed on an Ocean-Meteorological Observation Network platform located by the island. The recordings enable monitoring of the underwater soundscape and identification of the main noise sources in this area of the Rías Baixas.\n\nThe monitoring forms part of CETMAR's work to improve knowledge of marine noise and support more sustainable fishing and shellfishing activities with a lower acoustic impact.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {
+        "hydrophone_recordings": {
+          "name": "hidrofono_cortegada_cetmar",
+          "description": "Recordings and associated data provided by the Cortegada hydrophone.",
+          "metadata": {
+            "data_type": "Underwater acoustic data",
+            "data_standard": "",
+            "date_added": "07-12-2024",
+            "file_format": "WAV / CSV",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": ""
+          },
+          "variables": []
+        }
+      },
+      "datos_descripcion": "Data type: Underwater acoustic recordings in WAV format and associated data in CSV format. Data source: Hydrophone installed at Cortegada and managed as part of CETMAR's marine monitoring activities. Intended use of the data: Study of the underwater soundscape, identification of noise sources and analysis of their impact on the marine environment.",
+      "entidad_promotora": "Marine Technology Centre — CETMAR Foundation"
+    },
     "depourense": {
       "name": "Publication of Telecare Data",
       "dataset_name": "-",

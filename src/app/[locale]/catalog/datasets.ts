@@ -4,6 +4,7 @@ import LogoAIDATAMED from '../../../../public/use-cases/aidatamed.png';
 import LogoBioHPC from '../../../../public/use-cases/biohpc.png';
 import LogoCESGA from '../../../../public/use-cases/cesga.png';
 import LogoClimatocLab from '../../../../public/use-cases/climatoclab.png';
+import LogoCienciasMarinasGalicia from '../../../../public/use-cases/Logo_CienciasMarinasGalicia.png';
 import LogoCognitus from '../../../../public/use-cases/cognitus.png';
 import LogoConsuvet from '../../../../public/use-cases/consuvet.png';
 import LogoDatiacare from '../../../../public/use-cases/datiacare.png';
@@ -123,6 +124,12 @@ export const useCasesData = [
     id: 'ieo_carabelas_drift_risk',
     imagen: LogoIIM,
     link: 'https://carabelas.dataspace.cesga.es/',
+    categories: ['environmental'] as HealthCategory[],
+  },
+  {
+    id: 'cetmar_cortegada_hydrophone',
+    imagen: LogoCienciasMarinasGalicia,
+    link: 'https://cetmar.org/proyecto-silencio/?lang=es',
     categories: ['environmental'] as HealthCategory[],
   },
   {

@@ -3266,6 +3266,34 @@
       "datos_descripcion": "Tipo de datos: Traxectorias de partículas xeradas mediante OpenDrift e resultados agregados de risco por praia. Fonte dos datos: Simulacións con datos oceanográficos de modelos, ventos de MeteoGalicia e correntes do Radar HF de INTECMAR para reanálise. Uso previsto dos datos: Predición e análise da deriva, identificación de zonas costeiras expostas e estimación do risco de chegada de partículas ás praias.\n\nA mostra histórica compartida comprende aproximadamente 10 GB de traxectorias e 1 GB de resultados procesados por praia. O servizo operacional xera novos datos de forma continua.",
       "entidad_promotora": "Instituto Español de Oceanografía (IEO-CSIC)"
     },
+    "cetmar_cortegada_hydrophone": {
+      "name": "Hidrófono de Cortegada — Monitorización do ruído submarino",
+      "dataset_name": "hidrofono_cortegada_cetmar",
+      "use_case": "Centro Tecnolóxico do Mar — Fundación CETMAR",
+      "provider": "CETMAR",
+      "description": "Datos acústicos submarinos rexistrados polo hidrófono instalado en Cortegada para estudar o ruído mariño e as súas principais fontes.",
+      "descripcion_ampliada": "O caso de uso reúne os datos proporcionados polo hidrófono de Cortegada, instalado nunha plataforma da Rede de Observación Océano-Meteorolóxica situada na illa. Os rexistros permiten monitorizar a paisaxe acústica submarina e identificar as principais fontes de ruído nesta zona das Rías Baixas.\n\nA monitorización enmárcase no traballo de CETMAR para mellorar o coñecemento do ruído mariño e apoiar o desenvolvemento dunha actividade pesqueira e marisqueira máis sostible e cun menor impacto acústico.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {
+        "hydrophone_recordings": {
+          "name": "hidrofono_cortegada_cetmar",
+          "description": "Rexistros e datos asociados proporcionados polo hidrófono de Cortegada.",
+          "metadata": {
+            "data_type": "Datos acústicos submarinos",
+            "data_standard": "",
+            "date_added": "07-12-2024",
+            "file_format": "WAV / CSV",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": ""
+          },
+          "variables": []
+        }
+      },
+      "datos_descripcion": "Tipo de datos: Gravacións acústicas submarinas en formato WAV e datos asociados en formato CSV. Fonte dos datos: Hidrófono instalado en Cortegada e xestionado no marco das actividades de monitorización mariña de CETMAR. Uso previsto dos datos: Estudo da paisaxe acústica submarina, identificación de fontes de ruído e análise do seu impacto no medio mariño.",
+      "entidad_promotora": "Centro Tecnolóxico do Mar — Fundación CETMAR"
+    },
     "depourense": {
       "name": "Publicación de datos de teleasistencia",
       "dataset_name": "-",
