@@ -4,7 +4,6 @@ import LogoAIDATAMED from '../../../../public/use-cases/aidatamed.png';
 import LogoBioHPC from '../../../../public/use-cases/biohpc.png';
 import LogoCESGA from '../../../../public/use-cases/cesga.png';
 import LogoClimatocLab from '../../../../public/use-cases/climatoclab.png';
-import LogoCienciasMarinasGalicia from '../../../../public/use-cases/Logo_CienciasMarinasGalicia.png';
 import LogoCognitus from '../../../../public/use-cases/cognitus.png';
 import LogoConsuvet from '../../../../public/use-cases/consuvet.png';
 import LogoDatiacare from '../../../../public/use-cases/datiacare.png';
@@ -15,7 +14,7 @@ import LogoIISGS from '../../../../public/use-cases/IISGS.png';
 import LogoInverbis from '../../../../public/use-cases/Inverbis.png';
 import Logoi4life from '../../../../public/use-cases/i4life.png';
 import LogoICIGA from '../../../../public/use-cases/iciga.png';
-import LogoIIM from '../../../../public/use-cases/iim.png';
+import LogoIEO from '../../../../public/use-cases/logo_IEO.png';
 import LogoImatia from '../../../../public/use-cases/imatia.png';
 import LogoInsati from '../../../../public/use-cases/insati.png';
 import LogoCiTIUS from '../../../../public/use-cases/Logotipo_Citius.png';
@@ -116,19 +115,19 @@ export const useCasesData = [
   },
   {
     id: 'ccmm_ieo',
-    imagen: LogoIIM,
+    imagen: LogoIEO,
     link: 'https://www.ieo.es/en/',
     categories: ['environmental'] as HealthCategory[],
   },
   {
     id: 'ieo_carabelas_drift_risk',
-    imagen: LogoIIM,
+    imagen: LogoIEO,
     link: 'https://carabelas.dataspace.cesga.es/',
     categories: ['environmental'] as HealthCategory[],
   },
   {
     id: 'cetmar_cortegada_hydrophone',
-    imagen: LogoCienciasMarinasGalicia,
+    imagen: '',
     link: 'https://cetmar.org/proyecto-silencio/?lang=es',
     categories: ['environmental'] as HealthCategory[],
   },
