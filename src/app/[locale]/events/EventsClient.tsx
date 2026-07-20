@@ -492,7 +492,7 @@ function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {
                 <div className="mt-6 flex items-center gap-3 text-sm/5 text-gray-700">
                   {t('organizer')}: {event.organizer}
                 </div>
-                <div className="mt-4">
+                <div className="mt-auto pt-4">
                   <Button
                     onClick={() => onOpen(event)}
                     className="flex items-center gap-1 text-sm/5 font-medium text-blue-600"
