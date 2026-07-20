@@ -3199,6 +3199,73 @@
       "datos_descripcion": "Tipo de datos: Series de datos oceanográficos multidisciplinares e resultados de modelos numéricos do ecosistema mariño. Fonte dos datos: Observacións sostidas do océano e modelos numéricos xerados e mantidos polo IEO-CSIC. Uso previsto dos datos: Análise de series ambientais oceanográficas; desenvolvemento de aplicacións e servizos para usuarios finais; integración con outros datasets do espazo.\n\nDatos oceanográficos dispoñibles no espazo de datos. Catálogos estándar de datos e servizos integrados no ecosistema OneHealth DataSpace.",
       "entidad_promotora": "Instituto Español de Oceanografía (IEO-CSIC)"
     },
+    "ieo_carabelas_drift_risk": {
+      "name": "Cálculo de probabilidade de aparición de carabelas portuguesas nas praias de Galicia",
+      "dataset_name": "physalia_salida_raw / physalia_riesgo",
+      "use_case": "Instituto Español de Oceanografía (IEO-CSIC)",
+      "provider": "Instituto Español de Oceanografía (IEO-CSIC)",
+      "description": "Sistema operacional que simula a deriva de carabelas portuguesas e calcula a probabilidade de que cheguen ás praias de Galicia.",
+      "descripcion_ampliada": "O caso de uso executa diariamente simulacións de deriva mediante OpenDrift con miles de partículas virtuais que representan posibles carabelas portuguesas fronte á costa galega. O sistema combina correntes oceánicas e campos de vento, xera traxectorias individuais e procesa posteriormente os resultados para estimar a probabilidade de chegada a cada praia.\n\nAs simulacións utilizan correntes de Copernicus Marine e do Radar HF de INTECMAR, xunto con datos de vento de MeteoGalicia. O nivel de aviso de cada praia calcúlase como a porcentaxe de partículas que chegan ás súas proximidades no peor escenario dos catro días seguintes. Trátase dunha estimación probabilística, non dunha certeza. O proceso integra simulación, postprocesamento, almacenamento en PostgreSQL e visualización mediante unha aplicación web e Grafana.",
+      "volumen": "Aproximadamente 11 GB na mostra histórica",
+      "n_ficheros": "2 ficheiros CSV históricos; xeración operacional continua",
+      "subsets": {
+        "raw_drift_output": {
+          "name": "physalia_salida_raw",
+          "description": "Traxectorias completas das partículas simuladas por OpenDrift, desde o inicio de cada simulación ata a súa finalización.",
+          "metadata": {
+            "data_type": "Datos derivados de simulación",
+            "data_standard": "",
+            "date_added": "",
+            "file_format": "CSV / PostgreSQL",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": "Xuño-decembro de 2025 na mostra histórica"
+          },
+          "variables": [
+            { "name": "id", "units": "-", "data_description": "Identificador do rexistro na base de datos.", "data_type": "-" },
+            { "name": "id_trayectoria", "units": "-", "data_description": "Identificador da traxectoria completa dunha partícula.", "data_type": "-" },
+            { "name": "longitud", "units": "-", "data_description": "Lonxitude xeográfica da partícula.", "data_type": "-" },
+            { "name": "latitud", "units": "-", "data_description": "Latitude xeográfica da partícula.", "data_type": "-" },
+            { "name": "status", "units": "-", "data_description": "Estado da partícula: activa, chegada á costa ou fóra da simulación.", "data_type": "-" },
+            { "name": "elev", "units": "-", "data_description": "Elevación ou profundidade asociada á partícula; significado exacto pendente de confirmar.", "data_type": "-" },
+            { "name": "t", "units": "h", "data_description": "Tempo transcorrido desde o inicio da simulación.", "data_type": "-" },
+            { "name": "fc_particula", "units": "-", "data_description": "Data asociada á partícula.", "data_type": "-" },
+            { "name": "modelo", "units": "-", "data_description": "Modelo utilizado na simulación.", "data_type": "-" },
+            { "name": "fc_ini", "units": "-", "data_description": "Data de inicio da simulación.", "data_type": "-" },
+            { "name": "tipo_simulacion", "units": "-", "data_description": "Tipo de simulación: predición con modelos ou reanálise con Radar HF.", "data_type": "-" },
+            { "name": "geom", "units": "-", "data_description": "Representación xeográfica da partícula.", "data_type": "-" },
+            { "name": "fc_ejecucion", "units": "-", "data_description": "Data de execución da simulación.", "data_type": "-" },
+            { "name": "fecha_hora_part", "units": "-", "data_description": "Data e hora correspondentes ao estado da partícula.", "data_type": "-" }
+          ]
+        },
+        "beach_risk": {
+          "name": "physalia_riesgo",
+          "description": "Resultados agregados por praia obtidos mediante o postprocesamento das traxectorias de OpenDrift. A porcentaxe de risco representa as partículas que chegan ás proximidades de cada praia no peor escenario dos catro días seguintes.",
+          "metadata": {
+            "data_type": "Datos derivados e agregados",
+            "data_standard": "",
+            "date_added": "",
+            "file_format": "CSV / PostgreSQL",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": "Xuño-decembro de 2025 na mostra histórica"
+          },
+          "variables": [
+            { "name": "model", "units": "-", "data_description": "Modelo utilizado.", "data_type": "-" },
+            { "name": "time_index", "units": "-", "data_description": "Tempo transcorrido desde o inicio da simulación.", "data_type": "-" },
+            { "name": "datetime", "units": "-", "data_description": "Data e hora da predición.", "data_type": "-" },
+            { "name": "isobath", "units": "-", "data_description": "Isóbata desde a que se lanzaron as partículas.", "data_type": "-" },
+            { "name": "area", "units": "-", "data_description": "Nome da praia ou área costeira.", "data_type": "-" },
+            { "name": "active_in_area", "units": "-", "data_description": "Número de partículas activas nas proximidades da praia.", "data_type": "-" },
+            { "name": "stranded_in_area", "units": "-", "data_description": "Número de partículas que chegaron á praia.", "data_type": "-" },
+            { "name": "risk_percent", "units": "%", "data_description": "Porcentaxe de partículas lanzadas que chegaron á praia.", "data_type": "-" },
+            { "name": "fc_ejecucion", "units": "-", "data_description": "Data de execución da simulación.", "data_type": "-" }
+          ]
+        }
+      },
+      "datos_descripcion": "Tipo de datos: Traxectorias de partículas xeradas mediante OpenDrift e resultados agregados de risco por praia. Fonte dos datos: Simulacións con datos oceanográficos de modelos, ventos de MeteoGalicia e correntes do Radar HF de INTECMAR para reanálise. Uso previsto dos datos: Predición e análise da deriva, identificación de zonas costeiras expostas e estimación do risco de chegada de partículas ás praias.\n\nA mostra histórica compartida comprende aproximadamente 10 GB de traxectorias e 1 GB de resultados procesados por praia. O servizo operacional xera novos datos de forma continua.",
+      "entidad_promotora": "Instituto Español de Oceanografía (IEO-CSIC), co apoio de CESGA"
+    },
     "depourense": {
       "name": "Publicación de datos de teleasistencia",
       "dataset_name": "-",

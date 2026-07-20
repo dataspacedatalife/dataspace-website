@@ -3199,6 +3199,73 @@
       "datos_descripcion": "Data type: Multidisciplinary oceanographic data series and numerical model results of the marine ecosystem. Data source: Sustained ocean observations and numerical models generated and maintained by IEO-CSIC. Intended use of the data: Analysis of oceanographic environmental time series; development of applications and services for end users; integration with other datasets in the data space.\n\nOceanographic data available in the data space. Standard data and service catalogs integrated into the OneHealth DataSpace ecosystem.",
       "entidad_promotora": "Instituto Español de Oceanografía (IEO-CSIC)"
     },
+    "ieo_carabelas_drift_risk": {
+      "name": "Calculation of the probability of Portuguese man o' war appearing on Galician beaches",
+      "dataset_name": "physalia_salida_raw / physalia_riesgo",
+      "use_case": "Spanish Institute of Oceanography (IEO-CSIC)",
+      "provider": "Spanish Institute of Oceanography (IEO-CSIC)",
+      "description": "Operational system that simulates the drift of Portuguese man o' war and calculates the probability of their arrival at beaches in Galicia.",
+      "descripcion_ampliada": "This use case runs daily drift simulations with OpenDrift using thousands of virtual particles that represent possible Portuguese man o' war off the Galician coast. The system combines ocean currents and wind fields, generates individual trajectories and post-processes the results to estimate the probability of arrival at each beach.\n\nThe simulations use currents from Copernicus Marine and INTECMAR's HF Radar, together with wind data from MeteoGalicia. The alert level for each beach is calculated as the percentage of particles reaching its vicinity in the worst-case scenario over the following four days. It is a probabilistic estimate, not a certainty. The process integrates simulation, post-processing, PostgreSQL storage and visualisation through a web application and Grafana.",
+      "volumen": "Approximately 11 GB in the historical sample",
+      "n_ficheros": "2 historical CSV files; continuous operational generation",
+      "subsets": {
+        "raw_drift_output": {
+          "name": "physalia_salida_raw",
+          "description": "Complete trajectories of particles simulated by OpenDrift, from the start of each simulation until completion.",
+          "metadata": {
+            "data_type": "Simulation-derived data",
+            "data_standard": "",
+            "date_added": "",
+            "file_format": "CSV / PostgreSQL",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": "June-December 2025 in the historical sample"
+          },
+          "variables": [
+            { "name": "id", "units": "-", "data_description": "Database record identifier.", "data_type": "-" },
+            { "name": "id_trayectoria", "units": "-", "data_description": "Identifier of a particle's complete trajectory.", "data_type": "-" },
+            { "name": "longitud", "units": "-", "data_description": "Geographic longitude of the particle.", "data_type": "-" },
+            { "name": "latitud", "units": "-", "data_description": "Geographic latitude of the particle.", "data_type": "-" },
+            { "name": "status", "units": "-", "data_description": "Particle status: active, beached or outside the simulation.", "data_type": "-" },
+            { "name": "elev", "units": "-", "data_description": "Elevation or depth associated with the particle; exact meaning pending confirmation.", "data_type": "-" },
+            { "name": "t", "units": "h", "data_description": "Time elapsed since the start of the simulation.", "data_type": "-" },
+            { "name": "fc_particula", "units": "-", "data_description": "Date associated with the particle.", "data_type": "-" },
+            { "name": "modelo", "units": "-", "data_description": "Model used in the simulation.", "data_type": "-" },
+            { "name": "fc_ini", "units": "-", "data_description": "Simulation start date.", "data_type": "-" },
+            { "name": "tipo_simulacion", "units": "-", "data_description": "Simulation type: model-based forecast or HF Radar reanalysis.", "data_type": "-" },
+            { "name": "geom", "units": "-", "data_description": "Geographic representation of the particle.", "data_type": "-" },
+            { "name": "fc_ejecucion", "units": "-", "data_description": "Simulation execution date.", "data_type": "-" },
+            { "name": "fecha_hora_part", "units": "-", "data_description": "Date and time corresponding to the particle state.", "data_type": "-" }
+          ]
+        },
+        "beach_risk": {
+          "name": "physalia_riesgo",
+          "description": "Beach-level aggregated results obtained by post-processing the OpenDrift trajectories. The risk percentage represents the particles reaching the vicinity of each beach in the worst-case scenario over the following four days.",
+          "metadata": {
+            "data_type": "Derived and aggregated data",
+            "data_standard": "",
+            "date_added": "",
+            "file_format": "CSV / PostgreSQL",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": "June-December 2025 in the historical sample"
+          },
+          "variables": [
+            { "name": "model", "units": "-", "data_description": "Model used.", "data_type": "-" },
+            { "name": "time_index", "units": "-", "data_description": "Time elapsed since the start of the simulation.", "data_type": "-" },
+            { "name": "datetime", "units": "-", "data_description": "Forecast date and time.", "data_type": "-" },
+            { "name": "isobath", "units": "-", "data_description": "Isobath from which the particles were released.", "data_type": "-" },
+            { "name": "area", "units": "-", "data_description": "Name of the beach or coastal area.", "data_type": "-" },
+            { "name": "active_in_area", "units": "-", "data_description": "Number of active particles near the beach.", "data_type": "-" },
+            { "name": "stranded_in_area", "units": "-", "data_description": "Number of particles that reached the beach.", "data_type": "-" },
+            { "name": "risk_percent", "units": "%", "data_description": "Percentage of released particles that reached the beach.", "data_type": "-" },
+            { "name": "fc_ejecucion", "units": "-", "data_description": "Simulation execution date.", "data_type": "-" }
+          ]
+        }
+      },
+      "datos_descripcion": "Data type: Particle trajectories generated with OpenDrift and aggregated beach-risk results. Data source: Simulations using oceanographic model data, MeteoGalicia winds and INTECMAR HF Radar currents for reanalysis. Intended use of the data: Drift prediction and analysis, identification of exposed coastal areas and estimation of the risk of particles reaching beaches.\n\nThe shared historical sample contains approximately 10 GB of trajectories and 1 GB of beach-level processed results. The operational service continuously generates new data.",
+      "entidad_promotora": "Spanish Institute of Oceanography (IEO-CSIC), with support from CESGA"
+    },
     "depourense": {
       "name": "Publication of Telecare Data",
       "dataset_name": "-",

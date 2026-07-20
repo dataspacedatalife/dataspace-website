@@ -120,6 +120,12 @@ export const useCasesData = [
     categories: ['environmental'] as HealthCategory[],
   },
   {
+    id: 'ieo_carabelas_drift_risk',
+    imagen: LogoIIM,
+    link: 'https://carabelas.dataspace.cesga.es/',
+    categories: ['environmental'] as HealthCategory[],
+  },
+  {
     id: 'cd_ligand_ml',
     imagen: LogoMDUSE,
     link: 'https://mduse.com/en/',
