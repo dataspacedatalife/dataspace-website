@@ -3264,7 +3264,7 @@
         }
       },
       "datos_descripcion": "Tipo de datos: Traxectorias de partículas xeradas mediante OpenDrift e resultados agregados de risco por praia. Fonte dos datos: Simulacións con datos oceanográficos de modelos, ventos de MeteoGalicia e correntes do Radar HF de INTECMAR para reanálise. Uso previsto dos datos: Predición e análise da deriva, identificación de zonas costeiras expostas e estimación do risco de chegada de partículas ás praias.\n\nA mostra histórica compartida comprende aproximadamente 10 GB de traxectorias e 1 GB de resultados procesados por praia. O servizo operacional xera novos datos de forma continua.",
-      "entidad_promotora": "Instituto Español de Oceanografía (IEO-CSIC), co apoio de CESGA"
+      "entidad_promotora": "Instituto Español de Oceanografía (IEO-CSIC)"
     },
     "depourense": {
       "name": "Publicación de datos de teleasistencia",
