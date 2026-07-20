@@ -37,6 +37,7 @@ import LogoWirelessGalicia from '../../../../public/use-cases/wireless_galicia.p
 const LogoDepoOurense = '/use-cases/depoourense.svg';
 const LogoGift = '/use-cases/logo-gift.svg';
 const LogoIntecmar = '/use-cases/intecmar.png';
+const LogoCetmar = '/use-cases/cetmar.svg';
 
 export type HealthCategory = 'human' | 'animal' | 'environmental';
 
@@ -127,7 +128,7 @@ export const useCasesData = [
   },
   {
     id: 'cetmar_cortegada_hydrophone',
-    imagen: '',
+    imagen: LogoCetmar,
     link: 'https://cetmar.org/proyecto-silencio/?lang=es',
     categories: ['environmental'] as HealthCategory[],
   },
