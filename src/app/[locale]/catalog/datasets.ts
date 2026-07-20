@@ -18,7 +18,7 @@ import LogoSimbios from '../../../../public/use-cases/simbios.png';
 import LogoAgrolinera from '../../../../public/use-cases/agrolinera.png';
 import LogoOTTO from '../../../../public/use-cases/otto.png';
 import LogoCiMUS from '../../../../public/use-cases/logoCIMUS.png';
-import LogoIIM from '../../../../public/use-cases/iim.png';
+import LogoIEO from '../../../../public/use-cases/ieo.png';
 import LogoClimatocLab from '../../../../public/use-cases/climatoclab.png';
 import LogoMeteogalicia from '../../../../public/use-cases/meteogalicia.png';
 import LogoNextHealth from '../../../../public/use-cases/nexthealth.webp';
@@ -113,7 +113,7 @@ export const useCasesData = [
   },
   {
     id: 'ccmm_ieo',
-    imagen: LogoIIM,
+    imagen: LogoIEO,
     link: 'https://www.ieo.es/en/',
     categories: ['environmental'] as HealthCategory[],
   },
