@@ -609,7 +609,7 @@
       "entidad_promotora": "Grupo de Tecnoloxías da Información, atlanTTic Research Center, UVigo",
       "provider": "Grupo de Tecnoloxías da Información, atlanTTic Research Center, UVigo",
       "description": "CeliaSpace consiste en un caso de uso para la explotación de datos anonimizados de diálogos generados entre personas mayores y un asistente IA con el objetivo de entrenar modelos que permitan realizar evaluaciones de salud de forma automática a partir de conversaciones. En OneHealth DataSpace se publican datos de interacciones entre usuarios y el asistente, incluyendo evaluaciones cognitivas y de desempeño realizadas durante las conversaciones.",
-      "volumen": "-",
+      "volumen": "67 usuarios, 21.608 interacciones y 2.526 evaluaciones",
       "n_ficheros": "3",
       "subsets": {
         "users": {
