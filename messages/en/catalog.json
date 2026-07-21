@@ -2577,7 +2577,7 @@
       "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "description": "Extension of the physical factor contribution database published by Mayer and Wirth (2025), expanding its temporal coverage from 2010-2022 to 1980-2025. The result, publicly accessible NetCDF files, will constitute a reference resource for the international scientific community.",
-      "descripcion_ampliada": "Extension of the physical factor contribution database published by Mayer and Wirth (2025), expanding its temporal coverage from 2010-2022 to 1980-2025. The result, publicly accessible NetCDF files, will constitute a reference resource for the international scientific community.\n\nThe existing database only covers 2010-2022, which limits climatological analysis and prevents the study of extreme events outside that temporal range.",
+      "descripcion_ampliada": "The existing database only covers the 2010-2022 period, which limits climatological analysis and prevents the study of extreme events outside that temporal range.\n\nThe use case will therefore extend the physical factor contribution database published by Mayer and Wirth (2025), expanding its temporal coverage to 1980-2025. The resulting publicly accessible NetCDF files will constitute a reference resource for the international scientific community.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
