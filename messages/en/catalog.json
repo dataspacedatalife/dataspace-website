@@ -1276,7 +1276,7 @@
       "n_ficheros": "-",
       "subsets": {
         "meteogalicia_cies": {
-          "name": "Temperatura superficial de la 'Boia de Cíes'",
+          "name": "Surface Temperature from the Cíes Buoy",
           "description": "Provided by MeteoGalicia, this dataset contains surface-temperature data from the 'Boia de Cíes' station. The data represent surface-temperature measurements at this specific location.",
           "metadata": {
             "data_type": "",
@@ -2712,7 +2712,7 @@
       "n_ficheros": "-",
       "subsets": {
         "ieo_roms": {
-          "name": "Datos del modelo ROMS de IEO",
+          "name": "IEO ROMS Model Data",
           "description": "Provided by the Spanish Institute of Oceanography (IEO), this dataset contains ROMS model data at a spatial resolution of 4 km. It provides detailed modelled information on oceanographic parameters in a specific region.",
           "metadata": {
             "data_type": "",
@@ -2787,7 +2787,7 @@
           ]
         },
         "ieo_lura": {
-          "name": "Datos de la plataforma móvil Lura",
+          "name": "Lura Mobile Platform Data",
           "description": "Provided by the Spanish Institute of Oceanography (IEO), this dataset contains data collected by the Lura mobile platform. It provides detailed oceanographic measurements gathered during platform operations to support analysis of ocean dynamics across locations and times.",
           "metadata": {
             "data_type": "",
@@ -2886,7 +2886,7 @@
           ]
         },
         "ieo_navaz": {
-          "name": "Datos de la plataforma móvil Navaz",
+          "name": "Navaz Mobile Platform Data",
           "description": "Provided by the Spanish Institute of Oceanography (IEO), this dataset contains data collected by the Navaz mobile platform. It provides detailed oceanographic measurements gathered during platform operations to support analysis of ocean dynamics across locations and times.",
           "metadata": {
             "data_type": "",
@@ -3066,7 +3066,7 @@
           ]
         },
         "ieo_capturas": {
-          "name": "Datos de abundancias y distribución de especies.",
+          "name": "Species Abundance and Distribution Data",
           "description": "Provided by the Spanish Institute of Oceanography (IEO) in collaboration with PESCASOST, this dataset contains species abundance and distribution data from the IEO DEMERSALES surveys. It reports the presence and abundance of species in the areas covered by the surveys.",
           "metadata": {
             "data_type": "",
