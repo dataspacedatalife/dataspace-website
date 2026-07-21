@@ -486,7 +486,7 @@
       "dataset_name": "dataset_biomexplore",
       "use_case": "Grupo de Investigación en Microbioloxía e Infectoloxía, IIS Galicia Sur",
       "provider": "Grupo de Investigación en Microbioloxía e Infectoloxía, IIS Galicia Sur (IISGS)",
-      "description": "O proxecto BiomeXplore baséase no desenvolvemento do observatorio dun novo índice de benestar da microbiota, o IpbMI, calculado a partir dunha predición de microbiota intestinal adaptada a unha poboación concreta e visualizado de forma agregada.",
+      "description": "O proxecto BiomeXplore baséase no desenvolvemento do observatorio dun novo índice de benestar da microbiota, o IPbMI, calculado a partir dunha predición de microbiota intestinal adaptada a unha poboación concreta e visualizado de forma agregada.",
       "volumen": "250 - 1000 TB",
       "n_ficheros": "100000",
       "subsets": {
@@ -506,7 +506,7 @@
         }
       },
       "entidad_promotora": "Grupo de Investigación en Microbiología e Infectología, IIS Galicia Sur (IISGS)",
-      "descripcion_ampliada": "De forma innovadora, aos datos do índice de benestar da microbiota intestinal engadiranse capas adicionais de datos do exposoma. O proxecto considera a aplicación de IA para procesar un volume masivo de información de datos de MI e de exposicións ambientais. Estas técnicas demostraron ser útiles para o procesamento de ambos os tipos de datos, pero é importante destacar que estas técnicas de IA terán que ser avaliadas nesta aplicación en concreto.\n\nEsta visualización agregada a nivel poboacional do IPbMI permitirá identificar zonas de actuación sanitaria preventiva desde unha perspectiva One Health, sen pretender extraer conclusións a nivel individual. Poderíase realizar un diagnóstico precoz e apoiar a toma de decisións no ámbito da saúde segundo a distribución xeográfica de dito índice en Galicia.\n\nTamén apoiaría a localización de actuacións comerciais prioritarias (pre/probióticos, complementos nutricionais, actividade física, alimentación, etc). Volver a calcular o índice nunha poboación tras unha intervención concreta permitiría avaliar o impacto en saúde de dita intervención."
+      "descripcion_ampliada": "O proxecto considera a aplicación de IA para procesar un volume masivo de información de datos de microbiota intestinal e de exposicións ambientais. Estas técnicas demostraron ser útiles para o procesamento de ambos os tipos de datos, pero terán que ser avaliadas nesta aplicación concreta. De forma innovadora, aos datos do índice de benestar da microbiota intestinal engadiranse capas adicionais de datos do exposoma.\n\nEsta visualización agregada a nivel poboacional do IPbMI permitirá identificar zonas de actuación sanitaria preventiva desde unha perspectiva One Health, sen pretender extraer conclusións a nivel individual. Poderíase realizar un diagnóstico precoz e apoiar a toma de decisións no ámbito da saúde segundo a distribución xeográfica de dito índice en Galicia.\n\nTamén apoiaría a localización de actuacións comerciais prioritarias (pre/probióticos, complementos nutricionais, actividade física, alimentación, etc). Volver a calcular o índice nunha poboación tras unha intervención concreta permitiría avaliar o impacto en saúde de dita intervención."
     },
     "salusbench": {
       "name": "Salusbench — Minería de procesos e análise avanzada para optimizar a xestión hospitalaria",

@@ -486,7 +486,7 @@
       "dataset_name": "dataset_biomexplore",
       "use_case": "Research Group in Microbiology and Infectiology, IIS Galicia Sur",
       "provider": "Research Group in Microbiology and Infectiology, IIS Galicia Sur (IISGS)",
-      "description": "The BiomeXplore project is based on the development of an observatory for a new microbiota well-being index, the IpbMI, calculated from a gut microbiota prediction adapted to a specific population and visualized in an aggregated form.",
+      "description": "The BiomeXplore project is based on the development of an observatory for a new microbiota well-being index, the IPbMI, calculated from a gut microbiota prediction adapted to a specific population and visualized in an aggregated form.",
       "volumen": "250 - 1000 TB",
       "n_ficheros": "100000",
       "subsets": {
@@ -506,7 +506,7 @@
         }
       },
       "entidad_promotora": "Grupo de Investigación en Microbiología e Infectología, IIS Galicia Sur (IISGS)",
-      "descripcion_ampliada": "In an innovative way, additional layers of exposome data will be added to the gut microbiota well-being index data. The project considers the application of AI to process a massive volume of gut microbiota data and environmental exposure data. These techniques have proven useful for processing both types of data, but it is important to highlight that these AI techniques will need to be evaluated in this specific application.\n\nThis aggregated population-level visualization of the IPbMI will allow identifying areas for preventive healthcare action from a One Health perspective, without aiming to draw individual-level conclusions. Early diagnosis could be performed and decision-making in the health domain could be supported according to the geographic distribution of this index in Galicia.\n\nIt would also support the identification of priority commercial interventions (pre/probiotics, nutritional supplements, physical activity, nutrition, etc.). Recalculating the index in a population after a specific intervention would allow assessing the health impact of that intervention."
+      "descripcion_ampliada": "The project considers the application of AI to process a massive volume of gut microbiota data and environmental exposure data. These techniques have proven useful for processing both types of data, but they will need to be evaluated in this specific application. In an innovative approach, additional layers of exposome data will be added to the gut microbiota well-being index data.\n\nThis aggregated population-level visualization of the IPbMI will allow identifying areas for preventive healthcare action from a One Health perspective, without aiming to draw individual-level conclusions. Early diagnosis could be performed and decision-making in the health domain could be supported according to the geographic distribution of this index in Galicia.\n\nIt would also support the identification of priority commercial interventions (pre/probiotics, nutritional supplements, physical activity, nutrition, etc.). Recalculating the index in a population after a specific intervention would allow assessing the health impact of that intervention."
     },
     "salusbench": {
       "name": "Salusbench — Process Mining and Advanced Analytics to Optimize Hospital Management",
