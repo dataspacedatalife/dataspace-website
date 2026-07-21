@@ -1141,11 +1141,11 @@
       "use_case": "Grupo Climatoc-Lab, CIDE (CSIC-UV-GVA)",
       "provider": "Climatoc-Lab, CIDE (CSIC-UV-GVA)",
       "description": "Desenvolvemento de modelos de IA enfocados no infilling de series de vento incompletas e na identificación automática de brisas. Búscase completar series climáticas con ocos e xerar un dataset espaciotemporal de brisas en alta resolución.",
-      "descripcion_ampliada": "Desenvolvemento de modelos de IA enfocados no infilling de series de vento incompletas e na identificación automática de brisas. Búscase completar series climáticas con ocos e xerar un dataset espaciotemporal de brisas en alta resolución.\n\nAs series climáticas de vento presentan ocos temporais que dificultan a análise de tendencias e o estudo do impacto do cambio climático nos réximes de brisa.",
+      "descripcion_ampliada": "As series climáticas de vento presentan ocos temporais que dificultan a análise de tendencias e o estudo do impacto do cambio climático nos réximes de brisa.\n\nPor iso, o caso de uso desenvolverá modelos de IA enfocados no infilling de series de vento incompletas e na identificación automática de brisas. O obxectivo é completar as series climáticas con ocos e xerar un dataset espaciotemporal de brisas en alta resolución.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Tipo de datos: Series climáticas completas, modelos de IA para identificar brisas, infilling espacial de días de brisa. Fonte dos datos: Datos de estacións meteorolóxicas, ERA5-Land, CERRA. Uso previsto dos datos: Estudo da variación de réximes de brisa e o impacto do cambio climático. Adestramento e validación de modelos de IA.\n\nSeries climáticas completas sen ocos. Dataset espaciotemporal de brisas en alta resolución.\n\nSeries climáticas completas sen ocos. Dataset espaciotemporal de brisas en alta resolución.",
+      "datos_descripcion": "Tipo de datos: Series climáticas completas, modelos de IA para identificar brisas, infilling espacial de días de brisa. Fonte dos datos: Datos de estacións meteorolóxicas, ERA5-Land, CERRA. Uso previsto dos datos: Estudo da variación de réximes de brisa e o impacto do cambio climático. Adestramento e validación de modelos de IA.\n\nSeries climáticas completas sen ocos. Dataset espaciotemporal de brisas en alta resolución.",
       "entidad_promotora": "Climatoc-Lab, CIDE (CSIC-UV-GVA)"
     },
     "agentes_contraste_rmi": {

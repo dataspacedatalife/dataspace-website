@@ -1141,11 +1141,11 @@
       "use_case": "Climatoc-Lab Group, CIDE (CSIC-UV-GVA)",
       "provider": "Climatoc-Lab, CIDE (CSIC-UV-GVA)",
       "description": "Development of AI models focused on the infilling of incomplete wind series and on the automatic identification of breezes. The aim is to complete climate series with gaps and generate a high-resolution spatiotemporal breeze dataset.",
-      "descripcion_ampliada": "Development of AI models focused on the infilling of incomplete wind series and on the automatic identification of breezes. The aim is to complete climate series with gaps and generate a high-resolution spatiotemporal breeze dataset.\n\nWind climate series present temporal gaps that hinder trend analysis and the study of the impact of climate change on breeze regimes.",
+      "descripcion_ampliada": "Wind climate series contain temporal gaps that hinder trend analysis and the study of the impact of climate change on breeze regimes.\n\nThe use case will therefore develop AI models focused on filling gaps in incomplete wind series and automatically identifying breezes. The aim is to complete climate series with gaps and generate a high-resolution spatiotemporal breeze dataset.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Data type: Complete climatic series, AI models for identifying sea breezes, spatial infilling of sea breeze days. Data source: Data from meteorological stations, ERA5-Land, CERRA. Intended use of the data: Study of the variation of sea breeze regimes and the impact of climate change. Training and validation of AI models.\n\nComplete climatic series without gaps. High-resolution spatiotemporal sea breeze dataset.\n\nComplete climatic series without gaps. High-resolution spatiotemporal sea breeze dataset.",
+      "datos_descripcion": "Data type: Complete climatic series, AI models for identifying sea breezes, spatial infilling of sea breeze days. Data source: Data from meteorological stations, ERA5-Land, CERRA. Intended use of the data: Study of the variation of sea breeze regimes and the impact of climate change. Training and validation of AI models.\n\nComplete climatic series without gaps. High-resolution spatiotemporal sea breeze dataset.",
       "entidad_promotora": "Climatoc-Lab, CIDE (CSIC-UV-GVA)"
     },
     "agentes_contraste_rmi": {
