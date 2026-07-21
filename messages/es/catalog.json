@@ -2538,7 +2538,7 @@
       "use_case": "CIDE (CSIC-UV-GVA)",
       "provider": "CIDE (CSIC-UV-GVA)",
       "description": "Desarrollo de modelos de Deep Learning para la predicción horaria de variables meteorológicas críticas en España mediante técnicas de downscaling y super-resolución, permitiendo mapas predictivos con resolución de hasta 1 km x 1 km y horizonte de 24-72 horas.",
-      "descripcion_ampliada": "Desarrollo de modelos de Deep Learning para la predicción horaria de variables meteorológicas críticas en España mediante técnicas de downscaling y super-resolución, permitiendo mapas predictivos con resolución de hasta 1 km x 1 km y horizonte de 24-72 horas.\n\nLos modelos NWP tienen resolución limitada para aplicaciones de gestión de riesgos climáticos y energías renovables. Se necesitan técnicas de downscaling basadas en IA.",
+      "descripcion_ampliada": "Los modelos NWP tienen una resolución limitada para aplicaciones de gestión de riesgos climáticos y energías renovables, por lo que se necesitan técnicas de downscaling basadas en IA.\n\nEl caso de uso permitirá desarrollar modelos de Deep Learning para la predicción horaria de variables meteorológicas críticas en España mediante técnicas de downscaling y super-resolución. Estos modelos generarán mapas predictivos con una resolución de hasta 1 km x 1 km y un horizonte de 24-72 horas.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
