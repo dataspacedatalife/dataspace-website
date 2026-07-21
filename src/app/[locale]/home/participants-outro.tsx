@@ -22,7 +22,7 @@ const OUTRO_LOGOS: { file: string; name: string }[] = [
   { file: 'meteogalicia.png', name: 'MeteoGalicia' },
   { file: 'Logotipo_Citius.png', name: 'CiTIUS' },
   { file: 'logoCIMUS.png', name: 'CiMUS' },
-  { file: 'iim.png', name: 'IIM-CSIC' },
+  { file: 'ieo.png', name: 'IEO' },
   { file: 'Inverbis.png', name: 'Inverbis' },
   { file: 'imatia.png', name: 'Imatia' },
   { file: 'trueworld.png', name: 'Trueworld' },

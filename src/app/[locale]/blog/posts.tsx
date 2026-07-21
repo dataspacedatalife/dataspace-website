@@ -81,6 +81,7 @@ export interface Post {
   description: (React.ReactElement | string | TextNode)[];
   cesgalink?: string;
   featured?: boolean;
+  published?: boolean;
 }
 
 export const blogPosts: Record<Locale, Post[]> = {
@@ -1145,6 +1146,7 @@ export const blogPosts: Record<Locale, Post[]> = {
           content: 'Más que datos. Máis ca datos. More than data.',
         },
       ],
+      published: false,
     },
   ],
   en: [
@@ -2191,6 +2193,7 @@ export const blogPosts: Record<Locale, Post[]> = {
           content: 'Más que datos. Máis ca datos. More than data.',
         },
       ],
+      published: false,
     },
 
   ],
@@ -3285,6 +3288,7 @@ export const blogPosts: Record<Locale, Post[]> = {
           content: 'Más que datos. Máis ca datos. More than data.',
         },
       ],
+      published: false,
     },
 
   ],

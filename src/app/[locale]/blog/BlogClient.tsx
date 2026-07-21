@@ -23,7 +23,9 @@ const postsPerPage = 5;
 
 export function BlogClient({ locale }: BlogClientProps) {
   const t = useTranslations('blog');
-  const posts = blogPosts[locale] || [];
+  const posts = (blogPosts[locale] || []).filter(
+    (post) => post.published !== false,
+  );
 
   const [page, setPage] = usePage();
 

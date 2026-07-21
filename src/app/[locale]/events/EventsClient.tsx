@@ -73,6 +73,10 @@ import presentacionResultadosES from '../../../../public/events/cartela_centrada
 import presentacionResultadosENG from '../../../../public/events/cartela_centrada_1820x1080_en.png';
 import presentacionResultadosGL from '../../../../public/events/cartela_centrada_1820x1080_gl.png';
 
+import introduccionFactoriaES from '../../../../public/events/formacion-introduccion-factoria-ia.png';
+import introduccionFactoriaENG from '../../../../public/events/formacion-introduccion-factoria-ia-ENG.png';
+import introduccionFactoriaGL from '../../../../public/events/formacion-introduccion-factoria-ia-GL.png';
+
 const eventsPerPage = 5;
 
 interface Event {
@@ -401,6 +405,18 @@ const events: Event[]  = [
     featured: true,
   },
   {
+    key: 'evolucion1HealthAIFactory',
+    date: '2026-07-23',
+    image: {
+      es: introduccionFactoriaES,
+      en: introduccionFactoriaENG,
+      gl: introduccionFactoriaGL
+    },
+    cesgalink: 'https://www.cesga.es/formacion-onehealth-dataspace/',
+    organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
+    featured: true,
+  },
+  {
     key: 'miniEncuentroVigo',
     date: '2026-07-29',
     image: {
@@ -411,7 +427,8 @@ const events: Event[]  = [
     cesgalink: 'https://forms.gle/AYKkiuGxJFArv2ZSA',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
     featured: true,
-  }
+  },
+  
 
 ] satisfies Event[];
 
@@ -475,7 +492,7 @@ function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {
                 <div className="mt-6 flex items-center gap-3 text-sm/5 text-gray-700">
                   {t('organizer')}: {event.organizer}
                 </div>
-                <div className="mt-4">
+                <div className="mt-auto pt-4">
                   <Button
                     onClick={() => onOpen(event)}
                     className="flex items-center gap-1 text-sm/5 font-medium text-blue-600"

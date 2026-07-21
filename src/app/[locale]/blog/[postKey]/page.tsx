@@ -30,7 +30,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
   const formatDate = useDateFormatter();
 
-  if (!post) return notFound();
+  if (!post || post.published === false) return notFound();
 
   return (
     <main className="overflow-hidden">
