@@ -1232,7 +1232,7 @@
       "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "description": "Análise lagranxiana coa ferramenta LATTIN de eventos compostos de seca e onda de calor na rexión mediterránea. Os modelos de LATTIN están paralelizados para a advección dun número elevado de trazadores activos sobre campos atmosféricos reais, requirindo recursos HPC/CPU.",
-      "descripcion_ampliada": "Análise lagranxiana coa ferramenta LATTIN de eventos compostos de seca e onda de calor na rexión mediterránea. Os modelos de LATTIN están paralelizados para a advección dun número elevado de trazadores activos sobre campos atmosféricos reais, requirindo recursos HPC/CPU especializados.\n\nComprensión insuficiente dos mecanismos físicos que desencadean e manteñen os eventos compostos de seca e onda de calor, e os seus severos impactos sobre a saúde humana na rexión mediterránea.",
+      "descripcion_ampliada": "Actualmente existe unha comprensión insuficiente dos mecanismos físicos que desencadean e manteñen os eventos compostos de seca e onda de calor, así como dos seus severos impactos sobre a saúde humana na rexión mediterránea.\n\nPor iso, o caso de uso realizará unha análise lagranxiana destes eventos mediante a ferramenta LATTIN. Os seus modelos están paralelizados para a advección dun número elevado de trazadores activos sobre campos atmosféricos reais, polo que requiren recursos HPC/CPU especializados.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},

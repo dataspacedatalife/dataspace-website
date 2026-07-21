@@ -1232,7 +1232,7 @@
       "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "description": "Lagrangian analysis with the LATTIN tool of compound drought and heat wave events in the Mediterranean region. LATTIN models are parallelized for the advection of a large number of active tracers over real atmospheric fields, requiring specialized HPC/CPU resources.",
-      "descripcion_ampliada": "Lagrangian analysis with the LATTIN tool of compound drought and heat wave events in the Mediterranean region. LATTIN models are parallelized for the advection of a large number of active tracers over real atmospheric fields, requiring specialized HPC/CPU resources.\n\nInsufficient understanding of the physical mechanisms that trigger and sustain compound drought and heat wave events, and their severe impacts on human health in the Mediterranean region.",
+      "descripcion_ampliada": "There is currently insufficient understanding of the physical mechanisms that trigger and sustain compound drought and heatwave events, as well as their severe impacts on human health in the Mediterranean region.\n\nThe use case will therefore conduct a Lagrangian analysis of these events using the LATTIN tool. Its models are parallelised for the advection of a large number of active tracers over real atmospheric fields and consequently require specialised HPC/CPU resources.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
