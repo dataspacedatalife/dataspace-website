@@ -895,11 +895,11 @@
       "descripcion_ampliada": "Based on NLP research by the Information Technologies Group at the atlanTTic research center of the Universidade de Vigo, an AI assistant was developed specifically for elderly people, covering companionship needs, cognitive stimulation, entertainment and information of interest to the user. This assistant has since evolved and a spin-off called Serenia Solutions has been created, featuring a platform called Serenia (AI Assistant + Control Panel) that aims to enhance health monitoring and assessment capabilities.\n\nDuring the initial pilots carried out by atlanTTic, thousands of conversations were generated as well as cognitive and performance evaluations conducted during the sessions. This data, properly pseudonymized and processed in accordance with GDPR, constitutes the main asset contributed to OneHealth DataSpace.\n\nParticipation in OHDS enables both the structured and accessible publication of this data for other participants in the data space, as well as access to data and algorithms from third parties. In the CeliaSpace use case, Serenia Solutions uses this dataset from the Universidade de Vigo to improve its cognitive health detection algorithms. From the Universidade de Vigo's perspective, beyond being a provider of conversation data, it also consumes OHDS data from i4Life on home monitoring for elderly people in order to research relationships between conversational interactions and sensor measurements using clustering techniques."
     },
     "datiacare": {
-      "name": "Datiacare — Intelligent Elderly Care Platform Based on Data Sharing",
+      "name": "Datiacare — Intelligent Elderly Care Platform Based on Data Exchange",
       "dataset_name": "datiacare_home_monitoring",
       "use_case": "i4life innovación y desarrollos S. L.",
       "provider": "i4life",
-      "description": "Datiacare aims to facilitate the care of elderly people through data sharing in a common space, enabling the generation of alerts and the development of intelligent algorithms.",
+      "description": "Datiacare aims to facilitate the care of elderly people through data exchange in a common space, enabling the generation of alerts and the development of intelligent algorithms.",
       "volumen": "200,000 records per year per user",
       "n_ficheros": "50 - 300",
       "subsets": {
@@ -1094,7 +1094,7 @@
         }
       },
       "entidad_promotora": "i4life",
-      "descripcion_ampliada": "The use case explores the capacity of data spaces to exchange information on the health status and activity of older people. Data is collected from domestic IoT devices and wearables and combined with clinical information and lifestyle habits. Data exchange will be managed through secure connectors, enabling the integration of multiple sources for real-time monitoring. The actors involved include care homes, hospitals, telecare companies and governmental entities. The use case can be extended to people with ASD, Alzheimer's disease and ALS.\n\nIn this way, the project aims to facilitate the care of older people through data sharing in a common space, enabling the generation of alerts and the development of intelligent algorithms. The objective is to optimise their autonomy and improve the efficiency of care services.\n\nCaregiving is highly stressful and involves great responsibility. The project addresses the need to improve the care of older people through intelligent tools based on data sharing, reducing the burden on caregivers and promoting safer and more preventive care."
+      "descripcion_ampliada": "The use case explores the capacity of data spaces to exchange information on the health status and activity of older people. Data is collected from domestic IoT devices and wearables and combined with clinical information and lifestyle habits. Data exchange will be managed through secure connectors, enabling the integration of multiple sources for real-time monitoring. The actors involved include care homes, hospitals, telecare companies and governmental entities. The use case can be extended to people with ASD, Alzheimer's disease and ALS.\n\nIn this way, the project aims to facilitate the care of older people through data exchange in a common space, enabling the generation of alerts and the development of intelligent algorithms. The objective is to optimise their autonomy and improve the efficiency of care services.\n\nCaregiving is highly stressful and involves great responsibility. The project addresses the need to improve the care of older people through intelligent tools based on data exchange, reducing the burden on caregivers and promoting safer and more preventive care."
     },
     "pounds": {
       "name": "POUNDs — WRF Numerical Simulations for the Impact of Offshore Wind Turbines on the Regional Wind Field and Energy Production",
@@ -1236,7 +1236,7 @@
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Data type: Lagrangian trajectories and derived fields of heat and moisture transport in compound drought–heat wave events. Data source: Simulations performed with the LATTIN tool based on real atmospheric reanalysis fields. Intended use of the data: Improved physical understanding of high social-impact phenomena. Sharing with the academic community.\n\nQuantitative improvement in the understanding of physical factors involved in compound drought–heat wave events in southern Europe.\n\nResults on the physical factors conditioning compound drought–heat wave events in the Mediterranean. Scientific publications.",
+      "datos_descripcion": "Data type: Lagrangian trajectories and derived fields of heat and moisture transport in compound drought–heat wave events. Data source: Simulations performed with the LATTIN tool based on real atmospheric reanalysis fields. Intended use of the data: Improved physical understanding of high social-impact phenomena. Exchange with the academic community.\n\nQuantitative improvement in the understanding of physical factors involved in compound drought–heat wave events in southern Europe.\n\nResults on the physical factors conditioning compound drought–heat wave events in the Mediterranean. Scientific publications.",
       "entidad_promotora": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo"
     },
     "wrf_brisasmarinas": {
@@ -1253,7 +1253,7 @@
       "entidad_promotora": "CLIMATOC-LAB, CIDE (CSIC-UV-GVA)"
     },
     "wheydata": {
-      "name": "WHEYDATA — Data Sharing for the Sourcing and Controlled Management of Dairy Whey from Artisan Cheese Dairies",
+      "name": "WHEYDATA — Data Exchange for the Sourcing and Controlled Management of Dairy Whey from Artisan Cheese Dairies",
       "dataset_name": "-",
       "use_case": "Agrolinera Astur S. L.",
       "provider": "Agrolinera Astur S. L.",
@@ -1262,7 +1262,7 @@
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Data type: Monthly aggregated dataset on the origin and controlled management of whey from artisan cheese dairies in Cabrales. Includes zone of origin, collection volumes, number of transactions, participating dairies, and valorization destination. CSV format (descargas_suero_mensual.csv). ID of the asset published in OneHealth DataSpace: dataset-descargas-suero-mensual. License: CC BY 4.0. Temporal coverage: April 2025 – February 2026. Geographic coverage: Cabrales, Asturias. Data source: IoT system of smart containers (wheytainer/wheyboxes) operated by Agrolinera in artisan cheese dairies in Cabrales since April 2025. Intended use of the data: Monitoring of environmental management in sensitive areas; design of valorization projects; evidence of good practices and traceability for cheese dairies.\n\nPromotion of the rural circular economy. Traceability for artisan cheese dairies. Replicable model in other dairy farming territories.\n\nWhey management dataset available in OneHealth DataSpace. Replicable data-sharing model in other territories.",
+      "datos_descripcion": "Data type: Monthly aggregated dataset on the origin and controlled management of whey from artisan cheese dairies in Cabrales. Includes zone of origin, collection volumes, number of transactions, participating dairies, and valorization destination. CSV format (descargas_suero_mensual.csv). ID of the asset published in OneHealth DataSpace: dataset-descargas-suero-mensual. License: CC BY 4.0. Temporal coverage: April 2025 – February 2026. Geographic coverage: Cabrales, Asturias. Data source: IoT system of smart containers (wheytainer/wheyboxes) operated by Agrolinera in artisan cheese dairies in Cabrales since April 2025. Intended use of the data: Monitoring of environmental management in sensitive areas; design of valorization projects; evidence of good practices and traceability for cheese dairies.\n\nPromotion of the rural circular economy. Traceability for artisan cheese dairies. Replicable model in other dairy farming territories.\n\nWhey management dataset available in OneHealth DataSpace. Replicable data exchange model in other territories.",
       "entidad_promotora": "Agrolinera Astur S. L."
     },
     "meteogalicia": {
@@ -2511,7 +2511,7 @@
       "dataset_name": "-",
       "use_case": "OTTO SOFTWARE S. L.",
       "provider": "OTTO SOFTWARE S. L.",
-      "description": "The use case consists of obtaining and sharing truthful, real-time data on daily activity in healthcare day centers, without interfering with the day-to-day work of caring for elderly people. The data is recorded through a specialized ERP for day centers.",
+      "description": "The use case consists of obtaining and exchanging truthful, real-time data on daily activity in healthcare day centers, without interfering with the day-to-day work of caring for elderly people. The data is recorded through a specialized ERP for day centers.",
       "descripcion_ampliada": "Healthcare day centres suffer from distorted and poor-quality data. Existing information is neither representative nor suitable for statistical or artificial intelligence analysis because records are entered manually and retrospectively, introducing errors and inconsistencies that limit their usefulness for improving care and conducting research.\n\nThe use case therefore consists of obtaining and sharing accurate, real-time data on the daily activity of these centres without interfering with the day-to-day care of older people. Data is recorded through a specialised ERP that captures health, care and functional information, as well as activities and therapies. The objective is to improve data quality in this sector.",
       "volumen": "4 GB",
       "n_ficheros": "-",
@@ -3338,8 +3338,8 @@
       "dataset_name": "-",
       "use_case": "TRUEWORLD",
       "provider": "TRUEWORLD",
-      "description": "Integration and sharing of TRUEWORLD environmental and agronomic data in OneHealth DataSpace. The use case incorporates environmental monitoring data collected by weather stations and IoT sensors (temperature, humidity, precipitation, wind, solar radiation) together with agronomic data (evapotranspiration, vegetation index, soil moisture).",
-      "descripcion_ampliada": "The data generated by TRUEWORLD's sensor network and monitoring systems needs to be structured and shared to maximise its value and reuse in the OneHealth ecosystem. Distributed environmental and agronomic data has strong potential for environmental health applications and climate risk management but lacks an interoperable sharing channel.\n\nThe use case therefore integrates and shares environmental monitoring data collected by weather stations and IoT sensors —temperature, humidity, precipitation, wind and solar radiation— together with agronomic data —evapotranspiration, vegetation index and soil moisture— through OneHealth DataSpace. The pilot dataset covers the Balearic Islands.",
+      "description": "Integration and exchange of TRUEWORLD environmental and agronomic data in OneHealth DataSpace. The use case incorporates environmental monitoring data collected by weather stations and IoT sensors (temperature, humidity, precipitation, wind, solar radiation) together with agronomic data (evapotranspiration, vegetation index, soil moisture).",
+      "descripcion_ampliada": "The data generated by TRUEWORLD's sensor network and monitoring systems needs to be structured and shared to maximise its value and reuse in the OneHealth ecosystem. Distributed environmental and agronomic data has strong potential for environmental health applications and climate risk management but lacks an interoperable data exchange channel.\n\nThe use case therefore integrates and shares environmental monitoring data collected by weather stations and IoT sensors —temperature, humidity, precipitation, wind and solar radiation— together with agronomic data —evapotranspiration, vegetation index and soil moisture— through OneHealth DataSpace. The pilot dataset covers the Balearic Islands.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
