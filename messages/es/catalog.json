@@ -1193,7 +1193,7 @@
       "use_case": "CONSUVET",
       "provider": "CONSUVET",
       "description": "Se busca conseguir una semántica completa de enfermedades animales comenzando por los datos de la WOAH/OIE y completándolo con otras fuentes de información oficial. El siguiente paso es la semántica de síntomas clínicos asociados a cada enfermedad, relacionada con la especie en la que se desarrolla.",
-      "descripcion_ampliada": "Se busca conseguir una semántica completa de enfermedades animales comenzando por los datos de la WOAH/OIE y completándolo con otras fuentes de información oficial. El siguiente paso es la semántica de síntomas clínicos asociados a cada enfermedad, relacionada con la especie en la que se desarrolla.\n\nEs imposible hacer estudio de enfermedades si no está perfectamente estandarizada la semántica de nombres y síntomas clínicos. Las enfermedades animales entran en la categoría OneHealth por su alta implicación en la salud humana y viceversa.",
+      "descripcion_ampliada": "No es posible estudiar adecuadamente las enfermedades si la semántica de sus nombres y síntomas clínicos no está estandarizada. Las enfermedades animales forman parte del enfoque One Health por su estrecha relación con la salud humana y viceversa.\n\nPor ello, el caso de uso busca desarrollar una semántica completa de enfermedades animales partiendo de los datos de la WOAH/OIE y complementándolos con otras fuentes oficiales. El siguiente paso será definir la semántica de los síntomas clínicos asociados a cada enfermedad y relacionarla con la especie en la que se desarrolla.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},

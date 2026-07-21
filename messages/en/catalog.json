@@ -1193,7 +1193,7 @@
       "use_case": "CONSUVET",
       "provider": "CONSUVET",
       "description": "The aim is to achieve complete semantics for animal diseases starting with data from WOAH/OIE and complementing it with other official information sources. The next step is the semantics of clinical symptoms associated with each disease, related to the species in which it develops.",
-      "descripcion_ampliada": "The aim is to achieve complete semantics for animal diseases starting with data from WOAH/OIE and complementing it with other official information sources. The next step is the semantics of clinical symptoms associated with each disease, related to the species in which it develops.\n\nIt is impossible to study diseases without perfectly standardized semantics for names and clinical symptoms. Animal diseases fall under the OneHealth category due to their high involvement in human health and vice versa.",
+      "descripcion_ampliada": "Diseases cannot be studied adequately unless the semantics of their names and clinical symptoms are standardised. Animal diseases form part of the One Health approach because of their close relationship with human health and vice versa.\n\nThe use case therefore aims to develop comprehensive semantics for animal diseases, starting with WOAH/OIE data and supplementing it with other official sources. The next step will be to define the semantics of the clinical symptoms associated with each disease and relate them to the species in which the disease occurs.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
