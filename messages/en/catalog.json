@@ -2447,7 +2447,7 @@
       "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "description": "Lagrangian analysis using LATTIN of the physical heat and moisture transport factors involved in high thermal stress events. Extreme thermal stress causes elevated mortality, especially in older adults and people with chronic diseases.",
-      "descripcion_ampliada": "Lagrangian analysis using LATTIN of the physical heat and moisture transport factors involved in high thermal stress events. Extreme thermal stress causes elevated mortality, especially in older adults and people with chronic diseases.\n\nExtreme thermal stress events cause high morbidity and mortality in vulnerable populations. A systematic Lagrangian analysis of the physical factors that condition these events in southern Europe is lacking.",
+      "descripcion_ampliada": "Extreme thermal stress events cause high morbidity and mortality in vulnerable populations. A systematic Lagrangian analysis of the physical factors that condition these events in southern Europe is lacking.\n\nThe use case will therefore employ LATTIN to conduct a Lagrangian analysis of the physical heat and moisture transport factors involved in high thermal stress events, whose mortality particularly affects older people and those with chronic diseases.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},

@@ -2447,7 +2447,7 @@
       "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "description": "Análise lagranxiana mediante LATTIN dos factores físicos de transporte de calor e humidade implicados en eventos de elevado estrés térmico. O estrés térmico extremo causa elevada mortalidade especialmente en adultos maiores e persoas con enfermidades crónicas.",
-      "descripcion_ampliada": "Análise lagranxiana mediante LATTIN dos factores físicos de transporte de calor e humidade implicados en eventos de elevado estrés térmico. O estrés térmico extremo causa elevada mortalidade especialmente en adultos maiores e persoas con enfermidades crónicas.\n\nOs eventos de estrés térmico extremo causan elevada morbilidade e mortalidade en poboacións vulnerables. Carécese dunha análise lagranxiana sistemática dos factores físicos que condicionan estes eventos no sur de Europa.",
+      "descripcion_ampliada": "Os eventos de estrés térmico extremo causan unha elevada morbilidade e mortalidade en poboacións vulnerables. Carécese dunha análise lagranxiana sistemática dos factores físicos que condicionan estes eventos no sur de Europa.\n\nPor iso, o caso de uso realizará mediante LATTIN unha análise lagranxiana dos factores físicos de transporte de calor e humidade implicados en eventos de elevado estrés térmico, cuxa mortalidade afecta especialmente ás persoas maiores e con enfermidades crónicas.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
