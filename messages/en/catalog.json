@@ -1154,7 +1154,7 @@
       "use_case": "QUIMAOR Group, USC",
       "provider": "QUIMAOR Group, USC",
       "description": "Calculation of fundamental parameters in the characterization of new contrast agents for MRI (Magnetic Resonance Imaging).",
-      "descripcion_ampliada": "The use case aims to exploit the computational resources available within the OneHealth DataSpace project for the calculation of fundamental parameters in the characterization of new contrast agents for MRI, in collaboration with the CAs4MI group at UDC.\n\nThe procedure requires a methodological benchmark with Gaussian followed by the calculation of A and G tensors with ORCA to compute the characterization parameters of new metallic complexes that are candidates for MRI contrast agents (EPR A and G tensors).",
+      "descripcion_ampliada": "The use case aims to characterise new MRI contrast agents by calculating fundamental parameters. This work is carried out in collaboration with the CAs4MI group at UDC.\n\nThe procedure requires a methodological benchmark with Gaussian followed by the calculation of A and G tensors with ORCA to compute the characterization parameters of new metallic complexes that are candidates for MRI contrast agents (EPR A and G tensors).",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},

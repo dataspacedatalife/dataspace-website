@@ -1154,7 +1154,7 @@
       "use_case": "Grupo QUIMAOR, USC",
       "provider": "Grupo QUIMAOR, USC",
       "description": "Cálculo de parámetros fundamentales en la caracterización de nuevos agentes de contraste para RMI (Resonancia Magnética de Imagen).",
-      "descripcion_ampliada": "El caso de uso pretende explotar los recursos computacionales disponibles en el marco del proyecto OneHealth DataSpace para el cálculo de parámetros fundamentales en la caracterización de nuevos agentes de contraste para RMI, en colaboración con el grupo CAs4MI de la UDC.\n\nEl procedimiento requiere un benchmark metodológico con Gaussian seguido del cálculo de tensores A y G con ORCA para calcular los parámetros de caracterización de nuevos complejos metálicos candidatos a agentes de contraste para RMI (tensores A y G de EPR).",
+      "descripcion_ampliada": "El caso de uso pretende caracterizar nuevos agentes de contraste para RMI mediante el cálculo de parámetros fundamentales. Este trabajo se realiza en colaboración con el grupo CAs4MI de la UDC.\n\nEl procedimiento requiere un benchmark metodológico con Gaussian seguido del cálculo de tensores A y G con ORCA para calcular los parámetros de caracterización de nuevos complejos metálicos candidatos a agentes de contraste para RMI (tensores A y G de EPR).",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
