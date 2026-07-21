@@ -3325,7 +3325,7 @@
       "dataset_name": "-",
       "use_case": "CONSUVET",
       "provider": "CONSUVET",
-      "description": "CcVet aims to digitize all information surrounding veterinary clinical cases so that it can be used in data spaces to cross-reference it with other related information, especially that related to human and environmental health. The project seeks.",
+      "description": "CcVet aims to digitize all information surrounding veterinary clinical cases so that it can be used in data spaces to cross-reference it with other related information, especially that related to human and environmental health. The project seeks to structure and standardize veterinary clinical practice data to make it interoperable with other health information systems within the OneHealth framework.",
       "descripcion_ampliada": "CcVet aims to digitize all information surrounding veterinary clinical cases so that it can be used in data spaces to cross-reference it with other related information, especially that related to human and environmental health. The project seeks to structure and standardize veterinary clinical practice data to make it interoperable with other health information systems within the OneHealth framework.\n\nVeterinary prescribing is subject to rigorous controls based on current regulations, especially RD 666/2023, which is based on the premise that clinical case data is perfectly documented. However, this information is dispersed and not available in interoperable formats that allow cross-analysis with human and environmental health data.",
       "volumen": "-",
       "n_ficheros": "-",

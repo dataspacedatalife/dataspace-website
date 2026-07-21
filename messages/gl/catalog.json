@@ -3325,7 +3325,7 @@
       "dataset_name": "-",
       "use_case": "CONSUVET",
       "provider": "CONSUVET",
-      "description": "CcVet pretende informatizar toda a información que hai arredor dos casos clínicos veterinarios de forma que se poida utilizar en espazos de datos para cruzala con outras informacións relacionadas, especialmente as relacionadas coa saúde humana e medioambiental. O proxecto busca.",
+      "description": "CcVet pretende informatizar toda a información que hai arredor dos casos clínicos veterinarios de forma que se poida utilizar en espazos de datos para cruzala con outras informacións relacionadas, especialmente as relacionadas coa saúde humana e medioambiental. O proxecto busca estruturar e estandarizar os datos da práctica clínica veterinaria para facelos interoperables con outros sistemas de información sanitaria no marco OneHealth.",
       "descripcion_ampliada": "CcVet pretende informatizar toda a información que hai arredor dos casos clínicos veterinarios de forma que se poida utilizar en espazos de datos para cruzala con outras informacións relacionadas, especialmente as relacionadas coa saúde humana e medioambiental. O proxecto busca estruturar e estandarizar os datos da práctica clínica veterinaria para facelos interoperables con outros sistemas de información sanitaria no marco OneHealth.\n\nA prescrición veterinaria está sometida a rigorosos controis baseados na normativa vixente, especialmente o RD 666/2023, que parte da base de que os datos de casos clínicos están perfectamente documentados. Con todo, esta información atópase dispersa e non dispoñible en formatos interoperables que permitan a súa análise cruzada con datos de saúde humana e medioambiental.",
       "volumen": "-",
       "n_ficheros": "-",
