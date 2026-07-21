@@ -2428,6 +2428,19 @@
       "datos_descripcion": "Data type: Historical record of atmospheric and marine dynamics model runs. ROMS model with CF vocabulary. Data source: MeteoGalicia operational models (atmospheric and oceanographic forecasting). Intended use of the data: Contribution of meteorological and oceanic data to the data space; evaluation of combined use cases with other OneHealth datasets.\n\nHistorical record of atmospheric and marine dynamics models available in the data space with CF standard vocabulary.",
       "entidad_promotora": "MeteoGalicia"
     },
+    "meteogalicia_wrf_fire": {
+      "name": "WRF-Fire — Reanalysis and wildfire modelling",
+      "dataset_name": "-",
+      "use_case": "MeteoGalicia",
+      "provider": "MeteoGalicia",
+      "description": "Performance improvements to WRF-Fire for coupled simulations of the atmosphere and wildfire spread using WRF data at 1 km resolution.",
+      "descripcion_ampliada": "WRF-Fire is a coupled atmosphere-fire model that represents both the influence of atmospheric conditions on fire evolution and the feedback of the fire on the atmosphere through the heat, water vapour and emissions it generates. Its execution requires data from MeteoGalicia's WRF model at 1 km resolution.\n\nThis use case takes advantage of OneHealth DataSpace's computing capacity to improve WRF-Fire performance and facilitate high-resolution wildfire simulations.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Data type: Meteorological data from the 1 km WRF model and results from coupled atmosphere-fire numerical simulations. Data source: MeteoGalicia's WRF model. Intended use of the data: Modelling wildfire evolution and its interaction with atmospheric conditions using WRF-Fire.",
+      "entidad_promotora": "MeteoGalicia"
+    },
     "heat_stress_lattin": {
       "name": "Heat Stress LATTIN — Lagrangian Analysis of Moisture and Heat Transport in High Social Impact Events Due to Thermal Stress",
       "dataset_name": "-",

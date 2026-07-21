@@ -2428,6 +2428,19 @@
       "datos_descripcion": "Tipo de datos: Histórico de execución de modelos atmosféricos e de dinámica mariña. Modelo ROMS con vocabulario CF. Fonte dos datos: Modelos operacionais de MeteoGalicia (prognose atmosférica e oceanográfica). Uso previsto dos datos: Contribución de datos meteorolóxicos e oceánicos ao espazo de datos; avaliación de casos de uso combinados con outros datasets OneHealth.\n\nHistórico de modelos atmosféricos e de dinámica mariña dispoñible no espazo de datos con vocabulario estándar CF.",
       "entidad_promotora": "MeteoGalicia"
     },
+    "meteogalicia_wrf_fire": {
+      "name": "WRF-Fire — Reanálise e modelización de incendios forestais",
+      "dataset_name": "-",
+      "use_case": "MeteoGalicia",
+      "provider": "MeteoGalicia",
+      "description": "Mellora do rendemento de WRF-Fire para realizar simulacións acopladas da atmosfera e da propagación de incendios forestais a partir do WRF de 1 km de resolución.",
+      "descripcion_ampliada": "WRF-Fire é un modelo acoplado atmosfera-lume que representa tanto a influencia das condicións atmosféricas sobre a evolución do incendio como a realimentación do lume sobre a atmosfera mediante a calor, o vapor de auga e as emisións xeradas. Para a súa execución precisa os datos do modelo WRF de MeteoGalicia cunha resolución de 1 km.\n\nO caso de uso aproveita a capacidade de computación de OneHealth DataSpace para mellorar o rendemento de WRF-Fire e facilitar simulacións de incendios forestais de alta resolución.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Tipo de datos: Datos meteorolóxicos do modelo WRF de 1 km e resultados de simulacións numéricas acopladas atmosfera-lume. Fonte dos datos: Modelo WRF de MeteoGalicia. Uso previsto dos datos: Modelización da evolución de incendios forestais e da súa interacción coas condicións atmosféricas mediante WRF-Fire.",
+      "entidad_promotora": "MeteoGalicia"
+    },
     "heat_stress_lattin": {
       "name": "Heat Stress LATTIN — Análise lagranxiana de transporte de humidade e de calor en eventos de elevado impacto social por estrés térmico",
       "dataset_name": "-",

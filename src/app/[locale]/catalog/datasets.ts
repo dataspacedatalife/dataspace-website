@@ -193,6 +193,12 @@ export const useCasesData = [
     categories: ['environmental'] as HealthCategory[],
   },
   {
+    id: 'meteogalicia_wrf_fire',
+    imagen: LogoMeteogalicia,
+    link: 'https://www.meteogalicia.gal/',
+    categories: ['environmental'] as HealthCategory[],
+  },
+  {
     id: 'microbioma_16s_citius',
     imagen: LogoCiTIUS,
     link: 'https://citius.gal/',
