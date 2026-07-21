@@ -38,13 +38,13 @@
     "shareWhat": "Un servizo para intercambiar conxuntos de datos entre organizacións de forma soberana: cada entidade decide quen accede aos seus datos, con que fins e baixo que condicións.",
     "shareExample": "Un hospital comparte datos clínicos anonimizados cun grupo de investigación veterinaria para estudar a resistencia aos antibióticos.",
     "computeWhat": "Acceso á supercomputación do CESGA para executar cargas de traballo intensivas: simulacións, adestramento de modelos de IA ou procesamento xenómico.",
-    "computeExample": "Un equipo adestra un modelo de predición de gromos combinando datos ambientais e sanitarios no clúster HPC.",
+    "computeExample": "Realizar simulacións avanzadas de moléculas complexas para analizar a súa estrutura, comportamento e interaccións a nivel atómico e molecular.",
     "analyzeWhat": "Ferramentas de Big Data e analítica para explorar os datos do espazo e convertelos en indicadores, visualizacións e coñecemento accionable.",
-    "analyzeExample": "Cruzamento de datos de calidade da auga e casos de zoonose para detectar patróns de risco nunha comarca.",
+    "analyzeExample": "Estimar a temperatura media de amplas áreas xeográficas mediante a análise de grandes volumes de datos.",
     "storeWhat": "Almacenamento seguro e escalable para grandes volumes de datos, con control de acceso e trazabilidade durante todo o seu ciclo de vida.",
     "storeExample": "Unha universidade deposita anos de series históricas de sensores ambientais para a súa reutilización en novos proxectos.",
     "deliverWhat": "Infraestrutura cloud para publicar resultados como servizos: APIs, cadros de mando ou aplicacións accesibles para outros participantes.",
-    "deliverExample": "Un centro publica un cadro de mando epidemiolóxico que outras entidades consultan en tempo real."
+    "deliverExample": "Desenvolver unha plataforma web interactiva que permita visualizar e consultar o risco de presenza de carabelas portuguesas en localizacións xeográficas específicas."
   },
   "outro": {
     "title": "A viaxe xa está en marcha",

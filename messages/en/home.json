@@ -38,13 +38,13 @@
     "shareWhat": "A service for exchanging datasets between organisations in a sovereign way: each entity decides who accesses its data, for what purposes and under which conditions.",
     "shareExample": "A hospital shares anonymised clinical data with a veterinary research group to study antibiotic resistance.",
     "computeWhat": "Access to CESGA supercomputing to run intensive workloads: simulations, AI model training or genomic processing.",
-    "computeExample": "A team trains an outbreak-prediction model combining environmental and health data on the HPC cluster.",
+    "computeExample": "Run advanced simulations of complex molecules to analyse their structure, behaviour and interactions at the atomic and molecular level.",
     "analyzeWhat": "Big Data and analytics tools to explore the data space and turn it into indicators, visualisations and actionable knowledge.",
-    "analyzeExample": "Cross-referencing water-quality data with zoonosis cases to detect risk patterns in a region.",
+    "analyzeExample": "Estimate the average temperature of large geographic areas through the analysis of large volumes of data.",
     "storeWhat": "Secure, scalable storage for large data volumes, with access control and traceability throughout the whole lifecycle.",
     "storeExample": "A university deposits years of historical environmental sensor series for reuse in new projects.",
     "deliverWhat": "Cloud infrastructure to publish results as services: APIs, dashboards or applications accessible to other participants.",
-    "deliverExample": "A centre publishes an epidemiological dashboard that other entities consult in real time."
+    "deliverExample": "Develop an interactive web platform to visualise and query the risk of Portuguese man o' war presence at specific geographic locations."
   },
   "outro": {
     "title": "The journey is already underway",
