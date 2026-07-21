@@ -282,38 +282,64 @@
       "name": "Brilliant — Sarcopenia Observatory",
       "dataset_name": "MRI_BRILLIANT",
       "use_case": "Cardiovascular Research Group, IIS Galicia Sur",
-      "provider": "Cardiovascular Research Group, IIS Galicia Sur (IISGS)",
+      "provider": "Brilliant — IIS Galicia Sur",
       "description": "Develop a system that enables the automated upload, analysis and diagnosis of medical studies from synthetic data to address sarcopenia.",
-      "volumen": "1 TB",
-      "n_ficheros": "10,000 files",
+      "volumen": "-",
+      "n_ficheros": "-",
       "subsets": {
-        "mri_DICOM": {
-          "name": "MRI_BRILLIANT_DICOM",
-          "description": "Lumbar magnetic resonance imaging data (L3 region).",
-          "metadata": {
-            "data_type": "Synthetic",
-            "data_standard": "DICOM",
-            "date_added": "",
-            "file_format": "DICOM",
-            "license": "CC BY 4.0",
-            "temporal_resolution": "-",
-            "temporal_coverage": "-"
-          },
-          "variables": []
-        },
-        "mri_csv": {
-          "name": "MRI_BRILLIANT_CSV",
-          "description": "Synthetic personal data associated with lumbar MRIs (L3 region).",
+        "mri": {
+          "name": "MRI_BRILLIANT",
+          "description": "Synthetic lumbar magnetic resonance imaging data (L3-L4 and L3 regions) with associated artificial demographic data.",
           "metadata": {
             "data_type": "Synthetic",
             "data_standard": "",
             "date_added": "",
+            "file_format": "DICOM / CSV",
+            "license": "CC BY 4.0 (DICOM) / Proprietary, restricted by contract (CSV)",
+            "temporal_resolution": "-",
+            "temporal_coverage": "-"
+          },
+          "variables": [
+            {
+              "name": "id",
+              "units": "-",
+              "data_description": "Unique patient identifier (anonymized).",
+              "data_type": "string"
+            },
+            {
+              "name": "codigo_postal",
+              "units": "-",
+              "data_description": "Postal code of residence.",
+              "data_type": "string"
+            }
+          ]
+        },
+        "sarcopenia_csv": {
+          "name": "SARCOPENIA_BRILLIANT_CSV",
+          "description": "Sarcopenia index data derived from AI analysis of lumbar magnetic resonance imaging (L3 region).",
+          "metadata": {
+            "data_type": "Synthetic",
+            "data_standard": "Not applicable / Proprietary",
+            "date_added": "",
             "file_format": "CSV",
-            "license": "CC BY 4.0",
+            "license": "Proprietary (restricted by contract)",
             "temporal_resolution": "",
             "temporal_coverage": ""
           },
-          "variables": []
+          "variables": [
+            {
+              "name": "id",
+              "units": "-",
+              "data_description": "Unique patient identifier (anonymized).",
+              "data_type": "string"
+            },
+            {
+              "name": "indice_sarcopenia",
+              "units": "-",
+              "data_description": "Numerical index calculated by the study.",
+              "data_type": "float"
+            }
+          ]
         }
       },
       "entidad_promotora": "Grupo de Investigación Cardiovascular, IIS Galicia Sur (IISGS)",
@@ -453,14 +479,14 @@
         }
       },
       "entidad_promotora": "Grupo IDARA, IIS Galicia Sur (IISGS)",
-      "descripcion_ampliada": "The GIFT project (Gastroenterology Interface with FAIR treatment) seeks to address current information management challenges in healthcare, aiming to create alliances among professionals and improve patient safety. To this end, unstructured information on digestive pathologies and their corresponding care processes will be identified, categorized, and verified, for the subsequent creation of a data space accessible through a generative artificial intelligence (AI) API (Application Programming Interface) pre-loaded with the aforementioned data.\n\nThis API will function as a bridge between the data space and clients, which will initially be public or private health systems or technology companies that serve them. The API will provide this data through an AI assistant that supports clinical decision-making in gastroenterology. In this way, the aim is to offer targeted, rapid, and verified answers on these pathologies in a disruptive yet simple manner, where AI plays a key role as the link between the data space and the end user, who will initially be medical professionals.\n\nIn GIFT, as its name suggests, the FAIR principles will play an essential role, making this clinical practice data findable, accessible, interoperable, and reusable. This data will also be validated by gastroenterologist physicians and researchers from the Hepatology and Inflammatory Bowel Disease Group at IIS Galicia Sur. The incorporation of a conversational artificial intelligence assistant lays the groundwork for a new model that aspires to be a benchmark and pioneer. A decision support system that allows professionals to use artificial intelligence for the ultimate benefit of the patient, promoting faster and more effective diagnoses."
+      "descripcion_ampliada": "The GIFT project (Gastroenterology Interface with FAIR treatment) seeks to address current information management challenges in healthcare, aiming to create alliances among professionals and improve patient safety. To this end, unstructured information on digestive pathologies and their corresponding care processes will be identified, categorized, and verified, for the subsequent creation of a data space accessible through a generative artificial intelligence (AI) API (Application Programming Interface) pre-loaded with the aforementioned data.\n\nThis API will function as a bridge between the data space and clients, which will initially be public or private health systems or technology companies that serve them. The API will provide this data through an AI assistant that helps search for verified information in gastroenterology. In this way, the aim is to offer targeted, rapid, and verified answers on these pathologies in a disruptive yet simple manner, where AI plays a key role as the link between the data space and the end user, who will initially be medical professionals.\n\nIn GIFT, as its name suggests, the FAIR principles will play an essential role, making this clinical practice data findable, accessible, interoperable, and reusable. This data will also be validated by gastroenterologist physicians and researchers from the Hepatology and Inflammatory Bowel Disease Group at IIS Galicia Sur. The incorporation of a conversational artificial intelligence assistant lays the groundwork for a new model that aspires to be a benchmark and pioneer. A system that helps search for verified information and allows professionals to use artificial intelligence for the ultimate benefit of the patient, promoting faster and more effective diagnoses."
     },
     "biomexplore": {
       "name": "BiomeXplore — Observatory of the Population Index of Intestinal Microbiota Wellness (IPbMI)",
       "dataset_name": "dataset_biomexplore",
       "use_case": "Research Group in Microbiology and Infectiology, IIS Galicia Sur",
       "provider": "Research Group in Microbiology and Infectiology, IIS Galicia Sur (IISGS)",
-      "description": "The BiomeXplore project is based on the development of an observatory for a new microbiota well-being index, the IpbMI, calculated from a gut microbiota prediction adapted to a specific population and visualized in an aggregated form.",
+      "description": "The BiomeXplore project is based on the development of an observatory for a new microbiota well-being index, the IPbMI, calculated from a gut microbiota prediction adapted to a specific population and visualized in an aggregated form.",
       "volumen": "250 - 1000 TB",
       "n_ficheros": "100000",
       "subsets": {
@@ -480,7 +506,7 @@
         }
       },
       "entidad_promotora": "Grupo de Investigación en Microbiología e Infectología, IIS Galicia Sur (IISGS)",
-      "descripcion_ampliada": "In an innovative way, additional layers of exposome data will be added to the gut microbiota well-being index data. The project considers the application of AI to process a massive volume of gut microbiota data and environmental exposure data. These techniques have proven useful for processing both types of data, but it is important to highlight that these AI techniques will need to be evaluated in this specific application.\n\nThis aggregated population-level visualization of the IPbMI will allow identifying areas for preventive healthcare action from a One Health perspective, without aiming to draw individual-level conclusions. Early diagnosis could be performed and decision-making in the health domain could be supported according to the geographic distribution of this index in Galicia.\n\nIt would also support the identification of priority commercial interventions (pre/probiotics, nutritional supplements, physical activity, nutrition, etc.). Recalculating the index in a population after a specific intervention would allow assessing the health impact of that intervention."
+      "descripcion_ampliada": "The project considers the application of AI to process a massive volume of gut microbiota data and environmental exposure data. These techniques have proven useful for processing both types of data, but they will need to be evaluated in this specific application. In an innovative approach, additional layers of exposome data will be added to the gut microbiota well-being index data.\n\nThis aggregated population-level visualization of the IPbMI will allow identifying areas for preventive healthcare action from a One Health perspective, without aiming to draw individual-level conclusions. Early diagnosis could be performed and decision-making in the health domain could be supported according to the geographic distribution of this index in Galicia.\n\nIt would also support the identification of priority commercial interventions (pre/probiotics, nutritional supplements, physical activity, nutrition, etc.). Recalculating the index in a population after a specific intervention would allow assessing the health impact of that intervention."
     },
     "salusbench": {
       "name": "Salusbench — Process Mining and Advanced Analytics to Optimize Hospital Management",
@@ -869,11 +895,11 @@
       "descripcion_ampliada": "Based on NLP research by the Information Technologies Group at the atlanTTic research center of the Universidade de Vigo, an AI assistant was developed specifically for elderly people, covering companionship needs, cognitive stimulation, entertainment and information of interest to the user. This assistant has since evolved and a spin-off called Serenia Solutions has been created, featuring a platform called Serenia (AI Assistant + Control Panel) that aims to enhance health monitoring and assessment capabilities.\n\nDuring the initial pilots carried out by atlanTTic, thousands of conversations were generated as well as cognitive and performance evaluations conducted during the sessions. This data, properly pseudonymized and processed in accordance with GDPR, constitutes the main asset contributed to OneHealth DataSpace.\n\nParticipation in OHDS enables both the structured and accessible publication of this data for other participants in the data space, as well as access to data and algorithms from third parties. In the CeliaSpace use case, Serenia Solutions uses this dataset from the Universidade de Vigo to improve its cognitive health detection algorithms. From the Universidade de Vigo's perspective, beyond being a provider of conversation data, it also consumes OHDS data from i4Life on home monitoring for elderly people in order to research relationships between conversational interactions and sensor measurements using clustering techniques."
     },
     "datiacare": {
-      "name": "Datiacare — Intelligent Elderly Care Platform Based on Data Sharing",
+      "name": "Datiacare — Intelligent Elderly Care Platform Based on Data Exchange",
       "dataset_name": "datiacare_home_monitoring",
       "use_case": "i4life innovación y desarrollos S. L.",
       "provider": "i4life",
-      "description": "Datiacare aims to facilitate the care of elderly people through data sharing in a common space, enabling the generation of alerts and the development of intelligent algorithms.",
+      "description": "Datiacare aims to facilitate the care of elderly people through data exchange in a common space, enabling the generation of alerts and the development of intelligent algorithms.",
       "volumen": "200,000 records per year per user",
       "n_ficheros": "50 - 300",
       "subsets": {
@@ -1068,7 +1094,7 @@
         }
       },
       "entidad_promotora": "i4life",
-      "descripcion_ampliada": "Facilitate the care of elderly people through data sharing in a common space, enabling the generation of alerts and the development of intelligent algorithms. Optimize the autonomy of the elderly and improve the efficiency of care services.\n\nThe use case explores the capacity of data spaces to exchange information on the health status and activity of elderly people. Data is collected from domestic IoT devices and wearables, combining it with clinical information and lifestyle habits. Data exchange will be managed through secure connectors, enabling the integration of multiple sources for real-time monitoring. The actors involved include care homes, hospitals, telecare companies, and governmental entities. The use case can be extended to people with ASD, Alzheimer's, and ALS.\n\nThe task of caregiving is highly stressful and involves great responsibility. The project addresses the need to improve the care of elderly people through intelligent tools based on data sharing, reducing the burden on caregivers and promoting safer and more preventive care."
+      "descripcion_ampliada": "The use case explores the capacity of data spaces to exchange information on the health status and activity of older people. Data is collected from domestic IoT devices and wearables and combined with clinical information and lifestyle habits. Data exchange will be managed through secure connectors, enabling the integration of multiple sources for real-time monitoring. The actors involved include care homes, hospitals, telecare companies and governmental entities. The use case can be extended to people with ASD, Alzheimer's disease and ALS.\n\nIn this way, the project aims to facilitate the care of older people through data exchange in a common space, enabling the generation of alerts and the development of intelligent algorithms. The objective is to optimise their autonomy and improve the efficiency of care services.\n\nCaregiving is highly stressful and involves great responsibility. The project addresses the need to improve the care of older people through intelligent tools based on data exchange, reducing the burden on caregivers and promoting safer and more preventive care."
     },
     "pounds": {
       "name": "POUNDs — WRF Numerical Simulations for the Impact of Offshore Wind Turbines on the Regional Wind Field and Energy Production",
@@ -1080,7 +1106,7 @@
       "volumen": "2 TB",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Data type: Regional meteorological fields simulated with WRF (wind, turbulence, stability), model configurations, wind turbine parameters, and derived outputs for energy production estimation. Data source: HPC simulations executed at CESGA; ERA5 reanalysis for initial and boundary conditions; specific offshore wind farm configurations. Intended use of the data: Evaluate the impact of wind turbines on the regional wind field and estimate offshore wind production losses under different scenarios.\n\nResources: WRF, Python, OpenMPI, Intel MPI, NetCDF/pNetCDF, Jasper, Fortran. 80–150 cores, 240 h – 10 days per job, 36 jobs per campaign, ~2 TB persistent storage.\n\nCoherent wind fields incorporating the wake effect of wind turbines. Improved estimates of offshore wind production losses.",
+      "datos_descripcion": "Data type: Regional meteorological fields simulated with WRF (wind, turbulence, stability), model configurations, wind turbine parameters, and derived outputs for energy production estimation. Data source: HPC simulations executed at CESGA; ERA5 reanalysis for initial and boundary conditions; specific offshore wind farm configurations. Intended use of the data: Evaluate the impact of wind turbines on the regional wind field and estimate offshore wind production losses under different scenarios.\n\nResources: WRF, Python, OpenMPI, Intel MPI, NetCDF/pNetCDF, Jasper, Fortran. 80–150 cores, 240 h (10 days) per job, 36 jobs per campaign, ~2 TB persistent storage.\n\nCoherent wind fields incorporating the wake effect of wind turbines. Improved estimates of offshore wind production losses.",
       "entidad_promotora": "CESGA"
     },
     "wirelessgalicia_coviled": {
@@ -1089,7 +1115,7 @@
       "use_case": "Wireless Galicia S.L.",
       "provider": "Wireless Galicia S. L.",
       "description": "Wireless Galicia publishes in OneHealth DataSpace a dataset of indoor air quality variables from its COVILED platform, with measurements of CO₂, atmospheric pressure, temperature, relative humidity, suspended particles (PM2.5 and PM10), volatile organic compounds and other environmental parameters with associated temporal information.",
-      "descripcion_ampliada": "Wireless Galicia S.L. is a Vigo-based company specializing in IoT solutions and connectivity. With its incorporation into OneHealth DataSpace at the advanced level, it publishes an indoor air quality dataset derived from its COVILED platform. The data is collected via IoT sensors installed in buildings and published in structured format, accompanied by a JSON Schema describing the dataset structure and a README.md file with technical information. This type of data has direct application in environmental health, energy efficiency and the design of healthy spaces.\n\nIndoor air quality is a determining factor for people's health, especially in work environments, educational centers or healthcare facilities. The availability of structured and standardized indoor environmental monitoring data is scarce in health data ecosystems, despite its relevance for environmental health research and the development of smart and healthy buildings.",
+      "descripcion_ampliada": "Indoor air quality is a determining factor in people's health, particularly in workplaces, educational centres and healthcare facilities. Structured and standardised indoor environmental monitoring data remains scarce in health data ecosystems despite its relevance to environmental health research and the development of smart, healthy buildings.\n\nWireless Galicia S.L. is a Vigo-based company specialising in IoT solutions and connectivity. By joining OneHealth DataSpace as a data provider, it publishes an indoor air quality dataset derived from its COVILED platform. Data is collected through IoT sensors installed in buildings and published in a structured format, accompanied by a JSON Schema describing the dataset structure and a LEEME.md file containing technical information. This data has direct applications in environmental health, energy efficiency and the design of healthy spaces.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
@@ -1106,7 +1132,7 @@
       "volumen": "2 TB",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Data type: Regional meteorological fields simulated with WRF (wind, turbulence, stability), model configurations, wind turbine parameters, and derived oceanic/biogeochemical forcings. Data source: HPC simulations executed at CESGA; ERA5 reanalysis for initial and boundary conditions; specific offshore wind farm configurations. Intended use of the data: Provide coherent wind forcings for oceanographic and biogeochemical models; analyse impacts on the marine environment under different multi-use scenarios.\n\nResources: WRF, Python, OpenMPI, Intel MPI, NetCDF/pNetCDF, Jasper, Fortran. 80–150 cores, 240 h – 10 days per job, 36 jobs per campaign, ~2 TB persistent storage.\n\nCoherent wind forcings for oceanographic and biogeochemical models. Assessment of the impact of wind farms on the marine environment in OLAMUR scenarios.",
+      "datos_descripcion": "Data type: Regional meteorological fields simulated with WRF (wind, turbulence, stability), model configurations, wind turbine parameters, and derived oceanic/biogeochemical forcings. Data source: HPC simulations executed at CESGA; ERA5 reanalysis for initial and boundary conditions; specific offshore wind farm configurations. Intended use of the data: Provide coherent wind forcings for oceanographic and biogeochemical models; analyse impacts on the marine environment under different multi-use scenarios.\n\nResources: WRF, Python, OpenMPI, Intel MPI, NetCDF/pNetCDF, Jasper, Fortran. 80–150 cores, 240 h (10 days) per job, 36 jobs per campaign, ~2 TB persistent storage.\n\nCoherent wind forcings for oceanographic and biogeochemical models. Assessment of the impact of wind farms on the marine environment in OLAMUR scenarios.",
       "entidad_promotora": "CESGA"
     },
     "climaticseriesai": {
@@ -1115,11 +1141,11 @@
       "use_case": "Climatoc-Lab Group, CIDE (CSIC-UV-GVA)",
       "provider": "Climatoc-Lab, CIDE (CSIC-UV-GVA)",
       "description": "Development of AI models focused on the infilling of incomplete wind series and on the automatic identification of breezes. The aim is to complete climate series with gaps and generate a high-resolution spatiotemporal breeze dataset.",
-      "descripcion_ampliada": "Development of AI models focused on the infilling of incomplete wind series and on the automatic identification of breezes. The aim is to complete climate series with gaps and generate a high-resolution spatiotemporal breeze dataset.\n\nWind climate series present temporal gaps that hinder trend analysis and the study of the impact of climate change on breeze regimes.",
+      "descripcion_ampliada": "Wind climate series contain temporal gaps that hinder trend analysis and the study of the impact of climate change on breeze regimes.\n\nThe use case will therefore develop AI models focused on filling gaps in incomplete wind series and automatically identifying breezes. The aim is to complete climate series with gaps and generate a high-resolution spatiotemporal breeze dataset.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Data type: Complete climatic series, AI models for identifying sea breezes, spatial infilling of sea breeze days. Data source: Data from meteorological stations, ERA5-Land, CERRA. Intended use of the data: Study of the variation of sea breeze regimes and the impact of climate change. Training and validation of AI models.\n\nComplete climatic series without gaps. High-resolution spatiotemporal sea breeze dataset.\n\nComplete climatic series without gaps. High-resolution spatiotemporal sea breeze dataset.",
+      "datos_descripcion": "Data type: Complete climatic series, AI models for identifying sea breezes, spatial infilling of sea breeze days. Data source: Data from meteorological stations, ERA5-Land, CERRA. Intended use of the data: Study of the variation of sea breeze regimes and the impact of climate change. Training and validation of AI models.\n\nComplete climatic series without gaps. High-resolution spatiotemporal sea breeze dataset.",
       "entidad_promotora": "Climatoc-Lab, CIDE (CSIC-UV-GVA)"
     },
     "agentes_contraste_rmi": {
@@ -1128,7 +1154,7 @@
       "use_case": "QUIMAOR Group, USC",
       "provider": "QUIMAOR Group, USC",
       "description": "Calculation of fundamental parameters in the characterization of new contrast agents for MRI (Magnetic Resonance Imaging).",
-      "descripcion_ampliada": "The use case aims to exploit the computational resources available within the OneHealth DataSpace project for the calculation of fundamental parameters in the characterization of new contrast agents for MRI, in collaboration with the CAs4MI group at UDC.\n\nThe procedure requires a methodological benchmark with Gaussian followed by the calculation of A and G tensors with ORCA to compute the characterization parameters of new metallic complexes that are candidates for MRI contrast agents (EPR A and G tensors).",
+      "descripcion_ampliada": "The use case aims to characterise new MRI contrast agents by calculating fundamental parameters. This work is carried out in collaboration with the CAs4MI group at UDC.\n\nThe procedure requires a methodological benchmark with Gaussian followed by the calculation of A and G tensors with ORCA to compute the characterization parameters of new metallic complexes that are candidates for MRI contrast agents (EPR A and G tensors).",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
@@ -1167,7 +1193,7 @@
       "use_case": "CONSUVET",
       "provider": "CONSUVET",
       "description": "The aim is to achieve complete semantics for animal diseases starting with data from WOAH/OIE and complementing it with other official information sources. The next step is the semantics of clinical symptoms associated with each disease, related to the species in which it develops.",
-      "descripcion_ampliada": "The aim is to achieve complete semantics for animal diseases starting with data from WOAH/OIE and complementing it with other official information sources. The next step is the semantics of clinical symptoms associated with each disease, related to the species in which it develops.\n\nIt is impossible to study diseases without perfectly standardized semantics for names and clinical symptoms. Animal diseases fall under the OneHealth category due to their high involvement in human health and vice versa.",
+      "descripcion_ampliada": "Diseases cannot be studied adequately unless the semantics of their names and clinical symptoms are standardised. Animal diseases form part of the One Health approach because of their close relationship with human health and vice versa.\n\nThe use case therefore aims to develop comprehensive semantics for animal diseases, starting with WOAH/OIE data and supplementing it with other official sources. The next step will be to define the semantics of the clinical symptoms associated with each disease and relate them to the species in which the disease occurs.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
@@ -1193,11 +1219,11 @@
       "use_case": "Next & Health Consulting S.L.",
       "provider": "Next & Health Consulting S. L.",
       "description": "Next & Health Consulting publishes in OneHealth DataSpace a sample of 1,000 synthetic and longitudinal electronic health records, distributed across four CSV files with patient data, clinical encounters, diagnoses and IPS (International Patient Summary) summaries. The dataset is part of a broader project aimed at reaching one million records.",
-      "descripcion_ampliada": "Next & Health Consulting S.L. is a digital health consultancy based in Vélez-Málaga. With its incorporation into OneHealth DataSpace at the advanced level, it publishes a comprehensive package of synthetic longitudinal electronic health records designed for use in research, development of medical AI tools and validation of interoperability pipelines. The dataset follows health interoperability standards (IPS) and is distributed across four separate CSV files. The data is entirely synthetic, generated to preserve privacy and eliminate the legal and ethical barriers of using real clinical data.\n\nThe lack of large volumes of accessible and reusable longitudinal clinical data limits the development of artificial intelligence tools in health and the validation of interoperability systems. High-quality synthetic data that respects standards such as IPS offers a viable alternative to meet this need in the health data ecosystem.",
+      "descripcion_ampliada": "The lack of large volumes of accessible and reusable longitudinal clinical data limits the development of artificial intelligence tools in health and the validation of interoperability systems. High-quality synthetic data that complies with standards such as IPS offers a viable alternative for meeting this need in the health data ecosystem.\n\nNext & Health Consulting S.L. is a digital health consultancy based in Vélez-Málaga. By joining OneHealth DataSpace as a data provider, it publishes a package of synthetic longitudinal electronic health records designed for research, development of medical AI tools and validation of interoperability pipelines. The published sample contains 1,000 records, follows the IPS healthcare standard and is distributed across four CSV files. The data is entirely synthetic to preserve privacy and remove the legal and ethical barriers associated with using real clinical data.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Data type: Sample of 1,000 longitudinal synthetic electronic health records. Distributed in four CSV files: patients (patient data), encounters (clinical encounters), diagnoses (diagnoses), and ips_summaries (IPS summaries — International Patient Summary). The package includes technical metadata in JSON-LD, licence, and README. ID of the asset published in OneHealth DataSpace: 1millionhce-sample-1000. Data source: Synthetic generation by Next & Health Consulting following health interoperability standards (IPS). Intended use of the data: Development and validation of medical AI tools; training of clinical models; validation of health interoperability pipelines; digital health research without privacy restrictions.\n\nSample of 1,000 longitudinal synthetic electronic health records available in OneHealth DataSpace, covering the main elements of the IPS. Resource for the development of medical AI tools and the validation of interoperability systems, scalable to one million records.",
+      "datos_descripcion": "Data type: Sample of 1,000 longitudinal synthetic electronic health records. Distributed in four CSV files: patients (patient data), encounters (clinical encounters), diagnoses (diagnoses), and ips_summaries (IPS summaries, International Patient Summary). The package includes technical metadata in JSON-LD, licence, and README. ID of the asset published in OneHealth DataSpace: 1millionhce-sample-1000. Data source: Synthetic generation by Next & Health Consulting following health interoperability standards (IPS). Intended use of the data: Development and validation of medical AI tools; training of clinical models; validation of health interoperability pipelines; digital health research without privacy restrictions.\n\nSample of 1,000 longitudinal synthetic electronic health records available in OneHealth DataSpace, covering the main elements of the IPS. Resource for the development of medical AI tools and the validation of interoperability systems, scalable to one million records.",
       "entidad_promotora": "Next & Health Consulting S. L."
     },
     "compound_drought_heat_lattin": {
@@ -1206,11 +1232,11 @@
       "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "description": "Lagrangian analysis with the LATTIN tool of compound drought and heat wave events in the Mediterranean region. LATTIN models are parallelized for the advection of a large number of active tracers over real atmospheric fields, requiring specialized HPC/CPU resources.",
-      "descripcion_ampliada": "Lagrangian analysis with the LATTIN tool of compound drought and heat wave events in the Mediterranean region. LATTIN models are parallelized for the advection of a large number of active tracers over real atmospheric fields, requiring specialized HPC/CPU resources.\n\nInsufficient understanding of the physical mechanisms that trigger and sustain compound drought and heat wave events, and their severe impacts on human health in the Mediterranean region.",
+      "descripcion_ampliada": "There is currently insufficient understanding of the physical mechanisms that trigger and sustain compound drought and heatwave events, as well as their severe impacts on human health in the Mediterranean region.\n\nThe use case will therefore conduct a Lagrangian analysis of these events using the LATTIN tool. Its models are parallelised for the advection of a large number of active tracers over real atmospheric fields and consequently require specialised HPC/CPU resources.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Data type: Lagrangian trajectories and derived fields of heat and moisture transport in compound drought–heat wave events. Data source: Simulations performed with the LATTIN tool based on real atmospheric reanalysis fields. Intended use of the data: Improved physical understanding of high social-impact phenomena. Sharing with the academic community.\n\nQuantitative improvement in the understanding of physical factors involved in compound drought–heat wave events in southern Europe.\n\nResults on the physical factors conditioning compound drought–heat wave events in the Mediterranean. Scientific publications.",
+      "datos_descripcion": "Data type: Lagrangian trajectories and derived fields of heat and moisture transport in compound drought–heat wave events. Data source: Simulations performed with the LATTIN tool based on real atmospheric reanalysis fields. Intended use of the data: Improved physical understanding of high social-impact phenomena. Exchange with the academic community.\n\nQuantitative improvement in the understanding of physical factors involved in compound drought–heat wave events in southern Europe.\n\nResults on the physical factors conditioning compound drought–heat wave events in the Mediterranean. Scientific publications.",
       "entidad_promotora": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo"
     },
     "wrf_brisasmarinas": {
@@ -1227,16 +1253,16 @@
       "entidad_promotora": "CLIMATOC-LAB, CIDE (CSIC-UV-GVA)"
     },
     "wheydata": {
-      "name": "WHEYDATA — Data Sharing for the Sourcing and Controlled Management of Dairy Whey from Artisan Cheese Dairies",
+      "name": "WHEYDATA — Data Exchange for the Sourcing and Controlled Management of Dairy Whey from Artisan Cheese Dairies",
       "dataset_name": "-",
       "use_case": "Agrolinera Astur S. L.",
       "provider": "Agrolinera Astur S. L.",
-      "description": "Agrolinera publishes in OneHealth DataSpace data on the management of whey collected from artisan cheese dairies in Cabrales through an IoT system of smart containers (wheytainer/wheyboxes). Each month, collected volumes, number of participating dairies, and data on origin are shared.",
-      "descripcion_ampliada": "Agrolinera publishes in OneHealth DataSpace data on the management of whey collected from artisan cheese dairies in Cabrales through an IoT system of smart containers (wheytainer/wheyboxes). Each month, collected volumes, number of participating dairies, and data on origin, treatment, and destination are shared in an aggregated and anonymized form. The pilot covers 11 dairies and 280 transactions (April 2025 – March 2026).\n\nIn rural mountain areas, managing whey remains a logistical and environmental challenge. The project makes it possible to know, in an aggregated form, how much whey is properly managed and what valorization potential exists in the territory.",
+      "description": "Agrolinera publishes in OneHealth DataSpace data on the management of whey collected from artisan cheese dairies in Cabrales through an IoT system of smart containers (wheytainer/wheyboxes). Each month, the collected volumes, number of participating dairies and data on the origin, treatment and destination of the whey are shared.",
+      "descripcion_ampliada": "In rural mountain areas, whey management remains a logistical and environmental challenge. The project provides aggregated information on how much whey is properly managed and the potential for its valorisation within the territory.\n\nAgrolinera publishes in OneHealth DataSpace data on the management of whey collected from artisan cheese dairies in Cabrales through an IoT system of smart containers (wheytainer/wheyboxes). Each month, collected volumes, the number of participating dairies and data on origin, treatment and destination are shared in aggregated and anonymised form. The pilot covers 11 dairies and 280 transactions between April 2025 and March 2026.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Data type: Monthly aggregated dataset on the origin and controlled management of whey from artisan cheese dairies in Cabrales. Includes zone of origin, collection volumes, number of transactions, participating dairies, and valorization destination. CSV format (descargas_suero_mensual.csv). ID of the asset published in OneHealth DataSpace: dataset-descargas-suero-mensual. License: CC BY 4.0. Temporal coverage: April 2025 – February 2026. Geographic coverage: Cabrales, Asturias. Data source: IoT system of smart containers (wheytainer/wheyboxes) operated by Agrolinera in artisan cheese dairies in Cabrales since April 2025. Intended use of the data: Monitoring of environmental management in sensitive areas; design of valorization projects; evidence of good practices and traceability for cheese dairies.\n\nPromotion of the rural circular economy. Traceability for artisan cheese dairies. Replicable model in other dairy farming territories.\n\nWhey management dataset available in OneHealth DataSpace. Replicable data-sharing model in other territories.",
+      "datos_descripcion": "Data type: Monthly aggregated dataset on the origin and controlled management of whey from artisan cheese dairies in Cabrales. Includes zone of origin, collection volumes, number of transactions, participating dairies, and valorization destination. CSV format (descargas_suero_mensual.csv). ID of the asset published in OneHealth DataSpace: dataset-descargas-suero-mensual. License: CC BY 4.0. Temporal coverage: April 2025 – February 2026. Geographic coverage: Cabrales, Asturias. Data source: IoT system of smart containers (wheytainer/wheyboxes) operated by Agrolinera in artisan cheese dairies in Cabrales since April 2025. Intended use of the data: Monitoring of environmental management in sensitive areas; design of valorization projects; evidence of good practices and traceability for cheese dairies.\n\nPromotion of the rural circular economy. Traceability for artisan cheese dairies. Replicable model in other dairy farming territories.\n\nWhey management dataset available in OneHealth DataSpace. Replicable data exchange model in other territories.",
       "entidad_promotora": "Agrolinera Astur S. L."
     },
     "meteogalicia": {
@@ -1250,8 +1276,8 @@
       "n_ficheros": "-",
       "subsets": {
         "meteogalicia_cies": {
-          "name": "Temperatura superficial de la 'Boia de Cíes'",
-          "description": "Suministrado por MeteoGalicia, comprende datos de temperatura superficial proporcionados por la estación 'Boia de Cíes'. Estos datos representan medidas de temperatura superficial en esta ubicación específica.",
+          "name": "Surface Temperature from the Cíes Buoy",
+          "description": "Provided by MeteoGalicia, this dataset contains surface-temperature data from the 'Boia de Cíes' station. The data represent surface-temperature measurements at this specific location.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -1283,14 +1309,14 @@
             {
               "name": "DATA",
               "units": "-",
-              "data_description": "tempo (segundos dende a época especificada)",
+              "data_description": "time (seconds since the specified epoch)",
               "data_type": "string"
             }
           ]
         },
         "wrf_1km": {
           "name": "Modelo WRF 1Km de MeteoGalicia",
-          "description": "Proporcionado por MeteoGalicia, abarca datos del modelo WRF (Weather Research and Forecasting) con diferentes resoluciones espaciais (1km, 4km, 5km). Estes datos proporcionan unha representación modelada de diversas variables meteorolóxicas nunha rexión específica.",
+          "description": "Provided by MeteoGalicia, this dataset contains WRF (Weather Research and Forecasting) model data at different spatial resolutions (1 km, 4 km and 5 km). The data provide a modelled representation of meteorological variables in a specific region.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -1310,37 +1336,37 @@
             {
               "name": "lon",
               "units": "-",
-              "data_description": "lonxitude xeográfica (graos leste de Greenwich)",
+              "data_description": "geographic longitude (degrees east of Greenwich)",
               "data_type": "float"
             },
             {
               "name": "lat",
               "units": "-",
-              "data_description": "latitud xeográfica (graos norte do ecuador)",
+              "data_description": "geographic latitude (degrees north of the Equator)",
               "data_type": "float"
             },
             {
               "name": "prec",
               "units": "-",
-              "data_description": "fluxo de precipitación",
+              "data_description": "precipitation flux",
               "data_type": "float"
             },
             {
               "name": "conv_prec",
               "units": "-",
-              "data_description": "fluxo de precipitación convectiva",
+              "data_description": "convective precipitation flux",
               "data_type": "float"
             },
             {
               "name": "snow_prec",
               "units": "-",
-              "data_description": "fluxo de neve",
+              "data_description": "snowfall flux",
               "data_type": "float"
             },
             {
               "name": "topo",
               "units": "-",
-              "data_description": "altitude da superficie",
+              "data_description": "surface altitude",
               "data_type": "float"
             },
             {
@@ -1352,13 +1378,13 @@
             {
               "name": "wind_gust",
               "units": "-",
-              "data_description": "velocidade do vento de refacho",
+              "data_description": "wind-gust speed",
               "data_type": "float"
             },
             {
               "name": "pbl_height",
               "units": "-",
-              "data_description": "altura da capa límite",
+              "data_description": "boundary-layer height",
               "data_type": "float"
             },
             {
@@ -1370,19 +1396,19 @@
             {
               "name": "lwflx",
               "units": "-",
-              "data_description": "fluxo descendente de radianza de onda longa na superficie",
+              "data_description": "downward longwave radiative flux at the surface",
               "data_type": "float"
             },
             {
               "name": "swflx",
               "units": "-",
-              "data_description": "fluxo descendente de radianza de onda curta na superficie",
+              "data_description": "downward shortwave radiative flux at the surface",
               "data_type": "float"
             },
             {
               "name": "mslp",
               "units": "-",
-              "data_description": "presión do aire ao nivel medio do mar",
+              "data_description": "air pressure at mean sea level",
               "data_type": "float"
             },
             {
@@ -1394,19 +1420,19 @@
             {
               "name": "dir",
               "units": "-",
-              "data_description": "dirección do vento",
+              "data_description": "wind direction",
               "data_type": "float"
             },
             {
               "name": "u",
               "units": "-",
-              "data_description": "componente leste do vento",
+              "data_description": "eastward wind component",
               "data_type": "float"
             },
             {
               "name": "v",
               "units": "-",
-              "data_description": "componente norte do vento",
+              "data_description": "northward wind component",
               "data_type": "float"
             },
             {
@@ -1496,19 +1522,19 @@
             {
               "name": "temp",
               "units": "-",
-              "data_description": "temperatura do aire",
+              "data_description": "air temperature",
               "data_type": "float"
             },
             {
               "name": "sst",
               "units": "-",
-              "data_description": "temperatura da superficie mariña",
+              "data_description": "sea-surface temperature",
               "data_type": "float"
             },
             {
               "name": "rh",
               "units": "-",
-              "data_description": "humidade relativa do aire",
+              "data_description": "relative humidity",
               "data_type": "float"
             },
             {
@@ -1538,31 +1564,31 @@
             {
               "name": "cape",
               "units": "-",
-              "data_description": "enerxía potencial dispoñible convectiva",
+              "data_description": "convective available potential energy",
               "data_type": "float"
             },
             {
               "name": "cin",
               "units": "-",
-              "data_description": "inhibición convectiva",
+              "data_description": "convective inhibition",
               "data_type": "float"
             },
             {
               "name": "visibility",
               "units": "-",
-              "data_description": "visibilidade no aire",
+              "data_description": "visibility in air",
               "data_type": "float"
             },
             {
               "name": "shflx",
               "units": "-",
-              "data_description": "fluxo sensible de calor cara arriba na superficie",
+              "data_description": "upward sensible heat flux at the surface",
               "data_type": "float"
             },
             {
               "name": "lhflx",
               "units": "-",
-              "data_description": "fluxo latente de calor cara arriba na superficie",
+              "data_description": "upward latent heat flux at the surface",
               "data_type": "float"
             },
             {
@@ -1580,19 +1606,19 @@
             {
               "name": "x",
               "units": "-",
-              "data_description": "coordenada x no espazo de proxección",
+              "data_description": "x coordinate in projection space",
               "data_type": "double"
             },
             {
               "name": "y",
               "units": "-",
-              "data_description": "coordenada y no espazo de proxección",
+              "data_description": "y coordinate in projection space",
               "data_type": "double"
             },
             {
               "name": "time",
               "units": "-",
-              "data_description": "tempo (segundos dende a época especificada)",
+              "data_description": "time (seconds since the specified epoch)",
               "data_type": "bigint"
             },
             {
@@ -1629,7 +1655,7 @@
         },
         "meteogalicia_roms": {
           "name": "Modelo ROMS de MeteoGalicia",
-          "description": "Proporciona datos del modelo ROMS con una resolución espacial de 2 km, desarrollado y mantenido por MeteoGalicia. Estos datos ofrecen una representación modelada de diversas variables oceanográficas en una región específica. Estos datos ofrecen información detallada sobre diversas variables oceanográficas modeladas por el sistema ROMS.",
+          "description": "This dataset provides data from the ROMS model, developed and maintained by MeteoGalicia, at a spatial resolution of 2 km. It contains detailed modelled information on oceanographic variables in a specific region.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -1643,86 +1669,86 @@
             {
               "name": "lon_rho",
               "units": "-",
-              "data_description": "Longitud geográfica en una malla (rho-point).",
+              "data_description": "Geographic longitude on the grid (rho point).",
               "data_type": "double"
             },
             {
               "name": "lat_rho",
               "units": "-",
-              "data_description": "Latitud geográfica en una malla (rho-point).",
+              "data_description": "Geographic latitude on the grid (rho point).",
               "data_type": "double"
             },
             {
               "name": "mask_rho",
               "units": "-",
-              "data_description": "Máscara que indica si un punto de la malla está en el agua (1) o en tierra (0).",
+              "data_description": "Mask indicating whether a grid point is water (1) or land (0).",
               "data_type": "double"
             },
             {
               "name": "angle",
               "units": "-",
-              "data_description": "Ángulo de la malla respecto a una referencia.",
+              "data_description": "Grid angle relative to a reference.",
               "data_type": "double"
             },
             {
               "name": "ocean_time",
               "units": "-",
-              "data_description": "Marca de tiempo para las observaciones.",
+              "data_description": "Timestamp for the observations.",
               "data_type": "date"
             },
             {
               "name": "zeta",
               "units": "-",
-              "data_description": "Elevación de la superficie del mar.",
+              "data_description": "Sea-surface elevation.",
               "data_type": "date"
             },
             {
               "name": "u",
               "units": "-",
-              "data_description": "Componentes de velocidad del flujo en la dirección x (u).",
+              "data_description": "Flow-velocity component in the x direction (u).",
               "data_type": "double"
             },
             {
               "name": "v",
               "units": "-",
-              "data_description": "Componentes de velocidad del flujo en la dirección y (v).",
+              "data_description": "Flow-velocity component in the y direction (v).",
               "data_type": "double"
             },
             {
               "name": "temp",
               "units": "-",
-              "data_description": "Temperatura del agua en el punto de medición.",
+              "data_description": "Water temperature at the measurement point.",
               "data_type": "double"
             },
             {
               "name": "salt",
               "units": "-",
-              "data_description": "Salinidad del agua en el punto de medición.",
+              "data_description": "Water salinity at the measurement point.",
               "data_type": "double"
             },
             {
               "name": "depth",
               "units": "-",
-              "data_description": "Profundidad del agua en el punto de medición.",
+              "data_description": "Water depth at the measurement point.",
               "data_type": "double"
             },
             {
               "name": "eta_rho",
               "units": "-",
-              "data_description": "Coordenada de la malla en la dirección vertical (eta).",
+              "data_description": "Grid coordinate in the vertical direction (eta).",
               "data_type": "int"
             },
             {
               "name": "xi_rho",
               "units": "-",
-              "data_description": "Coordenada de la malla en la dirección horizontal (xi).",
+              "data_description": "Grid coordinate in the horizontal direction (xi).",
               "data_type": "int"
             }
           ]
         },
         "wrf_4km": {
           "name": "Modelo WRF 4Km de MeteoGalicia",
-          "description": "Proporcionado por MeteoGalicia, abarca datos do modelo WRF (Weather Research and Forecasting) con diferentes resolucións espaciais (1km, 4km, 5km). Estes datos proporcionan unha representación modelada de diversas variables meteorolóxicas nunha rexión específica.",
+          "description": "Provided by MeteoGalicia, this dataset contains WRF (Weather Research and Forecasting) model data at different spatial resolutions (1 km, 4 km and 5 km). The data provide a modelled representation of meteorological variables in a specific region.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -1742,37 +1768,37 @@
             {
               "name": "lon",
               "units": "-",
-              "data_description": "lonxitude xeográfica (graos leste de Greenwich)",
+              "data_description": "geographic longitude (degrees east of Greenwich)",
               "data_type": "float"
             },
             {
               "name": "lat",
               "units": "-",
-              "data_description": "latitud xeográfica (graos norte do ecuador)",
+              "data_description": "geographic latitude (degrees north of the Equator)",
               "data_type": "float"
             },
             {
               "name": "prec",
               "units": "-",
-              "data_description": "fluxo de precipitación",
+              "data_description": "precipitation flux",
               "data_type": "float"
             },
             {
               "name": "conv_prec",
               "units": "-",
-              "data_description": "fluxo de precipitación convectiva",
+              "data_description": "convective precipitation flux",
               "data_type": "float"
             },
             {
               "name": "snow_prec",
               "units": "-",
-              "data_description": "fluxo de neve",
+              "data_description": "snowfall flux",
               "data_type": "float"
             },
             {
               "name": "topo",
               "units": "-",
-              "data_description": "altitude da superficie",
+              "data_description": "surface altitude",
               "data_type": "float"
             },
             {
@@ -1784,13 +1810,13 @@
             {
               "name": "wind_gust",
               "units": "-",
-              "data_description": "velocidade do vento de refacho",
+              "data_description": "wind-gust speed",
               "data_type": "float"
             },
             {
               "name": "pbl_height",
               "units": "-",
-              "data_description": "altura da capa límite",
+              "data_description": "boundary-layer height",
               "data_type": "float"
             },
             {
@@ -1802,19 +1828,19 @@
             {
               "name": "lwflx",
               "units": "-",
-              "data_description": "fluxo descendente de radiación de onda longa na superficie",
+              "data_description": "downward longwave radiative flux at the surface",
               "data_type": "float"
             },
             {
               "name": "swflx",
               "units": "-",
-              "data_description": "fluxo descendente de radiación de onda curta na superficie",
+              "data_description": "downward shortwave radiative flux at the surface",
               "data_type": "float"
             },
             {
               "name": "mslp",
               "units": "-",
-              "data_description": "presión atmosférica ao nivel medio do mar",
+              "data_description": "air pressure at mean sea level",
               "data_type": "float"
             },
             {
@@ -1826,19 +1852,19 @@
             {
               "name": "dir",
               "units": "-",
-              "data_description": "dirección desde a que sopra o vento",
+              "data_description": "direction from which the wind blows",
               "data_type": "float"
             },
             {
               "name": "u",
               "units": "-",
-              "data_description": "compoñente leste do vento",
+              "data_description": "eastward wind component",
               "data_type": "float"
             },
             {
               "name": "v",
               "units": "-",
-              "data_description": "compoñente norte do vento",
+              "data_description": "northward wind component",
               "data_type": "float"
             },
             {
@@ -1928,19 +1954,19 @@
             {
               "name": "temp",
               "units": "-",
-              "data_description": "temperatura do aire",
+              "data_description": "air temperature",
               "data_type": "float"
             },
             {
               "name": "sst",
               "units": "-",
-              "data_description": "temperatura da superficie do mar",
+              "data_description": "sea-surface temperature",
               "data_type": "float"
             },
             {
               "name": "rh",
               "units": "-",
-              "data_description": "humidade relativa",
+              "data_description": "relative humidity",
               "data_type": "float"
             },
             {
@@ -1970,31 +1996,31 @@
             {
               "name": "cape",
               "units": "-",
-              "data_description": "enerxía potencial dispoñible convectiva",
+              "data_description": "convective available potential energy",
               "data_type": "float"
             },
             {
               "name": "cin",
               "units": "-",
-              "data_description": "inhibición convectiva",
+              "data_description": "convective inhibition",
               "data_type": "float"
             },
             {
               "name": "visibility",
               "units": "-",
-              "data_description": "visibilidade no aire",
+              "data_description": "visibility in air",
               "data_type": "float"
             },
             {
               "name": "shflx",
               "units": "-",
-              "data_description": "fluxo de calor sensible cara arriba na superficie",
+              "data_description": "upward sensible heat flux at the surface",
               "data_type": "float"
             },
             {
               "name": "lhflx",
               "units": "-",
-              "data_description": "fluxo de calor latente cara arriba na superficie",
+              "data_description": "upward latent heat flux at the surface",
               "data_type": "float"
             },
             {
@@ -2012,19 +2038,19 @@
             {
               "name": "x",
               "units": "-",
-              "data_description": "coordenada x no espazo de proxección",
+              "data_description": "x coordinate in projection space",
               "data_type": "double"
             },
             {
               "name": "y",
               "units": "-",
-              "data_description": "coordenada y no espazo de proxección",
+              "data_description": "y coordinate in projection space",
               "data_type": "double"
             },
             {
               "name": "time",
               "units": "-",
-              "data_description": "tempo (segundos dende a época especificada)",
+              "data_description": "time (seconds since the specified epoch)",
               "data_type": "bigint"
             },
             {
@@ -2061,7 +2087,7 @@
         },
         "wrf_5km": {
           "name": "Modelo WRF 5Km de MeteoGalicia",
-          "description": "Proporcionado por MeteoGalicia, abarca datos do modelo WRF (Weather Research and Forecasting) con diferentes resolucións espaciais (1km, 4km, 5km). Estes datos proporcionan unha representación modelada de diversas variables meteorolóxicas nunha rexión específica.",
+          "description": "Provided by MeteoGalicia, this dataset contains WRF (Weather Research and Forecasting) model data at different spatial resolutions (1 km, 4 km and 5 km). The data provide a modelled representation of meteorological variables in a specific region.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2081,37 +2107,37 @@
             {
               "name": "lon",
               "units": "-",
-              "data_description": "lonxitude xeográfica (graos leste de Greenwich)",
+              "data_description": "geographic longitude (degrees east of Greenwich)",
               "data_type": "float"
             },
             {
               "name": "lat",
               "units": "-",
-              "data_description": "latitud xeográfica (graos norte do ecuador)",
+              "data_description": "geographic latitude (degrees north of the Equator)",
               "data_type": "float"
             },
             {
               "name": "prec",
               "units": "-",
-              "data_description": "fluxo de precipitación",
+              "data_description": "precipitation flux",
               "data_type": "float"
             },
             {
               "name": "conv_prec",
               "units": "-",
-              "data_description": "fluxo de precipitación convectiva",
+              "data_description": "convective precipitation flux",
               "data_type": "float"
             },
             {
               "name": "snow_prec",
               "units": "-",
-              "data_description": "fluxo de neve",
+              "data_description": "snowfall flux",
               "data_type": "float"
             },
             {
               "name": "topo",
               "units": "-",
-              "data_description": "altitude da superficie",
+              "data_description": "surface altitude",
               "data_type": "float"
             },
             {
@@ -2123,13 +2149,13 @@
             {
               "name": "wind_gust",
               "units": "-",
-              "data_description": "velocidade do vento de refacho",
+              "data_description": "wind-gust speed",
               "data_type": "float"
             },
             {
               "name": "pbl_height",
               "units": "-",
-              "data_description": "altura da capa límite",
+              "data_description": "boundary-layer height",
               "data_type": "float"
             },
             {
@@ -2141,19 +2167,19 @@
             {
               "name": "lwflx",
               "units": "-",
-              "data_description": "fluxo descendente de radiación de onda longa na superficie",
+              "data_description": "downward longwave radiative flux at the surface",
               "data_type": "float"
             },
             {
               "name": "swflx",
               "units": "-",
-              "data_description": "fluxo descendente de radiación de onda curta na superficie",
+              "data_description": "downward shortwave radiative flux at the surface",
               "data_type": "float"
             },
             {
               "name": "mslp",
               "units": "-",
-              "data_description": "presión atmosférica ao nivel medio do mar",
+              "data_description": "air pressure at mean sea level",
               "data_type": "float"
             },
             {
@@ -2165,19 +2191,19 @@
             {
               "name": "dir",
               "units": "-",
-              "data_description": "dirección desde a que sopra o vento",
+              "data_description": "direction from which the wind blows",
               "data_type": "float"
             },
             {
               "name": "u",
               "units": "-",
-              "data_description": "compoñente leste do vento",
+              "data_description": "eastward wind component",
               "data_type": "float"
             },
             {
               "name": "v",
               "units": "-",
-              "data_description": "compoñente norte do vento",
+              "data_description": "northward wind component",
               "data_type": "float"
             },
             {
@@ -2267,19 +2293,19 @@
             {
               "name": "temp",
               "units": "-",
-              "data_description": "temperatura do aire",
+              "data_description": "air temperature",
               "data_type": "float"
             },
             {
               "name": "sst",
               "units": "-",
-              "data_description": "temperatura da superficie do mar",
+              "data_description": "sea-surface temperature",
               "data_type": "float"
             },
             {
               "name": "rh",
               "units": "-",
-              "data_description": "humidade relativa",
+              "data_description": "relative humidity",
               "data_type": "float"
             },
             {
@@ -2309,31 +2335,31 @@
             {
               "name": "cape",
               "units": "-",
-              "data_description": "enerxía potencial dispoñible convectiva",
+              "data_description": "convective available potential energy",
               "data_type": "float"
             },
             {
               "name": "cin",
               "units": "-",
-              "data_description": "inhibición convectiva",
+              "data_description": "convective inhibition",
               "data_type": "float"
             },
             {
               "name": "visibility",
               "units": "-",
-              "data_description": "visibilidade no aire",
+              "data_description": "visibility in air",
               "data_type": "float"
             },
             {
               "name": "shflx",
               "units": "-",
-              "data_description": "fluxo de calor sensible cara arriba na superficie",
+              "data_description": "upward sensible heat flux at the surface",
               "data_type": "float"
             },
             {
               "name": "lhflx",
               "units": "-",
-              "data_description": "fluxo de calor latente cara arriba na superficie",
+              "data_description": "upward latent heat flux at the surface",
               "data_type": "float"
             },
             {
@@ -2351,19 +2377,19 @@
             {
               "name": "x",
               "units": "-",
-              "data_description": "coordenada x no espazo de proxección",
+              "data_description": "x coordinate in projection space",
               "data_type": "double"
             },
             {
               "name": "y",
               "units": "-",
-              "data_description": "coordenada y no espazo de proxección",
+              "data_description": "y coordinate in projection space",
               "data_type": "double"
             },
             {
               "name": "time",
               "units": "-",
-              "data_description": "tempo (segundos dende a época especificada)",
+              "data_description": "time (seconds since the specified epoch)",
               "data_type": "bigint"
             },
             {
@@ -2402,13 +2428,26 @@
       "datos_descripcion": "Data type: Historical record of atmospheric and marine dynamics model runs. ROMS model with CF vocabulary. Data source: MeteoGalicia operational models (atmospheric and oceanographic forecasting). Intended use of the data: Contribution of meteorological and oceanic data to the data space; evaluation of combined use cases with other OneHealth datasets.\n\nHistorical record of atmospheric and marine dynamics models available in the data space with CF standard vocabulary.",
       "entidad_promotora": "MeteoGalicia"
     },
+    "meteogalicia_wrf_fire": {
+      "name": "WRF-Fire — Reanalysis and wildfire modelling",
+      "dataset_name": "-",
+      "use_case": "MeteoGalicia",
+      "provider": "MeteoGalicia",
+      "description": "Performance improvements to WRF-Fire for coupled simulations of the atmosphere and wildfire spread using WRF data at 1 km resolution.",
+      "descripcion_ampliada": "WRF-Fire is a coupled atmosphere-fire model that represents both the influence of atmospheric conditions on fire evolution and the feedback of the fire on the atmosphere through the heat, water vapour and emissions it generates. Its execution requires data from MeteoGalicia's WRF model at 1 km resolution.\n\nThis use case takes advantage of OneHealth DataSpace's computing capacity to improve WRF-Fire performance and facilitate high-resolution wildfire simulations.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Data type: Meteorological data from the 1 km WRF model and results from coupled atmosphere-fire numerical simulations. Data source: MeteoGalicia's WRF model. Intended use of the data: Modelling wildfire evolution and its interaction with atmospheric conditions using WRF-Fire.",
+      "entidad_promotora": "MeteoGalicia"
+    },
     "heat_stress_lattin": {
       "name": "Heat Stress LATTIN — Lagrangian Analysis of Moisture and Heat Transport in High Social Impact Events Due to Thermal Stress",
       "dataset_name": "-",
       "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "description": "Lagrangian analysis using LATTIN of the physical heat and moisture transport factors involved in high thermal stress events. Extreme thermal stress causes elevated mortality, especially in older adults and people with chronic diseases.",
-      "descripcion_ampliada": "Lagrangian analysis using LATTIN of the physical heat and moisture transport factors involved in high thermal stress events. Extreme thermal stress causes elevated mortality, especially in older adults and people with chronic diseases.\n\nExtreme thermal stress events cause high morbidity and mortality in vulnerable populations. A systematic Lagrangian analysis of the physical factors that condition these events in southern Europe is lacking.",
+      "descripcion_ampliada": "Extreme thermal stress events cause high morbidity and mortality in vulnerable populations. A systematic Lagrangian analysis of the physical factors that condition these events in southern Europe is lacking.\n\nThe use case will therefore employ LATTIN to conduct a Lagrangian analysis of the physical heat and moisture transport factors involved in high thermal stress events, whose mortality particularly affects older people and those with chronic diseases.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
@@ -2460,7 +2499,7 @@
       "use_case": "ICIGA DATALAB S. L. U.",
       "provider": "ICIGA DATALAB S. L. U.",
       "description": "This use case consists of publishing a data product based on a CSV dataset derived from the internal catalog of laboratory products distributed by ICIGA DATALAB SLU. The catalog includes technical characteristics and classification metadata for laboratory material items (equipment, consumables and reagents) used by entities in the health, veterinary and environmental sectors. It does not include personal data.",
-      "descripcion_ampliada": "This use case consists of publishing a data product based on a CSV dataset derived from the internal catalog of laboratory products distributed by ICIGA DATALAB SLU. The catalog includes technical characteristics and classification metadata for laboratory material items (equipment, consumables and reagents) used by entities in the health, veterinary and environmental sectors. It does not include personal data.\n\nLack of reuse of internal assets and the absence of a structured laboratory materials catalog accessible in an open manner within the health data ecosystem. ICIGA DATALAB identifies the opportunity to valorize its internal catalog by converting it into a reusable data product for researchers, clinics, hospitals and entities in the OneHealth sector.",
+      "descripcion_ampliada": "The lack of reuse of internal assets and the absence of an openly accessible, structured laboratory materials catalogue limit their value within the health data ecosystem. ICIGA DATALAB has identified an opportunity to turn its internal catalogue into a reusable data product for researchers, clinics, hospitals and organisations in the OneHealth sector.\n\nThe use case consists of publishing a data product based on a CSV dataset derived from the internal catalogue of laboratory products distributed by ICIGA DATALAB SLU. The catalogue includes technical characteristics and classification metadata for laboratory material items (equipment, consumables and reagents) used by organisations in the health, veterinary and environmental sectors. It does not include personal data.",
       "volumen": "1,5 MB",
       "n_ficheros": "-",
       "subsets": {},
@@ -2472,8 +2511,8 @@
       "dataset_name": "-",
       "use_case": "OTTO SOFTWARE S. L.",
       "provider": "OTTO SOFTWARE S. L.",
-      "description": "The use case consists of obtaining and sharing truthful, real-time data on daily activity in healthcare day centers, without interfering with the day-to-day work of caring for elderly people. The data is recorded through a specialized ERP for day centers.",
-      "descripcion_ampliada": "The use case consists of obtaining and sharing truthful, real-time data on daily activity in healthcare day centers, without interfering with the day-to-day work of caring for elderly people. The data is recorded through a specialized ERP for day centers, capturing health, care, functional, activity and therapy information. The goal is to improve data quality in this sector, where currently available information is neither representative nor valid for analysis.\n\nData distortion and poor data quality in healthcare day centers. Existing information is neither representative nor valid for statistical or artificial intelligence analysis, since records are made manually and with a delay, introducing errors and inconsistencies that limit their usefulness for care improvement and research.",
+      "description": "The use case consists of obtaining and exchanging truthful, real-time data on daily activity in healthcare day centers, without interfering with the day-to-day work of caring for elderly people. The data is recorded through a specialized ERP for day centers.",
+      "descripcion_ampliada": "Healthcare day centres suffer from distorted and poor-quality data. Existing information is neither representative nor suitable for statistical or artificial intelligence analysis because records are entered manually and retrospectively, introducing errors and inconsistencies that limit their usefulness for improving care and conducting research.\n\nThe use case therefore consists of obtaining and sharing accurate, real-time data on the daily activity of these centres without interfering with the day-to-day care of older people. Data is recorded through a specialised ERP that captures health, care and functional information, as well as activities and therapies. The objective is to improve data quality in this sector.",
       "volumen": "4 GB",
       "n_ficheros": "-",
       "subsets": {},
@@ -2485,8 +2524,8 @@
       "dataset_name": "-",
       "use_case": "MERCANTIA DESARROLLOS ALIMENTARIOS S.L.",
       "provider": "MERCANTIA DESARROLLOS ALIMENTARIOS S. L.",
-      "description": "Mercantia Desarrollos Alimentarios provides a curated version of the database used by MicroBioTool, with the aim of converting a proprietary scientific-technical asset into a reusable resource within the OneHealth DataSpace ecosystem. MicroBioTool is a web tool for analysis.",
-      "descripcion_ampliada": "Mercantia Desarrollos Alimentarios provides a curated version of the database used by MicroBioTool, with the aim of converting a proprietary scientific-technical asset into a reusable resource within the OneHealth DataSpace ecosystem. MicroBioTool is a web tool for human gut microbiome analysis. The curated database, derived from the Human Gut Microbiome Atlas, is published in SQL format for use by researchers and developers in the field of digestive health and personalized nutrition.\n\nLack of structured access to curated human gut microbiome databases for use in research and development of digestive health tools. Mercantia possesses a proprietary technical asset (the MicroBioTool database) whose valorization as open data can contribute to the OneHealth data ecosystem.",
+      "description": "Mercantia Desarrollos Alimentarios provides a curated version of the database used by MicroBioTool, with the aim of converting a proprietary scientific-technical asset into a reusable resource within the OneHealth DataSpace ecosystem. MicroBioTool is a web tool for human gut microbiome analysis.",
+      "descripcion_ampliada": "The lack of structured access to curated human gut microbiome databases hinders their use in research and in the development of digestive health tools. Mercantia owns a technical asset, the MicroBioTool database, whose publication as open data can contribute to the OneHealth ecosystem.\n\nMercantia Desarrollos Alimentarios provides a curated version of this database to turn it into a reusable resource within OneHealth DataSpace. MicroBioTool is a web tool for human gut microbiome analysis. Its database, derived from the Human Gut Microbiome Atlas, is published in SQL format for use by researchers and developers working in digestive health and personalised nutrition.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
@@ -2499,7 +2538,7 @@
       "use_case": "CIDE (CSIC-UV-GVA)",
       "provider": "CIDE (CSIC-UV-GVA)",
       "description": "Development of Deep Learning models for hourly prediction of critical meteorological variables in Spain using downscaling and super-resolution techniques, enabling predictive maps with resolution of up to 1 km x 1 km and a 24–72 hour horizon.",
-      "descripcion_ampliada": "Development of Deep Learning models for hourly prediction of critical meteorological variables in Spain using downscaling and super-resolution techniques, enabling predictive maps with resolution of up to 1 km x 1 km and a 24–72 hour horizon.\n\nNWP models have limited resolution for climate risk management and renewable energy applications. AI-based downscaling techniques are needed.",
+      "descripcion_ampliada": "NWP models have limited resolution for climate risk management and renewable energy applications, creating a need for AI-based downscaling techniques.\n\nThe use case will enable the development of Deep Learning models for hourly prediction of critical meteorological variables in Spain using downscaling and super-resolution techniques. These models will generate predictive maps with a resolution of up to 1 km x 1 km and a 24-72 hour horizon.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
@@ -2525,7 +2564,7 @@
       "use_case": "Top Health Tech S. L.",
       "provider": "Top Health Tech S. L.",
       "description": "Top Health Tech publishes in OneHealth DataSpace a structured dataset on diabetic patients, collected in Iraqi society from clinical records of two hospitals specialized in diabetes and endocrinology. The data, organized in a structured database, is oriented toward the development of AI tools focused on diabetes.",
-      "descripcion_ampliada": "Top Health Tech SL is a Barcelona-based company specializing in artificial intelligence applied to health, with a platform related to the Topdoctors ecosystem. With its incorporation into OneHealth DataSpace at the advanced level, it publishes a diabetic patient dataset obtained from real clinical records of the Medical City Hospital and the Specialized Center for Endocrinology and Diabetes (Al-Kindy Teaching Hospital, Iraq). The data has been extracted directly from medical records and organized in a structured database, with the specific purpose of building a dataset for the training and validation of AI models oriented toward diabetes.\n\nDiabetes is one of the chronic diseases with the highest global prevalence. Having structured and accessible clinical datasets for the development and validation of AI tools is a recognized need in the sector. This case contributes real data from populations underrepresented in large Western health datasets.",
+      "descripcion_ampliada": "Diabetes is one of the most prevalent chronic diseases worldwide. Access to structured clinical datasets for developing and validating AI tools is a recognised need in the sector. This use case contributes real data from populations that are underrepresented in large Western health datasets.\n\nTop Health Tech SL is a Barcelona-based company specialising in artificial intelligence applied to health, with a platform connected to the Topdoctors ecosystem. By joining OneHealth DataSpace as a data provider, it publishes a dataset of patients with diabetes obtained from real clinical records at Medical City Hospital and the Specialized Center for Endocrinology and Diabetes (Al-Kindy Teaching Hospital, Iraq). The data was extracted directly from medical records and organised into a structured database for training and validating AI models focused on diabetes.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
@@ -2538,7 +2577,7 @@
       "use_case": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "provider": "Environmental Physics Laboratory (EPhysLab), Universidade de Vigo",
       "description": "Extension of the physical factor contribution database published by Mayer and Wirth (2025), expanding its temporal coverage from 2010-2022 to 1980-2025. The result, publicly accessible NetCDF files, will constitute a reference resource for the international scientific community.",
-      "descripcion_ampliada": "Extension of the physical factor contribution database published by Mayer and Wirth (2025), expanding its temporal coverage from 2010-2022 to 1980-2025. The result, publicly accessible NetCDF files, will constitute a reference resource for the international scientific community.\n\nThe existing database only covers 2010-2022, which limits climatological analysis and prevents the study of extreme events outside that temporal range.",
+      "descripcion_ampliada": "The existing database only covers the 2010-2022 period, which limits climatological analysis and prevents the study of extreme events outside that temporal range.\n\nThe use case will therefore extend the physical factor contribution database published by Mayer and Wirth (2025), expanding its temporal coverage to 1980-2025. The resulting publicly accessible NetCDF files will constitute a reference resource for the international scientific community.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
@@ -2584,17 +2623,43 @@
       "datos_descripcion": "Data type: Pharmaceutical vaccination acceptance dataset. Data associated with patients receiving vaccination in pharmacies (non-sensitive data). Synthetic data generated to enrich the dataset. Data source: Public dataset: https://datadryad.org/dataset/doi:10.5061/dryad.tb084 (72.84 KB, xlsx file with multiple sheets). Synthetic data generated from the original dataset. Intended use of the data: Demonstration of data exchange among multiple participants. Training models for synthetic data generation. Analysis of vaccination trends. Implementation reference for other use cases. Approximate volume: 72.84 KB (original dataset). With synthetic data: up to several GB depending on needs. Format: XLSX (semi-structured, multiple sheets). Final format pending definition.\n\nCorrect use of connectors among the three simulated participants. Demonstration of the demonstrator's functionality. Reference for the other use cases. Deliverable 4.2 will document the success of this use case.",
       "entidad_promotora": "CESGA"
     },
-    "grheco_xen_iahpc_biomedica": {
-      "name": "AI/HPC Biomedical — Comparative Evaluation of Open Source Foundation Models in Medicine; Virtual Screening on EGFR; and GPU Acceleration Benchmark for Nucleus Detection with StarDist.",
+    "grheco_medical_foundation_models": {
+      "name": "Evaluation of Open Source Foundation Models in Medicine",
       "dataset_name": "-",
       "use_case": "Computational Hematology and Genomics Group (GrHeCo-Xen), IDIS",
       "provider": "Computational Hematology and Genomics Group (GrHeCo-Xen)",
-      "description": "Three complementary lines are integrated: (1) evaluation of open source foundation models for medicine through biomedical question-answering benchmarks; (2) large-scale virtual screening against EGFR combining molecular docking and GPU-accelerated molecular dynamics; (3) GPU acceleration of StarDist 2D.",
-      "descripcion_ampliada": "Three complementary lines are integrated: (1) evaluation of open source foundation models for medicine through biomedical question-answering benchmarks; (2) large-scale virtual screening against EGFR combining molecular docking and GPU-accelerated molecular dynamics; (3) GPU acceleration of StarDist 2D for nucleus detection in H&amp;E WSI images from digital pathology, with CPU vs. GPU comparison.\n\nThe group needs to dimension HPC/AI infrastructure for real biomedical workloads, while avoiding exposure of clinical data, proprietary models or strategic know-how. Bottlenecks: robust evaluation of on-premise medical LLMs; thousands of concurrent docking calculations; and nucleus detection in WSI images (up to 51 hours per sample on CPU).",
+      "description": "Comparative evaluation of open source foundation models for medicine using biomedical question-answering benchmarks.",
+      "descripcion_ampliada": "This use case robustly evaluates open source medical foundation models in a secure, governed environment. It compares HPC/AI configurations using objective metrics to size on-premise deployments without exposing clinical data, proprietary models or strategic know-how.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
-      "datos_descripcion": "Data type: PubMedQA, MedRedQA; EGFR structures and public ligands; MoNuSeg 2018, CoNIC 2022, PanNuke; synthetic H&E images. Simulation and benchmarking results. Data source: Public biomedical benchmarks; public repositories of molecular structures (PDB); public histopathology datasets; computation generated on the demonstrator infrastructure. Intended use of the data: Validation of biomedical use cases in a governed environment; comparison of HPC/AI configurations with objective metrics; justification of structural computing needs.\n\nImproved medical AI evaluation, prioritisation of candidate compounds, and reduced analysis times in digital pathology. Support for technical decisions for secure on-premise deployments.\n\nTechnical recommendations for secure on-premise deployments. Ranked EGFR candidate lists. GPU acceleration metrics for nucleus detection. Reproducible FAIR results.",
+      "datos_descripcion": "Data type: PubMedQA and MedRedQA public biomedical question-answering benchmarks, together with evaluation and benchmarking results generated on the demonstrator infrastructure. Data source: public biomedical benchmarks. Intended use: validate open source medical models, compare HPC/AI configurations and produce technical recommendations for secure on-premise deployments. Reproducible FAIR results.",
+      "entidad_promotora": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)"
+    },
+    "grheco_egfr_virtual_screening": {
+      "name": "Large-Scale Virtual Screening Against EGFR",
+      "dataset_name": "-",
+      "use_case": "Computational Hematology and Genomics Group (GrHeCo-Xen), IDIS",
+      "provider": "Computational Hematology and Genomics Group (GrHeCo-Xen)",
+      "description": "Large-scale virtual screening against EGFR using molecular docking and GPU-accelerated molecular dynamics.",
+      "descripcion_ampliada": "This use case applies high-performance computing to screen thousands of ligands against EGFR. It combines concurrent molecular docking calculations with GPU-accelerated molecular dynamics to evaluate and prioritize candidate compounds.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Data type: public EGFR structures, public ligands and molecular simulation results. Data source: public molecular structure repositories, including PDB, and computation generated on the demonstrator infrastructure. Intended use: validate virtual screening workflows in a governed environment and prioritize compounds. Output: ranked EGFR candidate lists and reproducible FAIR results.",
+      "entidad_promotora": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)"
+    },
+    "grheco_stardist_gpu": {
+      "name": "GPU Acceleration of StarDist for Nucleus Detection",
+      "dataset_name": "-",
+      "use_case": "Computational Hematology and Genomics Group (GrHeCo-Xen), IDIS",
+      "provider": "Computational Hematology and Genomics Group (GrHeCo-Xen)",
+      "description": "GPU acceleration benchmark for StarDist 2D nucleus detection in H&E WSI digital pathology images.",
+      "descripcion_ampliada": "This use case compares CPU and GPU execution of StarDist 2D to reduce nucleus detection times in H&E WSI images. It aims to size the infrastructure required for real digital pathology workloads, which can take up to 51 hours per sample on CPU.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Data type: MoNuSeg 2018, CoNIC 2022 and PanNuke public histopathology datasets, synthetic H&E images and benchmarking results. Data source: public datasets and computation generated on the demonstrator infrastructure. Intended use: compare CPU/GPU configurations and reduce digital pathology analysis times. Output: GPU acceleration metrics for nucleus detection and reproducible FAIR results.",
       "entidad_promotora": "Grupo de Hematoloxía Computacional e Xenómica (GrHeCo-Xen)"
     },
     "gene_regulatory_control_mpnst": {
@@ -2647,8 +2712,8 @@
       "n_ficheros": "-",
       "subsets": {
         "ieo_roms": {
-          "name": "Datos del modelo ROMS de IEO",
-          "description": "Proporcionado por el Instituto Español de Oceanografía (IEO), consiste en datos del modelo ROMS con una resolución espacial de 4 km. Este conxunto de datos ofrece información detallada sobre diversas variables oceanográficas modeladas a través do modelo ROMS. Estes datos proporcionan información modelada sobre parámetros oceanográficos nunha rexión específica.",
+          "name": "IEO ROMS Model Data",
+          "description": "Provided by the Spanish Institute of Oceanography (IEO), this dataset contains ROMS model data at a spatial resolution of 4 km. It provides detailed modelled information on oceanographic parameters in a specific region.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2722,8 +2787,8 @@
           ]
         },
         "ieo_lura": {
-          "name": "Datos de la plataforma móvil Lura",
-          "description": "Proporcionado por el Instituto Español de Oceanografía (IEO), contiene datos de la plataforma móvil Lura. Estos datos ofrecen información detallada sobre diversas variables oceanográficas recopiladas durante las operaciones de la plataforma. Estos datos son cruciales para comprender la dinámica del océano en diferentes ubicaciones y momentos.",
+          "name": "Lura Mobile Platform Data",
+          "description": "Provided by the Spanish Institute of Oceanography (IEO), this dataset contains data collected by the Lura mobile platform. It provides detailed oceanographic measurements gathered during platform operations to support analysis of ocean dynamics across locations and times.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2737,92 +2802,92 @@
             {
               "name": "longitude",
               "units": "degrees_east",
-              "data_description": "A coordenada lonxitudinal do punto de datos.",
+              "data_description": "The longitudinal coordinate of the data point.",
               "data_type": "double"
             },
             {
               "name": "latitude",
               "units": "degrees_north",
-              "data_description": "A coordenada latitudinal do punto de datos.",
+              "data_description": "The latitudinal coordinate of the data point.",
               "data_type": "double"
             },
             {
               "name": "t090c",
               "units": "degree_Celsius",
-              "data_description": "Temperatura en graos Celsius, medida polo sensor a 90 cm.",
+              "data_description": "Temperature in degrees Celsius, measured by the sensor at 90 cm.",
               "data_type": "double"
             },
             {
               "name": "sal00",
               "units": "1e-3",
-              "data_description": "Salinidade da auga.",
+              "data_description": "Water salinity.",
               "data_type": "double"
             },
             {
               "name": "flscufa",
               "units": "unknown",
-              "data_description": "Fluorescencia, unha medida da concentración de clorofila ou fitoplancto na auga.",
+              "data_description": "Fluorescence, a measure of chlorophyll or phytoplankton concentration in the water.",
               "data_type": "string"
             },
             {
               "name": "cdomfltc0",
               "units": "unknown",
-              "data_description": "Colored Dissolved Organic Matter fluorescence. Indica a presenza de compostos orgánicos na auga.",
+              "data_description": "Coloured dissolved organic matter fluorescence, indicating the presence of organic compounds in the water.",
               "data_type": "string"
             },
             {
               "name": "turbfltc0",
               "units": "unknown",
-              "data_description": "Medida da turbidez ou nebulosidad da auga causada por un gran número de partículas individuais.",
+              "data_description": "Measurement of water turbidity caused by a large number of individual particles.",
               "data_type": "string"
             },
             {
               "name": "timem",
               "units": "seconds",
-              "data_description": "Tempo en segundos, presumiblemente desde unha época determinada.",
+              "data_description": "Time in seconds, presumably since a specified epoch.",
               "data_type": "double"
             },
             {
               "name": "flag",
               "units": "-",
-              "data_description": "Indicador ou bandeira para control de calidade ou erros.",
+              "data_description": "Flag for quality control or error reporting.",
               "data_type": "int"
             },
             {
               "name": "fecha",
               "units": "-",
-              "data_description": "Data e hora da observación.",
+              "data_description": "Observation date and time.",
               "data_type": "timestamp"
             },
             {
               "name": "barco",
               "units": "-",
-              "data_description": "O nome do barco ou buque que recolleu os datos.",
+              "data_description": "Name of the vessel that collected the data.",
               "data_type": "string"
             },
             {
               "name": "geom",
               "units": "-",
-              "data_description": "Representación xeométrica ou espacial do punto de datos en formato WKT (EPSG:4326).",
+              "data_description": "Geometric or spatial representation of the data point in WKT format (EPSG:4326).",
               "data_type": "string"
             },
             {
               "name": "speed",
               "units": "m s-1",
-              "data_description": "A velocidade do buque no momento da recollida de datos.",
+              "data_description": "Vessel speed at the time of data collection.",
               "data_type": "double"
             },
             {
               "name": "acceleration",
               "units": "m s-2",
-              "data_description": "A aceleración do buque no momento da recollida de datos.",
+              "data_description": "Vessel acceleration at the time of data collection.",
               "data_type": "double"
             }
           ]
         },
         "ieo_navaz": {
-          "name": "Datos de la plataforma móvil Navaz",
-          "description": "Proporcionado por el Instituto Español de Oceanografía (IEO), contiene datos de la plataforma móvil Navaz. Estos datos ofrecen información detallada sobre diversas variables oceanográficas recopiladas durante las operaciones de la plataforma. Estos datos son cruciales para comprender la dinámica del océano en diferentes ubicaciones y momentos.",
+          "name": "Navaz Mobile Platform Data",
+          "description": "Provided by the Spanish Institute of Oceanography (IEO), this dataset contains data collected by the Navaz mobile platform. It provides detailed oceanographic measurements gathered during platform operations to support analysis of ocean dynamics across locations and times.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2836,74 +2901,74 @@
             {
               "name": "longitude",
               "units": "degrees_east",
-              "data_description": "A coordenada lonxitudinal do punto de datos.",
+              "data_description": "The longitudinal coordinate of the data point.",
               "data_type": "double"
             },
             {
               "name": "latitude",
               "units": "degrees_north",
-              "data_description": "A coordenada latitudinal do punto de datos.",
+              "data_description": "The latitudinal coordinate of the data point.",
               "data_type": "double"
             },
             {
               "name": "t090c",
               "units": "degree_Celsius",
-              "data_description": "Temperatura en graos Celsius, medida polo sensor a 90 cm.",
+              "data_description": "Temperature in degrees Celsius, measured by the sensor at 90 cm.",
               "data_type": "double"
             },
             {
               "name": "sal00",
               "units": "1e-3",
-              "data_description": "Salinidade da auga.",
+              "data_description": "Water salinity.",
               "data_type": "double"
             },
             {
               "name": "fltau",
               "units": "unknown",
-              "data_description": "Fluorescencia en unidades arbitrarias.",
+              "data_description": "Fluorescence in arbitrary units.",
               "data_type": "string"
             },
             {
               "name": "timem",
               "units": "seconds",
-              "data_description": "Tempo en segundos, presumiblemente desde unha época determinada.",
+              "data_description": "Time in seconds, presumably since a specified epoch.",
               "data_type": "double"
             },
             {
               "name": "flag",
               "units": "-",
-              "data_description": "Indicador ou bandeira para control de calidade ou erros.",
+              "data_description": "Flag for quality control or error reporting.",
               "data_type": "int"
             },
             {
               "name": "fecha",
               "units": "-",
-              "data_description": "Data e hora da observación.",
+              "data_description": "Observation date and time.",
               "data_type": "timestamp"
             },
             {
               "name": "barco",
               "units": "-",
-              "data_description": "O nome do barco ou buque que recolleu os datos.",
+              "data_description": "Name of the vessel that collected the data.",
               "data_type": "string"
             },
             {
               "name": "id",
               "units": "-",
-              "data_description": "Un identificador único para cada punto de medición.",
+              "data_description": "A unique identifier for each measurement point.",
               "data_type": "int"
             },
             {
               "name": "geom",
               "units": "-",
-              "data_description": "Representación xeométrica ou espacial do punto de datos en formato WKT (EPSG:4326).",
+              "data_description": "Geometric or spatial representation of the data point in WKT format (EPSG:4326).",
               "data_type": "string"
             }
           ]
         },
         "ieo_ui": {
-          "name": "Índice de afloramiento costero del IEO.",
-          "description": "Proporcionado por el Instituto Español de Oceanografía (IEO) se centra en el Índice de Afloramiento Costero. Este índice es crucial para comprender y monitorear los fenómenos de afloramiento, que tienen un impacto significativo en la productividad biológica y la biodiversidad marina en las áreas costeras.",
+          "name": "Upwelling index costero del IEO.",
+          "description": "Provided by the Spanish Institute of Oceanography (IEO), this dataset focuses on the Coastal Upwelling Index. The index supports the study and monitoring of upwelling events, which significantly affect biological productivity and marine biodiversity in coastal areas.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -2917,92 +2982,92 @@
             {
               "name": "fecha",
               "units": "-",
-              "data_description": "Fecha y hora de la observación",
+              "data_description": "Observation date and time",
               "data_type": "date"
             },
             {
               "name": "s_ano",
               "units": "-",
-              "data_description": "Año de la observación",
+              "data_description": "Observation year",
               "data_type": "int"
             },
             {
               "name": "s_mes",
               "units": "-",
-              "data_description": "Mes de la observación",
+              "data_description": "Observation month",
               "data_type": "int"
             },
             {
               "name": "s_dia",
               "units": "-",
-              "data_description": "Día de la observación",
+              "data_description": "Observation day",
               "data_type": "int"
             },
             {
               "name": "s_hora",
               "units": "-",
-              "data_description": "Hora de la observación",
+              "data_description": "Observation hour",
               "data_type": "int"
             },
             {
               "name": "s_ne",
               "units": "-",
-              "data_description": "Medición en dirección noreste",
+              "data_description": "Measurement in the north-east direction",
               "data_type": "double"
             },
             {
               "name": "s_nw",
               "units": "-",
-              "data_description": "Medición en dirección noroeste",
+              "data_description": "Measurement in the north-west direction",
               "data_type": "double"
             },
             {
               "name": "s_se",
               "units": "-",
-              "data_description": "Medición en dirección sureste",
+              "data_description": "Measurement in the south-east direction",
               "data_type": "double"
             },
             {
               "name": "s_sw",
               "units": "-",
-              "data_description": "Medición en dirección suroeste",
+              "data_description": "Measurement in the south-west direction",
               "data_type": "double"
             },
             {
               "name": "s_cu",
               "units": "-",
-              "data_description": "Componente u del vector (eje X)",
+              "data_description": "Vector u component (X axis)",
               "data_type": "double"
             },
             {
               "name": "s_cv",
               "units": "-",
-              "data_description": "Componente v del vector (eje Y)",
+              "data_description": "Vector v component (Y axis)",
               "data_type": "double"
             },
             {
               "name": "s_qy",
               "units": "-",
-              "data_description": "Medición en eje Y",
+              "data_description": "Measurement on the Y axis",
               "data_type": "double"
             },
             {
               "name": "s_qx",
               "units": "-",
-              "data_description": "Medición en eje X",
+              "data_description": "Measurement on the X axis",
               "data_type": "double"
             },
             {
               "name": "ui",
               "units": "-",
-              "data_description": "Índice de afloramiento",
+              "data_description": "Upwelling index",
               "data_type": "double"
             }
           ]
         },
         "ieo_capturas": {
-          "name": "Datos de abundancias y distribución de especies.",
-          "description": "Proporcionado por el Instituto Español de Oceanografía (IEO) en colaboración con PESCASOST, comprende datos de abundancias y distribución de especies de las campañas DEMERSALES del IEO. Estos datos proporcionan información sobre la presencia y cantidad de especies en las áreas investigadas durante las campañas.",
+          "name": "Species Abundance and Distribution Data",
+          "description": "Provided by the Spanish Institute of Oceanography (IEO) in collaboration with PESCASOST, this dataset contains species abundance and distribution data from the IEO DEMERSALES surveys. It reports the presence and abundance of species in the areas covered by the surveys.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -3016,122 +3081,122 @@
             {
               "name": "id_observation",
               "units": "-",
-              "data_description": "Identificación de la observación.",
+              "data_description": "Observation identifier.",
               "data_type": "string"
             },
             {
               "name": "aphia_id_code",
               "units": "-",
-              "data_description": "Código de identificación taxonómica (Aphia)",
+              "data_description": "Taxonomic identification code (Aphia)",
               "data_type": "string"
             },
             {
               "name": "cod_ieem",
               "units": "-",
-              "data_description": "Código IEEM de la observación.",
+              "data_description": "IEEM observation code.",
               "data_type": "string"
             },
             {
               "name": "id_spezie",
               "units": "-",
-              "data_description": "Identificación de la especie.",
+              "data_description": "Species identifier.",
               "data_type": "string"
             },
             {
               "name": "x3a_code",
               "units": "-",
-              "data_description": "Nombre científico de la especie.",
+              "data_description": "Scientific name of the species.",
               "data_type": "string"
             },
             {
               "name": "scientific_name",
               "units": "-",
-              "data_description": "Nombre FAO en español.",
+              "data_description": "FAO name in Spanish.",
               "data_type": "string"
             },
             {
               "name": "spanish_fao_name",
               "units": "-",
-              "data_description": "Nombre FAO en inglés.",
+              "data_description": "FAO name in English.",
               "data_type": "string"
             },
             {
               "name": "english_fao_name",
               "units": "-",
-              "data_description": "Proyecto relacionado con la observación.",
+              "data_description": "Project associated with the observation.",
               "data_type": "string"
             },
             {
               "name": "project",
               "units": "-",
-              "data_description": "Fecha de la observación.",
+              "data_description": "Observation date.",
               "data_type": "string"
             },
             {
               "name": "obs_date",
               "units": "-",
-              "data_description": "Número de individuos observados.",
+              "data_description": "Number of individuals observed.",
               "data_type": "string"
             },
             {
               "name": "individuals",
               "units": "-",
-              "data_description": "Número de individuos observados.",
+              "data_description": "Number of individuals observed.",
               "data_type": "string"
             },
             {
               "name": "weight_gr",
               "units": "-",
-              "data_description": "Peso en gramos.",
+              "data_description": "Weight in grams.",
               "data_type": "string"
             },
             {
               "name": "weight_kg",
               "units": "-",
-              "data_description": "Peso en kilogramos.",
+              "data_description": "Weight in kilograms.",
               "data_type": "string"
             },
             {
               "name": "depth",
               "units": "-",
-              "data_description": "Profundidad de la observación.",
+              "data_description": "Observation depth.",
               "data_type": "string"
             },
             {
               "name": "weight_gr_dum",
               "units": "-",
-              "data_description": "Peso en gramos (dum).",
+              "data_description": "Weight in grams (dum).",
               "data_type": "string"
             },
             {
               "name": "camp",
               "units": "-",
-              "data_description": "Campo relacionado con la observación.",
+              "data_description": "Field associated with the observation.",
               "data_type": "string"
             },
             {
               "name": "long_4326",
               "units": "-",
-              "data_description": "Longitud en sistema de coordenadas 4326.",
+              "data_description": "Longitude in coordinate reference system 4326.",
               "data_type": "string"
             },
             {
               "name": "lat_4326",
               "units": "-",
-              "data_description": "Latitud en sistema de coordenadas 4326.",
+              "data_description": "Latitude in coordinate reference system 4326.",
               "data_type": "string"
             },
             {
               "name": "geom",
               "units": "-",
-              "data_description": "Geometría de la observación en formato string.",
+              "data_description": "Observation geometry in string format.",
               "data_type": "string"
             }
           ]
         },
         "ieo_fitoplancton_flowcam": {
           "name": "Imágenes de fitoplancton con Flowcam",
-          "description": "Este conjunto de datos contiene imágenes de fitoplancton capturadas mediante el sistema FlowCam y procesadas posteriormente utilizando la plataforma Ecotaxa. Las imágenes recopiladas fueron clasificadas, etiquetadas y organizadas a través de Ecotaxa. El objetivo de este dataset es facilitar el estudio de la diversidad y abundancia del fitoplancton, proporcionando una base de datos estandarizada de alta resolución para su análisis ecológico y oceanográfico.",
+          "description": "This dataset contains phytoplankton images captured with the FlowCam system and subsequently processed using the EcoTaxa platform. The images were classified, labelled and organized in EcoTaxa to provide a standardized, high-resolution resource for ecological and oceanographic analysis of phytoplankton diversity and abundance.",
           "metadata": {
             "data_type": "",
             "data_standard": "",
@@ -3147,13 +3212,108 @@
       "datos_descripcion": "Data type: Multidisciplinary oceanographic data series and numerical model results of the marine ecosystem. Data source: Sustained ocean observations and numerical models generated and maintained by IEO-CSIC. Intended use of the data: Analysis of oceanographic environmental time series; development of applications and services for end users; integration with other datasets in the data space.\n\nOceanographic data available in the data space. Standard data and service catalogs integrated into the OneHealth DataSpace ecosystem.",
       "entidad_promotora": "Instituto Español de Oceanografía (IEO-CSIC)"
     },
+    "ieo_carabelas_drift_risk": {
+      "name": "Calculation of the probability of Portuguese man o' war appearing on Galician beaches",
+      "dataset_name": "physalia_salida_raw / physalia_riesgo",
+      "use_case": "Spanish Institute of Oceanography (IEO-CSIC)",
+      "provider": "Spanish Institute of Oceanography (IEO-CSIC)",
+      "description": "Operational system that simulates the drift of Portuguese man o' war and calculates the probability of their arrival at beaches in Galicia.",
+      "descripcion_ampliada": "This use case runs daily drift simulations with OpenDrift using thousands of virtual particles that represent possible Portuguese man o' war off the Galician coast. The system combines ocean currents and wind fields, generates individual trajectories and post-processes the results to estimate the probability of arrival at each beach.\n\nThe simulations use currents from Copernicus Marine and INTECMAR's HF Radar, together with wind data from MeteoGalicia. The alert level for each beach is calculated as the percentage of particles reaching its vicinity in the worst-case scenario over the following four days. It is a probabilistic estimate, not a certainty. The process integrates simulation, post-processing, PostgreSQL storage and visualisation through a web application and Grafana.",
+      "volumen": "Approximately 11 GB in the historical sample",
+      "n_ficheros": "2 historical CSV files; continuous operational generation",
+      "subsets": {
+        "raw_drift_output": {
+          "name": "physalia_salida_raw",
+          "description": "Complete trajectories of particles simulated by OpenDrift, from the start of each simulation until completion.",
+          "metadata": {
+            "data_type": "Simulation-derived data",
+            "data_standard": "",
+            "date_added": "",
+            "file_format": "CSV / PostgreSQL",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": "June-December 2025 in the historical sample"
+          },
+          "variables": [
+            { "name": "id", "units": "-", "data_description": "Database record identifier.", "data_type": "-" },
+            { "name": "id_trayectoria", "units": "-", "data_description": "Identifier of a particle's complete trajectory.", "data_type": "-" },
+            { "name": "longitud", "units": "-", "data_description": "Geographic longitude of the particle.", "data_type": "-" },
+            { "name": "latitud", "units": "-", "data_description": "Geographic latitude of the particle.", "data_type": "-" },
+            { "name": "status", "units": "-", "data_description": "Particle status: active, beached or outside the simulation.", "data_type": "-" },
+            { "name": "elev", "units": "-", "data_description": "Elevation or depth associated with the particle; exact meaning pending confirmation.", "data_type": "-" },
+            { "name": "t", "units": "h", "data_description": "Time elapsed since the start of the simulation.", "data_type": "-" },
+            { "name": "fc_particula", "units": "-", "data_description": "Date associated with the particle.", "data_type": "-" },
+            { "name": "modelo", "units": "-", "data_description": "Model used in the simulation.", "data_type": "-" },
+            { "name": "fc_ini", "units": "-", "data_description": "Simulation start date.", "data_type": "-" },
+            { "name": "tipo_simulacion", "units": "-", "data_description": "Simulation type: model-based forecast or HF Radar reanalysis.", "data_type": "-" },
+            { "name": "geom", "units": "-", "data_description": "Geographic representation of the particle.", "data_type": "-" },
+            { "name": "fc_ejecucion", "units": "-", "data_description": "Simulation execution date.", "data_type": "-" },
+            { "name": "fecha_hora_part", "units": "-", "data_description": "Date and time corresponding to the particle state.", "data_type": "-" }
+          ]
+        },
+        "beach_risk": {
+          "name": "physalia_riesgo",
+          "description": "Beach-level aggregated results obtained by post-processing the OpenDrift trajectories. The risk percentage represents the particles reaching the vicinity of each beach in the worst-case scenario over the following four days.",
+          "metadata": {
+            "data_type": "Derived and aggregated data",
+            "data_standard": "",
+            "date_added": "",
+            "file_format": "CSV / PostgreSQL",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": "June-December 2025 in the historical sample"
+          },
+          "variables": [
+            { "name": "model", "units": "-", "data_description": "Model used.", "data_type": "-" },
+            { "name": "time_index", "units": "-", "data_description": "Time elapsed since the start of the simulation.", "data_type": "-" },
+            { "name": "datetime", "units": "-", "data_description": "Forecast date and time.", "data_type": "-" },
+            { "name": "isobath", "units": "-", "data_description": "Isobath from which the particles were released.", "data_type": "-" },
+            { "name": "area", "units": "-", "data_description": "Name of the beach or coastal area.", "data_type": "-" },
+            { "name": "active_in_area", "units": "-", "data_description": "Number of active particles near the beach.", "data_type": "-" },
+            { "name": "stranded_in_area", "units": "-", "data_description": "Number of particles that reached the beach.", "data_type": "-" },
+            { "name": "risk_percent", "units": "%", "data_description": "Percentage of released particles that reached the beach.", "data_type": "-" },
+            { "name": "fc_ejecucion", "units": "-", "data_description": "Simulation execution date.", "data_type": "-" }
+          ]
+        }
+      },
+      "datos_descripcion": "Data type: Particle trajectories generated with OpenDrift and aggregated beach-risk results. Data source: Simulations using oceanographic model data, MeteoGalicia winds and INTECMAR HF Radar currents for reanalysis. Intended use of the data: Drift prediction and analysis, identification of exposed coastal areas and estimation of the risk of particles reaching beaches.\n\nThe shared historical sample contains approximately 10 GB of trajectories and 1 GB of beach-level processed results. The operational service continuously generates new data.",
+      "entidad_promotora": "Spanish Institute of Oceanography (IEO-CSIC)"
+    },
+    "cetmar_cortegada_hydrophone": {
+      "name": "Cortegada Hydrophone — Underwater noise monitoring",
+      "dataset_name": "hidrofono_cortegada_cetmar",
+      "use_case": "Marine Technology Centre — CETMAR Foundation",
+      "provider": "CETMAR",
+      "description": "Underwater acoustic data recorded by the hydrophone installed at Cortegada to study marine noise and its main sources.",
+      "descripcion_ampliada": "This use case brings together data provided by the Cortegada hydrophone, installed on an Ocean-Meteorological Observation Network platform located by the island. The recordings enable monitoring of the underwater soundscape and identification of the main noise sources in this area of the Rías Baixas.\n\nThe monitoring forms part of CETMAR's work to improve knowledge of marine noise and support more sustainable fishing and shellfishing activities with a lower acoustic impact.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {
+        "hydrophone_recordings": {
+          "name": "hidrofono_cortegada_cetmar",
+          "description": "Recordings and associated data provided by the Cortegada hydrophone.",
+          "metadata": {
+            "data_type": "Underwater acoustic data",
+            "data_standard": "",
+            "date_added": "07-12-2024",
+            "file_format": "WAV / CSV",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": ""
+          },
+          "variables": []
+        }
+      },
+      "datos_descripcion": "Data type: Underwater acoustic recordings in WAV format and associated data in CSV format. Data source: Hydrophone installed at Cortegada and managed as part of CETMAR's marine monitoring activities. Intended use of the data: Study of the underwater soundscape, identification of noise sources and analysis of their impact on the marine environment.",
+      "entidad_promotora": "Marine Technology Centre — CETMAR Foundation"
+    },
     "depourense": {
       "name": "Publication of Telecare Data",
       "dataset_name": "-",
       "use_case": "Deputación Provincial de Ourense",
       "provider": "Deputación Provincial de Ourense",
       "description": "The Diputación Provincial de Ourense publishes in OneHealth DataSpace four datasets from its home telecare service, with anonymized or pseudonymized information on follow-ups, device malfunctions, beneficiary characteristics and emergency events.",
-      "descripcion_ampliada": "La Diputación Provincial de Ourense gestiona un servicio de teleasistencia domiciliaria dirigido a personas mayores y dependientes. Con su incorporación a OneHealth DataSpace como proveedor de datos en nivel avanzado, pone a disposición del ecosistema cuatro datasets derivados del funcionamiento operativo del servicio, cubriendo los aspectos principales de la atención: contactos de seguimiento, incidencias técnicas en los dispositivos, perfil operativo de los beneficiarios y eventos de emergencia. Los datos se publican de forma seudoanonimizada, preservando la privacidad de las personas usuarias.\n\nLa disponibilidad de datos reales y estructurados del sector de la teleasistencia pública es escasa. La Diputación de Ourense identifica una oportunidad de contribuir al ecosistema de datos de salud y dependencia con información que puede ser útil para la mejora de servicios similares, la investigación en atención a la dependencia y el desarrollo de herramientas de análisis del bienestar de personas mayores.",
+      "descripcion_ampliada": "The Deputación Provincial de Ourense operates a home telecare service for older people and people requiring assistance. By joining OneHealth DataSpace as a data provider, it makes four datasets derived from the service's operations available to the ecosystem. These cover the main aspects of care: follow-up contacts, technical device incidents, beneficiaries' operational profiles and emergency events. The data are published in pseudonymized form to protect users' privacy.\n\nReal, structured data from public telecare services are scarce. The Deputación de Ourense has identified an opportunity to contribute information to the health and dependency data ecosystem that can support improvements to similar services, research into dependency care and the development of tools for analysing older people's well-being.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
@@ -3165,7 +3325,7 @@
       "dataset_name": "-",
       "use_case": "CONSUVET",
       "provider": "CONSUVET",
-      "description": "CcVet aims to digitize all information surrounding veterinary clinical cases so that it can be used in data spaces to cross-reference it with other related information, especially that related to human and environmental health. The project seeks.",
+      "description": "CcVet aims to digitize all information surrounding veterinary clinical cases so that it can be used in data spaces to cross-reference it with other related information, especially that related to human and environmental health. The project seeks to structure and standardize veterinary clinical practice data to make it interoperable with other health information systems within the OneHealth framework.",
       "descripcion_ampliada": "CcVet aims to digitize all information surrounding veterinary clinical cases so that it can be used in data spaces to cross-reference it with other related information, especially that related to human and environmental health. The project seeks to structure and standardize veterinary clinical practice data to make it interoperable with other health information systems within the OneHealth framework.\n\nVeterinary prescribing is subject to rigorous controls based on current regulations, especially RD 666/2023, which is based on the premise that clinical case data is perfectly documented. However, this information is dispersed and not available in interoperable formats that allow cross-analysis with human and environmental health data.",
       "volumen": "-",
       "n_ficheros": "-",
@@ -3178,13 +3338,106 @@
       "dataset_name": "-",
       "use_case": "TRUEWORLD",
       "provider": "TRUEWORLD",
-      "description": "Integration and sharing of TRUEWORLD environmental and agronomic data in OneHealth DataSpace. The use case incorporates environmental monitoring data collected by weather stations and IoT sensors (temperature, humidity, precipitation, wind, solar radiation) together with agronomic data (evapotranspiration, vegetation index, soil moisture).",
-      "descripcion_ampliada": "Integration and sharing of TRUEWORLD environmental and agronomic data in OneHealth DataSpace. The use case incorporates environmental monitoring data collected by weather stations and IoT sensors (temperature, humidity, precipitation, wind, solar radiation) together with agronomic data (evapotranspiration, vegetation index, soil moisture). The pilot dataset covers data from the Balearic Islands.\n\nNeed to structure and share the data generated by TRUEWORLD's sensor network and monitoring systems to maximize their value and reuse in the OneHealth data ecosystem. Distributed environmental and agronomic data have high potential for environmental health applications and climate risk management, but lack an interoperable sharing channel.",
+      "description": "Integration and exchange of TRUEWORLD environmental and agronomic data in OneHealth DataSpace. The use case incorporates environmental monitoring data collected by weather stations and IoT sensors (temperature, humidity, precipitation, wind, solar radiation) together with agronomic data (evapotranspiration, vegetation index, soil moisture).",
+      "descripcion_ampliada": "The data generated by TRUEWORLD's sensor network and monitoring systems needs to be structured and shared to maximise its value and reuse in the OneHealth ecosystem. Distributed environmental and agronomic data has strong potential for environmental health applications and climate risk management but lacks an interoperable data exchange channel.\n\nThe use case therefore integrates and shares environmental monitoring data collected by weather stations and IoT sensors (temperature, humidity, precipitation, wind and solar radiation), together with agronomic data (evapotranspiration, vegetation index and soil moisture), through OneHealth DataSpace. The pilot dataset covers the Balearic Islands.",
       "volumen": "-",
       "n_ficheros": "-",
       "subsets": {},
       "datos_descripcion": "Data type: Meteorological and agronomic data from Valldemossa (Balearic Islands). Meteorological parameters: air temperature (max./min.), relative humidity, dew point, wet-bulb temperature, wind speed and direction, maximum gust, thermal sensation, heat index, accumulated and intensity rainfall, solar radiation, evapotranspiration, UV index, heating and cooling degree days. Agronomic parameters: soil temperature, soil moisture, leaf moisture (max., min., and accumulated time). ID of the asset published in OneHealth DataSpace: meteo-dataset-v3. Data source: TRUEWORLD meteorological station and agricultural IoT sensors in Valldemossa, Balearic Islands. Periodic continuous monitoring records. Intended use of the data: Environmental and agronomic monitoring; health and environmental impact analysis; precision agriculture; climate risk management and adaptation to climate change.\n\nEnvironmental and agronomic data available in the OneHealth DataSpace data space, with applications in precision agriculture, environmental monitoring, climate risk management, and analysis of environmental impact on human health.\n\nEnvironmental and agronomic data dataset (meteo-dataset-v3) available in the OneHealth DataSpace data space. Replicable model for integrating IoT sensor data into health data ecosystems.",
       "entidad_promotora": "TRUEWORLD"
+    },
+    "evo2_viral_genomes": {
+      "name": "Evo 2 — Fine-tuning with viral genomes",
+      "dataset_name": "Eukaryotic-host and broad-host-range viral genomes",
+      "use_case": "De la Fuente Lab",
+      "provider": "De la Fuente Lab",
+      "description": "Fine-tuning of Evo 2 models of different sizes with eukaryotic-host and broad-host-range viral genomes using LoRA.",
+      "descripcion_ampliada": "This use case will fine-tune Evo 2 models of different sizes with eukaryotic-host and broad-host-range viral genome data using LoRA.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Data type: Eukaryotic-host and broad-host-range viral genomes prepared for fine-tuning Evo 2 with LoRA. Intended use of the data: Fine-tuning Evo 2 models of different sizes and evaluating their adaptation to viral genomic sequences.\n\nEvo 2 models of different sizes fine-tuned with the selected viral genome dataset using LoRA.",
+      "entidad_promotora": "De la Fuente Lab"
+    },
+    "intecmar_radar_hf": {
+      "name": "Galicia HF Radar — Hourly surface-current data",
+      "dataset_name": "Hourly data from the Galicia HF Radar",
+      "use_case": "INTECMAR",
+      "provider": "INTECMAR",
+      "description": "Hourly surface-current data estimated by the Galicia HF Radar Network and processed in near real time on a 6 km resolution grid.",
+      "descripcion_ampliada": "Current velocities estimated by HF radar represent approximately the upper 0.3–2.5 metres of the ocean. Hourly radial measurements from stations in the Galicia HF Radar Network are combined using unweighted least squares to generate near-real-time surface-current maps on a 6 km grid off the Galician coast.\n\nThe dataset supports observation of surface ocean circulation.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {},
+      "datos_descripcion": "Data type: Three-dimensional grid of surface ocean-current velocities, with hourly temporal resolution and 6 km spatial resolution. Distributed as NetCDF 4.3.3 using reference system EPSG:3041. Data source: Radial velocity measurements from the Galicia HF Radar Network, operated by INTECMAR with the participation of Puertos del Estado. Intended use of the data: Visualisation and analysis of surface currents off the Galician coast, using the best product available at processing time.\n\nThe source catalogue states that there are no general use limitations, but also indicates that Puertos del Estado must be contacted to request permission to use the data.",
+      "entidad_promotora": "Technological Institute for the Control of the Marine Environment of Galicia (INTECMAR)"
+    },
+    "intecmar_upwelling_index": {
+      "name": "Coastal upwelling index for Galicia and northern Portugal",
+      "dataset_name": "intecmar_calculo / intecmar_hfrui",
+      "use_case": "INTECMAR",
+      "provider": "INTECMAR",
+      "description": "Data used to calculate and map the coastal upwelling index along Galicia and northern Portugal.",
+      "descripcion_ampliada": "This use case brings together the data used to calculate the upwelling index and the resulting maps for the coast of Galicia and northern Portugal. The index supports analysis of coastal circulation dynamics and their relationship with biological productivity and marine biodiversity.\n\nThe entry recovers two datasets from the legacy Marine Sciences project: the parameters used in the calculation and the mapped upwelling-index product.",
+      "volumen": "-",
+      "n_ficheros": "-",
+      "subsets": {
+        "upwelling_calculation": {
+          "name": "intecmar_calculo",
+          "description": "Data and processed parameters used to calculate the coastal upwelling index.",
+          "metadata": {
+            "data_type": "Oceanographic",
+            "data_standard": "",
+            "date_added": "18-07-2023",
+            "file_format": "Parquet",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": ""
+          },
+          "variables": [
+            { "name": "time", "units": "-", "data_description": "Observation time.", "data_type": "string" },
+            { "name": "nSites", "units": "-", "data_description": "Total number of sites or stations.", "data_type": "string" },
+            { "name": "nProcParam", "units": "-", "data_description": "Number of processed parameters.", "data_type": "string" },
+            { "name": "latitude", "units": "-", "data_description": "Geographic latitude in degrees north.", "data_type": "string" },
+            { "name": "longitude", "units": "-", "data_description": "Geographic longitude in degrees east.", "data_type": "string" },
+            { "name": "site_code", "units": "-", "data_description": "Site identifier code.", "data_type": "string" },
+            { "name": "site_netCode", "units": "-", "data_description": "Code of the site's network or grouping.", "data_type": "string" },
+            { "name": "site_lat", "units": "-", "data_description": "Site latitude in degrees north.", "data_type": "string" },
+            { "name": "site_lon", "units": "-", "data_description": "Site longitude in degrees east.", "data_type": "string" },
+            { "name": "site_status", "units": "-", "data_description": "Site status.", "data_type": "string" },
+            { "name": "procParams", "units": "-", "data_description": "Processed parameters.", "data_type": "string" },
+            { "name": "water_u", "units": "-", "data_description": "Zonal, east-west, component of sea-current velocity.", "data_type": "string" },
+            { "name": "water_v", "units": "-", "data_description": "Meridional, north-south, component of sea-current velocity.", "data_type": "string" },
+            { "name": "std_u", "units": "-", "data_description": "Standard deviation or uncertainty of water_u.", "data_type": "string" },
+            { "name": "std_v", "units": "-", "data_description": "Standard deviation or uncertainty of water_v.", "data_type": "string" },
+            { "name": "cov", "units": "-", "data_description": "Covariance or measure of variability between water_u and water_v.", "data_type": "string" }
+          ]
+        },
+        "upwelling_maps": {
+          "name": "intecmar_hfrui",
+          "description": "Coastal upwelling-index maps along Galicia and northern Portugal.",
+          "metadata": {
+            "data_type": "Oceanographic",
+            "data_standard": "",
+            "date_added": "19-10-2023",
+            "file_format": "Parquet",
+            "license": "",
+            "temporal_resolution": "",
+            "temporal_coverage": ""
+          },
+          "variables": [
+            { "name": "TIME", "units": "-", "data_description": "Record or measurement time.", "data_type": "string" },
+            { "name": "DEPTH", "units": "-", "data_description": "Vertical depth below the surface.", "data_type": "string" },
+            { "name": "LATITUDE", "units": "-", "data_description": "Geographic latitude.", "data_type": "string" },
+            { "name": "LONGITUDE", "units": "-", "data_description": "Geographic longitude.", "data_type": "string" },
+            { "name": "DEPH", "units": "-", "data_description": "Auxiliary depth-related parameter retaining the legacy name.", "data_type": "string" },
+            { "name": "crs", "units": "-", "data_description": "Coordinate reference system.", "data_type": "string" },
+            { "name": "UI", "units": "-", "data_description": "Coastal upwelling index.", "data_type": "string" }
+          ]
+        }
+      },
+      "datos_descripcion": "Data type: Station parameters and sea-current velocity components used in the calculation, together with coastal upwelling-index maps. Legacy format: Parquet. Data source: INTECMAR and the legacy Marine Sciences project catalogue. Intended use of the data: Calculation, visualisation and analysis of coastal upwelling in Galicia and northern Portugal.\n\nThe legacy source does not specify volume, number of files, licence, temporal coverage or temporal resolution.",
+      "entidad_promotora": "Technological Institute for the Control of the Marine Environment of Galicia (INTECMAR)"
     }
   },
   "data_description": "Data description",

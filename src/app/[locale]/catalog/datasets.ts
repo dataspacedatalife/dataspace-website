@@ -1,40 +1,43 @@
+import { type StaticImageData } from 'next/image';
+import LogoAgrolinera from '../../../../public/use-cases/agrolinera.png';
+import LogoAIDATAMED from '../../../../public/use-cases/aidatamed.png';
+import LogoBioHPC from '../../../../public/use-cases/biohpc.png';
+import LogoCESGA from '../../../../public/use-cases/cesga.png';
+import LogoClimatocLab from '../../../../public/use-cases/climatoclab.png';
+import LogoCognitus from '../../../../public/use-cases/cognitus.png';
+import LogoConsuvet from '../../../../public/use-cases/consuvet.png';
+import LogoDatiacare from '../../../../public/use-cases/datiacare.png';
+import LogoDeLaFuenteLab from '../../../../public/use-cases/delafuentelab.png';
+import LogoGeneCoLab from '../../../../public/use-cases/genecolab.png';
+import LogoGrHeCo from '../../../../public/use-cases/grheco.png';
 import LogoIISGS from '../../../../public/use-cases/IISGS.png';
 import LogoInverbis from '../../../../public/use-cases/Inverbis.png';
 import Logoi4life from '../../../../public/use-cases/i4life.png';
-import LogoUvigo from '../../../../public/use-cases/uvigo.png';
-import LogoAIDATAMED from '../../../../public/use-cases/aidatamed.png';
-import LogoCognitus from '../../../../public/use-cases/cognitus.png';
-import LogoGrHeCo from '../../../../public/use-cases/grheco.png';
-import LogoTrueWorld from '../../../../public/use-cases/trueworld.png';
 import LogoICIGA from '../../../../public/use-cases/iciga.png';
-import LogoMicroBioTool from '../../../../public/use-cases/microbiotool.png';
-import LogoMDUSE from '../../../../public/use-cases/mduse.png';
-import LogoDatiacare from '../../../../public/use-cases/datiacare.png';
-import LogoEPhysLab from '../../../../public/use-cases/logoEphyslab.png';
+import LogoIEO from '../../../../public/use-cases/logo_IEO.png';
 import LogoImatia from '../../../../public/use-cases/imatia.png';
-import LogoCiTIUS from '../../../../public/use-cases/Logotipo_Citius.png';
-import LogoConsuvet from '../../../../public/use-cases/consuvet.png';
-import LogoSimbios from '../../../../public/use-cases/simbios.png';
-import LogoAgrolinera from '../../../../public/use-cases/agrolinera.png';
-import LogoOTTO from '../../../../public/use-cases/otto.png';
-import LogoCiMUS from '../../../../public/use-cases/logoCIMUS.png';
-import LogoIEO from '../../../../public/use-cases/ieo.png';
-import LogoClimatocLab from '../../../../public/use-cases/climatoclab.png';
-import LogoMeteogalicia from '../../../../public/use-cases/meteogalicia.png';
-import LogoNextHealth from '../../../../public/use-cases/nexthealth.webp';
-import LogoTopHealthTech from '../../../../public/use-cases/tophealthtech.png';
-import LogoWirelessGalicia from '../../../../public/use-cases/wireless_galicia.png';
 import LogoInsati from '../../../../public/use-cases/insati.png';
+import LogoCiTIUS from '../../../../public/use-cases/Logotipo_Citius.png';
+import LogoCiMUS from '../../../../public/use-cases/logoCIMUS.png';
+import LogoEPhysLab from '../../../../public/use-cases/logoEphyslab.png';
 import LogoMasMetodo from '../../../../public/use-cases/masmetodo.png';
-import LogoGeneCoLab from '../../../../public/use-cases/genecolab.png';
-import LogoDeLaFuenteLab from '../../../../public/use-cases/delafuentelab.png';
-import LogoUSC from '../../../../public/use-cases/usc.png';
-import LogoCESGA from '../../../../public/use-cases/cesga.png';
-import LogoBioHPC from '../../../../public/use-cases/biohpc.png';
+import LogoMDUSE from '../../../../public/use-cases/mduse.png';
 import LogoMercantia from '../../../../public/use-cases/mercantia.png';
-import { type StaticImageData } from 'next/image';
+import LogoMeteogalicia from '../../../../public/use-cases/meteogalicia.png';
+import LogoMicroBioTool from '../../../../public/use-cases/microbiotool.png';
+import LogoNextHealth from '../../../../public/use-cases/nexthealth.webp';
+import LogoOTTO from '../../../../public/use-cases/otto.png';
+import LogoSimbios from '../../../../public/use-cases/simbios.png';
+import LogoTopHealthTech from '../../../../public/use-cases/tophealthtech.png';
+import LogoTrueWorld from '../../../../public/use-cases/trueworld.png';
+import LogoUSC from '../../../../public/use-cases/usc.png';
+import LogoUvigo from '../../../../public/use-cases/uvigo.png';
+import LogoWirelessGalicia from '../../../../public/use-cases/wireless_galicia.png';
 
 const LogoDepoOurense = '/use-cases/depoourense.svg';
+const LogoGift = '/use-cases/logo-gift.svg';
+const LogoIntecmar = '/use-cases/intecmar.png';
+const LogoCetmar = '/use-cases/cetmar.svg';
 
 export type HealthCategory = 'human' | 'animal' | 'environmental';
 
@@ -71,7 +74,7 @@ export const useCasesData = [
   },
   {
     id: 'gift_conversations',
-    imagen: LogoAIDATAMED,
+    imagen: LogoGift,
     link: 'https://www.idara.health/',
     categories: ['human'] as HealthCategory[],
   },
@@ -118,6 +121,18 @@ export const useCasesData = [
     categories: ['environmental'] as HealthCategory[],
   },
   {
+    id: 'ieo_carabelas_drift_risk',
+    imagen: LogoIEO,
+    link: 'https://carabelas.dataspace.cesga.es/',
+    categories: ['environmental'] as HealthCategory[],
+  },
+  {
+    id: 'cetmar_cortegada_hydrophone',
+    imagen: LogoCetmar,
+    link: 'https://cetmar.org/proyecto-silencio/?lang=es',
+    categories: ['environmental'] as HealthCategory[],
+  },
+  {
     id: 'cd_ligand_ml',
     imagen: LogoMDUSE,
     link: 'https://mduse.com/en/',
@@ -148,7 +163,19 @@ export const useCasesData = [
     categories: ['human'] as HealthCategory[],
   },
   {
-    id: 'grheco_xen_iahpc_biomedica',
+    id: 'grheco_medical_foundation_models',
+    imagen: LogoGrHeCo,
+    link: 'https://www.idisantiago.es/',
+    categories: ['human'] as HealthCategory[],
+  },
+  {
+    id: 'grheco_egfr_virtual_screening',
+    imagen: LogoGrHeCo,
+    link: 'https://www.idisantiago.es/',
+    categories: ['human'] as HealthCategory[],
+  },
+  {
+    id: 'grheco_stardist_gpu',
     imagen: LogoGrHeCo,
     link: 'https://www.idisantiago.es/',
     categories: ['human'] as HealthCategory[],
@@ -161,6 +188,12 @@ export const useCasesData = [
   },
   {
     id: 'meteogalicia',
+    imagen: LogoMeteogalicia,
+    link: 'https://www.meteogalicia.gal/',
+    categories: ['environmental'] as HealthCategory[],
+  },
+  {
+    id: 'meteogalicia_wrf_fire',
     imagen: LogoMeteogalicia,
     link: 'https://www.meteogalicia.gal/',
     categories: ['environmental'] as HealthCategory[],
@@ -185,6 +218,12 @@ export const useCasesData = [
   },
   {
     id: 'peptide_binder_design',
+    imagen: LogoDeLaFuenteLab,
+    link: 'https://www.med.upenn.edu/delafuentelab/',
+    categories: ['human'] as HealthCategory[],
+  },
+  {
+    id: 'evo2_viral_genomes',
     imagen: LogoDeLaFuenteLab,
     link: 'https://www.med.upenn.edu/delafuentelab/',
     categories: ['human'] as HealthCategory[],
@@ -296,6 +335,18 @@ export const useCasesData = [
     imagen: LogoConsuvet,
     link: 'https://www.consuvet.com/',
     categories: ['human', 'animal', 'environmental'] as HealthCategory[],
+  },
+  {
+    id: 'intecmar_radar_hf',
+    imagen: LogoIntecmar,
+    link: 'https://xeocatalogo.xunta.gal/xeocatalogo/srv/api/records/GLG_INTECMAR_RADARHF_2011',
+    categories: ['environmental'] as HealthCategory[],
+  },
+  {
+    id: 'intecmar_upwelling_index',
+    imagen: LogoIntecmar,
+    link: 'https://www.intecmar.gal/',
+    categories: ['environmental'] as HealthCategory[],
   },
 ] as const satisfies {
   readonly id: string;
