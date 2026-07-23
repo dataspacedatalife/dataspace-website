@@ -91,7 +91,7 @@ export default function SurveyForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...form,
-          survey: 'survey26junio',
+          survey: 'survey23julio',
           captcha: {
             a: captcha.a,
             b: captcha.b,
@@ -131,7 +131,7 @@ export default function SurveyForm() {
   return (
     <form className="survey-form" onSubmit={handleSubmit}>
       <h1>Encuesta de Satisfacción - OneHealth DataSpace (CESGA)</h1>
-      <h2>Curso 26 de junio</h2>
+      <h2>Curso 23 de julio</h2>
 
       <label>Perfil del participante</label>
 
