@@ -1080,7 +1080,7 @@ export const blogPosts: Record<Locale, Post[]> = {
     },
     {
       key: 'onehealth-dataspace-43-casos-uso-2026',
-      date: '2026-07-17',
+      date: '2026-07-22',
       title:
         'El Espacio de Datos del CESGA suma ya 43 iniciativas de investigación bajo el enfoque One Health',
       excerpt:
@@ -1146,7 +1146,6 @@ export const blogPosts: Record<Locale, Post[]> = {
           content: 'Más que datos. Máis ca datos. More than data.',
         },
       ],
-      published: false,
     },
   ],
   en: [
@@ -2128,7 +2127,7 @@ export const blogPosts: Record<Locale, Post[]> = {
     },
     {
       key: 'onehealth-dataspace-43-casos-uso-2026',
-      date: '2026-07-17',
+      date: '2026-07-22',
       title:
         "CESGA's Data Space Now Reaches 43 Research Initiatives Under the One Health Approach",
       excerpt:
@@ -2193,7 +2192,6 @@ export const blogPosts: Record<Locale, Post[]> = {
           content: 'Más que datos. Máis ca datos. More than data.',
         },
       ],
-      published: false,
     },
 
   ],
@@ -3222,7 +3220,7 @@ export const blogPosts: Record<Locale, Post[]> = {
     },
     {
       key: 'onehealth-dataspace-43-casos-uso-2026',
-      date: '2026-07-17',
+      date: '2026-07-22',
       title:
         'O Espazo de Datos do CESGA suma xa 43 iniciativas de investigación baixo o enfoque One Health',
       excerpt:
@@ -3288,7 +3286,6 @@ export const blogPosts: Record<Locale, Post[]> = {
           content: 'Más que datos. Máis ca datos. More than data.',
         },
       ],
-      published: false,
     },
 
   ],
