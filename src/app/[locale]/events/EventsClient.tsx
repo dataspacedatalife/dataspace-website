@@ -414,7 +414,7 @@ const events: Event[]  = [
     },
     cesgalink: 'https://www.cesga.es/formacion-onehealth-dataspace/',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
-    featured: true,
+    featured: false,
   },
   {
     key: 'miniEncuentroVigo',
