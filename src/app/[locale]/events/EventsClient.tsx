@@ -447,6 +447,36 @@ function getPastEventsCount() {
   return events.filter((e) => !e.featured).length;
 }
 
+// Renderiza texto con enlaces en formato markdown [texto](url)
+function renderParagraphWithLinks(text: string) {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    parts.push(
+      <a
+        key={match.index}
+        href={match[2]}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-600 underline hover:text-blue-800 transition-colors"
+      >
+        {match[1]}
+      </a>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+  return parts;
+}
+
 // Componentes
 function FeaturedEvents({ onOpen }: { onOpen: (event: Event) => void }) {
   const locale = useLocale();
@@ -717,7 +747,7 @@ function EventModal({ event, onClose }: { event: Event; onClose: () => void }) {
             .raw(`events.${event.key}.description`)
             .map((paragraph: string, idx: number) => (
               <p key={idx} className="text-gray-600 leading-relaxed mb-4">
-                {paragraph}
+                {renderParagraphWithLinks(paragraph)}
               </p>
             ))}
 
