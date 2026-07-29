@@ -175,6 +175,15 @@ async function Header() {
             </div>
           </div>
 
+          <div className="mt-6 grid grid-cols-1 gap-6 justify-items-center md:grid-cols-3">
+            <div className="w-full max-w-sm">
+              <VideoEmbed
+                title={t('videos.courseCaption10')}
+                url={t('videos.courseUrl10')}
+              />
+            </div>
+          </div>
+
 
         {/* Talleres y tutoriales*/}
         <div className="mb-2 mt-20">
