@@ -38,13 +38,13 @@
     "shareWhat": "Un servicio para intercambiar conjuntos de datos entre organizaciones de forma soberana: cada entidad decide quién accede a sus datos, con qué fines y bajo qué condiciones.",
     "shareExample": "Un hospital comparte datos clínicos anonimizados con un grupo de investigación veterinaria para estudiar la resistencia a antibióticos.",
     "computeWhat": "Acceso a la supercomputación del CESGA para ejecutar cargas de trabajo intensivas: simulaciones, entrenamiento de modelos de IA o procesamiento genómico.",
-    "computeExample": "Un equipo entrena un modelo de predicción de brotes combinando datos ambientales y sanitarios en el clúster HPC.",
+    "computeExample": "Realizar simulaciones avanzadas de moléculas complejas para analizar su estructura, comportamiento e interacciones a nivel atómico y molecular.",
     "analyzeWhat": "Herramientas de Big Data y analítica para explorar los datos del espacio y convertirlos en indicadores, visualizaciones y conocimiento accionable.",
-    "analyzeExample": "Cruce de datos de calidad del agua y casos de zoonosis para detectar patrones de riesgo en una comarca.",
+    "analyzeExample": "Estimar la temperatura media de amplias áreas geográficas mediante el análisis de grandes volúmenes de datos.",
     "storeWhat": "Almacenamiento seguro y escalable para grandes volúmenes de datos, con control de acceso y trazabilidad durante todo su ciclo de vida.",
     "storeExample": "Una universidad deposita años de series históricas de sensores ambientales para su reutilización en nuevos proyectos.",
     "deliverWhat": "Infraestructura cloud para publicar resultados como servicios: APIs, cuadros de mando o aplicaciones accesibles para otros participantes.",
-    "deliverExample": "Un centro publica un cuadro de mando epidemiológico que otras entidades consultan en tiempo real."
+    "deliverExample": "Desarrollar una plataforma web interactiva que permita visualizar y consultar el riesgo de presencia de carabelas portuguesas en ubicaciones geográficas específicas."
   },
   "outro": {
     "title": "El viaje ya está en marcha",
