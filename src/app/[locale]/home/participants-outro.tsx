@@ -12,22 +12,21 @@ import {
   useCtaHover,
 } from './shared';
 
-/* ============ CIERRE: ENTIDADES PARTICIPANTES ============ */
-const OUTRO_LOGOS: { file: string; name: string }[] = [
-  { file: 'uvigo.png', name: 'Universidade de Vigo' },
-  { file: 'usc.png', name: 'Universidade de Santiago de Compostela' },
-  { file: 'cesga.png', name: 'CESGA' },
-  { file: 'logo_IDIS.png', name: 'IDIS' },
-  { file: 'IISGS.png', name: 'IIS Galicia Sur' },
-  { file: 'meteogalicia.png', name: 'MeteoGalicia' },
-  { file: 'Logotipo_Citius.png', name: 'CiTIUS' },
-  { file: 'logoCIMUS.png', name: 'CiMUS' },
-  { file: 'ieo.png', name: 'IEO' },
-  { file: 'Inverbis.png', name: 'Inverbis' },
-  { file: 'imatia.png', name: 'Imatia' },
-  { file: 'trueworld.png', name: 'Trueworld' },
-  { file: 'tophealthtech.png', name: 'TopHealthTech' },
-  { file: 'wireless_galicia.png', name: 'Wireless Galicia' },
+const OUTRO_LOGOS: { file: string; name: string; scale?: number }[] = [
+  { file: 'uvigo.png', name: 'Universidade de Vigo', scale: 3 },
+  { file: 'usc.png', name: 'Universidade de Santiago de Compostela', scale: 1.2 },
+  { file: 'cesga.png', name: 'CESGA', scale: 1 },
+  { file: 'logo_IDIS.png', name: 'IDIS', scale: 1.5 },
+  { file: 'IISGS.png', name: 'IIS Galicia Sur', scale: 1.4 },
+  { file: 'meteogalicia.png', name: 'MeteoGalicia', scale: 1 },
+  { file: 'Logotipo_Citius.png', name: 'CiTIUS', scale: 0.8},
+  { file: 'logoCIMUS.png', name: 'CiMUS', scale: 1.3 },
+  { file: 'ieo.png', name: 'IEO', scale: 1.5 },
+  { file: 'Inverbis.png', name: 'Inverbis', scale: 1 },
+  { file: 'imatia.png', name: 'Imatia', scale: 1.3 },
+  { file: 'trueworld.png', name: 'Trueworld', scale: 0.6 },
+  { file: 'tophealthtech.png', name: 'TopHealthTech', scale: 0.8 },
+  { file: 'wireless_galicia.png', name: 'Wireless Galicia', scale: 0.8 },
 ];
 
 export function ParticipantsOutro() {
@@ -66,7 +65,8 @@ export function ParticipantsOutro() {
               alt={i < OUTRO_LOGOS.length ? logo.name : ''}
               aria-hidden={i >= OUTRO_LOGOS.length}
               loading="lazy"
-              className="h-10 sm:h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-300 shrink-0"
+              style={{ '--logo-scale': logo.scale ?? 1 } as React.CSSProperties}
+              className="h-[calc(2.5rem*var(--logo-scale))] sm:h-[calc(3rem*var(--logo-scale))] w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-300 shrink-0"
             />
           ))}
         </div>
