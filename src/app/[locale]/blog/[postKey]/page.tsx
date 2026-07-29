@@ -61,7 +61,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             />
           )}
 
-          <div className="max-w-3xl mx-auto mt-10 space-y-6">
+          <div className="max-w-3xl mx-auto mt-10 space-y-6 text-justify">
             {post.description.map((item, idx) => {
               if (React.isValidElement(item)) {
                 return item;
