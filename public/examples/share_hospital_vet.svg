@@ -1,0 +1,68 @@
+<svg width="1000" height="820" viewBox="0 0 1000 820" xmlns="http://www.w3.org/2000/svg">
+  <title>Un hospital comparte datos clínicos anonimizados con un grupo de investigación veterinaria</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#03242e"/>
+      <stop offset="38%" stop-color="#00647f"/>
+      <stop offset="72%" stop-color="#00b0cd"/>
+      <stop offset="100%" stop-color="#3fd7c0"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="820" fill="url(#bg)"/>
+
+  <!-- ambient glows behind nodes -->
+  <circle cx="240" cy="440" r="190" fill="#ffffff" opacity="0.10" filter="url(#soft)"/>
+  <circle cx="760" cy="440" r="190" fill="#ffffff" opacity="0.10" filter="url(#soft)"/>
+
+  <!-- connecting flow dots: hand-placed, evenly spaced along the curve and
+       mirrored left/right around the chip (x=500) so both sides match exactly -->
+  <g fill="#ffffff" fill-opacity="0.55">
+    <circle cx="287" cy="378" r="3.2"/>
+    <circle cx="325" cy="360" r="3.2"/>
+    <circle cx="365" cy="345" r="3.2"/>
+    <circle cx="406" cy="335" r="3.2"/>
+    <circle cx="448" cy="328" r="3.2"/>
+    <circle cx="552" cy="328" r="3.2"/>
+    <circle cx="594" cy="335" r="3.2"/>
+    <circle cx="635" cy="345" r="3.2"/>
+    <circle cx="675" cy="360" r="3.2"/>
+    <circle cx="713" cy="378" r="3.2"/>
+  </g>
+  <!-- flow endpoint, marking arrival at the vet node -->
+  <circle cx="750" cy="400" r="3.2" fill="#ffffff" fill-opacity="0.55"/>
+
+  <!-- anonymised data chip at path midpoint -->
+  <g transform="translate(500,320)">
+    <rect x="-30" y="-36" width="60" height="72" rx="9" fill="#ffffff" fill-opacity="0.94"/>
+    <rect x="-18" y="-20" width="36" height="6" rx="3" fill="#0b4a5c"/>
+    <rect x="-18" y="-7" width="36" height="6" rx="3" fill="#0b4a5c"/>
+    <rect x="-18" y="6" width="24" height="6" rx="3" fill="#0b4a5c"/>
+    <!-- lock badge -->
+    <circle cx="24" cy="-28" r="14" fill="#ffffff"/>
+    <rect x="18" y="-30" width="12" height="9" rx="2" fill="#006b8f"/>
+    <path d="M 20 -30 v -4 a 4 4 0 0 1 8 0 v 4" fill="none" stroke="#006b8f" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- LEFT NODE: hospital -->
+  <circle cx="240" cy="440" r="160" fill="#ffffff" fill-opacity="0.14"/>
+  <circle cx="240" cy="440" r="160" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="2.5"/>
+  <g transform="translate(240,440)">
+    <rect x="-58" y="-52" width="116" height="104" rx="14" fill="#ffffff" fill-opacity="0.16" stroke="#ffffff" stroke-width="5" stroke-opacity="0.95"/>
+    <rect x="-13" y="-36" width="26" height="72" fill="#ffffff"/>
+    <rect x="-36" y="-13" width="72" height="26" fill="#ffffff"/>
+  </g>
+
+  <!-- RIGHT NODE: veterinary research group (paw print) -->
+  <circle cx="760" cy="440" r="160" fill="#ffffff" fill-opacity="0.14"/>
+  <circle cx="760" cy="440" r="160" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="2.5"/>
+  <g transform="translate(760,448)">
+    <ellipse cx="0" cy="22" rx="30" ry="23" fill="#ffffff" fill-opacity="0.95"/>
+    <ellipse cx="-30" cy="-14" rx="13" ry="16" fill="#ffffff" fill-opacity="0.95" transform="rotate(-18 -30 -14)"/>
+    <ellipse cx="0" cy="-26" rx="14" ry="17" fill="#ffffff" fill-opacity="0.95"/>
+    <ellipse cx="30" cy="-14" rx="13" ry="16" fill="#ffffff" fill-opacity="0.95" transform="rotate(18 30 -14)"/>
+  </g>
+</svg>

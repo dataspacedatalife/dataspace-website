@@ -34,7 +34,7 @@ export function useServicesData(): ServiceItem[] {
   const tS = useTranslations('home.services');
 
   const base = [
-    { key: 'share', icon: Share2, href: 'https://dl-cesga.srv.cesga.es', image: '/services/share.jpg' },
+    { key: 'share', icon: Share2, href: 'https://dl-cesga.srv.cesga.es', image: '/examples/share_hospital_vet.svg' },
     { key: 'analyze', icon: Search, href: 'https://bigdata.dataspace.cesga.es/', image: '/examples/average_temperature.png' },
     { key: 'compute', icon: Cpu, href: 'https://hpc.dataspace.cesga.es', image: '/examples/molecula.png' },
     { key: 'deliver', icon: CloudUpload, href: 'http://cloud.srv.cesga.es/', image: '/examples/carabelas_map.png' },
