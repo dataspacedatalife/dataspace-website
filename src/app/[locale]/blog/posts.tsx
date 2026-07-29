@@ -2612,9 +2612,9 @@ export const blogPosts: Record<Locale, Post[]> = {
       key: 'cesga-factoria-ia-onehealth-dataspace-2026',
       date: '2026-07-27',
       title:
-        'El CESGA marca el camino hacia la Factoría de IA en favor de la salud global con su proyecto OneHealth DataSpace',
+        "CESGA charts the course towards the AI Factory for global health with its OneHealth DataSpace project",
       excerpt:
-        'OneHealth DataSpace, el espacio de datos del CESGA, presentó en Santiago de Compostela los resultados de su propuesta innovadora, que aborda, más allá de la compartición de datos, el análisis, procesamiento y publicación de los resultados de las iniciativas.',
+        "OneHealth DataSpace, CESGA's data space, presented in Santiago de Compostela the results of its innovative proposal, which addresses—beyond data sharing—the analysis, processing and publication of the initiatives' results.",
       author_name: 'Iago Sequeiros',
       author_image: ISequeirosImg,
       description: [
@@ -2622,205 +2622,205 @@ export const blogPosts: Record<Locale, Post[]> = {
         {
           type: 'italic',
           content:
-            'OneHealth DataSpace, el espacio de datos del CESGA que reúne iniciativas en salud humana, animal y medioambiental, presentó en Santiago de Compostela los resultados de su propuesta innovadora, que aborda, más allá de la compartición de datos, el análisis, procesamiento y publicación de los resultados de las iniciativas.',
+            "OneHealth DataSpace, CESGA's data space bringing together initiatives in human, animal and environmental health, presented in Santiago de Compostela the results of its innovative proposal, which addresses—beyond data sharing—the analysis, processing and publication of the initiatives' results.",
         },
 
         {
           type: 'italic',
           content:
-            'La especial protección de los datos sanitarios, los sistemas públicos y las regulaciones nacionales y europeas que les afectan protagonizaron la primera parte del encuentro, presidido por Carmen Cotelo, directora de GAIN y presidenta del CESGA.',
+            'The special protection of health data, and the public systems and national and European regulations affecting it, took centre stage in the first part of the meeting, chaired by Carmen Cotelo, director of GAIN and Chair of CESGA.',
         },
 
         <p
           key="cesga-factoria-ia-dateline"
           className="text-gray-700 text-base leading-relaxed"
         >
-          OneHealth DataSpace, el espacio de datos del Centro de
-          Supercomputación de
-          Galicia (CESGA), presentó los resultados de su propuesta de
-          innovación para la mejora de la salud global el pasado 22 de julio,
-          en el Centro Singular de Investigación en Medicina Molecular y
-          Enfermedades Crónicas (CiMUS) de Santiago de Compostela.
+          Santiago de Compostela, 27 July 2026. OneHealth DataSpace, the data
+          space of the Galicia Supercomputing Centre (CESGA), presented the
+          results of its innovation proposal for improving global health on
+          22 July, at the Singular Research Centre in Molecular Medicine and
+          Chronic Diseases (CiMUS) in Santiago de Compostela.
         </p>,
 
         <p
           key="cesga-factoria-ia-iniciativas"
           className="text-gray-700 text-base leading-relaxed"
         >
-          Durante el encuentro, que contó con cerca de un centenar de
-          asistentes, el equipo del proyecto y representantes de las
-          entidades socias del OneHealth DataSpace dieron a conocer los
-          resultados de las iniciativas impulsadas: desde una{' '}
+          During the meeting, which drew close to a hundred attendees, the
+          project team and representatives of OneHealth DataSpace's partner
+          entities unveiled the results of the initiatives driven forward:
+          from an{' '}
           <a
             href="https://carabelas.dataspace.cesga.es/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            aplicación para predecir la presencia de carabelas portuguesas
+            application to predict the presence of Portuguese man-of-war
           </a>{' '}
-          en las costas gallegas, a un sistema de simulación de propagación
-          de incendios forestales y otra{' '}
+          along the Galician coast, to a forest-fire spread simulation
+          system and another{' '}
           <a
             href="https://airecompostela.dataspace.cesga.es/#p=nox&h=12&l=es"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            app que mide la calidad del aire de la capital gallega
+            app that measures air quality in the Galician capital
           </a>
-          ; pasando por investigaciones que predicen
-          riesgos de fármacos en cánceres hemáticos, una iniciativa de
-          clasificación de casos clínicos veterinarios, u otra que emplea la
-          ciencia de datos en la gestión sanitaria territorial con la
-          integración de la actividad asistencial, demografía, geografía y
-          climatología como punto de partida para tomar decisiones en favor
-          de la salud pública.
+          ; through to research predicting drug risks in blood cancers, an
+          initiative to classify veterinary clinical cases, and another
+          that applies data science to territorial healthcare management,
+          integrating care activity, demographics, geography and
+          climatology as a starting point for making decisions in favour
+          of public health.
         </p>,
 
         <p
           key="cesga-factoria-ia-inauguracion"
           className="text-gray-700 text-base leading-relaxed"
         >
-          La jornada fue inaugurada por{' '}
+          The event was opened by{' '}
           <strong className="font-bold">José Luis Lavandeira</strong>,
-          director adjunto del CiMUS, quien mostró su satisfacción por
-          compartir la organización del acto en sus espacios e
-          infraestructuras. Por su parte,{' '}
-          <strong className="font-bold">Ignacio López Cabido</strong>,
-          director de Infraestructuras Científicas y Apoyo a la
-          Investigación del CESGA, subrayó que el OneHealth DataSpace
-          &quot;responde a una necesidad estratégica&quot;. Por último,{' '}
+          deputy director of CiMUS, who expressed his satisfaction at
+          hosting the event in its facilities and infrastructure. For his
+          part, <strong className="font-bold">Ignacio López Cabido</strong>,
+          director of Scientific Infrastructures and Research Support at
+          CESGA, stressed that OneHealth DataSpace &quot;responds to a
+          strategic need&quot;. Lastly,{' '}
           <strong className="font-bold">Carmen Cotelo Queijo</strong>,
-          directora de GAIN y presidenta del CESGA, destacó que este
-          proyecto, junto a la 1HealthAI Factory, &quot;situará a Galicia a
-          la vanguardia de la aplicación de tecnologías avanzadas, como la
-          inteligencia artificial y la computación de altas prestaciones, a
-          sectores de gran impacto económico y social como el
-          sanitario&quot;.
+          director of GAIN and Chair of CESGA, highlighted that this
+          project, together with the 1HealthAI Factory, &quot;will place
+          Galicia at the forefront of applying advanced technologies—such
+          as artificial intelligence and high-performance computing—to
+          sectors of great economic and social impact such as
+          healthcare&quot;.
         </p>,
 
         {
           type: 'image',
           src: OHDSInauguracion,
-          alt: 'Inauguración del Encuentro de Presentación de Resultados de OneHealth DataSpace',
+          alt: 'Opening of the OneHealth DataSpace Results Presentation Meeting',
           caption:
-            'Inauguración del Encuentro de Presentación de Resultados de OneHealth DataSpace en el CiMUS de Santiago de Compostela',
+            'Opening of the OneHealth DataSpace Results Presentation Meeting at CiMUS in Santiago de Compostela',
         },
 
         <p
           key="cesga-factoria-ia-cacheiro-ferreiro"
           className="text-gray-700 text-base leading-relaxed"
         >
+          As{' '}
           <a
             href="https://drive.google.com/file/d/1snvpOGsNQQ_o8cjjaYZ9Tqy_E3q_k4mg/view"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            Como expresaron{' '}
-            <strong className="font-bold">Javier Cacheiro</strong> y{' '}
+            <strong className="font-bold">Javier Cacheiro</strong> and{' '}
             <strong className="font-bold">Pedro Ferreiro</strong>
           </a>
-          , director científico y técnico del proyecto OneHealth DataSpace,
-          respectivamente, las iniciativas mostradas durante el encuentro son
-          solo una muestra de los{' '}
+          , scientific and technical director of the OneHealth DataSpace
+          project respectively, explained, the initiatives shown during the
+          meeting are just a sample of the{' '}
           <a
             href="https://dataspace.cesga.es/es/catalog"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            más de 50 casos de uso
+            more than 50 use cases
           </a>{' '}
-          del OneHealth DataSpace, que cuenta con casi 40 entidades adheridas,
-          tanto públicas como privadas.
+          of OneHealth DataSpace, which has nearly 40 member entities, both
+          public and private.
         </p>,
 
-        'El proyecto demuestra así el potencial de la compartición de los datos de forma segura y gobernada en el sector de la salud global. OneHealth DataSpace aporta, además, las capacidades de análisis y procesamiento, y una infraestructura cloud para publicar resultados como servicios: APIs, cuadros de mando o aplicaciones accesibles para otros participantes, etc.',
+        'The project thus demonstrates the potential of sharing data securely and in a governed way in the global health sector. OneHealth DataSpace also provides analysis and processing capabilities, along with a cloud infrastructure to publish results as services: APIs, dashboards or applications accessible to other participants, and so on.',
 
         {
           type: 'h2',
           content:
-            'Los datos sanitarios y su especial protección en los marcos regulatorios nacional y europeo',
+            'Health data and its special protection under the national and European regulatory frameworks',
         },
 
-        'Los espacios de datos han de garantizar una gestión segura de los datos conforme a la legislación nacional y europea, en especial, en relación a los datos sanitarios personales. Para remarcar y explicar este aspecto tan presente en el proyecto, OneHealth DataSpace invitó a su Encuentro de Presentación de Resultados a dos expertos de la administración pública española que abordaron las legislaciones y sistemas públicos de gestión de datos sanitarios tanto en España como en la Unión Europea.',
+        'Data spaces must guarantee the secure management of data in accordance with national and European legislation, especially in relation to personal health data. To underline and explain this aspect, so central to the project, OneHealth DataSpace invited to its Results Presentation Meeting two experts from the Spanish public administration who addressed the legislation and public systems for managing health data both in Spain and in the European Union.',
 
         <p
           key="cesga-factoria-ia-brocos-ends"
           className="text-gray-700 text-base leading-relaxed"
         >
-          En primer lugar, <strong className="font-bold">Manuel Brocos</strong>,
-          de la Dirección General del Dato (SEDIA),{' '}
+          First, <strong className="font-bold">Manuel Brocos</strong>, from
+          the Directorate-General for Data (SEDIA),{' '}
           <a
             href="https://drive.google.com/file/d/1Wvp1oE78JIZsexuJRtDZJKnQI7YCaDJn/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            presentó el Espacio Nacional de Datos de Salud (ENDS)
-          </a>{' '}
-          repasando su arquitectura, su gobernanza y las oportunidades que
-          abre para la investigación y la innovación en salud en España.
+            presented the National Health Data Space (ENDS)
+          </a>
+          , reviewing its architecture, its governance and the
+          opportunities it opens up for health research and innovation in
+          Spain.
         </p>,
 
         <p
           key="cesga-factoria-ia-escapa-ehds"
           className="text-gray-700 text-base leading-relaxed"
         >
-          A continuación, <strong className="font-bold">Lucía Escapa Castro</strong>,
-          jefa del Gabinete de la Secretaría General de Salud Digital,
-          Información e Innovación del SNS del Ministerio de Sanidad,{' '}
+          Next,{' '}
+          <strong className="font-bold">Lucía Escapa Castro</strong>, head
+          of the Office of the General Secretariat for Digital Health,
+          Information and Innovation of the SNS at the Ministry of Health,{' '}
           <a
             href="https://drive.google.com/file/d/1KE-ABpR2i4SNbiHRhVijfAsQXRCjNkTN/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            presentó el Espacio Europeo de Datos de Salud (EHDS)
+            presented the European Health Data Space (EHDS)
           </a>
-          , detallando el papel que esta iniciativa europea desempeñará en la
-          transformación del sistema sanitario de los Estados Miembro.
+          , detailing the role this European initiative will play in
+          transforming the Member States' healthcare system.
         </p>,
 
         {
           type: 'h2',
           content:
-            'Los casos de uso: investigación y aprovechamiento de los datos compartidos',
+            'The use cases: research and harnessing of shared data',
         },
 
-        'La parte central de la jornada estuvo dedicada a los casos de uso que se desarrollan en el seno del OneHealth DataSpace. Siete de las más de 50 iniciativas que acoge el proyecto tuvieron la oportunidad de mostrar la diversidad del ecosistema que ha crecido en torno a OneHealth DataSpace, organizadas según los tres ámbitos del enfoque "una Sola Salud" (One Health), "un planteamiento integral y unificador destinado a equilibrar y optimizar la salud de las personas, los animales y los ecosistemas" según la Organización Mundial de la Salud (OMS).',
+        'The central part of the day was devoted to the use cases developed within OneHealth DataSpace. Seven of the more than 50 initiatives hosted by the project had the opportunity to show the diversity of the ecosystem that has grown up around OneHealth DataSpace, organised according to the three domains of the "One Health" approach—"an integrated, unifying approach that aims to sustainably balance and optimise the health of people, animals and ecosystems", according to the World Health Organization (WHO).',
 
-        'Estas son las iniciativas presentadas:',
+        'The initiatives presented were as follows:',
 
-        { type: 'italic', content: 'Salud medioambiental' },
+        { type: 'italic', content: 'Environmental health' },
 
         <p
           key="cesga-factoria-ia-manuel-ruiz"
           className="text-gray-700 text-base leading-relaxed"
         >
           <strong className="font-bold">
-            Manuel Ruiz, del Instituto Español de Oceanografía (IEO-CSIC)
+            Manuel Ruiz, from the Spanish Institute of Oceanography
+            (IEO-CSIC)
           </strong>
-          , explicó su{' '}
+          , explained his{' '}
           <a
             href="https://drive.google.com/file/d/1uRnCpbCKvfq5TZ7tFyCJC5kHk16W5juD/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            participación en el proyecto mediante el cálculo
+            participation in the project through the calculation
           </a>{' '}
-          de la probabilidad de aparición de carabelas portuguesas en las
-          playas de Galicia y su presentación{' '}
+          of the probability of Portuguese man-of-war appearing on
+          Galicia's beaches and its presentation{' '}
           <a
             href="https://carabelas.dataspace.cesga.es/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            en una aplicación
+            in an application
           </a>
           .
         </p>,
@@ -2829,7 +2829,7 @@ export const blogPosts: Record<Locale, Post[]> = {
           key="cesga-factoria-ia-taboada-wrffire"
           className="text-gray-700 text-base leading-relaxed"
         >
-          <strong className="font-bold">Juan Taboada, de MeteoGalicia</strong>
+          <strong className="font-bold">Juan Taboada, from MeteoGalicia</strong>
           ,{' '}
           <a
             href="https://drive.google.com/file/d/10g49km7Ej7FXZKHkjSITn99SDk_5-Rws/view?usp=drive_link"
@@ -2837,22 +2837,22 @@ export const blogPosts: Record<Locale, Post[]> = {
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            presentó WRF-Fire
+            presented WRF-Fire
           </a>
-          , un aplicativo que realiza simulaciones enfocadas en mejorar el
-          rendimiento de un modelo de propagación de incendios forestales
-          gracias a la integración de los diferentes criterios que inciden
-          en la evolución de los mismos.
+          , an application that runs simulations aimed at improving the
+          performance of a forest-fire spread model thanks to the
+          integration of the different criteria that influence how fires
+          evolve.
         </p>,
 
-        { type: 'italic', content: 'Salud animal' },
+        { type: 'italic', content: 'Animal health' },
 
         <p
           key="cesga-factoria-ia-manuel-fernandez"
           className="text-gray-700 text-base leading-relaxed"
         >
           <strong className="font-bold">
-            Manuel Fernández, de la empresa Consuvet
+            Manuel Fernández, from the company Consuvet
           </strong>
           ,{' '}
           <a
@@ -2861,35 +2861,34 @@ export const blogPosts: Record<Locale, Post[]> = {
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            mostró su iniciativa para la clasificación de enfermedades
-            animales
+            showed his initiative for classifying animal diseases
           </a>{' '}
-          basada en los estándares oficiales de la WOAH/OIE.
+          based on the official WOAH/OIE standards.
         </p>,
 
-        { type: 'italic', content: 'Salud humana' },
+        { type: 'italic', content: 'Human health' },
 
         <p
           key="cesga-factoria-ia-angel-pineiro"
           className="text-gray-700 text-base leading-relaxed"
         >
-          Por su parte,{' '}
+          For his part,{' '}
           <strong className="font-bold">
-            Ángel Piñeiro, de MD.USE de la Universidade de Santiago de
+            Ángel Piñeiro, from MD.USE at the University of Santiago de
             Compostela
           </strong>
-          , explicó la iniciativa que pretende hacer de
-          la IA un instrumento científico para la{' '}
+          , explained the initiative that aims to make AI a scientific
+          instrument for{' '}
           <a
             href="https://drive.google.com/file/d/1V5z7qwGIqosVQKlwMeAm83hRYUKwtRK7/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            encapsulación de moléculas dañinas
+            encapsulating harmful molecules
           </a>{' '}
-          a través de modelización molecular, simulación computacional y
-          técnicas de aprendizaje automático.
+          through molecular modelling, computational simulation and
+          machine-learning techniques.
         </p>,
 
         <p
@@ -2897,9 +2896,9 @@ export const blogPosts: Record<Locale, Post[]> = {
           className="text-gray-700 text-base leading-relaxed"
         >
           <strong className="font-bold">
-            Davide Crucitti, del grupo GrHeCo-Xen (Instituto de Investigación
-            Sanitaria de Santiago, IDIS - Grupo de Hematología Computacional
-            y Xenómica)
+            Davide Crucitti, GrHeCo-Xen (Health Research Institute of
+            Santiago de Compostela, IDIS, Computational Haematology and
+            Genomics Group)
           </strong>
           ,{' '}
           <a
@@ -2908,13 +2907,13 @@ export const blogPosts: Record<Locale, Post[]> = {
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            mostró cómo su grupo de investigación trabaja en la creación de
-            una IA biomédica a partir de modelos de lenguaje médico
+            showed how his research group is working to create a biomedical
+            AI based on medical language models
           </a>
-          , imagen diagnóstica y MM/GBSA, un cálculo computacional que mide
-          la relación entre moléculas y proteínas utilizado en el diseño de
-          fármacos; todo ello con el fin de acelerar el diagnóstico, la toma
-          de decisiones y su traslación a la práctica clínica.
+          , diagnostic imaging and MM/GBSA—a computational calculation that
+          measures the relationship between molecules and proteins, used in
+          drug design—all with the aim of speeding up diagnosis,
+          decision-making and its translation into clinical practice.
         </p>,
 
         <p
@@ -2922,7 +2921,7 @@ export const blogPosts: Record<Locale, Post[]> = {
           className="text-gray-700 text-base leading-relaxed"
         >
           <strong className="font-bold">
-            David Sotelo, de la empresa Más Método
+            David Sotelo, from the company Más Método
           </strong>
           ,{' '}
           <a
@@ -2931,23 +2930,23 @@ export const blogPosts: Record<Locale, Post[]> = {
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            explicó su propuesta de aplicación de la ciencia de los datos y
-            la IA a la gestión sanitaria territorial
+            explained his proposal for applying data science and AI to
+            territorial healthcare management
           </a>
-          , integrando actividad asistencial, demografía, geografía y
-          climatología para construir perfiles comparables de Zonas Básicas
-          de Salud.
+          , integrating care activity, demographics, geography and
+          climatology to build comparable profiles of Basic Health Zones.
         </p>,
 
         <p
           key="cesga-factoria-ia-tianang-leng"
           className="text-gray-700 text-base leading-relaxed"
         >
-          Por último, el investigador{' '}
+          Lastly, researcher{' '}
           <strong className="font-bold">
-            Tianang Leng, del De la Fuente Lab (Universidad de Pensilvania)
+            Tianang Leng, from the De la Fuente Lab (University of
+            Pennsylvania)
           </strong>
-          , presentó el proyecto{' '}
+          , presented the project{' '}
           <a
             href="https://drive.google.com/file/d/1WUhEIvYDLXKFxMJUYsqWlrLy-CzpA9G0/view?usp=drive_link"
             target="_blank"
@@ -2955,51 +2954,49 @@ export const blogPosts: Record<Locale, Post[]> = {
             className="text-blue-600 underline hover:text-blue-800"
           >
             Omnimodal AI for pathogen-targeted anti-infective discovery
-          </a>{' '}
-          (Inteligencia artificial omnimodal para el descubrimiento de
-          antiinfecciosos dirigidos a patógenos), en el que expuso cómo su
-          equipo aprovecha la capacidad de las máquinas para acelerar los
-          descubrimientos en biología y medicina. Su intervención se
-          articuló en torno a varias líneas de investigación, entre ellas:
-          el diseño de antibióticos mediante IA, la desextinción molecular, o
-          el desarrollo de diagnósticos rápidos apoyados en la plataforma de
-          IA APEX.
+          </a>
+          , in which he set out how his team harnesses the power of
+          machines to accelerate discoveries in biology and medicine. His
+          talk was structured around several lines of research, among them:
+          the design of antibiotics using AI; molecular de-extinction; and
+          the development of rapid diagnostics supported by the APEX AI
+          platform.
         </p>,
 
         {
           type: 'h2',
           content:
-            'Antesala de la Factoría de Inteligencia Artificial enfocada en One Health',
+            'Prelude to the Artificial Intelligence Factory focused on One Health',
         },
 
         <p
           key="cesga-factoria-ia-cacheiro-recorrido"
           className="text-gray-700 text-base leading-relaxed"
         >
-          La jornada concluyó con la intervención de{' '}
+          The day concluded with a talk by{' '}
           <strong className="font-bold">
-            Javier Cacheiro, director científico de OneHealth DataSpace del
-            CESGA
+            Javier Cacheiro, Scientific Director of CESGA's OneHealth
+            DataSpace
           </strong>
-          , que{' '}
+          , who{' '}
           <a
             href="https://drive.google.com/file/d/1TlGyUg_-ZcodJ9bg6amS3r4TWTHom-Fq/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            explicó el recorrido a futuro del contenido del proyecto
+            explained the future path of the project's content
           </a>
-          , considerado la antesala de la futura 1HealthAI Factory que,
-          co-liderada por el CESGA y el CSIC junto con las universidades
-          gallegas, DATAlife y Gradiant, será la única infraestructura
-          europea de inteligencia artificial concebida específicamente bajo
-          el enfoque One Health.
+          , regarded as the prelude to the forthcoming 1HealthAI Factory
+          which—co-led by CESGA and the CSIC together with the Galician
+          universities, DATAlife and Gradiant—will be the only European
+          artificial-intelligence infrastructure conceived specifically
+          under the One Health approach.
         </p>,
 
-        'Mientras tanto, OneHealth DataSpace extiende su actividad hasta el 31 de agosto de 2026, con el objetivo de consolidar lo avanzado, incorporar nuevas entidades adheridas y reforzar las acciones de difusión, formación y transferencia de conocimiento.',
+        'Meanwhile, OneHealth DataSpace is extending its activity until 31 August 2026, with the aim of consolidating the progress made, incorporating new member entities and stepping up its outreach, training and knowledge-transfer efforts.',
 
-        'El OneHealth DataSpace del CESGA es un proyecto del Centro de Supercomputación de Galicia (CESGA) financiado por el Ministerio de Transformación Digital y Función Pública en el marco del Plan de Recuperación, Transformación y Resiliencia, a través del Mecanismo de Recuperación y Resiliencia (MRR) —"Demostrador Multisectorial DATAlife. Nº registro TSI-100120-2024-12"—. Financiado por la Unión Europea – NextGenerationEU.',
+        'CESGA\'s OneHealth DataSpace is a project of the Galicia Supercomputing Centre (CESGA) funded by the Ministry for Digital Transformation and the Civil Service under the Recovery, Transformation and Resilience Plan, through the Recovery and Resilience Mechanism (RRM) —"Demostrador Multisectorial DATAlife. Registry No. TSI-100120-2024-12"—. Funded by the European Union – NextGenerationEU.',
 
         {
           type: 'bold',
@@ -3016,8 +3013,8 @@ export const blogPosts: Record<Locale, Post[]> = {
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800 font-bold"
           >
-            Consulta aquí todas las presentaciones del Encuentro de
-            Presentación de Resultados OneHealth DataSpace
+            See here all the presentations from the OneHealth DataSpace
+            Results Presentation Meeting
           </a>
         </p>,
       ],
