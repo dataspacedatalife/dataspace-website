@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import {
   motion,
   animate,
@@ -11,6 +12,7 @@ import {
   useReducedMotion,
 } from 'motion/react';
 import { MONO, polar, useServicesData } from './shared';
+import LogoWordmark from '../../../../public/logos/logotipo_300px.png';
 
 /* una vuelta completa del paquete de datos: 4 tramos de 7 s */
 const ORBIT_MS = 28000;
@@ -286,14 +288,11 @@ export function DataSpaceWheel() {
                 transition={{ duration: 0.25 }}
                 className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
               >
-                <p
-                  className="gradient-text font-heading font-semibold leading-none"
-                  style={{ fontSize: 'clamp(1.5rem, 4vw, 2rem)' }}
-                >
-                  OneHealth
-                  <br />
-                  DataSpace
-                </p>
+                <Image
+                  src={LogoWordmark}
+                  alt="OneHealth DataSpace"
+                  style={{ width: 'clamp(5rem, 11vw, 7rem)', height: 'auto' }}
+                />
                 <p className="mt-2 text-[11px] sm:text-xs font-bold text-slate-700">
                   {t('graphTagline')}
                 </p>
