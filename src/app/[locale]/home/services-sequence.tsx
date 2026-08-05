@@ -105,16 +105,31 @@ export function ServicesSequence({ services }: { services: ServiceItem[] }) {
                     </motion.div>
 
                     {/* Ejemplo */}
-                    <motion.div
-                      variants={cardItem}
-                      className="mt-4 rounded-xl bg-[#006b8f]/70 p-4"
-                    >
-                      <p className="text-[11px] tracking-[0.25em] uppercase text-white/55 font-mono">
-                        {tServices('exampleLabel')}
-                      </p>
-                      <p className="mt-1.5 text-sm text-white/85 leading-relaxed">
-                        {item.example}
-                      </p>
+                    <motion.div variants={cardItem} className="mt-4">
+                      {item.exampleHref ? (
+                        <Link
+                          href={item.exampleHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block rounded-xl bg-[#006b8f]/70 p-4 transition-transform duration-300 ease-out active:scale-[1.03] focus-visible:scale-[1.03] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        >
+                          <p className="text-[11px] tracking-[0.25em] uppercase text-white/55 font-mono">
+                            {tServices('exampleLabel')}
+                          </p>
+                          <p className="mt-1.5 text-sm text-white/85 leading-relaxed">
+                            {item.example}
+                          </p>
+                        </Link>
+                      ) : (
+                        <div className="rounded-xl bg-[#006b8f]/70 p-4">
+                          <p className="text-[11px] tracking-[0.25em] uppercase text-white/55 font-mono">
+                            {tServices('exampleLabel')}
+                          </p>
+                          <p className="mt-1.5 text-sm text-white/85 leading-relaxed">
+                            {item.example}
+                          </p>
+                        </div>
+                      )}
                     </motion.div>
 
                     <motion.div
