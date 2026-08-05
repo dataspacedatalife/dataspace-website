@@ -199,16 +199,31 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
                   </motion.div>
 
                   {/* Ejemplo */}
-                  <motion.div
-                    variants={contentItem}
-                    className="mt-5 max-w-lg rounded-xl bg-[#006b8f]/70 backdrop-blur-sm p-4"
-                  >
-                    <p className="text-[11px] tracking-[0.25em] uppercase text-white/55 font-mono">
-                      {tServices('exampleLabel')}
-                    </p>
-                    <p className="mt-1.5 text-sm text-white/85 leading-relaxed">
-                      {activeService.example}
-                    </p>
+                  <motion.div variants={contentItem} className="mt-5 max-w-lg">
+                    {activeService.exampleHref ? (
+                      <Link
+                        href={activeService.exampleHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block rounded-xl bg-[#006b8f]/70 backdrop-blur-sm p-4 transition-transform duration-300 ease-out hover:scale-[1.03] focus-visible:scale-[1.03] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      >
+                        <p className="text-[11px] tracking-[0.25em] uppercase text-white/55 font-mono">
+                          {tServices('exampleLabel')}
+                        </p>
+                        <p className="mt-1.5 text-sm text-white/85 leading-relaxed">
+                          {activeService.example}
+                        </p>
+                      </Link>
+                    ) : (
+                      <div className="rounded-xl bg-[#006b8f]/70 backdrop-blur-sm p-4">
+                        <p className="text-[11px] tracking-[0.25em] uppercase text-white/55 font-mono">
+                          {tServices('exampleLabel')}
+                        </p>
+                        <p className="mt-1.5 text-sm text-white/85 leading-relaxed">
+                          {activeService.example}
+                        </p>
+                      </div>
+                    )}
                   </motion.div>
 
                   <motion.div

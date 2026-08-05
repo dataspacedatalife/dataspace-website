@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion } from 'motion/react';
 import type { LucideIcon } from 'lucide-react';
@@ -16,6 +17,7 @@ export type ServiceItem = {
   example: string;
   image: string;
   href: string;
+  exampleHref?: string;
 };
 
 export const SERVICES_GRADIENT =
@@ -37,10 +39,16 @@ export function useServicesData(): ServiceItem[] {
     { key: 'share', icon: Share2, href: 'https://dl-cesga.srv.cesga.es', image: '/examples/share_hospital_vet.svg' },
     { key: 'analyze', icon: Search, href: 'https://bigdata.dataspace.cesga.es/', image: '/examples/average_temperature.png' },
     { key: 'compute', icon: Cpu, href: 'https://hpc.dataspace.cesga.es', image: '/examples/molecula.png' },
-    { key: 'deliver', icon: CloudUpload, href: 'http://cloud.srv.cesga.es/', image: '/examples/carabelas_map.png' },
+    {
+      key: 'deliver',
+      icon: CloudUpload,
+      href: 'http://cloud.srv.cesga.es/',
+      image: '/examples/carabelas_map.png',
+      exampleHref: 'https://carabelas.dataspace.cesga.es/',
+    },
   ] as const;
 
-  return base.map(({ key, icon, href, image }) => ({
+  return base.map(({ key, icon, href, image, ...rest }) => ({
     key,
     icon,
     href,
@@ -49,6 +57,7 @@ export function useServicesData(): ServiceItem[] {
     what: tS(`${key}What`),
     example: tS(`${key}Example`),
     image,
+    exampleHref: 'exampleHref' in rest ? rest.exampleHref : undefined,
   }));
 }
 
@@ -129,10 +138,11 @@ export function ServiceImage({
 }) {
   const [failed, setFailed] = useState(false);
   const Icon = service.icon;
+  const href = service.exampleHref;
 
-  return (
+  const frame = (
     <div
-      className={`relative overflow-hidden rounded-[2rem] border border-white/20 bg-white/10 ring-1 ring-white/25 shadow-xl shadow-black/15 ${className}`}
+      className={`relative overflow-hidden rounded-[2rem] border border-white/20 bg-white/10 ring-1 ring-white/25 shadow-xl shadow-black/15 ${href ? 'transition-transform duration-300 ease-out group-hover:scale-[1.04] group-focus-visible:scale-[1.04]' : ''} ${className}`}
     >
       {!failed ? (
         <div className="absolute inset-0">
@@ -179,4 +189,20 @@ export function ServiceImage({
       )}
     </div>
   );
+
+  if (href) {
+    return (
+      <Link
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={service.title}
+        className={`group block ${className}`}
+      >
+        {frame}
+      </Link>
+    );
+  }
+
+  return frame;
 }
