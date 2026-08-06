@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "title": "Demos OneHealth DataSpace",
+    "description": "Casos de uso operativos en aberto de OneHealth DataSpace"
+  },
+  "header": {
+    "title": "Demos OneHealth DataSpace",
+    "lead": "Casos de uso operativos en aberto: exploraos e descobre como convertimos os datos en coñecemento accionable."
+  },
+  "demoButton": "Abrir demo",
+  "useCases": {
+    "item1": {
+      "badge": "BETA",
+      "title": "Calidade do aire • Santiago de Compostela",
+      "image": "/demos/demo1.png",
+      "text": "Previsión horaria de NO2, que combina datos de tráfico e meteoroloxía co modelo de dispersión GRAL para anticipar como se distribúe a contaminación pola cidade.",
+      "demoUrl": "https://airecompostela.dataspace.cesga.es"
+    },
+    "item2": {
+      "badge": "BETA",
+      "title": "Carabelas • Praias de Galicia",
+      "image": "/demos/demo2.png",
+      "text": "Previsión a catro días da presenza de carabelas portuguesas no litoral galego, conectando o medio mariño coa seguridade de quen se baña nas nosas praias.",
+      "demoUrl": "https://carabelas.dataspace.cesga.es/"
+    },
+    "item3": {
+      "badge": "BETA",
+      "title": "Asistente clínico",
+      "image": "/demos/demo3.png",
+      "text": "Asistente baseado en IA, servido sobre a infraestrutura do CESGA, que responde consultas clínicas en español como ferramenta de apoio á avaliación.",
+      "demoUrl": "https://demo.dataspace.cesga.es/"
+    }
+  }
+}
