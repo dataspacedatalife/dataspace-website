@@ -61,6 +61,12 @@ interface QuoteNode extends TextNodeBase {
   content: React.ReactNode;
 }
 
+interface VideoNode extends TextNodeBase {
+  type: 'video';
+  videoId: string;
+  title?: string;
+}
+
 export type TextNode =
   | HeadingNode
   | BoldNode
@@ -69,7 +75,8 @@ export type TextNode =
   | ImageNode
   | ItalicNode
   | ImageProfileNode
-  | QuoteNode;
+  | QuoteNode
+  | VideoNode;
 
 export interface Post {
   key: string;
@@ -1169,6 +1176,13 @@ export const blogPosts: Record<Locale, Post[]> = {
           type: 'italic',
           content:
             'La especial protección de los datos sanitarios, los sistemas públicos y las regulaciones nacionales y europeas que les afectan protagonizaron la primera parte del encuentro, presidido por Carmen Cotelo, directora de GAIN y presidenta del CESGA.',
+        },
+
+        {
+          type: 'video',
+          videoId: 'O7yF6Ot8YF0',
+          title:
+            'El CESGA marca el camino hacia la Factoría de IA en favor de la salud global con su proyecto OneHealth DataSpace',
         },
 
         <p
@@ -2629,6 +2643,13 @@ export const blogPosts: Record<Locale, Post[]> = {
           type: 'italic',
           content:
             'The special protection of health data, and the public systems and national and European regulations affecting it, took centre stage in the first part of the meeting, chaired by Carmen Cotelo, director of GAIN and Chair of CESGA.',
+        },
+
+        {
+          type: 'video',
+          videoId: 'O7yF6Ot8YF0',
+          title:
+            "CESGA charts the course towards the AI Factory for global health with its OneHealth DataSpace project",
         },
 
         <p
@@ -4134,6 +4155,13 @@ export const blogPosts: Record<Locale, Post[]> = {
           type: 'italic',
           content:
             'A especial protección dos datos sanitarios, os sistemas públicos e as regulacións nacionais e europeas que os afectan protagonizaron a primeira parte do Encontro, presidido por Carmen Cotelo, directora de GAIN e presidenta do CESGA.',
+        },
+
+        {
+          type: 'video',
+          videoId: 'O7yF6Ot8YF0',
+          title:
+            'O CESGA marca o camiño cara á Factoría de IA en favor da saúde global co seu proxecto OneHealth DataSpace',
         },
 
         <p

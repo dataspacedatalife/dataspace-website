@@ -159,13 +159,13 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   );
                 case 'image':
                   return (
-                    <figure key={idx} className="my-6">
+                    <figure key={idx} className="my-6 max-w-md mx-auto">
                       <Image
                         src={item.src}
                         alt={item.alt}
                         width={800}
                         height={400}
-                        className="rounded-lg mx-auto"
+                        className="rounded-lg w-full h-auto"
                       />
                       {item.caption && (
                         <figcaption className="text-sm text-gray-500 mt-2 text-center">
@@ -194,6 +194,22 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     >
                       {item.content}
                     </blockquote>
+                  );
+                case 'video':
+                  return (
+                    <div
+                      key={idx}
+                      className="my-6 aspect-video max-w-md mx-auto"
+                    >
+                      <iframe
+                        src={`https://www.youtube.com/embed/${item.videoId}`}
+                        title={item.title ?? 'YouTube video player'}
+                        className="w-full h-full rounded-lg"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      />
+                    </div>
                   );
                 default:
                   return null;
