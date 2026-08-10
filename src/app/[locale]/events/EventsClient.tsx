@@ -426,7 +426,7 @@ const events: Event[]  = [
     },
     cesgalink: 'https://forms.gle/AYKkiuGxJFArv2ZSA',
     organizer: 'OneHealth DataSpace & Centro de Supercomputación de Galicia (CESGA)',
-    featured: true,
+    featured: false,
   },
   
 
