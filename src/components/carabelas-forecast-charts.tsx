@@ -46,21 +46,21 @@ const LABELS: Record<Locale, ForecastLabels> = {
     decimalSeparator: ',',
     percentSpace: ' ',
     hourlyTitle: 'La previsión hora a hora de una playa',
-    hourlyDescription: `Riesgo titular horario de ${hourlyRiskBeach} en la previsión del 12 de agosto de 2026, tal cual sale de la API del visor. Pasa el ratón o toca una barra para ver su valor. Lo importante es la tendencia: el índice sube del 1,1 % del miércoles al 11,2 % del sábado por la tarde y cruza el umbral de moderado el viernes a última hora.`,
+    hourlyDescription: `Riesgo horario de ${hourlyRiskBeach} en la previsión del 12 de agosto de 2026. Lo importante es la tendencia: el índice sube del 1,1 % del miércoles al 11,2 % del sábado por la tarde y cruza el umbral de moderado el viernes a última hora.`,
     moderateThresholdLabel: 'umbral de moderado',
     dailyMaxima: 'Máximos diarios',
-    modelTitle: 'De dónde sale el aviso: modelo e isóbata',
+    modelTitle: 'De dónde sale el aviso',
     modelDescription:
-      'La misma playa, en el pico del horizonte, desglosada por modelo y profundidad de siembra. El aviso lo empuja el modelo con viento en la curva de 100 m; la deriva puramente oceánica desde la de 150 m no produce casi nada. El nivel que se muestra al usuario es el máximo de los seis valores.',
+      'La misma playa desglosada por modelo y profundidad de siembra de partículas. Se puede ver que el aviso lo genera el modelo con viento en la isóbata de 100 m; la deriva puramente oceánica desde la isóbata de 150 m no produce casi nada. El nivel de riesgo es el máximo de los seis valores.',
     modelSubtitles: {
       Leeway: 'corrientes + viento',
       OceanDrift: 'solo corrientes',
     },
     modelFootnote:
-      'risk_percent máximo en el horizonte de 96 h · misma escala, 0–12 %',
+      'nivel de riesgo en los próximos 4 días · misma escala, 0–12 %',
     distributionTitle: 'Un día de agosto en las 574 playas',
     distributionDescription:
-      'Reparto de las playas del visor por nivel de aviso en esa misma ejecución. Un día típico de agosto es casi todo verde con una bolsa de moderado en el noroeste; los dos niveles superiores están vacíos. Distribuciones como esta son la razón de que los umbrales sigan etiquetados como provisionales.',
+      'Reparto de las playas por nivel de aviso. En un día típico de agosto en que está casi todo verde con una zona de riesgo moderado en el noroeste.',
     distributionFootnote: `${totalBeaches} playas · nivel titular = peor caso en 4 días`,
   },
   en: {
@@ -69,21 +69,21 @@ const LABELS: Record<Locale, ForecastLabels> = {
     decimalSeparator: '.',
     percentSpace: '',
     hourlyTitle: 'The hour-by-hour forecast for one beach',
-    hourlyDescription: `Hourly headline risk for ${hourlyRiskBeach} in the forecast of 12 August 2026, exactly as it comes out of the viewer API. Hover over or tap a bar to see its value. What matters is the trend: the index climbs from 1.1% on Wednesday to 11.2% on Saturday afternoon and crosses the moderate threshold late on Friday.`,
+    hourlyDescription: `Hourly risk for ${hourlyRiskBeach} in the forecast of 12 August 2026. What matters is the trend: the index climbs from 1.1% on Wednesday to 11.2% on Saturday afternoon and crosses the moderate threshold late on Friday.`,
     moderateThresholdLabel: 'moderate threshold',
     dailyMaxima: 'Daily maxima',
     modelTitle: 'Where the warning comes from: model and isobath',
     modelDescription:
-      'The same beach, at the peak of the horizon, broken down by model and seeding depth. The warning is driven by the model with wind on the 100 m curve; purely oceanic drift from the 150 m one produces almost nothing. The level shown to the user is the maximum of the six values.',
+      'The same beach broken down by model and seeding depth. The warning is driven by the model with wind on the 100 m isobath; purely oceanic drift from the 150 m one produces almost nothing. The risk level is the maximum of the six values.',
     modelSubtitles: {
       Leeway: 'currents + wind',
       OceanDrift: 'currents only',
     },
     modelFootnote:
-      'maximum risk_percent over the 96 h horizon · same scale, 0–12%',
+      'maximum risk_percent over the next 4 days · same scale, 0–12%',
     distributionTitle: 'One August day across the 574 beaches',
     distributionDescription:
-      'Breakdown of the viewer beaches by warning level in that same run. A typical August day is almost all green with a pocket of moderate in the north-west; the two top levels are empty. Distributions like this one are why the thresholds are still labelled provisional.',
+      'Breakdown of beaches by warning level. A typical August day is almost all green with a moderated risk region in the Northwest.',
     distributionFootnote: `${totalBeaches} beaches · headline level = worst case over 4 days`,
   },
   gl: {
@@ -92,21 +92,21 @@ const LABELS: Record<Locale, ForecastLabels> = {
     decimalSeparator: ',',
     percentSpace: ' ',
     hourlyTitle: 'A previsión hora a hora dunha praia',
-    hourlyDescription: `Risco titular horario de ${hourlyRiskBeach} na previsión do 12 de agosto de 2026, tal cal sae da API do visor. Pasa o rato ou toca unha barra para ver o seu valor. O importante é a tendencia: o índice sobe do 1,1 % do mércores ao 11,2 % do sábado pola tarde e cruza o limiar de moderado o venres a última hora.`,
+    hourlyDescription: `Risco horario de ${hourlyRiskBeach} na previsión do 12 de agosto de 2026. O importante é a tendencia: o índice sobe do 1,1 % do mércores ao 11,2 % do sábado pola tarde e cruza o limiar de moderado o venres a última hora.`,
     moderateThresholdLabel: 'limiar de moderado',
     dailyMaxima: 'Máximos diarios',
     modelTitle: 'De onde sae o aviso: modelo e isóbata',
     modelDescription:
-      'A mesma praia, no pico do horizonte, desagregada por modelo e profundidade de sementeira. O aviso empúrrao o modelo con vento na curva de 100 m; a deriva puramente oceánica desde a de 150 m non produce case nada. O nivel que se amosa á persoa usuaria é o máximo dos seis valores.',
+      'A mesma praia, no pico do horizonte, desagregada por modelo e profundidade de sementeira. O aviso xérao o modelo con vento na isóbata de 100 m. O nivel de risco é o máximo dos seis valores.',
     modelSubtitles: {
       Leeway: 'correntes + vento',
       OceanDrift: 'só correntes',
     },
     modelFootnote:
-      'risk_percent máximo no horizonte de 96 h · mesma escala, 0–12 %',
+      'nivel de risco nos seguintes 4 días · mesma escala, 0–12 %',
     distributionTitle: 'Un día de agosto nas 574 praias',
     distributionDescription:
-      'Reparto das praias do visor por nivel de aviso nesa mesma execución. Un día típico de agosto é case todo verde cunha bolsa de moderado no noroeste; os dous niveis superiores están baleiros. Distribucións coma esta son a razón de que os limiares sigan etiquetados como provisionais.',
+      'Reparto das praias por nivel de aviso. Un día típico de agosto é case todo verde cunha bolsa de moderado no noroeste; os dous niveis superiores están baleiros. Distribucións coma esta son a razón de que os limiares sigan etiquetados como provisionais.',
     distributionFootnote: `${totalBeaches} praias · nivel titular = peor caso en 4 días`,
   },
 };
