@@ -1,4 +1,16 @@
 import type { StaticImageData } from 'next/image';
+import {
+  HourlyRiskChart,
+  RiskByModelChart,
+  WarningLevelDistributionChart,
+} from '@/components/carabelas-forecast-charts';
+import {
+  SightingsByFortnightChart,
+  SightingsMapChart,
+} from '@/components/carabelas-sightings-charts';
+import CarabelasParticulas78h from '../../../../public/blog/carabelas-visor-particulas-78h.png';
+import CarabelasParticulasPaso1 from '../../../../public/blog/carabelas-visor-particulas-paso1.png';
+import CarabelasPanel from '../../../../public/blog/carabelas-visor-panel.png';
 import type { Locale } from 'next-intl';
 import DinamicaCRED from '../../../../public/blog/dinamicaEventoInicialCRED.png';
 import GaiaXPonencia from '../../../../public/blog/GAIAXCumbreDatoPonenciaAlejoSantolino.jpeg';
@@ -54,6 +66,8 @@ interface ImageNode extends TextNodeBase {
   src: StaticImageData;
   alt: string;
   caption?: string;
+  /** Ocupa todo el ancho del artículo en vez de limitarse a `max-w-md`. */
+  wide?: boolean;
 }
 
 interface QuoteNode extends TextNodeBase {
@@ -1576,6 +1590,477 @@ export const blogPosts: Record<Locale, Post[]> = {
         </p>,
       ],
     },
+    {
+      key: 'carabelas-portuguesas-prediccion',
+      date: '2026-08-12',
+      title:
+        'Predecir dónde llegarán las carabelas portuguesas: una demo del OneHealth DataSpace',
+      excerpt:
+        'Una aplicación de demostración construida sobre el OneHealth DataSpace, fruto de la colaboración entre el IEO-CSIC y el CESGA, que simula cada día la deriva de las carabelas portuguesas y traduce el resultado en un nivel de aviso para más de 570 playas gallegas.',
+      image: CarabelasPanel,
+      author_name: 'Javier Cacheiro',
+      author_image: JCacheiroImg,
+      description: [
+        <p
+          key="carabelas-intro"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Cada verano, la llegada de carabelas portuguesas a la costa gallega
+          supone un riesgo para los bañistas y, en algunos casos, acaba
+          provocando el cierre temporal de playas. Estas decisiones a menudo
+          deben tomarse sin datos suficientes, y la pregunta que se plantean
+          tanto los socorristas como los ayuntamientos es muy concreta:{' '}
+          <strong>¿qué playas se verán afectadas, y qué días?</strong>
+        </p>,
+        <p
+          key="carabelas-intro-2"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Este artículo describe cómo hemos abordado esa pregunta mediante una
+          aplicación de demostración construida sobre el{' '}
+          <strong>OneHealth DataSpace (OHDS)</strong>, fruto de la colaboración
+          entre el <strong>Instituto Español de Oceanografía (IEO-CSIC)</strong>{' '}
+          y el <strong>CESGA</strong>. El resultado puede consultarse en:
+        </p>,
+        {
+          type: 'link',
+          content: 'carabelas.dataspace.cesga.es',
+          href: 'https://carabelas.dataspace.cesga.es',
+          external: true,
+        },
+
+        { type: 'h2', content: 'Un animal que no sabe nadar' },
+        <p
+          key="carabelas-sifonoforo"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          La carabela portuguesa (<em>Physalia physalis</em>) no es una medusa,
+          sino un sifonóforo: una colonia de organismos que flota suspendida de
+          una vejiga llena de gas. Esa vejiga actúa como una vela inclinada
+          respecto al cuerpo, y en ella reside la clave del problema: la
+          carabela <strong>carece de medios propios de propulsión</strong>. Se
+          desplaza únicamente donde la llevan la corriente y el viento.
+        </p>,
+        'Para los bañistas constituye un riesgo considerable, ya que sus tentáculos, que pueden alcanzar varios metros, conservan las células urticantes activas incluso en ejemplares varados y muertos. Sin embargo, desde el punto de vista de la predicción, esta incapacidad de nadar resulta ventajosa, ya que la carabela se comporta como una partícula pasiva en un fluido, y por tanto es fácilmente simulable con un software de transporte de partículas en el océano como OpenDrift.',
+        'Esa es la idea central del proyecto.',
+
+        {
+          type: 'h2',
+          content: 'El punto de partida: tres veranos de avistamientos',
+        },
+        <p
+          key="carabelas-registro"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Antes de predecir es necesario conocer lo que ha ocurrido en realidad.
+          Con este fin se recopilaron{' '}
+          <strong>696 avistamientos confirmados en 187 playas gallegas</strong>{' '}
+          entre junio y octubre de 2023, 2024 y 2025, a partir de dos fuentes
+          independientes: una revisión sistemática de prensa, ayuntamientos y
+          servicios de socorrismo, y los registros de ciencia ciudadana de la
+          aplicación <strong>MedusApp</strong>.
+        </p>,
+        'El patrón resultante es muy claro:',
+        <p
+          key="carabelas-patron-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>La temporada se concentra en agosto.</strong> El 77 % de los
+          avistamientos corresponden a ese mes. Antes de mediados de julio
+          apenas se registran llegadas, y a finales de septiembre la temporada
+          está prácticamente concluida.
+        </p>,
+        <p
+          key="carabelas-patron-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>La costa norte es la más afectada.</strong> Barreiros (79
+          avistamientos), O Vicedo (64), Ribadeo y A Coruña (46 cada uno),
+          Ferrol (44), Valdoviño (43) y Foz (42) encabezan la lista. Las Rías
+          Baixas, más resguardadas, apenas registran episodios.
+        </p>,
+        <p
+          key="carabelas-patron-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          •{' '}
+          <strong>
+            La mayoría de los avisos describen pocos ejemplares, pero no todos.
+          </strong>{' '}
+          Lo habitual es que se notifiquen entre uno y cinco animales; sin
+          embargo, una docena de episodios describen cientos o incluso miles
+          llegando simultáneamente. Son estos últimos los que provocan el cierre
+          de una playa.
+        </p>,
+        <SightingsByFortnightChart
+          key="carabelas-grafico-quincenas"
+          locale="es"
+        />,
+        <SightingsMapChart key="carabelas-grafico-mapa" locale="es" />,
+        <p
+          key="carabelas-sesgo"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Conviene subrayar una precaución importante: se trata de un registro
+          de <em>avistamientos</em>, no de animales. Una playa concurrida genera
+          más avisos que una remota por razones ajenas al estado del mar. Este
+          sesgo de observación condiciona todo el trabajo posterior, y en
+          particular la validación del modelo.
+        </p>,
+
+        { type: 'h2', content: 'Los datos de partida' },
+        'Aquí entra en juego el OneHealth DataSpace. Simular la deriva de una partícula exige conocer, hora a hora, el estado del océano y de la atmósfera, y esos datos pertenecen a organismos distintos.',
+        <p
+          key="carabelas-fuente-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>MeteoGalicia</strong> — viento del modelo WRF a 12 km de
+          resolución y salidas del modelo oceánico ROMS.
+        </p>,
+        <p
+          key="carabelas-fuente-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>Copernicus Marine Service</strong> — corrientes
+          superficiales del sistema Iberia–Golfo de Vizcaya–Irlanda (IBI), que
+          alimentan la predicción hacia el futuro.
+        </p>,
+        <p
+          key="carabelas-fuente-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>INTECMAR</strong> — corrientes superficiales medidas por{' '}
+          <strong>radar de alta frecuencia (HF)</strong>; es decir,
+          observaciones reales del mar, no salidas de un modelo.
+        </p>,
+        <p
+          key="carabelas-fuente-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>EMODnet</strong> — batimetría, de la que se obtienen las
+          líneas de profundidad constante (isóbatas).
+        </p>,
+
+        { type: 'h2', content: 'La simulación: OpenDrift' },
+        <p
+          key="carabelas-opendrift"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Cada día se ejecuta de forma automática, en el supercomputador{' '}
+          <strong>FT3 del CESGA</strong>, una simulación que libera{' '}
+          <strong>4.549 partículas virtuales</strong> en el Atlántico mediante{' '}
+          <strong>OpenDrift</strong>, un modelo lagrangiano de código abierto
+          desarrollado por el Instituto Meteorológico Noruego.
+        </p>,
+        'Tres decisiones de diseño merecen explicación:',
+        <p
+          key="carabelas-diseno-1"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          <strong>Dónde se liberan las partículas.</strong> No existe un censo
+          de estos organismos en mar abierto: nadie sabe dónde se encuentran
+          realmente cada mañana, y el modelo no pretende saberlo. En su lugar,
+          libera una «cortina» de partículas a lo largo de tres isóbatas —
+          <strong>50, 100 y 150 metros de profundidad</strong>— y analiza qué
+          hace el océano con ellas. Cada partícula conserva la referencia de la
+          isóbata de la que procede, lo que permite interpretar los resultados
+          por separado: una liberación costera y otra más oceánica responden a
+          preguntas distintas.
+        </p>,
+        {
+          type: 'image',
+          src: CarabelasParticulasPaso1,
+          alt: 'Mapa del visor en el primer paso temporal: las partículas trazan tres líneas continuas paralelas a la costa siguiendo las curvas de 50, 100 y 150 metros de profundidad.',
+          caption:
+            'Paso 1 de 96 de la simulación de Leeway: antes de que nada derive, la capa de partículas dibuja la batimetría. Las tres hebras continuas son las curvas de 50, 100 y 150 m de EMODnet, recién sembradas y todavía quietas.',
+          wide: true,
+        },
+        <p
+          key="carabelas-diseno-2"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          <strong>Dos modelos en paralelo.</strong> <em>OceanDrift</em> desplaza
+          las partículas únicamente con la corriente. <em>Leeway</em> —un modelo
+          concebido originalmente para operaciones de búsqueda y rescate de
+          objetos a la deriva— incorpora además el empuje directo del viento
+          sobre la parte emergida, e incluso contempla que unos objetos
+          «naveguen» hacia la derecha y otros hacia la izquierda, un
+          comportamiento notablemente similar al de la vela de una carabela.
+          Ejecutar ambos constituye una prueba de sensibilidad de bajo coste:
+          donde coinciden, domina la corriente; donde Leeway ofrece valores
+          superiores, domina el viento.
+        </p>,
+        <p
+          key="carabelas-diseno-3"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          <strong>Dos ventanas temporales.</strong> Cada ejecución simula ocho
+          días. Los <strong>cuatro días hacia adelante</strong> emplean
+          corrientes de Copernicus y viento de MeteoGalicia: es la predicción
+          operativa. Los <strong>cuatro días hacia atrás</strong> —el{' '}
+          <em>reanálisis</em>— sustituyen la corriente modelada por las medidas
+          reales del radar HF de INTECMAR. Constituyen la mejor reconstrucción
+          disponible de lo que efectivamente hizo el agua, y la materia prima
+          para evaluar la calidad del sistema.
+        </p>,
+        <p
+          key="carabelas-posiciones"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          El resultado son aproximadamente{' '}
+          <strong>1,7 millones de posiciones diarias</strong>, con salida
+          horaria.
+        </p>,
+        {
+          type: 'image',
+          src: CarabelasParticulas78h,
+          alt: 'Mapa del visor 78 horas después: el campo de partículas se ha dispersado y se aprieta contra la costa norte, con marcadores oscuros de partículas varadas cerca de Malpica y a lo largo del litoral cantábrico.',
+          caption:
+            'La misma ejecución 78 horas después (15 de agosto, 08:00). El campo se ha roto, ha derivado al nordeste y se aprieta contra la Costa da Morte y el litoral cantábrico. Los marcadores oscuros son partículas ya varadas: los sucesos que el índice de riesgo acaba contando.',
+          wide: true,
+        },
+
+        { type: 'h2', content: 'De las trayectorias a un nivel de aviso' },
+        <p
+          key="carabelas-indice"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          La última etapa convierte las trayectorias en{' '}
+          <strong>un número por playa y por hora</strong>: se define un área de
+          ±0,05° (unos 5,5 km) alrededor de cada playa y se contabilizan las
+          partículas presentes en ella, tanto las que permanecen a la deriva
+          como las que ya han varado. Ese porcentaje se traduce en cinco
+          niveles: <strong>sin riesgo, bajo, moderado, alto y muy alto</strong>.
+        </p>,
+        <HourlyRiskChart key="carabelas-grafico-horario" locale="es" />,
+        <p
+          key="carabelas-peor-caso"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          <strong>El nivel mostrado es siempre el peor caso</strong>, es decir,
+          el máximo entre los dos modelos, las tres isóbatas y las 96 horas del
+          horizonte de predicción. En un sistema de aviso, la sensibilidad prima
+          sobre la calibración: un promedio habría ocultado precisamente el
+          escenario que el usuario necesita conocer. Por esa razón, la web lo
+          indica de forma explícita en cada pantalla.
+        </p>,
+        <RiskByModelChart key="carabelas-grafico-modelos" locale="es" />,
+        <WarningLevelDistributionChart
+          key="carabelas-grafico-niveles"
+          locale="es"
+        />,
+
+        { type: 'h2', content: '¿Funciona el modelo?' },
+        'Un modelo de deriva que no se contrasta con observaciones carece de valor operativo. El índice se ha validado frente al registro de varamientos descrito anteriormente, y la conclusión es que funciona parcialmente como herramienta de apoyo, aunque no es suficiente por sí solo, ya que el modelo no dispone de información sobre la presencia real de ejemplares en las proximidades de la costa.',
+        <p
+          key="carabelas-auc"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Comparando cada municipio consigo mismo en días distintos, el índice
+          alcanza un <strong>AUC de entre 0,59 y 0,68</strong> según la
+          temporada y la fuente, con intervalos de confianza que excluyen el
+          azar. La validación arrojó, además, varias conclusiones de interés:
+        </p>,
+        <p
+          key="carabelas-validacion-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>Leeway y OceanDrift difieren en menos de 0,04</strong>, lo
+          que indica que, en la simulación actual, el empuje directo del viento
+          apenas modifica el resultado.
+        </p>,
+        <p
+          key="carabelas-validacion-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • La capacidad predictiva{' '}
+          <strong>mejora ligeramente con el horizonte</strong>, ya que el primer
+          día buena parte del riesgo se encuentra todavía mar adentro.
+        </p>,
+        <p
+          key="carabelas-validacion-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>Existe un sesgo de observación en los avistamientos</strong>
+          : las playas más frecuentadas acumulan más avisos, mientras que otras
+          carecen de ellos por completo.
+        </p>,
+        <p
+          key="carabelas-validacion-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • Por otra parte, la simple persistencia (¿se ha notificado algo en la
+          zona recientemente?) resulta un buen predictor por sí sola, y su
+          combinación con el índice de deriva supera a ambos por separado.
+        </p>,
+        'En la actualidad, el límite de la precisión lo marca el ruido de las observaciones, no el error del modelo.',
+
+        { type: 'h2', content: 'El visor web' },
+        <p
+          key="carabelas-visor"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          En{' '}
+          <a
+            href="https://carabelas.dataspace.cesga.es"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            carabelas.dataspace.cesga.es
+          </a>{' '}
+          puede consultarse, en gallego, castellano e inglés:
+        </p>,
+        <p
+          key="carabelas-visor-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • El <strong>mapa con más de 570 playas gallegas</strong>, cada una
+          con su nivel de aviso para los próximos cuatro días.
+        </p>,
+        <p
+          key="carabelas-visor-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • El <strong>detalle de cada playa</strong>: evolución hora a hora,
+          desglose por modelo y por isóbata, y recomendaciones en lenguaje
+          claro.
+        </p>,
+        <p
+          key="carabelas-visor-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • La <strong>animación de la deriva</strong>, que muestra el
+          movimiento de las partículas de OceanDrift y de Leeway a lo largo del
+          horizonte de predicción.
+        </p>,
+        <p
+          key="carabelas-visor-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • El <strong>reanálisis con radar HF</strong>, que reconstruye el
+          comportamiento del mar en los días previos.
+        </p>,
+        <p
+          key="carabelas-visor-5"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • Un <strong>archivo histórico</strong> de ejecuciones anteriores,
+          consultable por fecha.
+        </p>,
+
+        {
+          type: 'h2',
+          content: 'Todo el ciclo de vida del dato, en una sola plataforma',
+        },
+        'Más allá del caso concreto, este trabajo constituye una demostración del propósito de un espacio de datos. Los cinco servicios del OneHealth DataSpace intervienen aquí de forma encadenada:',
+        <p
+          key="carabelas-ciclo-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          1. <strong>Compartir</strong> — los conectores EDC permiten descubrir
+          y negociar el acceso a los conjuntos de datos de MeteoGalicia,
+          INTECMAR y del propio IEO desde un catálogo federado.
+        </p>,
+        <p
+          key="carabelas-ciclo-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          2. <strong>Analizar</strong> — el servicio Big Data, con notebooks
+          Jupyter y la librería <code>onehealth</code>, se empleó para explorar
+          los datos y preparar la entrada de la simulación.
+        </p>,
+        <p
+          key="carabelas-ciclo-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          3. <strong>Computar</strong> — el servicio HPC, sobre el FT3, ejecuta
+          diariamente las simulaciones de OpenDrift mediante un proyecto
+          configurado en el portal interactivo.
+        </p>,
+        <p
+          key="carabelas-ciclo-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          4. <strong>Almacenar y exponer</strong> — el servicio Cloud aloja la
+          base de datos con los resultados y el propio visor web, publicado como
+          un servicio bajo control del IEO.
+        </p>,
+        <p
+          key="carabelas-ciclo-5"
+          className="text-gray-700 text-base leading-normal"
+        >
+          5. <strong>Y de nuevo compartir</strong> — los productos generados
+          (las simulaciones de deriva y el cálculo de riesgo por playa) se
+          publican como nuevos <em>assets</em> en el espacio de datos, a
+          disposición de otros participantes.
+        </p>,
+        <p
+          key="carabelas-ciclo-resumen"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          En síntesis:{' '}
+          <strong>
+            el dato se consume, se analiza, se computa, se expone y regresa al
+            espacio de datos convertido en conocimiento
+          </strong>
+          , completando así su ciclo de vida.
+        </p>,
+
+        { type: 'h2', content: 'Limitaciones del modelo' },
+        'Conviene enumerar los límites actuales del sistema:',
+        <p
+          key="carabelas-limite-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          •{' '}
+          <strong>
+            Todo depende de la presencia de carabelas en las proximidades de la
+            costa.
+          </strong>{' '}
+          El modelo simula únicamente cómo se desplazarían si están presentes.
+          Una mejora sustancial sería poder incorporar datos reales de presencia
+          de ejemplares a distintas distancias de la costa.
+        </p>,
+        <p
+          key="carabelas-limite-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          •{' '}
+          <strong>
+            La liberación de partículas es una hipótesis, no una observación.
+          </strong>{' '}
+          Todos los resultados están condicionados por esa distribución inicial
+          sobre las isóbatas.
+        </p>,
+        <p
+          key="carabelas-limite-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          •{' '}
+          <strong>
+            El índice es un recuento de proximidad, no una probabilidad.
+          </strong>{' '}
+          No está calibrado frente a tasas reales de varamiento, y los umbrales
+          de los niveles son provisionales.
+        </p>,
+        <p
+          key="carabelas-limite-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>No incorpora biología.</strong> Ni crecimiento, ni
+          mortalidad, ni comportamiento.
+        </p>,
+        'La predicción es la salida de un modelo probabilístico presentada como peor caso, suponiendo la presencia de carabelas portuguesas en las proximidades de la costa. No constituye una garantía: deben seguirse en todo momento las indicaciones del servicio de socorrismo.',
+
+        { type: 'h2', content: 'Próximos pasos' },
+        'El siguiente paso es mejorar la calibración de los niveles de riesgo y la incorporación de datos adicionales que permitan establecer la presencia de carabelas portuguesas en las proximidades de la costa.',
+        'A falta de datos de observaciones en el mar, una alternativa que se está valorando es tener en cuenta la presencia reciente a la hora de definir el nivel de riesgo, y no solo la deriva de forma aislada.',
+
+        { type: 'h2', content: 'Política de IA' },
+        'Este artículo fue elaborado por el autor con el apoyo de herramientas de inteligencia artificial para la redacción y optimización del texto.',
+      ],
+    },
   ],
   en: [
     {
@@ -3041,6 +3526,467 @@ export const blogPosts: Record<Locale, Post[]> = {
       ],
     },
 
+    {
+      key: 'carabelas-portuguesas-prediccion',
+      date: '2026-08-12',
+      title:
+        'Predicting where Portuguese man o’ war will come ashore: a OneHealth DataSpace demo',
+      excerpt:
+        'A demonstration application built on the OneHealth DataSpace, the result of a collaboration between IEO-CSIC and CESGA, which simulates the drift of Portuguese man o’ war every day and turns the result into a warning level for more than 570 Galician beaches.',
+      image: CarabelasPanel,
+      author_name: 'Javier Cacheiro',
+      author_image: JCacheiroImg,
+      description: [
+        <p
+          key="carabelas-intro"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Every summer, the arrival of Portuguese man o’ war on the Galician
+          coast poses a risk to bathers and, in some cases, ends up forcing the
+          temporary closure of beaches. Those decisions often have to be taken
+          without enough data, and the question both lifeguards and local
+          councils ask is a very specific one:{' '}
+          <strong>which beaches will be affected, and on which days?</strong>
+        </p>,
+        <p
+          key="carabelas-intro-2"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          This article describes how we have tackled that question through a
+          demonstration application built on the{' '}
+          <strong>OneHealth DataSpace (OHDS)</strong>, the result of a
+          collaboration between the{' '}
+          <strong>Spanish Institute of Oceanography (IEO-CSIC)</strong> and{' '}
+          <strong>CESGA</strong>. The result can be found at:
+        </p>,
+        {
+          type: 'link',
+          content: 'carabelas.dataspace.cesga.es',
+          href: 'https://carabelas.dataspace.cesga.es',
+          external: true,
+        },
+
+        { type: 'h2', content: 'An animal that cannot swim' },
+        <p
+          key="carabelas-sifonoforo"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          The Portuguese man o’ war (<em>Physalia physalis</em>) is not a
+          jellyfish but a siphonophore: a colony of organisms floating suspended
+          from a gas-filled bladder. That bladder acts as a sail tilted with
+          respect to the body, and therein lies the key to the problem: the man
+          o’ war <strong>has no means of propulsion of its own</strong>. It
+          travels only where the current and the wind take it.
+        </p>,
+        'For bathers it represents a considerable risk, since its tentacles, which can reach several metres, keep their stinging cells active even in stranded and dead specimens. From the point of view of prediction, however, this inability to swim is an advantage: the man o’ war behaves as a passive particle in a fluid, and is therefore easy to simulate with ocean particle transport software such as OpenDrift.',
+        'That is the central idea of the project.',
+
+        {
+          type: 'h2',
+          content: 'The starting point: three summers of sightings',
+        },
+        <p
+          key="carabelas-registro"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Before predicting, you need to know what has actually happened. To
+          that end we compiled{' '}
+          <strong>696 confirmed sightings on 187 Galician beaches</strong>{' '}
+          between June and October of 2023, 2024 and 2025, drawing on two
+          independent sources: a systematic review of press, local councils and
+          lifeguard services, and the citizen science records of the{' '}
+          <strong>MedusApp</strong> application.
+        </p>,
+        'The resulting pattern is very clear:',
+        <p
+          key="carabelas-patron-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>The season is concentrated in August.</strong> 77 % of the
+          sightings fall in that month. Before mid-July there are hardly any
+          arrivals, and by the end of September the season is practically over.
+        </p>,
+        <p
+          key="carabelas-patron-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>The north coast is the most affected.</strong> Barreiros (79
+          sightings), O Vicedo (64), Ribadeo and A Coruña (46 each), Ferrol
+          (44), Valdoviño (43) and Foz (42) top the list. The more sheltered
+          Rías Baixas barely record any episodes.
+        </p>,
+        <p
+          key="carabelas-patron-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          •{' '}
+          <strong>
+            Most reports describe just a few specimens — but not all.
+          </strong>{' '}
+          The norm is for one to five animals to be reported; a dozen episodes,
+          however, describe hundreds or even thousands arriving at once. It is
+          the latter that force a beach to close.
+        </p>,
+        <SightingsByFortnightChart
+          key="carabelas-grafico-quincenas"
+          locale="en"
+        />,
+        <SightingsMapChart key="carabelas-grafico-mapa" locale="en" />,
+        <p
+          key="carabelas-sesgo"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          One important caveat is worth stressing: this is a record of{' '}
+          <em>sightings</em>, not of animals. A busy beach generates more
+          reports than a remote one for reasons that have nothing to do with the
+          state of the sea. This observation bias conditions all the subsequent
+          work, and the validation of the model in particular.
+        </p>,
+
+        { type: 'h2', content: 'The input data' },
+        'This is where the OneHealth DataSpace comes into play. Simulating the drift of a particle requires knowing, hour by hour, the state of the ocean and the atmosphere, and that data belongs to different organisations.',
+        <p
+          key="carabelas-fuente-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>MeteoGalicia</strong> — wind from the WRF model at 12 km
+          resolution and output from the ROMS ocean model.
+        </p>,
+        <p
+          key="carabelas-fuente-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>Copernicus Marine Service</strong> — surface currents from
+          the Iberia–Biscay–Ireland (IBI) system, which feed the forecast into
+          the future.
+        </p>,
+        <p
+          key="carabelas-fuente-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>INTECMAR</strong> — surface currents measured by{' '}
+          <strong>high-frequency (HF) radar</strong>; that is, real observations
+          of the sea, not model output.
+        </p>,
+        <p
+          key="carabelas-fuente-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>EMODnet</strong> — bathymetry, from which the lines of
+          constant depth (isobaths) are derived.
+        </p>,
+
+        { type: 'h2', content: 'The simulation: OpenDrift' },
+        <p
+          key="carabelas-opendrift"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Every day a simulation runs automatically on the{' '}
+          <strong>CESGA FT3 supercomputer</strong>, releasing{' '}
+          <strong>4,549 virtual particles</strong> into the Atlantic through{' '}
+          <strong>OpenDrift</strong>, an open source Lagrangian model developed
+          by the Norwegian Meteorological Institute.
+        </p>,
+        'Three design decisions deserve an explanation:',
+        <p
+          key="carabelas-diseno-1"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          <strong>Where the particles are released.</strong> There is no census
+          of these organisms on the open sea: nobody knows where they actually
+          are each morning, and the model does not claim to. Instead, it
+          releases a “curtain” of particles along three isobaths —
+          <strong>50, 100 and 150 metres deep</strong>— and analyses what the
+          ocean does with them. Each particle keeps a reference to the isobath
+          it came from, which makes it possible to interpret the results
+          separately: a coastal release and a more oceanic one answer different
+          questions.
+        </p>,
+        {
+          type: 'image',
+          src: CarabelasParticulasPaso1,
+          alt: 'Viewer map at the first time step: the particles trace three continuous lines parallel to the coast, following the 50, 100 and 150 metre depth curves.',
+          caption:
+            'Step 1 of 96 of the Leeway simulation: before anything drifts, the particle layer draws the bathymetry. The three continuous threads are the EMODnet 50, 100 and 150 m curves, just seeded and still motionless.',
+          wide: true,
+        },
+        <p
+          key="carabelas-diseno-2"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          <strong>Two models in parallel.</strong> <em>OceanDrift</em> moves the
+          particles with the current alone. <em>Leeway</em> —a model originally
+          conceived for search and rescue operations involving drifting objects—
+          also incorporates the direct push of the wind on the emerged part, and
+          even allows for some objects to “sail” to the right and others to the
+          left, a behaviour remarkably similar to that of a man o’ war’s sail.
+          Running both is a low-cost sensitivity test: where they agree, the
+          current dominates; where Leeway gives higher values, the wind does.
+        </p>,
+        <p
+          key="carabelas-diseno-3"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          <strong>Two time windows.</strong> Each run simulates eight days. The{' '}
+          <strong>four days forward</strong> use Copernicus currents and
+          MeteoGalicia wind: this is the operational forecast. The{' '}
+          <strong>four days backward</strong> —the <em>reanalysis</em>— replace
+          the modelled current with the real measurements from INTECMAR’s HF
+          radar. They are the best available reconstruction of what the water
+          actually did, and the raw material for assessing the quality of the
+          system.
+        </p>,
+        <p
+          key="carabelas-posiciones"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          The result is roughly <strong>1.7 million positions per day</strong>,
+          with hourly output.
+        </p>,
+        {
+          type: 'image',
+          src: CarabelasParticulas78h,
+          alt: 'Viewer map 78 hours later: the particle field has scattered and is pressing against the north coast, with dark markers for stranded particles near Malpica and along the Cantabrian shore.',
+          caption:
+            'The same run 78 hours later (15 August, 08:00). The field has broken up, drifted north-east and is pressing against the Costa da Morte and the Cantabrian shore. The dark markers are particles that have already stranded: the events the risk index ends up counting.',
+          wide: true,
+        },
+
+        { type: 'h2', content: 'From trajectories to a warning level' },
+        <p
+          key="carabelas-indice"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          The final stage turns the trajectories into{' '}
+          <strong>one number per beach and per hour</strong>: an area of ±0.05°
+          (about 5.5 km) is defined around each beach and the particles present
+          within it are counted, both those still adrift and those already
+          stranded. That percentage is translated into five levels:{' '}
+          <strong>no risk, low, moderate, high and very high</strong>.
+        </p>,
+        <HourlyRiskChart key="carabelas-grafico-horario" locale="en" />,
+        <p
+          key="carabelas-peor-caso"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          <strong>The level shown is always the worst case</strong>, that is,
+          the maximum across the two models, the three isobaths and the 96 hours
+          of the forecast horizon. In a warning system, sensitivity takes
+          precedence over calibration: an average would have hidden precisely
+          the scenario the user needs to know about. For that reason, the
+          website states this explicitly on every screen.
+        </p>,
+        <RiskByModelChart key="carabelas-grafico-modelos" locale="en" />,
+        <WarningLevelDistributionChart
+          key="carabelas-grafico-niveles"
+          locale="en"
+        />,
+
+        { type: 'h2', content: 'Does the model work?' },
+        'A drift model that is not checked against observations has no operational value. The index has been validated against the stranding record described above, and the conclusion is that it works partially as a support tool, although it is not sufficient on its own, since the model has no information about the actual presence of specimens near the coast.',
+        <p
+          key="carabelas-auc"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Comparing each municipality with itself on different days, the index
+          reaches an <strong>AUC of between 0.59 and 0.68</strong> depending on
+          the season and the source, with confidence intervals that rule out
+          chance. The validation also yielded several interesting conclusions:
+        </p>,
+        <p
+          key="carabelas-validacion-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>Leeway and OceanDrift differ by less than 0.04</strong>,
+          which indicates that, in the current simulation, the direct push of
+          the wind barely changes the result.
+        </p>,
+        <p
+          key="carabelas-validacion-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • Predictive skill <strong>improves slightly with the horizon</strong>
+          , since on the first day much of the risk is still out at sea.
+        </p>,
+        <p
+          key="carabelas-validacion-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>There is an observation bias in the sightings</strong>: the
+          busiest beaches accumulate more reports, while others have none at
+          all.
+        </p>,
+        <p
+          key="carabelas-validacion-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • Simple persistence (has anything been reported in the area
+          recently?), moreover, turns out to be a good predictor on its own, and
+          combining it with the drift index beats either of them separately.
+        </p>,
+        'At present, the limit on accuracy is set by the noise in the observations, not by the error of the model.',
+
+        { type: 'h2', content: 'The web viewer' },
+        <p
+          key="carabelas-visor"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          At{' '}
+          <a
+            href="https://carabelas.dataspace.cesga.es"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            carabelas.dataspace.cesga.es
+          </a>{' '}
+          you can consult, in Galician, Spanish and English:
+        </p>,
+        <p
+          key="carabelas-visor-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • The <strong>map with more than 570 Galician beaches</strong>, each
+          with its warning level for the next four days.
+        </p>,
+        <p
+          key="carabelas-visor-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • The <strong>detail of each beach</strong>: hour-by-hour evolution, a
+          breakdown by model and by isobath, and recommendations in plain
+          language.
+        </p>,
+        <p
+          key="carabelas-visor-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • The <strong>drift animation</strong>, showing the movement of the
+          OceanDrift and Leeway particles across the forecast horizon.
+        </p>,
+        <p
+          key="carabelas-visor-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • The <strong>HF radar reanalysis</strong>, which reconstructs the
+          behaviour of the sea over the preceding days.
+        </p>,
+        <p
+          key="carabelas-visor-5"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • A <strong>historical archive</strong> of previous runs, browsable by
+          date.
+        </p>,
+
+        {
+          type: 'h2',
+          content: 'The whole data life cycle on a single platform',
+        },
+        'Beyond this particular case, this work is a demonstration of what a data space is for. The five OneHealth DataSpace services come into play here one after another:',
+        <p
+          key="carabelas-ciclo-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          1. <strong>Share</strong> — the EDC connectors make it possible to
+          discover and negotiate access to the datasets of MeteoGalicia,
+          INTECMAR and the IEO itself from a federated catalogue.
+        </p>,
+        <p
+          key="carabelas-ciclo-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          2. <strong>Analyse</strong> — the Big Data service, with Jupyter
+          notebooks and the <code>onehealth</code> library, was used to explore
+          the data and prepare the input for the simulation.
+        </p>,
+        <p
+          key="carabelas-ciclo-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          3. <strong>Compute</strong> — the HPC service, on FT3, runs the
+          OpenDrift simulations daily through a project configured in the
+          interactive portal.
+        </p>,
+        <p
+          key="carabelas-ciclo-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          4. <strong>Store and expose</strong> — the Cloud service hosts the
+          database with the results and the web viewer itself, published as a
+          service under IEO control.
+        </p>,
+        <p
+          key="carabelas-ciclo-5"
+          className="text-gray-700 text-base leading-normal"
+        >
+          5. <strong>And share again</strong> — the products generated (the
+          drift simulations and the per-beach risk calculation) are published as
+          new <em>assets</em> in the data space, available to other
+          participants.
+        </p>,
+        <p
+          key="carabelas-ciclo-resumen"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          In short:{' '}
+          <strong>
+            the data is consumed, analysed, computed, exposed and returns to the
+            data space turned into knowledge
+          </strong>
+          , thus completing its life cycle.
+        </p>,
+
+        { type: 'h2', content: 'Limitations of the model' },
+        'It is worth listing the current limits of the system:',
+        <p
+          key="carabelas-limite-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          •{' '}
+          <strong>
+            Everything depends on man o’ war being present near the coast.
+          </strong>{' '}
+          The model only simulates how they would move if they are there. A
+          substantial improvement would be the ability to incorporate real
+          presence data at different distances from the coast.
+        </p>,
+        <p
+          key="carabelas-limite-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          •{' '}
+          <strong>
+            The release of particles is a hypothesis, not an observation.
+          </strong>{' '}
+          All the results are conditioned by that initial distribution along the
+          isobaths.
+        </p>,
+        <p
+          key="carabelas-limite-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>The index is a proximity count, not a probability.</strong>{' '}
+          It is not calibrated against real stranding rates, and the level
+          thresholds are provisional.
+        </p>,
+        <p
+          key="carabelas-limite-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>It does not incorporate biology.</strong> No growth, no
+          mortality, no behaviour.
+        </p>,
+        'The forecast is the output of a probabilistic model presented as a worst case, assuming the presence of Portuguese man o’ war near the coast. It is not a guarantee: the instructions of the lifeguard service must be followed at all times.',
+
+        { type: 'h2', content: 'Next steps' },
+        'The next step is to improve the calibration of the risk levels and to incorporate additional data that makes it possible to establish the presence of Portuguese man o’ war near the coast.',
+        'In the absence of observation data at sea, one alternative under consideration is to take recent presence into account when defining the risk level, and not just the drift in isolation.',
+
+        { type: 'h2', content: 'AI policy' },
+        'This article was written by the author with the support of artificial intelligence tools for drafting and optimising the text.',
+      ],
+    },
   ],
 
 
@@ -4554,5 +5500,473 @@ export const blogPosts: Record<Locale, Post[]> = {
       ],
     },
 
+    {
+      key: 'carabelas-portuguesas-prediccion',
+      date: '2026-08-12',
+      title:
+        'Predicir onde chegarán as carabelas portuguesas: unha demo do OneHealth DataSpace',
+      excerpt:
+        'Unha aplicación de demostración construída sobre o OneHealth DataSpace, froito da colaboración entre o IEO-CSIC e o CESGA, que simula cada día a deriva das carabelas portuguesas e traduce o resultado nun nivel de aviso para máis de 570 praias galegas.',
+      image: CarabelasPanel,
+      author_name: 'Javier Cacheiro',
+      author_image: JCacheiroImg,
+      description: [
+        <p
+          key="carabelas-intro"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Cada verán, a chegada de carabelas portuguesas á costa galega supón un
+          risco para os bañistas e, nalgúns casos, acaba provocando o peche
+          temporal de praias. Estas decisións a miúdo deben tomarse sen datos
+          abondos, e a pregunta que se formulan tanto os socorristas como os
+          concellos é moi concreta:{' '}
+          <strong>que praias se verán afectadas, e que días?</strong>
+        </p>,
+        <p
+          key="carabelas-intro-2"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Este artigo describe como abordamos esa pregunta mediante unha
+          aplicación de demostración construída sobre o{' '}
+          <strong>OneHealth DataSpace (OHDS)</strong>, froito da colaboración
+          entre o <strong>Instituto Español de Oceanografía (IEO-CSIC)</strong>{' '}
+          e o <strong>CESGA</strong>. O resultado pode consultarse en:
+        </p>,
+        {
+          type: 'link',
+          content: 'carabelas.dataspace.cesga.es',
+          href: 'https://carabelas.dataspace.cesga.es',
+          external: true,
+        },
+
+        { type: 'h2', content: 'Un animal que non sabe nadar' },
+        <p
+          key="carabelas-sifonoforo"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          A carabela portuguesa (<em>Physalia physalis</em>) non é unha medusa,
+          senón un sifonóforo: unha colonia de organismos que flota suspendida
+          dunha vexiga chea de gas. Esa vexiga actúa como unha vela inclinada
+          respecto do corpo, e nela reside a clave do problema: a carabela{' '}
+          <strong>carece de medios propios de propulsión</strong>. Desprázase
+          unicamente onde a levan a corrente e o vento.
+        </p>,
+        'Para os bañistas constitúe un risco considerable, xa que os seus tentáculos, que poden acadar varios metros, conservan as células urticantes activas mesmo en exemplares varados e mortos. Non obstante, desde o punto de vista da predición, esta incapacidade de nadar resulta vantaxosa, xa que a carabela compórtase como unha partícula pasiva nun fluído e, polo tanto, é doadamente simulable cun software de transporte de partículas no océano como OpenDrift.',
+        'Esa é a idea central do proxecto.',
+
+        {
+          type: 'h2',
+          content: 'O punto de partida: tres veráns de avistamentos',
+        },
+        <p
+          key="carabelas-registro"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Antes de predicir é necesario coñecer o que ocorreu en realidade. Con
+          este fin recompiláronse{' '}
+          <strong>696 avistamentos confirmados en 187 praias galegas</strong>{' '}
+          entre xuño e outubro de 2023, 2024 e 2025, a partir de dúas fontes
+          independentes: unha revisión sistemática de prensa, concellos e
+          servizos de socorrismo, e os rexistros de ciencia cidadá da aplicación{' '}
+          <strong>MedusApp</strong>.
+        </p>,
+        'O patrón resultante é moi claro:',
+        <p
+          key="carabelas-patron-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>A tempada concéntrase en agosto.</strong> O 77 % dos
+          avistamentos corresponden a ese mes. Antes de mediados de xullo apenas
+          se rexistran chegadas, e a finais de setembro a tempada está
+          practicamente rematada.
+        </p>,
+        <p
+          key="carabelas-patron-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>A costa norte é a máis afectada.</strong> Barreiros (79
+          avistamentos), O Vicedo (64), Ribadeo e A Coruña (46 cada un), Ferrol
+          (44), Valdoviño (43) e Foz (42) encabezan a lista. As Rías Baixas,
+          máis resgardadas, apenas rexistran episodios.
+        </p>,
+        <p
+          key="carabelas-patron-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          •{' '}
+          <strong>
+            A maioría dos avisos describen poucos exemplares, pero non todos.
+          </strong>{' '}
+          O habitual é que se notifiquen entre un e cinco animais; porén, unha
+          ducia de episodios describen centos ou mesmo miles chegando
+          simultaneamente. Son estes últimos os que provocan o peche dunha
+          praia.
+        </p>,
+        <SightingsByFortnightChart
+          key="carabelas-grafico-quincenas"
+          locale="gl"
+        />,
+        <SightingsMapChart key="carabelas-grafico-mapa" locale="gl" />,
+        <p
+          key="carabelas-sesgo"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Convén subliñar unha precaución importante: trátase dun rexistro de{' '}
+          <em>avistamentos</em>, non de animais. Unha praia concorrida xera máis
+          avisos ca unha remota por razóns alleas ao estado do mar. Este nesgo
+          de observación condiciona todo o traballo posterior e, en particular,
+          a validación do modelo.
+        </p>,
+
+        { type: 'h2', content: 'Os datos de partida' },
+        'Aquí entra en xogo o OneHealth DataSpace. Simular a deriva dunha partícula esixe coñecer, hora a hora, o estado do océano e da atmosfera, e eses datos pertencen a organismos distintos.',
+        <p
+          key="carabelas-fuente-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>MeteoGalicia</strong> — vento do modelo WRF a 12 km de
+          resolución e saídas do modelo oceánico ROMS.
+        </p>,
+        <p
+          key="carabelas-fuente-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>Copernicus Marine Service</strong> — correntes superficiais
+          do sistema Iberia–Golfo de Biscaia–Irlanda (IBI), que alimentan a
+          predición cara ao futuro.
+        </p>,
+        <p
+          key="carabelas-fuente-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>INTECMAR</strong> — correntes superficiais medidas por{' '}
+          <strong>radar de alta frecuencia (HF)</strong>; é dicir, observacións
+          reais do mar, non saídas dun modelo.
+        </p>,
+        <p
+          key="carabelas-fuente-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>EMODnet</strong> — batimetría, da que se obteñen as liñas de
+          profundidade constante (isóbatas).
+        </p>,
+
+        { type: 'h2', content: 'A simulación: OpenDrift' },
+        <p
+          key="carabelas-opendrift"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Cada día execútase de forma automática, no supercomputador{' '}
+          <strong>FT3 do CESGA</strong>, unha simulación que libera{' '}
+          <strong>4.549 partículas virtuais</strong> no Atlántico mediante{' '}
+          <strong>OpenDrift</strong>, un modelo lagranxiano de código aberto
+          desenvolvido polo Instituto Meteorolóxico Noruegués.
+        </p>,
+        'Tres decisións de deseño merecen explicación:',
+        <p
+          key="carabelas-diseno-1"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          <strong>Onde se liberan as partículas.</strong> Non existe un censo
+          destes organismos en mar aberto: ninguén sabe onde se atopan realmente
+          cada mañá, e o modelo non pretende sabelo. No seu lugar, libera unha
+          «cortina» de partículas ao longo de tres isóbatas —
+          <strong>50, 100 e 150 metros de profundidade</strong>— e analiza que
+          fai o océano con elas. Cada partícula conserva a referencia da isóbata
+          da que procede, o que permite interpretar os resultados por separado:
+          unha liberación costeira e outra máis oceánica responden a preguntas
+          distintas.
+        </p>,
+        {
+          type: 'image',
+          src: CarabelasParticulasPaso1,
+          alt: 'Mapa do visor no primeiro paso temporal: as partículas trazan tres liñas continuas paralelas á costa seguindo as curvas de 50, 100 e 150 metros de profundidade.',
+          caption:
+            'Paso 1 de 96 da simulación de Leeway: antes de que nada derive, a capa de partículas debuxa a batimetría. As tres febras continuas son as curvas de 50, 100 e 150 m de EMODnet, recén sementadas e aínda quietas.',
+          wide: true,
+        },
+        <p
+          key="carabelas-diseno-2"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          <strong>Dous modelos en paralelo.</strong> <em>OceanDrift</em>{' '}
+          despraza as partículas unicamente coa corrente. <em>Leeway</em> —un
+          modelo concibido orixinalmente para operacións de procura e rescate de
+          obxectos á deriva— incorpora ademais o empuxe directo do vento sobre a
+          parte emerxida, e mesmo contempla que uns obxectos «naveguen» cara á
+          dereita e outros cara á esquerda, un comportamento notablemente
+          similar ao da vela dunha carabela. Executar ambos constitúe unha proba
+          de sensibilidade de baixo custo: onde coinciden, domina a corrente;
+          onde Leeway ofrece valores superiores, domina o vento.
+        </p>,
+        <p
+          key="carabelas-diseno-3"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          <strong>Dúas ventás temporais.</strong> Cada execución simula oito
+          días. Os <strong>catro días cara adiante</strong> empregan correntes
+          de Copernicus e vento de MeteoGalicia: é a predición operativa. Os{' '}
+          <strong>catro días cara atrás</strong> —a <em>reanálise</em>—
+          substitúen a corrente modelada polas medidas reais do radar HF do
+          INTECMAR. Constitúen a mellor reconstrución dispoñible do que
+          efectivamente fixo a auga, e a materia prima para avaliar a calidade
+          do sistema.
+        </p>,
+        <p
+          key="carabelas-posiciones"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          O resultado son aproximadamente{' '}
+          <strong>1,7 millóns de posicións diarias</strong>, con saída horaria.
+        </p>,
+        {
+          type: 'image',
+          src: CarabelasParticulas78h,
+          alt: 'Mapa do visor 78 horas despois: o campo de partículas dispersouse e apértase contra a costa norte, con marcadores escuros de partículas varadas preto de Malpica e ao longo do litoral cantábrico.',
+          caption:
+            'A mesma execución 78 horas despois (15 de agosto, 08:00). O campo rompeu, derivou ao nordés e apértase contra a Costa da Morte e o litoral cantábrico. Os marcadores escuros son partículas xa varadas: os sucesos que o índice de risco acaba contando.',
+          wide: true,
+        },
+
+        { type: 'h2', content: 'Das traxectorias a un nivel de aviso' },
+        <p
+          key="carabelas-indice"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          A última etapa converte as traxectorias nun{' '}
+          <strong>número por praia e por hora</strong>: defínese unha área de
+          ±0,05° (uns 5,5 km) arredor de cada praia e contabilízanse as
+          partículas presentes nela, tanto as que permanecen á deriva como as
+          que xa vararon. Esa porcentaxe tradúcese en cinco niveis:{' '}
+          <strong>sen risco, baixo, moderado, alto e moi alto</strong>.
+        </p>,
+        <HourlyRiskChart key="carabelas-grafico-horario" locale="gl" />,
+        <p
+          key="carabelas-peor-caso"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          <strong>O nivel amosado é sempre o peor caso</strong>, é dicir, o
+          máximo entre os dous modelos, as tres isóbatas e as 96 horas do
+          horizonte de predición. Nun sistema de aviso, a sensibilidade prima
+          sobre a calibración: unha media tería agochado precisamente o
+          escenario que a persoa usuaria necesita coñecer. Por esa razón, a web
+          indícao de forma explícita en cada pantalla.
+        </p>,
+        <RiskByModelChart key="carabelas-grafico-modelos" locale="gl" />,
+        <WarningLevelDistributionChart
+          key="carabelas-grafico-niveles"
+          locale="gl"
+        />,
+
+        { type: 'h2', content: 'Funciona o modelo?' },
+        'Un modelo de deriva que non se contrasta con observacións carece de valor operativo. O índice validouse fronte ao rexistro de varamentos descrito anteriormente, e a conclusión é que funciona parcialmente como ferramenta de apoio, aínda que non é suficiente por si só, xa que o modelo non dispón de información sobre a presenza real de exemplares nas proximidades da costa.',
+        <p
+          key="carabelas-auc"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          Comparando cada concello consigo mesmo en días distintos, o índice
+          acada un <strong>AUC de entre 0,59 e 0,68</strong> segundo a tempada e
+          a fonte, con intervalos de confianza que exclúen o azar. A validación
+          deu, ademais, varias conclusións de interese:
+        </p>,
+        <p
+          key="carabelas-validacion-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>Leeway e OceanDrift difiren en menos de 0,04</strong>, o que
+          indica que, na simulación actual, o empuxe directo do vento apenas
+          modifica o resultado.
+        </p>,
+        <p
+          key="carabelas-validacion-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • A capacidade preditiva{' '}
+          <strong>mellora lixeiramente co horizonte</strong>, xa que o primeiro
+          día boa parte do risco atópase aínda mar adentro.
+        </p>,
+        <p
+          key="carabelas-validacion-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>Existe un nesgo de observación nos avistamentos</strong>: as
+          praias máis frecuentadas acumulan máis avisos, mentres que outras
+          carecen deles por completo.
+        </p>,
+        <p
+          key="carabelas-validacion-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • Por outra banda, a simple persistencia (notificouse algo na zona
+          recentemente?) resulta un bo preditor por si soa, e a súa combinación
+          co índice de deriva supera a ambos por separado.
+        </p>,
+        'Na actualidade, o límite da precisión márcao o ruído das observacións, non o erro do modelo.',
+
+        { type: 'h2', content: 'O visor web' },
+        <p
+          key="carabelas-visor"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          En{' '}
+          <a
+            href="https://carabelas.dataspace.cesga.es"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            carabelas.dataspace.cesga.es
+          </a>{' '}
+          pode consultarse, en galego, castelán e inglés:
+        </p>,
+        <p
+          key="carabelas-visor-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • O <strong>mapa con máis de 570 praias galegas</strong>, cada unha co
+          seu nivel de aviso para os vindeiros catro días.
+        </p>,
+        <p
+          key="carabelas-visor-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • O <strong>detalle de cada praia</strong>: evolución hora a hora,
+          desagregación por modelo e por isóbata, e recomendacións en linguaxe
+          clara.
+        </p>,
+        <p
+          key="carabelas-visor-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • A <strong>animación da deriva</strong>, que amosa o movemento das
+          partículas de OceanDrift e de Leeway ao longo do horizonte de
+          predición.
+        </p>,
+        <p
+          key="carabelas-visor-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • A <strong>reanálise con radar HF</strong>, que reconstrúe o
+          comportamento do mar nos días previos.
+        </p>,
+        <p
+          key="carabelas-visor-5"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • Un <strong>arquivo histórico</strong> de execucións anteriores,
+          consultable por data.
+        </p>,
+
+        {
+          type: 'h2',
+          content: 'Todo o ciclo de vida do dato, nunha soa plataforma',
+        },
+        'Máis alá do caso concreto, este traballo constitúe unha demostración do propósito dun espazo de datos. Os cinco servizos do OneHealth DataSpace interveñen aquí de forma encadeada:',
+        <p
+          key="carabelas-ciclo-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          1. <strong>Compartir</strong> — os conectores EDC permiten descubrir e
+          negociar o acceso aos conxuntos de datos de MeteoGalicia, INTECMAR e
+          do propio IEO desde un catálogo federado.
+        </p>,
+        <p
+          key="carabelas-ciclo-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          2. <strong>Analizar</strong> — o servizo Big Data, con notebooks
+          Jupyter e a librería <code>onehealth</code>, empregouse para explorar
+          os datos e preparar a entrada da simulación.
+        </p>,
+        <p
+          key="carabelas-ciclo-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          3. <strong>Computar</strong> — o servizo HPC, sobre o FT3, executa
+          diariamente as simulacións de OpenDrift mediante un proxecto
+          configurado no portal interactivo.
+        </p>,
+        <p
+          key="carabelas-ciclo-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          4. <strong>Almacenar e expoñer</strong> — o servizo Cloud aloxa a base
+          de datos cos resultados e o propio visor web, publicado como un
+          servizo baixo control do IEO.
+        </p>,
+        <p
+          key="carabelas-ciclo-5"
+          className="text-gray-700 text-base leading-normal"
+        >
+          5. <strong>E de novo compartir</strong> — os produtos xerados (as
+          simulacións de deriva e o cálculo de risco por praia) publícanse como
+          novos <em>assets</em> no espazo de datos, a disposición doutros
+          participantes.
+        </p>,
+        <p
+          key="carabelas-ciclo-resumen"
+          className="text-gray-700 text-base leading-relaxed"
+        >
+          En síntese:{' '}
+          <strong>
+            o dato consómese, analízase, compútase, expóñese e regresa ao espazo
+            de datos convertido en coñecemento
+          </strong>
+          , completando así o seu ciclo de vida.
+        </p>,
+
+        { type: 'h2', content: 'Limitacións do modelo' },
+        'Convén enumerar os límites actuais do sistema:',
+        <p
+          key="carabelas-limite-1"
+          className="text-gray-700 text-base leading-normal"
+        >
+          •{' '}
+          <strong>
+            Todo depende da presenza de carabelas nas proximidades da costa.
+          </strong>{' '}
+          O modelo simula unicamente como se desprazarían se están presentes.
+          Unha mellora substancial sería poder incorporar datos reais de
+          presenza de exemplares a distintas distancias da costa.
+        </p>,
+        <p
+          key="carabelas-limite-2"
+          className="text-gray-700 text-base leading-normal"
+        >
+          •{' '}
+          <strong>
+            A liberación de partículas é unha hipótese, non unha observación.
+          </strong>{' '}
+          Todos os resultados están condicionados por esa distribución inicial
+          sobre as isóbatas.
+        </p>,
+        <p
+          key="carabelas-limite-3"
+          className="text-gray-700 text-base leading-normal"
+        >
+          •{' '}
+          <strong>
+            O índice é un reconto de proximidade, non unha probabilidade.
+          </strong>{' '}
+          Non está calibrado fronte a taxas reais de varamento, e os limiares
+          dos niveis son provisionais.
+        </p>,
+        <p
+          key="carabelas-limite-4"
+          className="text-gray-700 text-base leading-normal"
+        >
+          • <strong>Non incorpora bioloxía.</strong> Nin crecemento, nin
+          mortalidade, nin comportamento.
+        </p>,
+        'A predición é a saída dun modelo probabilístico presentada como peor caso, supoñendo a presenza de carabelas portuguesas nas proximidades da costa. Non constitúe unha garantía: deben seguirse en todo momento as indicacións do servizo de socorrismo.',
+
+        { type: 'h2', content: 'Próximos pasos' },
+        'O seguinte paso é mellorar a calibración dos niveis de risco e a incorporación de datos adicionais que permitan establecer a presenza de carabelas portuguesas nas proximidades da costa.',
+        'A falta de datos de observacións no mar, unha alternativa que se está a valorar é ter en conta a presenza recente á hora de definir o nivel de risco, e non só a deriva de forma illada.',
+
+        { type: 'h2', content: 'Política de IA' },
+        'Este artigo foi elaborado polo autor co apoio de ferramentas de intelixencia artificial para a redacción e optimización do texto.',
+      ],
+    },
   ],
 };

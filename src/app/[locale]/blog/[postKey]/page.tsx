@@ -132,15 +132,15 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                       {item.content}
                     </p>
                   );
-                  case 'italic':
-                    return (
-                      <p
-                        key={idx}
-                        className="text-gray-700 leading-relaxed text-base italic"
-                      >
-                        {item.content}
-                      </p>
-                    );
+                case 'italic':
+                  return (
+                    <p
+                      key={idx}
+                      className="text-gray-700 leading-relaxed text-base italic"
+                    >
+                      {item.content}
+                    </p>
+                  );
                 case 'link':
                   return (
                     <p
@@ -159,7 +159,13 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   );
                 case 'image':
                   return (
-                    <figure key={idx} className="my-6 max-w-md mx-auto">
+                    <figure
+                      key={idx}
+                      className={[
+                        'my-6 mx-auto',
+                        item.wide ? 'max-w-3xl' : 'max-w-md',
+                      ].join(' ')}
+                    >
                       <Image
                         src={item.src}
                         alt={item.alt}
