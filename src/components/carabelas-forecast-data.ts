@@ -4,7 +4,7 @@
 // Fuente: IEO-CSIC / CESGA — OneHealth DataSpace.
 
 /** Playa a la que corresponde la serie horaria de riesgo. */
-export const hourlyRiskBeach = 'Maior o de Malpica';
+export const hourlyRiskBeach = 'Area Maior de Malpica';
 
 /** Instante (UTC) de la primera hora de la serie. */
 export const hourlyRiskStart = '2026-08-12T03:00:00Z';
