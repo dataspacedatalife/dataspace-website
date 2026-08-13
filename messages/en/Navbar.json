@@ -26,5 +26,10 @@
   "idioma": "Language",
   "espanol": "Español",
   "english": "English",
-  "galego": "Galego"
+  "galego": "Galego",
+  "menu_principal": "Main menu",
+  "menu_movil": "Mobile navigation menu",
+  "abrir_menu": "Open menu",
+  "cerrar_menu": "Close menu",
+  "cambiar_idioma": "Change language"
 }
