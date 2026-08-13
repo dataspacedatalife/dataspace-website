@@ -285,6 +285,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
   const aboutLinks = [
     { href: '/about', label: t('saber_mas') },
     { href: '/what', label: t('que_es_un_espacio') },
+    { href: '/demos', label: t('demos') },
     {
       href: 'https://dspacer-cesga.es/portal',
       label: t('dspacer'),
