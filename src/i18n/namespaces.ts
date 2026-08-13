@@ -8,6 +8,7 @@ export const namespaces = [
   'home',
   'Navbar',
   'about',
+  'demos',
   'training',
   'technologies',
   'how',

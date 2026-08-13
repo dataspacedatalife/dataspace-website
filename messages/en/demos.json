@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "title": "OneHealth DataSpace Demos",
+    "description": "Open operational use cases of OneHealth DataSpace"
+  },
+  "header": {
+    "title": "OneHealth DataSpace Demos",
+    "lead": "Open operational use cases: explore them and discover how we turn data into actionable knowledge."
+  },
+  "demoButton": "Open demo",
+  "useCases": {
+    "item1": {
+      "badge": "BETA",
+      "title": "Air quality • Santiago de Compostela",
+      "image": "/demos/demo1.png",
+      "text": "Hourly NO2 forecast, combining traffic and weather data with the GRAL dispersion model to anticipate how pollution spreads across the city.",
+      "demoUrl": "https://airecompostela.dataspace.cesga.es"
+    },
+    "item2": {
+      "badge": "BETA",
+      "title": "Portuguese man o' war • Galician beaches",
+      "image": "/demos/demo2.png",
+      "text": "Four-day forecast of Portuguese man o' war presence along the Galician coast, connecting the marine environment with the safety of those swimming at our beaches.",
+      "demoUrl": "https://carabelas.dataspace.cesga.es/"
+    },
+    "item3": {
+      "badge": "BETA",
+      "title": "Clinical assistant",
+      "image": "/demos/demo3.png",
+      "text": "AI-based assistant, served on CESGA's infrastructure, that answers clinical queries in Spanish as a support tool for assessment.",
+      "demoUrl": "https://demo.dataspace.cesga.es/"
+    }
+  }
+}

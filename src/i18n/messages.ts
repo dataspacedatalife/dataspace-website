@@ -4,6 +4,7 @@
 import type about from '../../messages/en/about.json';
 import type blog from '../../messages/en/blog.json';
 import type catalog from '../../messages/en/catalog.json';
+import type demos from '../../messages/en/demos.json';
 import type events from '../../messages/en/events.json';
 import type Footer from '../../messages/en/Footer.json';
 import type faq from '../../messages/en/faq.json';
@@ -20,6 +21,7 @@ export type Messages = {
   home: typeof home;
   Navbar: typeof Navbar;
   about: typeof about;
+  demos: typeof demos;
   training: typeof training;
   technologies: typeof technologies;
   how: typeof how;
