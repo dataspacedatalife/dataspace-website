@@ -23,6 +23,7 @@ export function Footer() {
     <footer className="relative">
 
       <div
+        aria-hidden="true"
         className="w-full h-20"
         style={{
           backgroundImage: "url('/demostrador/cuadricula.svg')",
@@ -43,13 +44,16 @@ export function Footer() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
 
-          <p className={`${barlowCondensed.className} mt-6 text-4xl sm:text-6xl md:text-7xl font-medium tracking-tight`}>
+          <h2 className={`${barlowCondensed.className} mt-6 text-4xl sm:text-6xl md:text-7xl font-medium tracking-tight`}>
             {t('contact_subtitle')}
-          </p>
+          </h2>
 
           <p className="mx-auto mt-6 max-w-xs text-base sm:text-lg leading-relaxed">
             {t('contact_text')}{' '}
-            <Link href={`mailto:${t('email')}`} className="underline text-white">
+            <Link
+              href={`mailto:${t('email')}`}
+              className="underline text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded-sm"
+            >
               {t('email')}
             </Link>
           </p>
@@ -62,7 +66,8 @@ export function Footer() {
               href="https://www.linkedin.com/in/onehealth-dataspace"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center w-10 h-10 rounded-full border border-white text-white transition-all duration-300 hover:bg-white hover:text-[#0A66C2]"
+              aria-label={t('social_linkedin')}
+              className="group flex items-center justify-center w-10 h-10 rounded-full border border-white text-white transition-all duration-300 hover:bg-white hover:text-[#0A66C2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               <svg
                 width="20"
@@ -70,6 +75,8 @@ export function Footer() {
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path d="M19.7065 3H4.34844C3.62264 3 3.04199 3.58065 3.04199 4.30645V19.6935C3.04199 20.3903 3.62264 21 4.34844 21H19.6485C20.3743 21 20.9549 20.4194 20.9549 19.6935V4.27742C21.013 3.58065 20.4323 3 19.7065 3ZM8.35491 18.3H5.71297V9.73548H8.35491V18.3ZM7.01942 8.54516C6.14846 8.54516 5.4807 7.84839 5.4807 7.00645C5.4807 6.16452 6.17749 5.46774 7.01942 5.46774C7.86136 5.46774 8.55813 6.16452 8.55813 7.00645C8.55813 7.84839 7.91942 8.54516 7.01942 8.54516ZM18.371 18.3H15.7291V14.1484C15.7291 13.1613 15.7001 11.8548 14.3356 11.8548C12.942 11.8548 12.7388 12.9581 12.7388 14.0613V18.3H10.0968V9.73548H12.6807V10.9258H12.7097C13.0872 10.229 13.9291 9.53226 15.2356 9.53226C17.9356 9.53226 18.4291 11.2742 18.4291 13.6548V18.3H18.371Z" />
               </svg>
@@ -78,9 +85,10 @@ export function Footer() {
               href="https://youtube.com/playlist?list=PLvAJrckik_UPT2zDxHGaO5jOd27q1hBIz&si=P_YlpEjT4yKaA092"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center w-10 h-10 rounded-full border border-white text-white transition-all duration-300 hover:bg-white hover:text-[#FF0000]"
+              aria-label={t('social_youtube')}
+              className="group flex items-center justify-center w-10 h-10 rounded-full border border-white text-white transition-all duration-300 hover:bg-white hover:text-[#FF0000] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
                 <path d="M23.498 6.186a2.995 2.995 0 0 0-2.115-2.117C19.465 3.5 12 3.5 12 3.5s-7.465 0-9.383.569A2.995 2.995 0 0 0 .502 6.186A31.15 31.15 0 0 0 0 12a31.15 31.15 0 0 0 .502 5.814A2.995 2.995 0 0 0 2.617 19.7C4.53 20.5 12 20.5 12 20.5s7.47 0 9.38-.57A2.995 2.995 0 0 0 23.5 17.8A31.15 31.15 0 0 0 24 12A31.15 31.15 0 0 0 23.498 6.186ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z" />
               </svg>
             </Link>
@@ -92,10 +100,10 @@ export function Footer() {
       <div className="w-full bg-white py-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-6 md:gap-8 items-center px-4 md:px-8">
 
-          <Image src={LogoEU} alt="EU" className="object-contain h-10 sm:h-12 md:h-16 w-auto justify-self-center" />
-          <Image src={LogoMinisterio} alt="Ministerio" className="object-contain h-10 sm:h-12 md:h-16 w-auto justify-self-center" />
-          <Image src={LogoPRTR} alt="PRTR" className="object-contain h-10 sm:h-12 md:h-16 w-auto justify-self-center" />
-          <Image src={LogoCESGA} alt="CESGA" className="object-contain h-10 sm:h-12 md:h-16 w-auto justify-self-center" />
+          <Image src={LogoEU} alt="Financiado por la Unión Europea - NextGenerationEU" className="object-contain h-10 sm:h-12 md:h-16 w-auto justify-self-center" />
+          <Image src={LogoMinisterio} alt="Ministerio para la Transformación Digital y de la Función Pública" className="object-contain h-10 sm:h-12 md:h-16 w-auto justify-self-center" />
+          <Image src={LogoPRTR} alt="Plan de Recuperación, Transformación y Resiliencia" className="object-contain h-10 sm:h-12 md:h-16 w-auto justify-self-center" />
+          <Image src={LogoCESGA} alt="Centro de Supercomputación de Galicia (CESGA)" className="object-contain h-10 sm:h-12 md:h-16 w-auto justify-self-center" />
 
           <div className="col-span-2 sm:col-span-1 flex justify-center">
             <Image src={LogoXacobeo} alt="Xacobeo" className="object-contain h-10 sm:h-12 md:h-16 w-auto" />
@@ -112,7 +120,7 @@ export function Footer() {
             {t('funding_note')}
           </p>
 
-          <Image src={OneHealthLogo} alt="One Health" className="h-9 w-auto" />
+          <Image src={OneHealthLogo} alt="OneHealth DataSpace" className="h-9 w-auto" />
 
           <div className="text-sm text-white mt-2">
             &copy; {new Date().getFullYear()} {t('copyright')}
