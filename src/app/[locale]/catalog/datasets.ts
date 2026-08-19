@@ -229,6 +229,12 @@ export const useCasesData = [
     categories: ['human'] as HealthCategory[],
   },
   {
+    id: 'apexensemble_peptide_conformational',
+    imagen: LogoDeLaFuenteLab,
+    link: 'https://www.med.upenn.edu/delafuentelab/',
+    categories: ['human'] as HealthCategory[],
+  },
+  {
     id: 'pounds',
     imagen: LogoCESGA,
     link: 'https://www.cesga.es/',
