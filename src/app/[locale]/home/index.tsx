@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { Footer } from '@/components/footer';
 import { Hero } from './hero';
 import { LifecycleBridge } from './bridge';
@@ -9,10 +10,14 @@ import { ParticipantsOutro } from './participants-outro';
 import { useServicesData } from './shared';
 
 function Services() {
+  const tServices = useTranslations('home.services');
   const services = useServicesData();
 
   return (
     <>
+      {/* encabezado accesible: las secciones de servicios solo muestran h3,
+          este h2 mantiene la jerarquía de encabezados sin duplicar el título visual */}
+      <h2 className="sr-only">{tServices('title')}</h2>
       <ServicesScrolly services={services} />
       <ServicesSequence services={services} />
     </>

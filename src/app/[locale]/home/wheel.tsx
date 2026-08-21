@@ -277,7 +277,10 @@ export function DataSpaceWheel() {
         <div className="absolute inset-[10%] rounded-full bg-[radial-gradient(closest-side,rgba(0,183,212,0.16),transparent_70%)] pointer-events-none" />
 
         {/* centro: OneHealth DataSpace / info del servicio activo */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-[52%] rounded-full border border-white/70 ring-1 ring-brand-500/15 bg-white/65 backdrop-blur-xl shadow-[0_18px_50px_rgba(0,90,120,0.16),inset_0_1px_0_rgba(255,255,255,0.9)] overflow-hidden">
+        <div
+          aria-live="polite"
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-[52%] rounded-full border border-white/70 ring-1 ring-brand-500/15 bg-white/65 backdrop-blur-xl shadow-[0_18px_50px_rgba(0,90,120,0.16),inset_0_1px_0_rgba(255,255,255,0.9)] overflow-hidden"
+        >
           <AnimatePresence>
             {active === null ? (
               <motion.div

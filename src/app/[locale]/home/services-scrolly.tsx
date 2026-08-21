@@ -17,36 +17,32 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/container';
 import { SERVICES_GRADIENT, ServiceImage, type ServiceItem } from './shared';
 
-/* segmento de progreso que se rellena de forma continua con el scroll */
+/* segmento de progreso que se rellena de forma continua con el scroll:
+   puramente visual, redundante con el stepper lateral numerado que ya
+   ofrece la misma navegación con etiquetas accesibles */
 function ProgressSegment({
   progress,
   index,
   count,
-  label,
-  onClick,
 }: {
   progress: MotionValue<number>;
   index: number;
   count: number;
-  label: string;
-  onClick: () => void;
 }) {
   const scaleX = useTransform(progress, (v) =>
     Math.min(1, Math.max(0, v * count - index)),
   );
 
   return (
-    <button
-      type="button"
-      aria-label={label}
-      onClick={onClick}
-      className="h-[3px] flex-1 rounded-full bg-white/15 overflow-hidden cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+    <div
+      aria-hidden="true"
+      className="h-[3px] flex-1 rounded-full bg-white/15 overflow-hidden"
     >
       <motion.div
         className="h-full bg-white rounded-full origin-left"
         style={{ scaleX }}
       />
-    </button>
+    </div>
   );
 }
 
@@ -131,14 +127,12 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
 
         {/* progreso segmentado superior */}
         <div className="absolute top-0 left-0 right-0 flex gap-1.5 px-6 pt-4">
-          {services.map((s, i) => (
+          {services.map((_, i) => (
             <ProgressSegment
               key={i}
               progress={scrollYProgress}
               index={i}
               count={services.length}
-              label={`${tServices('stepLabel')} ${pad(i + 1)}: ${s.title}`}
-              onClick={() => goTo(i)}
             />
           ))}
         </div>
@@ -270,6 +264,7 @@ export function ServicesScrolly({ services }: { services: ServiceItem[] }) {
                       href={activeService.href}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`${tServices('cta')}: ${activeService.title}`}
                       className="inline-flex items-center gap-1.5 font-medium text-white/85 border-b border-white/40 pb-0.5 hover:text-white hover:border-white transition-colors"
                     >
                       {tServices('cta')}

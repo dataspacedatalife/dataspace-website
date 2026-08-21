@@ -167,6 +167,7 @@ export function ServicesSequence({ services }: { services: ServiceItem[] }) {
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`${tServices('cta')}: ${item.title}`}
                         className="inline-flex items-center gap-1.5 text-sm font-medium text-white/85 border-b border-white/40 pb-0.5"
                       >
                         {tServices('cta')}
