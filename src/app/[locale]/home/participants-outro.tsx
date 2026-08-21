@@ -54,8 +54,9 @@ export function ParticipantsOutro() {
 
       {/* marquee de logos */}
       <div
-        className="marquee-mask mt-14 overflow-hidden"
+        role="group"
         aria-label="Entidades participantes"
+        className="marquee-mask mt-14 overflow-hidden"
       >
         <div className="marquee-track flex items-center gap-16 w-max">
           {[...OUTRO_LOGOS, ...OUTRO_LOGOS].map((logo, i) => (

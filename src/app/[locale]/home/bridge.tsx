@@ -119,7 +119,7 @@ export function LifecycleBridge() {
             <div className="mt-4 grid grid-cols-4 gap-x-2 items-start">
               <div className="flex flex-col items-center gap-1.5">
                 <span className="h-3 w-px bg-slate-400" aria-hidden="true" />
-                <span className="text-[10px] sm:text-[11px] leading-snug text-slate-500 font-mono max-w-[9rem]">
+                <span className="text-[10px] sm:text-[11px] leading-snug text-slate-600 font-mono max-w-[9rem]">
                   {t('traditionalLabel')}
                 </span>
               </div>

@@ -100,14 +100,6 @@ export function Hero() {
           </motion.div>
         </div>
       </div>
-
-      {/* invitación al scroll */}
-      <button
-        type="button"
-        onClick={() => scrollToId('por-que')}
-        aria-label={t('learnMore')}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:block size-9 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700 rounded-full"
-      />
     </section>
   );
 }
